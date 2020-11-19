@@ -1,0 +1,79 @@
+.navigationbar{
+  width:50000000px;
+  font-family: 'Roboto Mono', monospace;
+  justify-content: space-between;
+  margin-left:1em;
+  margin-right:1em;
+  margin-top:none;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+  overflow: hidden;
+  grid-gap:4.3em;
+}
+.navigationbar li{
+  display: inline;
+  
+}
+
+.navigationbar a {
+  display:grid;
+  grid-gap:10em;
+  float: left;
+  color: white;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.navigationbar a:hover {
+  text-decoration: underline;
+  background-color:lightgrey;
+  color: black;
+  
+}
+
+.navigationbar img{
+  margin-top:0;
+  display:grid;
+  position:center;
+}
+
+.navigationbar input{
+  margin-top:7em;
+  width:1em;
+  height:1em;
+}
+
+.slideshow{
+  color:white;
+  display:grid;
+  justify-content: center;
+}
+.parent {
+  display: grid;
+  float: left;
+  }
+  
+  .lajmet { grid-area: 1 / 1 / 6 / 2; }
+  .div2 { grid-area: 1 / 2 / 6 / 3; }
+  .div3 { grid-area: 1 / 3 / 6 / 4; }
+
+.parent a{
+  font-size: large;
+  color:white;
+  text-decoration: none;
+  margin-right: 2em;
+}
+.lajmet img{
+  width: 20em;
+  height: 15em;
+  margin-left:2em;
+
+}
+
+#sinani{
+  margin-left:550px;
+  margin-bottom: 0px;
+}
