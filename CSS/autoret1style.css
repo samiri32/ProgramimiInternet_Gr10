@@ -78,6 +78,14 @@ body {
     text-align: center;
 }
 
+bllok-1:visited {
+    color: none;
+}
+
+meshum:visited {
+    color: none;
+}
+
 .titulli h1 {
     text-align: left;
 }
