@@ -1,0 +1,122 @@
+.logo {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    max-width: 1250px;
+    margin: auto;
+}
+
+.biblioteka {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 19px;
+    margin-top: 2em;
+}
+
+.navigationbar {
+    margin: auto;
+    width: 75em;
+    font-family: 'Roboto Mono', monospace;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 1em 3em 6em 18em 0em 1em 3em 0em;
+    overflow: hidden;
+}
+
+.navigationbar li {
+    display: inline;
+    color: white;
+}
+
+.navigationbar a {
+    float: left;
+    display: grid;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.navigationbar a:hover {
+    color: red;
+}
+
+.navigationbar input {
+    width: 1em;
+    height: 1.3em;
+}
+
+.titulli {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 5px;
+}
+
+.bllok-1 {
+    color: white;
+    float: left;
+    width: 48%;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 5px;
+    position: relative;
+}
+
+.bllok-1 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.bllok-1 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.titulli h1 {
+    text-align: left;
+}
+
+.meshum {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.id {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 12px;
+}
+
+.id :hover {
+    color: grey;
+}
+
+.a1 img {
+    height: 120px;
+    margin-left: 15px;
+    float: left;
+    margin-right: 15px;
+}
+
+.Text p {
+    padding: 10px;
+}
+
+.footer {
+    position: relative;
+    margin-top: 30px;
+    color: white;
+}
+
+.hr {
+    position: relative;
+    margin-top: 1250px;
+}
