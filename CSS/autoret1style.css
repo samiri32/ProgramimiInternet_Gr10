@@ -78,8 +78,8 @@ body {
     text-align: center;
 }
 
-bllok-1:visited {
-    color: none;
+h2 :visited {
+    color: white;
 }
 
 meshum:visited {
