@@ -71,6 +71,11 @@ body {
     font-size: 20px;
 }
 
+.autori1 :visited {
+    color: grey;
+    text-decoration: none;
+}
+
 .autort p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -95,6 +100,10 @@ body {
 
 .veprat {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    line-height: 1.3em;
 }
 
 .footer {

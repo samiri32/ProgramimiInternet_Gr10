@@ -80,10 +80,15 @@ body {
 
 h2 :visited {
     color: white;
+    text-decoration: none;
 }
 
-meshum:visited {
-    color: none;
+h2 :link {
+    text-decoration: none;
+}
+
+a href :visited {
+    color: white;
 }
 
 .titulli h1 {
