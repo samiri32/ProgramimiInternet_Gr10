@@ -98,8 +98,22 @@ body {
     margin-bottom: 18px;
 }
 
-.veprat {
+.djathtas {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.majtas {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    width: 79%;
+}
+
+.djathtas {
+    position: relative;
+    float: right;
+    width: fit-content;
+    margin-top: 3.5em;
 }
 
 p {
