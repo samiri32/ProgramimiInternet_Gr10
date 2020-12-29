@@ -2,294 +2,370 @@
 <html lang="en">
 
 <head>
-    <title>BIBLIOTEKA SINAN DOBREVA</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script src="./js/skripta.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <title>BIBLIOTEKA SINAN DOBREVA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="./js/skripta.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <script>
+  <script>
     window.onscroll = function () {
-        growShrinkLogo()
-      };
-  
-      function growShrinkLogo() {
-        var sinani = document.getElementById("sinani")
-        if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-          sinani.style.width = "5em";
-          sinani.style.height = "3.5em";
-  
-        } else {
-          sinani.style.width = "8em";
-          sinani.style.height = "6em";
-        }
+      growShrinkLogo()
+    };
+
+    function growShrinkLogo() {
+      var sinani = document.getElementById("sinani")
+      if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+        sinani.style.width = "5em";
+        sinani.style.height = "3.5em";
+
+      } else {
+        sinani.style.width = "8em";
+        sinani.style.height = "6em";
       }
+    }</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript">
+        $(document).ready(function () {
+          $('#search').click(function () {
+            $('.menu-item').toggleClass('hide-item')
+            $('.search-form').toggleClass('active')
+          })
+        }) </script>
+
   </script>
   <style>
-      * {
-        box-sizing: border-box;
-      }
-  
-      body {
-        margin: 0;
-  
-      }
-  
-      .sinanibabo {
-        display: flex;
-        justify-content: center;
-      }
-  
-      .logoja {
-        display: inline-grid;
-        justify-content: center;
-      }
-  
-      .titulli {
-        color: white;
-        font-size: 1.45em;
-      }
-  
-      .titulli:hover {
-        color: red;
-      }
-  
-      .header {
-        background-color: black;
-        height: 1.25em;
-        color: white;
-        text-decoration: none;
-      }
-  
-      .djathtas {
-        display: grid;
-        align-content: space-between;
-      }
-  
-      .majtas {
-        align-content: space-between;
-        display: grid;
-      }
-  
-      .topnav {
-        display: flex;
-        justify-content: center;
-        overflow: hidden;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0;
-        padding: 0px;
-        background-color: black;
-        border: 2px solid;
-      }
-  
-      .topnav a {
-        font-size: 1.45em;
-        color: #f2f2f2;
-        padding: 0px 30px;
-        text-decoration: none;
-      }
-  
-      .topnav a:hover {
-        color: red;
-      }
-  
-      </style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+
+    }
+
+    .sinanibabo {
+      display: flex;
+      justify-content: center;
+    }
+
+    .logoja {
+      display: inline-grid;
+      justify-content: center;
+    }
+
+    .titulli {
+      color: white;
+      font-size: 1.45em;
+    }
+
+    .titulli:hover {
+      color: red;
+    }
+
+    .header {
+      background-color: black;
+      height: 1.25em;
+      color: white;
+      text-decoration: none;
+    }
+
+    .djathtas {
+      display: grid;
+      align-content: space-between;
+    }
+
+    .majtas {
+      align-content: space-between;
+      display: grid;
+    }
+
+    .topnav {
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      position: -webkit-sticky;
+      position: sticky;
+      z-index: 9000;
+      top: 0;
+      padding: 0px;
+      background-color: black;
+      border: 2px solid;
+    }
+
+    .topnav a {
+      font-size: 1.45em;
+      color: #f2f2f2;
+      padding: 0px 30px;
+      text-decoration: none;
+    }
+
+    .topnav a:hover {
+      color: red;
+    }
+
+
+    .djathtasposht a.menu-item {
+      transform: scale(1);
+      display: inline-block;
+      transition: 0.5s;
+    }
+
+    .djathtasposht a.menu-item.hide-item {
+      transform: scale(0);
+    }
+
+    #one {
+      transition-delay: 0.2s;
+    }
+
+    #two {
+      transition-delay: 0.1s;
+    }
+
+    #three {
+      transition-delay: 0s;
+    }
+
+    .search-form {
+      position: absolute;
+      top: 8em;
+      right: 28em;
+      transform: translateX(-50%);
+      width: 2em;
+      height: 1em;
+      transition: 0.6s;
+      opacity:0;
+      visibility: hidden;
+    }
+    
+    .search-form.active {
+      position: absolute;
+      top: 8em;
+      right: 28em;
+      width: 2em;
+      height: 1em;
+      opacity: 1;
+      transition-delay: 0.4s;
+      visibility: visible;
+      background: transparent;
+    }
+
+    .search-form input {
+      width: 20em;
+      height: 1.5em;
+      color: white;
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 1em;
+    }
+  </style>
 </head>
 
 
-    
+
 
 <body onload="showSlides(1);">
-    <div class="header"></div>
-  
-    <div class="topnav">
-      <div class="majtas">
-        <div class="majtasnalt">ARTI NJERI MA I MIRI N BOTE</div>
-        <div class="majtasposht">
-          <a href="#">Ballina</a>
-          <a href="#">Librat</a>
-          <a href="#">Autorët</a>
-        </div>
+  <div class="header"></div>
+
+  <div class="topnav">
+    <div class="majtas">
+      <div class="majtasnalt">ARTI NJERI MA I MIRI N BOTE</div>
+      <div class="majtasposht">
+        <a href="#">Ballina</a>
+        <a href="#">Librat</a>
+        <a href="#">Autorët</a>
       </div>
-  
-      <div class="logoja">
-        <div class="sinanibabo">
-          <img src="./img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
-        </div>
-        <a href="titulli" id='titulli'> <span>Biblioteka Sinan Dobreva</span></a>
+    </div>
+
+    <div class="logoja">
+      <div class="sinanibabo">
+        <img src="./img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
       </div>
-  
-      <div class="djathtas">
-        <div class="djathtasnalt"></div>
-        <div class="djathtasposht">
-          <a href="#">Lajme</a>
-          <a href="#">Galeria</a>
-          <a href="#">Kontakti</a>
+      <a href="titulli" id='titulli'> <span>Biblioteka Sinan Dobreva</span></a>
+    </div>
+
+    <div class="djathtas">
+      <div class="djathtasnalt"></div>
+      <div class="djathtasposht">
+        <a href="#" class="menu-item" id="one">Lajme</a>
+        <a href="#" class="menu-item" id="two">Galeria</a>
+        <a href="#" class="menu-item" id="three">Kontakti</a>
+        <a href="#" id="search"><i class="fa fa-search"></i></a>
+      </div>
+      <div class="search-form">
+        <form>
+          <input type="text" name="" placeholder="Kërkoni">
+      </form> </div>
+    </div>
+  </div>
+
+  <div class="homepage">
+    <div class="row">
+      <div class="column side" style="background-color: white;">
+        <div class="lajmi">
+          <a href="#"> <img src="./img/ismail-kadare-j-foley-opale-w-1-990x556.jpg"
+              alt="Ismail Kadare duke u dukur bukur!!!">
+            <span id='lajmekuq'>LAJME</span><br>
+            <span>Ismail Kadare: Fituesi i sivjetshëm i &ccedilmimit Neustadt Prize p&eumlr Literatur&euml</span></a>
+        </div><br><br>
+
+        <div class="lajmi">
+          <a href="#"> <img src="./img/ekspozita.jpeg" alt="Ekspozitaaa!!!">
+            <span id='lajmekuq'>LAJME</span><br>
+            <span>Ekspozita e librit e mbajtur për nder të 70 vjetorit të lidhjes Shqiptaro-kineze</span></a>
+        </div><br><br>
+
+        <div class="lajmi">
+          <a href="#"> <img src="./img/noli.jpg" alt="Fan STILIAN Noli!!!">
+            <span id='lajmekuq'>LAJME</span><br>
+            <span>Libraria e Fan Nolit në Boston, rikthim në nacionalizmin shqiptar</span></a>
+        </div>
+
+      </div>
+      <div class="column middle" style="background-color: white;">
+        <div class="lajmimes">
+          <a href="#"> <img src="./img/HIVZIABABOOO.jpg" alt="pls qelu ma shpejt kena me msu pls plsplspslsp!!!">
+            <span id='lajmekuq'>LAJME</span><br>
+            <span>Kanë filluar punimet për renovimin e ndërtesës së bibliotekës së qytetit “Hivzi Sylejmani”</span><br>
+            <span id='elaborimi'>Kanë filluar punimet e renovimit të ndërtesës së bilbliotekës “Hivzi Sylejmani” me
+              qëllim të përmirësimit
+              të infrastruktures, hapësirës brenda bibliotekës dhe kushteve për shërbime më cilësore për
+              lexuesit.</span>
+          </a>
+        </div><br><br>
+
+        <div class="lajmimes">
+          <a href="#"> <img src="./img/ekspozita.jpeg" alt="Ekspozitaaa!!!">
+            <span id='lajmekuq'>LAJME</span><br>
+            <span>Ekspozita e librit e mbajtur për nder të 70 vjetorit të lidhjes Shqiptaro-kineze</span><br>
+            <span id='elaborimi'>Kanë filluar punimet e renovimit të ndërtesës së bilbliotekës “Hivzi Sylejmani” me
+              qëllim të përmirësimit
+              të infrastruktures, hapësirës brenda bibliotekës dhe kushteve për shërbime më cilësore për
+              lexuesit.</span></a>
+        </div><br><br>
+
+
+      </div>
+
+
+      <div class="column side" style="background-color: white;">
+        <div class="lajmi">
+          <a href="#"> <img src="./img/ismail-kadare-j-foley-opale-w-1-990x556.jpg"
+              alt="Ismail Kadare duke u dukur bukur!!!">
+            <span id='lajmekuq'>LAJME</span><br>
+            <span>Ismail Kadare: Fituesi i sivjetshëm i &ccedilmimit Neustadt Prize p&eumlr Literatur&euml</span></a>
+        </div><br><br>
+
+        <div class="lajmi">
+          <a href="#"> <img src="./img/ekspozita.jpeg" alt="Ekspozitaaa!!!">
+            <span id='lajmekuq'>LAJME</span><br>
+            <span>Ekspozita e librit e mbajtur për nder të 70 vjetorit të lidhjes Shqiptaro-kineze</span></a>
+        </div><br><br>
+
+        <div class="lajmi">
+          <a href="#"> <img src="./img/noli.jpg" alt="Fan STILIAN Noli!!!">
+            <span id='lajmekuq'>LAJME</span><br>
+            <span>Libraria e Fan Nolit në Boston, rikthim në nacionalizmin shqiptar</span></a>
         </div>
       </div>
     </div>
-  
-    <div class="homepage">
-      <div class="row">
-        <div class="column side" style="background-color: white;">
-          <div class="lajmi">
-            <a href="#"> <img src="./img/ismail-kadare-j-foley-opale-w-1-990x556.jpg"
-                alt="Ismail Kadare duke u dukur bukur!!!">
-              <span id='lajmekuq'>LAJME</span><br>
-              <span>Ismail Kadare: Fituesi i sivjetshëm i &ccedilmimit Neustadt Prize p&eumlr Literatur&euml</span></a>
-          </div><br><br>
-  
-          <div class="lajmi">
-            <a href="#"> <img src="./img/ekspozita.jpeg" alt="Ekspozitaaa!!!">
-              <span id='lajmekuq'>LAJME</span><br>
-              <span>Ekspozita e librit e mbajtur për nder të 70 vjetorit të lidhjes Shqiptaro-kineze</span></a>
-          </div><br><br>
-  
-          <div class="lajmi">
-            <a href="#"> <img src="./img/noli.jpg" alt="Fan STILIAN Noli!!!">
-              <span id='lajmekuq'>LAJME</span><br>
-              <span>Libraria e Fan Nolit në Boston, rikthim në nacionalizmin shqiptar</span></a>
+
+    <div class="row2">
+      <div class="kolonarresht" style="background-color: white;">
+
+        <div class="slideshow-container">
+
+          <div class="Sllajdet fade">
+            <img src="./img/noli.jpg" style="width:100%">
           </div>
-  
-        </div>
-        <div class="column middle" style="background-color: white;">
-          <div class="lajmimes">
-            <a href="#"> <img src="./img/HIVZIABABOOO.jpg" alt="pls qelu ma shpejt kena me msu pls plsplspslsp!!!">
-              <span id='lajmekuq'>LAJME</span><br>
-              <span>Kanë filluar punimet për renovimin e ndërtesës së bibliotekës së qytetit “Hivzi Sylejmani”</span><br>
-              <span id='elaborimi'>Kanë filluar punimet e renovimit të ndërtesës së bilbliotekës “Hivzi Sylejmani” me
-                qëllim të përmirësimit
-                të infrastruktures, hapësirës brenda bibliotekës dhe kushteve për shërbime më cilësore për
-                lexuesit.</span>
-            </a>
-          </div><br><br>
-  
-          <div class="lajmimes">
-            <a href="#"> <img src="./img/ekspozita.jpeg" alt="Ekspozitaaa!!!">
-              <span id='lajmekuq'>LAJME</span><br>
-              <span>Ekspozita e librit e mbajtur për nder të 70 vjetorit të lidhjes Shqiptaro-kineze</span><br>
-              <span id='elaborimi'>Kanë filluar punimet e renovimit të ndërtesës së bilbliotekës “Hivzi Sylejmani” me
-                qëllim të përmirësimit
-                të infrastruktures, hapësirës brenda bibliotekës dhe kushteve për shërbime më cilësore për
-                lexuesit.</span></a>
-          </div><br><br>
-  
-  
-        </div>
-  
-  
-        <div class="column side" style="background-color: white;">
-          <div class="lajmi">
-            <a href="#"> <img src="./img/ismail-kadare-j-foley-opale-w-1-990x556.jpg"
-                alt="Ismail Kadare duke u dukur bukur!!!">
-              <span id='lajmekuq'>LAJME</span><br>
-              <span>Ismail Kadare: Fituesi i sivjetshëm i &ccedilmimit Neustadt Prize p&eumlr Literatur&euml</span></a>
-          </div><br><br>
-  
-          <div class="lajmi">
-            <a href="#"> <img src="./img/ekspozita.jpeg" alt="Ekspozitaaa!!!">
-              <span id='lajmekuq'>LAJME</span><br>
-              <span>Ekspozita e librit e mbajtur për nder të 70 vjetorit të lidhjes Shqiptaro-kineze</span></a>
-          </div><br><br>
-  
-          <div class="lajmi">
-            <a href="#"> <img src="./img/noli.jpg" alt="Fan STILIAN Noli!!!">
-              <span id='lajmekuq'>LAJME</span><br>
-              <span>Libraria e Fan Nolit në Boston, rikthim në nacionalizmin shqiptar</span></a>
+
+          <div class="Sllajdet fade">
+            <img src="./img/HIVZIABABOOO.jpg" style="width:100%">
           </div>
+
+          <div class="Sllajdet fade">
+            <img src="./img/ismail-kadare-j-foley-opale-w-1-990x556.jpg" style="width:100%">
+          </div>
+
+          <a class="mrapa" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="para" onclick="plusSlides(1)">&#10095;</a>
         </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
       </div>
-  
-      <div class="row2">
-        <div class="kolonarresht" style="background-color: white;">
-  
-          <div class="slideshow-container">
-  
-            <div class="Sllajdet fade">
-              <img src="./img/noli.jpg" style="width:100%">
-            </div>
-  
-            <div class="Sllajdet fade">
-              <img src="./img/HIVZIABABOOO.jpg" style="width:100%">
-            </div>
-  
-            <div class="Sllajdet fade">
-              <img src="./img/ismail-kadare-j-foley-opale-w-1-990x556.jpg" style="width:100%">
-            </div>
-  
-            <a class="mrapa" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="para" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <br>
-  
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-  
-        </div>
-      </div>
-  
-  
-  
-      <div class="bs">LIBRAT MË TË HUAZUAR</div>
-      <div class="bestsellers">
-        <div class="libri">
-          <div class="bestsellersimg">
-            <img src="./img/hasha.jpg">
-          </div>
-          <div class="bestsellerstitulli">New State,
-            Modern Statesman: Hashim Thaci - A Biography
-          </div>
-        </div>
-  
-        <div class="libri">
-          <div class="bestsellersimg">
-            <img src="./img/joe.jpg">
-          </div>
-          <div class="bestsellerstitulli"> Promise Me, Dad: The heartbreaking story of Joe Biden
-          </div>
-        </div>
-  
-        <div class="libri">
-          <div class="bestsellersimg">
-            <img src="./img/melania.jpg">
-          </div>
-          <div class="bestsellerstitulli"> The Art of Her Deal: The Untold Story of Melania Trump
-          </div>
-        </div>
-  
-        <div class="libri">
-          <div class="bestsellersimg">
-            <img src="./img/kupi.png">
-          </div>
-          <div class="bestsellerstitulli"> A new state, A modern statesman - The Biography
-          </div>
-        </div>
-  
-        <div class="libri">
-          <div class="bestsellersimg">
-            <img src="./img/xhaxhienver.jpg">
-          </div>
-          <div class="bestsellerstitulli"> Enver Hoxha: The Iron Fist of Albania
-          </div>
-        </div>
-  
-      </div>
-  
     </div>
-  
-<hr>
-<footer>
+
+
+
+    <div class="bs">LIBRAT MË TË HUAZUAR</div>
+    <div class="bestsellers">
+      <div class="libri">
+        <div class="bestsellersimg">
+          <img src="./img/hasha.jpg">
+        </div>
+        <div class="bestsellerstitulli">New State,
+          Modern Statesman: Hashim Thaci - A Biography
+        </div>
+      </div>
+
+      <div class="libri">
+        <div class="bestsellersimg">
+          <img src="./img/joe.jpg">
+        </div>
+        <div class="bestsellerstitulli"> Promise Me, Dad: The heartbreaking story of Joe Biden
+        </div>
+      </div>
+
+      <div class="libri">
+        <div class="bestsellersimg">
+          <img src="./img/melania.jpg">
+        </div>
+        <div class="bestsellerstitulli"> The Art of Her Deal: The Untold Story of Melania Trump
+        </div>
+      </div>
+
+      <div class="libri">
+        <div class="bestsellersimg">
+          <img src="./img/kupi.png">
+        </div>
+        <div class="bestsellerstitulli"> A new state, A modern statesman - The Biography
+        </div>
+      </div>
+
+      <div class="libri">
+        <div class="bestsellersimg">
+          <img src="./img/xhaxhienver.jpg">
+        </div>
+        <div class="bestsellerstitulli"> Enver Hoxha: The Iron Fist of Albania
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <hr>
+  <footer>
     <div class="footer">
-        <p>fkldaskljewlqk;rjqwe;lrkj</p>
-        <h1>ejwkrlk;qwejrqw;elkrj</h1>
+      <p>fkldaskljewlqk;rjqwe;lrkj</p>
+      <h1>ejwkrlk;qwejrqw;elkrj</h1>
     </div>
-</footer>
+  </footer>
 
 
 </body>
