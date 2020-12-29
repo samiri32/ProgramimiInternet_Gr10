@@ -24,5 +24,31 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
+
+
 }
 
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementsByClassName("fototmodal");
+var modalImg = document.getElementById("img");
+
+var showModal=function(){
+    modal.style.display="block";
+    modalImg.src=this.src;
+    captionText.innerHTML=this.alt;
+
+}
+for(var i=0;i<img.length;i++){
+    img[i].addEventListener('click', showModal);
+}
+
+
+
+var span = document.getElementsByClassName("close")[0];
+
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
