@@ -124,6 +124,50 @@ p {
     line-height: 1.3em;
 }
 
+ul {
+    list-style: none;
+}
+
+.bullet ul li::before {
+    content: "\2022";
+    color: grey;
+    display: inline-block;
+    width: 1em;
+    margin-left: -0.5em;
+}
+
+.vi ul li::before {
+    content: "\2012";
+    color: grey;
+    display: inline-block;
+    width: 1em;
+    margin-left: -0.5em;
+}
+
+.tilde ul li::before {
+    content: "\007E";
+    color: grey;
+    display: inline-block;
+    width: 1em;
+    margin-left: -0.5em;
+}
+
+.vi-vi ul li::before {
+    content: "\00BB";
+    color: grey;
+    display: inline-block;
+    width: 1em;
+    margin-left: -0.5em;
+}
+
+.trekendsh ul li::before {
+    content: "\2023";
+    color: grey;
+    display: inline-block;
+    width: 1em;
+    margin-left: -0.5em;
+}
+
 .footer {
     position: relative;
     margin-top: 30px;
