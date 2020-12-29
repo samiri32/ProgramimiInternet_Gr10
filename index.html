@@ -1,214 +1,288 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <title>BIBLIOTEKA SINAN DOBREVA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="./js/skripta.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 
+    <script>
+    window.onscroll = function () {
+        growShrinkLogo()
+      };
+  
+      function growShrinkLogo() {
+        var sinani = document.getElementById("sinani")
+        if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+          sinani.style.width = "5em";
+          sinani.style.height = "3.5em";
+  
+        } else {
+          sinani.style.width = "8em";
+          sinani.style.height = "6em";
+        }
+      }
+  </script>
+  <style>
+      * {
+        box-sizing: border-box;
+      }
+  
+      body {
+        margin: 0;
+  
+      }
+  
+      .sinanibabo {
+        display: flex;
+        justify-content: center;
+      }
+  
+      .logoja {
+        display: inline-grid;
+        justify-content: center;
+      }
+  
+      .titulli {
+        color: white;
+        font-size: 1.45em;
+      }
+  
+      .titulli:hover {
+        color: red;
+      }
+  
+      .header {
+        background-color: black;
+        height: 1.25em;
+        color: white;
+        text-decoration: none;
+      }
+  
+      .djathtas {
+        display: grid;
+        align-content: space-between;
+      }
+  
+      .majtas {
+        align-content: space-between;
+        display: grid;
+      }
+  
+      .topnav {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        padding: 0px;
+        background-color: black;
+        border: 2px solid;
+      }
+  
+      .topnav a {
+        font-size: 1.45em;
+        color: #f2f2f2;
+        padding: 0px 30px;
+        text-decoration: none;
+      }
+  
+      .topnav a:hover {
+        color: red;
+      }
+  
+      </style>
 </head>
-<header>
-    <div class="logo">
-        <img :id="sinani" src="./img/sinani.png" alt="pldh" width="150em" height="100em">
+
+
+    
+
+<body onload="showSlides(1);">
+    <div class="header"></div>
+  
+    <div class="topnav">
+      <div class="majtas">
+        <div class="majtasnalt">ARTI NJERI MA I MIRI N BOTE</div>
+        <div class="majtasposht">
+          <a href="#">Ballina</a>
+          <a href="#">Librat</a>
+          <a href="#">Autorët</a>
+        </div>
+      </div>
+  
+      <div class="logoja">
+        <div class="sinanibabo">
+          <img src="./img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
+        </div>
+        <a href="titulli" id='titulli'> <span>Biblioteka Sinan Dobreva</span></a>
+      </div>
+  
+      <div class="djathtas">
+        <div class="djathtasnalt"></div>
+        <div class="djathtasposht">
+          <a href="#">Lajme</a>
+          <a href="#">Galeria</a>
+          <a href="#">Kontakti</a>
+        </div>
+      </div>
     </div>
-
-    <div class="navigationbar">
-
-        <li><a href="#home">Fillimi</a></li>
-        <li><a href="#publikimet">Publikimet</a></li>
-        <li><a href="../HTML ushtrime/HTML/Autoret1.html">Autoret</a></li>
-
-        <li>
-            <a href="index.html">
-                <h4 id="biblioteka">Biblioteka "Sinan Dobreva"</h4>
+  
+    <div class="homepage">
+      <div class="row">
+        <div class="column side" style="background-color: white;">
+          <div class="lajmi">
+            <a href="#"> <img src="./img/ismail-kadare-j-foley-opale-w-1-990x556.jpg"
+                alt="Ismail Kadare duke u dukur bukur!!!">
+              <span id='lajmekuq'>LAJME</span><br>
+              <span>Ismail Kadare: Fituesi i sivjetshëm i &ccedilmimit Neustadt Prize p&eumlr Literatur&euml</span></a>
+          </div><br><br>
+  
+          <div class="lajmi">
+            <a href="#"> <img src="./img/ekspozita.jpeg" alt="Ekspozitaaa!!!">
+              <span id='lajmekuq'>LAJME</span><br>
+              <span>Ekspozita e librit e mbajtur për nder të 70 vjetorit të lidhjes Shqiptaro-kineze</span></a>
+          </div><br><br>
+  
+          <div class="lajmi">
+            <a href="#"> <img src="./img/noli.jpg" alt="Fan STILIAN Noli!!!">
+              <span id='lajmekuq'>LAJME</span><br>
+              <span>Libraria e Fan Nolit në Boston, rikthim në nacionalizmin shqiptar</span></a>
+          </div>
+  
+        </div>
+        <div class="column middle" style="background-color: white;">
+          <div class="lajmimes">
+            <a href="#"> <img src="./img/HIVZIABABOOO.jpg" alt="pls qelu ma shpejt kena me msu pls plsplspslsp!!!">
+              <span id='lajmekuq'>LAJME</span><br>
+              <span>Kanë filluar punimet për renovimin e ndërtesës së bibliotekës së qytetit “Hivzi Sylejmani”</span><br>
+              <span id='elaborimi'>Kanë filluar punimet e renovimit të ndërtesës së bilbliotekës “Hivzi Sylejmani” me
+                qëllim të përmirësimit
+                të infrastruktures, hapësirës brenda bibliotekës dhe kushteve për shërbime më cilësore për
+                lexuesit.</span>
             </a>
-        </li>
-        <li><a href="#lajme">Lajme</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#kontakti">Kontakti</a></li>
-        <li><input id="#search" type="search" placeholder="Search" /></li>
-
-
+          </div><br><br>
+  
+          <div class="lajmimes">
+            <a href="#"> <img src="./img/ekspozita.jpeg" alt="Ekspozitaaa!!!">
+              <span id='lajmekuq'>LAJME</span><br>
+              <span>Ekspozita e librit e mbajtur për nder të 70 vjetorit të lidhjes Shqiptaro-kineze</span><br>
+              <span id='elaborimi'>Kanë filluar punimet e renovimit të ndërtesës së bilbliotekës “Hivzi Sylejmani” me
+                qëllim të përmirësimit
+                të infrastruktures, hapësirës brenda bibliotekës dhe kushteve për shërbime më cilësore për
+                lexuesit.</span></a>
+          </div><br><br>
+  
+  
+        </div>
+  
+  
+        <div class="column side" style="background-color: white;">
+          <div class="lajmi">
+            <a href="#"> <img src="./img/ismail-kadare-j-foley-opale-w-1-990x556.jpg"
+                alt="Ismail Kadare duke u dukur bukur!!!">
+              <span id='lajmekuq'>LAJME</span><br>
+              <span>Ismail Kadare: Fituesi i sivjetshëm i &ccedilmimit Neustadt Prize p&eumlr Literatur&euml</span></a>
+          </div><br><br>
+  
+          <div class="lajmi">
+            <a href="#"> <img src="./img/ekspozita.jpeg" alt="Ekspozitaaa!!!">
+              <span id='lajmekuq'>LAJME</span><br>
+              <span>Ekspozita e librit e mbajtur për nder të 70 vjetorit të lidhjes Shqiptaro-kineze</span></a>
+          </div><br><br>
+  
+          <div class="lajmi">
+            <a href="#"> <img src="./img/noli.jpg" alt="Fan STILIAN Noli!!!">
+              <span id='lajmekuq'>LAJME</span><br>
+              <span>Libraria e Fan Nolit në Boston, rikthim në nacionalizmin shqiptar</span></a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row2">
+        <div class="kolonarresht" style="background-color: white;">
+  
+          <div class="slideshow-container">
+  
+            <div class="Sllajdet fade">
+              <img src="./img/noli.jpg" style="width:100%">
+            </div>
+  
+            <div class="Sllajdet fade">
+              <img src="./img/HIVZIABABOOO.jpg" style="width:100%">
+            </div>
+  
+            <div class="Sllajdet fade">
+              <img src="./img/ismail-kadare-j-foley-opale-w-1-990x556.jpg" style="width:100%">
+            </div>
+  
+            <a class="mrapa" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="para" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+  
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+  
+        </div>
+      </div>
+  
+  
+  
+      <div class="bs">LIBRAT MË TË HUAZUAR</div>
+      <div class="bestsellers">
+        <div class="libri">
+          <div class="bestsellersimg">
+            <img src="./img/hasha.jpg">
+          </div>
+          <div class="bestsellerstitulli">New State,
+            Modern Statesman: Hashim Thaci - A Biography
+          </div>
+        </div>
+  
+        <div class="libri">
+          <div class="bestsellersimg">
+            <img src="./img/joe.jpg">
+          </div>
+          <div class="bestsellerstitulli"> Promise Me, Dad: The heartbreaking story of Joe Biden
+          </div>
+        </div>
+  
+        <div class="libri">
+          <div class="bestsellersimg">
+            <img src="./img/melania.jpg">
+          </div>
+          <div class="bestsellerstitulli"> The Art of Her Deal: The Untold Story of Melania Trump
+          </div>
+        </div>
+  
+        <div class="libri">
+          <div class="bestsellersimg">
+            <img src="./img/kupi.png">
+          </div>
+          <div class="bestsellerstitulli"> A new state, A modern statesman - The Biography
+          </div>
+        </div>
+  
+        <div class="libri">
+          <div class="bestsellersimg">
+            <img src="./img/xhaxhienver.jpg">
+          </div>
+          <div class="bestsellerstitulli"> Enver Hoxha: The Iron Fist of Albania
+          </div>
+        </div>
+  
+      </div>
+  
     </div>
-
-    <hr style="background-color: white;">
-
-</header>
-
-
-<body onload="showSlides(1);" style="background-color:#000000;"></body>
-
-<!-- Qitu ja nis div i slideshow -->
-<div class="slideshow-container">
-
-    <div class="Sllajdet fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="./img/gjigandigjigand.jpg" style="width:100%">
-        <div class="text">Idk</div>
-    </div>
-
-    <div class="Sllajdet fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="./img/howl.jpg" style="width:100%">
-        <div class="text">Shtriga</div>
-    </div>
-
-    <div class="Sllajdet fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="./img/k_albo_germany_top_40_57.jpg" style="width:100%">
-        <div class="text">K Albo</div>
-    </div>
-
-    <a class="mrapa" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="para" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-
-<!--Qitu kryhet div i slideshow-->
-
-<hr style="background-color: white;">
-
-<!-- Qitu ja nis div i lajmeve -->
-<div class="parent">
-    <div class="lajmet">
-        <div class="arbresha">
-            <a href="#">
-                <img src="./img/howl.jpg"></a>
-            <span id="titulli1"> HAPET SHKOLLA E RE NE BARDH1</span>
-
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                book. It has survived not only five centuries, but also the leap into electroni</p>
-
-
-        </div>
-        <br>
-        <br>
-
-        <div class="arbresha">
-            <a href="#">
-                <img src="./img/howl.jpg"></a>
-            <span id="titulli1"> HAPET SHKOLLA E RE NE BARDH1</span>
-
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                book. It has survived not only five centuries, but also the leap into electroni</p>
-
-
-        </div>
-        <br>
-        <br>
-
-        <div class="arbresha">
-            <a href="#">
-                <img src="./img/howl.jpg"></a>
-            <span id="titulli1"> HAPET SHKOLLA E RE NE BARDH1</span>
-
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                book. It has survived not only five centuries, but also the leap into electroni</p>
-
-
-        </div>
-        <br>
-        <br>
-
-        <div class="arbresha">
-            <a href="#">
-                <img src="./img/howl.jpg"></a>
-            <span id="titulli1"> HAPET SHKOLLA E RE NE BARDH1</span>
-
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                book. It has survived not only five centuries, but also the leap into electroni</p>
-
-
-        </div>
-        <br>
-        <br>
-
-        <div class="arbresha">
-            <a href="#">
-                <img src="./img/howl.jpg"></a>
-            <span id="titulli1"> HAPET SHKOLLA E RE NE BARDH1</span>
-
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-                book. It has survived not only five centuries, but also the leap into electroni</p>
-
-
-        </div>
-        <br>
-        <br>
-
-
-    </div>
-    <div class="samiri">
-        <div class="publikimet">
-            <!-- <span id="titulli2">PUBLIKIMET O VLLA Q</span>  -->
-            <a href="#"><span id="titulli-publikimet"> PUBLIKIMET </span></a>
-            <br> <br>
-            <img src="./img/howl.jpg">
-            <img src="./img/howl.jpg">
-            <img src="./img/howl.jpg">
-            <img src="./img/howl.jpg">
-            <img src="./img/howl.jpg">
-            <img src="./img/howl.jpg">
-        </div>
-        <br>
-
-        <div class="librat">
-            <!-- <span id="titulli2">PUBLIKIMET O VLLA Q</span>  -->
-            <a href="#"><span id="titulli-librat"> LIBRAT </span></a>
-            <br> <br>
-            <img src="./img/sinani.png">
-            <img src="./img/sinani.png">
-            <img src="./img/sinani.png">
-            <img src="./img/sinani.png">
-            <img src="./img/sinani.png">
-            <img src="./img/sinani.png">
-        </div>
-        <div class="info">
-
-            <a href="#"><span id="abc"> INFORMACIONE </span></a><br><br>
-
-            <img src="./img/howl.jpg"> <br>
-            <a href="url">ANETARSIMI</a><br>
-            <p>SAMIR ARBRESHA SAMIR ARBRESHASAMIR ARBRESHASAMIR ARBRESHASAMIR ARBRESHA</p>
-        </div>
-    </div>
-    <div class="katalogu">
-        <div class="katalogu1">
-            <a href="#"><span id="abc"> KATALOGU </span></a><br>
-            <br>
-            <img src="./img/howl.jpg">
-        </div>
-        <div class="galeria">
-            <!-- <span id="titulli2">PUBLIKIMET O VLLA Q</span>  -->
-            <a href="#"><span id="titulli-galeria"> GALERIA </span></a>
-            <br> <br>
-            <img src="./img/sinani.png">
-            <img src="./img/sinani.png">
-            <img src="./img/sinani.png">
-            <img src="./img/sinani.png">
-
-        </div>
-        <div class="elibraria">
-            <a href="#"><span id="abc"> EBOOKS & AUDIOBOOKS </span></a>
-            <br>
-            <img src="./img/howl.jpg">
-            <p> hdjahsjdfhasjhfjsafgjbfdgb dgbhfdgh fbhgb jfdgjdfhgjdfhjghdfjhgjdfhgjfdhgjdf
-            </p>
-        </div>
-        <br> <br>
-
-
-
-    </div>
-
-</div>
+  
 <hr>
 <footer>
     <div class="footer">
