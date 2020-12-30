@@ -1,49 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
 
 <head>
-    <link rel="stylesheet" href="../css/meshum.css">
+    <title>Autoret</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/meshum.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script src="..//js/skripta.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <script>
+        window.onscroll = function() {
+            growShrinkLogo()
+        };
+
+        function growShrinkLogo() {
+            var sinani = document.getElementById("sinani")
+            if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+                sinani.style.width = "5em";
+                sinani.style.height = "3.5em";
+
+            } else {
+                sinani.style.width = "8em";
+                sinani.style.height = "6em";
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#search').click(function() {
+                $('.menu-item').toggleClass('hide-item')
+                $('.search-form').toggleClass('active')
+            })
+        })
+    </script>
+
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .sinanibabo {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .logoja {
+            display: inline-grid;
+            justify-content: center;
+        }
+        
+        .titulli {
+            color: black;
+            font-size: 1.45em;
+        }
+        
+        .titulli:hover {
+            color: red;
+        }
+        
+        .header {
+            background-color: black;
+            height: 1.25em;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .djathtas {
+            display: grid;
+            align-content: space-between;
+        }
+        
+        .majtas {
+            align-content: space-between;
+            display: grid;
+        }
+        
+        .topnav {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            position: -webkit-sticky;
+            position: sticky;
+            z-index: 1;
+            top: 0;
+            padding: 0px;
+            background-color: black;
+            border: 2px solid;
+        }
+        
+        .topnav a {
+            font-size: 1.45em;
+            color: #f2f2f2;
+            padding: 0px 30px;
+            text-decoration: none;
+        }
+        
+        .topnav a:hover {
+            color: red;
+        }
+        
+        .djathtasposht a.menu-item {
+            transform: scale(1);
+            display: inline-block;
+            transition: 0.5s;
+        }
+        
+        .djathtasposht a.menu-item.hide-item {
+            transform: scale(0);
+        }
+        
+        #one {
+            transition-delay: 0.2s;
+        }
+        
+        #two {
+            transition-delay: 0.1s;
+        }
+        
+        #three {
+            transition-delay: 0s;
+        }
+        
+        .search-form {
+            position: absolute;
+            top: 8em;
+            right: 28em;
+            transform: translateX(-50%);
+            width: 2em;
+            height: 1em;
+            transition: 0.6s;
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .search-form.active {
+            position: absolute;
+            top: 8em;
+            right: 28em;
+            width: 2em;
+            height: 1em;
+            opacity: 1;
+            transition-delay: 0.4s;
+            visibility: visible;
+            background: transparent;
+        }
+        
+        .search-form input {
+            width: 20em;
+            height: 1.5em;
+            color: white;
+            border: none;
+            background: transparent;
+            outline: none;
+            font-size: 1em;
+        }
+    </style>
 </head>
 
-<body>
-    <title>Autor Shqipetar</title>
+
+<body onload="showSlides(1);">
+    <div class="header"></div>
+
+    <div class="topnav">
+        <div class="majtas">
+            <div class="majtasnalt">MMM</div>
+            <div class="majtasposht">
+
+
+                <a href="../index.html">Ballina</a>
+                <a href="#">Librat</a>
+                <a href="../HTML/Autoret1.html">Autorët</a>
+            </div>
+        </div>
+
+        <div class="logoja">
+            <div class="sinanibabo">
+                <img src="../img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
+            </div>
+            <a href="../index.html" id='titulli'> <span>Biblioteka Sinan Dobreva</span></a>
+        </div>
+
+        <div class="djathtas">
+            <div class="djathtasnalt"></div>
+            <div class="djathtasposht">
+                <a href="./lajmi.html" class="menu-item" id="one">Lajme</a>
+                <a href="#" class="menu-item" id="two">Galeria</a>
+                <a href="#" class="menu-item" id="three">Kontakti</a>
+                <a href="#" id="search"><i class="fa fa-search"></i></a>
+            </div>
+            <div class="search-form">
+                <form>
+                    <input type="text" name="" placeholder="Kërkoni">
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
-<header>
-    <div class="logo">
 
-        <img :id="sinani" src="../img/sinani.png" alt="pldh" width="150em" height="100em">
-    </div>
-
-
-    <div class="navigationbar">
-
-        <li><a href="#home">Fillimi</a></li>
-        <li><a href="#publikimet">Publikimet</a></li>
-        <li><a href="../HTML/Autoret1.html">Autoret</a></li>
-
-        <li>
-            <a href="index.html">
-                <h4 id="biblioteka">Biblioteka "Sinan Dobreva"</h4>
-            </a>
-        </li>
-        <li><a href="#lajme">Lajme</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#kontakti">Kontakti</a></li>
-        <li><input id="#search" type="search" placeholder="Search" /></li>
-
-    </div>
-
-    <hr style="background-color: white;">
-
-</header>
-
-<body onload="showSlides(1);" style="background-color:#000000;"></body>
-
-<div class="titulli">
+<div class="titulli1">
 
     <h1>Autoret Shqipetar</h1>
 
@@ -77,7 +241,7 @@
 
     <br>
 
-    <div class="djathtas">
+    <div class="djathtas1">
         <div class="lista1">
             <h3>Disa nga veprat nder vite: </h3>
 
@@ -114,7 +278,7 @@
 <br>
 
 <div class="autort">
-    <div class="majtas">
+    <div class="majtas1">
         <a href="../img/download.jpg">
             <img src="../img/download.jpg" alt="Naum Veqilharxhi">
         </a>
@@ -137,7 +301,7 @@
         </p>
     </div>
 
-    <div class="djathtas">
+    <div class="djathtas1">
         <h3>Veprat kryesore te tij jan:</h3>
         <div class="vi">
             <ul>
@@ -158,7 +322,7 @@
 <br>
 
 <div class="autort">
-    <div class="majtas">
+    <div class="majtas1">
 
         <a href="../img/Gjergj_Fishta.jpg">
             <img src="../img/Gjergj_Fishta.jpg" alt="Gjergj Fishta">
@@ -182,7 +346,7 @@
             e MbiShkodrës më 1911, Arqipeshkvi Serreqi i dërguar nga autoritetet osmane, mori me vete Fishtën dhe Bumçin në Podgoricë për të ndërmjetësuar për paqe mes autoriteteve dhe prijësve të maleve.
         </p>
     </div>
-    <div class="djathtas">
+    <div class="djathtas1">
         <div class="tilde">
             <h3>Veprat kryesore te tij jan:</h3>
             <ul>
@@ -202,7 +366,7 @@
 <br>
 
 <div class="autort">
-    <div class="majtas">
+    <div class="majtas1">
 
         <a href="../img/dritero.jpg">
             <img src="../img/dritero.jpg" alt="Dritëro Agolli">
@@ -222,7 +386,7 @@
             re të letërsisë shqiptare. Ajo na bën të ndihemi me dinjitet përballë botës së madhe. Shkrimtar i madh i një "gjuhe të vogël", ai është po aq i dashur prej lexuesve bashkëkombas, sa dhe në metropolet e kulturës botërore.
         </p>
     </div>
-    <div class="djathtas">
+    <div class="djathtas1">
         <h3>Veprat kryesore te tij jan:</h3>
         <div class="vi-vi">
             <ul>
@@ -242,7 +406,7 @@
 <br>
 
 <div class="autort">
-    <div class="majtas">
+    <div class="majtas1">
 
         <a href="../img/Migjeni11.jpg">
             <img src="../img/Migjeni11.jpg" alt="Migjeni">
@@ -261,7 +425,7 @@
             dhe e motra më e vogël, Ollga, u shkolluan në shkollën fillore serbe në Shkodër. Shtëpia ku lindi Migjeni ishte e ndërtuar në oborrin e shtëpisë së Trimçeve, shtëpi ku u bë Muzeu i Migjenit nga viti 1961 deri në vitin 1993.
         </p>
     </div>
-    <div class="djathtas">
+    <div class="djathtas1">
         <div class="trekendsh">
             <h3>Veprat kryesore te tij jan:</h3>
             <ul>
@@ -280,7 +444,7 @@
 <br>
 
 <div class="autort">
-    <div class="majtas">
+    <div class="majtas1">
         <a href="../img/NM.jpg">
             <img src="../img/NM.jpg" alt="Ndre Mjeda">
         </a>
@@ -301,7 +465,7 @@
             Austro-Hungareze, Mjeda u përjashtua nga Shoqëria e Jezuit.
         </p>
     </div>
-    <div class="djathtas">
+    <div class="djathtas1">
         <div class="bullet">
 
             <h3>Veprat kryesore te tij jan:</h3>
@@ -322,7 +486,7 @@
 
 
 <div class="autort">
-    <div class="majtas">
+    <div class="majtas1">
 
         <a href="../img/AQ.jpg">
             <img src="../img/AQ.jpg" alt="Andon Zako Çajupi">
@@ -346,7 +510,7 @@
         </p>
     </div>
 
-    <div class="djathtas">
+    <div class="djathtas1">
         <div class="vi">
 
             <h3>Veprat kryesore te tij jan:</h3>
@@ -367,7 +531,7 @@
 
 
 <div class="autort">
-    <div class="majtas">
+    <div class="majtas1">
 
         <a href="../img/GJB.jpg">
             <img src="../img/GJB.jpg" alt="Gjon Buzuku">
@@ -387,7 +551,7 @@
         </p>
     </div>
 
-    <div class="djathtas">
+    <div class="djathtas1">
         <h3>Veprat kryesore te tij jan:</h3>
         <div class="tilde">
 
@@ -409,7 +573,7 @@
 
 
 <div class="autort">
-    <div class="majtas">
+    <div class="majtas1">
 
         <a href="../img/FN.jpg">
             <img src="../img/FN.jpg" alt="Fan Noli">
@@ -432,7 +596,7 @@
         </p>
     </div>
 
-    <div class="djathtas">
+    <div class="djathtas1">
         <h3>Veprat kryesore te tij jan:</h3>
         <div class="vi-vi">
 
@@ -453,7 +617,7 @@
 
 
 <div class="autort">
-    <div class="majtas">
+    <div class="majtas1">
 
         <a href="../img/LP.jpg">
             <img src="../img/LP.jpg" alt="Lasgush Poradeci">
@@ -474,7 +638,7 @@
         </p>
     </div>
 
-    <div class="djathtas">
+    <div class="djathtas1">
         <h3>Veprat kryesore te tij jan:</h3>
         <div class="trekendsh">
 
@@ -495,7 +659,7 @@
 
 
 <div class="autort">
-    <div class="majtas">
+    <div class="majtas1">
 
         <a href="../img/SF.jpg">
             <img src="../img/SF.jpg" alt="Sami Frashëri">
@@ -514,7 +678,7 @@
         </p>
     </div>
 
-    <div class="djathtas">
+    <div class="djathtas1">
         <h3>Veprat kryesore te tij jan:</h3>
         <div class="bullet">
 
