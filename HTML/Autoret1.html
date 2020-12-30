@@ -1,61 +1,223 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-
+<html lang="en">
 
 <head>
+    <title>Autoret</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../CSS/autoret1style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script src="..//js/skripta.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <script>
+        window.onscroll = function() {
+            growShrinkLogo()
+        };
+
+        function growShrinkLogo() {
+            var sinani = document.getElementById("sinani")
+            if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+                sinani.style.width = "5em";
+                sinani.style.height = "3.5em";
+
+            } else {
+                sinani.style.width = "8em";
+                sinani.style.height = "6em";
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#search').click(function() {
+                $('.menu-item').toggleClass('hide-item')
+                $('.search-form').toggleClass('active')
+            })
+        })
+    </script>
+
+    </script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .sinanibabo {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .logoja {
+            display: inline-grid;
+            justify-content: center;
+        }
+        
+        .titulli {
+            color: white;
+            font-size: 1.45em;
+        }
+        
+        .titulli:hover {
+            color: red;
+        }
+        
+        .header {
+            background-color: black;
+            height: 1.25em;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .djathtas {
+            display: grid;
+            align-content: space-between;
+        }
+        
+        .majtas {
+            align-content: space-between;
+            display: grid;
+        }
+        
+        .topnav {
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            position: -webkit-sticky;
+            position: sticky;
+            z-index: 1;
+            top: 0;
+            padding: 0px;
+            background-color: black;
+            border: 2px solid;
+        }
+        
+        .topnav a {
+            font-size: 1.45em;
+            color: #f2f2f2;
+            padding: 0px 30px;
+            text-decoration: none;
+        }
+        
+        .topnav a:hover {
+            color: red;
+        }
+        
+        .djathtasposht a.menu-item {
+            transform: scale(1);
+            display: inline-block;
+            transition: 0.5s;
+        }
+        
+        .djathtasposht a.menu-item.hide-item {
+            transform: scale(0);
+        }
+        
+        #one {
+            transition-delay: 0.2s;
+        }
+        
+        #two {
+            transition-delay: 0.1s;
+        }
+        
+        #three {
+            transition-delay: 0s;
+        }
+        
+        .search-form {
+            position: absolute;
+            top: 8em;
+            right: 28em;
+            transform: translateX(-50%);
+            width: 2em;
+            height: 1em;
+            transition: 0.6s;
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .search-form.active {
+            position: absolute;
+            top: 8em;
+            right: 28em;
+            width: 2em;
+            height: 1em;
+            opacity: 1;
+            transition-delay: 0.4s;
+            visibility: visible;
+            background: transparent;
+        }
+        
+        .search-form input {
+            width: 20em;
+            height: 1.5em;
+            color: white;
+            border: none;
+            background: transparent;
+            outline: none;
+            font-size: 1em;
+        }
+    </style>
 </head>
 
-<body>
-    <title>Autoret</title>
+
+<body onload="showSlides(1);">
+    <div class="header"></div>
+
+    <div class="topnav">
+        <div class="majtas">
+            <div class="majtasnalt">MMM</div>
+            <div class="majtasposht">
+                <a href="../index.html">Ballina</a>
+                <a href="#">Librat</a>
+                <a href="../HTML/Autoret1.html">Autorët</a>
+            </div>
+        </div>
+
+        <div class="logoja">
+            <div class="sinanibabo">
+                <img src="../img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
+            </div>
+            <a href="../index.html" id='titulli'> <span>Biblioteka Sinan Dobreva</span></a>
+        </div>
+
+        <div class="djathtas">
+            <div class="djathtasnalt"></div>
+            <div class="djathtasposht">
+                <a href="./lajmi.html" class="menu-item" id="one">Lajme</a>
+                <a href="#" class="menu-item" id="two">Galeria</a>
+                <a href="#" class="menu-item" id="three">Kontakti</a>
+                <a href="#" id="search"><i class="fa fa-search"></i></a>
+            </div>
+            <div class="search-form">
+                <form>
+                    <input type="text" name="" placeholder="Kërkoni">
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
-<header>
-    <div class="logo">
 
-        <img :id="sinani" src="../img/sinani.png" alt="pldh" width="150em" height="100em">
-    </div>
-
-
-    <div class="navigationbar">
-
-        <li><a href="#home">Fillimi</a></li>
-        <li><a href="#publikimet">Publikimet</a></li>
-        <li><a href="#autoret">Autoret</a></li>
-
-        <li>
-            <a href="index.html">
-                <h4 id="biblioteka">Biblioteka "Sinan Dobreva"</h4>
-            </a>
-        </li>
-        <li><a href="#lajme">Lajme</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#kontakti">Kontakti</a></li>
-        <li><input id="#search" type="search" placeholder="Search" /></li>
-
-    </div>
-
-    <hr style="background-color: white;">
-
-</header>
-
-<body onload="showSlides(1);" style="background-color:#000000;"></body>
 
 <div class="titulli">
 
-    <h1>Autoret</h1>
+    <h1>Autorët</h1>
 
 </div>
-<hr>
+
 
 
 <div class="bllok-1">
 
     <h2>
-        <a href='../HTML/meshum.html'> Vendas</a>
+        <a href='../HTML/meshum.html'>Vendas</a>
     </h2>
     <br>
 
@@ -117,7 +279,7 @@
     </div>
     <br>
     <br>
-    <br>
+
 
     <div class="a1">
         <a href="../img/dritero.jpg">
@@ -150,6 +312,7 @@
             </p>
         </div>
     </div>
+    <br>
     <br>
     <br>
     <br>
@@ -226,19 +389,18 @@
             <img src="../img/EAP.jpg"> </a>
         <div class="id">
             <span id>Edgar Allan Poe</span>
+        </div>
 
-            <div class="Text">
-                <p>
-                    Millosh Gjergj Nikolla i njohur më shumë përmes nofkës Migjeni (Shkodër, 13 tetor 1911 - Torre Pellice, 26 gusht 1938) ka qenë poet dhe prozator i shquar shqiptar i viteve 1930. Migjeni konsiderohet si një ndër shkrimtarët më të lexuar e më të rëndësishëm
-                    të letërsisë shqipe të shekullit të 20-të. Për epokën ishte një zë krejtësisht novator nga brendia dhe forma dhe ndikimi mbi letërsinë shqipe të kohës ishte i madh.
-                </p>
-
-            </div>
+        <div class="Text">
+            <p>
+                Millosh Gjergj Nikolla i njohur më shumë përmes nofkës Migjeni (Shkodër, 13 tetor 1911 - Torre Pellice, 26 gusht 1938) ka qenë poet dhe prozator i shquar shqiptar i viteve 1930. Migjeni konsiderohet si një ndër shkrimtarët më të lexuar e më të rëndësishëm
+                të letërsisë shqipe të shekullit të 20-të. Për epokën ishte një zë krejtësisht novator nga brendia dhe forma dhe ndikimi mbi letërsinë shqipe të kohës ishte i madh.
+            </p>
         </div>
     </div>
     <br>
     <br>
-
+    <br>
 
     <div class="a1">
         <a href="../img/DA.jpg">
@@ -280,7 +442,7 @@
 <div class="center">
     <div class="meimiri">
 
-        <h2>Autoret Shqiptar me te vitit 2020 lexuar janë: </h2>
+        <h2>Autorët vendas me të lexuar të vitit 2020 janë: </h2>
 
     </div>
     <table class="content-table">
@@ -339,7 +501,7 @@
 <div class="center">
     <div class="meimiri2">
 
-        <h2>Autoret e huaj me te lexuar te vitit 2020 janë: </h2>
+        <h2>Autorët e huaj me të lexuar të vitit 2020 janë: </h2>
 
     </div>
 
