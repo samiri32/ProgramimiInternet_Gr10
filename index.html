@@ -27,17 +27,17 @@
         sinani.style.height = "6em";
       }
     }</script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
 
 
   <script type="text/javascript">
-        $(document).ready(function () {
-          $('#search').click(function () {
-            $('.menu-item').toggleClass('hide-item')
-            $('.search-form').toggleClass('active')
-          })
-        }) </script>
+    $(document).ready(function () {
+      $('#search').click(function () {
+        $('.menu-item').toggleClass('hide-item')
+        $('.search-form').toggleClass('active')
+      })
+    }) </script>
 
   </script>
   <style>
@@ -92,7 +92,7 @@
       overflow: hidden;
       position: -webkit-sticky;
       position: sticky;
-      z-index: 9000;
+      z-index: 1;
       top: 0;
       padding: 0px;
       background-color: black;
@@ -141,10 +141,10 @@
       width: 2em;
       height: 1em;
       transition: 0.6s;
-      opacity:0;
+      opacity: 0;
       visibility: hidden;
     }
-    
+
     .search-form.active {
       position: absolute;
       top: 8em;
@@ -179,7 +179,7 @@
     <div class="majtas">
       <div class="majtasnalt">ARTI NJERI MA I MIRI N BOTE</div>
       <div class="majtasposht">
-        <a href="#">Ballina</a>
+        <a href="./index.html">Ballina</a>
         <a href="#">Librat</a>
         <a href="#">Autorët</a>
       </div>
@@ -189,13 +189,13 @@
       <div class="sinanibabo">
         <img src="./img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
       </div>
-      <a href="titulli" id='titulli'> <span>Biblioteka Sinan Dobreva</span></a>
+      <a href="./index.html" id='titulli'> <span>Biblioteka Sinan Dobreva</span></a>
     </div>
 
     <div class="djathtas">
       <div class="djathtasnalt"></div>
       <div class="djathtasposht">
-        <a href="#" class="menu-item" id="one">Lajme</a>
+        <a href="./lajmi.html" class="menu-item" id="one">Lajme</a>
         <a href="#" class="menu-item" id="two">Galeria</a>
         <a href="#" class="menu-item" id="three">Kontakti</a>
         <a href="#" id="search"><i class="fa fa-search"></i></a>
@@ -203,7 +203,8 @@
       <div class="search-form">
         <form>
           <input type="text" name="" placeholder="Kërkoni">
-      </form> </div>
+        </form>
+      </div>
     </div>
   </div>
 
@@ -309,77 +310,139 @@
       </div>
     </div>
 
-      <div class="bs">LIBRAT MË TË HUAZUAR</div>
-      <div class="bestsellers">
-        <div class="libri">
-          <div class="bestsellersimg">
-            <img class="fototmodal" src="./img/hasha.jpg">
-            <div id="myModal" class="modal">
-              <span class="close">×</span>
-              <img class="modal-content" id="img">
-             
-            </div>
-          </div>
-          <div class="bestsellerstitulli">New State,
-            Modern Statesman: Hashim Thaci - A Biography
+    <div class="bs">LIBRAT MË TË HUAZUAR</div>
+    <div class="bestsellers">
+      <div class="libri">
+        <div class="bestsellersimg">
+          <img class="fototmodal" src="./img/hasha.jpg">
+          <div id="myModal" class="modal">
+            <span class="close">×</span>
+            <img class="modal-content" id="img">
+
           </div>
         </div>
-  
-        <div class="libri">
-          <div class="bestsellersimg">
-            <img class="fototmodal" src="./img/joe.jpg">
-            <div id="myModal" class="modal">
-              <span class="close">×</span>
-              <img class="modal-content" id="img">
-             
-            </div>
-          </div>
-          <div class="bestsellerstitulli"> Promise Me, Dad: The heartbreaking story of Joe Biden
-          </div>
-        </div>
-  
-        <div class="libri">
-          <div class="bestsellersimg">
-            <img class="fototmodal" src="./img/melania.jpg">
-            <div id="myModal" class="modal">
-              <span class="close">×</span>
-              <img class="modal-content" id="img">
-              
-            </div>
-          </div>
-          <div class="bestsellerstitulli"> The Art of Her Deal: The Untold Story of Melania Trump
-          </div>
-        </div>
-  
-        <div class="libri">
-          <div class="bestsellersimg">
-            <img class="fototmodal" src="./img/kupi.png">
-            <div id="myModal" class="modal">
-              <span class="close">×</span>
-              <img class="modal-content" id="img">
-             
-            </div>
-          </div>
-          <div class="bestsellerstitulli"> A new state, A modern statesman - The Biography
-          </div>
-        </div>
-  
-        <div class="libri">
-          <div class="bestsellersimg">
-            <img class="fototmodal" src="./img/xhaxhienver.jpg">
-            <div id="myModal" class="modal">
-              <span class="close">×</span>
-              <img class="modal-content" id="img">
-             
-            </div>
-          </div>
-          <div class="bestsellerstitulli"> Enver Hoxha: The Iron Fist of Albania
-          </div>
+        <div class="bestsellerstitulli">New State,
+          Modern Statesman: Hashim Thaci - A Biography
         </div>
       </div>
 
-    </div>
+      <div class="libri">
+        <div class="bestsellersimg">
+          <img class="fototmodal" src="./img/joe.jpg">
+          <div id="myModal" class="modal">
+            <span class="close">×</span>
+            <img class="modal-content" id="img">
 
+          </div>
+        </div>
+        <div class="bestsellerstitulli"> Promise Me, Dad: The heartbreaking story of Joe Biden
+        </div>
+      </div>
+
+      <div class="libri">
+        <div class="bestsellersimg">
+          <img class="fototmodal" src="./img/melania.jpg">
+          <div id="myModal" class="modal">
+            <span class="close">×</span>
+            <img class="modal-content" id="img">
+
+          </div>
+        </div>
+        <div class="bestsellerstitulli"> The Art of Her Deal: The Untold Story of Melania Trump
+        </div>
+      </div>
+
+      <div class="libri">
+        <div class="bestsellersimg">
+          <img class="fototmodal" src="./img/kupi.png">
+          <div id="myModal" class="modal">
+            <span class="close">×</span>
+            <img class="modal-content" id="img">
+
+          </div>
+        </div>
+        <div class="bestsellerstitulli"> A new state, A modern statesman - The Biography
+        </div>
+      </div>
+
+      <div class="libri">
+        <div class="bestsellersimg">
+          <img class="fototmodal" src="./img/xhaxhienver.jpg">
+          <div id="myModal" class="modal">
+            <span class="close">×</span>
+            <img class="modal-content" id="img">
+
+          </div>
+        </div>
+        <div class="bestsellerstitulli"> Enver Hoxha: The Iron Fist of Albania
+        </div>
+      </div>
+    </div>
+<br><br>
+
+<div class="bs">AUTORËT E HUAJ MË TË LEXUAR</div>
+
+    <div class="row3">
+      <div class="kolona1" style="background-color: white;">
+        <div class="autori">
+          <a href="#"> <img src="./img/MT.jpg" alt="Ekspozitaaa!!!"><br>
+            <span id='lajmekuq'>Më shumë</span><br>
+            <span>Mark Twain</span></a>
+        </div><br><br>
+
+        <div class="autori">
+          <a href="#"> <img src="./img/EAP.jpg" alt="Fan STILIAN Noli!!!"><br>
+            <span id='lajmekuq'>Më shumë</span><br>
+            <span>Edgar Allan Poe</span></a>
+        </div>
+
+      </div>
+      <div class="kolona2" style="background-color: white;">
+        <div class="autori">
+          <a href="#"> <img src="./img/FK.jpg" alt="pls qelu ma shpejt kena me msu pls plsplspslsp!!!"><br>
+            <span id='lajmekuq'>Më shumë</span><br>
+            <span>Franz Kafka</span><br>
+          </a>
+        </div><br><br>
+
+        <div class="autori">
+          <a href="#"> <img src="./img/EH.jpg" alt="!!!"><br>
+            <span id='lajmekuq'>Më shumë</span><br>
+            <span>Ernest Hemingway</span><br></a>
+        </div><br><br>
+
+
+      </div>
+
+
+      <div class="kolona3" style="background-color: white;">
+        <div class="autorimmv">
+          <div class="dantepjesepjese">
+          <a href="#"> <img src="./img/dante.png"
+              alt="!!!"><br>
+            <div class="emrietj">Dante Alighieri<br>
+              <span id='lajmekuq'>Më shumë</span><br>
+          <span><strong>'Dantja i pashmangshëm'</strong> ose <br> <strong>'Histori e shkurtër e Shqipërisë me Dante 
+            Aligerin'</strong> <br> sprovë me Autor Ismail Kadare.</span></a></div></div>
+</div></div></div>
+        <br><br>
+
+        
+      
+
+    <div class="row4">
+      <div class="shortcuts">
+        <div class="shortcutnalt"> 
+          <div class="bs">VEGËZA TË DOBISHME</div>
+        </div>
+        <div class="shortcutposht">
+      <a href="#" class="eee" id="sdds">Libra</a>
+      <a href="#" class="eee" id="fdsfdsf">Autorët</a>
+      <a href="#" class="eee" id="fsdfdsf">Lajme</a>
+
+    </div>
+   </div>
+</div>
   </div>
 
   <hr>
@@ -389,7 +452,8 @@
       <h1>ejwkrlk;qwejrqw;elkrj</h1>
     </div>
 
-</footer>
-<script src="./js/skripta.js"></script>
+  </footer>
+  <script src="./js/skripta.js"></script>
 </body>
+
 </html>

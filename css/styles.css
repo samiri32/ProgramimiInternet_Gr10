@@ -4,6 +4,10 @@
       font-size: 0.65em;
       font-family: "Arnhem", Times, Courier, serif;
     }
+    
+    .djathtas a, .majtas a{
+      font-family:"Arnhem", Times, Courier, serif;
+    }
 
     .row {
       padding: 4em 6em 0em 6em;
@@ -17,6 +21,56 @@
       display: -webkit-flex;
       display: flex;
     }
+    
+    .row3{
+      padding: 4em 6em 0em 6em;
+      display: -webkit-flex;
+      display: flex;
+      column-gap: 0.5em;
+      justify-content: space-around;
+    }
+    .row4{
+      padding: 4em 6em 0em 6em;
+      display: -webkit-grid;
+      display: grid;
+    }
+    .row4 a{
+      padding-top: 2em;
+      padding-bottom: 2em;
+      padding-left: 2em;
+      padding-right: 2em;
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      font-family: "Calibre", Helvetica, Arial, sans-serif;
+      font-size: 2em;
+      color: black;
+    }
+
+    .shortcutposht{
+    display: block;
+    text-align: center;
+    }
+
+    .row4 a:hover{
+      color:red;
+      text-decoration: none;
+    }
+  
+    .kolona1, .kolona2{
+      background-color: white;
+      -webkit-flex: 0.5;
+      -ms-flex: 0.5;
+      flex: 0.5;
+    }
+
+    .kolona3 {
+      background-color: white;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+    }
 
     .kolonarresht {
       padding: 1.5em 0em;
@@ -25,6 +79,12 @@
       -webkit-flex: 10;
       -ms-flex: 10;
       flex: 10;
+    }
+
+    .shortcuts {
+      padding: 1.5em 0em;
+      border-top: 0.5em solid #000;
+      border-bottom: 0.5em solid #000;
     }
 
     .bs{
@@ -86,12 +146,50 @@
       color: black;
       font-size: 1.75em;
     }
-
+    .autori a{
+      font-family: "Arnhem", Times, Courier, serif;
+      text-decoration: none;
+      color: black;
+      font-size: 1.75em;
+    }
     .lajmimes a {
       font-family: "Arnhem", Times, Courier, serif;
       text-decoration: none;
       color: black;
       font-size: 1.75em;
+    }
+
+    .autorimmv a{
+      font-family: "Arnhem", Times, Courier, serif;
+      text-decoration: none;
+      color: black;
+      font-size: 1.75em;
+    }
+
+    .autori img {
+      border-top: 0.3em solid #000;
+      padding-top: 0.85em;
+      width: 70%;
+      height: 70%;
+    }
+
+    .autorimmv img {
+      border-top: 0.3em solid #000;
+      padding-top: 0.85em;
+      width: 100%;
+      height: 100%;
+    }
+
+    .dantepjesepjese {
+      display: flex;
+      float: left;
+      justify-content: space-between;
+      column-gap: 1em;
+    }
+    .dantepjesepjese span{
+      font-size: 0.55em;
+      font-style: italic;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     .lajmimes img {
@@ -186,7 +284,6 @@
 
 #fototmodal:hover {opacity: 0.7;}
 
-
 .modal {
   display: none; 
   position: fixed; 
@@ -201,17 +298,12 @@
   background-color: rgba(0,0,0,0.9); 
 }
 
-
 .modal-content {
   margin: auto;
   display: block;
   min-height:90%;
- 
   max-width: 30%;
 }
-
-
-
 
 .modal-content, #caption {  
   -webkit-animation-name: zoom;
