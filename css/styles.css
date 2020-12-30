@@ -1,321 +1,422 @@
+#elaborimi {
+  color: black;
+  font-size: 0.65em;
+  font-family: "Arnhem", Times, Courier, serif;
+}
 
-    #elaborimi {
-      color: black;
-      font-size: 0.65em;
-      font-family: "Arnhem", Times, Courier, serif;
-    }
-    
-    .djathtas a, .majtas a{
-      font-family:"Arnhem", Times, Courier, serif;
-    }
+.djathtas a, .majtas a {
+  font-family: "Arnhem", Times, Courier, serif;
+}
 
-    .row {
-      padding: 4em 6em 0em 6em;
-      display: -webkit-flex;
-      display: flex;
-      column-gap: 2.5em;
-    }
-    .row2{
-      padding: 4em 6em 0em 6em;
-      display: -webkit-flex;
-      display: flex;
-    }
-    
-    .row5pjesepjese{
-      display: grid;
-      align-items: center;
-    }
+.row {
+  padding: 4em 6em 0em 6em;
+  display: -webkit-flex;
+  display: flex;
+  column-gap: 2.5em;
+}
 
-    .perberja{
-      padding: 4em 6em 0em 6em;
-      display: -webkit-flex;
-      display: flex;
-      column-gap: 2.8em;
-      justify-content: space-around;
-    }
+.row2 {
+  padding: 4em 6em 0em 6em;
+  display: -webkit-flex;
+  display: flex;
+}
 
-    .kolona1p{
-      background-color: white;
-      -webkit-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-      text-align:initial;
-    }
-    #kolona1pp {
-      font-family: fontivogel;
-      font-size: 1.2em;
-      
-    
-    
-    }
-    .row3{
-      padding: 4em 6em 0em 6em;
-      display: -webkit-flex;
-      display: flex;
-      column-gap: 0.5em;
-      justify-content: space-around;
-    }
-    .row4, .row5{
-      padding: 4em 6em 0em 6em;
-      display: -webkit-grid;
-      display: grid;
-    }
-    .row4 a{
-      padding-top: 2em;
-      padding-bottom: 2em;
-      padding-left: 2em;
-      padding-right: 2em;
-      text-decoration: none;
-      position: relative;
-      display: inline-block;
-      text-align: center;
-      font-family: "Calibre", Helvetica, Arial, sans-serif;
-      font-size: 2em;
-      color: black;
-    }
+.row5pjesepjese {
+  display: grid;
+  align-items: center;
+}
 
-    .shortcutposht{
-    display: block;
-    text-align: center;
-    }
+.perberja {
+  padding: 4em 6em 0em 6em;
+  display: -webkit-flex;
+  display: flex;
+  column-gap: 2.8em;
+  justify-content: space-around;
+}
 
-    .row4 a:hover{
-      color:red;
-      text-decoration: none;
-    }
+.subfooternalt {
+  padding: 0em 8em 3em 6em;
+  display: -webkit-flex;
+  display: flex;
+  column-gap: 2.8em;
+  justify-content: space-around;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.subfooternalt span {
+  font-family: "Arnhem", Times, Courier, serif;
+  font-size: 1.7em;
+}
+
+#emailinput {
+  width: 16.7em;
+  height: 2em;
+}
+
+#emailform {
+  display: flex;
+  float: left;
+}
+
+.dergo {
+  padding-left: 1em;
+}
+
+input[type="submit"] {
+  height: 3.6em;
+  width: 10em;
+  color: white;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #D9D9D9;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  color: red;
+}
+
+input[type=email] {
+  font-size: 1.5em;
+}
+
+.buton {
+  height: 3.6em;
+  width: 10em;
+  color: white;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #D9D9D9;
+  border: none;
+}
+
+#h5 {
+  margin-top: 0.5em;
+  color: #0075ff;
+}
+
+.buton:hover {
+  color: red;
+}
+
+#emailinput::placeholder {
+  font-size: 1em;
+  padding-left: 0.5em;
+}
+
+.subfooterposht {
+  padding: 4em 3em 2em 3em;
+  display: -webkit-flex;
+  display: flex;
+  float: left;
+  column-gap: 1em;
+  justify-content: space-between;
+}
+
+.sbkol2 {
+  -webkit-flex: 0.2;
+  float: left;
+  -ms-flex: 0.2;
+  flex: 0.2;
+  text-align: center;
+}
+
+.sbkol2 ul {
+  list-style: none;
+}
+
+#spansbkol2 {
   
-    .kolona1, .kolona2{
-      background-color: white;
-      -webkit-flex: 0.5;
-      -ms-flex: 0.5;
-      flex: 0.5;
-    }
+  color: black;
+}
 
-    .kolona3 {
-      background-color: white;
-      -webkit-flex: 1;
-      -ms-flex: 1;
-      flex: 1;
-    }
+.sbkol2 ul a:link {
+  text-decoration: none;
+}
 
-    .kolonarresht {
-      padding: 1.5em 0em;
-      border-top: 0.5em solid #000;
-      border-bottom: 0.5em solid #000;
-      -webkit-flex: 10;
-      -ms-flex: 10;
-      flex: 10;
-    }
+.sbkol2 ul a:visited {
+  text-decoration: none;
+  color: gray;
+}
 
-    .shortcuts {
-      padding: 1.5em 0em;
-      border-top: 0.5em solid #000;   
-      border-bottom: 0.5em solid black;
-    }
+.sbkol2 ul a:hover {
+  color: red;
+}
 
-    .bs{
-      font-family: "Calibre",Helvetica,Arial,sans-serif;
-      font-weight: bold;
-      letter-spacing:0.1em;
-      font-size: 1em;
-      padding: 1.7em;
-      display: grid;
-      text-align: center;
-    }
+.kolona1p {
+  background-color: white;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: initial;
+}
 
-    .bestsellers {
-      padding: 0em 6em 0em 6em;
-      display: -webkit-flex;
-      display: flex;
-      column-gap: 2.5em;
-    }
+#kolona1pp {
+  font-family: fontivogel;
+  font-size: 1.2em;
+}
 
-    .bestsellerstitulli{
-      color: black;
-      padding: 0.75em;
-      font-family: "Calibre", Helvetica, Arial, sans-serif;
-      font-size: 1em;
-      font-weight: bold;
-    }
+.row3 {
+  padding: 4em 6em 0em 6em;
+  display: -webkit-flex;
+  display: flex;
+  column-gap: 0.5em;
+  justify-content: space-around;
+}
 
-    .libri img {
-      padding-top: 0.75em;
-      width: 100%;
-      max-height: 18em;
+.row4, .row5, .row6 {
+  padding: 4em 6em 0em 6em;
+  display: -webkit-grid;
+  display: grid;
+}
 
-    }
+.row4 a {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-family: "Calibre", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  color: black;
+}
 
-    .libri {
-      background-color: white;
-      -webkit-flex: 0.8;
-      -ms-flex: 0.8;
-      flex: 0.8;
-    }
+.shortcutposht {
+  display: block;
+  text-align: center;
+}
 
-    .column.side {
-      background-color: white;
-      -webkit-flex: 0.8;
-      -ms-flex: 0.8;
-      flex: 0.8;
-    }
+.row4 a:hover {
+  color: red;
+  text-decoration: none;
+}
 
-    .column.middle {
-      background-color: white;
-      -webkit-flex: 1.4;
-      -ms-flex: 1.4;
-      flex: 1.4;
-    }
+.kolona1, .kolona2 {
+  background-color: white;
+  -webkit-flex: 0.5;
+  -ms-flex: 0.5;
+  flex: 0.5;
+}
 
-    .lajmi a {
-      font-family: "Arnhem", Times, Courier, serif;
-      text-decoration: none;
-      color: black;
-      font-size: 1.75em;
-    }
-    .autori a{
-      font-family: "Arnhem", Times, Courier, serif;
-      text-decoration: none;
-      color: black;
-      font-size: 1.75em;
-    }
-    .lajmimes a {
-      font-family: "Arnhem", Times, Courier, serif;
-      text-decoration: none;
-      color: black;
-      font-size: 1.75em;
-    }
+.kolona3 {
+  background-color: white;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
 
-    .autorimmv a{
-      font-family: "Arnhem", Times, Courier, serif;
-      text-decoration: none;
-      color: black;
-      font-size: 1.75em;
-    }
+.kolonarresht {
+  padding: 1.5em 0em;
+  border-top: 0.5em solid #000;
+  border-bottom: 0.5em solid #000;
+  -webkit-flex: 10;
+  -ms-flex: 10;
+  flex: 10;
+}
 
-    .autori img {
-      border-top: 0.3em solid #000;
-      padding-top: 0.85em;
-      width: 70%;
-      height: 70%;
-    }
+.shortcuts {
+  padding: 1.5em 0em;
+  border-top: 0.5em solid #000;
+  border-bottom: 0.5em solid black;
+}
 
-    .autorimmv img {
-      border-top: 0.3em solid #000;
-      padding-top: 0.85em;
-      width: 100%;
-      height: 100%;
-    }
+.bs {
+  font-family: "Calibre", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-size: 1em;
+  padding: 1.7em;
+  display: grid;
+  text-align: center;
+}
 
-    .dantepjesepjese {
-      display: flex;
-      float: left;
-      justify-content: space-between;
-      column-gap: 1em;
-    }
-    #perdanten{
-      font-size: 0.55em;
-      font-style: italic;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+.bestsellers {
+  padding: 0em 6em 0em 6em;
+  display: -webkit-flex;
+  display: flex;
+  column-gap: 2.5em;
+}
 
-    .lajmimes img {
-      border-top: 0.3em solid #000;
-      padding-top: 0.85em;
-      width: 100%;
-      height: 100%;
-    }
+.bestsellerstitulli {
+  color: black;
+  padding: 0.75em;
+  font-family: "Calibre", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
 
-    #lajmekuq {
-      color: red;
-      font-family: "Calibre", Helvetica, Arial, sans-serif;
-      font-size: 0.5em;
-      font-weight: bold;
-      
-    }
-    #lajmekuq5 {
-      color: red;
-      font-family: Helvetica;
-      letter-spacing:0.1em; 
-      font-weight: bold;
-      font-size:0.35em;
-      text-transform: uppercase;
-      
-    }
+.libri img {
+  padding-top: 0.75em;
+  width: 100%;
+  max-height: 18em;
+}
 
-    .lajmi img {
-      border-top: 0.3em solid #000;
-      padding-top: 0.85em;
-      width: 100%;
-      height: 100%;
-    }
-    
-    @font-face {
-      font-family: fontivogel;
-      src: url(klim.co.nz/retail-fonts/calibre);
-    }
+.libri {
+  background-color: white;
+  -webkit-flex: 0.8;
+  -ms-flex: 0.8;
+  flex: 0.8;
+}
 
-    /*SLLAJDSHOU*/
-    .Sllajdet {
-      display: grid;
-    }
+.column.side {
+  background-color: white;
+  -webkit-flex: 0.8;
+  -ms-flex: 0.8;
+  flex: 0.8;
+}
 
-    .slideshow-container {
-      position: relative;
-    }
+.column.middle {
+  background-color: white;
+  -webkit-flex: 1.4;
+  -ms-flex: 1.4;
+  flex: 1.4;
+}
 
-    .slideshow-container img {
-      height: 450px !important;
-    }
+.lajmi a {
+  font-family: "Arnhem", Times, Courier, serif;
+  text-decoration: none;
+  color: black;
+  font-size: 1.75em;
+}
 
-    .mrapa,
-    .para {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      font-family: Helvetica;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
-    }
+.autori a {
+  font-family: "Arnhem", Times, Courier, serif;
+  text-decoration: none;
+  color: black;
+  font-size: 1.75em;
+}
 
-    .para {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
+.lajmimes a {
+  font-family: "Arnhem", Times, Courier, serif;
+  text-decoration: none;
+  color: black;
+  font-size: 1.75em;
+}
 
-    .mrapa:hover,
-    .para:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
+.autorimmv a {
+  font-family: "Arnhem", Times, Courier, serif;
+  text-decoration: none;
+  color: black;
+  font-size: 1.75em;
+}
 
-    .dot {
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
-    }
+.autori img {
+  border-top: 0.3em solid #000;
+  padding-top: 0.85em;
+  width: 70%;
+  height: 70%;
+}
 
-    .active,
-    .dot:hover {
-      background-color: #717171;
-    }
+.autorimmv img {
+  border-top: 0.3em solid #000;
+  padding-top: 0.85em;
+  width: 100%;
+  height: 100%;
+}
 
-    #fototmodal {
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s;
-  }
-  
-  body {font-family: Arial, Helvetica, sans-serif;}
+.dantepjesepjese {
+  display: flex;
+  float: left;
+  justify-content: space-between;
+  column-gap: 1em;
+}
+
+#perdanten {
+  font-size: 0.55em;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.lajmimes img {
+  border-top: 0.3em solid #000;
+  padding-top: 0.85em;
+  width: 100%;
+  height: 100%;
+}
+
+#lajmekuq {
+  color: red;
+  font-family: "Calibre", Helvetica, Arial, sans-serif;
+  font-size: 0.5em;
+  font-weight: bold;
+}
+
+#lajmekuq5 {
+  color: red;
+  font-family: Helvetica;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  font-size: 0.35em;
+  text-transform: uppercase;
+}
+
+.lajmi img {
+  border-top: 0.3em solid #000;
+  padding-top: 0.85em;
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: fontivogel;
+  src: url(klim.co.nz/retail-fonts/calibre);
+}
+
+/*SLLAJDSHOU*/
+
+.Sllajdet {
+  display: grid;
+}
+
+.slideshow-container {
+  position: relative;
+}
+
+.slideshow-container img {
+  height: 450px !important;
+}
+
+.mrapa, .para {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.para {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.mrapa:hover, .para:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
 
 #fototmodal {
   border-radius: 5px;
@@ -323,30 +424,42 @@
   transition: 0.3s;
 }
 
-#fototmodal:hover {opacity: 0.7;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#fototmodal {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#fototmodal:hover {
+  opacity: 0.7;
+}
 
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 100px; 
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.9); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
   margin: auto;
   display: block;
-  min-height:90%;
+  min-height: 90%;
   max-width: 30%;
 }
 
-.modal-content, #caption {  
+.modal-content, #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -354,15 +467,22 @@
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
+  from {
+    -webkit-transform: scale(0)
+  }
+  to {
+    -webkit-transform: scale(1)
+  }
 }
 
 @keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
 }
-
 
 .close {
   position: absolute;
@@ -374,20 +494,20 @@
   transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
 }
 
-#sinaniposht{
-  padding-top:0.1em;
-  font-family:"Arnhem", Times, Courier, serif;
-  font-size:1.4em;
+#sinaniposht {
+  padding-top: 0.1em;
+  font-family: "Arnhem", Times, Courier, serif;
+  font-size: 1.4em;
   letter-spacing: 0.1em;
 }
-#katalogu{
-  color:black;
+
+#katalogu {
+  color: black;
   text-decoration: none;
 }
