@@ -1,0 +1,65 @@
+.kycunidiv{
+    padding: 4em 6em 4em 6em;
+    box-sizing: border-box; 
+    width: 100%; 
+    display: grid;
+    align-content: center; 
+    align-items: center; 
+}
+#kycuforma{
+    align-self: center;
+}
+.kycunimrena{
+    padding-top: 2em;
+    width: 20em;
+}
+
+#rrite{
+    font-size: 1.3em;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+
+}
+
+#kycuu{
+  height: 2.5em;
+  width: 5em;
+  color: white;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #d9d9d9;
+  border: none;
+}
+
+
+#kycuu:hover {
+    color: red;
+  }
+
+#qek{
+    font-size: 0.6em;
+}
+
+.psww{
+    font-size: 0.9em;
+}
+.harrovapsw{
+    padding-top: 0.3em;
+}
+.harrovapsw a:visited{
+    color: gray;
+    text-decoration: none;
+}
+.harrovapsw a:hover{
+    color:red;
+    text-decoration: none;
+}
+.harrovapsw a:link{
+    color:black;
+    text-decoration: none;
+}
+
+#kycuforma {    
+    margin: auto;
+    width: 20em; 
+    
+}
