@@ -21,6 +21,11 @@
   display: flex;
 }
 
+.majtasposht a:hover{
+  transition: 0.6s ease;
+}
+
+
 .row5pjesepjese {
   display: grid;
   align-items: center;
@@ -121,6 +126,30 @@ input[type=email] {
   text-align: center;
 }
 
+
+.futeri{
+  height:9em;
+  background-color: black;
+}
+
+.sbkol3{
+  color:white;
+  -webkit-flex: 2;
+  float: left;
+  -ms-flex: 2;
+  flex: 2;
+  text-align: center;
+}
+
+.sbkol33{
+  color:white;
+  -webkit-flex: 5;
+  float: left;
+  -ms-flex: 5;
+  flex: 5;
+  text-align: center;
+}
+
 .sbkol2 ul {
   list-style: none;
 }
@@ -132,6 +161,7 @@ input[type=email] {
 
 .sbkol2 ul a:link {
   text-decoration: none;
+  color:black;
 }
 
 .sbkol2 ul a:visited {
@@ -162,6 +192,22 @@ input[type=email] {
   display: flex;
   column-gap: 0.5em;
   justify-content: space-around;
+}
+
+.futerimrena{
+  padding: 0em 6em 0em 6em;
+  display: -webkit-grid;
+  display: grid;
+
+}
+
+.futerimamrena{
+  padding: 4em 3em 2em 3em;
+  display: -webkit-flex;
+  display: flex;
+  float: left;
+  column-gap: 7em;
+  align-items: center;
 }
 
 .row4, .row5, .row6 {
@@ -511,3 +557,23 @@ body {
   color: black;
   text-decoration: none;
 }
+
+.sbkol3 a:link{
+color:white;
+}
+.sbkol3 a:visited{
+  color:white;
+}
+.sbkol3 a:hover{
+  color:red;
+}
+
+#socialmedia{
+  font-size: 2em;
+}
+
+#suxhuki{
+  font-size: 0.8em;
+}
+
+
