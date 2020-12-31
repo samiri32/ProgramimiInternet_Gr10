@@ -333,3 +333,21 @@ td {
 .flip-card-back p {
     margin: 0 20px;
 }
+
+.aaa p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: -3em;
+    font-size: 22px;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: grey;
+}
