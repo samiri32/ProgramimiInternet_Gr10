@@ -1,0 +1,27 @@
+.kycunidiv {  
+    box-sizing: border-box; 
+    width: 100%; 
+    float: left; 
+    align-content: center; 
+    align-items: center; 
+} 
+   
+#regjistrohuform{    
+    margin: 0 auto; 
+    width: 45em; 
+    margin-top: -1.7em;
+}
+
+#ndrysho:hover {
+    color: red;
+  }
+
+  #ndrysho {
+    height: 3.6em;
+    width: 10em;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #D9D9D9;
+    border: none;
+  }

@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="/css/regjistrohu.css">
   <link rel="stylesheet" href="/css/kycu.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -181,7 +182,7 @@
         <a href="../index.html">Ballina</a>
         <a href="./Autoret1.html">Autorët</a>
         <a href="#">Librat</a>
-        <a href="./HTML/lajmi.html">Lajme</a>
+        <a href="./lajmi.html">Lajme</a>
       </div>
     </div>
 
@@ -195,7 +196,7 @@
     <div class="djathtas">
       <div class="djathtasnalt"></div>
       <div class="djathtasposht">
-        <a href="./HTML/lajmi.html" class="menu-item" id="one">Galeria</a>
+        <a href="./lajmi.html" class="menu-item" id="one">Galeria</a>
         <a href="#" class="menu-item" id="two">Kontakti</a>
         <a href="./kycu.html" class="menu-item" id="three">Kyçu</a>
         <a href="#" id="search"><i class="fa fa-search"></i></a>
@@ -209,30 +210,66 @@
   </div>
 
   <div class="homepage">
-   <div  class="kycunidiv">
+    <div class="kycunidiv">
+      
+            <h1 style="text-align: center; display: inline;" >Regjistrohuni në BSD</h1> 
 
-    <form id="kycuforma" action="submit.html" target="_blank">
-      <div class="kycunimrena">
-        <label for="email"><b>Email</b></label><br>
-        <input type="text" placeholder="Emaili juaj këtu" name="email" required id="rrite"><br><br>
-    
-        <label for="psw"><b>Password</b></label><br>
-        <input type="password" placeholder="Fjalëkalimi juaj këtu" name="psw" required id="rrite"><br><br>
-         
-        <button type="submit" id="kycuu">Kyçu</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember" id="qek"> Më mbaj mend
-        </label>
-      </div>
-    
-      <div class="harrovapsw" style>
-        <a href="#"><span class="psww">Keni harruar fjalëkalimin?</span></a><br>
-        <a href="./regjistrohu.html"><span class="psww">Nuk jeni regjistruar ende?</span></a>
-      </div>
-    </form>
-    
-   </div>
+            <form id="regjistrohuform" form name="Formaperregjister" action="./submit.html" target="_blank"
+            onsubmit="return REGJISTRIMI()" method="post"> 
 
+                  <div class="kycunimrena">
+
+                <p>Emri:<br> <input type="text" 
+                                size="65" name="Emri" id="rrite"></p> 
+                <br> 
+                <p>Adresa:<br> <input type="text" 
+                                   size="65" name="Adresa"id="rrite"></p> 
+                <br> 
+                <p>E-mail:<br> <input type="text" 
+                                       size="65" name="Email" id="rrite"></p> 
+                <br> 
+                <p>Password:<br> <input type="password" 
+                                    size="65" name="Password" id="rrite"></p> 
+                <br> 
+                <p>Telefoni:<br><input type="text" 
+                                     size="65" name="Telefoni" id="rrite"></p> 
+                <br>
+
+                <form action="/action_page.php">
+                    <p>Gjinia:</p>
+                    <input type="radio" name="Gjinia" value="mashkull">
+                    <label for="male">Mashkull</label><br>
+                    <input type="radio" name="Gjinia" value="femër">
+                    <label for="female">Femër</label><br>
+                    <input type="radio" name="Gjinia" value="tjetër">
+                    <label for="other">Tjetër</label>
+                  <br>
+                    <br>  
+                <p> 
+                    Kategoria: 
+                    <select type="text" value="" name="Lloji" id="rrite"> 
+                      <option value="none" selected disabled hidden></option>
+                        <option>Nxënës</option> 
+                        <option>Student</option> 
+                        <option>Staf</option> 
+                        <option>Tjetër</option> 
+                        
+                    </select> 
+                </p> 
+                <br> 
+                <br> 
+                <p>Koment:<br> <textarea cols="55" 
+                                       name="Koment" id="rrite"> </textarea></p> 
+                <p> 
+                    <input type="submit" 
+                           value="Regjistrohu" name="Regjistrohu"> 
+                    <input type="reset" 
+                           value="Fshij" name="Fshij" id="ndrysho"> 
+                </p> 
+            </form> 
+        </div>
+
+    </div>
 
 
 
@@ -244,7 +281,7 @@
         <div class="shortcutposht">
           <a href="#" class="eee" id="sdds">Libra</a>
           <a href="./Autoret1.html" class="eee" id="fdsfdsf">Autorët</a>
-          <a href="./HTML/lajmi.html" class="eee" id="fsdfdsf">Lajme</a>
+          <a href="./lajmi.html" class="eee" id="fsdfdsf">Lajme</a>
 
         </div>
       </div>
@@ -277,7 +314,7 @@
             <br><p id="kolona1pp">Biblioteka BSD ofron qasje në materialin bibliotekar për të gjithë përdoruesit e qytetit të Prishtinës me rrethinë, 
             pavarësisht nga raca, kombësia, gjinia, mosha, besimi fetar,
              gjuha, paaftësitë fizike dhe informon e ndihmon ata në përdorimin e gjetjen e tyre.</p>
-             <a href="regjistrohu.html">
+             <a href="#">
               <p id="katalogu">Regjistrohu</p>
             </a>
             </div>
@@ -350,7 +387,7 @@
         <div class="sbkol2">
           
           <ul>
-            <li><a href="./HTML/lajmi.html"><span>Lajme</span></a>
+            <li><a href="./lajmi.html"><span>Lajme</span></a>
           </li>
             
           </ul>
@@ -379,7 +416,7 @@
         <div class="sbkol2">
           
           <ul>
-            <li><a href="regjistrohu.html"><span>Regjistrohu</span></a>
+            <li><a href="#"><span>Regjistrohu</span></a>
           </li>
           </ul>
         </div>
@@ -419,6 +456,7 @@
     </div> 
   </footer>
   <script src="../js/skripta.js"></script>
+  <script src="../js/regjistrohu.js"></script>
 
 
 </body>
