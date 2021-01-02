@@ -30,10 +30,8 @@ function showError(error) {
   }
 }
 
-
-
 var cn= document.getElementById('cw');;
-
+var requestingFrame=false;
 var c;
 var u = 10;
 const m = {
@@ -45,7 +43,7 @@ window.onmousemove = function(e) {
     m.y = e.clientY;
 
 }
-function gc() {
+function gc() { 
     var s = "0123456789ABCDEF";
     var c = "#";
     for (var i = 0; i < 6; i++) {
@@ -54,10 +52,19 @@ function gc() {
     return c
 }
 var a = [];
-window.onload = function myfunction() {
+
+
+function nisja(){
+  requestingFrame=!requestingFrame;
+  
+  generateColors();
+  playPause();
+}
+
+function generateColors() {
     cn = document.getElementById('cw');
     c = cn.getContext('2d');
-
+    a=[];
     for (var i = 0; i < 10; i++) {
         var r = 30;
         var x = Math.random() * (innerWidth - 2 * r) + r;
@@ -70,7 +77,7 @@ window.onload = function myfunction() {
     c.lineWidth = "2";
     c.globalAlpha = 0.5;
     resize();
-    anim()
+    anim();
 }
 window.onresize = function() {
 
@@ -120,6 +127,8 @@ function ob(x, y, r, cc, o, s) {
     }
 }
 function anim() {
+  if(!requestingFrame)
+  return;
     requestAnimationFrame(anim);
     c.fillStyle = "rgba(0,0,0,0.05)";
     c.fillRect(0, 0, cn.width, cn.height);
@@ -141,25 +150,24 @@ function anim() {
   
   
   function updateBackground() {
-    var 
-      hr = (new Date()).getHours(),
-      body = document.body,
-      bstyle = body.style,    
-      ditanata = document.querySelector(".ditanata");    
-      if (hr < 20 && hr>7) {
-        bstyle.backgroundColor = "white";
-        bstyle.color = "black";
-        ditanata.innerText = "Have a good morning";
-      } else if (hr > 20 && hr<7) {
-        bstyle.backgroundColor = "green";
-        bstyle.color = "black";
-        ditanata.innerText ="NATE";
-      } else {
-        bstyle.backgroundColor = "black";
-        bstyle.color = "white";
-        ditanata.innerText ="NATA";
-      } 
-  }
+   const hour = new Date().getHours();
+      const backgroundImage=document.body.style.backgroundImage;
   
+      if(document.body){
+  
+      if (7 <= hour && hour< 20) {
+      
+       backgroundImage="url('../img/dita.jpg')";
+        
+      } else  {
+       
+       backgroundImage="url('../img/nata.jpg')";
+        
+      } 
+     
+    }
+  }
+
+
   setInterval(updateBackground, 1000 * 60);
   updateBackground();

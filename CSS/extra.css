@@ -9,21 +9,23 @@
     height:3em;
 }
 
-.cw {
+#cw {
+   
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 30em ;
+    height: 18em ;
     overflow: scroll;
 }
 
 .canvasi{
-    display:block;
+    display:flex;
     align-items: center;
     border:1px solid black;
 
 }
 
 .butonicanvas{
+  
     width:8em;
     height: 4em;
 }
