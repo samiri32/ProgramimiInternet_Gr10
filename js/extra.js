@@ -140,5 +140,26 @@ function anim() {
   } 
   
   
-
-
+  function updateBackground() {
+    var 
+      hr = (new Date()).getHours(),
+      body = document.body,
+      bstyle = body.style,    
+      ditanata = document.querySelector(".ditanata");    
+      if (hr < 20 && hr>7) {
+        bstyle.backgroundColor = "white";
+        bstyle.color = "black";
+        ditanata.innerText = "Have a good morning";
+      } else if (hr > 20 && hr<7) {
+        bstyle.backgroundColor = "green";
+        bstyle.color = "black";
+        ditanata.innerText ="NATE";
+      } else {
+        bstyle.backgroundColor = "black";
+        bstyle.color = "white";
+        ditanata.innerText ="NATA";
+      } 
+  }
+  
+  setInterval(updateBackground, 1000 * 60);
+  updateBackground();

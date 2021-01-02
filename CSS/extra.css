@@ -10,10 +10,10 @@
 }
 
 .cw {
-
     position: relative;
-    
-    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
 }
 
 .canvasi{
@@ -28,4 +28,6 @@
     height: 4em;
 }
 
-
+.ditanata {
+    font-size: 4em;
+  }
