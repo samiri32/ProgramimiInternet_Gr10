@@ -1,5 +1,4 @@
- 
-var slideIndex = 1;
+ var slideIndex = 1;
 showSlides(1);
 
 function plusSlides(n) {
@@ -30,7 +29,7 @@ function showSlides(n) {
 
 var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
+
 var img = document.getElementsByClassName("fototmodal");
 var modalImg = document.getElementById("img");
 

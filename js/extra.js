@@ -72,8 +72,7 @@ function generateColors() {
         var t = new ob(innerWidth / 2,innerHeight / 2,5,"red",Math.random() * 200 + 20,2);
         a.push(t);
     }
-    //cn.style.backgroundColor = "#700bc8";
-
+   
     c.lineWidth = "2";
     c.globalAlpha = 0.5;
     resize();
