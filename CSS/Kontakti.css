@@ -2,9 +2,79 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: white;
+}
+.pjesa1 {
+  margin: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+  height: 260px;
+  background-color: #393e46;
+  height: 380px;
+  border-color: red;
+  background-size: cover;
+  background-size: 1350px;
+}
+
+.pjesa2{
+  display: inline-block;
+}
+
+.r1 {
+  margin-top: 0;
+  padding-top: 20px;
+  font-family: 'Holtwood One SC', serif;
+  font-weight: 600;
+font-size: 562%;
+}
+
+.r2 {
+position: relative;
+bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hapsiraFormular{
+  background-color: #dddddd;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px ;
+ border-radius: 4px;
+}
+
+ .shkrimi{
+   border: 2px solid: blue;
+ }
+
+
+.ButoniDergo{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.DergoEmail{
+float: right;
+}
+
+.mapa{
+position: relative;
+left: 700px;
+bottom: 400px;
+
+}
+
+
 body {
   margin: 0;
-
 }
 
 .sinanibabo {
@@ -67,7 +137,6 @@ body {
   color: red;
 }
 
-
 .djathtasposht a.menu-item {
   transform: scale(1);
   display: inline-block;
@@ -122,4 +191,24 @@ body {
   background: transparent;
   outline: none;
   font-size: 1em;
+}
+
+.futeri {
+    height: 9em;
+    background-color: black;
+}
+
+.futerimrena {
+    padding: 0em 6em 0em 6em;
+    display: -webkit-grid;
+    display: grid;
+}
+
+.futerimamrena {
+    padding: 4em 3em 2em 3em;
+    display: -webkit-flex;
+    display: flex;
+    float: left;
+    column-gap: 7em;
+    align-items: center;
 }

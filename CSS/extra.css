@@ -9,23 +9,27 @@
     height:3em;
 }
 
-.cw {
-
+#cw {
+   
     position: relative;
-    
-    z-index: -1;
+    width: 30em ;
+    height: 18em ;
+    overflow: scroll;
 }
 
 .canvasi{
-    display:block;
+    display:flex;
     align-items: center;
     border:1px solid black;
 
 }
 
 .butonicanvas{
+  
     width:8em;
     height: 4em;
 }
 
-
+.ditanata {
+    font-size: 4em;
+  }
