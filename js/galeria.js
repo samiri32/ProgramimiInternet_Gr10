@@ -1,50 +1,49 @@
-let slideIndex = 1;
-showSlide(slideIndex);
+var slideIndex = 1;
+showSlides(1);
 
-// You are providing the functionality for your clickable content, which is 
-// your previews, dots, controls and the close button.
-
-function openLightbox() {
-  document.getElementById('Lightbox').style.display = 'block';
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function closeLightbox() {
-  document.getElementById('Lightbox').style.display = 'none';
-};
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-// Note that you are assigning new values here to our slidIndex.
-
-function changeSlide(n) {
-  showSlide(slideIndex += n);
-};
-
-function toSlide(n) {
-  showSlide(slideIndex = n);
-};
-
-// This is your logic for the light box. It will decide which slide to show 
-// and which dot is active.
-
-function showSlide(n) {
-  const slides = document.getElementsByClassName('slide');
-  let modalPreviews = document.getElementsByClassName('modal-preview');
-
-  if (n > slides.length) {
-    slideIndex = 1;	
-  };
-  
-  if (n < 1) {
-    slideIndex = slides.length;
-  };
-
-  for (let i = 0; i < slides.length; i++) {
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName('Sllajdet');
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-  };
-  
-  for (let i = 0; i < modalPreviews.length; i++) {
-    modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
-  };
-  
-  slides[slideIndex - 1].style.display = 'block';
-  modalPreviews[slideIndex - 1].className += ' active';
-};
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+
+
+}
+
+var modal = document.getElementById("myModal");
+
+var img = document.getElementsByClassName("fototmodal");
+var modalImg = document.getElementById("img");
+
+var showModal = function () {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+
+}
+for (var i = 0; i < img.length; i++) {
+  img[i].addEventListener('click', showModal);
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function () {
+  modal.style.display = "none";
+}
