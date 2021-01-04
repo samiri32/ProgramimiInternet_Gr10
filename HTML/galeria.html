@@ -1,86 +1,289 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../CSS/galeria.css">
-</head>
-
-<body">
-
-
-  <div class="bestsellers">
-
-    <div class="libri">
-      <div class="slideshow-container">
-        <div class="bestsellersimg">
-          <img class="fototmodal" src="../img/hasha.jpg" style="min-width:15em; height:20em; max-height:30em">
-          <div id="myModal" class="modal">
-            <span class="close">×</span>
-            <img class="modal-content" id="img">
-
-          </div>
-
-
-
-
-
-
-          <img class="fototmodal" src="../img/joe.jpg" style="min-width:15em; height:20em; max-height:30em">
-          <div id="myModal" class="modal">
-            <span class="close">×</span>
-            <img class="modal-content" id="img">
-
-          </div>
-
-
-
-
-
-          <img class="fototmodal" src="../img/dante.png" style="min-width:15em; height:20em; max-height:30em">
-          <div id="myModal" class="modal">
-            <span class="close">×</span>
-            <img class="modal-content" id="img">
-
-          </div>
-
-
-
-
-
-          <img class="fototmodal" src="../img/DA.jpg" style="min-width:15em; height:20em; max-height:30em">
-          <div id="myModal" class="modal">
-            <span class="close">×</span>
-            <img class="modal-content" id="img">
-
-          </div>
-
-
-
-          <img class="fototmodal" src="../img/EAP.jpg" style="min-width:15em; height:20em; max-height:30em">
-          <div id="myModal" class="modal">
-            <span class="close">×</span>
-            <img class="modal-content" id="img">
-
-          </div>
-
+  <head>
+    <title>BIBLIOTEKA SINAN DOBREVA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/galeria.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  
+    <script>
+      window.onscroll = function () {
+        growShrinkLogo()
+      };
+  
+      function growShrinkLogo() {
+        var sinani = document.getElementById("sinani")
+        if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+          sinani.style.width = "5em";
+          sinani.style.height = "3.5em";
+  
+        } else {
+          sinani.style.width = "8em";
+          sinani.style.height = "6em";
+        }
+      }</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"></script>
+  
+  
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#search').click(function () {
+          $('.menu-item').toggleClass('hide-item')
+          $('.search-form').toggleClass('active')
+        })
+      }) </script>
+  
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+  
+      body {
+        margin: 0;
+  
+      }
+  
+      .sinanibabo {
+        display: flex;
+        justify-content: center;
+      }
+  
+      .logoja {
+        display: inline-grid;
+        justify-content: center;
+      }
+  
+      .titulli {
+        color: white;
+        font-size: 1.45em;
+      }
+  
+      .titulli:hover {
+        color: red;
+      }
+  
+      .header {
+        background-color: black;
+        height: 1.25em;
+        color: white;
+        text-decoration: none;
+      }
+  
+      .djathtas {
+        display: grid;
+        align-content: space-between;
+      }
+  
+      .majtas {
+        align-content: space-between;
+        display: grid;
+      }
+  
+      .topnav {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        position: -webkit-sticky;
+        position: sticky;
+        z-index: 1;
+        top: 0;
+        padding: 0px;
+        background-color: black;
+        border: 2px solid;
+      }
+  
+      .topnav a {
+        font-size: 1.45em;
+        color: #f2f2f2;
+        padding: 0px 30px;
+        text-decoration: none;
+      }
+  
+      .topnav a:hover {
+        color: red;
+      }
+  
+  
+      .djathtasposht a.menu-item {
+        transform: scale(1);
+        display: inline-block;
+        transition: 0.5s;
+      }
+  
+      .djathtasposht a.menu-item.hide-item {
+        transform: scale(0);
+      }
+  
+      #one {
+        transition-delay: 0.2s;
+      }
+  
+      #two {
+        transition-delay: 0.1s;
+      }
+  
+      #three {
+        transition-delay: 0s;
+      }
+  
+      .search-form {
+        position: absolute;
+        top: 8em;
+        right: 28em;
+        transform: translateX(-50%);
+        width: 2em;
+        height: 1em;
+        transition: 0.6s;
+        opacity: 0;
+        visibility: hidden;
+      }
+  
+      .search-form.active {
+        position: absolute;
+        top: 8em;
+        right: 28em;
+        width: 2em;
+        height: 1em;
+        opacity: 1;
+        transition-delay: 0.4s;
+        visibility: visible;
+        background: transparent;
+      }
+  
+      .search-form input {
+        width: 20em;
+        height: 1.5em;
+        color: white;
+        border: none;
+        background: transparent;
+        outline: none;
+        font-size: 1em;
+      }
+    </style>
+  </head>
+  
+  
+  
+  
+  <body>
+    <div class="header"></div>
+  
+    <div class="topnav">
+      <div class="majtas">
+        <div class="majtasnalt">homepage</div>
+        <div class="majtasposht">
+          <a href="../index.html">Ballina</a>
+          <a href="../HTML/Autoret1.html">Autorët</a>
+          <a href="#">Librat</a>
+          <a href="../HTML/lajmi.html">Lajme</a>
         </div>
-        <a class="mrapa" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="para" onclick="plusSlides(1)">&#10095;</a>
       </div>
-      <br>
-
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+  
+      <div class="logoja">
+        <div class="sinanibabo">
+          <img src="../img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
+        </div>
+        <a href="../index.html" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka Sinan
+            Dobreva</span></a>
       </div>
-
+  
+      <div class="djathtas">
+        <div class="djathtasnalt"></div>
+        <div class="djathtasposht">
+          <a href="../HTML/galeria.html" class="menu-item" id="one">Galeria</a>
+          <a href="#" class="menu-item" id="two">Kontakti</a>
+          <a href="../HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
+          <a href="#" id="search"><i class="fa fa-search"></i></a>
+        </div>
+        <div class="search-form">
+          <form>
+            <input type="text" name="" placeholder="Kërkoni">
+          </form>
+        </div>
+      </div>
     </div>
-
-
+  
+    <div class="homepage">
+ 
+<h3 id="fotogaleriah3">FOTOGALERIA</h3>
+<div class="galeria">
+  <div class="row">
+    <div class="column">
+      <img src="../img/hasha.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      
+    </div>
+    <div class="column">
+      <img src="../img/dante.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="../img/melania.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="../img/dhurohenlibra.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
   </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="../img/hasha.jpg" >
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="../img/dante.png">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="../img/melania.jpg" >
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="../img/dhurohenlibra.png">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      
+  
+      <!-- Thumbnail image controls -->
+      <div class="column-posht">
+        <img class="demo" src="../img/hasha.jpg" onclick="currentSlide(1)" >
+      </div>
+  
+      <div class="column-posht">
+        <img class="demo" src="../img/dante.png" onclick="currentSlide(2)" >
+      </div>
+  
+      <div class="column-posht">
+        <img class="demo" src="../img/melania.jpg" onclick="currentSlide(3)" >
+      </div>
+  
+      <div class="column-posht">
+        <img class="demo" src="../img/dhurohenlibra.png" onclick="currentSlide(4)" >
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
   <script src="../js/galeria.js"></script>
+
   </body>
 
 </html>
