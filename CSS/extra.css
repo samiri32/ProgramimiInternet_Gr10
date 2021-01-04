@@ -1,5 +1,5 @@
-.extras{
-    display:block;
+.superextra{
+    display:grid;
     border:1px solid black;
     padding-left:0.7em;
 }

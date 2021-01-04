@@ -1,6 +1,7 @@
 var x = document.getElementById("koordinatat");
 
 function getLocation() {
+  
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition, showError);
   } else { 
@@ -155,13 +156,13 @@ function anim() {
       if(document.body){
   
       if (7 <= hour && hour< 20) {
-      
+       
        backgroundImage="url('../img/dita.jpg')";
         
       } else  {
        
        backgroundImage="url('../img/nata.jpg')";
-        
+       
       } 
      
     }
@@ -170,3 +171,19 @@ function anim() {
 
   setInterval(updateBackground, 1000 * 60);
   updateBackground();
+
+  function clickCounter() {
+    if (typeof(Storage) !== "undefined") {
+      if (localStorage.clickcount) {
+        localStorage.clickcount = Number(localStorage.clickcount)+1;
+      } else {
+        localStorage.clickcount = 1;
+      }
+      document.getElementById("result").innerHTML = "E ke kliku butonin " + localStorage.clickcount + " here.";
+    } else {
+      document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+  }
+
+
+  
