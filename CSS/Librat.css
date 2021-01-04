@@ -1,0 +1,73 @@
+element.style {
+}
+
+div.contentBody {
+    padding: 0 20px 20px;
+}
+
+body, code, dd, div, dl, dt, fieldset, form, input, legend, li, ol, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+.carousel-container-decorated {
+    background: #f3edd7;
+    border-bottom: 1px solid #e4e0cc;
+    border-top: 1px solid #eae7d6;
+}
+
+* {
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}
+body {
+    font-size: 100%;
+    line-height: normal;
+ 
+}
+
+body, li, p {
+    color: #333;
+}
+
+.cta-btn, .page-banner, a.cta-btn, body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lucida Grande",Verdana,Geneva,Helvetica,Arial,sans-serif;
+}
+
+.home-h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #02598b;
+    margin-bottom: .5em;
+    margin-top: 1.75em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #666;
+    font-weight: 600;
+}
+.cta-btn, .page-banner, a.cta-btn, body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lucida Grande",Verdana,Geneva,Helvetica,Arial,sans-serif;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.carousel-container {
+    margin: 0 -20px;
+    padding: 3px 15px;
+}
+
+.carousel-container-decorated {
+    background: #f3edd7;
+    border-bottom: 1px solid #e4e0cc;
+    border-top: 1px solid #eae7d6;
+}
