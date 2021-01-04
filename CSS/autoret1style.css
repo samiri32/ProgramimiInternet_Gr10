@@ -6,6 +6,7 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 .content-table {
@@ -53,7 +54,7 @@
     color: black;
     font-weight: bold;
 }
-  
+
 .katershi {
     background-color: grey;
     color: black;
