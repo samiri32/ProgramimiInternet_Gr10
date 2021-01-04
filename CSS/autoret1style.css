@@ -615,3 +615,16 @@ input[type=email] {
 #suxhuki {
     font-size: 0.8em;
 }
+
+.meshum a {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+}
+
+.meshum a:hover {
+    color: teal;
+}
+
+.meshum a:visited {
+    color: none;
+}
