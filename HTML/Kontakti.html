@@ -1,99 +1,382 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Kalam:wght@300&family=M+PLUS+1p:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/Kontakti.css">
+  <title>BIBLIOTEKA SINAN DOBREVA</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../CSS/Kontakti.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/Kontakti.css">
-    <style></style>
-    <meta charset="utf-8">
-    <title>BIBLIOTEKA SINAN DOBREVA</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="shortcut icon" type="image/png" href="../img/sinani4.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="icon" href="../img/sinani.png">
+  <script>
+    window.onscroll = function() {
+      growShrinkLogo()
+    };
+
+    function growShrinkLogo() {
+      var sinani = document.getElementById("sinani")
+      if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+        sinani.style.width = "5em";
+        sinani.style.height = "3.5em";
+
+      } else {
+        sinani.style.width = "8em";
+        sinani.style.height = "6em";
+      }
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#search').click(function() {
+        $('.menu-item').toggleClass('hide-item')
+        $('.search-form').toggleClass('active')
+      })
+    })
+  </script>
+
+  </script>
+
 </head>
 
-<body onload="showSlides(1);">
-    <div class="header"></div>
 
-    <div class="topnav">
-        <div class="majtas">
-            <div class="majtasnalt">homepage</div>
-            <div class="majtasposht">
-                <a href="./index.html">Ballina</a>
-                <a href="./HTML/Autoret1.html">Autorët</a>
-                <a href="#">Librat</a>
-                <a href="./HTML/lajmi.html">Lajme</a>
-            </div>
-        </div>
 
-        <div class="logoja">
-            <div class="sinanibabo">
-                <img src="../img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
-            </div>
-            <a href="./index.html" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka Sinan Dobreva</span></a>
-        </div>
 
-        <div class="djathtas">
-            <div class="djathtasnalt"></div>
-            <div class="djathtasposht">
-                <a href="./HTML/lajmi.html" class="menu-item" id="one">Galeria</a>
-                <a href="#" class="menu-item" id="two">Kontakti</a>
-                <a href="./HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
-                <a href="#" id="search"><i class="fa fa-search"></i></a>
-            </div>
-            <div class="search-form">
-                <form>
-                    <input type="text" name="" placeholder="Kërkoni">
-                </form>
-            </div>
-        </div>
+<body>
+  <div class="header"></div>
+
+  <div class="topnav">
+    <div class="majtas">
+      <div class="majtasnalt">homepage</div>
+      <div class="majtasposht">
+        <a href="../index.html">Ballina</a>
+        <a href="../HTML/Autoret1.html">Autorët</a>
+        <a href="#">Librat</a>
+        <a href="../HTML/lajmi.html">Lajme</a>
+      </div>
     </div>
-    <div class="pjesa1" style="background-image: url(../img/fadedpic2.jpg)" ;>
 
-        <center>
-            <h1 class="r1">Si mund të përmiresohemi?</h1>
-        </center>
-        <center>
-            <h2 class="r2">Dërgo një sygjerim!</h2>
-        </center>
+    <div class="logoja">
+      <div class="sinanibabo">
+        <img src="../img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
+      </div>
+      <a href="../index.html" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka Sinan
+          Dobreva</span></a>
+    </div>
 
-        <form class="email" action="index.html" method="post">
+    <div class="djathtas">
+      <div class="djathtasnalt"></div>
+      <div class="djathtasposht">
+        <a href="../HTML/galeria.html" class="menu-item" id="one">Galeria</a>
+        <a href="#" class="menu-item" id="two">Kontakti</a>
+        <a href="../HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
+        <a href="#" id="search"><i class="fa fa-search"></i></a>
+      </div>
+      <div class="search-form">
+        <form>
+          <input type="text" name="" placeholder="Kërkoni">
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--      -->
+  <div class="pjesa1">
+    <div class="foto">
+      <center>
+
+        <img src="C:\Users\LENOVO\Documents\GitHub\INT20_21_Gr8\img\fadedpic2.jpg" alt="">
+      </center>
+    </div>
+    <div class="banner">
+
+      <center>
+        <h3 style="font-family: 'Alfa Slab One', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'M PLUS 1p', sans-serif; font-size:50px;">SI MUND TE PERMIRESOHEMI?</h3>
+        <h5 style="font-family: 'Alfa Slab One', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dergo nje sygjerim!</h5>
+        <center>
+
+
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="djatht">
+
+    </div>
+
+    <div class="formulari">
+
+
+      <center>
+
+
+
+        <form class="formulari" action="index.html" method="">
+          <br>
+          <h3 style="font-family: 'Alfa Slab One', cursive;
+  font-family: 'Kalam', cursive;
+  font-family: 'M PLUS 1p', sans-serif; ">Emri:<span> <textarea name="name" rows="1" cols="50"></textarea> <br /> </span> Mbiemri: <textarea name="name" rows="1" cols="46"></textarea> </h3>
+
+          <h3 style="font-family: 'Alfa Slab One', cursive;
+  font-family: 'Kalam', cursive;
+  font-family: 'M PLUS 1p', sans-serif;">Email: <span><textarea name="name" rows="1" cols="50"></textarea> </span> </h3>
+
+          <h3 style="font-family: 'Alfa Slab One', cursive;
+  font-family: 'Kalam', cursive;
+  font-family: 'M PLUS 1p', sans-serif;">Mesazhi:<span><textarea name="name" rows="8" cols="47"></textarea> </span> </h3>
+
+
+          <input class="butonii" type="submit" name="" value="Dergo">
 
         </form>
-        <div class="pjesa2">
-            <div class="formulari">
-                <form class="hapsiraFormular" action="index.html" method="post">
-                    <h3> Emri <span> <input class="shkrimi" type="text" name="" value=""></span> Mbiemri <span><input  class="shkrimi" type="text" name="" value=""> </span> </h3>
-                    <h3>E-maili(<a href="./HTML/PrivacyPolicy.html">Politikat e privatesise</a>) <span><input class="DergoEmail" type="email" name="" value=""> </span> </h3>
-                    <h3>Mesazhi <span><textarea  class="shkrimi" name="name" rows="8" cols="50"></textarea> </span> </h3>
-                    <center>
-                        <h3 <span><input class="ButoniDergo" type="submit" name="" value="Dergo"> </span>
-                        </h3>
-                    </center>
-                </form>
+      </center>
+    </div>
 
 
-            </div>
-            <div class="mapa">
-
-
-                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.4090172186366!2d21.15311001522085!3d42.652687124564196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549fc8b3fbba07%3A0xff5de5dadf78906!2zQmlibGlvdGVrYSDigJxIaXZ6aSBTeWxlam1hbmnigJ0!5e0!3m2!1sen!2s!4v1609638106342!5m2!1sen!2s"
-                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
-                <h3>rr.prishtine nr prishtine</h3>
-            </div>
-        </div>
-
-
-
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22362.457621597914!2d21.079680692413984!3d42.602127982191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13536281728fbb4f%3A0xbec710e0df782273!2sMiradi%20e%20Eperme!5e1!3m2!1sen!2s!4v1609805521921!5m2!1sen!2s"
+        width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="majt">
 
     </div>
-    < </body>
+    <div class="1">
+
+    </div>
+    <div class="tabela">
+      <table>
+        <tr id="header">
+          <th>Nr.</th>
+          <th>Qyteti</th>
+          <th>Viti i hapjes</th>
+          <th>Orari</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Prishtinë</td>
+          <td>2003</td>
+          <td>8:00-18:00</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Mitrovicë</td>
+          <td>2006</td>
+          <td>8:00-16:00</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Pejë</td>
+          <td>1997</td>
+          <td>8:00-12:00</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Prizren</td>
+          <td>2016</td>
+          <td>8:00-18:00</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Dobrevë</td>
+          <td>1980</td>
+          <td>non-stop</td>
+        </tr>
+      </table>
+    </div>
+    <div class="tabela">
+      <table>
+
+      <tr id="header">
+        <td>Nr.</td><td>Emri</td><td>Ndrrimi</td><td>Pozita</td>
+      </tr>
+      <tr>
+        <td>1</td><td>Latif Latifi</td><td>Paradite</td><td>Menaxher</td>
+      </tr>
+      <tr>
+        <td>2</td><td>Nuredin Vokrri</td><td>Paradite</td><td>Pastrues</td>
+      </tr>
+      <tr>
+        <td>3</td><td>Shefki Veli Lajqi</td><td>Pasdite</td><td>Administrate</td>
+      </tr>
+      <tr>
+        <td>4</td><td>Donat Veliu</td><td>Pasdite</td><td>Administrate</td>
+      </tr>
+      <tr>
+        <td>5</td><td>Faruk Zjermi</td><td>Pasdite</td><td>Ndihmes-menaxher</td>
+      </tr>
+    </table>
+    </div>
+    <div class="3">
+
+    </div>
+
+
+
+
+</div>
+
+
+
+  <!--QIThahahahahU JA NIS row6-->
+
+  <div class="row6" style="background-color:#eeeeee">
+      <div class="subfooternalt">
+          <div class="sbkol1">
+              <span id="sf">Regjistrohu për të pranuar e-mails nga Biblioteka</span><br><br>
+              <!-- Qitu ni form per Anetaresim (mail subscription)-->
+              <form id="emailform">
+                  <input id="emailinput" type="email" placeholder="emri@gmail.com"> <br><br>
+                  <div class="dergo">
+                      <input type="submit" value="Dërgo">
+                  </div>
+              </form> <br><br><br> <input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme <br><br>
+          </div>
+
+          <div class="sbkol1">
+              <span id="sf">Porosit katalogun e librave</span><br><br>
+              <button class="buton">Porosit</button>
+              <h5 id="h5">Plotësisht falas!</h5>
+          </div>
+
+      </div>
+
+      <div class="subfooterposht">
+
+          <div class="sbkol2">
+
+              <ul>
+
+                  <li><a href="#">
+           Libra shqip
+          </a>
+                  </li>
+                  <li><a href="#">
+          Libra të huaj
+        </a></li>
+              </ul>
+          </div>
+
+          <div class="sbkol2">
+
+              <ul>
+
+
+                  <li><a href="#">
+           Autorë shqiptar
+         </a></li>
+                  <li><a href="#">
+          Autorë të huaj
+        </a></li>
+              </ul>
+          </div>
+          <div class="sbkol2">
+
+              <ul>
+                  <li><a href="#"><span>Lajme</span></a>
+                  </li>
+
+              </ul>
+          </div>
+          <div class="sbkol2">
+
+              <ul>
+
+                  <li><a href="#">
+              Fotogaleria
+            </a>
+                  </li>
+                  <li><a href="#">
+            Videogaleria
+          </a>
+                  </li>
+              </ul>
+          </div>
+          <div class="sbkol2">
+
+              <ul>
+                  <li><a href="#"><span>Kontakti</span></a>
+                  </li>
+              </ul>
+          </div>
+          <div class="sbkol2">
+
+              <ul>
+                  <li><a href="regjistrohu.html"><span>Regjistrohu</span></a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+  </div>
+
+
+
+  <!-- qitu kryhet homepage ;) -->
+  </div>
+
+
+  <footer class="futeri">
+      <div class="futerimrena">
+
+          <div class="futerimamrena">
+              <div class="sbkol3">
+                  <a href="#" id="socialmedia" style="padding-right:0.5em;"><i class="fa fa-instagram" ></i></a>
+                  <a href="#" id="socialmedia" style="padding-right:0.5em;"><i class="fa fa-facebook"></i></a>
+                  <a href="#" id="socialmedia"><i class="fa fa-twitter"></i></a>
+              </div>
+
+              <div class="sbkol3">
+                  <span id="suxhuki">Për sugjerime:</span>
+                  <a href="mailto: BSDa@biblioteka.com" id="socialmedia" style="padding-left: 0.15em;">
+                      <i class="fa fa-envelope"></i></a>
+              </div>
+
+              <div class="sbkol3">
+                  <address style="font-size:0.8em">
+            Dobrevë, 10000<br>
+            Kosovë
+            </address>
+              </div>
+
+              <div class="sbkol33">
+                  <span style="font-size:0.85em;">©2020-2021 <abbr title="Biblioteka Sinan Dobreva">BSD</abbr> Të gjitha të drejtat e rezervuara.</span>
+              </div>
+          </div>
+
+      </div>
+  </footer>
+  <script src="../js/skripta.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
 
 </html>

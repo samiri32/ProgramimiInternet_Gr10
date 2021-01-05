@@ -1,214 +1,518 @@
-* {
-  box-sizing: border-box;
-}
-
-body{
-  background-color: white;
-}
-.pjesa1 {
-  margin: 100px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 30px;
-  height: 260px;
-  background-color: #393e46;
-  height: 380px;
-  border-color: red;
-  background-size: cover;
-  background-size: 1350px;
-}
-
-.pjesa2{
-  display: inline-block;
-}
-
-.r1 {
-  margin-top: 0;
-  padding-top: 20px;
-  font-family: 'Holtwood One SC', serif;
-  font-weight: 600;
-font-size: 562%;
-}
-
-.r2 {
-position: relative;
-bottom: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.hapsiraFormular{
-  background-color: #dddddd;
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 2px ;
- border-radius: 4px;
-}
-
- .shkrimi{
-   border: 2px solid: blue;
- }
 
 
-.ButoniDergo{
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-}
+   * {
+     box-sizing: border-box;
+   }
 
-.DergoEmail{
-float: right;
-}
 
-.mapa{
-position: relative;
-left: 700px;
-bottom: 400px;
+
+   body {
+     margin: 0;
+
+   }
+
+   .container {
+     position: relative;
+     bottom: 250px;
+     display: grid;
+     grid-template-columns:  10% 40% 40% 10%;
+     justify-content: center;
+     grid-gap: 2rem;
 
 }
 
+.tabela{
+  spacing:20px;
+  margin: 0;
+  font-family: 'Alfa Slab One', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'M PLUS 1p', sans-serif;
+}
+
+table {
+
+        border-collapse: seperate;
+        width: 100%;
+        height: 200px;
+        border:5px solid #bdc3c7;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    tr {
+        transition: all .2s ease-in;
+        cursor: pointer;
+
+    }
+
+    th,
+    td {
+
+        spacing:10px;
+        border: 2px solid grey;
+        padding: 6px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #header {
+        background-color: #16a085;
+        color: #fff;
+    }
+
+    h1 {
+        font-weight: 600;
+        text-align: center;
+        background-color: #16a085;
+        color: #fff;
+        padding: 10px 0px;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+        transform: scale(1.02);
+    }
+
+
+
+
+   .formulari {
+
+     background-color: #fde8cd;
+
+
+   }
+
+
+
+
+
+   .banner {
+     position: relative;
+     bottom: 300px;
+   }
+
+
+   .sinanibabo {
+     display: flex;
+     justify-content: center;
+   }
+
+   .logoja {
+     display: inline-grid;
+     justify-content: center;
+   }
+
+   .titulli {
+     color: white;
+     font-size: 1.45em;
+   }
+
+   .titulli:hover {
+     color: red;
+   }
+
+   .header {
+     background-color: black;
+     height: 1.25em;
+     color: white;
+     text-decoration: none;
+   }
+
+   .djathtas {
+     display: grid;
+     align-content: space-between;
+   }
+
+   .majtas {
+     align-content: space-between;
+     display: grid;
+   }
+
+   .djathtas a, .majtas a {
+  font-family: "Arnhem", Times, Courier, serif;
+   }
+
+   .majtasposht a:hover{
+ transition: 0.6s ease;
+}
+
+.faqjaa {
+ padding: 4em 6em 0em 6em;
+ display: -webkit-flex;
+ display: flex;
+ column-gap: 2.5em;
+}
+
+.shtylla {
+ background-color: white;
+ -webkit-flex: 0.8;
+ -ms-flex: 0.8;
+ flex: 0.8;
+}
+.kontenti1 img {
+ border-top: 0.3em solid #000;
+ padding-top: 0.85em;
+ width: 100%;
+ height: 100%;
+}
+.kontenti1 a {
+ font-family: "Arnhem", Times, Courier, serif;
+ text-decoration: none;
+ color: black;
+ font-size: 1.75em;
+}
+
+.row5pjesepjese {
+ display: grid;
+ align-items: center;
+}
+
+.subfooternalt {
+ padding: 0em 8em 3em 6em;
+ display: -webkit-flex;
+ display: flex;
+ column-gap: 2.8em;
+ justify-content: space-around;
+ border-bottom: 1px solid #D9D9D9;
+}
+
+.subfooternalt span {
+ font-family: "Arnhem", Times, Courier, serif;
+ font-size: 1.7em;
+}
+
+#emailinput {
+ width: 16.7em;
+ height: 2em;
+}
+.perberja {
+ padding: 4em 6em 0em 6em;
+ display: -webkit-flex;
+ display: flex;
+ column-gap: 2.8em;
+ justify-content: space-around;
+}
+
+#emailform {
+ display: flex;
+ float: left;
+}
+
+.dergo {
+ padding-left: 1em;
+}
+
+input[type="submit"] {
+ height: 3.6em;
+ width: 10em;
+ color: white;
+ font-weight: bold;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ background-color: #D9D9D9;
+ border: none;
+}
+
+input[type="submit"]:hover {
+ color: red;
+}
+
+input[type=email] {
+ font-size: 1.5em;
+}
+
+.buton {
+ height: 3.6em;
+ width: 10em;
+ color: white;
+ font-weight: bold;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ background-color: #D9D9D9;
+ border: none;
+}
+
+#h5 {
+ margin-top: 0.5em;
+ color: #0075ff;
+}
+
+.buton:hover {
+ color: red;
+}
+
+#emailinput::placeholder {
+ font-size: 1em;
+ padding-left: 0.5em;
+}
+
+.subfooterposht {
+ padding: 4em 3em 2em 3em;
+ display: -webkit-flex;
+ display: flex;
+ float: left;
+ column-gap: 1em;
+ justify-content: space-between;
+}
+
+.sbkol2 {
+ -webkit-flex: 0.2;
+ float: left;
+ -ms-flex: 0.2;
+ flex: 0.2;
+ text-align: center;
+}
+
+
+.futeri{
+ height:9em;
+ background-color: black;
+}
+
+.sbkol3{
+ color:white;
+ -webkit-flex: 2;
+ float: left;
+ -ms-flex: 2;
+ flex: 2;
+ text-align: center;
+}
+
+.sbkol33{
+ color:white;
+ -webkit-flex: 5;
+ float: left;
+ -ms-flex: 5;
+ flex: 5;
+ text-align: center;
+}
+
+.sbkol2 ul {
+ list-style: none;
+}
+
+#spansbkol2 {
+
+ color: black;
+}
+
+.sbkol2 ul a:link {
+ text-decoration: none;
+ color:black;
+}
+
+.sbkol2 ul a:visited {
+ text-decoration: none;
+ color: gray;
+}
+
+.sbkol2 ul a:hover {
+ color: red;
+}
+
+.kolona1p {
+ background-color: white;
+ -webkit-flex: 1;
+ -ms-flex: 1;
+ flex: 1;
+ text-align: initial;
+}
+
+#kolona1pp {
+ font-family: fontivogel;
+ font-size: 1.2em;
+}
+.futerimrena{
+ padding: 0em 6em 0em 6em;
+ display: -webkit-grid;
+ display: grid;
+
+}
+
+#lajmekuq5 {
+ color: red;
+ font-family: Helvetica;
+ letter-spacing: 0.1em;
+ font-weight: bold;
+ font-size: 0.35em;
+ text-transform: uppercase;
+}
+.futerimamrena{
+ padding: 4em 3em 2em 3em;
+ display: -webkit-flex;
+ display: flex;
+ float: left;
+ column-gap: 7em;
+ align-items: center;
+}
+
+.row4, .row5, .row6 {
+ padding: 4em 6em 0em 6em;
+ display: -webkit-grid;
+ display: grid;
+}
+
+.row4 a {
+ padding-top: 2em;
+ padding-bottom: 2em;
+ padding-left: 2em;
+ padding-right: 2em;
+ text-decoration: none;
+ position: relative;
+ display: inline-block;
+ text-align: center;
+ font-family: "Calibre", Helvetica, Arial, sans-serif;
+ font-size: 2em;
+ color: black;
+}
+
+.shortcutposht {
+ display: block;
+ text-align: center;
+}
+
+.row4 a:hover {
+ color: red;
+ text-decoration: none;
+}
+
+.kolona1{
+ background-color: white;
+ -webkit-flex: 0.5;
+ -ms-flex: 0.5;
+ flex: 0.5;
+}
+
+.shortcuts {
+ padding: 1.5em 0em;
+ border-top: 0.5em solid #000;
+ border-bottom: 0.5em solid black;
+}
+
+.bs {
+ font-family: "Calibre", Helvetica, Arial, sans-serif;
+ font-weight: bold;
+ letter-spacing: 0.1em;
+ font-size: 1em;
+ padding: 1.7em;
+ display: grid;
+ text-align: center;
+}
+@font-face {
+ font-family: fontivogel;
+ src: url(klim.co.nz/retail-fonts/calibre);
+}
 
 body {
-  margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
 }
 
-.sinanibabo {
-  display: flex;
-  justify-content: center;
+
+#sinaniposht {
+ padding-top: 0.1em;
+ font-family: "Arnhem", Times, Courier, serif;
+ font-size: 1.4em;
+ letter-spacing: 0.1em;
 }
 
-.logoja {
-  display: inline-grid;
-  justify-content: center;
+#katalogu{
+ color: black;
+ text-decoration: none;
 }
 
-.titulli {
-  color: white;
-  font-size: 1.45em;
+.sbkol3 a:link{
+color:white;
+}
+.sbkol3 a:visited{
+ color:white;
+}
+.sbkol3 a:hover{
+ color:red;
 }
 
-.titulli:hover {
-  color: red;
+#socialmedia{
+ font-size: 2em;
 }
 
-.header {
-  background-color: black;
-  height: 1.25em;
-  color: white;
-  text-decoration: none;
+#suxhuki{
+ font-size: 0.8em;
 }
 
-.djathtas {
-  display: grid;
-  align-content: space-between;
-}
+   .topnav {
+     display: flex;
+     justify-content: center;
+     overflow: hidden;
+     position: -webkit-sticky;
+     position: sticky;
+     z-index: 1;
+     top: 0;
+     padding: 0px;
+     background-color: black;
+     border: 2px solid;
+   }
 
-.majtas {
-  align-content: space-between;
-  display: grid;
-}
+   .topnav a {
+     font-size: 1.45em;
+     color: #f2f2f2;
+     padding: 0 30px;
+     text-decoration: none;
+   }
 
-.topnav {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  position: -webkit-sticky;
-  position: sticky;
-  z-index: 1;
-  top: 0;
-  padding: 0px;
-  background-color: black;
-  border: 2px solid;
-}
+   .topnav a:hover {
+     color: red;
+   }
 
-.topnav a {
-  font-size: 1.45em;
-  color: #f2f2f2;
-  padding: 0px 30px;
-  text-decoration: none;
-}
 
-.topnav a:hover {
-  color: red;
-}
+   .djathtasposht a.menu-item {
+     transform: scale(1);
+     display: inline-block;
+     transition: 0.5s;
+   }
 
-.djathtasposht a.menu-item {
-  transform: scale(1);
-  display: inline-block;
-  transition: 0.5s;
-}
+   .djathtasposht a.menu-item.hide-item {
+     transform: scale(0);
+   }
 
-.djathtasposht a.menu-item.hide-item {
-  transform: scale(0);
-}
+   #one {
+     transition-delay: 0.2s;
+   }
 
-#one {
-  transition-delay: 0.2s;
-}
+   #two {
+     transition-delay: 0.1s;
+   }
 
-#two {
-  transition-delay: 0.1s;
-}
+   #three {
+     transition-delay: 0s;
+   }
 
-#three {
-  transition-delay: 0s;
-}
+   .search-form {
+     position: absolute;
+     top: 8em;
+     right: 28em;
+     transform: translateX(-50%);
+     width: 2em;
+     height: 1em;
+     transition: 0.6s;
+     opacity: 0;
+     visibility: hidden;
+   }
 
-.search-form {
-  position: absolute;
-  top: 8em;
-  right: 28em;
-  transform: translateX(-50%);
-  width: 2em;
-  height: 1em;
-  transition: 0.6s;
-  opacity: 0;
-  visibility: hidden;
-}
+   .search-form.active {
+     position: absolute;
+     top: 8em;
+     right: 28em;
+     width: 2em;
+     height: 1em;
+     opacity: 1;
+     transition-delay: 0.4s;
+     visibility: visible;
+     background: transparent;
+   }
 
-.search-form.active {
-  position: absolute;
-  top: 8em;
-  right: 28em;
-  width: 2em;
-  height: 1em;
-  opacity: 1;
-  transition-delay: 0.4s;
-  visibility: visible;
-  background: transparent;
-}
-
-.search-form input {
-  width: 20em;
-  height: 1.5em;
-  color: white;
-  border: none;
-  background: transparent;
-  outline: none;
-  font-size: 1em;
-}
-
-.futeri {
-    height: 9em;
-    background-color: black;
-}
-
-.futerimrena {
-    padding: 0em 6em 0em 6em;
-    display: -webkit-grid;
-    display: grid;
-}
-
-.futerimamrena {
-    padding: 4em 3em 2em 3em;
-    display: -webkit-flex;
-    display: flex;
-    float: left;
-    column-gap: 7em;
-    align-items: center;
-}
+   .search-form input {
+     width: 20em;
+     height: 1.5em;
+     color: white;
+     border: none;
+     background: transparent;
+     outline: none;
+     font-size: 1em;
+   }
