@@ -64,16 +64,20 @@
     position: relative;
 }
 
-.autori1 {
+.teksti {
     font-family: Arial, Helvetica, sans-serif;
     color: grey;
     padding: 0.2em;
     font-size: 20px;
 }
 
-.autori1 :visited {
+.teksti :visited {
     color: grey;
     text-decoration: none;
+}
+
+.teksti :link {
+    color: grey;
 }
 
 .autort p {
@@ -107,13 +111,6 @@
     font-style: italic;
 }
 
-.majtas1 {
-    position: relative;
-    float: left;
-    box-sizing: border-box;
-    width: 70%;
-}
-
 .autori-1 {
     position: relative;
     float: left;
@@ -121,12 +118,26 @@
     width: 67%;
 }
 
+.majtas1 {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    width: 75%;
+}
+
 .djathtas1 {
     position: relative;
     float: right;
     width: fit-content;
-    margin-top: 1.8em; 
-    margin-right:4em;
+    margin-top: 1.8em;
+}
+
+.djathtas2 {
+    position: relative;
+    float: right;
+    width: fit-content;
+    margin-top: 4em;
+    margin-right: 2em;
 }
 
 .lista1 {
@@ -142,7 +153,6 @@ p {
 }
 
 ul {
-    
     list-style: none;
 }
 

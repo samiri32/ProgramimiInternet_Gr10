@@ -1,14 +1,30 @@
-element.style {
-}
+element.style {}
 
 div.contentBody {
     padding: 0 20px 20px;
 }
 
-body, code, dd, div, dl, dt, fieldset, form, input, legend, li, ol, pre, td, textarea, th, ul {
+body,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+input,
+legend,
+li,
+ol,
+pre,
+td,
+textarea,
+th,
+ul {
     margin: 0;
     padding: 0;
 }
+
 .carousel-container-decorated {
     background: #f3edd7;
     border-bottom: 1px solid #e4e0cc;
@@ -18,21 +34,34 @@ body, code, dd, div, dl, dt, fieldset, form, input, legend, li, ol, pre, td, tex
 * {
     box-sizing: border-box;
 }
+
 div {
     display: block;
 }
+
 body {
     font-size: 100%;
     line-height: normal;
- 
 }
 
-body, li, p {
+
+/* body,
+li,
+p {
     color: #333;
-}
+} */
 
-.cta-btn, .page-banner, a.cta-btn, body, h1, h2, h3, h4, h5, h6 {
-    font-family: "Lucida Grande",Verdana,Geneva,Helvetica,Arial,sans-serif;
+.cta-btn,
+.page-banner,
+a.cta-btn,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
 }
 
 .home-h2 {
@@ -43,12 +72,27 @@ body, li, p {
     margin-top: 1.75em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #666;
     font-weight: 600;
 }
-.cta-btn, .page-banner, a.cta-btn, body, h1, h2, h3, h4, h5, h6 {
-    font-family: "Lucida Grande",Verdana,Geneva,Helvetica,Arial,sans-serif;
+
+.cta-btn,
+.page-banner,
+a.cta-btn,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lucida Grande", Verdana, Geneva, Helvetica, Arial, sans-serif;
 }
 
 h2 {
@@ -62,7 +106,7 @@ h2 {
 }
 
 .carousel-container {
-    margin: 0 -20px;
+    margin: 0 20px;
     padding: 3px 15px;
 }
 
