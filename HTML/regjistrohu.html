@@ -217,18 +217,17 @@
 
                 <div class="kycunimrena">
 
-                    <p>Emri:<br> <input type="text" size="65" name="Emri" id="rrite"></p>
+                    <p>Emri:<br> <input type="text" size="65" name="Emri" autocomplete="on" id="rrite"></p>
                     <br>
                     <p>Adresa:<br> <input type="text" size="65" name="Adresa" id="rrite"></p>
                     <br>
-                    <p>E-mail:<br> <input type="text" size="65" name="Email" id="rrite"></p>
+                    <p>E-mail:<br> <input type="text" size="65" autocomplete="on" name="Email" id="rrite"></p>
                     <br>
-                    <p>Password:<br> <input type="password" size="65" name="Password" id="rrite"></p>
+                    <p>Password:<br> <input type="password" title="Fjalekalimi juaj duhet te permbaje shkronja te vogla, shkronja te medha dhe numra."size="65" name="Password" id="rrite" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"></p>
                     <br>
-                    <p>Telefoni:<br><input type="text" size="65" name="Telefoni" id="rrite"></p>
+                    <p>Telefoni:<br><input type="text" pattern="[0-9]{9}" 
+                   title="Numri i telefonit duhet te jete mobil, ti permbaje 9 shifra. Formati: 04x-xxx-xxx" size="65" name="Telefoni" id="rrite"></p>
                     <br>
-
-                    <form action="/action_page.php">
                         <p>Gjinia:</p>
                         <input type="radio" name="Gjinia" value="mashkull">
                         <label for="male">Mashkull</label><br>

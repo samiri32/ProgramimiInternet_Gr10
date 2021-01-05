@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sq">
+    
+    <head>
+        <title>BIBLIOTEKA SINAN DOBREVA</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+#borderimage { 
+  border: 1em solid green;
+  background-color: blanchedalmond;
+  border-image: url(https://www.fg-a.com/print-borders/2020-elves-presents-lists-fun-border.jpg) 45 round;
+  padding: 0.4em;
+}
+
+#boxshadow {
+    box-shadow: 0.5em 1em salmon;
+    border: 0.1em solid pink;
+    padding: 0.4em;
+    background-color: azure;
+    text-shadow: 1em 1em rgba(128, 0, 0, 0.329);
+}
+
+body{
+  background-image: url("https://lh3.googleusercontent.com/proxy/_littByK4ZmegfQ67kUQBUNqRHVCpulsGYfD1434bW_otmnVmL2RPIKVIuxELrd8en4Gi1iHWU9vJYYTNECS9zaNDYIQSMc"),url("https://images.squarespace-cdn.com/content/v1/55cfb535e4b061baebe310df/1587472623697-IC8B3J3ZIZI0AMIE7U8G/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/sky+photo+for+website+home+page.jpeg?format=2500w"), url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxITEhUSEhMVFRUXFhYVFRYXFxUXFhUXFRUWFhUXFxUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0mICUtLS0tLS0tLS0tLS0tLS0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAQIDBAYABwj/xAA2EAABAwMDAgMGBQQCAwAAAAABAAIRAwQhBRIxQVEGYXETIjKBkaEHscHR8BQVQvEj4RZScv/EABkBAAMBAQEAAAAAAAAAAAAAAAECAwAEBf/EACMRAAICAgIDAQADAQAAAAAAAAABAhEDEiExBBNBUSJhoRT/2gAMAwEAAhEDEQA/APTPZ+7BymU7ekeWtmZ4Ez6oXV1GRlVheKlMW0G6+gWrzNShTJPXaJVah4O09tQ1BbMk8zJAnmGkwEPoX9QOyStDZXm/kQjtJfQaxfwzOp/hpZP3mm00y6SIJhpIxAPSei8a1PTqlCoadVu1w+46EeWF9OtavOfxM8OPqwabBIlwMRMA7mk9Oh84XT43kPapM5/IwJxuK5PHoXQpX0yCQeRgpIXpUebY0BOASgKWjQc4w1pcewBP5LC2RAJQE/YlDURWxAE4JQEoCIrZwUrAkYFK0IMCVj2hSNCa0KRoSlUOaFIAkaFIAlZVCQlAUvs8AqW2s3vna0mMmOiFjJEACkDVauNOqUyA9pBIBHoVds9Dq1BLW4SuaSux1BvigWxhPCVrCeFpqeivobKhEmeBOClr1g+RsAPM7YlS9v4V9X6BaWl1XN3NbPkOUlxp9RjZeNuYg8om69cAGzHePyUVSm6o07WuMev5LKUvpnCPwEQuIVitbubG5pE5EhRQqWTojhJCkISQsYZCjexTwkLUDUUzTXKyWJFrNRoHvqD4gQrNrXznCTStQZUb8Q/+TlOumswZjuvOPQCTXg8Inp1eDCF21o0M3BxKdRr7TIdwlYxsbeuFZcGuEHKAWmotcPOEStKwPBU2hjz/APEPwcxlHfbUHEhxcS0ztBkukckfkvOP7TWlrTTeC4S2WnIxx9R9V9Lg4Ub6dM8tBjjAwuvF5koRpqzky+JGcrTo+eX+GbkQBSfJ5aRBGJzPTn6L0z8ObR7GuZUpeyLcH3QNxkyQeo4W2uLZhzGf0TW1WjCGXynkjTQ2Lxo45bJnm/4leDo33lLjBe0DrMF2OF5oWL6cADgQQCDgjuFjdd/Dy2qNcaLfZu5EcdceSr4/lqK1mQ8nw3J7QPFQEoajOs6FUt3bXggEkAkRMR+4Q4MXoqSatHmOEk6Y2m1TNYprRrQ4F4JbPvAYJHWPNem6R4dsKlMNADi/32uLhMdQIOI7KOXMsfZ04cDn0zy8NUjWr0jVfw/bt3UTED4IkzPUznCyGq6JVoEe0bAOQenpPdLDPCfTHlgnDsGMZKLt8PXOz2nsnFvMiDjvAypPC9qH3DGkTmR5RmV7HatAAA4Uc/kPG6RfDgU1bPEzauDPeaQJ+h6iP5wtJoDmUxHcESBzJByVu9V8O29c7nsz1LSQT6xyoaHhm2ZG2mDHUkk57ycqEvIjKNMvDA4vgjs206o4DgO4BVqlY028QD0jj6KX+kAENG30wmspbcc91zWdFC3jGlu0jCE3DW0oAENP0+6LXBH+Sp1yIh0EHhaJmUadlQfJhqJWVoykw7R3PdZ25fBhhz0AOQr+g3rgTTqHM43HPTCpJOuxE1ZltaquL3b2be3+lVurYOotqAQ5vuniCOnHXlb3xFY030nEgSMgrBVq/uFnQ/oujFPZKiGSNPkEkJIUhakIXUcwwBLCdCWEGFEMJU8hIgEEsa9mcqyzU3HklGG2W4QQhV7pxaThcVnZRodH1cAe8Y+aLXEvcC2IIXn4YQr9rePH+R+qVxCmeh2FpDJmXdRwrLLwNd2WTsdQJ6qWreOceVPUezeUdSEDKbUvA44Kw9K8IxKf/VO6FDUNmpuNSPEqKhdyVn6VZx5KLWLJRqjGms66ugyhFtSMK/RwkCZT8RdIfWpMLIO13HWTgQfqsC7SxTAZWw+d0DJg4Ax3gL2u4phwghAtS8NNqu3SGuiJjMeq6cPkarV9HPlwKT2+mM0Tws0g+0Ey6AJyG9DH1R6x8Fhjmvp1TgyGu4BxmRHmjej6QLcfFu6cZPqrlS+YDA+aE88m3TGhhikuC5bsIGSD9lW1bSKdwzY8dZCmp1UtS4hc6bTtFWrAtHR6dACGNBEgEDoiNu+Aqla7LjhOpUnHlFtvsySXQUbcKUOQ+nTIVppShJimEJ8pjljArWXkCRwMn0CA0dWY90EjylEfEOobPdmSRhYy6pGPaDqYPr3HkurFC1yRyTp8BLVrwMcNoBMc/oqdC9/5A8ntPJPyQ/2pPOU5q6FBJEHO2aTWNUJpANdMjPmss9TOfiFCUYR1QJy2IXNTSFKQkIVCZFC6E8tXQsYZtXJ+1cgY0ZDQFWr0mv54VJlUlW2OwvOPQB91poVX+3QjraBciNDTZ6I7UCjMU7chSsY5atmkqRukjshsbUy7WElWKdIrUUtLaOimZpjeyGwaM1RpGUe0wDqrbdJCs0rUBBsNFui4QplUDoXVLoATKUJbaVDc1SBIVcXQnlK+4aRytRgHqerOHEoPS1Il0ko1qbWbeQD3WWuIDvd/2qRoVm6tb4Foh2Ovdc65k8rH0Kjh1RS0c4pXENmktg3sr7Gjos+x5HCv2t0UoQnCQplOqCngoGFAVd+5W2lNe1Yxnda0xtX3idpWX1CgabCwwc4I84P6Lc6rSaWGceiwGp1ZcRyOn6rqwtvghlSQNhPSQuXWcxxSEJy6FjDNqkpWrnfC0nphK1krdaDbAUmn6iIz1U8mTRDwhszEVtOqsgOY4TgSOfRXNN8P1ap+EtHnj816F/xnJAJHE9D5J3tAcQoPyXXRZYFZlT4Ob/7OSrUGslUvdP8AR/VH8PIraqits8LP0GlEqRMJmgo0lo5qLUHhZS3qEIvbXKm0MmaCnCk3AIXSuFMHlKEvNKsUYQ+lKvUGlYxaIwgdxrbWEh4LcwCRgnyRl9WBlZfX9P8AbODpMDhvRNBJvkWV1wVr7W3EOdSna0wZ694Qavr5k5Mcjt9Et+7Y3b9lnatRsz1XZjxxfw5sk2vpq7TxHkSzBxk/RFXanTmd2Y4H3Xn7byBwPU8q5pVbdiRIzBjKMsC7BHM+jYXVZrmEAyqtrpZLSeqEW+otY6DkcnMj5I9pGpipuIwFCWNxLRmmMFo6MhXbbCu7gcKhcVA0wTCl2U6CFMzyiFuAgwqQMqzQuhgSg0GwsKc8KWmEy2epqhwkCJ7WFzq3bKHXF2eI9D0QyrqZbkgiTA/VOoNgckhdV1UAlufSOO4WXvHbjjzj80W1yoCdwGXCSguV1YopKznyPmiD2Z5TYRulo9wWwGcx1HCZc6BXaJLJHXaQSPkqexfpPR/gHhOa0lTtouGS07fQx9UQ0rYdzXAeU/bKMpUgKNsl0GzZul5lw4bGB691sKNNgEDg9EE09gbBI8kSqT0XHkds6oKkT1LQO4cQp6FEgZdPnCoCs5qfQuXOGVN2OW3XDBiR9QuVQ2zFy3BuTAWllKLt09oCjs6JwizG90zYEBqtASpG2x6cIjWphJswhYaI7dxCv0XquyiuqP2hajBOnVCsC+Y3krK1L+cAqGpWjko6A2RqquotJhRXFdu0yeFjqeot3fFwrtxdt2kk9E3raBugRrN217yJWfuQAkruyYKe6yqn/En0yvRhFRR585uXwrB8K/Suj7MtMQeMZB9eyotplW6FqTgiJ4TyonGyJ0g+nbhajw7TcKReI94474wVBS0r3mtcQQQJjkdVqrHSKbPhJggY/WOi5s2VVR1YcTTsq3162nscM4yPlhA9V1PecBaN2nM3O3QQQRB/dYStTLXEHoUmGMWNmlJBJuq1HDaT8+quUNTfuG7hA6atNcThVljROM2biw1UQCTHqpKuticLHMfjrKc15UPSi/tZpq15vDtsj+dEFe8nBP8A2e6riu6IBTCSmjChZTsnc8k8lFLDTXB4fGPy81QsKA3N3dTwtSwgjaTGYgYB6R6JMkq4Q8I3yxzLoNwr9BwdwqNvSaCRtJnknj0VuiwNdAxOYXO6LIhvKLWgw0ZyfM9ygFxbCN1OGnmOnPRaq4ce2FltUtmnLTB+yfGxJoltq5YyCYzMnKuHUWluIJhZZ76gxJU1pb1SeCBwScBVeNdsmsj6DdO/DjAOUQsyOOqB/wBvaxod/l647/VHbD4A5xk/JSml8KRb+l4AdlyhNVvdcpFAXa2waFKaYT3gEJG00TEBtuqrVKwaYJ9EUdTkIdV0hryN848yEyr6B38K1xftjBQuvq7DIJ8u60DdFpg8IDrfh4sdvpt3DJI6g9xCrDRuiU96tAi4qFhnkc4VO8vajwNoMDGFfsqdR7iHNIABORKFMa8uOdufTb6BdUUrOaTZAyhVLgIIJ4nE/NWra1rVHGmJ3DkFa+x0lrmsJJLo56fRaG3tAAMCVOfk10h4+P8A2efUPDdQZeyB64+aO6LZEf4e7z5fJa55HUJrGBQlnlJclo4Yx6Mxq2jUqoLqYAeMgYEx+uFj3se0kEQRg+UL0nUbJpkhxa7uM/ZZO40d4Dve3zz35VcOTimyeXHzaBFrd1Ad2TBWotPEoIG4QcBUaOjUzRxIec+ny7K7pWgNM7iSR0/WE2SWOXYIRmuizcvbV+FxBHPmFnr3TPe9zM59PmVtv7OCIxxzwfqEtPRKYERnvJ/JRjlUeisse3ZjDpVdw3Fhxj0S0NLqEgbSJ4kGF6NTotAhP90Lf9L/AAHoRiK/h2s1m6N3cDkeaHOoOBggz6L0sPAUV3aU6gG4cGQgvIf0Lwr4Yi30aoYmADySePVaDTNAphp3HcSZB7DpARVwa0YGFDa1gHeSWWWUho40gVf6S0O3ngDAB7eSpVXge9Mx2nHqjuvWTntD6fIHHkgVhp1Vh3uaREyOplNF2rbBJc8II6fc7hjryprh7mZGROeEOZcupuLW0+c8GD/P0T7y/dGQIPr9Cl15DtwXqOqjh0Qlt7Wm526CTM5/ZZ59VjYcDkHjyT2647oE3rfwG6+mqqadSJBIEhJWtaZx16LMM114UFXVi4ZJn+YQ9UjeyIRuW7Xe9BBmAc/NPo3cDaPWOiB0qrnOBJwESJ6oyjXDBF3ySvuDK5QQuSUPZbr3G2PNXW1BElee/wDlG8Seh/mFKfEZ7yFV+PL8JLPD9N7/AFQATWXJKyFLXQRCK2tySRB+SR4muyiyJ9GkY9K53kqVGueCp5KlQ4Iqw2oSARPIWe1FhLyNobnBiAR5rR6jRLiNphDTQJEVDAHXr8l0QdckZq+B+kVdoE1Gx5co/SvmdHgrPU9Fpgbml3eCU7T6Ja7gBs/NCSjLkMW1wagPDuqkeMYVagBGFaaQoFgTcXxZ8QOZT7drKo4+cZS6h7M5JmOibbOI+AHPRP8ABPoQbZsOC0YVkMb2GMKkyo7gjK51RJyMEd4XShrrqInlRXGpAY6wsos1oL+0AUT6glAWapuMSpqVUko6NG2QYDh3XOqY5VF0gKuy56IUay8+oRzwUy1uWk56/mqxuejlC2oDO0+iOprNDSrDhPewFZ6ldlvKvUb3uUNWawiaYjIkIdVt6Zn3B6KwLxpHKZIOVlaMYzU6G15gYVErY6haNdk/zzWVvqG10SD6LrxztUc2SNFeU0lKUyVYkWbQGTmESY/OMoPTqwZKs2lf3uqlON8lISoMmqlUDblndcoastsjyZlJwG6MKenUKkt6LSPecR6fqp7SkwfFnP1XruR4sYP4dQqELY6RetAg4KzlH2Q588f9qzSfLhsXNkSkduJ6m7pumMopS4WasqpDQCcokLwbYn6Lz5RO9MbeVC1x8+PJVXFxdkY5lBtW1YtJbMx81Rp+IKg8x1B/TsrxwyasjLNFOmFr3VMlowAqp1UCOqBVbguJJPKQOXQsKSIPMzX0vEAAGVK7xA58Bg97t+yyDCj2hWhkVDgDjz5BU54oRVlIZZSdBq3tqsb3EDu05wiNO8awgY+SH17sDAxJ/hVGpWXK+ToXBqWX7XOhTDY4CQspTqkELQWbsBI1Q6diavYOLd1OSR07hZStvBIcDI7reUpHC6pRY/L2g+fX6p4ZNexJws8/BIz91dsr4Ny6SVrLjSKL2hkbYyIj7qC30ejTPf1iD8iqPLFoRY5JgiprQIgBDal46cKxrmnNo7djid04PSP9oUU8Ixq0JKUrphEX8/EPmFHWviMNVGVxKfRC7st07508/VEXXBcAZAQGU8OQcEZTYYdf+f7JK2sOiBhCNy4lb1oO7Lla/e7lxVNxSJrkySXQjY0pFxXJhRWkdVxqlMcmrUax3tFyZC5YximPVkOwqjArDQu1o8zG2WaZkgI1YCMM56oECpGViODClKNnTDJqaitdkDJyh9PVHtJgyOiFe2ceSU+iCTAU1iS7KvM30S16xeZcmBarS/D5qUT7RoacwR8QP5f7Wf1CzNKo5hBx37d1o5It0jTxyS2f0rhWrS1e8wxpJ8vooqFEktHcgfdbSzo+wYAMGcHr8z80MuTRDYse7K9l4fNL3q20tI+EHr2JUV5fBpiQAMADgBN1bWSAQTJWUr3JOVyfylzI66UVSNGb+YDZJcYj1RnR9O3AmoCCHQAOoWK0iqRUD5EtOJ/nmt7bajVMQ3BjhJPjoeHPZdraDOWGD2ValUfTdtIyEata7uHCFPVptdJIB6EqO36UoG075wHI6pzbxx7JlfTWkgtdHOB1Q+nQqA+8QMn7I8G5ClO4dySrTKTXQTk90JYGuGHmfsr1oCDB+qDMdrdg11MmPeaMEdv4FiyF6VIIjyWJ1XSTTyDuGfl6q+CfxkcsfqBJTVI9sQe6Yuo5mJCVckWMKuXJYWMIU0pxTVjCJClTSVjDSkSpCsAcIXJi5YJiWKwxQsCmaF3M8qBIE+mmtCkASF0GLaxpuZuHIkkTiAjFno1HndmZEHPGJWWpvMQrthdODuTnC55wl8Z1Y5w+o9E0SnsG3cXdST+yg1bRm1i494g+hQj+6CmGjMnlEbDU5wDjlcLjKL2R33GS1H22hU6Z+EHqOufmqOsPc5paFevdUAB7oELp0yEE5PlhpLhGVvXuLoPIUJaVtG6Uyp7zoynV9DpOwOU+6E0ZjbeQcLWaPrFVsN/x9FaoeH6bPedkKyxlFvEINqQyVFsa9IyMqxb6mSOELfc08YBUort5akcP6Dui09jicOhJVquAgmfX9VWffgcKlUvJ5KCgwuSLbHOHH2RXTw4oHa3LSYJhFbS8DDk8rSizKSNDS4Q7V2OIhuZV2hdNcElWD1CROmM1aMTe2xaYyR9lVhbhtFo5iFRuNPpOxgea6Y5v0hLD+GTXIm/THCQRxwQeeyiZatAO8weiruiWjKYCkr0S2J6rnsA4MpKr5/nZGxaIl0JYXIgGEJhClhIQtZiIhNKmLVG5q1mGJE5IiAyLKJgHoeFZZau27ox8ly5dMpM44Y1/gvsyMpwC5ctdhqhzQp6JgykXIMMSapWJMkyVLa3RY6crlyVpVQ6k7ssV78udMR5JzLsdVy5T9cSvskT290RMSQMiUSsdQBeAREpVynOCdlYTfBHdXxBLZkSqZqSuXIxikgSk2xQVZZcgCI9SuXLVZrohc5NSLkTMeFIHLlyBkTtuHRElO/qndyuXJaQ1sX+rfxuKZ7c9ylXLUg2x5u3kRuMKFxnlcuWqjWMcmwlXIiiQmkLlywDoXQuXLBEITXBIuQMRFcuXIin/2Q==");
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: 50em, center;
+  background-position-y: 15em, center;
+  padding: 5em;
+}
+
+.fotoo{
+    background-image: url("https://pngimg.com/uploads/cat/cat_PNG50514.png");
+    background-repeat: no-repeat;
+    background-size: 10em;
+    background-origin: content-box;
+    padding: 5em;
+}
+
+.fotooo{
+    background-image: linear-gradient(to right, rgba(143, 97, 180, 0.623), pink);
+    padding: 5em;
+}
+
+.fotoooo{
+    background-image: radial-gradient(circle, rgba(209, 103, 16, 0.459) 20%,rgba(224, 14, 14, 0.37) 75%, rgba(128, 0, 0, 0.329) 5%);
+    max-width: 100%;
+    word-wrap:break-word;
+    font-size: 2em;
+    border: 0.1em solid pink;
+}
+
+#drag, #drop {
+  align-items: center;
+  float: left;
+  width: 12em;
+  height: 12em;
+  padding: 1em 0.5em;
+  margin: 2em 11em;
+  border: 1px solid black;
+  background-color:  rgba(255, 255, 255, 0.342);
+}
+#drag img, #drop img{
+  padding: 3em 2em;
+  width: 8em;
+  height: 6em;
+}
+.konga, .videoja, .pyetesori{
+
+    padding: 0.5em 25em;
+}
+    </style>   
+    <script>
+    function allowDrop(ev) {
+        ev.preventDefault();
+      }
+      
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+      
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
+</script>
+    </head>
+
+<body >
+    <p id="borderimage">
+    Ky border zgjatet pergjate krejt paragrafit ;)</p>
+
+    <p id="boxshadow">
+    Kjo kuti me shkrim ka hije ;)</p><br>
+
+    <div class="fotoo" style="color: white;">
+     Tekst i rendomte
+    </div>
+
+    <div class="fotooo" style="color: white">
+    Tekst tjeter i rendomte</div>
+
+    <div class="fotoooo" style="color: white">
+        Ne kete div do te provojme me wrap textin yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</div>
+
+        
+<div id="drag" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img src="../img/sinani3.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+  </div>
+  
+  <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="konga">
+  <audio controls>
+    <source src="../img/Muharrem Qena Mallengjimi.mp3" type="audio/mpeg">
+  Shnosh :/
+  </audio>
+</div>
+
+<div class="videoja">
+    <video width="320" height="240" controls>
+        <source src="../img/Urime Kosove, Drenas, Malisheve A ban me fol, A ban me fol (versioni i ri).mp4" type="video/mp4">
+      Qa ke hup :/
+      </video>
+</div>
+
+<!-- <form action="/form/submit" method="get">
+    <keygen name="rsaPublicKey" keytype="RSA">
+      User’s name:
+      <input type="text" name="usr_name">
+      <input type="submit">
+  </form> -->
+
+<div class="pyetesori">
+<p>Lenda juaj e preferuar:</p>
+<input type="text" list="lendet">
+<datalist id="lendet">
+    <option value="Sinjale">
+    <option value="Elektronike">    
+    <option value="Databaze">
+    <option value="Internet">
+    <option value="OOP">
+    <option value="Mat3K">
+</datalist>
+</div>
+
+<div class="pyetesori">
+<h4>Mblidhi dy numra</h4>
+<form onsubmit="return false" oninput="dora.value = parseInt(gishtat1.value) + parseInt(gishtat2.value)">
+    <input name="gishtat1" type="number" step="any"> +
+    <input name="gishtat2" type="number" step="any"> =
+    <output name="dora"></output>
+  </form>
+</div>
+
+</body>
+
+</html>

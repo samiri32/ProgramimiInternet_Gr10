@@ -422,7 +422,7 @@ input[type=email] {
 }
 
 .slideshow-container img {
-  height: 43em !important;
+  height: 30em !important;
 }
 
 .mrapa, .para {
@@ -497,7 +497,7 @@ body {
   margin: auto;
   display: block;
   min-height: 100%;
-  max-width: 3  0%;
+  max-width: 30%;
 }
 
 .modal-content, #caption {
