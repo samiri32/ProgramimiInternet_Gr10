@@ -747,10 +747,51 @@
         </div>
 
         <div class="extra">
-            <p><button onclick="clickCounter()" type="button">Numro!</button></p>
-            <div id="result"></div>
+            <script>
+                function clickCounterLocal() {
+                  if (typeof(Storage) !== "undefined") {
+                    if (localStorage.clickcount) {
+                      localStorage.clickcount = Number(localStorage.clickcount)+1;
+                    } else {
+                      localStorage.clickcount = 1;
+                    }
+                    document.getElementById("resultlocal").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+                  } else {
+                    document.getElementById("resultlocal").innerHTML = "Sorry, your browser does not support web storage...";
+                  }
+                }
+                </script>
+            <p><button onclick="clickCounterLocal()" type="button">Numro!</button></p>
+            <div id="resultlocal"></div>
             <p>Preke butonin.</p>
-            <p>Numrimi vazhdon edhe nese mbyllet tab.</p>
+            <p>Numrimi vazhdon edhe nese mbyllet tab.
+            </p>
+        </div>
+
+        <div class="extra">
+        <script>
+            function clickCounterSession() {
+                if (typeof(Storage) !== "undefined") {
+                  if (sessionStorage.clickcount) {
+                    sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+                  } else {
+                    sessionStorage.clickcount = 1;
+                  }
+                  document.getElementById("resultsession").innerHTML = "Ke kliku " + sessionStorage.clickcount + " here.";
+                } else {
+                  document.getElementById("resultsession").innerHTML = "Browser juaj nuk e perkrah session";
+                }
+              }
+              </script>
+              </head>
+              <body>
+              
+              <p><button onclick="clickCounterSession()" type="button">Click me!</button></p>
+              <div id="resultsession"></div>
+              <p>Preke butonin.</p>
+              <p>Numrimi vazhdon derisa te mbyllet tab, ne ate rast behet reset.</p>
+              
+
         </div>
 
 
@@ -878,216 +919,460 @@
             </div>
         </div>
         <div class="extra">
-            <div id="animate-area"></div>
+            <div id="animate-area">
 
-        </div>
-        <div class="row4">
-            <div class="shortcuts">
-                <div class="shortcutnalt">
-                    <div class="bs">VEGËZA TË DOBISHME</div>
-                </div>
-                <div class="shortcutposht">
-                    <a href="#" class="eee" id="sdds">Libra</a>
-                    <a href="../HTML/Autoret1.html" class="eee" id="fdsfdsf">Autorët</a>
-                    <a href="../HTML/lajmi.html" class="eee" id="fsdfdsf">Lajme</a>
+            </div>
 
+
+
+            <div class="extra" style="padding-top:2em">
+                <input id="trycatchbutotn" type="text">
+                <button type="button" onclick="trycatch()">Testo inputin</button>
+                <p id="p1"></p>
+                <script>
+                    function trycatch() {
+                        var message, x;
+                        message = document.getElementById("p1");
+                        message.innerHTML = "";
+                        x = document.getElementById("trycatchbutotn").value;
+                        try {
+                            if (x == "") throw "empty";
+                            if (isNaN(x)) throw "nuk eshte numer";
+                            x = Number(x);
+                            if (x < 5) throw "numri eshte me i vogel se 5";
+                            if (x > 10) throw "numri eshte me i madh se 10";
+                        }
+                        catch (err) {
+                            message.innerHTML = "Input is " + err;
+                        }
+                    }
+                </script>
+            </div>
+            <div class="extra" style="font-weight: bold;">
+
+
+                <script type="text/javascript">
+                    var num = 213;
+                    document.write("Ky funksion e kthen numrin 213 ne String me baze 2(ne kete rast): <br><br>" + num.toString(2));
+
+
+
+                </script>
+            </div>
+            <div class="extra">
+
+
+
+                <p style="font-weight: bold;">Funksioni toExponential()</p>
+
+                <script type="text/javascript">
+                    var num = 212.13456;
+                    document.write(num.toExponential(2));           
+                </script>
+            </div>
+
+            <div class="extra">
+                <p>Butoni shfaq numrin me te madh te mundshem ne JS.</p>
+
+                <button onclick="maxvaluekerkesa()">Kliko</button>
+
+                <p id="mv"></p>
+
+                <script>
+                    function maxvaluekerkesa() {
+                        document.getElementById("mv").innerHTML = Number.MAX_VALUE;
+                    }
+                </script>
+            </div>
+
+            <div class="extra">
+                <h3>Jane kriju 4 objekte dhe 2 prototipe.</h3>
+                <p id="prototipi" style="font-weight: bold;"></p>
+                <p id="prototipi2" style="font-weight: bold;"></p>
+                <script>
+                    function Njeri(emri, mbiemri, mosha) {
+                        this.emri = emri;
+                        this.mbiemri = mbiemri;
+                        this.mosha = mosha;
+
+                    }
+                    function Hobi(hobi1, hobi2) {
+                        this.hobi1 = hobi1;
+                        this.hobi2 = hobi2;
+
+                    }
+
+                    var hobinjo = new Hobi("Futbolli", "Najsen");
+                    var hobidy = new Hobi("Basketi", "Tenisi");
+
+                    var Une = new Njeri("Samir1", "Simnica1", 20);
+                    var Ti = new Njeri("Samir2", "Simncia2", 21);
+
+
+                    document.getElementById("prototipi").innerHTML =
+                        "Samiri1 ka mbiemrin " + Une.mbiemri + ". Samiri2 ka emrin " + Ti.emri;
+
+                    document.getElementById("prototipi2").innerHTML =
+                        "Hobi i Samirit eshte " + hobinjo.hobi1 + ". Hobi i Samirit1 eshte " + hobidy.hobi2; 
+                </script>
+            </div>
+
+            <div class="extra">
+                <p style="font-weight: bold;">Funksioni search() per fjalen libri te stringu "Pasuria ma e madhe osht
+                    libri"</p>
+                <p id="pldh"></p>
+
+                <script>
+                    var str = "Pasuria ma e madhe osht libri";
+                    var n = str.search("libri");
+                    document.getElementById("pldh").innerHTML = n;
+                </script>
+            </div>
+
+
+            <div class="extra">
+
+                <p>Kliko butonin per me bo nje global search te fjales samir ne stringun "o samir o kompir o samir".</p>
+
+                <button onclick="funksionimeG()">Kliko</button>
+
+                <p id="regexG"></p>
+
+                <script>
+                    function funksionimeG() {
+                        var str = "o samir o kompir o samir";
+                        var patt1 = /samir/g;
+                        var rezultati = str.match(patt1);
+                        document.getElementById("regexG").innerHTML = rezultati;
+                    }
+                </script>
+
+            </div>
+
+            <div class="extra">
+
+                <p>Kliko butonin per nje search case-insensitive per fjalen fiek ne stringun "FieK fakullteti ma i mire
+                    n'bote".</p>
+
+                <button onclick="funksionimeI()">Try it</button>
+
+                <p id="regexI"></p>
+
+                <script>
+                    function funksionimeI() {
+                        var str = "FieK fakullteti ma i mire n'bote";
+                        var patt1 = /FiEk/i;
+                        var rezultati = str.match(patt1);
+                        document.getElementById("regexI").innerHTML = rezultati;
+                    }
+                </script>
+
+            </div>
+
+            <div class="extra">
+
+                <p>Kjo metode ka me lyp a ekziston shkronja a tek stringu "Vajta kalova tere Kalabrine", nese gjen jep
+                    rezultat true.</p>
+
+                <button onclick="testregex()">Kliko</button>
+
+                <p id="testreg"></p>
+
+                <script>
+                    function testregex() {
+                        var str = "Vajta kalova tere Kalabrine";
+                        var patt = new RegExp("a");
+                        var rezultati = patt.test(str);
+                        document.getElementById("testreg").innerHTML = rezultati;
+                    }
+                </script>
+            </div>
+            <div class="extra">
+
+                <p>Kjo metode ka me lyp a ekziston shkronja a tek stringu "Vajta kalova tere Kalabrine", nese gjen jep
+                    rezultat shkronjen e kerkuar.</p>
+
+                <button onclick="execregex()">Kliko</button>
+
+                <p id="execreg"></p>
+
+                <script>
+                    function execregex() {
+                        var str = "Vajta kalova tere Kalabrine";
+                        var patt = new RegExp("a");
+                        var rezultati = patt.exec(str);
+                        document.getElementById("execreg").innerHTML = rezultati;
+                    }
+                </script>
+            </div>
+
+            <div class="extra">
+
+                <p>Kliko butonin me bo nje global search te shkronjave "mir", funksioni kthen si rezultat shkronjat sa
+                    here qe kane match. String "Samir simnica samir simnica"</p>
+
+                <button onclick="matchfnk()">Try it</button>
+
+                <p id="match"></p>
+
+                <script>
+                    function matchfnk() {
+                        var str = "Samir simnica samir simnica";
+                        var rezultati = str.match(/mir/g);
+                        document.getElementById("match").innerHTML = rezultati;
+                    }
+                </script>
+
+            </div>
+
+            <div class="extra">
+
+                <p>Prek butonin per me zevendsu fjalen "bosi" me "kosi":</p>
+
+                <p id="replace">Samir bosi</p>
+
+                <button onclick="replacefnk()">Try it</button>
+
+                <script>
+                    function replacefnk() {
+                        var str = document.getElementById("replace").innerHTML;
+                        var rezultati = str.replace("bosi", "kosi");
+                        document.getElementById("replace").innerHTML = rezultati;
+                    }
+                </script>
+
+            </div>
+
+
+            <div class="extra" style="padding: 1em 0em 1em 1em">
+                <p style="font-size: 1em;">Shkruaj numrin e telefonit:</p>
+                <form action="" onsubmit="validate()">
+                    <input type="text" id="nrtelit" placeholder="phone number" /> <br>
+                </form>
+
+                <script>
+                    function validate() {
+                        var phoneNumber = document.getElementById('nrtelit').value;
+                        var phoneRGEX = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
+                        var phoneResult = phoneRGEX.test(phoneNumber);
+                        alert("numri qe e ke shenu:"+ phoneResult)
+                    }
+                </script>
+
+            </div>
+
+            <!--QITU JA NIS ROW4-->
+            <div class="row4">
+                <div class="shortcuts">
+                    <div class="shortcutnalt">
+                        <div class="bs">VEGËZA TË DOBISHME</div>
+                    </div>
+                    <div class="shortcutposht">
+                        <a href="#" class="eee" id="sdds">Libra</a>
+                        <a href="../HTML/Autoret1.html" class="eee" id="fdsfdsf">Autorët</a>
+                        <a href="../HTML/lajmi.html" class="eee" id="fsdfdsf">Lajme</a>
+
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row5">
-            <div class="row5pjesepjese">
-                <div class="logoja">
-                    <div class="sinanibabo">
-                        <img src="../img/sinani3.png" alt="pldh" height="130em" width="175em" id='sinani'
-                            style="background-color: black;">
-                    </div>
-                    <span id="sinaniposht">Biblioteka Sinan Dobreva</span>
-                </div>
-                <div class="perberja">
-                    <div class="kolona1p">
-                        <span id="lajmekuq5" style="font-size: 1em;">Misioni</span>
-                        <br>
-                        <p id="kolona1pp">BSD është institucion kulturor, edukues e informues që grumbullon dhe ruan
-                            koleksionet e
-                            veta nga fushat e ndryshme të krijimtarisë intelektuale me qëllim që t’ i bëjë të njohura
-                            shfrytëzuesve
-                            për t’i studiuar dhe për t’ i lënë
-                            trashëgim gjeneratave të ardhshme.</p>
-                        <a href="#">
-                            <p id="katalogu">Shfleto katalogun</p>
-                        </a>
-                    </div>
-
-                    <div class="kolona1p">
-                        <span id="lajmekuq5" style="font-size: 1em;">Ofertat</span>
-                        <br>
-                        <p id="kolona1pp">Biblioteka BSD ofron qasje në materialin bibliotekar për të gjithë përdoruesit
-                            e
-                            qytetit
-                            të Prishtinës me rrethinë, pavarësisht nga raca, kombësia, gjinia, mosha, besimi fetar,
-                            gjuha,
-                            paaftësitë
-                            fizike dhe informon e ndihmon ata
-                            në përdorimin e gjetjen e tyre.</p>
-                        <a href="../HTML/regjistrohu.html">
-                            <p id="katalogu">Regjistrohu</p>
-                        </a>
-                    </div>
-
-                    <div class="kolona1p">
-                        <span id="lajmekuq5" style="font-size: 1em;">Bashkëpunëtorët</span>
-                        <br>
-                        <p id="kolona1pp">Biblioteka "Sinan Dobreva" bashkëpunon me bibliotekat në vend dhe jashtë
-                            vendit;
-                            Bashkëpunon me institucionet kulturore, shtëpitë botuese, shkollat dhe me komunitetin me
-                            qëllim
-                            të nxitjes
-                            së interesimit për librin dhe të mësuarit
-                            gjatë gjith jetës. Shfletoni galerinë për më shumë.
-                        </p>
-                        <a href="../HTML/galeria.html">
-                            <p id="katalogu">Galeria</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br><br><br>
-        <!--QITU JA NIS row6-->
-
-        <div class="row6" style="background-color:#eeeeee">
-            <div class="subfooternalt">
-                <div class="sbkol1">
-                    <span id="sf">Regjistrohu për të pranuar e-mails nga Biblioteka</span><br><br>
-                    <!-- Qitu ni form per Anetaresim (mail subscription)-->
-                    <form id="emailform">
-                        <input id="emailinput" type="email" placeholder="emri@gmail.com"> <br><br>
-                        <div class="dergo">
-                            <input type="submit" value="Dërgo">
+            <div class="row5">
+                <div class="row5pjesepjese">
+                    <div class="logoja">
+                        <div class="sinanibabo">
+                            <img src="../img/sinani3.png" alt="pldh" height="130em" width="175em" id='sinani'
+                                style="background-color: black;">
                         </div>
-                    </form> <br><br><br> <input type="checkbox" checked="checked" name="subscribe"> E-mails të
-                    përditshme
-                    <br><br>
+                        <span id="sinaniposht">Biblioteka Sinan Dobreva</span>
+                    </div>
+                    <div class="perberja">
+                        <div class="kolona1p">
+                            <span id="lajmekuq5" style="font-size: 1em;">Misioni</span>
+                            <br>
+                            <p id="kolona1pp">BSD është institucion kulturor, edukues e informues që grumbullon dhe ruan
+                                koleksionet e
+                                veta nga fushat e ndryshme të krijimtarisë intelektuale me qëllim që t’ i bëjë të
+                                njohura
+                                shfrytëzuesve
+                                për t’i studiuar dhe për t’ i lënë
+                                trashëgim gjeneratave të ardhshme.</p>
+                            <a href="#">
+                                <p id="katalogu">Shfleto katalogun</p>
+                            </a>
+                        </div>
+
+                        <div class="kolona1p">
+                            <span id="lajmekuq5" style="font-size: 1em;">Ofertat</span>
+                            <br>
+                            <p id="kolona1pp">Biblioteka BSD ofron qasje në materialin bibliotekar për të gjithë
+                                përdoruesit
+                                e
+                                qytetit
+                                të Prishtinës me rrethinë, pavarësisht nga raca, kombësia, gjinia, mosha, besimi fetar,
+                                gjuha,
+                                paaftësitë
+                                fizike dhe informon e ndihmon ata
+                                në përdorimin e gjetjen e tyre.</p>
+                            <a href="../HTML/regjistrohu.html">
+                                <p id="katalogu">Regjistrohu</p>
+                            </a>
+                        </div>
+
+                        <div class="kolona1p">
+                            <span id="lajmekuq5" style="font-size: 1em;">Bashkëpunëtorët</span>
+                            <br>
+                            <p id="kolona1pp">Biblioteka "Sinan Dobreva" bashkëpunon me bibliotekat në vend dhe jashtë
+                                vendit;
+                                Bashkëpunon me institucionet kulturore, shtëpitë botuese, shkollat dhe me komunitetin me
+                                qëllim
+                                të nxitjes
+                                së interesimit për librin dhe të mësuarit
+                                gjatë gjith jetës. Shfletoni galerinë për më shumë.
+                            </p>
+                            <a href="../HTML/galeria.html">
+                                <p id="katalogu">Galeria</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <!--QITU JA NIS row6-->
+
+            <div class="row6" style="background-color:#eeeeee">
+                <div class="subfooternalt">
+                    <div class="sbkol1">
+                        <span id="sf">Regjistrohu për të pranuar e-mails nga Biblioteka</span><br><br>
+                        <!-- Qitu ni form per Anetaresim (mail subscription)-->
+                        <form id="emailform">
+                            <input id="emailinput" type="email" placeholder="emri@gmail.com"> <br><br>
+                            <div class="dergo">
+                                <input type="submit" value="Dërgo">
+                            </div>
+                        </form> <br><br><br> <input type="checkbox" checked="checked" name="subscribe"> E-mails të
+                        përditshme
+                        <br><br>
+                    </div>
+
+                    <div class="sbkol1">
+                        <span id="sf">Porosit katalogun e librave</span><br><br>
+                        <button class="buton">Porosit</button>
+                        <h5 id="h5">Plotësisht falas!</h5>
+                    </div>
+
                 </div>
 
-                <div class="sbkol1">
-                    <span id="sf">Porosit katalogun e librave</span><br><br>
-                    <button class="buton">Porosit</button>
-                    <h5 id="h5">Plotësisht falas!</h5>
+                <div class="subfooterposht">
+
+                    <div class="sbkol2">
+
+                        <ul>
+
+                            <li><a href="#">
+                                    Libra shqip
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    Libra të huaj
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sbkol2">
+
+                        <ul>
+
+
+                            <li><a href="../HTML/meshum.html">
+                                    Autorë shqiptar
+                                </a></li>
+                            <li><a href="../HTML/meshume2.html">
+                                    Autorë të huaj
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="sbkol2">
+
+                        <ul>
+                            <li><a href="../HTML/lajmi.html"><span>Lajme</span></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="sbkol2">
+
+                        <ul>
+
+                            <li><a href="#fotogaleriah3">
+                                    Fotogaleria
+                                </a>
+                            </li>
+                            <li><a href="#videogaleriah3">
+                                    Videogaleria
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sbkol2">
+
+                        <ul>
+                            <li><a href="../HTML/Kontakti.html"><span>Kontakti</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sbkol2">
+
+                        <ul>
+                            <li><a href="../HTML/regjistrohu.html"><span>Regjistrohu</span></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
 
-            <div class="subfooterposht">
 
-                <div class="sbkol2">
-
-                    <ul>
-
-                        <li><a href="#">
-                                Libra shqip
-                            </a>
-                        </li>
-                        <li><a href="#">
-                                Libra të huaj
-                            </a></li>
-                    </ul>
-                </div>
-
-                <div class="sbkol2">
-
-                    <ul>
+            <!-- qiky /div e mshel homepage ;) -->
 
 
-                        <li><a href="../HTML/meshum.html">
-                                Autorë shqiptar
-                            </a></li>
-                        <li><a href="../HTML/meshume2.html">
-                                Autorë të huaj
-                            </a></li>
-                    </ul>
-                </div>
-                <div class="sbkol2">
+            <footer class="futeri">
+                <div class="futerimrena">
 
-                    <ul>
-                        <li><a href="../HTML/lajmi.html"><span>Lajme</span></a>
-                        </li>
+                    <div class="futerimamrena">
+                        <div class="sbkol3">
+                            <a href="#" id="socialmedia" style="padding-right:0.5em;"><i
+                                    class="fa fa-instagram"></i></a>
+                            <a href="#" id="socialmedia" style="padding-right:0.5em;"><i class="fa fa-facebook"></i></a>
+                            <a href="#" id="socialmedia"><i class="fa fa-twitter"></i></a>
+                        </div>
 
-                    </ul>
-                </div>
-                <div class="sbkol2">
+                        <div class="sbkol3">
+                            <span id="suxhuki">Për sugjerime:</span>
+                            <a href="mailto: BSDa@biblioteka.com" id="socialmedia" style="padding-left: 0.15em;">
+                                <i class="fa fa-envelope"></i></a>
+                        </div>
 
-                    <ul>
+                        <div class="sbkol3">
+                            <address style="font-size:0.8em">
+                                Dobrevë, 10000<br>
+                                Kosovë
+                            </address>
+                        </div>
 
-                        <li><a href="#fotogaleriah3">
-                                Fotogaleria
-                            </a>
-                        </li>
-                        <li><a href="#videogaleriah3">
-                                Videogaleria
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="sbkol2">
-
-                    <ul>
-                        <li><a href="../HTML/Kontakti.html"><span>Kontakti</span></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="sbkol2">
-
-                    <ul>
-                        <li><a href="../HTML/regjistrohu.html"><span>Regjistrohu</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-
-
-        <!-- qiky /div e mshel homepage ;) -->
-
-
-        <footer class="futeri">
-            <div class="futerimrena">
-
-                <div class="futerimamrena">
-                    <div class="sbkol3">
-                        <a href="#" id="socialmedia" style="padding-right:0.5em;"><i class="fa fa-instagram"></i></a>
-                        <a href="#" id="socialmedia" style="padding-right:0.5em;"><i class="fa fa-facebook"></i></a>
-                        <a href="#" id="socialmedia"><i class="fa fa-twitter"></i></a>
+                        <div class="sbkol33">
+                            <span style="font-size:0.85em;">©2020-2021 <abbr title="Biblioteka Sinan Dobreva">BSD</abbr>
+                                Të
+                                gjitha të
+                                drejtat e rezervuara.</span>
+                        </div>
                     </div>
 
-                    <div class="sbkol3">
-                        <span id="suxhuki">Për sugjerime:</span>
-                        <a href="mailto: BSDa@biblioteka.com" id="socialmedia" style="padding-left: 0.15em;">
-                            <i class="fa fa-envelope"></i></a>
-                    </div>
-
-                    <div class="sbkol3">
-                        <address style="font-size:0.8em">
-                            Dobrevë, 10000<br>
-                            Kosovë
-                        </address>
-                    </div>
-
-                    <div class="sbkol33">
-                        <span style="font-size:0.85em;">©2020-2021 <abbr title="Biblioteka Sinan Dobreva">BSD</abbr> Të
-                            gjitha të
-                            drejtat e rezervuara.</span>
-                    </div>
                 </div>
 
-            </div>
 
+            </footer>
 
-        </footer>
-
-        <script src="../js/extra.js"></script>
+            <script src="../js/extra.js"></script>
 
 </body>
 
