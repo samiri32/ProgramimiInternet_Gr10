@@ -102,11 +102,6 @@
     margin-bottom: 18px;
 }
 
-.djathtas1 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-right: 0.7em;
-}
-
 .djathtas1 h3 {
     font-style: italic;
 }
@@ -115,17 +110,19 @@
     position: relative;
     float: left;
     box-sizing: border-box;
-    width: 67%;
+    width: 70%;
 }
 
 .majtas1 {
     position: relative;
     float: left;
     box-sizing: border-box;
-    width: 75%;
+    width: 72%;
 }
 
 .djathtas1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 0.7em;
     position: relative;
     float: right;
     width: fit-content;
@@ -200,4 +197,28 @@ ul {
     position: relative;
     margin-top: 30px;
     color: black;
+}
+
+.edit1 {
+    position: relative;
+    margin-right: 3em;
+    margin-top: 2em;
+}
+
+.edit2 {
+    position: relative;
+    margin-right: 3.5em;
+    margin-top: 2em;
+}
+
+.edit3 {
+    position: relative;
+    margin-right: 3em;
+    margin-top: 3em;
+}
+
+.edit4 {
+    position: relative;
+    margin-right: 1.5em;
+    margin-top: 3em;
 }
