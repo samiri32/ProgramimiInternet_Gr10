@@ -155,7 +155,7 @@ ul {
 
 .bullet ul li::before {
     content: "\2022";
-    color: grey;
+    color: black;
     display: inline-block;
     width: 1em;
     margin-left: -0.5em;
@@ -163,7 +163,7 @@ ul {
 
 .vi ul li::before {
     content: "\2012";
-    color: grey;
+    color: black;
     display: inline-block;
     width: 1em;
     margin-left: -0.5em;
@@ -171,7 +171,7 @@ ul {
 
 .tilde ul li::before {
     content: "\007E";
-    color: grey;
+    color: black;
     display: inline-block;
     width: 1em;
     margin-left: -0.5em;
@@ -179,7 +179,7 @@ ul {
 
 .vi-vi ul li::before {
     content: "\00BB";
-    color: grey;
+    color: black;
     display: inline-block;
     width: 1em;
     margin-left: -0.5em;
@@ -187,7 +187,7 @@ ul {
 
 .trekendsh ul li::before {
     content: "\2023";
-    color: grey;
+    color: black;
     display: inline-block;
     width: 1em;
     margin-left: -0.5em;
@@ -221,4 +221,12 @@ ul {
     position: relative;
     margin-right: 1.5em;
     margin-top: 3em;
+}
+
+.nestlist {
+    position: relative;
+    text-align: justify;
+    margin-left: 40%;
+    font-size: 17px;
+    line-height: 1.5em;
 }
