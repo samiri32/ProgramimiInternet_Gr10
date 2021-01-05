@@ -125,7 +125,8 @@
     position: relative;
     float: right;
     width: fit-content;
-    margin-top: 1.8em;
+    margin-top: 1.8em; 
+    margin-right:4em;
 }
 
 .lista1 {
@@ -141,6 +142,7 @@ p {
 }
 
 ul {
+    
     list-style: none;
 }
 
