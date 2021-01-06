@@ -540,9 +540,7 @@
             /* Standard syntax */
         }
 
-        #extrarotate {
-            transform: rotate(1deg);
-        }
+       
 
         #extrascale {
             margin: 150px;
@@ -729,11 +727,7 @@
                 <source src="../img/pasuriaLibri.mp3" type="audio/mpeg">
             </audio>
         </div>
-        <div class="extra">
-            <p>Count numbers: <output id="resultworker"></output></p>
-            <button class="butoneci" onclick="startWorker()">Start Worker</button>
-            <button class="butoneci" onclick="stopWorker()">Stop Worker</button>
-        </div>
+        
 
         <div class="extra">
             <button class="butonicanvas" onclick="nisja()">Play/Pause</button> <br>
@@ -746,51 +740,51 @@
             <canvas id="cw"></canvas>
         </div>
 
-        <div class="extra">
+        <div class="extra" stlye="display:inline-flex;">
+            
             <script>
                 function clickCounterLocal() {
-                  if (typeof(Storage) !== "undefined") {
-                    if (localStorage.clickcount) {
-                      localStorage.clickcount = Number(localStorage.clickcount)+1;
+                    if (typeof (Storage) !== "undefined") {
+                        if (localStorage.clickcount) {
+                            localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                        } else {
+                            localStorage.clickcount = 1;
+                        }
+                        document.getElementById("resultlocal").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
                     } else {
-                      localStorage.clickcount = 1;
+                        document.getElementById("resultlocal").innerHTML = "Sorry, your browser does not support web storage...";
                     }
-                    document.getElementById("resultlocal").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
-                  } else {
-                    document.getElementById("resultlocal").innerHTML = "Sorry, your browser does not support web storage...";
-                  }
                 }
-                </script>
+            </script>
             <p><button onclick="clickCounterLocal()" type="button">Numro!</button></p>
             <div id="resultlocal"></div>
             <p>Preke butonin.</p>
             <p>Numrimi vazhdon edhe nese mbyllet tab.
             </p>
-        </div>
-
-        <div class="extra">
-        <script>
-            function clickCounterSession() {
-                if (typeof(Storage) !== "undefined") {
-                  if (sessionStorage.clickcount) {
-                    sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
-                  } else {
-                    sessionStorage.clickcount = 1;
-                  }
-                  document.getElementById("resultsession").innerHTML = "Ke kliku " + sessionStorage.clickcount + " here.";
-                } else {
-                  document.getElementById("resultsession").innerHTML = "Browser juaj nuk e perkrah session";
+       
+            <script>
+                function clickCounterSession() {
+                    if (typeof (Storage) !== "undefined") {
+                        if (sessionStorage.clickcount) {
+                            sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+                        } else {
+                            sessionStorage.clickcount = 1;
+                        }
+                        document.getElementById("resultsession").innerHTML = "Ke kliku " + sessionStorage.clickcount + " here.";
+                    } else {
+                        document.getElementById("resultsession").innerHTML = "Browser juaj nuk e perkrah session";
+                    }
                 }
-              }
-              </script>
-              </head>
-              <body>
-              
-              <p><button onclick="clickCounterSession()" type="button">Click me!</button></p>
-              <div id="resultsession"></div>
-              <p>Preke butonin.</p>
-              <p>Numrimi vazhdon derisa te mbyllet tab, ne ate rast behet reset.</p>
-              
+            </script>
+            </head>
+
+           
+
+                <p><button onclick="clickCounterSession()" type="button">Click me!</button></p>
+                <div id="resultsession"></div>
+                <p>Preke butonin.</p>
+                <p>Numrimi vazhdon derisa te mbyllet tab, ne ate rast behet reset.</p>
+
 
         </div>
 
@@ -815,18 +809,16 @@
                 ctx.fillStyle = grd;
                 ctx.fillRect(10, 10, 150, 80);
             </script>
-        </div>
+        
 
-        <div class="extra">
+      
             <svg width="100" height="100">
                 <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="red" />
                 Sorry, your browser does not support inline SVG.
             </svg>
 
 
-        </div>
-
-        <div class="extra">
+       
 
             <svg height="130" width="500">
                 <defs>
@@ -886,34 +878,32 @@
 
         </div>
         <div class="extra">
-            <div id="extrarotate">
-                <p>O ti pse m'ke rotate 1 degree :(</p>
-            </div>
-            <div id="extrarotateX">
+            <div id="extratransformimet" style="display:flex; ">
+            
+            <div id="extrarotateX"  style="border:1px solid black">
                 <p>Une jom rotate per X</p>
             </div>
-            <div id="extrarotateY">
+            <div id="extrarotateY"  style="border:1px solid black">
                 <p>Une jom rotate per Y</p>
             </div>
-            <div id="extrascale">
+            <div id="extrascale"  style="border:1px solid black">
                 <p>Ketij paragrafi i jane rrite permasat</p>
             </div>
-            <div id="extraskew">
+            <div id="extraskew"  style="border:1px solid black">
                 <p>Okuku Okuku(edhe i bjen tfikt)</p>
             </div>
-            <div id="extratrans">
-                <p>Ky element i divit eshte levizur 1em horizontalisht dhe 1em vertikalisht, eshte lene jasht border per
-                    tu kuptuar levizja.</p>
+            <div id="extratrans"  style="border:1px solid black">
+                <p>Ky element i divit eshte levizur 1em horizontalisht dhe 1em vertikalisht.
             </div>
         </div>
-
-        <div class="extra">
+    
+        
             <div id="extra3dtrans">
                 <p>Watch me 3d transform</p>
             </div>
-        </div>
+       
 
-        <div class="extra">
+       
             <div id="keyframeRule">
                 <p>woooooo</p>
             </div>
@@ -939,11 +929,11 @@
                             if (x == "") throw "empty";
                             if (isNaN(x)) throw "nuk eshte numer";
                             x = Number(x);
-                            if (x < 5) throw "numri eshte me i vogel se 5";
-                            if (x > 10) throw "numri eshte me i madh se 10";
+                            if (x < 5) throw "me i vogel se 5";
+                            if (x > 10) throw "me i madh se 10";
                         }
                         catch (err) {
-                            message.innerHTML = "Input is " + err;
+                            message.innerHTML = "Inputi eshte " + err;
                         }
                     }
                 </script>
@@ -958,8 +948,7 @@
 
 
                 </script>
-            </div>
-            <div class="extra">
+          
 
 
 
@@ -1047,14 +1036,14 @@
                     }
                 </script>
 
-            </div>
+          
 
-            <div class="extra">
+            
 
                 <p>Kliko butonin per nje search case-insensitive per fjalen fiek ne stringun "FieK fakullteti ma i mire
                     n'bote".</p>
 
-                <button onclick="funksionimeI()">Try it</button>
+                <button onclick="funksionimeI()">Kliko</button>
 
                 <p id="regexI"></p>
 
@@ -1067,9 +1056,9 @@
                     }
                 </script>
 
-            </div>
+           
 
-            <div class="extra">
+           
 
                 <p>Kjo metode ka me lyp a ekziston shkronja a tek stringu "Vajta kalova tere Kalabrine", nese gjen jep
                     rezultat true.</p>
@@ -1086,8 +1075,7 @@
                         document.getElementById("testreg").innerHTML = rezultati;
                     }
                 </script>
-            </div>
-            <div class="extra">
+            
 
                 <p>Kjo metode ka me lyp a ekziston shkronja a tek stringu "Vajta kalova tere Kalabrine", nese gjen jep
                     rezultat shkronjen e kerkuar.</p>
@@ -1104,14 +1092,11 @@
                         document.getElementById("execreg").innerHTML = rezultati;
                     }
                 </script>
-            </div>
-
-            <div class="extra">
-
+            
                 <p>Kliko butonin me bo nje global search te shkronjave "mir", funksioni kthen si rezultat shkronjat sa
                     here qe kane match. String "Samir simnica samir simnica"</p>
 
-                <button onclick="matchfnk()">Try it</button>
+                <button onclick="matchfnk()">Kliko</button>
 
                 <p id="match"></p>
 
@@ -1123,15 +1108,12 @@
                     }
                 </script>
 
-            </div>
-
-            <div class="extra">
-
+           
                 <p>Prek butonin per me zevendsu fjalen "bosi" me "kosi":</p>
 
                 <p id="replace">Samir bosi</p>
 
-                <button onclick="replacefnk()">Try it</button>
+                <button onclick="replacefnk()">Kliko</button>
 
                 <script>
                     function replacefnk() {
@@ -1155,11 +1137,24 @@
                         var phoneNumber = document.getElementById('nrtelit').value;
                         var phoneRGEX = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
                         var phoneResult = phoneRGEX.test(phoneNumber);
-                        alert("numri qe e ke shenu:"+ phoneResult)
+                        alert("numri qe e ke shenu:" + phoneResult)
                     }
                 </script>
 
             </div>
+
+            <div class="extra">
+
+
+                <p>The highest prime number discovered so far is: <output id="result"></output></p>
+                <script>
+                 var worker = new Worker('../js/randomworker.js');
+                 worker.onmessage = function (event) {
+                   document.getElementById('result').textContent = event.data;
+                 };
+                </script>
+            </div>
+
 
             <!--QITU JA NIS ROW4-->
             <div class="row4">
@@ -1377,76 +1372,3 @@
 </body>
 
 </html>
-
-
-<!--
-<h3 id="fotogaleriah3">FOTOGALERIA</h3>
-<div class="galeria">
-  <div class="row">
-    <div class="column">
-      <img src="../img/hasha.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-      
-    </div>
-    <div class="column">
-      <img src="../img/dante.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
-    </div>
-    <div class="column">
-      <img src="../img/melania.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-    </div>
-    <div class="column">
-      <img src="../img/dhurohenlibra.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
-    </div>
-  </div>
-  
-  
-  <div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
-  
-      <div class="mySlides">
-        <div class="numbertext">1 / 4</div>
-        <img src="../img/hasha.jpg" >
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">2 / 4</div>
-        <img src="../img/dante.png">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">3 / 4</div>
-        <img src="../img/melania.jpg" >
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">4 / 4</div>
-        <img src="../img/dhurohenlibra.png">
-      </div>
-  
-      
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-      
-  
-      
-      <div class="column-posht">
-        <img class="demo" src="../img/hasha.jpg" onclick="currentSlide(1)" >
-      </div>
-  
-      <div class="column-posht">
-        <img class="demo" src="../img/dante.png" onclick="currentSlide(2)" >
-      </div>
-  
-      <div class="column-posht">
-        <img class="demo" src="../img/melania.jpg" onclick="currentSlide(3)" >
-      </div>
-  
-      <div class="column-posht">
-        <img class="demo" src="../img/dhurohenlibra.png" onclick="currentSlide(4)" >
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
--->

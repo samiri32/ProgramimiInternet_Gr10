@@ -38,33 +38,11 @@
                 $('.search-form').toggleClass('active')
             })
         })
-    </script>
-
-    <script>
-        var modal = document.getElementById("myModal");
-
-
-var img = document.getElementsByClassName("fototmodal");
-var modalImg = document.getElementById("img");
-
-var showModal=function(){
-    modal.style.display="block";
-    modalImg.src=this.src;
-    captionText.innerHTML=this.alt;
-
-}
-for(var i=0;i<img.length;i++){
-    img[i].addEventListener('click', showModal);
-}
+        
+            </script>
 
 
 
-var span = document.getElementsByClassName("close")[0];
-
-
-span.onclick = function() { 
-  modal.style.display = "none";
-}
     </script>
     <style>
         * {
@@ -190,13 +168,14 @@ span.onclick = function() {
             outline: none;
             font-size: 1em;
         }
+        
     </style>
 </head>
 
 
 
 
-<body onload="showSlides(1);" style="background-color:white;">
+<body>
     <title>Lajmet</title>
     <div class="header"></div>
 
@@ -255,9 +234,9 @@ span.onclick = function() {
                     <div class="gridi1">
                         <div class="ardy">
                              <img class="fototmodal" src="../img/HIVZIABABOOO.jpg">
-                                <div id="myModal" class="modal">
+                                <div class="modal">
                                     <span class="close">×</span>
-                                    <img class="modal-content" id="img">
+                                    <img class="modal-content" src="../img/HIVZIABABOOO.jpg" id="img">
                                     <p class="tekstimodal">
                                         Biblioteka “Hivzi Sulejmani” pas punës dymujore të ofrimit të shërbimeve huazimi i librit do të rifillon punën me sallat e leximit nga dita e premte 9 tetor 2020 . Ky veprim bëhet në përputhje me masat e udhëzimet e Institutit
                                 Kombëtar të Shëndetësisë Publike dhe të Ministrisë së Shëndetësisë të aprovuara nga Qeveria e Republikës së Kosovës si dhe në bashkëpunim të ngushtë me Drejtorinë e Kulturës dhe organet tjera të Komunës së Prishtinës.Në
@@ -279,7 +258,7 @@ span.onclick = function() {
                     <div class="gridi2">
                         <div class="ardy">
                             <img style="float: right" class="fototmodal" src="../img/ismail-kadare-j-foley-opale-w-1-990x556.jpg">
-                                <div id="myModal" class="modal">
+                                <div class="modal">
                                     <span class="close">×</span>
                                     <img class="modal-content" id="img">
                                     <p class="tekstimodal">
@@ -301,7 +280,7 @@ span.onclick = function() {
                     <div class="gridi3">
                         <div class="ardy">
                             <img class="fototmodal" src="../img/ekspozita.jpeg">
-                                <div id="myModal" class="modal">
+                                <div class="modal">
                                     <span class="close">×</span>
                                     <img class="modal-content" id="img">
                                     <p class="tekstimodal">Në Qendrën për Hapje dhe Dialog, në kryeministri u çel të hënën ekspozita "Përtej Kujtimeve", me rastin e 70-vjetorit të marrëdhënieve Shqipëri-Kinë. "Përtej Kujtimeve" ekspozon një koleksion pullash përkujtimore me tematikë
@@ -325,7 +304,7 @@ span.onclick = function() {
                     <div class="gridi4">
                         <div class="ardy">
                             <img style="float: right" class="fototmodal" src="../img/noli.jpg">
-                                <div id="myModal" class="modal">
+                                <div class="modal">
                                     <span class="close">×</span>
                                     <img class="modal-content" id="img">
                                     <p class="tekstimodal" >“Një figurë themelore e lëvizjes nacionaliste shqiptare të sapolindur, dijetari Fan S. Noli krijoi forcën e lëvizjes në Shtetet e Bashkuara, ku ai themeloi Kishën Ortodokse Shqiptare”. “Daily Sabah” e ka nisur kështu artikullin
@@ -347,7 +326,7 @@ span.onclick = function() {
                     <div class="gridi5">
                         <div class="ardy">
                             <img class="fototmodal" src="../img/mini-biblioteka.jpg">
-                                <div id="myModal" class="modal">
+                                <div class="modal">
                                     <span class="close">×</span>
                                     <img class="modal-content" id="img">
                                     <p class="tekstimodal">Hapet mini-biblioteka e parë në PrishtinëMe moton “Sill një libër merr një tjetër”, sot u hap mini-biblioteka e parë në Parkun e vjetër në lagjen “Dardania” të Prishtinës, e cila u mundësua nga ETEA, Kuvendi i të Rinjve të
@@ -368,7 +347,7 @@ span.onclick = function() {
                     <div class="gridi6">
                         <div class="ardy">
                             <img style="float: right" class="fototmodal" src="../img/arsimimi.png">
-                                <div id="myModal" class="modal">
+                                <div class="modal">
                                     <span class="close">×</span>
                                     <img class="modal-content" id="img">
                                     <p class="tekstimodal">Në ambientet e Këndit Amerikan, znj. Maja Adiga, zëvendës - asistente e sekretarit të shtetit për programe Akademike në kuadër të Byrosë për çështje arsimore dhe kulturore të Departamentit Amerikan te Shtetit u takua me partnerë
@@ -389,7 +368,7 @@ span.onclick = function() {
                     <div class="gridi7">
                         <div class="ardy">
                             <img class="fototmodal" src="../img/Dukagjinn-640x480.jpg">
-                            <div id="myModal" class="modal">
+                            <div class="modal">
                                 <span class="close">×</span>
                                 <img class="modal-content" id="img">
                                 <p class="tekstimodal">Mbyllja si pasojë e pandemisë shkaktoi tkurrje drastike të vizitorëve në bibliotekat e vendit ndërkohë që libraritë shënuan rritje në shitje të librave gjatë këtij viti. E pajisur me 70 mijë libra e me 80 ulëse për lexim, biblioteka
@@ -409,7 +388,7 @@ span.onclick = function() {
                     <div class="gridi8">
                         <div class="ardy">
                             <img style="float: right" class="fototmodal" src="../img/dhurohenlibra.png">
-                                <div id="myModal" class="modal">
+                                <div class="modal">
                                     <span class="close">×</span>
                                     <img class="modal-content" id="img">
                                     <p class="tekstimodal">Fëmijët e kopshtit “Elita”, kanë dhuruar ndihma simbolike për fëmijët e fshatit “SOS”, kurse arushi “Lino”, ka shpërblyer fëmijët për humanitetin e tyre , me libra për ngjyrosje. Në kuadër të kampanjës “Fëmijët ndihmojnë fëmijët”,
@@ -428,7 +407,7 @@ span.onclick = function() {
                     <div class="gridi9">
                         <div class="ardy">
                             <img style="float: right" class="fototmodal" src="https://kallxo.com/wp-content/uploads/2020/12/Ekspozita-per-Atm%C3%A9-e-f%C3%A9--640x480.jpg">
-                                <div id="myModal" class="modal">
+                                <div class="modal">
                                     <span class="close">×</span>
                                     <img class="modal-content" id="img">
                                     <p class="tekstimodal">Në 80 vjetorin e vdekjes së At Gjegj Fishtës, Biblioteka Kombëtare, “Pjetër Bogdani” në Prishtinë ka hapur sot ekspozitën, “per Atmé e fé” – Gjergj Fishta. Në këtë ekspozitë janë ekspozuar vepra e dorëshkrime të rralla e të
@@ -449,7 +428,7 @@ span.onclick = function() {
                     <div class="gridi10">
                         <div class="ardy">
                             <img class="fototmodal" src="../img/Aktiviteti.png">
-                            <div id="myModal" class="modal">
+                            <div class="modal">
                                 <span class="close">×</span>
                                 <img class="modal-content" id="img">
                                 <p class="tekstimodal">Në kuadër të festivalit PrishtinaLexon, banorët e kryeqytetit patën mundësinë të regjistrohen pa pagesë në të gjitha degët e Bibliotekës "Hivzi Sulejmani", kjo një gjë e cila u mirëpritë nga të gjithë qytetarët pa dallim, ndërsa në sheshin "Zahir Pjaziti",
@@ -687,32 +666,64 @@ span.onclick = function() {
 
             </div>
         </footer>
+       
         
         <script>
-            var modal = document.getElementById("myModal");
+            // const modal = document.getElementsByClassName("myModal");
             
             
-            var img = document.getElementsByClassName("fototmodal");
-            var modalImg = document.getElementById("img");
+            // var img = document.getElementsByClassName("fototmodal");
+            // var modalImg = document.getElementById("img");
+            // var captionText=document.getElementsByClassName("tekstimodal");
+           
+
+            // var showModal=function(){
+            //     modal.style.display="block";
+            //     modalImg.src=this.src;
+            //     captionText.innerHTML=this.alt;
+               
             
-            var showModal=function(){
+            // }
+            // for(var i=0;i<img.length;i++){
+            //     img[i].addEventListener('click', showModal);
+            // }
+            
+           
+            
+            // const span = document.getElementsByClassName("close")[0];
+            
+            
+            
+            function viewModal(){
+                const modal = $(this).children()[1];
+                
+                
+            console.log(typeof(modal));
+               
+              
+                const photo =$(this).children('#img').attr('src');
                 modal.style.display="block";
-                modalImg.src=this.src;
-                captionText.innerHTML=this.alt;
-            
+                
+                span.onclick = function() { 
+              
+              
+               console.log(modal);
+                         }
+
             }
-            for(var i=0;i<img.length;i++){
-                img[i].addEventListener('click', showModal);
+            
+            
+
+            const lajmet = document.getElementsByClassName('ardy');
+            
+            for(let i=0;i<lajmet.length;i++){
+                lajmet[i].addEventListener('click',viewModal);
             }
+          
+
             
-            
-            var span = document.getElementsByClassName("close")[0];
-            
-            
-            span.onclick = function() { 
-              modal.style.display = "none";
-            }
-            </script>
+            // </script>
+
 
     </body>
 
