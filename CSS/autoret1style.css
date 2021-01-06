@@ -622,9 +622,14 @@ input[type=email] {
 }
 
 .meshum a:hover {
-    color: teal;
+    color:red;
 }
 
 .meshum a:visited {
     color: none;
 }
+
+#cardstitle a{
+    color:red;
+}
+
