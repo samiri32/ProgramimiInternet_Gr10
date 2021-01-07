@@ -493,19 +493,13 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-.modal-content {
+#img {
   margin: auto;
   display: block;
-  min-height: 100%;
-  max-width: 30%;
+  max-height: 80%;
+  max-width: 25%;
 }
 
-.modal-content, #caption {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
 
 @-webkit-keyframes zoom {
   from {

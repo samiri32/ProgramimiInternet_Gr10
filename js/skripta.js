@@ -30,7 +30,7 @@ function showSlides(n) {
 var modal = document.getElementById("myModal");
 var img = document.getElementsByClassName("fototmodal");
 var modalImg = document.getElementById("img");
-var teksti= document.getElementsByClassName("tekstimodal")
+
 
 var showModal = function () {
     modal.style.display = "block";
