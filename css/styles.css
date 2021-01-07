@@ -547,15 +547,8 @@ body {
 #modal-content {
   margin: auto;
   display: block;
-  min-height: 100%;
-  max-width: 30%;
-}
-
-.modal-content, #caption {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
+  max-height: 90%;
+  max-width: 25%;
 }
 
 @-webkit-keyframes zoom {
