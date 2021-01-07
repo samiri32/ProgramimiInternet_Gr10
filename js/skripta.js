@@ -31,14 +31,14 @@ var modal = document.getElementById("myModal");
 
 
 var img = document.getElementsByClassName("fototmodal");
-var modalImg = document.getElementById("img");
-var teksti= document.getElementsByClassName("tekstimodal")
+var modalImg = document.getElementById("modal-content");
+
 
 var showModal=function(){
     modal.style.display="block";
     modalImg.src=this.src;
-    captionText.innerHTML=this.alt;
-    teksti.p=this.p;
+    
+   
 
 }
 for(var i=0;i<img.length;i++){
