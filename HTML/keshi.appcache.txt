@@ -1,9 +1,0 @@
-CACHE MANIFEST
-#DATE 2021-01-05
-CACHE:
-index.html
-
-NETWORK:
-*
-
-FALLBACK:
