@@ -40,7 +40,7 @@
         })
     </script>
 
-    </script>
+   
     <style>
         * {
             box-sizing: border-box;
@@ -171,7 +171,7 @@
 
 
 
-<body onload="showSlides(1);">
+<body">
     <div class="header"></div>
 
     <div class="topnav">
@@ -313,7 +313,9 @@
 
         <div class="bs">LIBRAT MË TË HUAZUAR</div>
         <div class="bestsellers">
+           
             <div class="libri">
+                <article >
                 <div class="bestsellersimg">
                     <img class="fototmodal" src="./img/hasha.jpg" style="width:100%; min-height:20em">
                     <div id="myModal" >
@@ -324,9 +326,12 @@
                 </div>
                 <div class="bestsellerstitulli">New State, Modern Statesman: Hashim Thaçi - A Biography
                 </div>
+            </article>
             </div>
+            
 
             <div class="libri">
+                <section>
                 <div class="bestsellersimg">
                     <img class="fototmodal" src="./img/joe.jpg" style="width:100%; min-height:20em">
                     <div id="myModal">
@@ -337,6 +342,7 @@
                 </div>
                 <div class="bestsellerstitulli"> Promise Me, Dad: The heartbreaking story of Joe Biden
                 </div>
+            </section>
             </div>
 
 
@@ -630,6 +636,16 @@
 
         </div>
     </footer>
+
+
+    <script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker
+                   .register('sw.js')
+                   .then(function() { console.log("Service Worker Registered"); });
+        }
+        </script>
+
     <script src="./js/skripta.js"></script>
 
 
