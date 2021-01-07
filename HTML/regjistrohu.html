@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" type="image/png" href="../img/sinani4.png">
-    <link rel="stylesheet" href="/css/regjistrohu.css">
-    <link rel="stylesheet" href="/css/kycu.css">
+    <link rel="stylesheet" href="./css/regjistrohu.css">
+    <link rel="stylesheet" href="./css/kycu.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -68,7 +68,7 @@
         }
         
         .titulli:hover {
-            color: red;
+            color: blue;
         }
         
         .header {
@@ -109,7 +109,7 @@
         }
         
         .topnav a:hover {
-            color: red;
+            color: blue;
         }
         
         .djathtasposht a.menu-item {
@@ -217,16 +217,16 @@
 
                 <div class="kycunimrena">
 
-                    <p>Emri:<br> <input type="text" size="65" name="Emri" autocomplete="on" id="rrite"></p>
+                    <p>Emri:<br> <input type="text" size="65" style="background-color: white; border: 0.01em solid black;" name="Emri" autocomplete="on" id="rrite"></p>
                     <br>
-                    <p>Adresa:<br> <input type="text" size="65" name="Adresa" id="rrite"></p>
+                    <p>Adresa:<br> <input type="text" style="background-color: white;border: 0.01em solid black;"size="65" name="Adresa" id="rrite"></p>
                     <br>
-                    <p>E-mail:<br> <input type="text" size="65" autocomplete="on" name="Email" id="rrite"></p>
+                    <p>E-mail:<br> <input type="text" style="background-color:white;border: 0.01em solid black;"size="65" autocomplete="on" name="Email" id="rrite"></p>
                     <br>
-                    <p>Password:<br> <input type="password" title="Fjalekalimi juaj duhet te permbaje shkronja te vogla, shkronja te medha dhe numra."size="65" name="Password" id="rrite" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"></p>
+                    <p>Password:<br> <input type="password" style="background-color: white;border: 0.01em solid black;"title="Fjalekalimi juaj duhet te permbaje shkronja te vogla, shkronja te medha dhe numra."size="33" name="Password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"></p>
                     <br>
                     <p>Telefoni:<br><input type="text" pattern="[0-9]{9}" 
-                   title="Numri i telefonit duhet te jete mobil, ti permbaje 9 shifra. Formati: 04x-xxx-xxx" size="65" name="Telefoni" id="rrite"></p>
+                   title="Numri i telefonit duhet te jete mobil, ti permbaje 9 shifra. Formati: 04x-xxx-xxx" style="background-color: white;border: 0.01em solid black;" size="65" name="Telefoni" id="rrite"></p>
                     <br>
                         <p>Gjinia:</p>
                         <input type="radio" name="Gjinia" value="mashkull">
@@ -251,8 +251,8 @@
                         <br>
                         <br>
                         <p>Koment:<br> <textarea cols="55" name="Koment" id="rrite"> </textarea></p>
-                        <p>
-                            <input type="submit" value="Regjistrohu" name="Regjistrohu">
+                        <p style="display: flex; float: left; column-gap: 1em;">
+                            <input type="submit" value="Regjistrohu" name="Regjistrohu" id="ndrysho"> 
                             <input type="reset" value="Fshij" name="Fshij" id="ndrysho">
                         </p>
                     </form>
@@ -325,12 +325,12 @@
                 <div class="sbkol1">
                     <span id="sf">Regjistrohu për të pranuar e-mails nga Biblioteka</span><br><br>
                     <!-- Qitu ni form per Anetaresim (mail subscription)-->
-                    <form id="emailform">
-                        <input id="emailinput" type="email" placeholder="emri@gmail.com"> <br><br>
-                        <div class="dergo">
-                            <input type="submit" value="Dërgo">
+                    <form autocomplete="off" action="/action_page.php">
+                        <div class="autocomplete" style="width: 25em;">
+                          <input id="myInput" type="text" name="myEmail" placeholder="E-mail" style="background-color:white;">
                         </div>
-                    </form> <br><br><br> <input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme <br><br>
+                        <button class="buton">Dërgo</button>
+                      </form> <br><br><br> <input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme <br><br>
                 </div>
 
                 <div class="sbkol1">

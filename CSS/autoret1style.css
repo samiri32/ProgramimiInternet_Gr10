@@ -343,7 +343,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    color: red;
+    color: blue;
 }
 
 input[type=email] {
@@ -366,7 +366,7 @@ input[type=email] {
 }
 
 .buton:hover {
-    color: red;
+    color: blue;
 }
 
 #emailinput::placeholder {
@@ -433,7 +433,7 @@ input[type=email] {
 }
 
 .sbkol2 ul a:hover {
-    color: red;
+    color: blue;
 }
 
 .kolona1p {
@@ -500,7 +500,7 @@ input[type=email] {
 }
 
 .row4 a:hover {
-    color: red;
+    color: blue;
     text-decoration: none;
 }
 
@@ -605,7 +605,7 @@ input[type=email] {
 }
 
 .sbkol3 a:hover {
-    color: red;
+    color: blue;
 }
 
 #socialmedia {
@@ -622,7 +622,7 @@ input[type=email] {
 }
 
 .meshum a:hover {
-    color:red;
+    color:blue;
 }
 
 .meshum a:visited {
@@ -630,6 +630,6 @@ input[type=email] {
 }
 
 #cardstitle a{
-    color:red;
+    color:blue;
 }
 

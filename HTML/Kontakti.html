@@ -216,7 +216,7 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dergo nje sygjerim!</h5>
         <td>1</td><td>Latif Latifi</td><td>Paradite</td><td>Menaxher</td>
       </tr>
       <tr>
-        <td>2</td><td>Nuredin Vokrri</td><td>Paradite</td><td>Pastrues</td>
+        <td>2</td><td>Nubluein Vokrri</td><td>Paradite</td><td>Pastrues</td>
       </tr>
       <tr>
         <td>3</td><td>Shefki Veli Lajqi</td><td>Pasdite</td><td>Administrate</td>
@@ -316,11 +316,11 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dergo nje sygjerim!</h5>
           <div class="sbkol1">
               <span id="sf">Regjistrohu për të pranuar e-mails nga Biblioteka</span><br><br>
               <!-- Qitu ni form per Anetaresim (mail subscription)-->
-              <form id="emailform">
-                  <input id="emailinput" type="email" placeholder="emri@gmail.com"> <br><br>
-                  <div class="dergo">
-                      <input type="submit" value="Dërgo">
-                  </div>
+              <form autocomplete="off" action="/action_page.php">
+                <div class="autocomplete" style="width: 25em;">
+                  <input id="myInput" type="text" name="myEmail" placeholder="E-mail" style="background-color:white;">
+                </div>
+                <button class="buton">Dërgo</button>
               </form> <br><br><br> <input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme <br><br>
           </div>
 
