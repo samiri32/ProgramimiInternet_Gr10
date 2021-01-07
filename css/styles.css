@@ -46,7 +46,7 @@
 
 input {
   border: 1px solid transparent;
-  background-color: #f1f1f1;
+  background-color: white;
   padding: 10px;
   font-size: 16px;
 }
@@ -58,7 +58,7 @@ input[type=text] {
 
 input[type=submit] {
   background-color: DodgerBlue;
-  color: #fff;
+  color: white;
   cursor: pointer;
 }
 
@@ -76,18 +76,18 @@ input[type=submit] {
 .autocomplete-items div {
   padding: 10px;
   cursor: pointer;
-  background-color: #fff; 
+  background-color: white; 
   border-bottom: 1px solid #d4d4d4; 
 }
 
 
 .autocomplete-items div:hover {
-  background-color: #e9e9e9; 
+  background-color: white; 
 }
 
 .autocomplete-active {
   background-color: DodgerBlue !important; 
-  color: #ffffff; 
+  color:white; 
 }
 
 .subfooternalt {

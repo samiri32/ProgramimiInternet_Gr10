@@ -622,11 +622,11 @@
         <div class="sbkol1">
           <span id="sf">Regjistrohu për të pranuar e-mails nga Biblioteka</span><br><br>
           <!-- Qitu ni form per Anetaresim (mail subscription)-->
-          <form id="emailform">
-            <input id="emailinput" type="email" placeholder="emri@gmail.com"> <br><br>
-            <div class="dergo">
-              <input type="submit" value="Dërgo">
+          <form autocomplete="off" action="/action_page.php">
+            <div class="autocomplete" style="width: 25em;">
+              <input id="myInput" type="text" name="myEmail" placeholder="E-mail" style="background-color:white;">
             </div>
+            <button class="buton">Dërgo</button>
           </form> <br><br><br> <input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme <br><br>
         </div>
 
