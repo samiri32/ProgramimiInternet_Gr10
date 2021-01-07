@@ -1,4 +1,4 @@
- var slideIndex = 1;
+var slideIndex = 1;
 showSlides(1);
 
 function plusSlides(n) {
@@ -28,24 +28,17 @@ function showSlides(n) {
 }
 
 var modal = document.getElementById("myModal");
-
-
 var img = document.getElementsByClassName("fototmodal");
-var modalImg = document.getElementById("modal-content");
+var modalImg = document.getElementById("img");
+var teksti= document.getElementsByClassName("tekstimodal")
 
-
-var showModal=function(){
-    modal.style.display="block";
-    modalImg.src=this.src;
-    
-   
-
+var showModal = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
 }
-for(var i=0;i<img.length;i++){
+for (var i = 0; i < img.length; i++) {
     img[i].addEventListener('click', showModal);
 }
-
-
 
 var span = document.getElementsByClassName("close")[0];
 
@@ -128,3 +121,7 @@ function autocomplete(inp, arr) {
 var countries = ["arbreshazeqiri0@gmail.com","ardiismajli@hotmail.com","samirsimnica@live.com","andidika@yahoo.com","arbendedaj@outlook.com","adnitgahsi@htmail.com"];
 
 autocomplete(document.getElementById("myInput"), countries);
+span.onclick = function () {
+    modal.style.display = "none";
+}
+
