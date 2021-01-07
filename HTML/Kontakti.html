@@ -129,22 +129,28 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dergo nje sygjerim!</h5>
 
         <form class="formulari" action="index.html" method="">
           <br>
-          <h3 style="font-family: 'Alfa Slab One', cursive;
-  font-family: 'Kalam', cursive;
-  font-family: 'M PLUS 1p', sans-serif; ">Emri:<span> <textarea name="name" rows="1" cols="50"></textarea> <br /> </span> Mbiemri: <textarea name="name" rows="1" cols="46"></textarea> </h3>
+        <label for="name">Emri(deri ne 15 shkronja):</label>
+<input type="text" id="name" name="name" required minlength="4" maxlength="15" size="25" >
+<br><br><br>
+<label for="sname">Mbiemri(deri ne 15 shkronja):</label>
+<input type="text" id="sname" name="name" required minlength="4" maxlength="15" size="21" >
 
-          <h3 style="font-family: 'Alfa Slab One', cursive;
-  font-family: 'Kalam', cursive;
-  font-family: 'M PLUS 1p', sans-serif;">Email: <span><textarea name="name" rows="1" cols="50"></textarea> </span> </h3>
+        <br><br><br>
 
-          <h3 style="font-family: 'Alfa Slab One', cursive;
-  font-family: 'Kalam', cursive;
-  font-family: 'M PLUS 1p', sans-serif;">Mesazhi:<span><textarea name="name" rows="8" cols="47"></textarea> </span> </h3>
+        <label for="mesazhi">Mesazhi:</label>
+        <textarea name="mesazhi" rows="8" cols="44"></textarea>
+        <br><br><br>
+        <label for="vleresimi">Si e vleresoni kete faqe?</label><br><br>
+ <span>👎</span><input type="range" id="vleresimi" name="vleresimi"
+         min="0" max="11"><span>👍</span>
+         <br><br><br>
+         <label for="id">ID e anetaresimit:</label>
+                 <input type="text" id="id" name="id" />
+                 <input type="reset" value="Reset">
+                 <input type="submit" value="Submit">
 
 
-          <input class="butonii" type="submit" name="" value="Dergo">
-
-        </form>
+      </form>
       </center>
     </div>
 
@@ -226,14 +232,83 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dergo nje sygjerim!</h5>
     <div class="3">
 
     </div>
+    <div class="4">
+
+    </div>
+    <div class="5">
+        <center>
+      Raporto parregullsi: <textarea name="name" rows="8" cols="50"></textarea><br><br>
+
+
+      <label for="Ankesa">Data dhe ora:</label>
+
+  <input type="datetime-local" id="Ankesa"
+         name="time" value="2021-01-06T19:30"
+         min="2000-06-07T00:00" max="2021-06-14T00:00"></center>
+    </div>
+
 
 
 
 
 </div>
+<div class="row4">
+    <div class="shortcuts">
+        <div class="shortcutnalt">
+            <div class="bs">VEGËZA TË DOBISHME</div>
+        </div>
+        <div class="shortcutposht">
+            <a href="./HTML/Librat.html" class="eee" id="sdds">Libra</a>
+            <a href="./HTML/Autoret1.html" class="eee" id="fdsfdsf">Autorët</a>
+            <a href="./HTML/lajmi.html" class="eee" id="fsdfdsf">Lajme</a>
 
+        </div>
+    </div>
+</div>
 
+<div class="row5">
+    <div class="row5pjesepjese">
+        <div class="logoja">
+            <div class="sinanibabo">
+                <img src="C:\Users\LENOVO\Documents\GitHub\INT20_21_Gr8\img\sinani3.png" alt="pldh" height="130em" width="175em" id='sinani' style="background-color: black;">
+            </div>
+            <span id="sinaniposht">Biblioteka Sinan Dobreva</span>
+        </div>
+        <div class="perberja">
+            <div class="kolona1p">
+                <span id="lajmekuq5" style="font-size: 1em;">Misioni</span>
+                <br>
+                <p id="kolona1pp">BSD është institucion kulturor, edukues e informues që grumbullon dhe ruan koleksionet e veta nga fushat e ndryshme të krijimtarisë intelektuale me qëllim që t’ i bëjë të njohura shfrytëzuesve për t’i studiuar dhe për t’ i lënë
+                    trashëgim gjeneratave të ardhshme.</p>
+                <a href="#">
+                    <p id="katalogu">Shfleto katalogun</p>
+                </a>
+            </div>
 
+            <div class="kolona1p">
+                <span id="lajmekuq5" style="font-size: 1em;">Ofertat</span>
+                <br>
+                <p id="kolona1pp">Biblioteka BSD ofron qasje në materialin bibliotekar për të gjithë përdoruesit e qytetit të Prishtinës me rrethinë, pavarësisht nga raca, kombësia, gjinia, mosha, besimi fetar, gjuha, paaftësitë fizike dhe informon e ndihmon ata
+                    në përdorimin e gjetjen e tyre.</p>
+                <a href="./HTML/regjistrohu.html">
+                    <p id="katalogu">Regjistrohu</p>
+                </a>
+            </div>
+
+            <div class="kolona1p">
+                <span id="lajmekuq5" style="font-size: 1em;">Bashkëpunëtorët</span>
+                <br>
+                <p id="kolona1pp">Biblioteka "Sinan Dobreva" bashkëpunon me bibliotekat në vend dhe jashtë vendit; Bashkëpunon me institucionet kulturore, shtëpitë botuese, shkollat dhe me komunitetin me qëllim të nxitjes së interesimit për librin dhe të mësuarit
+                    gjatë gjith jetës. Shfletoni galerinë për më shumë.
+                </p>
+                <a href="./HTML/galeria.html">
+                    <p id="katalogu">Galeria</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
   <!--QIThahahahahU JA NIS row6-->
 
   <div class="row6" style="background-color:#eeeeee">
@@ -263,11 +338,11 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dergo nje sygjerim!</h5>
 
               <ul>
 
-                  <li><a href="#">
+                  <li><a href="../HTML/Librat.html">
            Libra shqip
           </a>
                   </li>
-                  <li><a href="#">
+                  <li><a href="../HTML/Librat.html">
           Libra të huaj
         </a></li>
               </ul>
@@ -278,10 +353,10 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dergo nje sygjerim!</h5>
               <ul>
 
 
-                  <li><a href="#">
+                  <li><a href="../HTML/meshum.html">
            Autorë shqiptar
          </a></li>
-                  <li><a href="#">
+                  <li><a href="../HTML/meshume2.html">
           Autorë të huaj
         </a></li>
               </ul>
@@ -289,7 +364,7 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dergo nje sygjerim!</h5>
           <div class="sbkol2">
 
               <ul>
-                  <li><a href="#"><span>Lajme</span></a>
+                  <li><a href="../HTML/lajmi.html"><span>Lajme</span></a>
                   </li>
 
               </ul>
@@ -298,11 +373,11 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dergo nje sygjerim!</h5>
 
               <ul>
 
-                  <li><a href="#">
+                  <li><a href="../HTML/galeria.html">
               Fotogaleria
             </a>
                   </li>
-                  <li><a href="#">
+                  <li><a href="../HTML/galeria.html">
             Videogaleria
           </a>
                   </li>
@@ -311,7 +386,7 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dergo nje sygjerim!</h5>
           <div class="sbkol2">
 
               <ul>
-                  <li><a href="#"><span>Kontakti</span></a>
+                  <li><a href="../HTML/Kontakti.html"><span>Kontakti</span></a>
                   </li>
               </ul>
           </div>
@@ -325,7 +400,6 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dergo nje sygjerim!</h5>
       </div>
 
   </div>
-
 
 
   <!-- qitu kryhet homepage ;) -->
@@ -363,6 +437,7 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dergo nje sygjerim!</h5>
       </div>
   </footer>
   <script src="../js/skripta.js"></script>
+
 
 
 

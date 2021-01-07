@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sq">
+<html manifest="./HTML/keshi.appcache.txt" lang="sq">
 
 <head>
     <title>BIBLIOTEKA SINAN DOBREVA</title>
@@ -45,47 +45,47 @@
         * {
             box-sizing: border-box;
         }
-        
+
         body {
             margin: 0;
         }
-        
+
         .sinanibabo {
             display: flex;
             justify-content: center;
         }
-        
+
         .logoja {
             display: inline-grid;
             justify-content: center;
         }
-        
+
         .titulli {
             color: white;
             font-size: 1.45em;
         }
-        
+
         .titulli:hover {
             color: red;
         }
-        
+
         .header {
             background-color: black;
             height: 1.25em;
             color: white;
             text-decoration: none;
         }
-        
+
         .djathtas {
             display: grid;
             align-content: space-between;
         }
-        
+
         .majtas {
             align-content: space-between;
             display: grid;
         }
-        
+
         .topnav {
             display: flex;
             justify-content: center;
@@ -98,40 +98,40 @@
             background-color: black;
             border: 2px solid;
         }
-        
+
         .topnav a {
             font-size: 1.45em;
             color: #f2f2f2;
             padding: 0px 30px;
             text-decoration: none;
         }
-        
+
         .topnav a:hover {
             color: red;
         }
-        
+
         .djathtasposht a.menu-item {
             transform: scale(1);
             display: inline-block;
             transition: 0.5s;
         }
-        
+
         .djathtasposht a.menu-item.hide-item {
             transform: scale(0);
         }
-        
+
         #one {
             transition-delay: 0.2s;
         }
-        
+
         #two {
             transition-delay: 0.1s;
         }
-        
+
         #three {
             transition-delay: 0s;
         }
-        
+
         .search-form {
             position: absolute;
             top: 8em;
@@ -143,7 +143,7 @@
             opacity: 0;
             visibility: hidden;
         }
-        
+
         .search-form.active {
             position: absolute;
             top: 8em;
@@ -155,7 +155,7 @@
             visibility: visible;
             background: transparent;
         }
-        
+
         .search-form input {
             width: 20em;
             height: 1.5em;
@@ -197,7 +197,7 @@
             <div class="djathtasnalt"></div>
             <div class="djathtasposht">
                 <a href="./HTML/galeria.html" class="menu-item" id="one">Galeria</a>
-                <a href="#" class="menu-item" id="two">Kontakti</a>
+                <a href="./HTML/Kontakti.html" class="menu-item" id="two">Kontakti</a>
                 <a href="./HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
                 <a href="#" id="search"><i class="fa fa-search"></i></a>
             </div>
@@ -320,7 +320,7 @@
                     <img class="fototmodal" src="./img/hasha.jpg" style="width:100%; min-height:20em">
                     <div id="myModal" >
                         <span class="close">×</span>
-                        <img id="modal-content"  src="./img/hasha.jpg" >
+                        <img class="modal-content" id="img">
 
                     </div>
                 </div>
@@ -336,7 +336,7 @@
                     <img class="fototmodal" src="./img/joe.jpg" style="width:100%; min-height:20em">
                     <div id="myModal">
                         <span class="close">×</span>
-                        <img id="modal-content"  src="./img/joe.jpg">
+                        <img class="modal-content" id="img">
 
                     </div>
                 </div>
@@ -351,7 +351,7 @@
                     <img class="fototmodal" src="./img/melania.jpg" style="width:100%; min-height:20em">
                     <div id="myModal" >
                         <span class="close">×</span>
-                        <img id="modal-content" src="./img/melania.jpg">
+                        <img class="modal-content" id="img">
 
                     </div>
                 </div>
@@ -364,7 +364,7 @@
                     <img class="fototmodal" src="./img/kupi.png" style="width:100%; min-height:20em">
                     <div id="myModal">
                         <span class="close">×</span>
-                        <img id="modal-content"  src="./img/kupi.png">
+                        <img class="modal-content" id="img">
 
                     </div>
                 </div>
@@ -377,7 +377,7 @@
                     <img class="fototmodal" src="./img/xhaxhienver.jpg" style="width:100%; min-height:20em">
                     <div id="myModal">
                         <span class="close">×</span>
-                        <img id="modal-content" src="./img/xhaxhienver.jpg">
+                        <img class="modal-content" id="img">
 
                     </div>
                 </div>
