@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="/css/kycu.css">
+    <link rel="stylesheet" href="../css/kycu.css">
     <link rel="shortcut icon" type="image/png" href="../img/sinani4.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -67,7 +67,7 @@
         }
         
         .titulli:hover {
-            color: red;
+            color: #0075ff;
         }
         
         .header {
@@ -108,7 +108,7 @@
         }
         
         .topnav a:hover {
-            color: red;
+            color: #0075ff;
         }
         
         .djathtasposht a.menu-item {
@@ -175,37 +175,38 @@
 
     <div class="topnav">
         <div class="majtas">
-            <div class="majtasnalt">homepage</div>
-            <div class="majtasposht">
-                <a href="../index.html">Ballina</a>
-                <a href="./Autoret1.html">Autorët</a>
-                <a href="#">Librat</a>
-                <a href="./HTML/lajmi.html">Lajme</a>
-            </div>
+          <div class="majtasnalt">homepage</div>
+          <div class="majtasposht">
+            <a href="../index.html">Ballina</a>
+            <a href="../HTML/Autoret1.html">Autorët</a>
+            <a href="#">Librat</a>
+            <a href="../HTML/lajmi.html">Lajme</a>
+          </div>
         </div>
-
+    
         <div class="logoja">
-            <div class="sinanibabo">
-                <img src="../img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
-            </div>
-            <a href="../index.html" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka Sinan Dobreva</span></a>
+          <div class="sinanibabo">
+            <img src="../img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
+          </div>
+          <a href="../index.html" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka Sinan
+              Dobreva</span></a>
         </div>
-
+    
         <div class="djathtas">
-            <div class="djathtasnalt"></div>
-            <div class="djathtasposht">
-                <a href="./HTML/lajmi.html" class="menu-item" id="one">Galeria</a>
-                <a href="#" class="menu-item" id="two">Kontakti</a>
-                <a href="./kycu.html" class="menu-item" id="three">Kyçu</a>
-                <a href="#" id="search"><i class="fa fa-search"></i></a>
-            </div>
-            <div class="search-form">
-                <form>
-                    <input type="text" name="" placeholder="Kërkoni">
-                </form>
-            </div>
+          <div class="djathtasnalt"></div>
+          <div class="djathtasposht">
+            <a href="../HTML/galeria.html" class="menu-item" id="one">Galeria</a>
+            <a href="#" class="menu-item" id="two">Kontakti</a>
+            <a href="../HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
+            <a href="#" id="search"><i class="fa fa-search"></i></a>
+          </div>
+          <div class="search-form">
+            <form>
+              <input type="text" name="" placeholder="Kërkoni">
+            </form>
+          </div>
         </div>
-    </div>
+      </div>
 
     <div class="homepage">
         <div class="kycunidiv">
@@ -213,10 +214,10 @@
             <form id="kycuforma" action="submit.html" target="_blank">
                 <div class="kycunimrena">
                     <label for="email"><b>Email</b></label><br>
-                    <input type="text"  title="Email adresa duhet te plotesohet." placeholder="Emaili juaj këtu" name="email" required id="rrite"><br><br>
+                    <input type="text" style="background-color: white; border: 0.01em solid black;"  title="Email adresa duhet te plotesohet." placeholder="Emaili juaj këtu" name="email" required id="rrite"><br><br>
 
                     <label for="psw"><b>Password</b></label><br>
-                    <input type="password"  title="Ju lutem mos harroni fjalekalimin." placeholder="Fjalëkalimi juaj këtu" name="psw" required id="rrite"><br><br>
+                    <input type="password"  style="border: 0.01em solid black;"title="Ju lutem mos harroni fjalekalimin." placeholder="Fjalëkalimi juaj këtu" name="psw" required id="rrite" size="26.999999999"><br><br>
 
                     <button type="submit" id="kycuu">Kyçu</button>
                     <label>
@@ -298,12 +299,12 @@
                 <div class="sbkol1">
                     <span id="sf">Regjistrohu për të pranuar e-mails nga Biblioteka</span><br><br>
                     <!-- Qitu ni form per Anetaresim (mail subscription)-->
-                    <form id="emailform">
-                        <input id="emailinput" type="email" placeholder="emri@gmail.com"> <br><br>
-                        <div class="dergo">
-                            <input type="submit" value="Dërgo">
+                    <form autocomplete="off" action="/action_page.php">
+                        <div class="autocomplete" style="width: 25em;">
+                          <input id="myInput" type="text" name="myEmail" placeholder="E-mail" style="background-color:white;">
                         </div>
-                    </form> <br><br><br> <input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme <br><br>
+                        <button class="buton">Dërgo</button>
+                      </form> <br><br><br> <input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme <br><br>
                 </div>
 
                 <div class="sbkol1">

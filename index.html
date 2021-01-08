@@ -40,7 +40,7 @@
         })
     </script>
 
-    </script>
+   
     <style>
         * {
             box-sizing: border-box;
@@ -66,7 +66,7 @@
         }
 
         .titulli:hover {
-            color: red;
+            color: #0075ff;
         }
 
         .header {
@@ -107,7 +107,7 @@
         }
 
         .topnav a:hover {
-            color: red;
+            color: #0075ff;
         }
 
         .djathtasposht a.menu-item {
@@ -171,8 +171,7 @@
 
 
 
-<body onload="showSlides(1);">
-    <div class="header"></div>
+<body>
 
     <div class="topnav">
         <div class="majtas">
@@ -313,30 +312,36 @@
 
         <div class="bs">LIBRAT MË TË HUAZUAR</div>
         <div class="bestsellers">
+           
             <div class="libri">
+                <article >
                 <div class="bestsellersimg">
                     <img class="fototmodal" src="./img/hasha.jpg" style="width:100%; min-height:20em">
                     <div id="myModal" >
                         <span class="close">×</span>
-                        <img class="modal-content" id="img">
+                        <img id="img">
 
                     </div>
                 </div>
                 <div class="bestsellerstitulli">New State, Modern Statesman: Hashim Thaçi - A Biography
                 </div>
+            </article>
             </div>
+            
 
             <div class="libri">
+                <section>
                 <div class="bestsellersimg">
                     <img class="fototmodal" src="./img/joe.jpg" style="width:100%; min-height:20em">
                     <div id="myModal">
                         <span class="close">×</span>
-                        <img class="modal-content" id="img">
+                        <img  id="img">
 
                     </div>
                 </div>
                 <div class="bestsellerstitulli"> Promise Me, Dad: The heartbreaking story of Joe Biden
                 </div>
+            </section>
             </div>
 
 
@@ -345,7 +350,7 @@
                     <img class="fototmodal" src="./img/melania.jpg" style="width:100%; min-height:20em">
                     <div id="myModal" >
                         <span class="close">×</span>
-                        <img class="modal-content" id="img">
+                        <img id="img">
 
                     </div>
                 </div>
@@ -358,7 +363,7 @@
                     <img class="fototmodal" src="./img/kupi.png" style="width:100%; min-height:20em">
                     <div id="myModal">
                         <span class="close">×</span>
-                        <img class="modal-content" id="img">
+                        <img id="img">
 
                     </div>
                 </div>
@@ -371,7 +376,7 @@
                     <img class="fototmodal" src="./img/xhaxhienver.jpg" style="width:100%; min-height:20em">
                     <div id="myModal">
                         <span class="close">×</span>
-                        <img class="modal-content" id="img">
+                        <img id="img">
 
                     </div>
                 </div>
@@ -509,12 +514,12 @@
                 <div class="sbkol1">
                     <span id="sf">Regjistrohu për të pranuar e-mails nga Biblioteka</span><br><br>
                     <!-- Qitu ni form per Anetaresim (mail subscription)-->
-                    <form id="emailform">
-                        <input id="emailinput" type="email" placeholder="emri@gmail.com"> <br><br>
-                        <div class="dergo">
-                            <input type="submit" value="Dërgo">
+                    <form autocomplete="off" action="/action_page.php">
+                        <div class="autocomplete" style="width: 25em;">
+                          <input id="myInput" type="text" name="myEmail" placeholder="E-mail" style="background-color:white;">
                         </div>
-                    </form> <br><br><br> <input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme <br><br>
+                        <button class="buton">Dërgo</button>
+                      </form> <input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme <br><br>
                 </div>
 
                 <div class="sbkol1">
@@ -630,7 +635,17 @@
 
         </div>
     </footer>
-    <script src="./js/skripta.js"></script>
+
+
+    <script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker
+                   .register('sw.js')
+                   .then(function() { console.log("Service Worker Registered"); });
+        }
+        </script>
+
+  <script src="./js/skripta.js"></script>
 
 
 </body>

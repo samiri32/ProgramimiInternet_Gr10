@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../css/galeria.css">
+  <link rel="stylesheet" href="../css/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -66,7 +67,7 @@
     }
 
     .titulli:hover {
-      color: red;
+      color: #0075ff;
     }
 
     .header {
@@ -102,17 +103,17 @@
     }
    
     a #fotogaleriah3:hover, a #videogaleriah3:hover{
-     color: red;
+     color: #0075ff;
      text-decoration: none;
     }
 
     a #fotogaleriah3:visited, a #videogaleriah3:visited{
-      color: red;
+      color: #0075ff;
       text-decoration: none;
     }
 
     a #fotogaleriah3, a #videogaleriah3{
-      color:red;
+      color:#0075ff;
       text-decoration: none;
     }
 
@@ -168,7 +169,7 @@
     }
 
     input[type="submit"]:hover {
-      color: red;
+      color: #0075ff;
     }
 
     input[type=email] {
@@ -191,7 +192,7 @@
     }
 
     .buton:hover {
-      color: red;
+      color: #0075ff;
     }
 
     #emailinput::placeholder {
@@ -260,7 +261,7 @@
     }
 
     .sbkol2 ul a:hover {
-      color: red;
+      color: #0075ff;
     }
 
     .kolona1p {
@@ -284,7 +285,7 @@
     }
 
     #lajmekuq5{
-      color: red;
+      color: #0075ff;
       font-family: Helvetica;
       letter-spacing: 0.1em;
       font-weight: bold;
@@ -292,7 +293,7 @@
       text-transform: uppercase;
     }
     #fotogaleriah3, #videogaleriah3{
-      color: red;
+      color: #0075ff;
       font-family: Helvetica;
       letter-spacing: 0.1em;
       font-weight: bold;
@@ -336,7 +337,7 @@
     }
 
     .row4 a:hover{
-      color: red;
+      color: #0075ff;
       text-decoration: none;
     }
     
@@ -394,7 +395,7 @@
     }
 
     .sbkol3 a:hover {
-      color: red;
+      color: #0075ff;
     }
 
     #socialmedia {
@@ -426,7 +427,7 @@
     }
 
     .topnav a:hover {
-      color: red;
+      color: #0075ff;
     }
 
 
@@ -622,11 +623,11 @@
         <div class="sbkol1">
           <span id="sf">Regjistrohu për të pranuar e-mails nga Biblioteka</span><br><br>
           <!-- Qitu ni form per Anetaresim (mail subscription)-->
-          <form id="emailform">
-            <input id="emailinput" type="email" placeholder="emri@gmail.com"> <br><br>
-            <div class="dergo">
-              <input type="submit" value="Dërgo">
+          <form autocomplete="off" action="/action_page.php">
+            <div class="autocomplete" style="width: 25em;">
+              <input id="myInput" type="text" name="myEmail" placeholder="E-mail" style="background-color:white;">
             </div>
+            <button class="buton">Dërgo</button>
           </form> <br><br><br> <input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme <br><br>
         </div>
 

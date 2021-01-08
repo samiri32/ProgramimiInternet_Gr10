@@ -111,7 +111,7 @@ table {
    }
 
    .titulli:hover {
-     color: red;
+     color: #0075ff;
    }
 
    .header {
@@ -230,7 +230,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
- color: red;
+ color: #0075ff;
 }
 
 input[type=email] {
@@ -253,7 +253,7 @@ input[type=email] {
 }
 
 .buton:hover {
- color: red;
+ color: #0075ff;
 }
 
 #emailinput::placeholder {
@@ -322,7 +322,7 @@ input[type=email] {
 }
 
 .sbkol2 ul a:hover {
- color: red;
+ color: #0075ff;
 }
 
 .kolona1p {
@@ -345,7 +345,7 @@ input[type=email] {
 }
 
 #lajmekuq5 {
- color: red;
+ color: #0075ff;
  font-family: Helvetica;
  letter-spacing: 0.1em;
  font-weight: bold;
@@ -387,7 +387,7 @@ input[type=email] {
 }
 
 .row4 a:hover {
- color: red;
+ color: #0075ff;
  text-decoration: none;
 }
 
@@ -442,7 +442,7 @@ color:white;
  color:white;
 }
 .sbkol3 a:hover{
- color:red;
+ color:#0075ff;
 }
 
 #socialmedia{
@@ -474,7 +474,7 @@ color:white;
    }
 
    .topnav a:hover {
-     color: red;
+     color: #0075ff;
    }
 
 
