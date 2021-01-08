@@ -39,57 +39,6 @@
   justify-content: space-around;
 }
 
-.autocomplete {
-  position: relative;
-  display: inline-block;
-}
-
-input {
-  border: 1px solid transparent;
-  background-color: white;
-  padding: 10px;
-  font-size: 16px;
-}
-
-input[type=text] {
-  background-color: #f1f1f1;
-  width: 100%;
-}
-
-input[type=submit] {
-  background-color: DodgerBlue;
-  color: white;
-  cursor: pointer;
-}
-
-.autocomplete-items {
-  position: absolute;
-  border: 1px solid #d4d4d4;
-  border-bottom: none;
-  border-top: none;
-  z-index: 99;
-  top: 100%;
-  left: 0;
-  right: 0;
-}
-
-.autocomplete-items div {
-  padding: 10px;
-  cursor: pointer;
-  background-color: white; 
-  border-bottom: 1px solid #d4d4d4; 
-}
-
-
-.autocomplete-items div:hover {
-  background-color: white; 
-}
-
-.autocomplete-active {
-  background-color: DodgerBlue !important; 
-  color:white; 
-}
-
 .subfooternalt {
   padding: 0em 8em 3em 6em;
   display: -webkit-flex;
@@ -102,62 +51,6 @@ input[type=submit] {
 .subfooternalt span {
   font-family: "Arnhem", Times, Courier, serif;
   font-size: 1.7em;
-}
-
-#emailinput {
-  width: 16.7em;
-  height: 2em;
-}
-
-#emailform {
-  display: flex;
-  float: left;
-}
-
-.dergo {
-  padding-left: 1em;
-}
-
-input[type="submit"] {
-  height: 3.6em;
-  width: 10em;
-  color: white;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #D9D9D9;
-  border: none;
-}
-
-input[type="submit"]:hover {
-  color: blue;
-}
-
-input[type=email] {
-  font-size: 1.5em;
-}
-
-.buton {
-  height: 3.6em;
-  width: 10em;
-  color: white;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #D9D9D9;
-  border: none;
-}
-
-#h5 {
-  margin-top: 0.5em;
-  color: #0075ff;
-}
-
-.buton:hover {
-  color: blue;
-}
-
-#emailinput::placeholder {
-  font-size: 1em;
-  padding-left: 0.5em;
 }
 
 .subfooterposht {
@@ -221,7 +114,7 @@ input[type=email] {
 }
 
 .sbkol2 ul a:hover {
-  color: blue;
+  color: #0075ff;
 }
 
 .kolona1p {
@@ -287,7 +180,7 @@ input[type=email] {
 }
 
 .row4 a:hover {
-  color: blue;
+  color: #0075ff;
   text-decoration: none;
 }
 
@@ -435,14 +328,14 @@ input[type=email] {
 }
 
 #lajmekuq {
-  color: blue;
+  color: #0075ff;
   font-family: "Calibre", Helvetica, Arial, sans-serif;
   font-size: 0.5em;
   font-weight: bold;
 }
 
 #lajmekuq5 {
-  color: blue;
+  color: #0075ff;
   font-family: Helvetica;
   letter-spacing: 0.1em;
   font-weight: bold;
@@ -614,7 +507,7 @@ color:white;
   color:white;
 }
 .sbkol3 a:hover{
-  color:blue;
+  color:#0075ff;
 }
 
 #socialmedia{
@@ -625,4 +518,63 @@ color:white;
   font-size: 0.8em;
 }
 
+/* Qitu ja nis pjesa e email input me autocomplete */
 
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: white;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 98%;
+  height: 3em;
+}
+
+input[type=checkbox]{
+  margin-top: 0.5em;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 0.5em;
+  cursor: pointer;
+  background-color: white; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+.buton {
+  height: 3.6em;
+  width: 10em;
+  color: white;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #D9D9D9;
+  border: none;
+}
+
+#h5 {
+  margin-top: 0.5em;
+  color: #0075ff;
+}
+
+.buton:hover {
+  color: #0075ff;
+}

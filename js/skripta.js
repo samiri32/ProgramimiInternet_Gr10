@@ -121,6 +121,7 @@ function autocomplete(inp, arr) {
 var countries = ["arbreshazeqiri0@gmail.com","ardiismajli@hotmail.com","samirsimnica@live.com","andidika@yahoo.com","arbendedaj@outlook.com","adnitgahsi@htmail.com"];
 
 autocomplete(document.getElementById("myInput"), countries);
+
 span.onclick = function () {
     modal.style.display = "none";
 }

@@ -15,12 +15,12 @@
 }
 
 .beni {
-    color: blue;
+    color: #0075ff;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     padding-top: 1em;
-    text-decoration: underline blue;
+    text-decoration: none;
 }
 
 .block img {
