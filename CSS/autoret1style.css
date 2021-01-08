@@ -1,11 +1,4 @@
-.titulli {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    padding: 5px;
-}
-
 * {
-    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
@@ -117,7 +110,7 @@
     color: black;
     position: relative;
     float: left;
-    margin-left: 12%;
+    margin-left: 20%;
 }
 
 .meimiri2 {
@@ -125,7 +118,7 @@
     color: black;
     position: relative;
     float: center;
-    margin-left: 12%;
+    margin-left: 5%;
 }
 
 td {
@@ -249,11 +242,10 @@ td {
 .autori p {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    margin-top: -2em;
-    font-size: 1.3em;
-    border-bottom: 2px solid black;
+    font-size: 1em;
     text-decoration: none;
 }
+
 
 a {
     text-decoration: none;
@@ -263,6 +255,7 @@ a {
 
 a:hover {
     color: #0075ff;
+    text-decoration: none;
 }
 
 #elaborimi {
@@ -318,62 +311,6 @@ a:hover {
 .subfooternalt span {
     font-family: "Arnhem", Times, Courier, serif;
     font-size: 1.7em;
-}
-
-#emailinput {
-    width: 16.7em;
-    height: 2em;
-}
-
-#emailform {
-    display: flex;
-    float: left;
-}
-
-.dergo {
-    padding-left: 1em;
-}
-
-input[type="submit"] {
-    height: 3.6em;
-    width: 10em;
-    color: white;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #D9D9D9;
-    border: none;
-}
-
-input[type="submit"]:hover {
-    color: #0075ff;
-}
-
-input[type=email] {
-    font-size: 1.5em;
-}
-
-.buton {
-    height: 3.6em;
-    width: 10em;
-    color: white;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #D9D9D9;
-    border: none;
-}
-
-#h5 {
-    margin-top: 0.5em;
-    color: #0075ff;
-}
-
-.buton:hover {
-    color: #0075ff;
-}
-
-#emailinput::placeholder {
-    font-size: 1em;
-    padding-left: 0.5em;
 }
 
 .subfooterposht {
@@ -635,3 +572,67 @@ input[type=email] {
     color:#0075ff;
 }
 
+h3{
+   text-align: center;
+}
+
+/* Qitu ja nis pjesa e email input me autocomplete */
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+  }
+  
+  input {
+    border: 1px solid transparent;
+    background-color: white;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  input[type=text] {
+    background-color: #f1f1f1;
+    width: 98%;
+    height: 3em;
+  }
+  
+  input[type=checkbox]{
+    margin-top: 0.5em;
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 0.5em;
+    cursor: pointer;
+    background-color: white; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  .buton {
+    height: 3.6em;
+    width: 10em;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #D9D9D9;
+    border: none;
+  }
+  
+  #h5 {
+    margin-top: 0.5em;
+    color: #0075ff;
+  }
+  
+  .buton:hover {
+    color: #0075ff;
+  }
