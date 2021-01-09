@@ -38,33 +38,11 @@
                 $('.search-form').toggleClass('active')
             })
         })
-    </script>
-
-    <script>
-        var modal = document.getElementById("myModal");
-
-
-var img = document.getElementsByClassName("fototmodal");
-var modalImg = document.getElementById("img");
-
-var showModal=function(){
-    modal.style.display="block";
-    modalImg.src=this.src;
-    captionText.innerHTML=this.alt;
-
-}
-for(var i=0;i<img.length;i++){
-    img[i].addEventListener('click', showModal);
-}
+        
+            </script>
 
 
 
-var span = document.getElementsByClassName("close")[0];
-
-
-span.onclick = function() { 
-  modal.style.display = "none";
-}
     </script>
     <style>
         * {
@@ -190,49 +168,51 @@ span.onclick = function() {
             outline: none;
             font-size: 1em;
         }
+        
     </style>
 </head>
 
 
 
 
-<body onload="showSlides(1);" style="background-color:white;">
+<body>
     <title>Lajmet</title>
     <div class="header"></div>
 
     <div class="topnav">
         <div class="majtas">
-            <div class="majtasnalt">homepage</div>
-            <div class="majtasposht">
-                <a href="../index.html">Ballina</a>
-                <a href="../HTML/Autoret1.html">Autorët</a>
-                <a href="#">Librat</a>
-                <a href="../HTML/lajmi.html">Lajme</a>
-            </div>
+          <div class="majtasnalt">homepage</div>
+          <div class="majtasposht">
+            <a href="../index.html">Ballina</a>
+            <a href="../HTML/Autoret1.html">Autorët</a>
+            <a href="#">Librat</a>
+            <a href="../HTML/lajmi.html">Lajme</a>
+          </div>
         </div>
-
+    
         <div class="logoja">
-            <div class="sinanibabo">
-                <img src="../img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
-            </div>
-            <a href="../index.html" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka Sinan Dobreva</span></a>
+          <div class="sinanibabo">
+            <img src="../img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
+          </div>
+          <a href="../index.html" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka Sinan
+              Dobreva</span></a>
         </div>
-
+    
         <div class="djathtas">
-            <div class="djathtasnalt"></div>
-            <div class="djathtasposht">
-                <a href="../HTML/galeria.html" class="menu-item" id="one">Galeria</a>
-                <a href="#" class="menu-item" id="two">Kontakti</a>
-                <a href="../kycu.html" class="menu-item" id="three">Kyçu</a>
-                <a href="#" id="search"><i class="fa fa-search"></i></a>
-            </div>
-            <div class="search-form">
-                <form>
-                    <input type="text" name="" placeholder="Kërkoni">
-                </form>
-            </div>
+          <div class="djathtasnalt"></div>
+          <div class="djathtasposht">
+            <a href="../HTML/galeria.html" class="menu-item" id="one">Galeria</a>
+            <a href="#" class="menu-item" id="two">Kontakti</a>
+            <a href="../HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
+            <a href="#" id="search"><i class="fa fa-search"></i></a>
+          </div>
+          <div class="search-form">
+            <form>
+              <input type="text" name="" placeholder="Kërkoni">
+            </form>
+          </div>
         </div>
-    </div>
+      </div>
 
 
 
@@ -255,22 +235,33 @@ span.onclick = function() {
                     <div class="gridi1">
                         <div class="ardy">
                              <img class="fototmodal" src="../img/HIVZIABABOOO.jpg">
-                                <div id="myModal" class="modal">
+                                <div class="modal">
                                     <span class="close">×</span>
-                                    <img class="modal-content" id="img">
+                                    <img class="modal-content" src="../img/HIVZIABABOOO.jpg">
                                     <p class="tekstimodal">
-                                        Biblioteka “Hivzi Sulejmani” pas punës dymujore të ofrimit të shërbimeve huazimi i librit do të rifillon punën me sallat e leximit nga dita e premte 9 tetor 2020 . Ky veprim bëhet në përputhje me masat e udhëzimet e Institutit
-                                Kombëtar të Shëndetësisë Publike dhe të Ministrisë së Shëndetësisë të aprovuara nga Qeveria e Republikës së Kosovës si dhe në bashkëpunim të ngushtë me Drejtorinë e Kulturës dhe organet tjera të Komunës së Prishtinës.Në
-                                dy javët e para do të punohet pesë ditë të javës nga ora 8.15 e deri në orën 16.00. Nëse shkon puna në rregull dhe pa pengesa që në javën e dytë do të filloj me orar të plotë do të thotë nga 8.00 – 19.00
+                                        “Arsimi është një bimë tejet kryeneçe, e cila nuk gjelbëron e as nuk lidh fryt, nëse nuk ujitet me lot e gjak”, është një postulat i shkrimtarit 
+                                        Arturo Graf, të cilit nuk i del prova në rastin e Kosovës.
+                                        Historia e ngritjes dhe mbajtjes së shkollave shqipe gjatë shekujve të okupimit njeh sakrificë e flijim, por frytet nuk janë duke iu parë arsimit, 
+                                        që prej çlirimit në vitin 1999, shkruan sot “Koha Ditore”. Është ky një sektor që i është nënshtruar eksperimentimit që prej pasluftës, por edhe që
+                                         vazhdon të vuajë nga mungesa e politikave të cilat sigurojnë cilësi, nga korrupsioni dhe nga ndërhyrjet e mëdha e të vazhdueshme politike. 
+                                         Halim Hyseni, ekspert i arsimit dhe njeri që është marrë aktivisht me politika arsimore që nga vitet ’80, niset nga kjo situatë, për të dhënë alarmin
+                                          rreth së ardhmes që e pret shtetin e dalë nga okupimi dy dekada më parë.“Pas çlirimit, ne kemi dështuar”, konstaton Hyseni. “Gjendja që sot është në
+                                           arsim e atakon të ardhmen e Kosovës. Me të, Kosova nuk ka perspektivë. Duhet të ndryshojë me urgjencë. Jo me improvizime, por me ndryshime sistemore”.
                                     </p>
                                 </div>
                             
 
-                            <span class="titulli1"> Kanë filluar punimet për renovimin e ndërtesës së bibliotekës së qytetit, “Hivzi Sulejmani”</span>
+                            <span class="titulli1"> Arsimi i nëpërkëmbur</span>
 
-                            <p >Biblioteka “Hivzi Sulejmani” pas punës dymujore të ofrimit të shërbimeve huazimi i librit do të rifillon punën me sallat e leximit nga dita e premte 9 tetor 2020 . Ky veprim bëhet në përputhje me masat e udhëzimet e Institutit
-                                Kombëtar të Shëndetësisë Publike dhe të Ministrisë së Shëndetësisë të aprovuara nga Qeveria e Republikës së Kosovës si dhe në bashkëpunim të ngushtë me Drejtorinë e Kulturës dhe organet tjera të Komunës së Prishtinës.Në
-                                dy javët e para do të punohet pesë ditë të javës nga ora 8.15 e deri në orën 16.00. Nëse shkon puna në rregull dhe pa pengesa që në javën e dytë do të filloj me orar të plotë do të thotë nga 8.00 – 19.00</p>
+                            <p >
+                                “Arsimi është një bimë tejet kryeneçe, e cila nuk gjelbëron e as nuk lidh fryt, nëse nuk ujitet me lot e gjak”, është një postulat i shkrimtarit 
+                                Arturo Graf, të cilit nuk i del prova në rastin e Kosovës.
+                                Historia e ngritjes dhe mbajtjes së shkollave shqipe gjatë shekujve të okupimit njeh sakrificë e flijim, por frytet nuk janë duke iu parë arsimit, 
+                                që prej çlirimit në vitin 1999, shkruan sot “Koha Ditore”. Është ky një sektor që i është nënshtruar eksperimentimit që prej pasluftës, por edhe që
+                                 vazhdon të vuajë nga mungesa e politikave të cilat sigurojnë cilësi, nga korrupsioni dhe nga ndërhyrjet e mëdha e të vazhdueshme politike. 
+                                 Halim Hyseni, ekspert i arsimit dhe njeri që është marrë aktivisht me politika arsimore që nga vitet ’80, niset nga kjo situatë, për të dhënë alarmin
+                                  rreth së ardhmes që e pret shtetin e dalë nga okupimi dy dekada më parë.
+                            </p>
                                 
                                 
                         </div>
@@ -279,20 +270,27 @@ span.onclick = function() {
                     <div class="gridi2">
                         <div class="ardy">
                             <img style="float: right" class="fototmodal" src="../img/ismail-kadare-j-foley-opale-w-1-990x556.jpg">
-                                <div id="myModal" class="modal">
+                                <div class="modal">
                                     <span class="close">×</span>
-                                    <img class="modal-content" id="img">
+                                    <img class="modal-content" src="../img/ismail-kadare-j-foley-opale-w-1-990x556.jpg">
                                     <p class="tekstimodal">
-                                        Lindur në vitin 1936, Ismail Kadare është poeti dhe romancieri më i njohur i Shqipërisë. Në 2005 ai u vlerësua me çmimin inaugurues Man Booker International për "një pjesë të veprës të shkruar nga një autor i cili ka pasur
-                                një ndikim vërtet global". Ai është gjithashtu marrës i Çmimit Princi i Asturias 2009 në Spanjë, dhe në 2015 ai fitoi Çmimin Jeruzalem për Lirinë e Individit në Shoqëri. Kadare është një kampion i demokracisë ndërkombëtare
-                                dhe në 1990 hyri në azil politik në Francë.Kadare jeton në Paris. Ai shpesh përmendet si pretendent për çmimin Nobel në letërsi.
+                                        Dhjetë vitet e fundit numri i nxënësve në arsimin parauniversitar është ulur për 20 për qind, kurse gjatë kësaj kohe stafi arsimor është
+                                        rritur për tetë për qind.Kështu ka njoftuar eksperti i arsimit Dukagjin Pupovci, gjatë tryezës së organizuar nga Vetëvendosje kushtuar
+                                        menaxhimit të sistemit arsimor. Pupovci po ashtu tha se çdo vit në Kosovë po zvogëlohet numri i nxënësve në klasat e para.“Çdo vit në Kosovë 
+                                        keni 500 deri në 1000 nxënës më pak. Kjo vjen si shkak i uljes së natalitetit dhe kryesisht shpërnguljes së familjeve nga zonat rurale”,
+                                        ka thënë Pupovci, raporton Kosovapress. Ai thotë se sistemi arsimor në Kosovë është i decentralizuar. Sipas tij, në shkolla vërehet kultura
+                                        klienteliste, përmes së cilës pushtetarët punësojnë bashkëpartiakët e vet. “Sistemi arsimor në Kosovë është i decentralizuar, për shkak
+                                        të traditës së shtetit, por edhe për shkak të planit të Ahtisaarit, që me ligjin për arsimin në komuna ka imponuar një decentralizim”,
+                                        ka thënë Pupovci.
                                     </p>
                                 </div>
-                            <span class="titulli1"> Ismail Kadare: Fituesi i sivjetshëm i &ccedilmimit Neustadt Prize p&eumlr Literatur&euml</span>
+                            <span class="titulli1"> Çdo vit në Kosovë ka deri në 1000 nxënës më pak</span>
 
-                            <p>Lindur në vitin 1936, Ismail Kadare është poeti dhe romancieri më i njohur i Shqipërisë. Në 2005 ai u vlerësua me çmimin inaugurues Man Booker International për "një pjesë të veprës të shkruar nga një autor i cili ka pasur
-                                një ndikim vërtet global". Ai është gjithashtu marrës i Çmimit Princi i Asturias 2009 në Spanjë, dhe në 2015 ai fitoi Çmimin Jeruzalem për Lirinë e Individit në Shoqëri. Kadare është një kampion i demokracisë ndërkombëtare
-                                dhe në 1990 hyri në azil politik në Francë.Kadare jeton në Paris. Ai shpesh përmendet si pretendent për çmimin Nobel në letërsi.</p>
+                            <p>Dhjetë vitet e fundit numri i nxënësve në arsimin parauniversitar është ulur për 20 për qind, kurse gjatë kësaj kohe stafi arsimor është
+                                rritur për tetë për qind.Kështu ka njoftuar eksperti i arsimit Dukagjin Pupovci, gjatë tryezës së organizuar nga Vetëvendosje kushtuar
+                                menaxhimit të sistemit arsimor. Pupovci po ashtu tha se çdo vit në Kosovë po zvogëlohet numri i nxënësve në klasat e para.“Çdo vit në Kosovë 
+                                keni 500 deri në 1000 nxënës më pak. Kjo vjen si shkak i uljes së natalitetit dhe kryesisht shpërnguljes së familjeve nga zonat rurale”,
+                                ka thënë Pupovci, raporton Kosovapress.</p>
 
 
                         </div>
@@ -301,21 +299,33 @@ span.onclick = function() {
                     <div class="gridi3">
                         <div class="ardy">
                             <img class="fototmodal" src="../img/ekspozita.jpeg">
-                                <div id="myModal" class="modal">
+                                <div class="modal">
                                     <span class="close">×</span>
-                                    <img class="modal-content" id="img">
-                                    <p class="tekstimodal">Në Qendrën për Hapje dhe Dialog, në kryeministri u çel të hënën ekspozita "Përtej Kujtimeve", me rastin e 70-vjetorit të marrëdhënieve Shqipëri-Kinë. "Përtej Kujtimeve" ekspozon një koleksion pullash përkujtimore me tematikë
-                                Kinën, të lëshuara nga Posta Shqiptare përgjatë viteve 1968-2009, gjithashtu dhe vepra tradicionale artistike nga qyteti Nanjing, Kinë. Në fjalimin e tij, ambasadori Zhou Ding tha se gjatë 70 vjetëve pas vendosjes së marrëdhënieve
-                                diplomatike midis Kinës e Shqipërisë, marrëdhëniet dypalëshe kanë kaluar provën e ndryshimit të situatës ndërkombëtare, dy palët kanë ruajtur gjithmonë lidhjen e ngushtë, miqësia midis dy popujve është trashëguar brez pas
-                                brezi.
+                                    <img class="modal-content" src="../img/ekspozita.jpeg">
+                                    <p class="tekstimodal">
+                                        Ministria e Arsimit dhe Shkencës ka pranuar sot 633 tabletë nga Zyra e UNICEF-it në Kosovë, të cilët do t’iu shpërndahen nxënësve me 
+                                        nevoja të veçanta. Zyra e UNICEF-it në tërësi ka siguruar 800 tabletë përmes Ambasadës Britanike në Kosovë, 167 prej të cilëve janë shpërndarë 
+                                        tek Organizatat e Personave me Nevoja të Veçanta.
+                                        Ministri Ramë Likaj me këtë rast theksuar rëndësinë e të dhënave të sakta dhe raporteve të cilat Ministria e Arsimit i ka mbledhur nga DKA-të, 
+                                        sa i përket  numrit të nxënësve me nevoja të veçanta që duhet të ndihmohen me teknologji asistive, përkatësisht me tabletë.
+                                        Ministri Likaj ka folur edhe për rëndësinë e digjitalizmit të procesit mësimor dhe rrjedhën e procesit mësimor gjatë periudhës së parë.
+                                        Shefja e zyrës së UNICEF-it në Kosovë, Larisa Brunn tha se fëmijët me aftësi të kufizuara janë më të prekurit nga COVID-19.
+                                        “UNICEF në bashkëpunim me Ambasadën Britanike po ndihmojnë klta fëmijë me sigurimin e tabletëve duke kontribuar në qasjen e tyre në mësimin online”.
+                                        Zëvendësministri i Arsimit dhe Shkencës, Xhavit Rexhaj  theksoi se furnizimi i nxënësve me tabletë është përkrahje e çmueshme në kohë të pandemisë COVID 19.
+                                        Rexhaj ka vlerësuar se, ndihma e UNICEF-it vjen në një kohë të duhur dhe përdorimi i tabletëve tash ka peshë edhe më të madhe për shkak të organizimit 
+                                        të mësimit në distancë.
                                     </p>
                                 </div>
-                            <span class="titulli1"> Ekspozita e librit e mbajtur për nder të 70 vjetorit të lidhjes Shqiptaro-kineze</span>
+                            <span class="titulli1"> UNICEF-i dhuron 633 tabletë për fëmijët me nevoja të veçanta</span>
 
-                            <p>Në Qendrën për Hapje dhe Dialog, në kryeministri u çel të hënën ekspozita "Përtej Kujtimeve", me rastin e 70-vjetorit të marrëdhënieve Shqipëri-Kinë. "Përtej Kujtimeve" ekspozon një koleksion pullash përkujtimore me tematikë
-                                Kinën, të lëshuara nga Posta Shqiptare përgjatë viteve 1968-2009, gjithashtu dhe vepra tradicionale artistike nga qyteti Nanjing, Kinë. Në fjalimin e tij, ambasadori Zhou Ding tha se gjatë 70 vjetëve pas vendosjes së marrëdhënieve
-                                diplomatike midis Kinës e Shqipërisë, marrëdhëniet dypalëshe kanë kaluar provën e ndryshimit të situatës ndërkombëtare, dy palët kanë ruajtur gjithmonë lidhjen e ngushtë, miqësia midis dy popujve është trashëguar brez pas
-                                brezi.
+                            <p>
+                                Ministria e Arsimit dhe Shkencës ka pranuar sot 633 tabletë nga Zyra e UNICEF-it në Kosovë, të cilët do t’iu shpërndahen nxënësve me 
+                                nevoja të veçanta. Zyra e UNICEF-it në tërësi ka siguruar 800 tabletë përmes Ambasadës Britanike në Kosovë, 167 prej të cilëve janë shpërndarë 
+                                tek Organizatat e Personave me Nevoja të Veçanta.
+                                Ministri Ramë Likaj me këtë rast theksuar rëndësinë e të dhënave të sakta dhe raporteve të cilat Ministria e Arsimit i ka mbledhur nga DKA-të, 
+                                sa i përket  numrit të nxënësve me nevoja të veçanta që duhet të ndihmohen me teknologji asistive, përkatësisht me tabletë.
+                                Ministri Likaj ka folur edhe për rëndësinë e digjitalizmit të procesit mësimor dhe rrjedhën e procesit mësimor gjatë periudhës së parë.
+                                Shefja e zyrës së UNICEF-it në Kosovë, Larisa Brunn tha se fëmijët me aftësi të kufizuara janë më të prekurit nga COVID-19.
                             </p>
 
 
@@ -325,19 +335,29 @@ span.onclick = function() {
                     <div class="gridi4">
                         <div class="ardy">
                             <img style="float: right" class="fototmodal" src="../img/noli.jpg">
-                                <div id="myModal" class="modal">
+                                <div class="modal">
                                     <span class="close">×</span>
-                                    <img class="modal-content" id="img">
-                                    <p class="tekstimodal" >“Një figurë themelore e lëvizjes nacionaliste shqiptare të sapolindur, dijetari Fan S. Noli krijoi forcën e lëvizjes në Shtetet e Bashkuara, ku ai themeloi Kishën Ortodokse Shqiptare”. “Daily Sabah” e ka nisur kështu artikullin
-                                        kushtuar figurës, rolit dhe veprimtarisë së rëndësishme të Fan. S Nolit, veprat e të cilit tashmë do të jenë të ekspozuara në një librari në Boston.<br> E vendosur modestisht në katin e dytë të ndërtesës pranë Katedrales,
-                                        biblioteka arkivore e rrallë që zotëron Neka Doko hap dyert e saj në një zyrë me dritare dhe pamje nga lokalet të lagjes së ngushtë të Greater Bostonit.
+                                    <img class="modal-content" src="../img/noli.jpg">
+                                    <p class="tekstimodal" >
+                                        Ministria e Arsimit dhe Shkencës (MASh) ka filluar sot Javën kundёr braktisjes sё shkollimit, e cila do të zgjasë deri më 20 nёntor 2020 dhe këtë vit, 
+                                        për shkak të pandemisë, kjo javë do të shënohet me aktivitete sensibilizuese mediale dhe vizita nё shkolla, shoqёruar me materiale promovuese.
+                                        MASh kërkon nga Drejtoritë Komunale të Arsimit dhe nga secili punonjës në arsim, prindërit dhe gjithë komuniteti, që të adresojnë secilën sfidë që 
+                                        ndikon në mosvijimin e mësimit nga fëmijët tanë, në mënyrë që të ketë reagim të shpejtë institucional për të zgjidhur problemet.
+                                        Në këtë drejtim, vit pas viti, ka pasur ulje të shifrave të braktisjes së shkollimit, falë punës së përbashkët të MASh me DKA-të, shkollat dhe me
+                                        partnerët si UNICEF, ECMI, OSBE, USHPAK, GIZ, etj. Kjo javё ёshtё simbolike, por MASh punon nё vazhdimёsi nё ngritjen e kapaciteteve dhe pёrkushtimit
+                                        institucional nё realizimin e tё drejtёs pёr arsim, pa dallim gjinie, etnie a gjendje tjetёr.
+                                        Java kundër braktisjes së shkollimit është ndёrlidhur me Pёrvjetorin e Konventёs pёr tё drejtat e fёmijёs, meqё java nё esencё e adreson tё drejtёn pёr arsim.
                                     </p>
                                 </div>
-                            <span class="titulli1"> Libraria e Fan Nolit në Boston, rikthim në nacionalizmin shqiptar</span>
+                            <span class="titulli1"> Fillon Java kundër braktisjes së shkollimit</span>
 
-                            <p>“Një figurë themelore e lëvizjes nacionaliste shqiptare të sapolindur, dijetari Fan S. Noli krijoi forcën e lëvizjes në Shtetet e Bashkuara, ku ai themeloi Kishën Ortodokse Shqiptare”. “Daily Sabah” e ka nisur kështu artikullin
-                                kushtuar figurës, rolit dhe veprimtarisë së rëndësishme të Fan. S Nolit, veprat e të cilit tashmë do të jenë të ekspozuara në një librari në Boston.<br> E vendosur modestisht në katin e dytë të ndërtesës pranë Katedrales,
-                                biblioteka arkivore e rrallë që zotëron Neka Doko hap dyert e saj në një zyrë me dritare dhe pamje nga lokalet të lagjes së ngushtë të Greater Bostonit.
+                            <p>
+                                Ministria e Arsimit dhe Shkencës (MASh) ka filluar sot Javën kundёr braktisjes sё shkollimit, e cila do të zgjasë deri më 20 nёntor 2020 dhe këtë vit, 
+                                për shkak të pandemisë, kjo javë do të shënohet me aktivitete sensibilizuese mediale dhe vizita nё shkolla, shoqёruar me materiale promovuese.
+                                MASh kërkon nga Drejtoritë Komunale të Arsimit dhe nga secili punonjës në arsim, prindërit dhe gjithë komuniteti, që të adresojnë secilën sfidë që 
+                                ndikon në mosvijimin e mësimit nga fëmijët tanë, në mënyrë që të ketë reagim të shpejtë institucional për të zgjidhur problemet.
+                                Në këtë drejtim, vit pas viti, ka pasur ulje të shifrave të braktisjes së shkollimit, falë punës së përbashkët të MASh me DKA-të, shkollat dhe me
+                                partnerët si UNICEF, ECMI, OSBE, USHPAK, GIZ, etj.
                             </p>
 
 
@@ -347,19 +367,31 @@ span.onclick = function() {
                     <div class="gridi5">
                         <div class="ardy">
                             <img class="fototmodal" src="../img/mini-biblioteka.jpg">
-                                <div id="myModal" class="modal">
+                                <div class="modal">
                                     <span class="close">×</span>
-                                    <img class="modal-content" id="img">
-                                    <p class="tekstimodal">Hapet mini-biblioteka e parë në PrishtinëMe moton “Sill një libër merr një tjetër”, sot u hap mini-biblioteka e parë në Parkun e vjetër në lagjen “Dardania” të Prishtinës, e cila u mundësua nga ETEA, Kuvendi i të Rinjve të
-                                        Prishtinës, Libraria “Dukagjini” dhe FIQ.Mini-biblioteka do të ketë qasje 24 orë në 7 ditë të javës dhe do të jetë nën kujdesin e banorëve të lagjes. E njëjta do të ketë mbi 100 libra në dispozicion të banorëve të lagjes
-                                        dhe të të gjithë të interesuarve për shkëmbim të librave apo huazim të librit përgjatë qëndrimit në lagje.
+                                    <img class="modal-content" src="../img/mini-biblioteka.jpg">
+                                    <p class="tekstimodal">
+                                        Ministri i Arsimit dhe Shkencës, Ramë Likaj dhe ministrja e Arsimit, Sportit dhe Rinisë e Shqipërisë, Besa Shahini, sot në ambientet e 
+                                        shkollës “Faik Konica” në Prishtinë prezantuan Platformën e përbashkët digjitale të arsimit parauniversitar të Kosovës dhe Shqipërisë.
+                                        Ministri Likaj theksoi se, kjo Platformë për mësim në distancë është në vazhdën e një bashkëpunimi shumëvjeçarë dhe të shkëlqyeshëm, të 
+                                        cilin e kanë Ministria e Arsimit e Kosovës dhe ajo e Shqipërisë.
+                                        Ministri Likaj bëri të ditur se, Ministria e Arsimit e Shqipërisë ia dhuron falas Ministrisë së Arsimit të Kosovës Platformën për mësimin
+                                        në distancë, por njëkohësisht edhe MASh do të vë në dispozicion të Ministrisë së Arsimit të Shqipërisë platformat e saj.
+                                        Me këtë rast, ministri Likaj ka ftuar prindërit dhe mësimdhënësit që t’i udhëzojnë fëmijët që të kujdesen për shëndetin e tyre, të mësuesve,
+                                        familjarëve të tyre dhe për shëndetin e përgjithshëm. Ndërsa, ministrja Besa Shahini shprehu besimin e saj se, pas përgatitjeve të cilat 
+                                        janë bërë dhe duke zbatuar në mënyrën më të mirë masat mbrojtëse, do të arrijmë të fillojmë një vit të mbarë shkollor.
                                     </p>
                                 </div>
-                            <span class="titulli1"> Lagjet e Prishtinës bëhen me mini-biblioteka</span>
+                            <span class="titulli1"> Ministrat e Arsimit të Kosovës dhe Shqipërisë prezantuan Platformën e përbashkët digjitale të arsimit parauniversitar</span>
 
-                            <p>​Hapet mini-biblioteka e parë në PrishtinëMe moton “Sill një libër merr një tjetër”, sot u hap mini-biblioteka e parë në Parkun e vjetër në lagjen “Dardania” të Prishtinës, e cila u mundësua nga ETEA, Kuvendi i të Rinjve të
-                                Prishtinës, Libraria “Dukagjini” dhe FIQ.Mini-biblioteka do të ketë qasje 24 orë në 7 ditë të javës dhe do të jetë nën kujdesin e banorëve të lagjes. E njëjta do të ketë mbi 100 libra në dispozicion të banorëve të lagjes
-                                dhe të të gjithë të interesuarve për shkëmbim të librave apo huazim të librit përgjatë qëndrimit në lagje.</p>
+                            <p>​
+                                Ministri i Arsimit dhe Shkencës, Ramë Likaj dhe ministrja e Arsimit, Sportit dhe Rinisë e Shqipërisë, Besa Shahini, sot në ambientet e 
+                                shkollës “Faik Konica” në Prishtinë prezantuan Platformën e përbashkët digjitale të arsimit parauniversitar të Kosovës dhe Shqipërisë.
+                                Ministri Likaj theksoi se, kjo Platformë për mësim në distancë është në vazhdën e një bashkëpunimi shumëvjeçarë dhe të shkëlqyeshëm, të 
+                                cilin e kanë Ministria e Arsimit e Kosovës dhe ajo e Shqipërisë.
+                                Ministri Likaj bëri të ditur se, Ministria e Arsimit e Shqipërisë ia dhuron falas Ministrisë së Arsimit të Kosovës Platformën për mësimin
+                                në distancë, por njëkohësisht edhe MASh do të vë në dispozicion të Ministrisë së Arsimit të Shqipërisë platformat e saj.
+                            </p>
 
 
                         </div>
@@ -368,19 +400,30 @@ span.onclick = function() {
                     <div class="gridi6">
                         <div class="ardy">
                             <img style="float: right" class="fototmodal" src="../img/arsimimi.png">
-                                <div id="myModal" class="modal">
+                                <div class="modal">
                                     <span class="close">×</span>
-                                    <img class="modal-content" id="img">
-                                    <p class="tekstimodal">Në ambientet e Këndit Amerikan, znj. Maja Adiga, zëvendës - asistente e sekretarit të shtetit për programe Akademike në kuadër të Byrosë për çështje arsimore dhe kulturore të Departamentit Amerikan te Shtetit u takua me partnerë
-                                        si; Biblioteka Hivzi Sulejmani Dega – “ Biblioteka Përkujtimore”, Këndi Amerikan dhe SOS – Fshatrat e fëmijëve të Kosovës. Qëllimi i takimit ishte programi që u ndihmon grave të margjinalizuara të shoqërisë të mësojnë shkrim-lexim,
-                                        anglisht dhe kompjuter.
+                                    <img class="modal-content" src="../img/arsimimi.png">
+                                    <p class="tekstimodal">
+                                        Që nga 14 shtatori, kur janë hapur institucionet e arsimit parauniversitar, në shumë shkolla janë regjistruar raste pozitive me COVID-19.
+                                        Kjo ka bërë që vazhdimisht të ndryshohen skenarët e mësimit, duke kaluar nga skenari A, mësim në shkolla, në skenar B, mësim i kombinuar 
+                                        apo skenar C, mësim online.
+                                        Shkolla “Xhemail Mustafa” në kryeqytet për shkak të disa rasteve dy javë ka qenë në skenarin C, ndërkaq javën e kaluar është rihapur sërish.
+                                        Mësimdhënësja Zana Mejzinolli thotë se me gjithë vështirësitë, më efikase e konsideron skenarin me prezencën e nxënësve në shkollë, 
+                                        pavarësisht se orët janë më të shkurtra. “Kuptohet që është më vështirë se jemi duke punuar me dy ndërrime, sidomos për mësimdhënësit, sepse 
+                                        ata punojnë nga 10 orë mësimore, kemi një pauzë 45-minutëshe për dezinfektimin e klasave për ardhjen e grupit B. Kemi konstatuar se shumë 
+                                        më mirë është që nxënësit me qenë prezent, edhe pse ora është 25-minutëshe por është më efektive”, thotë ajo.
                                     </p>
                                 </div>
-                            <span class="titulli1"> Arsimimi i grave përmes aktiviteteve</span>
+                            <span class="titulli1"> Ndryshimi në procesin mësimor po shkakton vështirësi te nxënësit dhe mësimdhënësit</span>
 
-                            <p>Në ambientet e Këndit Amerikan, znj. Maja Adiga, zëvendës - asistente e sekretarit të shtetit për programe Akademike në kuadër të Byrosë për çështje arsimore dhe kulturore të Departamentit Amerikan te Shtetit u takua me partnerë
-                                si; Biblioteka Hivzi Sulejmani Dega – “ Biblioteka Përkujtimore”, Këndi Amerikan dhe SOS – Fshatrat e fëmijëve të Kosovës. Qëllimi i takimit ishte programi që u ndihmon grave të margjinalizuara të shoqërisë të mësojnë shkrim-lexim,
-                                anglisht dhe kompjuter.</p>
+                            <p>
+                                Që nga 14 shtatori, kur janë hapur institucionet e arsimit parauniversitar, në shumë shkolla janë regjistruar raste pozitive me COVID-19.
+                                Kjo ka bërë që vazhdimisht të ndryshohen skenarët e mësimit, duke kaluar nga skenari A, mësim në shkolla, në skenar B, mësim i kombinuar 
+                                apo skenar C, mësim online.
+                                Shkolla “Xhemail Mustafa” në kryeqytet për shkak të disa rasteve dy javë ka qenë në skenarin C, ndërkaq javën e kaluar është rihapur sërish.
+                                Mësimdhënësja Zana Mejzinolli thotë se me gjithë vështirësitë, më efikase e konsideron skenarin me prezencën e nxënësve në shkollë, 
+                                pavarësisht se orët janë më të shkurtra.
+                            </p>
 
 
                         </div>
@@ -389,9 +432,9 @@ span.onclick = function() {
                     <div class="gridi7">
                         <div class="ardy">
                             <img class="fototmodal" src="../img/Dukagjinn-640x480.jpg">
-                            <div id="myModal" class="modal">
+                            <div class="modal">
                                 <span class="close">×</span>
-                                <img class="modal-content" id="img">
+                                <img class="modal-content" src="../img/Dukagjinn-640x480.jpg">
                                 <p class="tekstimodal">Mbyllja si pasojë e pandemisë shkaktoi tkurrje drastike të vizitorëve në bibliotekat e vendit ndërkohë që libraritë shënuan rritje në shitje të librave gjatë këtij viti. E pajisur me 70 mijë libra e me 80 ulëse për lexim, biblioteka
                                     “Sadik Tafarshiku” në Ferizaj këtë të martë kishte mbetur vetëm me tetë lexues në sallë. Ky është një numër jo i zakonshëm për bibliotekën e cila vizitohet nga nxënës, studentë, studiues e banorë të Ferizajt e rrethinës.
                                 </p>
@@ -409,9 +452,9 @@ span.onclick = function() {
                     <div class="gridi8">
                         <div class="ardy">
                             <img style="float: right" class="fototmodal" src="../img/dhurohenlibra.png">
-                                <div id="myModal" class="modal">
+                                <div class="modal">
                                     <span class="close">×</span>
-                                    <img class="modal-content" id="img">
+                                    <img class="modal-content" src="../img/dhurohenlibra.png">
                                     <p class="tekstimodal">Fëmijët e kopshtit “Elita”, kanë dhuruar ndihma simbolike për fëmijët e fshatit “SOS”, kurse arushi “Lino”, ka shpërblyer fëmijët për humanitetin e tyre , me libra për ngjyrosje. Në kuadër të kampanjës “Fëmijët ndihmojnë fëmijët”,
                                         fëmijë të kopshteve të ndryshme në Komunën e Prishtinës janë duke dhuruar rrobe për fëmijët e SOS Fshatit, kampanjë kjo që është duke u zhvilluar me brendin Lino, shkruan KultPlus.
                                     </p>
@@ -428,9 +471,9 @@ span.onclick = function() {
                     <div class="gridi9">
                         <div class="ardy">
                             <img style="float: right" class="fototmodal" src="https://kallxo.com/wp-content/uploads/2020/12/Ekspozita-per-Atm%C3%A9-e-f%C3%A9--640x480.jpg">
-                                <div id="myModal" class="modal">
+                                <div class="modal">
                                     <span class="close">×</span>
-                                    <img class="modal-content" id="img">
+                                    <img class="modal-content" src="https://kallxo.com/wp-content/uploads/2020/12/Ekspozita-per-Atm%C3%A9-e-f%C3%A9--640x480.jpg">
                                     <p class="tekstimodal">Në 80 vjetorin e vdekjes së At Gjegj Fishtës, Biblioteka Kombëtare, “Pjetër Bogdani” në Prishtinë ka hapur sot ekspozitën, “per Atmé e fé” – Gjergj Fishta. Në këtë ekspozitë janë ekspozuar vepra e dorëshkrime të rralla e të
                                         pabotuara të Fishtës, por edhe vepra monografike e tematike të shkruara për Fishtën, që gjenden në koleksionin e BKK-së, “Pjetër Bogdani”. Në ceremoninë e hapjes së kësaj ekspozite mori pjesë edhe Ipeshkvi i Kosovës, Dodë
                                         Gjergji dhe zv/ministri i Kulturës, Rinisë dhe Sportit, Engelbert Zefaj.
@@ -449,20 +492,21 @@ span.onclick = function() {
                     <div class="gridi10">
                         <div class="ardy">
                             <img class="fototmodal" src="../img/Aktiviteti.png">
-                            <div id="myModal" class="modal">
+                            <div class="modal">
                                 <span class="close">×</span>
-                                <img class="modal-content" id="img">
-                                <p class="tekstimodal">Në kuadër të festivalit PrishtinaLexon, banorët e kryeqytetit patën mundësinë të regjistrohen pa pagesë në të gjitha degët e Bibliotekës "Hivzi Sulejmani", kjo një gjë e cila u mirëpritë nga të gjithë qytetarët pa dallim, ndërsa në sheshin "Zahir Pjaziti",
-                                    nga të gjithë lexuesit u shpallën lexuesit e dalluar të Komunës së Prishtinës, duke përfshirë të gjitha grupmoshat, si në vijim: </p>
+                                <img class="modal-content" src="../img/Aktiviteti.png">
+                                <div class="tekstimodal">
+                                <p >Në kuadër të festivalit PrishtinaLexon, banorët e kryeqytetit patën mundësinë të regjistrohen pa pagesë në të gjitha degët e Bibliotekës "Hivzi Sulejmani", kjo një gjë e cila u mirëpritë nga të gjithë qytetarët pa dallim, ndërsa në sheshin "Zahir Pjaziti",
+                                    nga të gjithë lexuesit u shpallën lexuesit e dalluar të Komunës së Prishtinës, duke përfshirë të gjitha grupmoshat, si në vijim:</p>
     
-                                <ol class="lista">
-                                    <li>Era Dragusha, nxënëse;</li>
-                                    <li>Flamur Foniqi, student;</li>
-                                    <li>Hazir Mehmeti, pensionist;</li>
-                                </ol>
-                                <p>
+                                    <ol>
+                                        <li>Era Dragusha, nxënëse;</li>
+                                        <li>Flamur Foniqi, student;</li>
+                                        <li>Hazir Mehmeti, pensionist;</li>
+                                    </ol>
+                                <p >
                                     Tre lexuesit e vitit morën mirënjohje dhe libra, dhuratë nga libraria "Dukagjiin", Biblioteka "Hivzi Sulejmani" dhe Aleanca franceze.
-                                </p>
+                                </p></div>
                             </div>
                             <span class="titulli1"> Aktiviteti Prishtina lexon</span>
 
@@ -687,33 +731,67 @@ span.onclick = function() {
 
             </div>
         </footer>
+       
         
         <script>
-            var modal = document.getElementById("myModal");
+            // const modal = document.getElementsByClassName("myModal");
             
             
-            var img = document.getElementsByClassName("fototmodal");
-            var modalImg = document.getElementById("img");
+            // var img = document.getElementsByClassName("fototmodal");
+            // var modalImg = document.getElementById("img");
+            // var captionText=document.getElementsByClassName("tekstimodal");
+           
+
+            // var showModal=function(){
+            //     modal.style.display="block";
+            //     modalImg.src=this.src;
+            //     captionText.innerHTML=this.alt;
+               
             
-            var showModal=function(){
+            // }
+            // for(var i=0;i<img.length;i++){
+            //     img[i].addEventListener('click', showModal);
+            // }
+            
+           
+            
+            // const span = document.getElementsByClassName("close")[0];
+            
+            
+            
+            function viewModal(){
+                const modal = $(this).children()[1];
+                
+                
+            console.log(typeof(modal));
+               
+              
+                const photo =$(this).children('#img').attr('src');
                 modal.style.display="block";
-                modalImg.src=this.src;
-                captionText.innerHTML=this.alt;
-            
+                
+                span.onclick = function() { 
+              
+              
+               console.log(modal);
+                         }
+
             }
-            for(var i=0;i<img.length;i++){
-                img[i].addEventListener('click', showModal);
+            
+            
+
+            const lajmet = document.getElementsByClassName('ardy');
+            
+            for(let i=0;i<lajmet.length;i++){
+                lajmet[i].addEventListener('click',viewModal);
             }
+            $(".close").on("click", function (event) {
+                $(this).parent().fadeOut();
+                event.preventDefault();
+            });
+
             
-            
-            
-            var span = document.getElementsByClassName("close")[0];
-            
-            
-            span.onclick = function() { 
-              modal.style.display = "none";
-            }
-            </script>
+            // </script>
+
 
     </body>
 
