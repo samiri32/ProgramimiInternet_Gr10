@@ -151,7 +151,7 @@ td {
     color: black;
 }
 
-.services {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,7 +162,7 @@ td {
     overflow-y: hidden;
 }
 
-.partners {
+.autoret {
     padding-left:0.8em;
     position: center;
     width: 100%;
@@ -175,11 +175,11 @@ td {
     justify-content: space-around;
 }
 
-.partners img {
+.autoret img {
     max-height: 22em;
 }
 
-.partner-container {
+.mbajtesi-autoreve {
     width: 26em;
     height: 22em;
     perspective: 400em;
@@ -205,11 +205,11 @@ td {
     transform-style: preserve-3d;
 }
 
-.partner-container:hover .flip-card-back {
+.mbajtesi-autoreve:hover .flip-card-back {
     transform: rotateY(0deg);
 }
 
-.partner-container:hover .flip-card-front {
+.mbajtesi-autoreve:hover .flip-card-front {
     transform: rotateY(180deg);
 }
 
@@ -568,7 +568,7 @@ a:hover {
     color: none;
 }
 
-#cardstitle a{
+#nentitulli a{
     color:#0075ff;
 }
 
