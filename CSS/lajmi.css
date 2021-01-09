@@ -536,28 +536,30 @@
   
   .modal-content {
     all:none;
+    float:none !important;
     background-color:white;
-    margin-left:32.15em !important;
+    margin-left:26.8vw !important;
     margin-top:0.2em !important;
     display: block !important;
-    min-height: 40%;
+    min-height: 50%;
     min-width: 46%;
     max-width: 46%;
   }
 
   
-  .tekstimodal {
-    max-width:50em;
+  .tekstimodal{
+    min-width: 46%;
+    max-width: 46%;
     margin:auto !important;
     border-radius:15px;
-    display:block;
+    display:block !important ;
     background-color: white;
     color:black;
     margin-top:30em;
     text-align:center;
-
   }
 
+  
 
   .modal-content, #caption {
     -webkit-animation-name: zoom;
