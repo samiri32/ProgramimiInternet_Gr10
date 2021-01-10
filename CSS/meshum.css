@@ -1,12 +1,22 @@
+*{
+    scroll-behavior: smooth;
+
+}
+
 .logo {
     margin-top: 10px;
     display: flex;
     justify-content: center;
 }
 
+main {
+       width:80%;
+       margin: 0 auto;
+}
 */ body {
     max-width: 1250px;
     margin: auto;
+    scroll-behavior: smooth;
 }
 
 .biblioteka {
