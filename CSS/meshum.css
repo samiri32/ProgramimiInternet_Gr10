@@ -1,6 +1,5 @@
-*{
+* {
     scroll-behavior: smooth;
-
 }
 
 .logo {
@@ -10,9 +9,10 @@
 }
 
 main {
-       width:80%;
-       margin: 0 auto;
+    width: 80%;
+    margin: 0 auto;
 }
+
 */ body {
     max-width: 1250px;
     margin: auto;
@@ -229,8 +229,13 @@ ul {
 
 .edit4 {
     position: relative;
-    margin-right: 1.5em;
+    margin-right: -6em;
     margin-top: 3em;
+}
+
+.edit6 {
+    position: relative;
+    margin-left: 1em;
 }
 
 .nestlist {
