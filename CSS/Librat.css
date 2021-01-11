@@ -1,6 +1,6 @@
-* {
+/* * {
     overflow-x: hidden;
-}
+} */
 
 main {
     width: 85%;
@@ -106,7 +106,7 @@ main {
     }
     33.33%,
     100% {
-        left: 110%;
+        left: 80%;
         opacity: 0;
     }
 }
@@ -126,7 +126,7 @@ main {
     }
     66.66%,
     100% {
-        left: 110%;
+        left: 80%;
         opacity: 0;
     }
 }
@@ -145,7 +145,7 @@ main {
         transform: translate(-50%, -50%);
     }
     100% {
-        left: 110%;
+        left: 80%;
         opacity: 0;
     }
 }
