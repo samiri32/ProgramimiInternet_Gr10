@@ -5,18 +5,42 @@
 body {
   margin: 0;
 }
+.pjesa1{
+  background-image: url(https://www.macmillandictionary.com/external/slideshow/thumb/White_thumb.png),
+  url(https://www.kindpng.com/picc/m/237-2377415_transparent-reading-fluency-clipart-open-book-icon-creative.png);
+  background-size:100em, 2em;
+  background-repeat: no-repeat, repeat-x;
+  background-position-x: 100em, 10em;
+  background-position-y: 100em, 0em;
+  height: 28em;
+}
 
-.container {
-  position: relative;
-  bottom: 250px;
-  display: grid;
-  grid-template-columns: 2% 40% 40% 2%;
-  justify-content: center;
-  grid-gap: 2rem;
+.rreshtii{
+  padding: 2em 6em 0em 6em;
+  display: -webkit-flex;
+  display: flex;
+  column-gap: 2.5em;
+}
+#border-image{
+  border: 1em solid grey;
+  padding-top:0.5em;
+  border-image: url(https://i.pinimg.com/originals/29/91/98/299198bc40aeba89f89d1d9e9c0dfb15.png) 100 round;
+}
+.shtyllaa1{
+  background-color: white;
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+}
+  .shtyllaa2 {
+    background-color: white;
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
 }
 
 .tabela {
-  margin: 0;
+  padding: 2em;
   font-family: 'M PLUS 1p', sans-serif;
 }
 
@@ -45,7 +69,7 @@ td {
 h1 {
   font-weight: 600;
   text-align: center;
-  background-color: #16a085;
+  background-color:  #0075ff;
   color: #fff;
   padding: 10px 0px;
 }
@@ -55,12 +79,13 @@ tr:hover {
 }
 
 .formulari {
-  background-color: #e8e8e8;
+  background-color:  #eeeeee;
 }
 
 .banner {
   position: relative;
-  bottom: 300px;
+  bottom: 20em;
+  text-shadow: 0.2em 0.2em rgba(44, 36, 36, 0.199)
 }
 
 .sinanibabo {
@@ -89,7 +114,9 @@ tr:hover {
   text-decoration: none;
 }
 
-
+.video{
+  box-shadow: 0.5em 1em grey;
+}
 
 .djathtas {
   display: grid;
@@ -178,54 +205,8 @@ tr:hover {
   padding-left: 1em;
 }
 
-input[type="reset"] {
-  height: 1.6em;
-  width: 10em;
-  color: white;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #393e46;
-  border: none;
-}
-
 input[type="reset"]:hover {
   color: #0075ff;
-}
-
-input[type="submit"] {
-  height: 3.6em;
-  width: 10em;
-  color: white;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #393e46;
-  border: none;
-}
-
-.hapeHarten, .hapeVideon, .mbylleHarten, .mbylleVideon {
-  height: 3.6em;
-  width: minmax(10em, auto);
-  color: white;
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #393e46;
-  border: none;
-}
-
- .mbylleVideon:hover {
-  color: #0075ff;
-}
-
-.hapeVideon:hover {
- color: #0075ff;
-}
-
-.hapeHarten:hover {
- color: #0075ff;
-}
-
-.hapeVideon:hover {
- color: #0075ff;
 }
 
 input[type="submit"]:hover {
@@ -459,7 +440,7 @@ body {
   overflow: hidden;
   position: -webkit-sticky;
   position: sticky;
-  z-index: 1;
+  z-index: 900;
   top: 0;
   padding: 0px;
   background-color: black;
@@ -509,6 +490,31 @@ body {
   transition: 0.6s;
   opacity: 0;
   visibility: hidden;
+}
+.hapeHarten, .hapeVideon, .mbylleHarten, .mbylleVideon {
+  height: 3.6em;
+  width: minmax(10em, auto);
+  color: white;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color:  #D9D9D9;;
+  border: none;
+}
+
+ .mbylleVideon:hover {
+  color: #0075ff;
+}
+
+.mbylleHarten:hover {
+ color: #0075ff;
+}
+
+.hapeHarten:hover {
+ color: #0075ff;
+}
+
+.hapeVideon:hover {
+ color: #0075ff;
 }
 
 .search-form.active {

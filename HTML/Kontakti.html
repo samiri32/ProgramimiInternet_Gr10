@@ -6,7 +6,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Kalam:wght@300&family=M+PLUS+1p:wght@300&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="CSS/Kontakti.css">
   <title>BIBLIOTEKA SINAN DOBREVA</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,16 +42,13 @@
     })
   </script>
 
-  </script>
-
 </head>
 
 
 
 
 <body>
-
-
+  <div class="header" style="background-color:black;"></div>
   <div class="topnav">
     <div class="majtas">
       <div class="majtasnalt">homepage</div>
@@ -106,32 +102,24 @@ font-family: 'Kalam', cursive;
 font-family: 'M PLUS 1p', sans-serif; font-size:50px;">SI MUND TE PERMIRESOHEMI?</h3>
         <h5 style="font-family: 'Alfa Slab One', cursive;
 font-family: 'Kalam', cursive;
-font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dergo nje sygjerim!</h5>
+font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dërgo një sugjerim!</h5>
         <center>
 
 
     </div>
   </div>
+<!-- konteti i faqes poshte banner -->
 
-  <div class="container">
-
-    <div class="djatht">
-
-    </div>
-
+<div class="rreshtii">
+  <div class="shtyllaa1">
     <div class="formulari">
-
-
-      <center>
-
-
-
+    <center>
         <form class="formularii" action="index.html" method="">
           <br>
-          <label for="name">Emri(deri ne 15 shkronja):</label>
+          <label for="name">Emri (deri ne 15 shkronja):</label>
           <input type="text" id="name" name="name" required minlength="4" maxlength="15" size="25">
           <br><br>
-          <label for="sname">Mbiemri(deri ne 15 shkronja):</label>
+          <label for="sname">Mbiemri (deri ne 15 shkronja):</label>
           <input type="text" id="sname" name="name" required minlength="4" maxlength="15" size="21">
 
           <br><br>
@@ -140,39 +128,39 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dergo nje sygjerim!</h5>
           <textarea name="mesazhi" rows="8" cols="44"></textarea>
           <br><br>
           <label for="vleresimi">Si e vleresoni kete faqe?</label><br><br>
-          <span>👎</span><input type="range" id="vleresimi" name="vleresimi" min="0" max="11"><span>👍</span>
+          <i class="fa fa-thumbs-o-down"></i><input type="range" id="vleresimi" name="vleresimi" min="0" max="11"><i class="fa fa-thumbs-o-up"></i>
           <br><br>
           <label for="id">ID e anetaresimit:</label>
           <input type="text" id="id" name="id" /><br><br>
-          <input type="reset" value="Reset"> <br><br>
-          <input type="submit" value="Submit">
-
-
+          <input class="buton" type="reset" value="Fshij" style="margin-left: 2em; margin-right: 2em; margin-bottom: 0.5em;">
+          <input class="buton" type="submit" value="Dërgo">
+<br><br><br><br><br>
         </form>
       </center>
     </div>
+  </div>
 
-
+<div class="shtyllaa2">
     <div class="map">
+<div class="column-side">
+  <button class="hapeHarten" type="button" name="button">Lokacioni i Biobliotekes</button>
+  <button class="mbylleHarten" type="button" name="button">Mbyll Harten</button>
+  <button class="hapeVideon" type="button" name="button">Video me thenie</button>
+  <button class="mbylleVideon" type="button" name="button">Mbyll Videon</button>
+  <br><br>
+  <iframe class="harta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13628.870304395936!2d21.08080134046593!3d42.600693811548744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13536281728fbb4f%3A0xbec710e0df782273!2sMiradi%20e%20Eperme!5e1!3m2!1sen!2s!4v1610466107690!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  <video class="videoo" src="../img/theniengaSinani.mp4" autoplay poster="../img/sinani.jpg"
+    height="400px" width="600px" controls></video>
 
-<button class="hapeHarten" type="button" name="button">Lokacioni i Biobliotekes</button>
-<button class="mbylleHarten" type="button" name="button">Mbyll Harten</button>
-<button class="hapeVideon" type="button" name="button">Video me thenie</button>
-<button class="mbylleVideon" type="button" name="button">Mbyll Videon</button>
-<br><br>
-
-      <iframe class="harta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13628.870304395936!2d21.08080134046593!3d42.600693811548744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13536281728fbb4f%3A0xbec710e0df782273!2sMiradi%20e%20Eperme!5e1!3m2!1sen!2s!4v1610466107690!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      <video class="videoo" src="../img/theniengaSinani.mp4" autoplay poster="../img/sinani.jpg"
-        height="400px" width="600px" controls></video>
-
-      </video>
+  </video>
+</div>
+      </div>
     </div>
-    <div class="majt">
+  </div>
+<br><br><br>
 
-    </div>
-    <div class="1">
-
-    </div>
+<div class="rreshtii" style="margin-top: -2em;">
+  <div class="shtyllaa1">
     <div class="tabela">
       <table>
         <tr class="header">
@@ -213,6 +201,8 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dergo nje sygjerim!</h5>
         </tr>
       </table>
     </div>
+</div>
+<div class="shtyllaa1">
     <div class="tabela">
       <table>
 
@@ -253,30 +243,29 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dergo nje sygjerim!</h5>
           <td>Ndihmes-menaxher</td>
         </tr>
       </table>
+      </div>
     </div>
-    <div class="3">
-
-    </div>
-    <div class="4">
-
-    </div>
-    <div class="5">
-      <center>
-        Raporto parregullsi: <textarea name="name" rows="8" cols="50"></textarea><br><br>
-
-
-        <label for="Ankesa">Data dhe ora:</label>
-
-        <input type="datetime-local" id="Ankesa" name="time" value="2021-01-06T19:30" min="2000-06-07T00:00" max="2021-06-14T00:00">
-        <br><br><br> <input type="submit" value="Submit">
-      </center>
-    </div>
-
-
-
-
-
   </div>
+
+  <div class="rreshtii">
+    <div class="shtyllaa1" >
+      <div class="5" style="margin-top: 0em;">
+        <center>
+         <span>Raporto parregullësi: </span><br><br>
+          <textarea name="name" rows="8" cols="50" id="border-image"></textarea><br><br>
+          <label for="Ankesa">Data dhe ora:</label>
+          <input type="datetime-local" id="Ankesa" name="time" value="2021-01-06T19:30" min="2000-06-07T00:00" max="2021-06-14T00:00">
+          <br> <br><input class="buton" style="margin-right: -13em;"type="submit" value="Dërgo">
+        </center>
+      </div>
+</div>
+
+<div class="shtyllaa1">
+
+    </div>
+  </div>
+
+
   <div class="row4">
     <div class="shortcuts">
       <div class="shortcutnalt">
