@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="./HTML/keshi.appcache.txt" lang="sq">
+<html lang="sq">
 
 <head>
     <title>BIBLIOTEKA SINAN DOBREVA</title>
@@ -171,7 +171,7 @@
 
 
 
-<body>
+<body onload="showSlides(1)">
 
     <div class="topnav">
         <div class="majtas">
@@ -278,21 +278,22 @@
                 </div>
             </div>
         </div>
+        
         <!--QITU JA NIS row2-->
         <div class="row2">
             <div class="kolonarresht" style="background-color: white;">
 
                 <div class="slideshow-container">
 
-                    <div class="Sllajdet fade">
+                    <div class="Sllajdet">
                         <img src="./img/noli.jpg" style="width:100%">
                     </div>
 
-                    <div class="Sllajdet fade">
+                    <div class="Sllajdet">
                         <img src="./img/HIVZIABABOOO.jpg" style="width:100%">
                     </div>
 
-                    <div class="Sllajdet fade">
+                    <div class="Sllajdet">
                         <img src="./img/ismail-kadare-j-foley-opale-w-1-990x556.jpg" style="width:100%">
                     </div>
 
@@ -636,20 +637,20 @@
         </div>
     </footer>
 
-
+<!--
     <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker
-                .register('sw.js')
-                .then(function() {
-                    console.log("Service Worker Registered");
-                });
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker
+                   .register('sw.js')
+                   .then(function() { 
+                       console.log("Service Worker Registered"); 
+                    });
         }
-    </script>
+        </script>
 
     <script src="./js/skripta.js"></script>
 
-
+-->
 </body>
 
 </html>
