@@ -6,7 +6,7 @@ console.log('WORKER: duke u ekzekutuar.');
 na len me i remove outdated cache entries kur bohet update
    
 */
-var verzion = 'v1::';
+var version = 'v1::';
 
 /* Kto resources kan me u download edhe cache prej service worker kur bohet instalimi, 
 nese naj resource nuk downloadohet nuk instalohet as service worker
@@ -15,9 +15,9 @@ nese naj resource nuk downloadohet nuk instalohet as service worker
 var offlineFundamentals = [
   '',
   'css/stlyes.css',
-  'css/autoret1style.css',
+ 
   'js/skripta.js',
-  'js/Kontakti.js'
+  
 ];
 
 /* 
