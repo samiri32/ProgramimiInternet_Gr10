@@ -1,19 +1,43 @@
 $("h1.formularii").add("formulari");
 
-$(".largoHarten").hide();
-$(".largoVideon").hide();
-$(".Video").hide();
-$(".harta").hide();
 
-$(".shfaqeHarten").click(function(){
-  if($(".Video")){
-    $(".Video").remove();
-  }
+$(".mbylleHarten").hide();
+$(".mbylleVideon").hide();
+$(".harta").hide();
+$(".videoo").hide();
+
+$(".hapeHarten").click(function(){
   $(".harta").slideDown();
-});
-$(".shfaqVideon").click(function(){
-  if($(".harta")){
-    $(".harta").remove();
+  $(".hapeHarten").hide();
+  $(".mbylleHarten").fadeIn();
+  if($(".videoo")){
+    $(".videoo").fadeOut();
+    $(".mbylleVideon").hide();
+    $(".hapeVideon").fadeIn();
+    $(".videoo").trigger('pause');
   }
-  $(".Video").slideDown();
+});
+
+$(".hapeVideon").click(function(){
+  $(".videoo").slideDown();
+  $(".mbylleVideon").fadeIn();
+  $(".hapeVideon").hide();
+if($(".harta")){
+  $(".harta").fadeOut();
+  $(".mbylleHarten").hide();
+  $(".hapeHarten").fadeIn();
+}
+});
+
+$(".mbylleHarten").click(function(){
+  $(".harta").fadeOut();
+  $(".mbylleHarten").hide();
+  $(".hapeHarten").fadeIn();
+});
+
+$(".mbylleVideon").click(function(){
+$(".videoo").fadeOut();
+$(".hapeVideon").fadeIn();
+$(".mbylleVideon").hide();
+$(".videoo").trigger('pause');
 });

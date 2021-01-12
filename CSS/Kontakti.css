@@ -202,6 +202,32 @@ input[type="submit"] {
   border: none;
 }
 
+.hapeHarten, .hapeVideon, .mbylleHarten, .mbylleVideon {
+  height: 3.6em;
+  width: minmax(10em, auto);
+  color: white;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #393e46;
+  border: none;
+}
+
+ .mbylleVideon:hover {
+  color: #0075ff;
+}
+
+.hapeVideon:hover {
+ color: #0075ff;
+}
+
+.hapeHarten:hover {
+ color: #0075ff;
+}
+
+.hapeVideon:hover {
+ color: #0075ff;
+}
+
 input[type="submit"]:hover {
   color: #0075ff;
 }
