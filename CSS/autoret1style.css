@@ -600,7 +600,7 @@ input[type=text] {
 }
 
 input[type=checkbox] {
-    margin-top: 0.5em;
+    margin-top: -0.5em;
 }
 
 .autocomplete-items {
