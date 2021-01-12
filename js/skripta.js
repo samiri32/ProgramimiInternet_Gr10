@@ -1,5 +1,5 @@
 var slideIndex = 1;
-showSlides(1);
+
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -26,6 +26,7 @@ function showSlides(n) {
 
 
 }
+
 
 var modal = document.getElementById("myModal");
 var img = document.getElementsByClassName("fototmodal");
