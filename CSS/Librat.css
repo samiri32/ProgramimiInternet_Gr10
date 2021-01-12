@@ -2,6 +2,10 @@
     overflow-x: hidden;
 } */
 
+* {
+    scroll-behavior: smooth;
+}
+
 main {
     width: 85%;
     margin: 0 auto;

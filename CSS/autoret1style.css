@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+* {
+    scroll-behavior: smooth;
+}
+
 .content-table {
     border-collapse: collapse;
     margin: 25px 0;
@@ -163,7 +167,7 @@ td {
 }
 
 .autoret {
-    padding-left:0.8em;
+    padding-left: 0.8em;
     position: center;
     width: 100%;
     height: 100%;
@@ -246,12 +250,10 @@ td {
     text-decoration: none;
 }
 
-
 a {
     text-decoration: none;
     color: #000;
 }
-
 
 a:hover {
     color: #0075ff;
@@ -561,46 +563,47 @@ a:hover {
 }
 
 .meshum a:hover {
-    color:#0075ff;
+    color: #0075ff;
 }
 
 .meshum a:visited {
     color: none;
 }
 
-#nentitulli a{
-    color:#0075ff;
+#nentitulli a {
+    color: #0075ff;
 }
 
-h3{
-   text-align: center;
+h3 {
+    text-align: center;
 }
+
 
 /* Qitu ja nis pjesa e email input me autocomplete */
 
 .autocomplete {
     position: relative;
     display: inline-block;
-  }
-  
-  input {
+}
+
+input {
     border: 1px solid transparent;
     background-color: white;
     padding: 10px;
     font-size: 16px;
-  }
-  
-  input[type=text] {
+}
+
+input[type=text] {
     background-color: #f1f1f1;
     width: 98%;
     height: 3em;
-  }
-  
-  input[type=checkbox]{
+}
+
+input[type=checkbox] {
     margin-top: 0.5em;
-  }
-  
-  .autocomplete-items {
+}
+
+.autocomplete-items {
     position: absolute;
     border: 1px solid #d4d4d4;
     border-bottom: none;
@@ -609,16 +612,16 @@ h3{
     top: 100%;
     left: 0;
     right: 0;
-  }
-  
-  .autocomplete-items div {
+}
+
+.autocomplete-items div {
     padding: 0.5em;
     cursor: pointer;
-    background-color: white; 
-    border-bottom: 1px solid #d4d4d4; 
-  }
-  
-  .buton {
+    background-color: white;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.buton {
     height: 3.6em;
     width: 10em;
     color: white;
@@ -626,13 +629,13 @@ h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #D9D9D9;
     border: none;
-  }
-  
-  #h5 {
+}
+
+#h5 {
     margin-top: 0.5em;
     color: #0075ff;
-  }
-  
-  .buton:hover {
+}
+
+.buton:hover {
     color: #0075ff;
-  }
+}
