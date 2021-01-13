@@ -211,11 +211,17 @@
 
     <div class="homepage">
         <div class="kycunidiv">
-
-            <h1 style="text-align: center; display: inline;">Regjistrohuni në BSD</h1>
-
             <form id="regjistrohuform" form name="Formaperregjister" action="./submit.html" target="_blank" onsubmit="return REGJISTRIMI()" method="post">
 
+                <div class="konga">
+               <center>
+                    <audio controls autoplay>
+                      <source src="../img/Muharrem Qena Mallengjimi.mp3" type="audio/mpeg">
+                    Shnosh :/
+                    </audio><br><br>
+                    <h1 style="text-align: center; display: inline;">Regjistrohuni në BSD</h1><br>
+                </center>
+                  </div>
                 
 
                     <p>Emri:<br> <input type="text" size="65" style="background-color: white; border: 0.01em solid black; height:1.5em;" name="Emri" autocomplete="on" id="rrite"></p>
@@ -247,7 +253,17 @@
                         <option>Tjetër</option> 
                         
                     </select>
-                    </p>
+                    </p><br>
+                    <p>Si keni ndëgjuar për bibliotekën BSD?</p>
+                    <input type="text" list="referent" style="border:0.05px solid black; background-color: white; height:2em">
+                    <datalist id="referent">
+                        <option value="Familja apo shoqëria">
+                        <option value="Rrjetet sociale">    
+                        <option value="Reklamat">
+                        <option value="Në shkollë">
+                        <option value="Në punë">
+                        <option value="Tjetër">
+                    </datalist>
                     <br>
                     <br>
                     <p>Koment:<br> <textarea cols="55" name="Koment" id="komenti"> </textarea></p>

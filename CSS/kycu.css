@@ -2,9 +2,10 @@
     padding: 4em 6em 4em 6em;
     box-sizing: border-box; 
     width: 100%; 
-    display: grid;
-    align-content: center; 
-    align-items: center; 
+    display: flex;
+    float:left;
+    column-gap:2em;
+    justify-content: space-evenly;
 }
 #kycuforma{
     align-self: center;
@@ -58,8 +59,7 @@
 }
 
 #kycuforma {    
-    margin: auto;
-    width: 20em; 
+    width: 11em; 
     
 }
 
