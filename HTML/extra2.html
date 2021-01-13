@@ -31,7 +31,7 @@ body{
   background-position-y: 15em, center;
   padding: 1em;
 }
-
+/*te regjistrohu u bo*/
 .fotoo{
     background-image: url("https://pngimg.com/uploads/cat/cat_PNG50514.png");
     background-repeat: no-repeat;
@@ -48,11 +48,11 @@ body{
 .fotoooo{
     background-image: radial-gradient(circle, rgba(209, 103, 16, 0.459) 20%,rgba(224, 14, 14, 0.37) 75%, rgba(128, 0, 0, 0.329) 5%);
     max-width: 100%;
-    word-wrap:break-word;
+    /*u bo te regjistrohu*/display:break-word;
     font-size: 2em;
     border: 0.1em solid pink;
 }
-/*jon bo*/
+/*jon bo te kontakti*/
 #drag, #drop {
   align-items: center;
   float: left;
@@ -76,8 +76,11 @@ body{
 }
     </style>   
 
+
+
+
     <script>
-      //jon bo
+      //jon bo te kontakti
     function allowDrop(ev) {
         ev.preventDefault();
       }
@@ -95,6 +98,8 @@ body{
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+
+  //qito jon tbome te kontakti
 $(document).ready(function(){
   $("#mshefe").click(function(){
     $("p").hide(1000,function(){
@@ -111,6 +116,8 @@ $(document).ready(function(){
   $("#flip").click(function(){
     $(".videoja").slideToggle("slow");
   });
+
+
   $("#animacioni").click(function(){
     var div = $(".konga");  
     div.animate({left: '35em'}, "slow");
