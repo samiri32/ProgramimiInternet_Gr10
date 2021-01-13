@@ -551,6 +551,7 @@ input[type=checkbox]{
   top: 100%;
   left: 0;
   right: 0;
+  width:24.5em;
 }
 
 .autocomplete-items div {

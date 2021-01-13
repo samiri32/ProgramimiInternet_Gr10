@@ -41,11 +41,14 @@ body{
 }
 
 .fotooo{
-    background-image: linear-gradient(right, rgba(143, 97, 180, 0.623), pink);
+  /* u bo te lajmi */
+    background-image: linear-gradient(to right, rgba(143, 97, 180, 0.623), pink);
     padding: 3em;
+    border: 1px solid pink;
 }
 
 .fotoooo{
+  /*u bo te lajmi :) */
     background-image: radial-gradient(circle, rgba(209, 103, 16, 0.459) 20%,rgba(224, 14, 14, 0.37) 75%, rgba(128, 0, 0, 0.329) 5%);
     max-width: 100%;
     /*u bo te regjistrohu*/display:break-word;
@@ -122,6 +125,8 @@ $(document).ready(function(){
     var div = $(".konga");  
     div.animate({left: '35em'}, "slow");
   });
+
+  // qito po i lojm te ekstrat i guess
   $("#profaa").click(function(){
     alert("Profa i zgjedhur: " + $("#test").val());
   });
@@ -134,7 +139,6 @@ $(document).ready(function(){
     $("#body").remove();
   });
 });
-
 function afterText() {
   var teksti = "<b>Krejt profat jon tmire ;)</b>"; 
   $("#pp").after(teksti);
@@ -161,7 +165,8 @@ function afterText() {
     Tekst tjeter i rendomte</div>
 
     <div class="fotoooo" style="color: white">
-        Ne kete div do te provojme me wrap textin yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</div>
+        Ne kete div do te provojme me wrap textin yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+      </div>
 
         <br>
         <!--Qita i kena shti te kontaktet-->
@@ -181,6 +186,8 @@ function afterText() {
   </audio>
 </div>
 
+
+<!-- u bo te kycu-->
 <div class="videoja">
   <div id="flip" style="color:white;">Kliko me qu videon nalt</div>
     <video width="320" height="240" controls>
@@ -197,7 +204,7 @@ function afterText() {
   </form> -->
 
 
-
+  <!--Te regjistrohu datalist, te kontakti fadeout-->
 <div class="pyetesori" >
   <button id="fadeouti">Kliko me hek me fadeout</button>
 <p>Lenda juaj e preferuar:</p>
@@ -210,6 +217,11 @@ function afterText() {
     <option value="OOP">
     <option value="Mat3K">
 </datalist>
+
+
+
+
+<!--Qito pi lojm te ekstrat-->
 <p id="pp">Profa i preferuar: <input type="text" id="test"><button id="profaa">Trego si embed</button></p>
 <button id="korrigjimi" onclick="afterText()">Preke qita</button>
 <p id="test2">Jeta eshte <button id="torf">?</button></p>
