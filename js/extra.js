@@ -1,3 +1,4 @@
+//te kontakti o qikjo
 var x = document.getElementById("koordinatat");
 
 function getLocation() {
