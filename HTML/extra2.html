@@ -7,14 +7,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-
+/* jon bo te kontaktet*/
 #borderimage { 
   border: 1em solid green;
   background-color: blanchedalmond;
   border-image: url(https://www.fg-a.com/print-borders/2020-elves-presents-lists-fun-border.jpg) 45 round;
   padding: 0.4em;
 }
-
+/*jon bo te kontaktet*/
 #boxshadow {
     box-shadow: 0.5em 1em salmon;
     border: 0.1em solid pink;
@@ -22,7 +22,7 @@
     background-color: azure;
     text-shadow: 1em 1em rgba(128, 0, 0, 0.329);
 }
-
+/*jon bo te kontaktet*/
 body{
   background-image: url("https://lh3.googleusercontent.com/proxy/NTjgOnP4bKjtG93LwUDIAA7N5MAlwAINI__oyLJ9jR_iIDZSGQdfV93s-Gf2pf16WwFAShO7-S80qOHeZmjql2A6jyMAY4Q"),
   url("https://images.squarespace-cdn.com/content/v1/55cfb535e4b061baebe310df/1587472623697-IC8B3J3ZIZI0AMIE7U8G/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/sky+photo+for+website+home+page.jpeg?format=2500w");
@@ -31,7 +31,7 @@ body{
   background-position-y: 15em, center;
   padding: 1em;
 }
-
+/*te regjistrohu u bo*/
 .fotoo{
     background-image: url("https://pngimg.com/uploads/cat/cat_PNG50514.png");
     background-repeat: no-repeat;
@@ -41,18 +41,21 @@ body{
 }
 
 .fotooo{
+  /* u bo te lajmi */
     background-image: linear-gradient(to right, rgba(143, 97, 180, 0.623), pink);
     padding: 3em;
+    border: 1px solid pink;
 }
 
 .fotoooo{
+  /*u bo te lajmi :) */
     background-image: radial-gradient(circle, rgba(209, 103, 16, 0.459) 20%,rgba(224, 14, 14, 0.37) 75%, rgba(128, 0, 0, 0.329) 5%);
     max-width: 100%;
-    word-wrap:break-word;
+    /*u bo te regjistrohu*/display:break-word;
     font-size: 2em;
     border: 0.1em solid pink;
 }
-
+/*jon bo te kontakti*/
 #drag, #drop {
   align-items: center;
   float: left;
@@ -68,6 +71,7 @@ body{
   width: 8em;
   height: 6em;
 }
+
 .konga, .videoja, .pyetesori{
 
     padding: 0.5em 25em;
@@ -75,7 +79,11 @@ body{
 }
     </style>   
 
+
+
+
     <script>
+      //jon bo te kontakti
     function allowDrop(ev) {
         ev.preventDefault();
       }
@@ -93,6 +101,8 @@ body{
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+
+  //qito jon tbome te kontakti
 $(document).ready(function(){
   $("#mshefe").click(function(){
     $("p").hide(1000,function(){
@@ -109,10 +119,15 @@ $(document).ready(function(){
   $("#flip").click(function(){
     $(".videoja").slideToggle("slow");
   });
+
+
+  // qyky osht te lajmet
   $("#animacioni").click(function(){
     var div = $(".konga");  
     div.animate({left: '35em'}, "slow");
   });
+
+  // qito po i lojm te ekstrat i guess
   $("#profaa").click(function(){
     alert("Profa i zgjedhur: " + $("#test").val());
   });
@@ -125,7 +140,6 @@ $(document).ready(function(){
     $("#body").remove();
   });
 });
-
 function afterText() {
   var teksti = "<b>Krejt profat jon tmire ;)</b>"; 
   $("#pp").after(teksti);
@@ -152,15 +166,19 @@ function afterText() {
     Tekst tjeter i rendomte</div>
 
     <div class="fotoooo" style="color: white">
-        Ne kete div do te provojme me wrap textin yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</div>
+        Ne kete div do te provojme me wrap textin yeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+      </div>
 
         <br>
+        <!--Qita i kena shti te kontaktet-->
 <div id="drag" ondrop="drop(event)" ondragover="allowDrop(event)">
     <img src="../img/sinani3.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
   </div>
   
   <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 <br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 <button id="animacioni">Shih animacionin!</button>
 <div class="konga">
   <audio controls>
@@ -169,6 +187,8 @@ function afterText() {
   </audio>
 </div>
 
+
+<!-- u bo te kycu-->
 <div class="videoja">
   <div id="flip" style="color:white;">Kliko me qu videon nalt</div>
     <video width="320" height="240" controls>
@@ -185,7 +205,7 @@ function afterText() {
   </form> -->
 
 
-
+  <!--Te regjistrohu datalist, te kontakti fadeout-->
 <div class="pyetesori" >
   <button id="fadeouti">Kliko me hek me fadeout</button>
 <p>Lenda juaj e preferuar:</p>
@@ -198,6 +218,11 @@ function afterText() {
     <option value="OOP">
     <option value="Mat3K">
 </datalist>
+
+
+
+
+<!--Qito pi lojm te ekstrat-->
 <p id="pp">Profa i preferuar: <input type="text" id="test"><button id="profaa">Trego si embed</button></p>
 <button id="korrigjimi" onclick="afterText()">Preke qita</button>
 <p id="test2">Jeta eshte <button id="torf">?</button></p>

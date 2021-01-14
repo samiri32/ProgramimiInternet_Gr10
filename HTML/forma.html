@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma</title>
+    <link rel="stylesheet" href="../css/forma.css">
+    
+
+</head>
+
+<body>
+
+
+    <h1>Rezervo terminin!</h1>
+
+    <div class="container">
+
+        <div>
+   
+            <h2 class="title">Te dhenat</h2>
+            
+            <form id="addForm">
+                <div class="form-group">
+                    <input type="text" id="item1">
+                    <label>emri</label><br>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="item2">
+                    <label>mbiemri</label><br>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="item3">
+                    <label>ID</label><br>
+                </div>
+                <div class="form-group">
+                    <input type="date" id="item4">
+                    <label>Data</label><br>
+                </div>
+
+                <input type="submit" id="submit" value="Submit">
+
+            </form>
+
+        </div>
+
+        <div>
+            
+            <div class="tabela">
+
+                <h2 class="title">Terminet</h2>
+                
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Emri</th>
+                            <th>Mbiemri</th>
+                            <th> ID</th>
+                            <th>Data</th>
+                            <th>Anulo</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+            const form=document.getElementById("addForm");
+            const tbody=document.querySelector('tbody');
+            const table = document.querySelector('table')
+
+            form.addEventListener('submit',onAddWebsite );
+
+            function onAddWebsite(e) {
+                e.preventDefault();
+
+                const emri =document.getElementById("item1").value;
+                const mbiemri =document.getElementById("item2").value;
+                const ID =document.getElementById("item3").value;
+                const data =document.getElementById("item4").value;
+ 
+                tbody.innerHTML += `
+                <tr>
+                    <td>${emri}</td>
+                    <td>${mbiemri}</td>
+                    <td>${ID}</td>
+                    <td>${data}</td>
+                    <td><button class ="deleteBtn">Fshij</button></td>
+                </tr>
+                `;
+
+                function onDeleteRow(e) {
+                    if(!e.target.classList.contains("deleteBtn")){
+                        return;
+                    }
+
+                    const button =e.target;
+                        button.closest('tr').remove();
+                }
+                
+                table.addEventListener('click', onDeleteRow)
+
+            }
+
+
+    </script>
+
+
+</body>
+
+</html>

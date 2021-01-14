@@ -440,7 +440,7 @@
     border-radius: 1.2em;
     box-shadow: 2px 2.5px 3px 4px rgba(0, 0, 0, 0.2);
     box-shadow: inline 0 0 0.2em grey;
-    background-color:ghostwhite;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.247) 20%,rgba(239, 238, 248, 0.37) 75%, rgba(209, 216, 218, 0.329) 5%);
     writing-mode:horizontal-tb;
     padding:0.5em;
   }
@@ -468,12 +468,34 @@
     
   }
 
-  
+  .boxat {
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.568), rgba(0, 0, 0, 0.021));
+    width: 17.2em;
+    height: 3em;
+    margin:auto;
+    margin-top:0em;
+    padding-bottom: 0em;
+    padding-top:0em;
+    }
+
+    .boxat1 {
+      border: 1px solid lightgrey;
+      border-radius: 25px;
+      background-image: linear-gradient(to right,  rgba(0, 0, 0, 0.021), rgba(255, 255, 255, 0.568));
+      width: 17.2em;
+      height: 3em;
+      margin:auto;
+      margin-top:0em;
+      padding-bottom: 0em;
+      padding-top:0em;
+    }
   
   .lyst {
     border: 1px solid lightgrey;
     border-radius: 25px;
-    background-color:rgb(248, 248, 255);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.568), rgba(0, 0, 0, 0.021));
     width: 17.2em;
     height: 3em;
     margin:auto;
@@ -526,7 +548,7 @@
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 3em;
+    padding-top: 1.5em;
     left: 0;
     top: 0;
     width: 100%;
@@ -540,25 +562,26 @@
     all:none;
     float:none !important;
     background-color:white;
-    margin-left:26.8vw !important;
-    margin-top:0.2em !important;
+    margin:auto !important;
     display: block !important;
     min-height: 50%;
-    min-width: 46%;
-    max-width: 46%;
+    min-width: 50%;
+    max-width: 50%;
   }
 
   
   .tekstimodal{
-    min-width: 46%;
-    max-width: 46%;
+    min-width: 50%;
+    max-width: 50%;
     margin:auto !important;
+    margin-top: 1em !important;
     border-radius:15px;
     display:block !important ;
     background-color: white;
+    background: radial-gradient(white, rgba(255, 255, 255, 0.877) 100%);
     color:black;
-    margin-top:30em;
     text-align:center;
+    line-height:1.45em !important;
   }
 
   
@@ -634,3 +657,62 @@
     font-size: 0.8em;
   }
   
+  
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: white;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 98%;
+  height: 3em;
+}
+
+input[type=checkbox]{
+  margin-top: 0.5em;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 0.5em;
+  cursor: pointer;
+  background-color: white; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+.buton {
+  height: 3.6em;
+  width: 10em;
+  color: white;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #D9D9D9;
+  border: none;
+}
+
+#h5 {
+  margin-top: 0.5em;
+  color: #0075ff;
+}
+
+.buton:hover {
+  color: #0075ff;
+}

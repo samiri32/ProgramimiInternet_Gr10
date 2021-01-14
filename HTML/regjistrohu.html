@@ -30,6 +30,7 @@
             }
         }
     </script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
 
@@ -135,11 +136,13 @@
         }
         
         .search-form {
-            position: absolute;
+            display: inline-block;
+            position: sticky;
+            margin-bottom:0.3em;
             top: 8em;
             right: 28em;
             transform: translateX(-50%);
-            width: 2em;
+            width: 0em;
             height: 1em;
             transition: 0.6s;
             opacity: 0;
@@ -147,25 +150,27 @@
         }
         
         .search-form.active {
-            position: absolute;
+            position: sticky;
             top: 8em;
             right: 28em;
-            width: 2em;
+            width: 0em;
             height: 1em;
             opacity: 1;
             transition-delay: 0.4s;
             visibility: visible;
             background: transparent;
         }
-        
+
         .search-form input {
-            width: 20em;
+            margin-left: 1.5em;
+            margin-top: -0.2em;
+            width: 15em;
             height: 1.5em;
             color: white;
             border: none;
             background: transparent;
             outline: none;
-            font-size: 1em;
+            font-size: 1.1em;
         }
     </style>
 </head>
@@ -191,41 +196,48 @@
             </div>
             <a href="../index.html" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka Sinan Dobreva</span></a>
         </div>
-
         <div class="djathtas">
-            <div class="djathtasnalt"></div>
+            <div class="djathtasnalt">homepage</div>
             <div class="djathtasposht">
-                <a href="./lajmi.html" class="menu-item" id="one">Galeria</a>
-                <a href="#" class="menu-item" id="two">Kontakti</a>
-                <a href="./kycu.html" class="menu-item" id="three">Kyçu</a>
+                <div class="search-form">
+                    <form>
+                        <input type="text" name="" placeholder="Kërkoni">
+                    </form>
+                </div>
+                <a href="./HTML/galeria.html" class="menu-item" id="one">Galeria</a>
+                <a href="./HTML/Kontakti.html" class="menu-item" id="two">Kontakti</a>
+                <a href="./HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
                 <a href="#" id="search"><i class="fa fa-search"></i></a>
-            </div>
-            <div class="search-form">
-                <form>
-                    <input type="text" name="" placeholder="Kërkoni">
-                </form>
+                
+               
             </div>
         </div>
     </div>
 
     <div class="homepage">
         <div class="kycunidiv">
-
-            <h1 style="text-align: center; display: inline;">Regjistrohuni në BSD</h1>
-
             <form id="regjistrohuform" form name="Formaperregjister" action="./submit.html" target="_blank" onsubmit="return REGJISTRIMI()" method="post">
 
-                <div class="kycunimrena">
+                <div class="konga">
+               <center>
+                    <audio controls autoplay>
+                      <source src="../img/Muharrem Qena Mallengjimi.mp3" type="audio/mpeg">
+                    Shnosh :/
+                    </audio><br><br>
+                    <h1 style="text-align: center; display: inline;">Regjistrohuni në BSD</h1><br>
+                </center>
+                  </div>
+                
 
-                    <p>Emri:<br> <input type="text" size="65" style="background-color: white; border: 0.01em solid black;" name="Emri" autocomplete="on" id="rrite"></p>
+                    <p>Emri:<br> <input type="text" size="65" style="background-color: white; border: 0.01em solid black; height:1.5em;" name="Emri" autocomplete="on" id="rrite"></p>
                     <br>
-                    <p>Adresa:<br> <input type="text" style="background-color: white;border: 0.01em solid black;" size="65" name="Adresa" id="rrite"></p>
+                    <p>Adresa:<br> <input type="text" style="background-color: white;border: 0.01em solid black; height:1.5em;" size="65" name="Adresa" id="rrite"></p>
                     <br>
-                    <p>E-mail:<br> <input type="text" style="background-color:white;border: 0.01em solid black;" size="65" autocomplete="on" name="Email" id="rrite"></p>
+                    <p>E-mail:<br> <input type="text" style="background-color:white;border: 0.01em solid black; height:1.5em;" size="65" autocomplete="on" name="Email" id="rrite"></p>
                     <br>
-                    <p>Password:<br> <input type="password" style="background-color: white;border: 0.01em solid black;" title="Fjalekalimi juaj duhet te permbaje shkronja te vogla, shkronja te medha dhe numra." size="33" name="Password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"></p>
+                    <p>Password:<br> <input type="password" style="background-color: white;border: 0.01em solid black; height:2em; width:44.1em;" title="Fjalekalimi juaj duhet te permbaje shkronja te vogla, shkronja te medha dhe numra."  name="Password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"></p>
                     <br>
-                    <p>Telefoni:<br><input type="text" pattern="[0-9]{9}" title="Numri i telefonit duhet te jete mobil, ti permbaje 9 shifra. Formati: 04x-xxx-xxx" style="background-color: white;border: 0.01em solid black;" size="65" name="Telefoni" id="rrite"></p>
+                    <p>Telefoni:<br><input type="text" pattern="[0-9]{9}" title="Numri i telefonit duhet te jete mobil, ti permbaje 9 shifra. Formati: 04x-xxx-xxx" style="background-color: white;border: 0.01em solid black; height:1.5em;" name="Telefoni" id="rrite"></p>
                     <br>
                     <p>Gjinia:</p>
                     <input type="radio" name="Gjinia" value="mashkull">
@@ -246,16 +258,31 @@
                         <option>Tjetër</option> 
                         
                     </select>
-                    </p>
+                    </p><br>
+                    <p>Si keni ndëgjuar për bibliotekën BSD?</p>
+                    <input type="text" list="referent" style="border:0.05px solid black; background-color: white; height:2em">
+                    <datalist id="referent">
+                        <option value="Familja apo shoqëria">
+                        <option value="Rrjetet sociale">    
+                        <option value="Reklamat">
+                        <option value="Në shkollë">
+                        <option value="Në punë">
+                        <option value="Tjetër">
+                    </datalist>
                     <br>
                     <br>
-                    <p>Koment:<br> <textarea cols="55" name="Koment" id="rrite"> </textarea></p>
-                    <p style="display: flex; float: left; column-gap: 1em;">
-                        <input type="submit" value="Regjistrohu" name="Regjistrohu" id="ndrysho">
+                    <p>Koment:<br> <textarea cols="55" name="Koment" id="komenti"> </textarea></p>
+                    <p style="display: flex; float: left; column-gap: 1em; height:2em; width:5em;">
+                        <input type="submit" value="Regjistrohu" name="Regjistrohu" id="ndrysho" class="dergooo">
                         <input type="reset" value="Fshij" name="Fshij" id="ndrysho">
                     </p>
+                    <div class="tekstikolona">
+                        Duke klikuar 'Regjistrohu' ju i pranoni termet dhe kushtet për regjistrim në bibliotekën tonë. 
+                                                                                                                      
+                        Pasi të keni klikuar 'Regjistrohu' ju do të dërgoheni në një faqe ku mund të zgjidhni pakon e regjistrimit varësisht prej kategorisë që i takoni. Apo mund të klikoni "vazhdo" nëse nuk doni të bleni ndonjë pako menjëherë.
+                        Për çdo rast ju mund të shikoni profilin tuaj për të parë llojin e pakos në të cilën jeni abonuar. Biblioteka jonë ofron 1 muaj falas abonim. Ju do të pranoni email para se të skadojë kjo ofertë.
+                    </div>
             </form>
-            </div>
 
         </div>
 
@@ -324,12 +351,12 @@
                 <div class="sbkol1">
                     <span id="sf">Regjistrohu për të pranuar e-mails nga Biblioteka</span><br><br>
                     <!-- Qitu ni form per Anetaresim (mail subscription)-->
-                    <form autocomplete="off" action="/action_page.php">
+                    <form autocomplete="on" action="/action_page.php">
                         <div class="autocomplete" style="width: 25em;">
                             <input id="myInput" type="text" name="myEmail" placeholder="E-mail" style="background-color:white;">
                         </div>
                         <button class="buton">Dërgo</button>
-                    </form> <br><br><br> <input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme <br><br>
+                    </form><input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme <br><br>
                 </div>
 
                 <div class="sbkol1">
@@ -365,7 +392,7 @@
                         <li><a href="./meshum.html">
            Autorë shqiptar
          </a></li>
-                        <li><a href="./meshume2.html">
+                        <li><a href="./meshume.html">
           Autorë të huaj
         </a></li>
                     </ul>

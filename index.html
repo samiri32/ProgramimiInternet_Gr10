@@ -28,9 +28,9 @@
             }
         }
     </script>
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
-
     <script type="text/javascript">
         $(document).ready(function() {
             $('#search').click(function() {
@@ -133,11 +133,13 @@
         }
         
         .search-form {
-            position: absolute;
+            display: inline-block;
+            position: sticky;
+            margin-bottom: 0.3em;
             top: 8em;
             right: 28em;
             transform: translateX(-50%);
-            width: 2em;
+            width: 0em;
             height: 1em;
             transition: 0.6s;
             opacity: 0;
@@ -145,10 +147,10 @@
         }
         
         .search-form.active {
-            position: absolute;
+            position: sticky;
             top: 8em;
             right: 28em;
-            width: 2em;
+            width: 0em;
             height: 1em;
             opacity: 1;
             transition-delay: 0.4s;
@@ -157,13 +159,15 @@
         }
         
         .search-form input {
-            width: 20em;
+            margin-left: 1.5em;
+            margin-top: -0.2em;
+            width: 15em;
             height: 1.5em;
             color: white;
             border: none;
             background: transparent;
             outline: none;
-            font-size: 1em;
+            font-size: 1.1em;
         }
     </style>
 </head>
@@ -172,7 +176,7 @@
 
 
 <body onload="showSlides(1)">
-
+    <div class="header"></div>
     <div class="topnav">
         <div class="majtas">
             <div class="majtasnalt">homepage</div>
@@ -193,17 +197,19 @@
         </div>
 
         <div class="djathtas">
-            <div class="djathtasnalt"></div>
+            <div class="djathtasnalt">homepage</div>
             <div class="djathtasposht">
+                <div class="search-form">
+                    <form>
+                        <input type="text" name="" placeholder="Kërkoni">
+                    </form>
+                </div>
                 <a href="./HTML/galeria.html" class="menu-item" id="one">Galeria</a>
                 <a href="./HTML/Kontakti.html" class="menu-item" id="two">Kontakti</a>
                 <a href="./HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
                 <a href="#" id="search"><i class="fa fa-search"></i></a>
-            </div>
-            <div class="search-form">
-                <form>
-                    <input type="text" name="" placeholder="Kërkoni">
-                </form>
+
+
             </div>
         </div>
     </div>
@@ -278,7 +284,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!--QITU JA NIS row2-->
         <div class="row2">
             <div class="kolonarresht" style="background-color: white;">
@@ -317,7 +323,7 @@
             <div class="libri">
                 <article>
                     <div class="bestsellersimg">
-                        <img class="fototmodal" src="./img/hasha.jpg" style="width:100%; min-height:20em">
+                        <img class="fototmodal" src="./img/hasha.jpg" style="width:100%; max-height:30em">
                         <div id="myModal">
                             <span class="close">×</span>
                             <img id="img">
@@ -333,7 +339,7 @@
             <div class="libri">
                 <section>
                     <div class="bestsellersimg">
-                        <img class="fototmodal" src="./img/joe.jpg" style="width:100%; min-height:20em">
+                        <img class="fototmodal" src="./img/joe.jpg" style="width:100%; max-height:30em">
                         <div id="myModal">
                             <span class="close">×</span>
                             <img id="img">
@@ -348,7 +354,7 @@
 
             <div class="libri">
                 <div class="bestsellersimg">
-                    <img class="fototmodal" src="./img/melania.jpg" style="width:100%; min-height:20em">
+                    <img class="fototmodal" src="./img/melania.jpg" style="width:100%; max-height:30em">
                     <div id="myModal">
                         <span class="close">×</span>
                         <img id="img">
@@ -361,7 +367,7 @@
 
             <div class="libri">
                 <div class="bestsellersimg">
-                    <img class="fototmodal" src="./img/kupi.png" style="width:100%; min-height:20em">
+                    <img class="fototmodal" src="./img/kupi.png" style="width:100%; max-height:30em">
                     <div id="myModal">
                         <span class="close">×</span>
                         <img id="img">
@@ -374,7 +380,7 @@
 
             <div class="libri">
                 <div class="bestsellersimg">
-                    <img class="fototmodal" src="./img/xhaxhienver.jpg" style="width:100%; min-height:20em">
+                    <img class="fototmodal" src="./img/xhaxhienver.jpg" style="width:100%; max-height:30em">
                     <div id="myModal">
                         <span class="close">×</span>
                         <img id="img">
@@ -396,13 +402,13 @@
         <div class="row3">
             <div class="kolona1" style="background-color: white;">
                 <div class="autori">
-                    <a href="./HTML/meshume2.html"> <img src="./img/MT.jpg" alt="Ekspozitaaa!!!"><br>
+                    <a href="./HTML/meshume.html#MT"> <img src="./img/MT.jpg" alt="Ekspozitaaa!!!"><br>
                         <span id='lajmekuq'>Më shumë</span><br>
                         <span>Mark Twain</span></a>
                 </div><br><br>
 
                 <div class="autori">
-                    <a href="./HTML/meshume2.html"> <img src="./img/EAP.jpg" alt="Fan STILIAN Noli!!!"><br>
+                    <a href="./HTML/meshume.html#Edgar"> <img src="./img/EAP.jpg" alt="Fan STILIAN Noli!!!"><br>
                         <span id='lajmekuq'>Më shumë</span><br>
                         <span>Edgar Allan Poe</span></a>
                 </div>
@@ -410,14 +416,14 @@
             </div>
             <div class="kolona2" style="background-color: white;">
                 <div class="autori">
-                    <a href="./HTML/meshume2.html"> <img src="./img/FK.jpg" alt="pls qelu ma shpejt kena me msu pls plsplspslsp!!!"><br>
+                    <a href="./HTML/meshume.html"> <img src="./img/FK.jpg" alt="pls qelu ma shpejt kena me msu pls plsplspslsp!!!"><br>
                         <span id='lajmekuq'>Më shumë</span><br>
                         <span>Franz Kafka</span><br>
                     </a>
                 </div><br><br>
 
                 <div class="autori">
-                    <a href="./HTML/meshume2.html"> <img src="./img/EH.jpg" alt="!!!"><br>
+                    <a href="./HTML/meshume.html#Ernest"> <img src="./img/EH.jpg" alt="!!!"><br>
                         <span id='lajmekuq'>Më shumë</span><br>
                         <span>Ernest Hemingway</span><br></a>
                 </div><br><br>
@@ -430,7 +436,7 @@
                 <div class="autorimmv">
                     <div class="dantepjesepjese">
                         <div class="fotojadantes">
-                            <a href="/HTML/meshume2.html"> <img src="./img/dante.png" alt="!!!">
+                            <a href="/HTML/meshume.html#Dante"> <img src="./img/dante.png" alt="!!!">
                         </div><br>
                         <div class="emrietj">Dante Alighieri<br>
                             <span id='lajmekuq'>Më shumë</span><br>
@@ -555,7 +561,7 @@
                         <li><a href="./HTML/meshum.html">
                 Autorë shqiptar
               </a></li>
-                        <li><a href="./HTML/meshume2.html">
+                        <li><a href="./HTML/meshume.html">
                 Autorë të huaj
               </a></li>
                     </ul>
@@ -638,6 +644,7 @@
     </footer>
 
 
+   
     <script>
         if('serviceWorker' in navigator) {
           navigator.serviceWorker
@@ -647,7 +654,10 @@
                     });
         }
         </script>
+   
     <script src="./js/skripta.js"></script>
+
+
 
 </body>
 

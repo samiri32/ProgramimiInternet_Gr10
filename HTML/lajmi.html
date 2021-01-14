@@ -41,9 +41,7 @@
         
             </script>
 
-
-
-    </script>
+    
     <style>
         * {
             box-sizing: border-box;
@@ -135,12 +133,20 @@
             transition-delay: 0s;
         }
         
+        .konga{
+        left:41vw;
+        position:absolute;
+        }
+
+
         .search-form {
-            position: absolute;
+            display: inline-block;
+            position: sticky;
+            margin-bottom:0.3em;
             top: 8em;
             right: 28em;
             transform: translateX(-50%);
-            width: 2em;
+            width: 0em;
             height: 1em;
             transition: 0.6s;
             opacity: 0;
@@ -148,28 +154,79 @@
         }
         
         .search-form.active {
-            position: absolute;
+            position: sticky;
             top: 8em;
             right: 28em;
-            width: 2em;
+            width: 0em;
             height: 1em;
             opacity: 1;
             transition-delay: 0.4s;
             visibility: visible;
             background: transparent;
         }
-        
+
         .search-form input {
-            width: 20em;
+            margin-left: 1.5em;
+            margin-top: -0.2em;
+            width: 15em;
             height: 1.5em;
             color: white;
             border: none;
             background: transparent;
             outline: none;
-            font-size: 1em;
+            font-size: 1.1em;
         }
-        
     </style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+var currentZoom = 1.0;
+
+    $(document).ready(function () {
+         $('#ZoomIn').click(
+             function () {
+                 var div = $(".konga");  
+                 div.animate({left: '33vw'}, "slow");
+             })
+        
+        $('#ZoomIn').click(
+        function () {
+            $('.konga').animate({ 'zoom': currentZoom += .2 }, 'slow');
+        })
+        
+    });
+  
+
+</script>
+
+<script>
+
+    var currentZoom = 1.0;
+        
+        $(document).ready(function () {
+
+            
+            $('#ZoomReset').click(
+            function () {
+                currentZoom = 1.0;
+                $('.konga').animate({ 'zoom': 1 }, 'slow');
+            })
+
+            $('#ZoomReset').click(
+            function () {
+
+                $(".konga").css('left', function(){ return $(this).offset().left; })
+                .animate({"left":"41vw"}, "slow"); 
+            })
+            
+            
+        });
+      
+    
+    </script>
+
+
 </head>
 
 
@@ -179,13 +236,14 @@
     <title>Lajmet</title>
     <div class="header"></div>
 
+    
     <div class="topnav">
         <div class="majtas">
           <div class="majtasnalt">homepage</div>
           <div class="majtasposht">
             <a href="../index.html">Ballina</a>
             <a href="../HTML/Autoret1.html">Autorët</a>
-            <a href="#">Librat</a>
+            <a href="../HTML/Librat.html">Librat</a>
             <a href="../HTML/lajmi.html">Lajme</a>
           </div>
         </div>
@@ -199,35 +257,52 @@
         </div>
     
         <div class="djathtas">
-          <div class="djathtasnalt"></div>
-          <div class="djathtasposht">
-            <a href="../HTML/galeria.html" class="menu-item" id="one">Galeria</a>
-            <a href="#" class="menu-item" id="two">Kontakti</a>
-            <a href="../HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
-            <a href="#" id="search"><i class="fa fa-search"></i></a>
-          </div>
-          <div class="search-form">
-            <form>
-              <input type="text" name="" placeholder="Kërkoni">
-            </form>
-          </div>
+            <div class="djathtasnalt">homepage</div>
+            <div class="djathtasposht">
+                <div class="search-form">
+                    <form>
+                        <input type="text" name="" placeholder="Kërkoni">
+                    </form>
+                </div>
+                <a href="./HTML/galeria.html" class="menu-item" id="one">Galeria</a>
+                <a href="./HTML/Kontakti.html" class="menu-item" id="two">Kontakti</a>
+                <a href="./HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
+                <a href="#" id="search"><i class="fa fa-search"></i></a>
+                
+               
+            </div>
         </div>
       </div>
 
 
 
-    <div class="title">
+    <div class="title" >
 
         <h1>Lajmet Aktuale</h1>
-
     </div>
     <hr>
     <br>
     <br>
 
+    <div class="prk">
+        <div style="display:inline; margin-left:18vw;">
+    <button class="boxat" id="ZoomIn">Zmadho Audion</button>
+        </div>
+        <div style="display:inline; float:right; margin-right:18vw;">
+    <button class="boxat1" id="ZoomReset">Reseto Audion</button>
+        </div>
+    </div>
+        <div class="konga">
+          <audio id="audio" controls>
+            <source src="../img/Muharrem Qena Mallengjimi.mp3" type="audio/mpeg">
+          Shnosh :/
+          </audio>
+        </div>
+
+    </body>
     <body onload="showSlides(1)">
         <div class="gridat">
-            <h2 style="color: black; text-align:center;">Te Rejat</h2>
+            <h2 style="color: black; text-align:center; margin-top:3em;">Te Rejat</h2>
 
             <div class="usage">
                 <div class="lajmet">
@@ -330,7 +405,7 @@
                                 <div class="modal">
                                     <span class="close">×</span>
                                     <img class="modal-content" src="../img/mini-biblioteka.jpg">
-                                    <p class="tekstimodal">Hapet mini-biblioteka e parë në PrishtinëMe moton “Sill një libër merr një tjetër”, sot u hap mini-biblioteka e parë në Parkun e vjetër në lagjen “Dardania” të Prishtinës, e cila u mundësua nga ETEA, Kuvendi i të Rinjve të
+                                    <p class="tekstimodal">Hapet mini-biblioteka e parë në Prishtinë me moton “Sill një libër merr një tjetër”. Sot u hap mini-biblioteka e parë në Parkun e vjetër në lagjen “Dardania” të Prishtinës, e cila u mundësua nga ETEA, Kuvendi i të Rinjve të
                                         Prishtinës, Libraria “Dukagjini” dhe FIQ.Mini-biblioteka do të ketë qasje 24 orë në 7 ditë të javës dhe do të jetë nën kujdesin e banorëve të lagjes. E njëjta do të ketë mbi 100 libra në dispozicion të banorëve të lagjes
                                         dhe të të gjithë të interesuarve për shkëmbim të librave apo huazim të librit përgjatë qëndrimit në lagje.
                                     </p>
@@ -432,18 +507,13 @@
                             <div class="modal">
                                 <span class="close">×</span>
                                 <img class="modal-content" src="../img/Aktiviteti.png">
-                                <div class="tekstimodal">
-                                <p >Në kuadër të festivalit PrishtinaLexon, banorët e kryeqytetit patën mundësinë të regjistrohen pa pagesë në të gjitha degët e Bibliotekës "Hivzi Sulejmani", kjo një gjë e cila u mirëpritë nga të gjithë qytetarët pa dallim, ndërsa në sheshin "Zahir Pjaziti",
-                                    nga të gjithë lexuesit u shpallën lexuesit e dalluar të Komunës së Prishtinës, duke përfshirë të gjitha grupmoshat, si në vijim:</p>
+                                <p class="tekstimodal"> Në kuadër të festivalit PrishtinaLexon, banorët e kryeqytetit patën mundësinë të regjistrohen pa pagesë në të gjitha degët e Bibliotekës "Hivzi Sulejmani", kjo një gjë e cila u mirëpritë nga të gjithë qytetarët pa dallim, ndërsa në sheshin "Zahir Pjaziti",
+                                    nga të gjithë lexuesit u shpallën lexuesit e dalluar të Komunës së Prishtinës, duke përfshirë të gjitha grupmoshat, si në vijim:<br> Era Dragusha, nxënëse;<br> Flamur Foniqi, student;<br> Hazir Mehmeti, pensionist;<br> 
+                                    Tre lexuesit e vitit morën mirënjohje dhe libra, dhuratë nga libraria "Dukagjiin", Biblioteka "Hivzi Sulejmani" dhe Aleanca franceze. Kryetari i qytetit shfrytëzoi rastin të inkurajojë të gjithë të rinjët të lexojnë sa më shumë duke pasur parasysh se niveli i të lexuarit në vendin
+                                     tonë nuk është i kënaqshëm.
+                                     
+                                </p>
     
-                                    <ol>
-                                        <li>Era Dragusha, nxënëse;</li>
-                                        <li>Flamur Foniqi, student;</li>
-                                        <li>Hazir Mehmeti, pensionist;</li>
-                                    </ol>
-                                <p >
-                                    Tre lexuesit e vitit morën mirënjohje dhe libra, dhuratë nga libraria "Dukagjiin", Biblioteka "Hivzi Sulejmani" dhe Aleanca franceze.
-                                </p></div>
                             </div>
                             <span class="titulli1"> Aktiviteti Prishtina lexon</span>
 
@@ -548,12 +618,12 @@
                 <div class="sbkol1">
                     <span id="sf">Regjistrohu për të pranuar e-mails nga Biblioteka</span><br><br>
                     <!-- Qitu ni form per Anetaresim (mail subscription)-->
-                    <form autocomplete="off" action="/action_page.php">
+                    <form autocomplete="on" action="/action_page.php">
                         <div class="autocomplete" style="width: 25em;">
                           <input id="myInput" type="text" name="myEmail" placeholder="E-mail" style="background-color:white;">
                         </div>
                         <button class="buton">Dërgo</button>
-                      </form> <br><br><br> <input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme <br><br>
+                      </form> <input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme <br><br>
                 </div>
 
                 <div class="sbkol1">
@@ -570,11 +640,11 @@
 
                     <ul>
 
-                        <li><a href="#">
+                        <li><a href="./Librat.html">
              Libra shqip
             </a>
                         </li>
-                        <li><a href="#">
+                        <li><a href="./Librat.html#teHuaj">
             Libra të huaj
           </a></li>
                     </ul>
@@ -585,10 +655,10 @@
                     <ul>
 
 
-                        <li><a href="./HTML/meshum.html">
+                        <li><a href="../HTML/meshum.html">
              Autorë shqiptar
            </a></li>
-                        <li><a href="./HTML/meshume2.html">
+                        <li><a href="../HTML/meshume.html">
             Autorë të huaj
           </a></li>
                     </ul>

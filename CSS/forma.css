@@ -1,0 +1,74 @@
+body{
+    width: 70%;
+    margin:auto;
+    margin-top:10%;
+    overflow-y: hidden;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 2em;
+    border:1px solid #ccc;
+    padding:30px;
+    border-radius: 15px;
+}
+
+.title{
+   margin-right:5em;
+}
+
+
+#addForm {
+    padding:20px; 
+    display:block
+
+}
+
+#addForm input[type="text"] {
+    width:80%;
+    padding:10px;
+}
+#addForm input[type="date"] {
+    width:80%;
+    padding:10px;
+}
+
+#addForm input[type="submit"] {
+    background-color: #333;
+    color:#fff;
+    padding:10px 15px;
+    border:none;
+}
+
+.form-group{
+    padding-bottom:15px;
+}
+
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 85%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: black;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+
+
