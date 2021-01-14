@@ -8,9 +8,6 @@
     <link rel="shortcut icon" type="image/png" href="./img/sinani4.png">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/forma.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <script>
         window.onscroll = function() {
@@ -223,27 +220,29 @@
     <div class="container">
         
         <div>
-            <span style="text-align: center; font-size: 2em; margin-left:1em;">Rezervo ulëse në Bibliotekë!</span><br><br>
-            <span style="padding-left: 2em; font-size: 1em; font-weight: bold;">Te dhënat e lexuesëve</span>
-            
+
+            <h2 class="tittle">Të dhënat</h2>
+
             <form id="addForm">
+
+                <div class="error"></div>
                 <div class="form-group">
-                    <input type="text" id="item1">
-                    <label>Emri</label><br>
+                    <input type="text" id="item1" placeholder="Emri">
                 </div>
 
+                <div class="error"></div>
                 <div class="form-group">
-                    <input type="text" id="item2">
-                    <label>Mbiemri</label><br>
+                    <input type="text" id="item2" placeholder="Mbiemri">
                 </div>
 
+                <div class="error"></div>
                 <div class="form-group">
-                    <input type="text" id="item3">
-                    <label>ID</label><br>
+                    <input type="number" id="item3" placeholder="ID (numër)">
                 </div>
+
+                <div class="error"></div>
                 <div class="form-group">
                     <input type="date" id="item4">
-                    <label>Data</label><br>
                 </div>
 
                 <input type="submit" id="submit" value="Shto" class="butonform">
@@ -252,12 +251,12 @@
 
         </div>
         <div>
-            
+
             <div class="tabela">
 
-                <span style="padding-left: 1em; font-size: 1.1em; font-weight: bold;">Rezervimet</span>
-                
-                <table class="styled-table" style="margin-top: 1em;">
+                <h2 class="title">Terminet</h2>
+
+                <table class="styled-table">
                     <thead>
                         <tr>
                             <th>Emri</th>
@@ -267,9 +266,50 @@
                             <th>Anulo</th>
                         </tr>
                     </thead>
-
+                    <tr>
+                        <td>Andi</td>
+                        <td>Dika</td>
+                        <td>190714100170</td>
+                        <td>2021-18-01</td>
+                        <td><button class="deleteBtn">Fshij</button></td>
+                    </tr>
+                    <tr>
+                        <td>Arben</td>
+                        <td>Dedaj</td>
+                        <td>190714100160</td>
+                        <td>2021-18-01</td>
+                        <td><button class="deleteBtn">Fshij</button></td>
+                    </tr>
+                    <tr>
+                        <td>Arbresha</td>
+                        <td>Zeqiri</td>
+                        <td>190714100158</td>
+                        <td>2021-18-01</td>
+                        <td><button class="deleteBtn">Fshij</button></td>
+                    </tr>
+                    <tr>
+                        <td>Samir</td>
+                        <td>Simnica</td>
+                        <td>180715100031</td>
+                        <td>2021-18-01</td>
+                        <td><button class="deleteBtn">Fshij</button></td>
+                    </tr>
+                    <tr>
+                        <td>Ardi</td>
+                        <td>Ismajli</td>
+                        <td>190714100057</td>
+                        <td>2021-18-01</td>
+                        <td><button class="deleteBtn">Fshij</button></td>
+                    </tr>
+                    <tr>
+                        <td>Adnit</td>
+                        <td>Gashi</td>
+                        <td>190714100180</td>
+                        <td>2021-18-01</td>
+                        <td><button class="deleteBtn">Fshij</button></td>
+                    </tr>
                     <tbody>
-                        
+
                     </tbody>
                 </table>
 
@@ -281,42 +321,71 @@
 
     <script>
 
-            const form=document.getElementById("addForm");
-            const tbody=document.querySelector('tbody');
-            const table = document.querySelector('table')
+        const form = document.getElementById("addForm");
+        const tbody = document.querySelector('tbody');
+        const table = document.querySelector('table')
+        const emri = document.getElementById("item1");
+        const mbiemri = document.getElementById("item2");
+        const ID = document.getElementById("item3");
+        const data = document.getElementById("item4");
+        const errorElement = document.querySelectorAll(".error")
 
-            form.addEventListener('submit',onAddWebsite );
 
-            function onAddWebsite(e) {
-                e.preventDefault();
+        function validate(e) {
 
-                const emri =document.getElementById("item1").value;
-                const mbiemri =document.getElementById("item2").value;
-                const ID =document.getElementById("item3").value;
-                const data =document.getElementById("item4").value;
- 
-                tbody.innerHTML += `
-                <tr>
-                    <td>${emri}</td>
-                    <td>${mbiemri}</td>
-                    <td>${ID}</td>
-                    <td>${data}</td>
-                    <td><button class ="butonform">Fshij</button></td>
-                </tr>
-                `;
+            if (emri.value === '' || emri.value === null) {
+                errorElement[0].innerText = 'Emri duhet te mbushet!';
+                return false;
+            }
 
-                function onDeleteRow(e) {
-                    if(!e.target.classList.contains("butonform")){
-                        return;
-                    }
-
-                    const button =e.target;
-                        button.closest('tr').remove();
-                }
-                
-                table.addEventListener('click', onDeleteRow)
+            if (mbiemri.value === '' || mbiemri.value === null) {
+                errorElement[1].innerText = 'Mbiemri duhet te mbushet!';
+                return false;
 
             }
+
+            if (ID.value === '' || ID.value === null) {
+                errorElement[2].innerText = 'ID duhet te mbushet!';
+                return false;
+
+            }
+            if (data.value === '' || data.value === null) {
+                errorElement[3].innerText = 'Data duhet te mbushet!';
+                return false;
+
+            }
+            return true;
+        };
+
+        form.addEventListener('submit', onAddWebsite);
+
+        function onAddWebsite(e) {
+            e.preventDefault();
+            if (validate(e)) {
+                tbody.innerHTML += `
+                <tr>
+                    <td>${emri.value}</td>
+                    <td>${mbiemri.value}</td>
+                    <td>${ID.value}</td>
+                    <td>${data.value}</td>
+                    <td><button class ="deleteBtn">Fshij</button></td>
+                </tr>
+                `;
+                form.reset();
+            }
+        }
+
+        function onDeleteRow(e) {
+            if (!e.target.classList.contains("deleteBtn")) {
+                return;
+            }
+
+            const button = e.target;
+            button.closest('tr').remove();
+        }
+
+
+        table.addEventListener('click', onDeleteRow)
 
 
     </script>
