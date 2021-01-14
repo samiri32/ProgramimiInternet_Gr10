@@ -1,116 +1,109 @@
+ /* content displays n 70% edhe e rras n mes  */
  
-    /* content displays n 70% edhe e rras n mes  */
-
-body{
-    width: 70%;
-    margin:auto;
-    margin-top:10%;
-
-}
-        /* forma 40%   tabela 60% */
-
-.container{
-    display:grid;
-    grid-template-columns: 40% 60%;
-    grid-column-gap: 2em;
-    border:1px solid #ccc;
-    padding:30px;
-    border-radius: 15px;
-}
-
-h1{
-    padding-left:10px;
-}
-
-.tittle{
-  padding-left: 20px;
-}
-
-.form-group label {
-    font-family: sans-serif;
-
-}
-    /* id e formes */
-#addForm {
-    padding:20px; 
-    display:block
-
-}
-    /* stilizimi i divit t msheft per error */
-
-.error{
-    color: #ff0000;
-    font-family: sans-serif;
-    font-size: small;
-}
-
-/* styling per inputin e emrit dates edhe id  */
-
-#addForm input[type="text"] {
-    width:65%;
-    padding:10px;
-}
-#addForm input[type="date"] {
-    width:65%;
-    padding:10px;
-}
-#addForm input[type="number"] {
-    width:65%;
-    padding:10px;
-}
-
+ body {
+     width: 70%;
+     margin: auto;
+     margin-top: 6em;
+ }
+ /* forma 40%   tabela 60% */
+ 
+ .container {
+     display: grid;
+     grid-template-columns: 40% 60%;
+     grid-column-gap: 2em;
+     border: 1px solid #ccc;
+     padding: 30px;
+     border-radius: 15px;
+ }
+ 
+ h1 {
+     padding-left: 10px;
+ }
+ 
+ .tittle {
+     padding-left: 20px;
+ }
+ 
+ .form-group label {
+     font-family: sans-serif;
+ }
+ /* id e formes */
+ 
+ #addForm {
+     padding: 20px;
+     display: block
+ }
+ /* stilizimi i divit t msheft per error */
+ 
+ .error {
+     color: #ff0000;
+     font-family: sans-serif;
+     font-size: small;
+ }
+ /* styling per inputin e emrit dates edhe id  */
+ 
+ #addForm input[type="text"] {
+     width: 65%;
+     padding: 10px;
+ }
+ 
+ #addForm input[type="date"] {
+     width: 65%;
+     padding: 10px;
+ }
+ 
+ #addForm input[type="number"] {
+     width: 65%;
+     padding: 10px;
+ }
  /* ja hek formes t ID do arrows qe i dalin */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Stilizimi i butonit submit  */
-#addForm input[type="submit"] {
-    background-color: #333;
-    color:#fff;
-    padding:10px 15px;
-    border:none;
-}
-
-.form-group{
-    padding-bottom:15px;
-}
-
-/* stilizimi i buttonit delete  */
-
-.deleteBtn{
-    background-color: #FF6347;
-    color: whitesmoke;
-    width: 50%;
-    border-radius: 20px;
-}
-
-
-.styled-table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    width: 85%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-
-.styled-table thead tr {
-    background-color: black;
-    color: #ffffff;
-    text-align: left;
-}
-
-.styled-table th,
-.styled-table td {
-    padding: 12px 15px;
-}
-
-.styled-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-}
-
-
-
+ 
+ input::-webkit-outer-spin-button,
+ input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+ }
+ /* Stilizimi i butonit submit  */
+ 
+ #addForm input[type="submit"] {
+     background-color: #333;
+     color: #fff;
+     padding: 10px 15px;
+     border: none;
+ }
+ 
+ .form-group {
+     padding-bottom: 15px;
+ }
+ /* stilizimi i buttonit delete  */
+ 
+ .deleteBtn {
+     background-color: #FF6347;
+     color: whitesmoke;
+     width: 3.5em;
+     border-radius: 3em;
+ }
+ 
+ .styled-table {
+     border-collapse: collapse;
+     margin: 20px 0;
+     font-size: 0.9em;
+     font-family: sans-serif;
+     width: 95%;
+     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+ }
+ 
+ .styled-table thead tr {
+     background-color: #333;
+     color: #ffffff;
+     text-align: left;
+ }
+ 
+ .styled-table th,
+ .styled-table td {
+     padding: 12px 15px;
+ }
+ 
+ .styled-table tbody tr {
+     border-bottom: 1px solid #dddddd;
+ }
