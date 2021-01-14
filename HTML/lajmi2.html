@@ -44,27 +44,27 @@
         var modal = document.getElementById("myModal");
 
 
-var img = document.getElementsByClassName("fototmodal");
-var modalImg = document.getElementById("img");
+        var img = document.getElementsByClassName("fototmodal");
+        var modalImg = document.getElementById("img");
 
-var showModal=function(){
-    modal.style.display="block";
-    modalImg.src=this.src;
-    captionText.innerHTML=this.alt;
+        var showModal = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
 
-}
-for(var i=0;i<img.length;i++){
-    img[i].addEventListener('click', showModal);
-}
-
-
-
-var span = document.getElementsByClassName("close")[0];
+        }
+        for (var i = 0; i < img.length; i++) {
+            img[i].addEventListener('click', showModal);
+        }
 
 
-span.onclick = function() { 
-  modal.style.display = "none";
-}
+
+        var span = document.getElementsByClassName("close")[0];
+
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
     </script>
     <style>
         * {
@@ -157,15 +157,15 @@ span.onclick = function() {
             transition-delay: 0s;
         }
         
-        .konga{
-        left:41vw;
-        position:absolute;
+        .konga {
+            left: 41vw;
+            position: absolute;
         }
-
+        
         .search-form {
             display: inline-block;
             position: sticky;
-            margin-bottom:0.3em;
+            margin-bottom: 0.3em;
             top: 8em;
             right: 28em;
             transform: translateX(-50%);
@@ -187,7 +187,7 @@ span.onclick = function() {
             visibility: visible;
             background: transparent;
         }
-
+        
         .search-form input {
             margin-left: 1.5em;
             margin-top: -0.2em;
@@ -201,53 +201,57 @@ span.onclick = function() {
         }
     </style>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        var currentZoom = 1.0;
 
-var currentZoom = 1.0;
+        $(document).ready(function() {
+            $('#ZoomIn').click(
+                function() {
+                    var div = $(".konga");
+                    div.animate({
+                        left: '33vw'
+                    }, "slow");
+                })
 
-    $(document).ready(function () {
-         $('#ZoomIn').click(
-             function () {
-                 var div = $(".konga");  
-                 div.animate({left: '33vw'}, "slow");
-             })
-        
-        $('#ZoomIn').click(
-        function () {
-            $('.konga').animate({ 'zoom': currentZoom += .2 }, 'slow');
-        })
-        
-    });
-  
+            $('#ZoomIn').click(
+                function() {
+                    $('.konga').animate({
+                        'zoom': currentZoom += .2
+                    }, 'slow');
+                })
 
-</script>
-
-<script>
-
-    var currentZoom = 1.0;
-        
-        $(document).ready(function () {
-
-            
-            $('#ZoomReset').click(
-            function () {
-                currentZoom = 1.0;
-                $('.konga').animate({ 'zoom': 1 }, 'slow');
-            })
-
-            $('#ZoomReset').click(
-            function () {
-
-                $(".konga").css('left', function(){ return $(this).offset().left; })
-                .animate({"left":"41vw"}, "slow"); 
-            })
-            
-            
         });
-      
-    
-</script>
+    </script>
+
+    <script>
+        var currentZoom = 1.0;
+
+        $(document).ready(function() {
+
+
+            $('#ZoomReset').click(
+                function() {
+                    currentZoom = 1.0;
+                    $('.konga').animate({
+                        'zoom': 1
+                    }, 'slow');
+                })
+
+            $('#ZoomReset').click(
+                function() {
+
+                    $(".konga").css('left', function() {
+                            return $(this).offset().left;
+                        })
+                        .animate({
+                            "left": "41vw"
+                        }, "slow");
+                })
+
+
+        });
+    </script>
 
 </head>
 
@@ -260,23 +264,23 @@ var currentZoom = 1.0;
 
     <div class="topnav">
         <div class="majtas">
-          <div class="majtasnalt">homepage</div>
-          <div class="majtasposht">
-            <a href="../index.html">Ballina</a>
-            <a href="../HTML/Autoret1.html">Autorët</a>
-            <a href="../HTML/Librat.html">Librat</a>
-            <a href="../HTML/lajmi.html">Lajme</a>
-          </div>
+            <div class="majtasnalt">homepage</div>
+            <div class="majtasposht">
+                <a href="../index.html">Ballina</a>
+                <a href="../HTML/Autoret1.html">Autorët</a>
+                <a href="../HTML/Librat.html">Librat</a>
+                <a href="../HTML/lajmi.html">Lajme</a>
+            </div>
         </div>
-    
+
         <div class="logoja">
-          <div class="sinanibabo">
-            <img src="../img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
-          </div>
-          <a href="../index.html" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka Sinan
+            <div class="sinanibabo">
+                <img src="../img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
+            </div>
+            <a href="../index.html" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka Sinan
               Dobreva</span></a>
         </div>
-    
+
         <div class="djathtas">
             <div class="djathtasnalt">homepage</div>
             <div class="djathtasposht">
@@ -285,15 +289,15 @@ var currentZoom = 1.0;
                         <input type="text" name="" placeholder="Kërkoni">
                     </form>
                 </div>
-                <a href="./HTML/galeria.html" class="menu-item" id="one">Galeria</a>
-                <a href="./HTML/Kontakti.html" class="menu-item" id="two">Kontakti</a>
-                <a href="./HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
+                <a href="../HTML/galeria.html" class="menu-item" id="one">Galeria</a>
+                <a href="../HTML/Kontakti.html" class="menu-item" id="two">Kontakti</a>
+                <a href="../HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
                 <a href="#" id="search"><i class="fa fa-search"></i></a>
-                
-               
+
+
             </div>
         </div>
-      </div>
+    </div>
 
 
 
@@ -308,18 +312,18 @@ var currentZoom = 1.0;
 
     <div class="prk">
         <div style="display:inline; margin-left:18vw;">
-    <button class="boxat" id="ZoomIn">Zmadho Audion</button>
+            <button class="boxat" id="ZoomIn">Zmadho Audion</button>
         </div>
         <div style="display:inline; float:right; margin-right:18vw;">
-    <button class="boxat1" id="ZoomReset">Reseto Audion</button>
+            <button class="boxat1" id="ZoomReset">Reseto Audion</button>
         </div>
     </div>
-        <div class="konga">
-          <audio id="audio" controls>
+    <div class="konga">
+        <audio id="audio" controls>
             <source src="../img/Muharrem Qena Mallengjimi.mp3" type="audio/mpeg">
           Shnosh :/
           </audio>
-        </div>
+    </div>
 
     <body onload="showSlides(1)">
         <div class="gridat">
@@ -330,61 +334,50 @@ var currentZoom = 1.0;
 
                     <div class="gridi1">
                         <div class="ardy">
-                             <img class="fototmodal" src="../img/ditaboterore2.jpg">
-                                <div id="myModal" class="modal">
-                                    <span class="close">×</span>
-                                    <img class="modal-content" src="../img/ditaboterore2.jpg">
-                                    <p class="tekstimodal">
-                                        Aktivitetet e Ditës Ndërkombëtare të Librit për Fëmijë nga Biblioteka “Hivzi Sulejmani”-Prishtinë në bashkëpunim me OJQ ETEA.
-                                        Të vegjël e të rinj, të rritur e të moshuar, më 2 prill, me rastin e Ditës Ndërkombëtare të Librit për Fëmijë, u bënë bashkë për 
-                                        t’i thurr lavdet e merituara librit dhe për të përçuar mesazhet rreth ndikimit që ka libri mbi individin dhe shoqërinë, kështu duke bërë thirrje për më shumë lexime...
-                                        Drejtori i organizatës "ETEA", Agon Ahmeti, në një fjalim të shkurtër para pjesëmarrësve, theksoi se “deri vonë "ETEA" ka punuar dhe iu ka bërë thirrje prindërve që të 
-                                        lexojnë dhe kështu të bëhen model për fëmijët e tyre, pasi fëmijët imitojnë të rriturit; ndërsa tash e tutje duket se është e nevojshme që t’iu drejtohemi fëmijëve 
-                                        dhe t’iu themi, lexoni që t’iu shohin prindërit duke lexuar, e kështu me gjasë do të fillojnë të lexojnë edhe të rriturit.”
-                                    </p>
-                                </div>
-                            
+                            <img class="fototmodal" src="../img/ditaboterore2.jpg">
+                            <div id="myModal" class="modal">
+                                <span class="close">×</span>
+                                <img class="modal-content" src="../img/ditaboterore2.jpg">
+                                <p class="tekstimodal">
+                                    Aktivitetet e Ditës Ndërkombëtare të Librit për Fëmijë nga Biblioteka “Hivzi Sulejmani”-Prishtinë në bashkëpunim me OJQ ETEA. Të vegjël e të rinj, të rritur e të moshuar, më 2 prill, me rastin e Ditës Ndërkombëtare të Librit për Fëmijë, u bënë bashkë
+                                    për t’i thurr lavdet e merituara librit dhe për të përçuar mesazhet rreth ndikimit që ka libri mbi individin dhe shoqërinë, kështu duke bërë thirrje për më shumë lexime... Drejtori i organizatës "ETEA", Agon Ahmeti,
+                                    në një fjalim të shkurtër para pjesëmarrësve, theksoi se “deri vonë "ETEA" ka punuar dhe iu ka bërë thirrje prindërve që të lexojnë dhe kështu të bëhen model për fëmijët e tyre, pasi fëmijët imitojnë të rriturit; ndërsa
+                                    tash e tutje duket se është e nevojshme që t’iu drejtohemi fëmijëve dhe t’iu themi, lexoni që t’iu shohin prindërit duke lexuar, e kështu me gjasë do të fillojnë të lexojnë edhe të rriturit.”
+                                </p>
+                            </div>
+
 
                             <span class="titulli1"> Dita Botërore e Librit për Fëmijë</span>
 
-                            <p >Aktivitetet e Ditës Ndërkombëtare të Librit për Fëmijë nga Biblioteka “Hivzi Sulejmani”-Prishtinë në bashkëpunim me OJQ ETEA.
-                                Të vegjël e të rinj, të rritur e të moshuar, më 2 prill, me rastin e Ditës Ndërkombëtare të Librit për Fëmijë, u bënë bashkë për 
-                                t’i thurr lavdet e merituara librit dhe për të përçuar mesazhet rreth ndikimit që ka libri mbi individin dhe shoqërinë, kështu duke bërë thirrje për më shumë lexime...
-                                Drejtori i organizatës "ETEA", Agon Ahmeti, në një fjalim të shkurtër para pjesëmarrësve, theksoi se “deri vonë "ETEA" ka punuar dhe iu ka bërë thirrje prindërve që të 
-                                lexojnë dhe kështu të bëhen model për fëmijët e tyre, pasi fëmijët imitojnë të rriturit; ndërsa tash e tutje duket se është e nevojshme që t’iu drejtohemi fëmijëve 
-                                dhe t’iu themi, lexoni që t’iu shohin prindërit duke lexuar, e kështu me gjasë do të fillojnë të lexojnë edhe të rriturit.”</p>
-                                
-                                
+                            <p>Aktivitetet e Ditës Ndërkombëtare të Librit për Fëmijë nga Biblioteka “Hivzi Sulejmani”-Prishtinë në bashkëpunim me OJQ ETEA. Të vegjël e të rinj, të rritur e të moshuar, më 2 prill, me rastin e Ditës Ndërkombëtare të Librit
+                                për Fëmijë, u bënë bashkë për t’i thurr lavdet e merituara librit dhe për të përçuar mesazhet rreth ndikimit që ka libri mbi individin dhe shoqërinë, kështu duke bërë thirrje për më shumë lexime... Drejtori i organizatës
+                                "ETEA", Agon Ahmeti, në një fjalim të shkurtër para pjesëmarrësve, theksoi se “deri vonë "ETEA" ka punuar dhe iu ka bërë thirrje prindërve që të lexojnë dhe kështu të bëhen model për fëmijët e tyre, pasi fëmijët imitojnë
+                                të rriturit; ndërsa tash e tutje duket se është e nevojshme që t’iu drejtohemi fëmijëve dhe t’iu themi, lexoni që t’iu shohin prindërit duke lexuar, e kështu me gjasë do të fillojnë të lexojnë edhe të rriturit.”</p>
+
+
                         </div>
                     </div>
 
                     <div class="gridi2">
                         <div class="ardy">
                             <img style="float: right" class="fototmodal" src="../img/ambasadadhuron.png">
-                                <div id="myModal" class="modal">
-                                    <span class="close">×</span>
-                                    <img class="modal-content" src="../img/ambasadadhuron.png">
-                                    <p class="tekstimodal">
-                                        Ambasada e SHBA-ve në Kosovë, sot ka pasuruar fondin e bibliotekës “Hivzi Sulejmani” të Prishtinës me tituj të rinj  të librave në 
-                                        gjuhën angleze, si dhe një sasi të dvd-ve me filma  të zhanreve të lloj-llojshme të prodhuara në Hollywood.
-                                        Të pranishëm në ceremoninë  e pranim- dorëzimit librave ishte z. Jeffrey Jamison, drejtor për marrëdhënie me publikun në Ambasadën e 
-                                        SHBA-ve në Kosovë, Carol Bean, zyrtare rajonale për informacion në Ambasadën e SHBA-në Beograd,  Besim Kokollari , asistent në qendrën 
-                                        e burimeve informative në ambasadën e SHBA ,Valbona Shujaku- shefe në Drejtorinë për Kulturë, Rini dhe Sport të Komunës së Prishtinës, 
-                                        studentë e punëtorë të bibliotekës.
-                                        Munish Hyseni, drejtor i Bibliotekës “Hivzi Sulejmani”, falënderoj Ambasadën e SHBA-ve në Kosovë për kontributin e vazhdueshëm. “Kjo ambasadë 
-                                        dhe shoqata  “Libra për Kosovën”, kanë dhuruar libra në vazhdimësi për lexuesit e Bibliotekës së qytetit.
-                                    </p>
-                                </div>
+                            <div id="myModal" class="modal">
+                                <span class="close">×</span>
+                                <img class="modal-content" src="../img/ambasadadhuron.png">
+                                <p class="tekstimodal">
+                                    Ambasada e SHBA-ve në Kosovë, sot ka pasuruar fondin e bibliotekës “Hivzi Sulejmani” të Prishtinës me tituj të rinj të librave në gjuhën angleze, si dhe një sasi të dvd-ve me filma të zhanreve të lloj-llojshme të prodhuara në Hollywood. Të pranishëm në
+                                    ceremoninë e pranim- dorëzimit librave ishte z. Jeffrey Jamison, drejtor për marrëdhënie me publikun në Ambasadën e SHBA-ve në Kosovë, Carol Bean, zyrtare rajonale për informacion në Ambasadën e SHBA-në Beograd, Besim
+                                    Kokollari , asistent në qendrën e burimeve informative në ambasadën e SHBA ,Valbona Shujaku- shefe në Drejtorinë për Kulturë, Rini dhe Sport të Komunës së Prishtinës, studentë e punëtorë të bibliotekës. Munish Hyseni,
+                                    drejtor i Bibliotekës “Hivzi Sulejmani”, falënderoj Ambasadën e SHBA-ve në Kosovë për kontributin e vazhdueshëm. “Kjo ambasadë dhe shoqata “Libra për Kosovën”, kanë dhuruar libra në vazhdimësi për lexuesit e Bibliotekës
+                                    së qytetit.
+                                </p>
+                            </div>
                             <span class="titulli1"> Ambasada amerikane dhuron libra në gjuhën angleze për bibliotekat në Kosovë</span>
 
                             <p>
-                                Ambasada e SHBA-ve në Kosovë, sot ka pasuruar fondin e bibliotekës “Hivzi Sulejmani” të Prishtinës me tituj të rinj  të librave në 
-                                gjuhën angleze, si dhe një sasi të dvd-ve me filma  të zhanreve të lloj-llojshme të prodhuara në Hollywood.
- 
-                                Të pranishëm në ceremoninë  e pranim- dorëzimit librave ishte z. Jeffrey Jamison, drejtor për marrëdhënie me publikun në Ambasadën e 
-                                SHBA-ve në Kosovë, Carol Bean, zyrtare rajonale për informacion në Ambasadën e SHBA-në Beograd,  Besim Kokollari , asistent në qendrën 
-                                e burimeve informative në ambasadën e SHBA ,Valbona Shujaku- shefe në Drejtorinë për Kulturë, Rini dhe Sport të Komunës së Prishtinës, 
-                                studentë e punëtorë të bibliotekës.</p>
+                                Ambasada e SHBA-ve në Kosovë, sot ka pasuruar fondin e bibliotekës “Hivzi Sulejmani” të Prishtinës me tituj të rinj të librave në gjuhën angleze, si dhe një sasi të dvd-ve me filma të zhanreve të lloj-llojshme të prodhuara në Hollywood. Të pranishëm në
+                                ceremoninë e pranim- dorëzimit librave ishte z. Jeffrey Jamison, drejtor për marrëdhënie me publikun në Ambasadën e SHBA-ve në Kosovë, Carol Bean, zyrtare rajonale për informacion në Ambasadën e SHBA-në Beograd, Besim Kokollari
+                                , asistent në qendrën e burimeve informative në ambasadën e SHBA ,Valbona Shujaku- shefe në Drejtorinë për Kulturë, Rini dhe Sport të Komunës së Prishtinës, studentë e punëtorë të bibliotekës.</p>
 
 
                         </div>
@@ -393,30 +386,23 @@ var currentZoom = 1.0;
                     <div class="gridi3">
                         <div class="ardy">
                             <img class="fototmodal" src="../img/kosovameavancim.jpg">
-                                <div id="myModal" class="modal">
-                                    <span class="close">×</span>
-                                    <img class="modal-content" src="../img/kosovameavancim.jpg">
-                                    <p class="tekstimodal">
-                                        Avancimi i arsimit para-universitar ndikon në zhvillimin afatgjatë të shoqërisë dhe Kosova duhet të vazhdojë me 
-                                        përpjekjet e saj në këtë drejtim. Kështu u tha në konferencën ndërkombëtare shkencore të organizuar nga Instituti Pedagogjik 
-                                        i Kosovës në bashkëpunim me Caritasin zviceran, temë e të cilës ishte “Cilësia e arsimit para-universitar në Kosovë dhe kahet e zhvillimit”.
-                                        Drejtori i Institutit Pedagogjik të Kosovës, Nezir Çoçaj tha se përmes kësaj konference po synohet të paraqiten të arriturat shkencore dhe 
-                                        të nxirren praktikat më të mira për arsimit para-universitar në Kosovë.Çoçaj tha se përmes projekteve të tyre po mundohen të vendosin standard 
-                                        të larta të arsimit para-universitar me qëllim të rritjes së cilësisë.
-                                        “Konferenca ka për qëllim që shkencëtarët dhe profesionistët arsimorë t’i paraqesin të arriturat e tyre shkencore nga fusha e studimeve arsimore 
-                                        e pedagogjike dhe praktikat e mira që kanë në fokus ngritjen e cilësisë së arsimit para-universitar në Kosovë si dhe avancimin e metodave për
-                                        zhvillimin e mësimit në distancë.""
-                                    </p>
-                                </div>
+                            <div id="myModal" class="modal">
+                                <span class="close">×</span>
+                                <img class="modal-content" src="../img/kosovameavancim.jpg">
+                                <p class="tekstimodal">
+                                    Avancimi i arsimit para-universitar ndikon në zhvillimin afatgjatë të shoqërisë dhe Kosova duhet të vazhdojë me përpjekjet e saj në këtë drejtim. Kështu u tha në konferencën ndërkombëtare shkencore të organizuar nga Instituti Pedagogjik i Kosovës në bashkëpunim
+                                    me Caritasin zviceran, temë e të cilës ishte “Cilësia e arsimit para-universitar në Kosovë dhe kahet e zhvillimit”. Drejtori i Institutit Pedagogjik të Kosovës, Nezir Çoçaj tha se përmes kësaj konference po synohet
+                                    të paraqiten të arriturat shkencore dhe të nxirren praktikat më të mira për arsimit para-universitar në Kosovë.Çoçaj tha se përmes projekteve të tyre po mundohen të vendosin standard të larta të arsimit para-universitar
+                                    me qëllim të rritjes së cilësisë. “Konferenca ka për qëllim që shkencëtarët dhe profesionistët arsimorë t’i paraqesin të arriturat e tyre shkencore nga fusha e studimeve arsimore e pedagogjike dhe praktikat e mira që
+                                    kanë në fokus ngritjen e cilësisë së arsimit para-universitar në Kosovë si dhe avancimin e metodave për zhvillimin e mësimit në distancë.""
+                                </p>
+                            </div>
                             <span class="titulli1"> Kosova duhet të vazhdojë përpjekjet për avancimin e arsimit para-universitar</span>
 
                             <p>
-                                Avancimi i arsimit para-universitar ndikon në zhvillimin afatgjatë të shoqërisë dhe Kosova duhet të vazhdojë me 
-                                përpjekjet e saj në këtë drejtim. Kështu u tha në konferencën ndërkombëtare shkencore të organizuar nga Instituti Pedagogjik 
-                                i Kosovës në bashkëpunim me Caritasin zviceran, temë e të cilës ishte “Cilësia e arsimit para-universitar në Kosovë dhe kahet e zhvillimit”.
-
-                                Drejtori i Institutit Pedagogjik të Kosovës, Nezir Çoçaj tha se përmes kësaj konference po synohet të paraqiten të arriturat shkencore dhe 
-                                të nxirren praktikat më të mira për arsimit para-universitar në Kosovë.
+                                Avancimi i arsimit para-universitar ndikon në zhvillimin afatgjatë të shoqërisë dhe Kosova duhet të vazhdojë me përpjekjet e saj në këtë drejtim. Kështu u tha në konferencën ndërkombëtare shkencore të organizuar nga Instituti Pedagogjik i Kosovës në bashkëpunim
+                                me Caritasin zviceran, temë e të cilës ishte “Cilësia e arsimit para-universitar në Kosovë dhe kahet e zhvillimit”. Drejtori i Institutit Pedagogjik të Kosovës, Nezir Çoçaj tha se përmes kësaj konference po synohet të paraqiten
+                                të arriturat shkencore dhe të nxirren praktikat më të mira për arsimit para-universitar në Kosovë.
                             </p>
 
 
@@ -426,23 +412,19 @@ var currentZoom = 1.0;
                     <div class="gridi4">
                         <div class="ardy">
                             <img style="float: right" class="fototmodal" src="../img/qytetaridigjital.png">
-                                <div id="myModal" class="modal">
-                                    <span class="close">×</span>
-                                    <img class="modal-content" src="../img/qytetaridigjital.png">
-                                    <p class="tekstimodal" >
-                                        Në kuadër të projektit #Qytetaridigjital mundësuar nga IRIM(Instituti për Zhvillimin e Rinisë dhe Inovacionit), 
-                                        në Bibliotekën "Hivzi Sulejmani", me 5 dhe 6 qershor 2019, u mbajtën tri punëtori me nxënësit e shkollave "Xhemail Mustafa" 
-                                        dhe "Dardania" për përdorimin e paisjeve Micro: bit dhe Boson. Në realizimin e këtyre punëtorive ndihmoj #Bonevetprishtina.
-                                        Faleminderit Andit, Tringës,Atikut, Drinit për ndihmën e tyre, dhe gjithë nxënësve pjesëmarrës.
-                                    </p>
-                                </div>
+                            <div id="myModal" class="modal">
+                                <span class="close">×</span>
+                                <img class="modal-content" src="../img/qytetaridigjital.png">
+                                <p class="tekstimodal">
+                                    Në kuadër të projektit #Qytetaridigjital mundësuar nga IRIM(Instituti për Zhvillimin e Rinisë dhe Inovacionit), në Bibliotekën "Hivzi Sulejmani", me 5 dhe 6 qershor 2019, u mbajtën tri punëtori me nxënësit e shkollave "Xhemail Mustafa" dhe "Dardania"
+                                    për përdorimin e paisjeve Micro: bit dhe Boson. Në realizimin e këtyre punëtorive ndihmoj #Bonevetprishtina. Faleminderit Andit, Tringës,Atikut, Drinit për ndihmën e tyre, dhe gjithë nxënësve pjesëmarrës.
+                                </p>
+                            </div>
                             <span class="titulli1"> Qytetari digjital</span>
 
                             <p>
-                                Në kuadër të projektit #Qytetaridigjital mundësuar nga IRIM(Instituti për Zhvillimin e Rinisë dhe Inovacionit), 
-                                në Bibliotekën "Hivzi Sulejmani", me 5 dhe 6 qershor 2019, u mbajtën tri punëtori me nxënësit e shkollave "Xhemail Mustafa" 
-                                dhe "Dardania" për përdorimin e paisjeve Micro: bit dhe Boson. Në realizimin e këtyre punëtorive ndihmoj #Bonevetprishtina.
-                                Faleminderit Andit, Tringës,Atikut, Drinit për ndihmën e tyre, dhe gjithë nxënësve pjesëmarrës.
+                                Në kuadër të projektit #Qytetaridigjital mundësuar nga IRIM(Instituti për Zhvillimin e Rinisë dhe Inovacionit), në Bibliotekën "Hivzi Sulejmani", me 5 dhe 6 qershor 2019, u mbajtën tri punëtori me nxënësit e shkollave "Xhemail Mustafa" dhe "Dardania"
+                                për përdorimin e paisjeve Micro: bit dhe Boson. Në realizimin e këtyre punëtorive ndihmoj #Bonevetprishtina. Faleminderit Andit, Tringës,Atikut, Drinit për ndihmën e tyre, dhe gjithë nxënësve pjesëmarrës.
                             </p>
 
 
@@ -452,25 +434,21 @@ var currentZoom = 1.0;
                     <div class="gridi5">
                         <div class="ardy">
                             <img class="fototmodal" src="../img/ekspertetmeveprimeradikale.jpg">
-                                <div id="myModal" class="modal">
-                                    <span class="close">×</span>
-                                    <img class="modal-content" src="../img/ekspertetmeveprimeradikale.jpg">
-                                    <p class="tekstimodal">
-                                        Viti 2017 u karakterizua me zhvillime nga më të ndryshmet, për të mirë e për të keq, në sistemin e arsimit kosovar.
-                                        Përderisa ministri i atëhershëm i Arsimit, Shyqiri Bytyqi njoftoi për formimin e një komisioni të veçantë që do të merret me testin PISA 2018,
-                                        njohësit e fushës nuk presin ngritje të cilësisë në arsim, prandaj as ngritje të rezultatit në testin PISA.
-                                        “E kemi formuar një komision të veçantë që do të merret me testin PISA 2018 dhe tutje PISA. Ky komision e ka bërë një plan dinamik që deri në
-                                        datën e mbajtjes së testit PISA 2018 planifikojmë që minimumi t’i mbajmë dy teste provuese në të gjitha shkollat e Kosovës: testi i parë do të
-                                         mbahet në të gjitha shkollat e Kosovës dhe testi i dytë në të gjitha shkollat ku do të mbahet testi PISA final”, ka thënë ministri Bytyqi. 
-                                        Mirëpo, njohës të fushës së arsimit nuk presin ndonjë rritje të rezultatit të nxënësve kosovarë as në testin PISA 2018.
-                                    </p>
-                                </div>
+                            <div id="myModal" class="modal">
+                                <span class="close">×</span>
+                                <img class="modal-content" src="../img/ekspertetmeveprimeradikale.jpg">
+                                <p class="tekstimodal">
+                                    Viti 2017 u karakterizua me zhvillime nga më të ndryshmet, për të mirë e për të keq, në sistemin e arsimit kosovar. Përderisa ministri i atëhershëm i Arsimit, Shyqiri Bytyqi njoftoi për formimin e një komisioni të veçantë që do të merret me testin PISA
+                                    2018, njohësit e fushës nuk presin ngritje të cilësisë në arsim, prandaj as ngritje të rezultatit në testin PISA. “E kemi formuar një komision të veçantë që do të merret me testin PISA 2018 dhe tutje PISA. Ky komision
+                                    e ka bërë një plan dinamik që deri në datën e mbajtjes së testit PISA 2018 planifikojmë që minimumi t’i mbajmë dy teste provuese në të gjitha shkollat e Kosovës: testi i parë do të mbahet në të gjitha shkollat e Kosovës
+                                    dhe testi i dytë në të gjitha shkollat ku do të mbahet testi PISA final”, ka thënë ministri Bytyqi. Mirëpo, njohës të fushës së arsimit nuk presin ndonjë rritje të rezultatit të nxënësve kosovarë as në testin PISA 2018.
+                                </p>
+                            </div>
                             <span class="titulli1"> Ekspertët kërkojnë veprime radikale për ndryshimin e gjendjes në arsim</span>
 
-                            <p>​Përderisa ministri i atëhershëm i Arsimit, Shyqiri Bytyqi njoftoi për formimin e një komisioni të veçantë që do të merret me testin PISA 2018,
-                                njohësit e fushës nuk presin ngritje të cilësisë në arsim, prandaj as ngritje të rezultatit në testin PISA.
-                                “E kemi formuar një komision të veçantë që do të merret me testin PISA 2018 dhe tutje PISA. Ky komision e ka bërë një plan dinamik që deri në
-                                datën e mbajtjes së testit PISA 2018 planifikojmë që minimumi t’i mbajmë dy teste provuese në të gjitha shkollat e Kosovës”, ka thënë ministri Bytyqi.</p>
+                            <p>​Përderisa ministri i atëhershëm i Arsimit, Shyqiri Bytyqi njoftoi për formimin e një komisioni të veçantë që do të merret me testin PISA 2018, njohësit e fushës nuk presin ngritje të cilësisë në arsim, prandaj as ngritje të
+                                rezultatit në testin PISA. “E kemi formuar një komision të veçantë që do të merret me testin PISA 2018 dhe tutje PISA. Ky komision e ka bërë një plan dinamik që deri në datën e mbajtjes së testit PISA 2018 planifikojmë
+                                që minimumi t’i mbajmë dy teste provuese në të gjitha shkollat e Kosovës”, ka thënë ministri Bytyqi.</p>
 
 
                         </div>
@@ -479,34 +457,26 @@ var currentZoom = 1.0;
                     <div class="gridi6">
                         <div class="ardy">
                             <img style="float: right" class="fototmodal" src="../img/mesimdhenesiteinfektuar.jpg">
-                                <div id="myModal" class="modal">
-                                    <span class="close">×</span>
-                                    <img class="modal-content" src="../img/mesimdhenesiteinfektuar.jpg">
-                                    <p class="tekstimodal">
-                                        Mësimdhënësit e infektuar me coronavirus mbeten të angazhuar duke i zhvilluar orët e tyre mësimore online, ndonëse Ministria e Arsimit 
-                                        dhe Skencës (MASH) ka paraparë 1 mijë norma plotësuese të cilat do të ndahen për zëvendësimin e tyre. Megjithatë, MASH thotë se Drejtoritë Komunale të Arsimit
-                                         janë përgjegjëse për zëvendësimin e mësimdhënësve të infektuar, komunat thonë se ky plan është i parealizueshëm.
+                            <div id="myModal" class="modal">
+                                <span class="close">×</span>
+                                <img class="modal-content" src="../img/mesimdhenesiteinfektuar.jpg">
+                                <p class="tekstimodal">
+                                    Mësimdhënësit e infektuar me coronavirus mbeten të angazhuar duke i zhvilluar orët e tyre mësimore online, ndonëse Ministria e Arsimit dhe Skencës (MASH) ka paraparë 1 mijë norma plotësuese të cilat do të ndahen për zëvendësimin e tyre. Megjithatë, MASH
+                                    thotë se Drejtoritë Komunale të Arsimit janë përgjegjëse për zëvendësimin e mësimdhënësve të infektuar, komunat thonë se ky plan është i parealizueshëm. Në të gjithë vendin, mësimdhënësit të cilët janë në gjendje jo
+                                    të mirë shëndetësore për shkak të infektimit me COVID-19, po zëvendësohen nga kolegët e tyre, derisa SBASHK-u ngrit shqetësimin se këta të fundit përkundër që po mbajnë orët shtesë, nuk po paguhen.Shkolla Fillore e
+                                    Mesme e Ulët “Faik Konica” në Prishtinë, prej dy javësh është duke zhvilluar mësim online, pasi që pesë mësimdhënës dhe dy nxënës kanë rezultuar pozitivë me COVID-19. Zëvendësdrejtori i kësaj shkolle, Blerim Dalipi,
+                                    thotë se të pesë këta mësimdhënësit janë mirë me shëndet dhe janë duke i mbajtur orët mësimore online. Ai thotë se kanë bërë kërkesë në Drejtorinë Komunale të Arsimit të Prishtinës për zëvendësimin e tyre, por që deri
+                                    tani nuk kanë marrë një përgjigje.
 
-                                        Në të gjithë vendin, mësimdhënësit të cilët janë në gjendje jo të mirë shëndetësore për shkak të infektimit me COVID-19, po zëvendësohen nga kolegët e tyre,
-                                         derisa SBASHK-u ngrit shqetësimin se këta të fundit përkundër që po mbajnë orët shtesë, nuk po paguhen.Shkolla Fillore e Mesme e Ulët “Faik Konica” në Prishtinë, 
-                                         prej dy javësh është duke zhvilluar mësim online, pasi që pesë mësimdhënës dhe dy nxënës kanë rezultuar pozitivë me COVID-19.
-
-                                         Zëvendësdrejtori i kësaj shkolle, Blerim Dalipi, thotë se të pesë këta mësimdhënësit janë mirë me shëndet dhe janë duke i mbajtur orët mësimore online.
-                                         
-                                         Ai thotë se kanë bërë kërkesë në Drejtorinë Komunale të Arsimit të Prishtinës për zëvendësimin e tyre, por që deri tani nuk kanë marrë një përgjigje.
-                                         
-                                    </p>
-                                </div>
+                                </p>
+                            </div>
                             <span class="titulli1"> Mësimdhënësit me COVID-19 angazhohen në mësim online</span>
 
                             <p>
-                                Mësimdhënësit e infektuar me coronavirus mbeten të angazhuar duke i zhvilluar orët e tyre mësimore online, ndonëse Ministria e Arsimit 
-                                dhe Skencës (MASH) ka paraparë 1 mijë norma plotësuese të cilat do të ndahen për zëvendësimin e tyre. Megjithatë, MASH thotë se Drejtoritë Komunale të Arsimit 
-                                janë përgjegjëse për zëvendësimin e mësimdhënësve të infektuar, komunat thonë se ky plan është i parealizueshëm.
-
-                                Në të gjithë vendin, mësimdhënësit të cilët janë në gjendje jo të mirë shëndetësore për shkak të infektimit me COVID-19, po zëvendësohen nga kolegët e tyre, 
-                                derisa SBASHK-u ngrit shqetësimin se këta të fundit përkundër që po mbajnë orët shtesë, nuk po paguhen.
-                                </p>
+                                Mësimdhënësit e infektuar me coronavirus mbeten të angazhuar duke i zhvilluar orët e tyre mësimore online, ndonëse Ministria e Arsimit dhe Skencës (MASH) ka paraparë 1 mijë norma plotësuese të cilat do të ndahen për zëvendësimin e tyre. Megjithatë, MASH
+                                thotë se Drejtoritë Komunale të Arsimit janë përgjegjëse për zëvendësimin e mësimdhënësve të infektuar, komunat thonë se ky plan është i parealizueshëm. Në të gjithë vendin, mësimdhënësit të cilët janë në gjendje jo të
+                                mirë shëndetësore për shkak të infektimit me COVID-19, po zëvendësohen nga kolegët e tyre, derisa SBASHK-u ngrit shqetësimin se këta të fundit përkundër që po mbajnë orët shtesë, nuk po paguhen.
+                            </p>
 
 
                         </div>
@@ -519,23 +489,19 @@ var currentZoom = 1.0;
                                 <span class="close">×</span>
                                 <img class="modal-content" src="../img/sulmohenminibibliotekat.jpg">
                                 <p class="tekstimodal">
-                                    Organizata ETEA, Kuvendi i të Rinjve të Prishtinës dhe Libraria Dukagjini dje përuruan mini-bibliotekën e parë në lagjen “Dardania” në kryeqytet.
-                                    Ende pa kaluar 24 orë nga hapja e saj zyrtare, persona ende të panjohur kanë hedhur vezë në drejtim të saj.
-                                    Organizata ETEA, Kuvendi i të Rinjve të Prishtinës dhe Libraria Dukagjini u bëjnë thirrje qytetarëve që të mos keqpërdorin mini-bibliotekat dhe të reagojnë 
-                                    ndaj kujtdo që tenton t’i dëmtojë mini-bibliotekat dhe t’i njoftojnë për çfarëdo parregullsie në raport me mini-bibliotekat. “Mini-bibliotekat do të ndërtohen dhe 
-                                    edhe nëse rrënohen ato do të rindërtohen, derisa rrënuesit të bëhen lexues”, thuhet në reagimin e Organizatës ETEA, 
+                                    Organizata ETEA, Kuvendi i të Rinjve të Prishtinës dhe Libraria Dukagjini dje përuruan mini-bibliotekën e parë në lagjen “Dardania” në kryeqytet. Ende pa kaluar 24 orë nga hapja e saj zyrtare, persona ende të panjohur kanë hedhur vezë në drejtim të saj.
+                                    Organizata ETEA, Kuvendi i të Rinjve të Prishtinës dhe Libraria Dukagjini u bëjnë thirrje qytetarëve që të mos keqpërdorin mini-bibliotekat dhe të reagojnë ndaj kujtdo që tenton t’i dëmtojë mini-bibliotekat dhe t’i
+                                    njoftojnë për çfarëdo parregullsie në raport me mini-bibliotekat. “Mini-bibliotekat do të ndërtohen dhe edhe nëse rrënohen ato do të rindërtohen, derisa rrënuesit të bëhen lexues”, thuhet në reagimin e Organizatës ETEA,
                                     Kuvendit të të Rinjve të Prishtinës dhe Librarisë Dukagjini.Ndryshe, së shpejti do të mbahet edhe ceremonia e hapjes së mini-bibliotekës në lagjen ‘Ulpiana’.
                                 </p>
                             </div>
                             <span class="titulli1"> Sulmohet me vezë mini-biblioteka në Prishtinë</span>
 
                             <p>
-                                Organizata ETEA, Kuvendi i të Rinjve të Prishtinës dhe Libraria Dukagjini dje përuruan mini-bibliotekën e parë në lagjen “Dardania” në kryeqytet.
-                                Ende pa kaluar 24 orë nga hapja e saj zyrtare, persona ende të panjohur kanë hedhur vezë në drejtim të saj.
-                                Organizata ETEA, Kuvendi i të Rinjve të Prishtinës dhe Libraria Dukagjini u bëjnë thirrje qytetarëve që të mos keqpërdorin mini-bibliotekat dhe të reagojnë 
-                                ndaj kujtdo që tenton t’i dëmtojë mini-bibliotekat dhe t’i njoftojnë për çfarëdo parregullsie në raport me mini-bibliotekat. “Mini-bibliotekat do të ndërtohen dhe 
-                                edhe nëse rrënohen ato do të rindërtohen, derisa rrënuesit të bëhen lexues”, thuhet në reagimin e Organizatës ETEA, 
-                                Kuvendit të të Rinjve të Prishtinës dhe Librarisë Dukagjini.Ndryshe, së shpejti do të mbahet edhe ceremonia e hapjes së mini-bibliotekës në lagjen ‘Ulpiana’.    
+                                Organizata ETEA, Kuvendi i të Rinjve të Prishtinës dhe Libraria Dukagjini dje përuruan mini-bibliotekën e parë në lagjen “Dardania” në kryeqytet. Ende pa kaluar 24 orë nga hapja e saj zyrtare, persona ende të panjohur kanë hedhur vezë në drejtim të saj.
+                                Organizata ETEA, Kuvendi i të Rinjve të Prishtinës dhe Libraria Dukagjini u bëjnë thirrje qytetarëve që të mos keqpërdorin mini-bibliotekat dhe të reagojnë ndaj kujtdo që tenton t’i dëmtojë mini-bibliotekat dhe t’i njoftojnë
+                                për çfarëdo parregullsie në raport me mini-bibliotekat. “Mini-bibliotekat do të ndërtohen dhe edhe nëse rrënohen ato do të rindërtohen, derisa rrënuesit të bëhen lexues”, thuhet në reagimin e Organizatës ETEA, Kuvendit
+                                të të Rinjve të Prishtinës dhe Librarisë Dukagjini.Ndryshe, së shpejti do të mbahet edhe ceremonia e hapjes së mini-bibliotekës në lagjen ‘Ulpiana’.
                             </p>
 
 
@@ -545,32 +511,25 @@ var currentZoom = 1.0;
                     <div class="gridi8">
                         <div class="ardy">
                             <img style="float: right" class="fototmodal" src="../img/bibliotekakombetarepasurohet.png">
-                                <div id="myModal" class="modal">
-                                    <span class="close">×</span>
-                                    <img class="modal-content" src="../img/bibliotekakombetarepasurohet.png">
-                                    <p class="tekstimodal">
-                                        Bibliotekës Kombëtare të Kosovës, sot, iu dhurua një koleksion i librave me vlerë të veçantë të kulturës hungareze nga 
-                                        fusha e artit, filozofisë, historisë, politikës etj., si dhe nga një perspektivë e veçantë shkencore, letrare, mësimore të kësaj kulture.
-                                        Shkëlqesia e Tij Ambasadori i Hungarisë në Kosovë, Dr. Bencze József, i pranishëm në ceremoninë e dhurimit, dorëzoi këtë koleksion dhuratë 
-                                        nga Ministria e Punëve të Jashtme dhe Tregtisë e Hungarisë.
-                                        Drejtori i Bibliotekës Kombëtare, Z. Gajraku, e falënderoi ambasadorin e Hungarisë, Dr. Bencze József, për konsideratën e tyre që Bibliotekës 
-                                        Kombëtare t'i dhurohet ky koleksion që është në përputhje me politikat dhe shërbimet e kërkuara në këtë bibliotekë dhe mbështetje për 
-                                        nevojat kërkimore të përdoruesve që kanë interesime për kulturën hungareze. Drejtori Gajraku, duke theksuar se Biblioteka Kombëtare e Kosovës 
-                                        - biblioteka më e madhe dhe më e rëndësishme në Republikën e Kosovës, është duke pasuruar koleksionet e saj me botimet më të reja të kulturave
-                                        botërore, e informoi ambasadorin Bencze József për praninë në koleksionet e kësaj biblioteke të librave në gjuhën hungareze dhe, gjithashtu,
-                                        të librave të përkthyer në shqip të një sërë autorëve hungarezë, që janë pjesë e koleksionit të kësaj biblioteke. 
-                                    </p>
-                                </div>
+                            <div id="myModal" class="modal">
+                                <span class="close">×</span>
+                                <img class="modal-content" src="../img/bibliotekakombetarepasurohet.png">
+                                <p class="tekstimodal">
+                                    Bibliotekës Kombëtare të Kosovës, sot, iu dhurua një koleksion i librave me vlerë të veçantë të kulturës hungareze nga fusha e artit, filozofisë, historisë, politikës etj., si dhe nga një perspektivë e veçantë shkencore, letrare, mësimore të kësaj kulture.
+                                    Shkëlqesia e Tij Ambasadori i Hungarisë në Kosovë, Dr. Bencze József, i pranishëm në ceremoninë e dhurimit, dorëzoi këtë koleksion dhuratë nga Ministria e Punëve të Jashtme dhe Tregtisë e Hungarisë. Drejtori i Bibliotekës
+                                    Kombëtare, Z. Gajraku, e falënderoi ambasadorin e Hungarisë, Dr. Bencze József, për konsideratën e tyre që Bibliotekës Kombëtare t'i dhurohet ky koleksion që është në përputhje me politikat dhe shërbimet e kërkuara
+                                    në këtë bibliotekë dhe mbështetje për nevojat kërkimore të përdoruesve që kanë interesime për kulturën hungareze. Drejtori Gajraku, duke theksuar se Biblioteka Kombëtare e Kosovës - biblioteka më e madhe dhe më e rëndësishme
+                                    në Republikën e Kosovës, është duke pasuruar koleksionet e saj me botimet më të reja të kulturave botërore, e informoi ambasadorin Bencze József për praninë në koleksionet e kësaj biblioteke të librave në gjuhën hungareze
+                                    dhe, gjithashtu, të librave të përkthyer në shqip të një sërë autorëve hungarezë, që janë pjesë e koleksionit të kësaj biblioteke.
+                                </p>
+                            </div>
                             <span class="titulli1"> Biblioteka Kombëtare e Kosovës pasurohet me botime të reja të kulturës hungareze </span>
 
                             <p>
-                                Bibliotekës Kombëtare të Kosovës, sot, iu dhurua një koleksion i librave me vlerë të veçantë të kulturës hungareze nga 
-                                fusha e artit, filozofisë, historisë, politikës etj., si dhe nga një perspektivë e veçantë shkencore, letrare, mësimore të kësaj kulture.
-                                Shkëlqesia e Tij Ambasadori i Hungarisë në Kosovë, Dr. Bencze József, i pranishëm në ceremoninë e dhurimit, dorëzoi këtë koleksion dhuratë 
-                                nga Ministria e Punëve të Jashtme dhe Tregtisë e Hungarisë.
-                                Drejtori i Bibliotekës Kombëtare, Z. Gajraku, e falënderoi ambasadorin e Hungarisë, Dr. Bencze József, për konsideratën e tyre që Bibliotekës 
-                                Kombëtare t'i dhurohet ky koleksion që është në përputhje me politikat dhe shërbimet e kërkuara në këtë bibliotekë dhe mbështetje për 
-                                nevojat kërkimore të përdoruesve që kanë interesime për kulturën hungareze.
+                                Bibliotekës Kombëtare të Kosovës, sot, iu dhurua një koleksion i librave me vlerë të veçantë të kulturës hungareze nga fusha e artit, filozofisë, historisë, politikës etj., si dhe nga një perspektivë e veçantë shkencore, letrare, mësimore të kësaj kulture.
+                                Shkëlqesia e Tij Ambasadori i Hungarisë në Kosovë, Dr. Bencze József, i pranishëm në ceremoninë e dhurimit, dorëzoi këtë koleksion dhuratë nga Ministria e Punëve të Jashtme dhe Tregtisë e Hungarisë. Drejtori i Bibliotekës
+                                Kombëtare, Z. Gajraku, e falënderoi ambasadorin e Hungarisë, Dr. Bencze József, për konsideratën e tyre që Bibliotekës Kombëtare t'i dhurohet ky koleksion që është në përputhje me politikat dhe shërbimet e kërkuara në këtë
+                                bibliotekë dhe mbështetje për nevojat kërkimore të përdoruesve që kanë interesime për kulturën hungareze.
                             </p>
 
 
@@ -580,30 +539,25 @@ var currentZoom = 1.0;
                     <div class="gridi9">
                         <div class="ardy">
                             <img style="float: right" class="fototmodal" src="../img/mobilizimi.jpg">
-                                <div id="myModal" class="modal">
-                                    <span class="close">×</span>
-                                    <img class="modal-content" src="../img/mobilizimi.jpg">
-                                    <p class="tekstimodal">
-                                        Në mënyrë që të kërkonte të drejtat në arsim, duke kundërshtuar planet diskriminuese që Serbia bëri ndaj arsimit në Kosovë, 30 vjet më parë
-                                        u themelua Lidhja e Arsimtarëve Shqiptarë “Naim Frashëri”, e cila vazhdoi veprimtarinë e saj për një dekadë.
-                                       Lidhja e Arsimtarëve Shqiptarë ushtroi veprimtarinë e saj, duke i rezistuar regjimit serb, i cili synonte të impononte ligjet e veta.
-                                       Një ndër themeluesit e Lidhjes, ish-kryetari i saj, Rexhep Osmani thotë për KosovaPress se rrugëtimi i arsimit shqip në vitet e 80-ta dhe 90-ta
-                                        ishte shumë i dhimbshëm dhe i vështirë.
-                                       Ai kujton se si Serbia deshi të imponojë ligjet e përbashkëta, përmes së cilave do të vendoste vet për çështjet e mëdhanë arsim në tërë territorin.
-                                       Kushtetuta dhe ligjet e Serbisë ”unike” ia kishin marrë të drejtën themelore Kosovës për miratimin dhe nxjerrjen e dokumenteve kryesore të arsimit: 
-                                       planprogrameve mësimore dhe teksteve shkollore. Kështu, Osmani thotë se lindi nevoja për formimin e një organizate joqeveritare për t’iu 
-                                       kundërvënë planeve diskriminuese të Serbisë ndaj arsimit në Kosovë.
-                                    </p>
-                                </div>
+                            <div id="myModal" class="modal">
+                                <span class="close">×</span>
+                                <img class="modal-content" src="../img/mobilizimi.jpg">
+                                <p class="tekstimodal">
+                                    Në mënyrë që të kërkonte të drejtat në arsim, duke kundërshtuar planet diskriminuese që Serbia bëri ndaj arsimit në Kosovë, 30 vjet më parë u themelua Lidhja e Arsimtarëve Shqiptarë “Naim Frashëri”, e cila vazhdoi veprimtarinë e saj për një dekadë. Lidhja
+                                    e Arsimtarëve Shqiptarë ushtroi veprimtarinë e saj, duke i rezistuar regjimit serb, i cili synonte të impononte ligjet e veta. Një ndër themeluesit e Lidhjes, ish-kryetari i saj, Rexhep Osmani thotë për KosovaPress
+                                    se rrugëtimi i arsimit shqip në vitet e 80-ta dhe 90-ta ishte shumë i dhimbshëm dhe i vështirë. Ai kujton se si Serbia deshi të imponojë ligjet e përbashkëta, përmes së cilave do të vendoste vet për çështjet e mëdhanë
+                                    arsim në tërë territorin. Kushtetuta dhe ligjet e Serbisë ”unike” ia kishin marrë të drejtën themelore Kosovës për miratimin dhe nxjerrjen e dokumenteve kryesore të arsimit: planprogrameve mësimore dhe teksteve shkollore.
+                                    Kështu, Osmani thotë se lindi nevoja për formimin e një organizate joqeveritare për t’iu kundërvënë planeve diskriminuese të Serbisë ndaj arsimit në Kosovë.
+                                </p>
+                            </div>
                             <span class="titulli1"> ​30 vjet nga mobilizimi për shpëtimin e arsimit në Kosovë – flasin protagonistët</span>
 
                             <p>
-                                Në mënyrë që të kërkonte të drejtat në arsim, duke kundërshtuar planet diskriminuese që Serbia bëri ndaj arsimit në Kosovë, 30 vjet më parë 
-                                u themelua Lidhja e Arsimtarëve Shqiptarë “Naim Frashëri”, e cila vazhdoi veprimtarinë e saj për një dekadë. 
-                                Lidhja e Arsimtarëve Shqiptarë ushtroi veprimtarinë e saj, duke i rezistuar regjimit serb, i cili synonte të impononte ligjet e veta. 
-                                Një ndër themeluesit e Lidhjes, ish-kryetari i saj, Rexhep Osmani thotë për KosovaPress se rrugëtimi i arsimit shqip në vitet e 80-ta dhe 90-ta 
-                                ishte shumë i dhimbshëm dhe i vështirë. 
-                                Ai kujton se si Serbia deshi të imponojë ligjet e përbashkëta, përmes së cilave do të vendoste vet për çështjet e mëdhanë arsim në tërë territorin.</p>
+                                Në mënyrë që të kërkonte të drejtat në arsim, duke kundërshtuar planet diskriminuese që Serbia bëri ndaj arsimit në Kosovë, 30 vjet më parë u themelua Lidhja e Arsimtarëve Shqiptarë “Naim Frashëri”, e cila vazhdoi veprimtarinë e saj për një dekadë. Lidhja
+                                e Arsimtarëve Shqiptarë ushtroi veprimtarinë e saj, duke i rezistuar regjimit serb, i cili synonte të impononte ligjet e veta. Një ndër themeluesit e Lidhjes, ish-kryetari i saj, Rexhep Osmani thotë për KosovaPress se rrugëtimi
+                                i arsimit shqip në vitet e 80-ta dhe 90-ta ishte shumë i dhimbshëm dhe i vështirë. Ai kujton se si Serbia deshi të imponojë ligjet e përbashkëta, përmes së cilave do të vendoste vet për çështjet e mëdhanë arsim në tërë
+                                territorin.
+                            </p>
 
 
                         </div>
@@ -616,47 +570,43 @@ var currentZoom = 1.0;
                                 <span class="close">×</span>
                                 <img class="modal-content" src="../img/gjendjaedopt.jpg">
                                 <p class="tekstimodal">
-                                    Ministrja e Arsimit, Shkencës, Teknologjisë dhe Inovacionit, Hykmete Bajrami, priti ambasadoren e Finlandës në Kosovë, Pia Stjernvall, me
-                                    të cilën bisedoi për gjendjen aktuale të arsimit dhe mundësitë e bashkëpunimit në këtë sektor. Ambasadorja Stjernvall e uroi ministren Bajrami 
-                                    për detyrën e re, ndërsa shprehu gatishmërinë e shtetit të saj për ta mbështetur në realizimin e politikave në arsim. Ministrja Bajrami falënderoi 
-                                    ambasadoren për çdo gjë që ka bërë Finlanda për Kosovën, e veçanërisht për sektorin e arsimit, ndërsa theksoi se është i rëndësishëm bashkëpunimi
-                                    me këtë shtet, i cili tashmë ka një arsim nga më të zhvilluarit në botë.Ministrja Bajrami tha se është e nevojshme mbështetja nga partnerët zhvillimorë, 
-                                    në mënyrë që të realizohen politikat e parapara në programin qeveritar për katër vitet e ardhshme, e që synojnë zhvillimin e sektorit të arsimit, i cili do të 
-                                    përmirësonte gjendjen edhe në gjithë sektorët e tjerë.
+                                    Ministrja e Arsimit, Shkencës, Teknologjisë dhe Inovacionit, Hykmete Bajrami, priti ambasadoren e Finlandës në Kosovë, Pia Stjernvall, me të cilën bisedoi për gjendjen aktuale të arsimit dhe mundësitë e bashkëpunimit në këtë sektor. Ambasadorja Stjernvall
+                                    e uroi ministren Bajrami për detyrën e re, ndërsa shprehu gatishmërinë e shtetit të saj për ta mbështetur në realizimin e politikave në arsim. Ministrja Bajrami falënderoi ambasadoren për çdo gjë që ka bërë Finlanda
+                                    për Kosovën, e veçanërisht për sektorin e arsimit, ndërsa theksoi se është i rëndësishëm bashkëpunimi me këtë shtet, i cili tashmë ka një arsim nga më të zhvilluarit në botë.Ministrja Bajrami tha se është e nevojshme
+                                    mbështetja nga partnerët zhvillimorë, në mënyrë që të realizohen politikat e parapara në programin qeveritar për katër vitet e ardhshme, e që synojnë zhvillimin e sektorit të arsimit, i cili do të përmirësonte gjendjen
+                                    edhe në gjithë sektorët e tjerë.
                                 </p>
                             </div>
                             <span class="titulli1"> Ministrja Bajrami dhe ambasadorja finlandeze, Sternvall flasin për gjendjen në arsim</span>
 
                             <p>
-                                Ministrja e Arsimit, Shkencës, Teknologjisë dhe Inovacionit, Hykmete Bajrami, priti ambasadoren e Finlandës në Kosovë, Pia Stjernvall, me 
-                                të cilën bisedoi për gjendjen aktuale të arsimit dhe mundësitë e bashkëpunimit në këtë sektor. Ambasadorja Stjernvall e uroi ministren Bajrami 
-                                për detyrën e re, ndërsa shprehu gatishmërinë e shtetit të saj për ta mbështetur në realizimin e politikave në arsim. Ministrja Bajrami falënderoi 
-                                ambasadoren për çdo gjë që ka bërë Finlanda për Kosovën, e veçanërisht për sektorin e arsimit, ndërsa theksoi se është i rëndësishëm bashkëpunimi 
-                                me këtë shtet, i cili tashmë ka një arsim nga më të zhvilluarit në botë.
+                                Ministrja e Arsimit, Shkencës, Teknologjisë dhe Inovacionit, Hykmete Bajrami, priti ambasadoren e Finlandës në Kosovë, Pia Stjernvall, me të cilën bisedoi për gjendjen aktuale të arsimit dhe mundësitë e bashkëpunimit në këtë sektor. Ambasadorja Stjernvall
+                                e uroi ministren Bajrami për detyrën e re, ndërsa shprehu gatishmërinë e shtetit të saj për ta mbështetur në realizimin e politikave në arsim. Ministrja Bajrami falënderoi ambasadoren për çdo gjë që ka bërë Finlanda për
+                                Kosovën, e veçanërisht për sektorin e arsimit, ndërsa theksoi se është i rëndësishëm bashkëpunimi me këtë shtet, i cili tashmë ka një arsim nga më të zhvilluarit në botë.
                             </p>
 
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
             <br>
             <br>
             <div class="lyst">
-            <ul style="margin-left:2em;">
-                <li style="display:inline"><a href="lajmi.html">1</a></li>
-                <li style="display:inline"><a>, </a></li>
-                <li style="display:inline"><a href="lajmi2.html">2</a></li>
-                <li style="display:inline"><a>, </a></li>
-                <li style="display:inline"><a href="lajmi3.html">3</a></li>
-                <li style="display:inline"><a>, </a></li>
-                <li style="display:inline"><a href="lajmi4.html">4</a></li>
-                <li style="display:inline"><a>, </a></li>
-                <li style="display:inline"><a href="">...</a></li>
-            </ul>
+                <ul style="margin-left:2em;">
+                    <li style="display:inline"><a href="lajmi.html">1</a></li>
+                    <li style="display:inline"><a>, </a></li>
+                    <li style="display:inline"><a href="lajmi2.html">2</a></li>
+                    <li style="display:inline"><a>, </a></li>
+                    <li style="display:inline"><a href="lajmi3.html">3</a></li>
+                    <li style="display:inline"><a>, </a></li>
+                    <li style="display:inline"><a href="lajmi4.html">4</a></li>
+                    <li style="display:inline"><a>, </a></li>
+                    <li style="display:inline"><a href="">...</a></li>
+                </ul>
             </div>
 
-            
+
 
         </div>
 
@@ -666,9 +616,9 @@ var currentZoom = 1.0;
                     <div class="bs">VEGËZA TË DOBISHME</div>
                 </div>
                 <div class="shortcutposht">
-                    <a href="#" class="eee" id="sdds">Libra</a>
-                    <a href="./HTML/Autoret1.html" class="eee" id="fdsfdsf">Autorët</a>
-                    <a href="./HTML/lajmi.html" class="eee" id="fsdfdsf">Lajme</a>
+                    <a href="./Librat.html" class="eee" id="sdds">Libra</a>
+                    <a href="../HTML/Autoret1.html" class="eee" id="fdsfdsf">Autorët</a>
+                    <a href="../HTML/lajmi.html" class="eee" id="fsdfdsf">Lajme</a>
 
                 </div>
             </div>
@@ -698,7 +648,7 @@ var currentZoom = 1.0;
                         <br>
                         <p id="kolona1pp">Biblioteka BSD ofron qasje në materialin bibliotekar për të gjithë përdoruesit e qytetit të Prishtinës me rrethinë, pavarësisht nga raca, kombësia, gjinia, mosha, besimi fetar, gjuha, paaftësitë fizike dhe informon e ndihmon ata
                             në përdorimin e gjetjen e tyre.</p>
-                        <a href="./HTML/regjistrohu.html">
+                        <a href="./regjistrohu.html">
                             <p id="katalogu">Regjistrohu</p>
                         </a>
                     </div>
@@ -708,7 +658,7 @@ var currentZoom = 1.0;
                         <br>
                         <p id="kolona1pp">Biblioteka "Sinan Dobreva" bashkëpunon me bibliotekat në vend dhe jashtë vendit; Bashkëpunon me institucionet kulturore, shtëpitë botuese, shkollat dhe me komunitetin me qëllim të nxitjes së interesimit për librin dhe të mësuarit
                             gjatë gjith jetës. Shfletoni galerinë për më shumë.</p>
-                        <a href="#">
+                        <a href="./galeria.html">
                             <p id="katalogu">Galeria</p>
                         </a>
                     </div>
@@ -725,10 +675,10 @@ var currentZoom = 1.0;
                     <!-- Qitu ni form per Anetaresim (mail subscription)-->
                     <form autocomplete="on" action="/action_page.php">
                         <div class="autocomplete" style="width: 25em;">
-                          <input id="myInput" type="text" name="myEmail" placeholder="E-mail" style="background-color:white;">
+                            <input id="myInput" type="text" name="myEmail" placeholder="E-mail" style="background-color:white;">
                         </div>
                         <button class="buton">Dërgo</button>
-                      </form><input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme <br><br>
+                    </form><input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme <br><br>
                 </div>
 
                 <div class="sbkol1">
@@ -760,10 +710,10 @@ var currentZoom = 1.0;
                     <ul>
 
 
-                        <li><a href="./HTML/meshum.html">
+                        <li><a href="../HTML/meshum.html">
              Autorë shqiptar
            </a></li>
-                        <li><a href="./HTML/meshume.html">
+                        <li><a href="../HTML/meshume.html">
             Autorë të huaj
           </a></li>
                     </ul>
@@ -771,7 +721,7 @@ var currentZoom = 1.0;
                 <div class="sbkol2">
 
                     <ul>
-                        <li><a href="./HTML/lajmi.html"><span>Lajme</span></a>
+                        <li><a href="../HTML/lajmi.html"><span>Lajme</span></a>
                         </li>
 
                     </ul>
@@ -780,11 +730,11 @@ var currentZoom = 1.0;
 
                     <ul>
 
-                        <li><a href="#">
+                        <li><a href="./galeria.html">
                 Fotogaleria
               </a>
                         </li>
-                        <li><a href="#">
+                        <li><a href="./galeria.html">
               Videogaleria
             </a>
                         </li>
@@ -793,14 +743,14 @@ var currentZoom = 1.0;
                 <div class="sbkol2">
 
                     <ul>
-                        <li><a href="#"><span>Kontakti</span></a>
+                        <li><a href="./Kontakti.html"><span>Kontakti</span></a>
                         </li>
                     </ul>
                 </div>
                 <div class="sbkol2">
 
                     <ul>
-                        <li><a href="./HTML/regjistrohu.html"><span>Regjistrohu</span></a>
+                        <li><a href="../HTML/regjistrohu.html"><span>Regjistrohu</span></a>
                         </li>
                     </ul>
                 </div>
@@ -843,65 +793,66 @@ var currentZoom = 1.0;
 
             </div>
         </footer>
-        
+
         <script>
             // const modal = document.getElementsByClassName("myModal");
-            
-            
+
+
             // var img = document.getElementsByClassName("fototmodal");
             // var modalImg = document.getElementById("img");
             // var captionText=document.getElementsByClassName("tekstimodal");
-           
+
 
             // var showModal=function(){
             //     modal.style.display="block";
             //     modalImg.src=this.src;
             //     captionText.innerHTML=this.alt;
-               
-            
+
+
             // }
             // for(var i=0;i<img.length;i++){
             //     img[i].addEventListener('click', showModal);
             // }
-            
-           
-            
+
+
+
             // const span = document.getElementsByClassName("close")[0];
-            
-            
-            
-            function viewModal(){
+
+
+
+            function viewModal() {
                 const modal = $(this).children()[1];
-                
-                
-            console.log(typeof(modal));
-               
-              
-                const photo =$(this).children('#img').attr('src');
-                modal.style.display="block";
-                
-                span.onclick = function() { 
-              
-              
-               console.log(modal);
-                         }
+
+
+                console.log(typeof(modal));
+
+
+                const photo = $(this).children('#img').attr('src');
+                modal.style.display = "block";
+
+                span.onclick = function() {
+
+
+                    console.log(modal);
+                }
 
             }
-            
-            
+
+
 
             const lajmet = document.getElementsByClassName('ardy');
-            
-            for(let i=0;i<lajmet.length;i++){
-                lajmet[i].addEventListener('click',viewModal);
+
+            for (let i = 0; i < lajmet.length; i++) {
+                lajmet[i].addEventListener('click', viewModal);
             }
-            $(".close").on("click", function (event) {
+            $(".close").on("click", function(event) {
                 $(this).parent().fadeOut();
                 event.preventDefault();
             });
 
-            
-            // </script>
+
+            //
+        </script>
 
     </body>
 
