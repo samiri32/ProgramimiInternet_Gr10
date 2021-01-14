@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forma</title>
     <link rel="stylesheet" href="../css/forma.css">
-
+    
 
 </head>
 
@@ -18,12 +18,12 @@
     <div class="container">
 
         <div>
-
+   
             <h2 class="tittle">Të dhënat</h2>
 
             <form id="addForm">
 
-                <div class="error"></div>
+                <div class="error"></div>         
                 <div class="form-group">
                     <input type="text" id="item1" placeholder="Emri">
                 </div>
@@ -50,11 +50,11 @@
         </div>
 
         <div>
-
+            
             <div class="tabela">
 
                 <h2 class="title">Terminet</h2>
-
+                
                 <table class="styled-table">
                     <thead>
                         <tr>
@@ -65,50 +65,50 @@
                             <th>Anulo</th>
                         </tr>
                     </thead>
-
+                    <tr>
+                        <td>Andi</td>
+                        <td>Dika</td>
+                        <td>190714100170</td>
+                        <td>2021-18-01</td>
+                        <td><button class="deleteBtn">Fshij</button></td>
+                    </tr>
+                    <tr>
+                        <td>Arben</td>
+                        <td>Dedaj</td>
+                        <td>190714100160</td>
+                        <td>2021-18-01</td>
+                        <td><button class="deleteBtn">Fshij</button></td>
+                    </tr>
+                    <tr>
+                        <td>Arbresha</td>
+                        <td>Zeqiri</td>
+                        <td>190714100158</td>
+                        <td>2021-18-01</td>
+                        <td><button class="deleteBtn">Fshij</button></td>
+                    </tr>
+                    <tr>
+                        <td>Samir</td>
+                        <td>Simnica</td>
+                        <td>180715100031</td>
+                        <td>2021-18-01</td>
+                        <td><button class="deleteBtn">Fshij</button></td>
+                    </tr>
+                    <tr>
+                        <td>Ardi</td>
+                        <td>Ismajli</td>
+                        <td>190714100057</td>
+                        <td>2021-18-01</td>
+                        <td><button class="deleteBtn">Fshij</button></td>
+                    </tr>
+                    <tr>
+                        <td>Adnit</td>
+                        <td>Gashi</td>
+                        <td>190714100180</td>
+                        <td>2021-18-01</td>
+                        <td><button class="deleteBtn">Fshij</button></td>
+                    </tr>
                     <tbody>
-                        <tr>
-                            <td>Andi</td>
-                            <td>Dika</td>
-                            <td>190714100170</td>
-                            <td>2021-18-01</td>
-                            <td><button class="deleteBtn">Fshij</button></td>
-                        </tr>
-                        <tr>
-                            <td>Arben</td>
-                            <td>Dedaj</td>
-                            <td>190714100160</td>
-                            <td>2021-18-01</td>
-                            <td><button class="deleteBtn">Fshij</button></td>
-                        </tr>
-                        <tr>
-                            <td>Arbresha</td>
-                            <td>Zeqiri</td>
-                            <td>190714100158</td>
-                            <td>2021-18-01</td>
-                            <td><button class="deleteBtn">Fshij</button></td>
-                        </tr>
-                        <tr>
-                            <td>Samir</td>
-                            <td>Simnica</td>
-                            <td>180715100031</td>
-                            <td>2021-18-01</td>
-                            <td><button class="deleteBtn">Fshij</button></td>
-                        </tr>
-                        <tr>
-                            <td>Ardi</td>
-                            <td>Ismajli</td>
-                            <td>190714100057</td>
-                            <td>2021-18-01</td>
-                            <td><button class="deleteBtn">Fshij</button></td>
-                        </tr>
-                        <tr>
-                            <td>Adnit</td>
-                            <td>Gashi</td>
-                            <td>190714100180</td>
-                            <td>2021-18-01</td>
-                            <td><button class="deleteBtn">Fshij</button></td>
-                        </tr>
+                        
                     </tbody>
                 </table>
 
@@ -119,58 +119,49 @@
     </div>
 
     <script>
-        const form = document.getElementById("addForm");
-        const tbody = document.querySelector('tbody');
-        const table = document.querySelector('table')
-        const emri = document.getElementById("item1");
-        const mbiemri = document.getElementById("item2");
-        const ID = document.getElementById("item3");
-        const data = document.getElementById("item4");
-        const errorElement = document.querySelectorAll(".error")
 
+            const form = document.getElementById("addForm");
+            const tbody = document.querySelector('tbody');
+            const table = document.querySelector('table')
+            const emri = document.getElementById("item1");
+            const mbiemri = document.getElementById("item2");
+            const ID = document.getElementById("item3");
+            const data = document.getElementById("item4");
+            const errorElement= document.querySelectorAll(".error")
 
-        const form = document.getElementById("addForm");
-        const tbody = document.querySelector('tbody');
-        const table = document.querySelector('table')
-        const emri = document.getElementById("item1");
-        const mbiemri = document.getElementById("item2");
-        const ID = document.getElementById("item3");
-        const data = document.getElementById("item4");
-        const errorElement = document.querySelectorAll(".error")
+        
+            function validate(e){
+ 
+                if(emri.value===' '|| emri.value===null){
+                    errorElement[0].innerText = 'Emri duhet te mbushet!';
+                    return false;
+                }
 
+                if(mbiemri.value===' '|| mbiemri.value===null){
+                    errorElement[1].innerText = 'Mbiemri duhet te mbushet!';
+                    return false;
 
-        function validate(e) {
+                }
 
-            if (emri.value === ' ' || emri.value === null) {
-                errorElement[0].innerText = 'Emri duhet te mbushet!';
-                return false;
-            }
+                if(ID.value===' '|| ID.value===null){
+                    errorElement[2].innerText = 'ID duhet te mbushet!';
+                    return false;
 
-            if (mbiemri.value === ' ' || mbiemri.value === null) {
-                errorElement[1].innerText = 'Mbiemri duhet te mbushet!';
-                return false;
+                }
 
-            }
+                if(data.value===' '|| data.value===null){
+                    errorElement[3].innerText = 'Data duhet te mbushet!';
+                    return false;
 
-            if (ID.value === ' ' || ID.value === null) {
-                errorElement[2].innerText = 'ID duhet te mbushet!';
-                return false;
+                }
+                return true;
+            };
+            
+            form.addEventListener('submit', onAddWebsite);
 
-            }
-
-            if (data.value === ' ' || data.value === null) {
-                errorElement[3].innerText = 'Data duhet te mbushet!';
-                return false;
-
-            }
-            return true;
-        };
-
-        form.addEventListener('submit', onAddWebsite);
-
-        function onAddWebsite(e) {
-            e.preventDefault();
-            if (validate(e)) {
+            function onAddWebsite(e) {
+                e.preventDefault();
+                if (validate(e)) {
                 tbody.innerHTML += `
                 <tr>
                     <td>${emri.value}</td>
@@ -182,20 +173,21 @@
                 `;
                 form.reset();
             }
-        }
-
-        function onDeleteRow(e) {
-            if (!e.target.classList.contains("deleteBtn")) {
-                return;
             }
-            const button = e.target;
-            button.closest('tr').remove();
-        }
 
-        table.addEventListener('click', onDeleteRow)
+            function onDeleteRow(e) {
+                    if(!e.target.classList.contains("deleteBtn")){
+                        return;
+                    }
+                    const button =e.target;
+                        button.closest('tr').remove();
+                }
+                
+            table.addEventListener('click', onDeleteRow)
+            
+        
+
     </script>
-
-
 
 
 </body>
