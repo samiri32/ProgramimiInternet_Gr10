@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma</title>
+    <link rel="stylesheet" href="../css/forma.css">
+    <script src="../js/forma.js"></script>
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div>
+   
+            <h2 class="title">Te dhenat</h2>
+            
+            <form id="addForm">
+                <div class="form-group">
+                    <input type="text" id="item1">
+                    <label>emri</label><br>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="item2">
+                    <label>mbiemri</label><br>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="item3">
+                    <label>ID</label><br>
+                </div>
+                <div class="form-group">
+                    <input type="date" class="btn btn-dark">
+                    <label>Data</label><br>
+                </div>
+
+                <input type="submit" class="btn btn-dark" value="Submit">
+
+            </form>
+
+        </div>
+
+        <div>
+            <div class="tabela">
+
+                <h2 class="title">Terminet</h2>
+                
+                <table class="styled-table">
+                    <thead>
+                        <tr>
+                            <th>Emri</th>
+                            <th>Mbiemri</th>
+                            <th> ID</th>
+                            <th>Data</th>
+                            <th>Anulo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- and so on... -->
+                        <tr>
+                            <td>Dom</td>
+                            <td>6000</td>
+                            <td>190714100170</td>
+                            <td>sadasdasd</td>
+                        </tr>
+                        <tr class="active-row">
+                            <td>Melissa</td>
+                            <td>5150</td>
+                            <td>190714100170</td>
+                            <td>sadasdasd</td>
+                        </tr>
+                        <tr>
+                            <td>Dom</td>
+                            <td>6000</td>
+                            <td>190714100170</td>
+                            <td>sadasdasd</td>
+                        </tr>
+             
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        
+            const form=document.getElementById("addForm");
+
+            function onAddWebsite(e) {
+                e.preventDefault();
+                alert('ww')
+            }
+
+            form.addEventListener('submit',onAddWebsite );
+
+
+
+    </script>
+
+
+</body>
+
+</html>
