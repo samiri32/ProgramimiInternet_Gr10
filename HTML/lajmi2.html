@@ -157,6 +157,11 @@ span.onclick = function() {
             transition-delay: 0s;
         }
         
+        .konga{
+        left:41vw;
+        position:absolute;
+        }
+
         .search-form {
             position: absolute;
             top: 8em;
@@ -191,6 +196,55 @@ span.onclick = function() {
             font-size: 1em;
         }
     </style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+var currentZoom = 1.0;
+
+    $(document).ready(function () {
+         $('#ZoomIn').click(
+             function () {
+                 var div = $(".konga");  
+                 div.animate({left: '33vw'}, "slow");
+             })
+        
+        $('#ZoomIn').click(
+        function () {
+            $('.konga').animate({ 'zoom': currentZoom += .2 }, 'slow');
+        })
+        
+    });
+  
+
+</script>
+
+<script>
+
+    var currentZoom = 1.0;
+        
+        $(document).ready(function () {
+
+            
+            $('#ZoomReset').click(
+            function () {
+                currentZoom = 1.0;
+                $('.konga').animate({ 'zoom': 1 }, 'slow');
+            })
+
+            $('#ZoomReset').click(
+            function () {
+
+                $(".konga").css('left', function(){ return $(this).offset().left; })
+                .animate({"left":"41vw"}, "slow"); 
+            })
+            
+            
+        });
+      
+    
+</script>
+
 </head>
 
 
@@ -245,6 +299,21 @@ span.onclick = function() {
     <hr>
     <br>
     <br>
+
+    <div class="prk">
+        <div style="display:inline; margin-left:18vw;">
+    <button class="boxat" id="ZoomIn">Zmadho Audion</button>
+        </div>
+        <div style="display:inline; float:right; margin-right:18vw;">
+    <button class="boxat1" id="ZoomReset">Reseto Audion</button>
+        </div>
+    </div>
+        <div class="konga">
+          <audio id="audio" controls>
+            <source src="../img/Muharrem Qena Mallengjimi.mp3" type="audio/mpeg">
+          Shnosh :/
+          </audio>
+        </div>
 
     <body onload="showSlides(1)">
         <div class="gridat">
