@@ -19,26 +19,28 @@
 
         <div>
    
-            <h2 class="title">Te dhenat</h2>
-            
+            <h2 class="tittle">Të dhënat</h2>
+
             <form id="addForm">
+
+                <div class="error"></div>         
                 <div class="form-group">
-                    <input type="text" id="item1">
-                    <label>emri</label><br>
+                    <input type="text" id="item1" placeholder="Emri">
                 </div>
 
+                <div class="error"></div>
                 <div class="form-group">
-                    <input type="text" id="item2">
-                    <label>mbiemri</label><br>
+                    <input type="text" id="item2" placeholder="Mbiemri">
                 </div>
 
+                <div class="error"></div>
                 <div class="form-group">
-                    <input type="text" id="item3">
-                    <label>ID</label><br>
+                    <input type="number" id="item3" placeholder="ID (numër)">
                 </div>
+
+                <div class="error"></div>
                 <div class="form-group">
                     <input type="date" id="item4">
-                    <label>Data</label><br>
                 </div>
 
                 <input type="submit" id="submit" value="Submit">
@@ -77,43 +79,72 @@
 
     <script>
 
-            const form=document.getElementById("addForm");
-            const tbody=document.querySelector('tbody');
+            const form = document.getElementById("addForm");
+            const tbody = document.querySelector('tbody');
             const table = document.querySelector('table')
+            const emri = document.getElementById("item1");
+            const mbiemri = document.getElementById("item2");
+            const ID = document.getElementById("item3");
+            const data = document.getElementById("item4");
+            const errorElement= document.querySelectorAll(".error")
 
-            form.addEventListener('submit',onAddWebsite );
+        
+            function validate(e){
+ 
+                if(emri.value===''|| emri.value===null){
+                    errorElement[0].innerText = 'Emri duhet te mbushet!';
+                    return false;
+                }
+
+                if(mbiemri.value===''|| mbiemri.value===null){
+                    errorElement[1].innerText = 'Mbiemri duhet te mbushet!';
+                    return false;
+
+                }
+
+                if(ID.value===''|| ID.value===null){
+                    errorElement[2].innerText = 'ID duhet te mbushet!';
+                    return false;
+
+                }
+
+                if(data.value===''|| data.value===null){
+                    errorElement[3].innerText = 'Data duhet te mbushet!';
+                    return false;
+
+                }
+                return true;
+            };
+            
+            form.addEventListener('submit', onAddWebsite);
 
             function onAddWebsite(e) {
                 e.preventDefault();
-
-                const emri =document.getElementById("item1").value;
-                const mbiemri =document.getElementById("item2").value;
-                const ID =document.getElementById("item3").value;
-                const data =document.getElementById("item4").value;
- 
+                if (validate(e)) {
                 tbody.innerHTML += `
                 <tr>
-                    <td>${emri}</td>
-                    <td>${mbiemri}</td>
-                    <td>${ID}</td>
-                    <td>${data}</td>
+                    <td>${emri.value}</td>
+                    <td>${mbiemri.value}</td>
+                    <td>${ID.value}</td>
+                    <td>${data.value}</td>
                     <td><button class ="deleteBtn">Fshij</button></td>
                 </tr>
                 `;
+                form.reset();
+            }
+            }
 
-                function onDeleteRow(e) {
+            function onDeleteRow(e) {
                     if(!e.target.classList.contains("deleteBtn")){
                         return;
                     }
-
                     const button =e.target;
                         button.closest('tr').remove();
                 }
                 
-                table.addEventListener('click', onDeleteRow)
-
-            }
-
+            table.addEventListener('click', onDeleteRow)
+            
+        
 
     </script>
 

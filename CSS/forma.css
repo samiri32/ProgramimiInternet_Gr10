@@ -1,9 +1,13 @@
+ 
+    /* content displays n 70% edhe e rras n mes  */
+
 body{
     width: 70%;
     margin:auto;
     margin-top:10%;
-    overflow-y: hidden;
+
 }
+        /* forma 40%   tabela 60% */
 
 .container{
     display:grid;
@@ -14,26 +18,55 @@ body{
     border-radius: 15px;
 }
 
-.title{
-   margin-right:5em;
+h1{
+    padding-left:10px;
 }
 
+.tittle{
+  padding-left: 20px;
+}
 
+.form-group label {
+    font-family: sans-serif;
+
+}
+    /* id e formes */
 #addForm {
     padding:20px; 
     display:block
 
 }
+    /* stilizimi i divit t msheft per error */
+
+.error{
+    color: #ff0000;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+/* styling per inputin e emrit dates edhe id  */
 
 #addForm input[type="text"] {
-    width:80%;
+    width:65%;
     padding:10px;
 }
 #addForm input[type="date"] {
-    width:80%;
+    width:65%;
+    padding:10px;
+}
+#addForm input[type="number"] {
+    width:65%;
     padding:10px;
 }
 
+ /* ja hek formes t ID do arrows qe i dalin */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Stilizimi i butonit submit  */
 #addForm input[type="submit"] {
     background-color: #333;
     color:#fff;
@@ -43,6 +76,15 @@ body{
 
 .form-group{
     padding-bottom:15px;
+}
+
+/* stilizimi i buttonit delete  */
+
+.deleteBtn{
+    background-color: #FF6347;
+    color: whitesmoke;
+    width: 50%;
+    border-radius: 20px;
 }
 
 
