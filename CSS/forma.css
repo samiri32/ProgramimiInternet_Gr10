@@ -1,13 +1,21 @@
 body{
     width: 70%;
     margin:auto;
-    margin:18%;
+    margin-top:10%;
     overflow-y: hidden;
 }
 
 .container{
     display:grid;
     grid-template-columns: 40% 60%;
+    grid-column-gap: 2em;
+    border:1px solid #ccc;
+    padding:30px;
+    border-radius: 15px;
+}
+
+.title{
+   margin-right:5em;
 }
 
 

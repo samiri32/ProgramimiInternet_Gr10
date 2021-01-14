@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forma</title>
     <link rel="stylesheet" href="../css/forma.css">
-    <script src="../js/forma.js"></script>
-
+    
 
 </head>
 
 <body>
 
 
+    <h1>Rezervo terminin!</h1>
     <div class="container">
 
         <div>
@@ -36,11 +36,11 @@
                     <label>ID</label><br>
                 </div>
                 <div class="form-group">
-                    <input type="date" class="btn btn-dark">
+                    <input type="date" id="item4">
                     <label>Data</label><br>
                 </div>
 
-                <input type="submit" class="btn btn-dark" value="Submit">
+                <input type="submit" id="submit" value="Submit">
 
             </form>
 
@@ -61,27 +61,9 @@
                             <th>Anulo</th>
                         </tr>
                     </thead>
+
                     <tbody>
-                        <!-- and so on... -->
-                        <tr>
-                            <td>Dom</td>
-                            <td>6000</td>
-                            <td>190714100170</td>
-                            <td>sadasdasd</td>
-                        </tr>
-                        <tr class="active-row">
-                            <td>Melissa</td>
-                            <td>5150</td>
-                            <td>190714100170</td>
-                            <td>sadasdasd</td>
-                        </tr>
-                        <tr>
-                            <td>Dom</td>
-                            <td>6000</td>
-                            <td>190714100170</td>
-                            <td>sadasdasd</td>
-                        </tr>
-             
+                        
                     </tbody>
                 </table>
 
@@ -92,16 +74,43 @@
     </div>
 
     <script>
-        
-            const form=document.getElementById("addForm");
 
-            function onAddWebsite(e) {
-                e.preventDefault();
-                alert('ww')
-            }
+            const form=document.getElementById("addForm");
+            const tbody=document.querySelector('tbody');
+            const table = document.querySelector('table')
 
             form.addEventListener('submit',onAddWebsite );
 
+            function onAddWebsite(e) {
+                e.preventDefault();
+
+                const emri =document.getElementById("item1").value;
+                const mbiemri =document.getElementById("item2").value;
+                const ID =document.getElementById("item3").value;
+                const data =document.getElementById("item4").value;
+ 
+                tbody.innerHTML += `
+                <tr>
+                    <td>${emri}</td>
+                    <td>${mbiemri}</td>
+                    <td>${ID}</td>
+                    <td>${data}</td>
+                    <td><button class ="deleteBtn">Fshij</button></td>
+                </tr>
+                `;
+
+                function onDeleteRow(e) {
+                    if(!e.target.classList.contains("deleteBtn")){
+                        return;
+                    }
+
+                    const button =e.target;
+                        button.closest('tr').remove();
+                }
+                
+                table.addEventListener('click', onDeleteRow)
+
+            }
 
 
     </script>
