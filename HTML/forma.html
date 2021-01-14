@@ -129,26 +129,36 @@
         const errorElement = document.querySelectorAll(".error")
 
 
+        const form = document.getElementById("addForm");
+        const tbody = document.querySelector('tbody');
+        const table = document.querySelector('table')
+        const emri = document.getElementById("item1");
+        const mbiemri = document.getElementById("item2");
+        const ID = document.getElementById("item3");
+        const data = document.getElementById("item4");
+        const errorElement = document.querySelectorAll(".error")
+
+
         function validate(e) {
 
-            if (emri.value === '' || emri.value === null) {
+            if (emri.value === ' ' || emri.value === null) {
                 errorElement[0].innerText = 'Emri duhet te mbushet!';
                 return false;
             }
 
-            if (mbiemri.value === '' || mbiemri.value === null) {
+            if (mbiemri.value === ' ' || mbiemri.value === null) {
                 errorElement[1].innerText = 'Mbiemri duhet te mbushet!';
                 return false;
 
             }
 
-            if (ID.value === '' || ID.value === null) {
+            if (ID.value === ' ' || ID.value === null) {
                 errorElement[2].innerText = 'ID duhet te mbushet!';
                 return false;
 
             }
 
-            if (data.value === '' || data.value === null) {
+            if (data.value === ' ' || data.value === null) {
                 errorElement[3].innerText = 'Data duhet te mbushet!';
                 return false;
 
