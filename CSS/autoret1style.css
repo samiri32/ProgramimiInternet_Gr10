@@ -580,7 +580,7 @@ h3 {
 
 
 /* Qitu ja nis pjesa e email input me autocomplete */
-
+/*
 .autocomplete {
     position: relative;
     display: inline-block;
@@ -638,4 +638,4 @@ input[type=checkbox] {
 
 .buton:hover {
     color: #0075ff;
-}
+} */

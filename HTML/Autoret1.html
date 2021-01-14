@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
+    
     <script>
         window.onscroll = function() {
             growShrinkLogo()
@@ -29,9 +30,9 @@
             }
         }
     </script>
+    
+
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
-
     <script type="text/javascript">
         $(document).ready(function() {
             $('#search').click(function() {
@@ -40,8 +41,7 @@
             })
         })
     </script>
-
-    </script>
+   
     <style>
         * {
             box-sizing: border-box;
@@ -110,7 +110,7 @@
         .topnav a:hover {
             color: #0075ff;
         }
-        
+
         .djathtasposht a.menu-item {
             transform: scale(1);
             display: inline-block;
@@ -134,11 +134,13 @@
         }
         
         .search-form {
-            position: absolute;
+            display: inline-block;
+            position: sticky;
+            margin-bottom:0.3em;
             top: 8em;
             right: 28em;
             transform: translateX(-50%);
-            width: 2em;
+            width: 0em;
             height: 1em;
             transition: 0.6s;
             opacity: 0;
@@ -146,25 +148,27 @@
         }
         
         .search-form.active {
-            position: absolute;
+            position: sticky;
             top: 8em;
             right: 28em;
-            width: 2em;
+            width: 0em;
             height: 1em;
             opacity: 1;
             transition-delay: 0.4s;
             visibility: visible;
             background: transparent;
         }
-        
+
         .search-form input {
-            width: 20em;
+            margin-left: 1.5em;
+            margin-top: -0.2em;
+            width: 15em;
             height: 1.5em;
             color: white;
             border: none;
             background: transparent;
             outline: none;
-            font-size: 1em;
+            font-size: 1.1em;
         }
     </style>
 </head>
@@ -192,17 +196,19 @@
         </div>
 
         <div class="djathtas">
-            <div class="djathtasnalt"></div>
+            <div class="djathtasnalt">homepage</div>
             <div class="djathtasposht">
-                <a href="../HTML/galeria.html" class="menu-item" id="one">Galeria</a>
-                <a href="../HTML/Kontakti.html" class="menu-item" id="two">Kontakti</a>
-                <a href="../kycu.html" class="menu-item" id="three">Kyçu</a>
+                <div class="search-form">
+                    <form>
+                        <input type="text" name="" placeholder="Kërkoni">
+                    </form>
+                </div>
+                <a href="./HTML/galeria.html" class="menu-item" id="one">Galeria</a>
+                <a href="./HTML/Kontakti.html" class="menu-item" id="two">Kontakti</a>
+                <a href="./HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
                 <a href="#" id="search"><i class="fa fa-search"></i></a>
-            </div>
-            <div class="search-form">
-                <form>
-                    <input type="text" name="" placeholder="Kërkoni">
-                </form>
+                
+               
             </div>
         </div>
     </div>
