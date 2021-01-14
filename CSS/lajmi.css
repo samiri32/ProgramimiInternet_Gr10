@@ -548,7 +548,7 @@
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 3em;
+    padding-top: 1.5em;
     left: 0;
     top: 0;
     width: 100%;
@@ -565,19 +565,20 @@
     margin:auto !important;
     display: block !important;
     min-height: 50%;
-    min-width: 46%;
-    max-width: 46%;
+    min-width: 50%;
+    max-width: 50%;
   }
 
   
   .tekstimodal{
-    min-width: 46%;
-    max-width: 46%;
+    min-width: 50%;
+    max-width: 50%;
     margin:auto !important;
     margin-top: 1em !important;
     border-radius:15px;
     display:block !important ;
     background-color: white;
+    background: radial-gradient(white, rgba(255, 255, 255, 0.877) 100%);
     color:black;
     text-align:center;
     line-height:1.45em !important;
