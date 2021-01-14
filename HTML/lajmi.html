@@ -41,9 +41,7 @@
         
             </script>
 
-
-
-    </script>
+    
     <style>
         * {
             box-sizing: border-box;
@@ -135,6 +133,12 @@
             transition-delay: 0s;
         }
         
+        .konga{
+        left:41vw;
+        position:absolute;
+        }
+
+
         .search-form {
             position: absolute;
             top: 8em;
@@ -170,6 +174,56 @@
         }
         
     </style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+var currentZoom = 1.0;
+
+    $(document).ready(function () {
+         $('#ZoomIn').click(
+             function () {
+                 var div = $(".konga");  
+                 div.animate({left: '33vw'}, "slow");
+             })
+        
+        $('#ZoomIn').click(
+        function () {
+            $('.konga').animate({ 'zoom': currentZoom += .2 }, 'slow');
+        })
+        
+    });
+  
+
+</script>
+
+<script>
+
+    var currentZoom = 1.0;
+        
+        $(document).ready(function () {
+
+            
+            $('#ZoomReset').click(
+            function () {
+                currentZoom = 1.0;
+                $('.konga').animate({ 'zoom': 1 }, 'slow');
+            })
+
+            $('#ZoomReset').click(
+            function () {
+
+                $(".konga").css('left', function(){ return $(this).offset().left; })
+                .animate({"left":"41vw"}, "slow"); 
+            })
+            
+            
+        });
+      
+    
+    </script>
+
+
 </head>
 
 
@@ -179,6 +233,7 @@
     <title>Lajmet</title>
     <div class="header"></div>
 
+    
     <div class="topnav">
         <div class="majtas">
           <div class="majtasnalt">homepage</div>
@@ -216,18 +271,33 @@
 
 
 
-    <div class="title">
+    <div class="title" >
 
         <h1>Lajmet Aktuale</h1>
-
     </div>
     <hr>
     <br>
     <br>
 
+    <div class="prk">
+        <div style="display:inline; margin-left:18vw;">
+    <button class="boxat" id="ZoomIn">Zmadho Audion</button>
+        </div>
+        <div style="display:inline; float:right; margin-right:18vw;">
+    <button class="boxat1" id="ZoomReset">Reseto Audion</button>
+        </div>
+    </div>
+        <div class="konga">
+          <audio id="audio" controls>
+            <source src="../img/Muharrem Qena Mallengjimi.mp3" type="audio/mpeg">
+          Shnosh :/
+          </audio>
+        </div>
+
+    </body>
     <body onload="showSlides(1)">
         <div class="gridat">
-            <h2 style="color: black; text-align:center;">Te Rejat</h2>
+            <h2 style="color: black; text-align:center; margin-top:3em;">Te Rejat</h2>
 
             <div class="usage">
                 <div class="lajmet">
@@ -432,18 +502,13 @@
                             <div class="modal">
                                 <span class="close">×</span>
                                 <img class="modal-content" src="../img/Aktiviteti.png">
-                                <div class="tekstimodal">
-                                <p >Në kuadër të festivalit PrishtinaLexon, banorët e kryeqytetit patën mundësinë të regjistrohen pa pagesë në të gjitha degët e Bibliotekës "Hivzi Sulejmani", kjo një gjë e cila u mirëpritë nga të gjithë qytetarët pa dallim, ndërsa në sheshin "Zahir Pjaziti",
-                                    nga të gjithë lexuesit u shpallën lexuesit e dalluar të Komunës së Prishtinës, duke përfshirë të gjitha grupmoshat, si në vijim:</p>
+                                <p class="tekstimodal"> Në kuadër të festivalit PrishtinaLexon, banorët e kryeqytetit patën mundësinë të regjistrohen pa pagesë në të gjitha degët e Bibliotekës "Hivzi Sulejmani", kjo një gjë e cila u mirëpritë nga të gjithë qytetarët pa dallim, ndërsa në sheshin "Zahir Pjaziti",
+                                    nga të gjithë lexuesit u shpallën lexuesit e dalluar të Komunës së Prishtinës, duke përfshirë të gjitha grupmoshat, si në vijim:<br> Era Dragusha, nxënëse;<br> Flamur Foniqi, student;<br> Hazir Mehmeti, pensionist;<br> 
+                                    Tre lexuesit e vitit morën mirënjohje dhe libra, dhuratë nga libraria "Dukagjiin", Biblioteka "Hivzi Sulejmani" dhe Aleanca franceze. Kryetari i qytetit shfrytëzoi rastin të inkurajojë të gjithë të rinjët të lexojnë sa më shumë duke pasur parasysh se niveli i të lexuarit në vendin
+                                     tonë nuk është i kënaqshëm.
+                                     
+                                </p>
     
-                                    <ol>
-                                        <li>Era Dragusha, nxënëse;</li>
-                                        <li>Flamur Foniqi, student;</li>
-                                        <li>Hazir Mehmeti, pensionist;</li>
-                                    </ol>
-                                <p >
-                                    Tre lexuesit e vitit morën mirënjohje dhe libra, dhuratë nga libraria "Dukagjiin", Biblioteka "Hivzi Sulejmani" dhe Aleanca franceze.
-                                </p></div>
                             </div>
                             <span class="titulli1"> Aktiviteti Prishtina lexon</span>
 
