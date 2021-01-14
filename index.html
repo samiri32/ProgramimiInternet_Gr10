@@ -133,7 +133,9 @@
         }
         
         .search-form {
-            position: absolute;
+            display: inline-block;
+            position: sticky;
+            margin-bottom:0.3em;
             top: 8em;
             right: 28em;
             transform: translateX(-50%);
@@ -145,7 +147,7 @@
         }
         
         .search-form.active {
-            position: absolute;
+            position: sticky;
             top: 8em;
             right: 28em;
             width: 2em;
@@ -155,15 +157,17 @@
             visibility: visible;
             background: transparent;
         }
-        
+
         .search-form input {
-            width: 20em;
+            margin-left: 4em;
+            margin-top: -0.2em;
+            width: 15em;
             height: 1.5em;
             color: white;
             border: none;
             background: transparent;
             outline: none;
-            font-size: 1em;
+            font-size: 1.1em;
         }
     </style>
 </head>
@@ -193,17 +197,19 @@
         </div>
 
         <div class="djathtas">
-            <div class="djathtasnalt"></div>
+            <div class="djathtasnalt">homepage</div>
             <div class="djathtasposht">
+                <div class="search-form">
+                    <form>
+                        <input type="text" name="" placeholder="Kërkoni">
+                    </form>
+                </div>
                 <a href="./HTML/galeria.html" class="menu-item" id="one">Galeria</a>
                 <a href="./HTML/Kontakti.html" class="menu-item" id="two">Kontakti</a>
                 <a href="./HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
                 <a href="#" id="search"><i class="fa fa-search"></i></a>
-            </div>
-            <div class="search-form">
-                <form>
-                    <input type="text" name="" placeholder="Kërkoni">
-                </form>
+                
+               
             </div>
         </div>
     </div>
