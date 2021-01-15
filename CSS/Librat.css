@@ -5,48 +5,38 @@
 * {
     scroll-behavior: smooth;
 }
-
-main {
-    width: 85%;
-    margin: 0 auto;
-}
-
-.clr {
-    clear: both;
-}
-
-.block {
-    position: relative;
-    float: left;
-    width: 22%;
-    padding: 10px;
-    margin-top: 3em;
-    margin-left: 1em;
-    margin-right: 1em;
-    box-sizing: border-box;
-    border-top: solid 5px black;
-    border-bottom: solid 5px black;
-}
-
-.beni {
-    color: #0075ff;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+  
+  .librat {
+    padding: 0em 6em 0em 6em;
+    display: -webkit-flex;
+    display: flex;
+    column-gap: 2.5em;
+  }
+  
+  .librattitulli {
+    color: black;
+    padding: 0.75em;
+text-align: center;
+    font-family: "Calibre", Helvetica, Arial, sans-serif;
+    font-size: 1em;
     font-weight: bold;
-    padding-top: 1em;
-    text-decoration: none;
-}
-
-.block img {
-    width: 15em;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-.block h3 {
-    text-align: center;
-}
+    margin-bottom: 3em;
+  }
+  
+  .liber img {
+    border-top: 0.4em solid black;
+    padding-top: 0.75em;
+    width: 90%;
+    margin-left: 1em;
+    max-height: 25em;
+  }
+  
+  .liber {
+    background-color: white;
+    -webkit-flex: 0.8;
+    -ms-flex: 0.8;
+    flex: 0.8;
+  }
 
 .slider1 {
     width: 100%;
