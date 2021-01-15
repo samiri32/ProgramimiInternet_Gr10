@@ -40,7 +40,44 @@
             })
         })
     </script>
+    <script>
+        $(document).ready(function() {
+    $("#clickk").click(1000,function() {
+    confirm.render("Ju lutem kontrolloni me kujdes të dhënat.")
+});
+});
 
+
+function Konfirmimi(){
+	this.render = function(dialog){
+		var winW = window.innerWidth;
+	    var winH = window.innerHeight;
+		var dialogoverlay = document.getElementById('dialogoverlay');
+	    var dialogbox = document.getElementById('dialogbox');
+		dialogoverlay.style.display = "block";
+	    dialogoverlay.style.height = winH+"px";
+		dialogbox.style.left = (winW/2) - (550 * .5)+"px";
+	    dialogbox.style.top = "100px";
+        dialogbox.style.display = "block";
+        
+		document.getElementById('dialogboxhead').innerHTML='A jeni të sigurt që keni përfunduar?';
+	    document.getElementById('dialogboxbody').innerHTML = dialog;
+        document.getElementById('dialogboxfoot').innerHTML = 
+        '<button onclick="confirm.yes()" class="buton" style="height:2em; width:3em; ">Yes</button> <button onclick="confirm.no()" class="buton" style="height:2em; width:3em; ">No</button>';
+    }
+    this.no = function(){
+		document.getElementById('dialogbox').style.display = "none";
+		document.getElementById('dialogoverlay').style.display = "none";
+	}
+	this.yes = function(){
+		document.getElementById('dialogbox').style.display = "none";
+        document.getElementById('dialogoverlay').style.display = "none";
+        setTimeout(() => {  window.location.href=alert("Lista u dërgua me sukses!"); }, 500);
+    }
+}
+
+var confirm= new Konfirmimi();
+    </script>
 
     <style>
         * {
@@ -170,6 +207,27 @@
             outline: none;
             font-size: 1.1em;
         }
+        #dialogoverlay{
+	display: none;
+	opacity: .8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: rgba(7, 7, 7, 0.925);
+	width: 100%;
+	z-index: 10;
+}
+#dialogbox{
+    margin-top: 2.6em;
+	display: none;
+    position: fixed;
+	width:550px;
+	z-index: 10;
+}
+#dialogbox > div{ background:#FFF; margin:8px; }
+#dialogbox > div > #dialogboxhead{  background-color: rgb(0, 0, 0); font-size:19px; padding:10px 20px; color: #fafbfd; }
+#dialogbox > div > #dialogboxbody{  background-color: #eeeeee; padding:40px; color: #0c0c0c;  border-top: 0.5em solid #0077ff2c;}
+#dialogbox > div > #dialogboxfoot{  background-color: white; padding:10px; text-align:right; }
     </style>
 </head>
 
@@ -246,7 +304,7 @@
                     <input type="date" id="item4" style="color:grey; background-color: white; height: 2.5em;border:0.05px solid grey;">
                 </div>
 
-                <input type="submit" id="submit" value="Shto" class="buton" style="height:2.5em; width: 5em; font-size: 1em">
+                <input type="submit" id="submit" value="Shto" class="buton" style="height:3em; width: 8em; font-size: 0.8em">
 
             </form>
 
@@ -313,6 +371,7 @@
 
                     </tbody>
                 </table>
+                <button class="buton" style=" height:3em; width: 8em; font-size: 0.8em" id="clickk">Dërgo</button>
 
             </div>
 
@@ -391,6 +450,14 @@
 
 
     </script>
+     <div id="dialogoverlay"></div>
+     <div id="dialogbox">
+       <div>
+         <div id="dialogboxhead"></div>
+         <div id="dialogboxbody"></div>
+         <div id="dialogboxfoot"></div>
+       </div>
+     </div>
   <div class="row4">
     <div class="shortcuts">
         <div class="shortcutnalt">
@@ -590,7 +657,6 @@ if('serviceWorker' in navigator) {
 </script>
 
 <script src="../js/skripta.js"></script>
-
 
 
 </body>

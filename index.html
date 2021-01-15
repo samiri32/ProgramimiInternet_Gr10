@@ -169,6 +169,28 @@
             outline: none;
             font-size: 1.1em;
         }
+        #dialogoverlay{
+	display: none;
+	opacity: .8;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: rgba(7, 7, 7, 0.925);
+	width: 100%;
+	z-index: 10;
+}
+#dialogbox{
+    margin-top: 2.6em;
+	display: none;
+    position: fixed;
+	width:550px;
+	z-index: 10;
+}
+#dialogbox > div{ background:#FFF; margin:8px; }
+#dialogbox > div > #dialogboxhead{  background-color: rgb(0, 0, 0); font-size:19px; padding:10px 20px; color: #fafbfd; }
+#dialogbox > div > #dialogboxbody{  background-color: #eeeeee; padding:40px; color: #0c0c0c;  border-top: 0.5em solid #0077ff2c;}
+#dialogbox > div > #dialogboxfoot{  background-color: white; padding:10px; text-align:right; }
+
     </style>
 </head>
 
@@ -292,7 +314,16 @@
                 <div class="slideshow-container">
 
                     <div class="Sllajdet">
-                       <a href="HTML/forma.html"><img src="./img/rezervo.png" style="width:100%"></a> 
+                       <a href="#"><img src="./img/rezervo.png" style="width:100%" id="kliko"></a> 
+                    </div>
+
+                    <div id="dialogoverlay"></div>
+                    <div id="dialogbox">
+                      <div>
+                        <div id="dialogboxhead"></div>
+                        <div id="dialogboxbody"></div>
+                        <div id="dialogboxfoot"></div>
+                      </div>
                     </div>
 
                     <div class="Sllajdet">
@@ -656,8 +687,7 @@
         </script>
    
     <script src="./js/skripta.js"></script>
-
-
+    <script src="./js/konfirmimi.js"></script>
 
 </body>
 
