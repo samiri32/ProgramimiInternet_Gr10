@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <script>
-        window.onscroll = function() {
+        window.onscroll = function () {
             growShrinkLogo()
         };
 
@@ -30,10 +31,11 @@
     </script>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('#search').click(function() {
+        $(document).ready(function () {
+            $('#search').click(function () {
                 $('.menu-item').toggleClass('hide-item')
                 $('.search-form').toggleClass('active')
             })
@@ -45,47 +47,47 @@
         * {
             box-sizing: border-box;
         }
-        
+
         body {
             margin: 0;
         }
-        
+
         .sinanibabo {
             display: flex;
             justify-content: center;
         }
-        
+
         .logoja {
             display: inline-grid;
             justify-content: center;
         }
-        
+
         .titulli {
             color: white;
             font-size: 1.45em;
         }
-        
+
         .titulli:hover {
             color: #0075ff;
         }
-        
+
         .header {
             background-color: black;
             height: 1.25em;
             color: white;
             text-decoration: none;
         }
-        
+
         .djathtas {
             display: grid;
             align-content: space-between;
         }
-        
+
         .majtas {
             align-content: space-between;
             display: grid;
         }
-        
+
         .topnav {
             display: flex;
             justify-content: center;
@@ -98,40 +100,40 @@
             background-color: black;
             border: 2px solid;
         }
-        
+
         .topnav a {
             font-size: 1.45em;
             color: #f2f2f2;
             padding: 0px 30px;
             text-decoration: none;
         }
-        
+
         .topnav a:hover {
             color: #0075ff;
         }
-        
+
         .djathtasposht a.menu-item {
             transform: scale(1);
             display: inline-block;
             transition: 0.5s;
         }
-        
+
         .djathtasposht a.menu-item.hide-item {
             transform: scale(0);
         }
-        
+
         #one {
             transition-delay: 0.2s;
         }
-        
+
         #two {
             transition-delay: 0.1s;
         }
-        
+
         #three {
             transition-delay: 0s;
         }
-        
+
         .search-form {
             display: inline-block;
             position: sticky;
@@ -145,7 +147,7 @@
             opacity: 0;
             visibility: hidden;
         }
-        
+
         .search-form.active {
             position: sticky;
             top: 8em;
@@ -157,7 +159,7 @@
             visibility: visible;
             background: transparent;
         }
-        
+
         .search-form input {
             margin-left: 1.5em;
             margin-top: -0.2em;
@@ -169,7 +171,7 @@
             outline: none;
             font-size: 1.1em;
         }
-        
+
         #dialogoverlay {
             display: none;
             opacity: .8;
@@ -180,7 +182,7 @@
             width: 100%;
             z-index: 10;
         }
-        
+
         #dialogbox {
             margin-top: 2.6em;
             display: none;
@@ -188,26 +190,26 @@
             width: 550px;
             z-index: 10;
         }
-        
+
         #dialogbox>div {
             background: #FFF;
             margin: 8px;
         }
-        
+
         #dialogbox>div>#dialogboxhead {
             background-color: rgb(0, 0, 0);
             font-size: 19px;
             padding: 10px 20px;
             color: #fafbfd;
         }
-        
+
         #dialogbox>div>#dialogboxbody {
             background-color: #eeeeee;
             padding: 40px;
             color: #0c0c0c;
             border-top: 0.5em solid #0077ff2c;
         }
-        
+
         #dialogbox>div>#dialogboxfoot {
             background-color: white;
             padding: 10px;
@@ -236,8 +238,9 @@
             <div class="sinanibabo">
                 <img src="./img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
             </div>
-            <a href="./index.html" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka Sinan
-          Dobreva</span></a>
+            <a href="./index.html" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka
+                    Sinan
+                    Dobreva</span></a>
         </div>
 
         <div class="djathtas">
@@ -265,19 +268,22 @@
         <div class="row">
             <div class="column side" style="background-color: white;">
                 <div class="lajmi">
-                    <a href="#"> <img src="./img/ismail-kadare-j-foley-opale-w-1-990x556.jpg" alt="Ismail Kadare duke u dukur bukur!!!">
+                    <a href="./HTML/lajmi.html#kadare"> <img src="./img/ismail-kadare-j-foley-opale-w-1-990x556.jpg"
+                            alt="Ismail Kadare duke u dukur bukur!!!">
                         <span id='lajmekuq'>LAJME</span><br>
-                        <span>Ismail Kadare: Fituesi i sivjetshëm i &ccedilmimit Neustadt Prize p&eumlr Literatur&euml</span></a>
+                        <span>Ismail Kadare: Fituesi i sivjetshëm i &ccedilmimit Neustadt Prize p&eumlr
+                            Literatur&euml</span></a>
                 </div><br><br>
 
                 <div class="lajmi">
-                    <a href="#"> <img src="./img/ekspozita.jpeg" alt="Ekspozitaaa!!!">
+                    <a href="./HTML/lajmi.html#ekspozita"> <img src="./img/ekspozita.jpeg" alt="Ekspozitaaa!!!">
                         <span id='lajmekuq'>LAJME</span><br>
-                        <span>Ekspozita e librit e mbajtur për nder të 70 vjetorit të lidhjes Shqiptaro-kineze</span></a>
+                        <span>Ekspozita e librit e mbajtur për nder të 70 vjetorit të lidhjes
+                            Shqiptaro-kineze</span></a>
                 </div><br><br>
 
                 <div class="lajmi">
-                    <a href="#"> <img src="./img/noli.jpg" alt="Fan STILIAN Noli!!!">
+                    <a href="./HTML/lajmi.html#nolinjo"> <img src="./img/noli.jpg" alt="Fan STILIAN Noli!!!">
                         <span id='lajmekuq'>LAJME</span><br>
                         <span>Libraria e Fan Nolit në Boston, rikthim në nacionalizmin shqiptar</span></a>
                 </div>
@@ -285,22 +291,26 @@
             </div>
             <div class="column middle" style="background-color: white;">
                 <div class="lajmimes">
-                    <a href="#"> <img src="./img/HIVZIABABOOO.jpg" alt="pls qelu ma shpejt kena me msu pls plsplspslsp!!!">
+                    <a href="./HTML/lajmi.html#hivzia"> <img src="./img/HIVZIABABOOO.jpg"
+                            alt="pls qelu ma shpejt kena me msu pls plsplspslsp!!!">
                         <span id='lajmekuq'>LAJME</span><br>
-                        <span>Kanë filluar punimet për renovimin e ndërtesës së bibliotekës së qytetit, “Hivzi Sulejmani”</span><br>
-                        <span id='elaborimi'>Kanë filluar punimet e renovimit të ndërtesës së bilbliotekës “Hivzi Sulejmani” me
-              qëllim të përmirësimit
-              të infrastruktures, hapësirës brenda bibliotekës dhe kushteve për shërbime më cilësore për
-              lexuesit.</span>
+                        <span>Kanë filluar punimet për renovimin e ndërtesës së bibliotekës së qytetit, “Hivzi
+                            Sulejmani”</span><br>
+                        <span id='elaborimi'>Kanë filluar punimet e renovimit të ndërtesës së bilbliotekës “Hivzi
+                            Sulejmani” me
+                            qëllim të përmirësimit
+                            të infrastruktures, hapësirës brenda bibliotekës dhe kushteve për shërbime më cilësore për
+                            lexuesit.</span>
                     </a>
                 </div><br><br>
 
                 <div class="lajmimes">
-                    <a href="./HTML/lajmi.html"> <img src="./img/mini-biblioteka.jpg" alt="Biblioteka!!!">
+                    <a href="./HTML/lajmi.html#minibibliotekat"> <img src="./img/mini-biblioteka.jpg"
+                            alt="Biblioteka!!!">
                         <span id='lajmekuq'>LAJME</span><br>
                         <span>Lagjet e Prishtinës bëhen me mini-biblioteka</span><br>
                         <span id='elaborimi'>OJQ “Etea” dhe Kuvendi i të Rinjve të Prishtinës kanë bërë hapjen e
-              mini-bibliotekës në lagjet e Prishtinës. </span></a>
+                            mini-bibliotekës në lagjet e Prishtinës. </span></a>
                 </div><br><br>
 
 
@@ -309,20 +319,24 @@
 
             <div class="column side" style="background-color: white;">
                 <div class="lajmi">
-                    <a href="lajmi.html"> <img src="./img/Dukagjinn-640x480.jpg" alt="Ismail Kadare duke u dukur bukur!!!">
+                    <a href="./HTML/lajmi.html#leximi"> <img src="./img/Dukagjinn-640x480.jpg"
+                            alt="Ismail Kadare duke u dukur bukur!!!">
                         <span id='lajmekuq'>LAJME</span><br>
-                        <span>Leximi gjatë pandemisë, bibliotekat pa vizitorë dhe lulëzim i shitjes së librave</span></a>
+                        <span>Leximi gjatë pandemisë, bibliotekat pa vizitorë dhe lulëzim i shitjes së
+                            librave</span></a>
                 </div><br><br>
 
                 <div class="lajmi">
-                    <a href="lajmi.html"> <img src="./img/dhurohenlibra.png
+                    <a href="./HTML/lajmi.html#sos"> <img src="./img/dhurohenlibra.png
             " alt="Ekspozitaaa!!!">
                         <span id='lajmekuq'>LAJME</span><br>
                         <span>Dhurohen libra në SOS Fshatin e fëmijëve</span></a>
                 </div><br><br>
 
                 <div class="lajmi">
-                    <a href="./HTML/lajmi.html"> <img src="https://kallxo.com/wp-content/uploads/2020/12/Ekspozita-per-Atm%C3%A9-e-f%C3%A9--640x480.jpg" alt="Fan STILIAN Noli!!!">
+                    <a href="./HTML/lajmi.html#fishta"> <img
+                            src="https://kallxo.com/wp-content/uploads/2020/12/Ekspozita-per-Atm%C3%A9-e-f%C3%A9--640x480.jpg"
+                            alt="Fan STILIAN Noli!!!">
                         <span id='lajmekuq'>LAJME</span><br>
                         <span>Dorëshkrime të rralla të Fishtës ekspozohen në Bibliotekën Kombëtare</span></a>
                 </div>
@@ -469,7 +483,8 @@
             </div>
             <div class="kolona2" style="background-color: white;">
                 <div class="autori">
-                    <a href="./HTML/meshume.html"> <img src="./img/FK.jpg" alt="pls qelu ma shpejt kena me msu pls plsplspslsp!!!"><br>
+                    <a href="./HTML/meshume.html#FK"> <img src="./img/FK.jpg"
+                            alt="pls qelu ma shpejt kena me msu pls plsplspslsp!!!"><br>
                         <span id='lajmekuq'>Më shumë</span><br>
                         <span>Franz Kafka</span><br>
                     </a>
@@ -493,10 +508,11 @@
                         </div><br>
                         <div class="emrietj">Dante Alighieri<br>
                             <span id='lajmekuq'>Më shumë</span><br>
-                            <span id="perdanten"><strong>'Dantja i pashmangshëm'</strong> ose <br> <strong>'Histori e shkurtër e
-                  Shqipërisë me
-                  Dante
-                  Aligerin'</strong> <br> sprovë me Autor Ismail Kadare.</span>
+                            <span id="perdanten"><strong>'Dantja i pashmangshëm'</strong> ose <br> <strong>'Histori e
+                                    shkurtër e
+                                    Shqipërisë me
+                                    Dante
+                                    Aligerin'</strong> <br> sprovë me Autor Ismail Kadare.</span>
                         </div>
                         </a>
                     </div>
@@ -528,7 +544,8 @@
             <div class="row5pjesepjese">
                 <div class="logoja">
                     <div class="sinanibabo">
-                        <img src="./img/sinani3.png" alt="pldh" height="130em" width="175em" id='sinani' style="background-color: black;">
+                        <img src="./img/sinani3.png" alt="pldh" height="130em" width="175em" id='sinani'
+                            style="background-color: black;">
                     </div>
                     <span id="sinaniposht">Biblioteka Sinan Dobreva</span>
                 </div>
@@ -536,7 +553,9 @@
                     <div class="kolona1p">
                         <span id="lajmekuq5" style="font-size: 1em;">Misioni</span>
                         <br>
-                        <p id="kolona1pp">BSD është institucion kulturor, edukues e informues që grumbullon dhe ruan koleksionet e veta nga fushat e ndryshme të krijimtarisë intelektuale me qëllim që t’ i bëjë të njohura shfrytëzuesve për t’i studiuar dhe për t’ i lënë
+                        <p id="kolona1pp">BSD është institucion kulturor, edukues e informues që grumbullon dhe ruan
+                            koleksionet e veta nga fushat e ndryshme të krijimtarisë intelektuale me qëllim që t’ i bëjë
+                            të njohura shfrytëzuesve për t’i studiuar dhe për t’ i lënë
                             trashëgim gjeneratave të ardhshme.</p>
                         <a href="./HTML/Librat.html">
                             <p id="katalogu">Shfleto katalogun</p>
@@ -546,7 +565,9 @@
                     <div class="kolona1p">
                         <span id="lajmekuq5" style="font-size: 1em;">Ofertat</span>
                         <br>
-                        <p id="kolona1pp">Biblioteka BSD ofron qasje në materialin bibliotekar për të gjithë përdoruesit e qytetit të Prishtinës me rrethinë, pavarësisht nga raca, kombësia, gjinia, mosha, besimi fetar, gjuha, paaftësitë fizike dhe informon e ndihmon ata
+                        <p id="kolona1pp">Biblioteka BSD ofron qasje në materialin bibliotekar për të gjithë përdoruesit
+                            e qytetit të Prishtinës me rrethinë, pavarësisht nga raca, kombësia, gjinia, mosha, besimi
+                            fetar, gjuha, paaftësitë fizike dhe informon e ndihmon ata
                             në përdorimin e gjetjen e tyre.</p>
                         <a href="./HTML/regjistrohu.html">
                             <p id="katalogu">Regjistrohu</p>
@@ -556,7 +577,9 @@
                     <div class="kolona1p">
                         <span id="lajmekuq5" style="font-size: 1em;">Bashkëpunëtorët</span>
                         <br>
-                        <p id="kolona1pp">Biblioteka "Sinan Dobreva" bashkëpunon me bibliotekat në vend dhe jashtë vendit; Bashkëpunon me institucionet kulturore, shtëpitë botuese, shkollat dhe me komunitetin me qëllim të nxitjes së interesimit për librin dhe të mësuarit
+                        <p id="kolona1pp">Biblioteka "Sinan Dobreva" bashkëpunon me bibliotekat në vend dhe jashtë
+                            vendit; Bashkëpunon me institucionet kulturore, shtëpitë botuese, shkollat dhe me
+                            komunitetin me qëllim të nxitjes së interesimit për librin dhe të mësuarit
                             gjatë gjith jetës. Shfletoni galerinë për më shumë.
                         </p>
                         <a href="./HTML/galeria.html">
@@ -576,7 +599,8 @@
                     <!-- Qitu ni form per Anetaresim (mail subscription)-->
                     <form autocomplete="on" action="/action_page.php">
                         <div class="autocomplete" style="width: 25em;">
-                            <input id="myInput" type="text" name="myEmail" placeholder="E-mail" style="background-color:white;">
+                            <input id="myInput" type="text" name="myEmail" placeholder="E-mail"
+                                style="background-color:white;">
                         </div>
                         <button class="buton">Dërgo</button>
                     </form> <input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme <br><br>
@@ -597,12 +621,12 @@
                     <ul>
 
                         <li><a href="./HTML/Librat.html">
-                Libra shqip
-              </a>
+                                Libra shqip
+                            </a>
                         </li>
                         <li><a href="./HTML/Librat.html#teHuaj">
-                Libra të huaj
-              </a></li>
+                                Libra të huaj
+                            </a></li>
                     </ul>
                 </div>
 
@@ -612,11 +636,11 @@
 
 
                         <li><a href="./HTML/meshum.html">
-                Autorë shqiptar
-              </a></li>
+                                Autorë shqiptar
+                            </a></li>
                         <li><a href="./HTML/meshume.html">
-                Autorë të huaj
-              </a></li>
+                                Autorë të huaj
+                            </a></li>
                     </ul>
                 </div>
                 <div class="sbkol2">
@@ -632,12 +656,12 @@
                     <ul>
 
                         <li><a href="./HTML/galeria.html#fotogaleriah3">
-                Fotogaleria
-              </a>
+                                Fotogaleria
+                            </a>
                         </li>
                         <li><a href="./HTML/galeria.html#videogaleriah3">
-                Videogaleria
-              </a>
+                                Videogaleria
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -682,14 +706,15 @@
 
                 <div class="sbkol3">
                     <address style="font-size:0.8em">
-            Dobrevë, 10000<br>
-            Kosovë
-          </address>
+                        Dobrevë, 10000<br>
+                        Kosovë
+                    </address>
                 </div>
 
                 <div class="sbkol33">
-                    <span style="font-size:0.85em;">©2020-2021 <abbr title="Biblioteka Sinan Dobreva">BSD</abbr> Të gjitha të
-            drejtat e rezervuara.</span>
+                    <span style="font-size:0.85em;">©2020-2021 <abbr title="Biblioteka Sinan Dobreva">BSD</abbr> Të
+                        gjitha të
+                        drejtat e rezervuara.</span>
                 </div>
             </div>
 
@@ -702,7 +727,7 @@
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker
                 .register('sw.js')
-                .then(function() {
+                .then(function () {
                     console.log("Service Worker Registered");
                 });
         }
