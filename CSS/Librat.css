@@ -27,7 +27,7 @@ text-align: center;
   .liber img {
     border-top: 0.4em solid black;
     padding-top: 0.75em;
-    width: 90%;
+    max-width: 90%;
     margin-left: 1em;
     max-height: 25em;
   }
