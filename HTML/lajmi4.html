@@ -170,7 +170,12 @@
             opacity: 0;
             visibility: hidden;
         }
-        
+      
+        .konga {
+            left: 41vw;
+            position: absolute;
+        }
+
         .search-form.active {
             position: sticky;
             top: 8em;
@@ -195,6 +200,59 @@
             font-size: 1.1em;
         }
     </style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    var currentZoom = 1.0;
+
+    $(document).ready(function() {
+        $('#ZoomIn').click(
+            function() {
+                var div = $(".konga");
+                div.animate({
+                    left: '33vw'
+                }, "slow");
+            })
+
+        $('#ZoomIn').click(
+            function() {
+                $('.konga').animate({
+                    'zoom': currentZoom += .2
+                }, 'slow');
+            })
+
+    });
+</script>
+
+<script>
+    var currentZoom = 1.0;
+
+    $(document).ready(function() {
+
+
+        $('#ZoomReset').click(
+            function() {
+                currentZoom = 1.0;
+                $('.konga').animate({
+                    'zoom': 1
+                }, 'slow');
+            })
+
+        $('#ZoomReset').click(
+            function() {
+
+                $(".konga").css('left', function() {
+                        return $(this).offset().left;
+                    })
+                    .animate({
+                        "left": "41vw"
+                    }, "slow");
+            })
+
+
+    });
+</script>
+
 </head>
 
 
