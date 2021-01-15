@@ -1,4 +1,25 @@
 
+function updateBackground() {
+  const hour = new Date().getHours();
+   
+   
+ 
+     if (7 <= hour && hour< 20) {
+      if(document.body){
+        document.body.style.backgroundImage = "url('../img/dita.jpg')"; 
+        document.body.style.backgroundSize="100%";
+      }
+     } else  {
+      if(document.body){
+        document.body.style.backgroundImage = "url('../img/nata.jpg')"; 
+      
+     } 
+    
+    }
+ }
+updateBackground();
+
+
 $(document).ready(function(){
   $("#profaa").click(function(){
     alert("Profa i zgjedhur: " + $("#test").val());
@@ -136,25 +157,7 @@ function anim() {
   } 
   
   
-  function updateBackground() {
-   const hour = new Date().getHours();
-      const backgroundImage=document.body.style.backgroundImage;
   
-      if(document.body){
-  
-      if (7 <= hour && hour< 20) {
-       
-       backgroundImage="url('../img/dita.jpg')";
-        
-      } else  {
-       
-       backgroundImage="url('../img/nata.jpg')";
-       
-      } 
-     
-    }
-  }
-
 
   
 

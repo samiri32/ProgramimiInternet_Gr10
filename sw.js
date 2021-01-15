@@ -6,12 +6,15 @@ async function preCache(){
   return cache.addAll([
     '/css/styles.css',
    '/js/skripta.js',
+   '/js/konfirmimi.js',
     '/index.html',
     '/img/sinani.png',
     '/img/sinani3.png',
     '/img/ismail-kadare-j-foley-opale-w-1-990x556.jpg',
     '/img/ekspozita.jpeg',
     '/img/noli.jpg',
+    '/img/sinani4.png',
+    '/img/xhaxhienver.png',
     '/img/HIVZIABABOOO.jpg',
     '/img/mini-biblioteka.jpg',
     '/img/Dukagjinn-640x480.jpg',
@@ -24,6 +27,7 @@ async function preCache(){
     '/img/MT.jpg',
     '/img/EAP.jpg',
     '/img/FK.jpg',
+    '/img/rezervo.png',
     '/img/EH.jpg',
     '/img/dante.png',
   ])
