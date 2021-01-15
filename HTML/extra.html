@@ -5,13 +5,15 @@
     <title>BIBLIOTEKA SINAN DOBREVA</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/galeria.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
 
     <script>
-        window.onscroll = function() {
+        window.onscroll = function () {
             growShrinkLogo()
         };
 
@@ -27,101 +29,100 @@
             }
         }
     </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
 
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('#search').click(function() {
+        $(document).ready(function () {
+            $('#search').click(function () {
                 $('.menu-item').toggleClass('hide-item')
                 $('.search-form').toggleClass('active')
             })
         })
     </script>
-
-    </script>
     <style>
         * {
             box-sizing: border-box;
         }
-        
+
         body {
             margin: 0;
         }
-        
+
         .sinanibabo {
             display: flex;
             justify-content: center;
         }
-        
+
         .logoja {
             display: inline-grid;
             justify-content: center;
         }
-        
+
         .titulli {
             color: white;
             font-size: 1.45em;
         }
-        
+
         .titulli:hover {
             color: #0075ff;
         }
-        
+
         .header {
             background-color: black;
             height: 1.25em;
             color: white;
             text-decoration: none;
         }
-        
+
         .djathtas {
             display: grid;
             align-content: space-between;
         }
-        
+
         .majtas {
             align-content: space-between;
             display: grid;
         }
-        
+
         .djathtas a,
         .majtas a {
             font-family: "Arnhem", Times, Courier, serif;
         }
-        
+
         .majtasposht a:hover {
             transition: 0.6s ease;
         }
-        
+
         .faqjaa {
             padding: 2em 6em 0em 4em;
             display: -webkit-flex;
         }
-        
+
         a #fotogaleriah3:hover,
         a #videogaleriah3:hover {
             color: #0075ff;
             text-decoration: none;
         }
-        
+
         a #fotogaleriah3:visited,
         a #videogaleriah3:visited {
             color: #0075ff;
             text-decoration: none;
         }
-        
+
         a #fotogaleriah3,
         a #videogaleriah3 {
             color: #0075ff;
             text-decoration: none;
         }
-        
+
         .row5pjesepjese {
             display: grid;
             align-items: center;
         }
-        
+
         .subfooternalt {
             padding: 0em 8em 3em 6em;
             display: -webkit-flex;
@@ -130,17 +131,17 @@
             justify-content: space-around;
             border-bottom: 1px solid #D9D9D9;
         }
-        
+
         .subfooternalt span {
             font-family: "Arnhem", Times, Courier, serif;
             font-size: 1.7em;
         }
-        
+
         #emailinput {
             width: 16.7em;
             height: 2em;
         }
-        
+
         .perberja {
             padding: 4em 6em 0em 6em;
             display: -webkit-flex;
@@ -148,16 +149,16 @@
             column-gap: 2.8em;
             justify-content: space-around;
         }
-        
+
         #emailform {
             display: flex;
             float: left;
         }
-        
+
         .dergo {
             padding-left: 1em;
         }
-        
+
         input[type="submit"] {
             height: 3.6em;
             width: 10em;
@@ -167,15 +168,15 @@
             background-color: #D9D9D9;
             border: none;
         }
-        
+
         input[type="submit"]:hover {
             color: #0075ff;
         }
-        
+
         input[type=email] {
             font-size: 1.5em;
         }
-        
+
         .buton {
             height: 3.6em;
             width: 10em;
@@ -185,21 +186,21 @@
             background-color: #D9D9D9;
             border: none;
         }
-        
+
         #h5 {
             margin-top: 0.5em;
             color: #0075ff;
         }
-        
+
         .buton:hover {
             color: #0075ff;
         }
-        
+
         #emailinput::placeholder {
             font-size: 1em;
             padding-left: 0.5em;
         }
-        
+
         .subfooterposht {
             padding: 4em 3em 2em 3em;
             display: -webkit-flex;
@@ -208,7 +209,7 @@
             column-gap: 1em;
             justify-content: space-between;
         }
-        
+
         .sbkol2 {
             -webkit-flex: 0.2;
             float: left;
@@ -216,12 +217,12 @@
             flex: 0.2;
             text-align: center;
         }
-        
+
         .futeri {
             height: 9em;
             background-color: black;
         }
-        
+
         .sbkol3 {
             color: white;
             -webkit-flex: 2;
@@ -230,7 +231,7 @@
             flex: 2;
             text-align: center;
         }
-        
+
         .sbkol33 {
             color: white;
             -webkit-flex: 5;
@@ -239,29 +240,29 @@
             flex: 5;
             text-align: center;
         }
-        
+
         .sbkol2 ul {
             list-style: none;
         }
-        
+
         #spansbkol2 {
             color: black;
         }
-        
+
         .sbkol2 ul a:link {
             text-decoration: none;
             color: black;
         }
-        
+
         .sbkol2 ul a:visited {
             text-decoration: none;
             color: gray;
         }
-        
+
         .sbkol2 ul a:hover {
             color: #0075ff;
         }
-        
+
         .kolona1p {
             background-color: white;
             -webkit-flex: 1;
@@ -269,18 +270,18 @@
             flex: 1;
             text-align: initial;
         }
-        
+
         #kolona1pp {
             font-family: fontivogel;
             font-size: 1.2em;
         }
-        
+
         .futerimrena {
             padding: 0em 6em 0em 6em;
             display: -webkit-grid;
             display: grid;
         }
-        
+
         #lajmekuq5 {
             color: #0075ff;
             font-family: Helvetica;
@@ -289,7 +290,7 @@
             font-size: 0.35em;
             text-transform: uppercase;
         }
-        
+
         #fotogaleriah3,
         #videogaleriah3 {
             color: #0075ff;
@@ -299,7 +300,7 @@
             font-size: 1.4em;
             text-transform: uppercase;
         }
-        
+
         .futerimamrena {
             padding: 4em 3em 2em 3em;
             display: -webkit-flex;
@@ -308,16 +309,13 @@
             column-gap: 7em;
             align-items: center;
         }
-        
+
         .row4,
         .row5,
-        .row6,
-        .superextra {
+        .row6{
             padding: 4em 6em 0em 6em;
-            display: -webkit-grid;
-            display: grid;
         }
-        
+
         .row4 a {
             padding-top: 2em;
             padding-bottom: 2em;
@@ -331,30 +329,30 @@
             font-size: 2em;
             color: black;
         }
-        
+
         .shortcutposht {
             display: block;
             text-align: center;
         }
-        
+
         .row4 a:hover {
             color: #0075ff;
             text-decoration: none;
         }
-        
+
         .kolona1 {
             background-color: white;
             -webkit-flex: 0.5;
             -ms-flex: 0.5;
             flex: 0.5;
         }
-        
+
         .shortcuts {
             padding: 1.5em 0em;
             border-top: 0.5em solid #000;
             border-bottom: 0.5em solid black;
         }
-        
+
         .bs {
             font-family: "Calibre", Helvetica, Arial, sans-serif;
             font-weight: bold;
@@ -364,48 +362,48 @@
             display: grid;
             text-align: center;
         }
-        
+
         @font-face {
             font-family: fontivogel;
             src: url(klim.co.nz/retail-fonts/calibre);
         }
-        
+
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        
+
         #sinaniposht {
             padding-top: 0.1em;
             font-family: "Arnhem", Times, Courier, serif;
             font-size: 1.4em;
             letter-spacing: 0.1em;
         }
-        
+
         #katalogu {
             color: black;
             text-decoration: none;
         }
-        
+
         .sbkol3 a:link {
             color: white;
         }
-        
+
         .sbkol3 a:visited {
             color: white;
         }
-        
+
         .sbkol3 a:hover {
             color: #0075ff;
         }
-        
+
         #socialmedia {
             font-size: 2em;
         }
-        
+
         #suxhuki {
             font-size: 0.8em;
         }
-        
+
         .topnav {
             display: flex;
             justify-content: center;
@@ -418,46 +416,49 @@
             background-color: black;
             border: 2px solid;
         }
-        
+
         .topnav a {
             font-size: 1.45em;
             color: #f2f2f2;
             padding: 0px 30px;
             text-decoration: none;
         }
-        
+
         .topnav a:hover {
             color: #0075ff;
         }
-        
+
         .djathtasposht a.menu-item {
             transform: scale(1);
             display: inline-block;
             transition: 0.5s;
         }
-        
+
         .djathtasposht a.menu-item.hide-item {
             transform: scale(0);
         }
-        
+
         #one {
             transition-delay: 0.2s;
         }
-        
+
         #two {
             transition-delay: 0.1s;
         }
-        
+
         #three {
             transition-delay: 0s;
         }
+
         
         .search-form {
-            position: absolute;
+            display: inline-block;
+            position: sticky;
+            margin-bottom: 0.3em;
             top: 8em;
             right: 28em;
             transform: translateX(-50%);
-            width: 2em;
+            width: 0em;
             height: 1em;
             transition: 0.6s;
             opacity: 0;
@@ -465,10 +466,10 @@
         }
         
         .search-form.active {
-            position: absolute;
+            position: sticky;
             top: 8em;
             right: 28em;
-            width: 2em;
+            width: 0em;
             height: 1em;
             opacity: 1;
             transition-delay: 0.4s;
@@ -477,55 +478,58 @@
         }
         
         .search-form input {
-            width: 20em;
+            margin-left: 1.5em;
+            margin-top: -0.2em;
+            width: 15em;
             height: 1.5em;
             color: white;
             border: none;
             background: transparent;
             outline: none;
-            font-size: 1em;
+            font-size: 1.1em;
         }
-        
         .butoneci {
             width: 5em;
             height: 3em;
         }
-        
+
         #cw {
             position: relative;
             width: 30em;
             height: 18em;
             overflow: scroll;
         }
-        
+
         .canvasi {
             display: flex;
             align-items: center;
             border: 1px solid black;
         }
-        
+
         .butonicanvas {
             width: 8em;
             height: 4em;
         }
-        
+
         .ditanata {
             font-size: 4em;
         }
-        
+
         .extra {
+            padding:3em;
+            margin: 2em 6em;
             border: 1px solid black;
         }
-        
+
         #extratrans {
-            width: 30em;
+            width: 20em;
             height: 5em;
             background-color: #0075ff;
             border: 0.1em solid black;
             transform: translate(1em, 1em);
             /* Standard syntax */
         }
-        
+
         #extrascale {
             margin: 150px;
             width: 200px;
@@ -534,7 +538,7 @@
             border: 1px solid black;
             transform: scale(2, 3);
         }
-        
+
         #extraskew {
             width: 300px;
             height: 100px;
@@ -542,22 +546,22 @@
             border: 1px solid black;
             transform: skew(20deg, 10deg);
         }
-        
+
         #extrarotateX {
             transform: rotateX(190deg);
         }
-        
+
         #extrarotateY {
             transform: rotateY(10deg);
         }
-        
+
         #extra3dtrans {
             padding-top: 4em;
             transform: rotateX(13deg);
             transform: rotateY(10deg);
             transform: rotateZ(4deg);
         }
-        
+
         #keyframeRule {
             width: 6em;
             height: 6em;
@@ -565,61 +569,67 @@
             position: relative;
             animation: mymove 1s infinite;
         }
-        
+
         @keyframes mymove {
             from {
                 top: 0em;
             }
+
             to {
                 top: 2em;
             }
         }
-        
+
         @keyframes animatedBackground {
             0% {
                 background-position: 0 0;
             }
+
             100% {
                 background-position: -300px 0;
             }
         }
-        
+
         @-moz-keyframes animatedBackground {
             0% {
                 background-position: 0 0;
             }
+
             100% {
                 background-position: -300px 0;
             }
         }
-        
+
         @-webkit-keyframes animatedBackground {
             0% {
                 background-position: 0 0;
             }
+
             100% {
                 background-position: -300px 0;
             }
         }
-        
+
         @-ms-keyframes animatedBackground {
             0% {
                 background-position: 0 0;
             }
+
             100% {
                 background-position: -300px 0;
             }
         }
-        
+
         @-o-keyframes animatedBackground {
             0% {
                 background-position: 0 0;
             }
+
             100% {
                 background-position: -300px 0;
             }
         }
-        
+
         #animate-area {
             width: 100%;
             height: 190px;
@@ -631,7 +641,7 @@
             -ms-animation: animatedBackground 10s linear infinite;
             -o-animation: animatedBackground 10s linear infinite;
         }
-        
+
         #animate-area {
             border: 2px solid;
             padding-top: 2em;
@@ -671,42 +681,42 @@
         </div>
 
         <div class="djathtas">
-            <div class="djathtasnalt"></div>
+            <div class="djathtasnalt">homepage</div>
             <div class="djathtasposht">
+                <div class="search-form">
+                    <form>
+                        <input type="text" name="" placeholder="Kërkoni">
+                    </form>
+                </div>
                 <a href="../HTML/galeria.html" class="menu-item" id="one">Galeria</a>
                 <a href="../HTML/Kontakti.html" class="menu-item" id="two">Kontakti</a>
                 <a href="../HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
                 <a href="#" id="search"><i class="fa fa-search"></i></a>
+
+
             </div>
-            <div class="search-form">
-                <form>
-                    <input type="text" name="" placeholder="Kërkoni">
-                </form>
-            </div>
-        </div>
+    </div>
     </div>
 
+    <div class="superextra" id="body">
 
-    <div class="superextra">
         <div class="extra">
-            Kliko butonin qe te shfaqen koordinatat tuaja<br><br>
-
-            <button class="butoneci" onclick="getLocation()">Kliko</button>
-
-            <p id="koordinatat"></p>
-        </div>
-        <div class="extra">
-            Një thënie nga i nderuari Prof. Sinan Dobreva<br>
-            <audio controls>
-                <source src="../img/pasuriaLibri.mp3" type="audio/mpeg">
-            </audio>
+<p id="pp">Profa i preferuar: <input type="text" id="test" style="width:20em; border: 0.05px solid black; margin-right:2em;"><button id="profaa">Trego si embed</button></p>
+<button id="korrigjimi" onclick="afterText()">Preke qita</button>
+<p id="test2">Jeta eshte <button id="torf">?</button></p>
+<h4>Mblidhi dy numra <form onsubmit="return false" oninput="dora.value = parseInt(gishtat1.value) + parseInt(gishtat2.value)">
+  <input name="gishtat1" style="border: 0.05px solid black;" type="number" step="any"> +
+  <input name="gishtat2" style="border: 0.05px solid black;"type="number" step="any"> =
+  <output name="dora"></output>
+</form></h4>
+<button id="butoniii">U kry!</button>
         </div>
 
 
         <div class="extra">
             <button class="butonicanvas" onclick="nisja()">Play/Pause</button> <br>
 
-            <video id="video" width="500em">
+            <video id="video" width="400px">
                 <source src="../img/Untitled.mp4" type="video/mp4">
 
                 Your browser does not support HTML video.
@@ -718,7 +728,7 @@
 
             <script>
                 function clickCounterLocal() {
-                    if (typeof(Storage) !== "undefined") {
+                    if (typeof (Storage) !== "undefined") {
                         if (localStorage.clickcount) {
                             localStorage.clickcount = Number(localStorage.clickcount) + 1;
                         } else {
@@ -738,7 +748,7 @@
 
             <script>
                 function clickCounterSession() {
-                    if (typeof(Storage) !== "undefined") {
+                    if (typeof (Storage) !== "undefined") {
                         if (sessionStorage.clickcount) {
                             sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
                         } else {
@@ -807,22 +817,22 @@
             </svg>
         </div>
 
-        <div class="extra">
+        <div class="extra" style=" padding: 0;z-index: 100;">
             <div id="extratransformimet" style="display:flex; ">
 
-                <div id="extrarotateX" style="border:1px solid black">
+                <div id="extrarotateX" style="border:1px solid black; margin: 2em;">
                     <p>Une jom rotate per X</p>
                 </div>
-                <div id="extrarotateY" style="border:1px solid black">
+                <div id="extrarotateY" style="border:1px solid black; margin: 2em;">
                     <p>Une jom rotate per Y</p>
                 </div>
-                <div id="extrascale" style="border:1px solid black">
+                <div id="extrascale" style="border:1px solid black; ">
                     <p>Ketij paragrafi i jane rrite permasat</p>
                 </div>
                 <div id="extraskew" style="border:1px solid black">
                     <p>Okuku Okuku(edhe i bjen tfikt)</p>
                 </div>
-                <div id="extratrans" style="border:1px solid black">
+                <div id="extratrans" style="border:1px solid black;">
                     <p>Ky element i divit eshte levizur 1em horizontalisht dhe 1em vertikalisht.
                 </div>
             </div>
@@ -842,6 +852,7 @@
             <div id="animate-area">
 
             </div>
+        </div>
 
 
 
@@ -934,7 +945,8 @@
             </div>
 
             <div class="extra">
-                <p style="font-weight: bold;">Funksioni search() per fjalen libri te stringu "Pasuria ma e madhe osht libri"
+                <p style="font-weight: bold;">Funksioni search() per fjalen libri te stringu "Pasuria ma e madhe osht
+                    libri"
                 </p>
                 <p id="pldh"></p>
 
@@ -967,7 +979,8 @@
 
 
 
-                <p>Kliko butonin per nje search case-insensitive per fjalen fiek ne stringun "FieK fakullteti ma i mire n'bote".
+                <p>Kliko butonin per nje search case-insensitive per fjalen fiek ne stringun "FieK fakullteti ma i mire
+                    n'bote".
                 </p>
 
                 <button onclick="funksionimeI()">Kliko</button>
@@ -987,7 +1000,8 @@
 
 
 
-                <p>Kjo metode ka me lyp a ekziston shkronja a tek stringu "Vajta kalova tere Kalabrine", nese gjen jep rezultat true.</p>
+                <p>Kjo metode ka me lyp a ekziston shkronja a tek stringu "Vajta kalova tere Kalabrine", nese gjen jep
+                    rezultat true.</p>
 
                 <button onclick="testregex()">Kliko</button>
 
@@ -1003,7 +1017,8 @@
                 </script>
 
 
-                <p>Kjo metode ka me lyp a ekziston shkronja a tek stringu "Vajta kalova tere Kalabrine", nese gjen jep rezultat shkronjen e kerkuar.</p>
+                <p>Kjo metode ka me lyp a ekziston shkronja a tek stringu "Vajta kalova tere Kalabrine", nese gjen jep
+                    rezultat shkronjen e kerkuar.</p>
 
                 <button onclick="execregex()">Kliko</button>
 
@@ -1018,7 +1033,8 @@
                     }
                 </script>
 
-                <p>Kliko butonin me bo nje global search te shkronjave "mir", funksioni kthen si rezultat shkronjat sa here qe kane match. String "Samir simnica samir simnica"</p>
+                <p>Kliko butonin me bo nje global search te shkronjave "mir", funksioni kthen si rezultat shkronjat sa
+                    here qe kane match. String "Samir simnica samir simnica"</p>
 
                 <button onclick="matchfnk()">Kliko</button>
 
@@ -1073,12 +1089,12 @@
                 <p>The highest prime number discovered so far is: <output id="result"></output></p>
                 <script>
                     var worker = new Worker('../js/randomworker.js');
-                    worker.onmessage = function(event) {
+                    worker.onmessage = function (event) {
                         document.getElementById('result').textContent = event.data;
                     };
                 </script>
             </div>
-
+        </div>
 
             <!--QITU JA NIS ROW4-->
             <div class="row4">
@@ -1099,7 +1115,8 @@
                 <div class="row5pjesepjese">
                     <div class="logoja">
                         <div class="sinanibabo">
-                            <img src="../img/sinani3.png" alt="pldh" height="130em" width="175em" id='sinani' style="background-color: black;">
+                            <img src="../img/sinani3.png" alt="pldh" height="130em" width="175em" id='sinani'
+                                style="background-color: black;">
                         </div>
                         <span id="sinaniposht">Biblioteka Sinan Dobreva</span>
                     </div>
@@ -1107,7 +1124,9 @@
                         <div class="kolona1p">
                             <span id="lajmekuq5" style="font-size: 1em;">Misioni</span>
                             <br>
-                            <p id="kolona1pp">BSD është institucion kulturor, edukues e informues që grumbullon dhe ruan koleksionet e veta nga fushat e ndryshme të krijimtarisë intelektuale me qëllim që t’ i bëjë të njohura shfrytëzuesve për t’i studiuar dhe për t’ i
+                            <p id="kolona1pp">BSD është institucion kulturor, edukues e informues që grumbullon dhe ruan
+                                koleksionet e veta nga fushat e ndryshme të krijimtarisë intelektuale me qëllim që t’ i
+                                bëjë të njohura shfrytëzuesve për t’i studiuar dhe për t’ i
                                 lënë trashëgim gjeneratave të ardhshme.</p>
                             <a href="./Librat.html">
                                 <p id="katalogu">Shfleto katalogun</p>
@@ -1117,7 +1136,9 @@
                         <div class="kolona1p">
                             <span id="lajmekuq5" style="font-size: 1em;">Ofertat</span>
                             <br>
-                            <p id="kolona1pp">Biblioteka BSD ofron qasje në materialin bibliotekar për të gjithë përdoruesit e qytetit të Prishtinës me rrethinë, pavarësisht nga raca, kombësia, gjinia, mosha, besimi fetar, gjuha, paaftësitë fizike dhe informon e ndihmon
+                            <p id="kolona1pp">Biblioteka BSD ofron qasje në materialin bibliotekar për të gjithë
+                                përdoruesit e qytetit të Prishtinës me rrethinë, pavarësisht nga raca, kombësia, gjinia,
+                                mosha, besimi fetar, gjuha, paaftësitë fizike dhe informon e ndihmon
                                 ata në përdorimin e gjetjen e tyre.</p>
                             <a href="../HTML/regjistrohu.html">
                                 <p id="katalogu">Regjistrohu</p>
@@ -1127,7 +1148,9 @@
                         <div class="kolona1p">
                             <span id="lajmekuq5" style="font-size: 1em;">Bashkëpunëtorët</span>
                             <br>
-                            <p id="kolona1pp">Biblioteka "Sinan Dobreva" bashkëpunon me bibliotekat në vend dhe jashtë vendit; Bashkëpunon me institucionet kulturore, shtëpitë botuese, shkollat dhe me komunitetin me qëllim të nxitjes së interesimit për librin dhe të mësuarit
+                            <p id="kolona1pp">Biblioteka "Sinan Dobreva" bashkëpunon me bibliotekat në vend dhe jashtë
+                                vendit; Bashkëpunon me institucionet kulturore, shtëpitë botuese, shkollat dhe me
+                                komunitetin me qëllim të nxitjes së interesimit për librin dhe të mësuarit
                                 gjatë gjith jetës. Shfletoni galerinë për më shumë.
                             </p>
                             <a href="../HTML/galeria.html">
@@ -1145,12 +1168,13 @@
                     <div class="sbkol1">
                         <span id="sf">Regjistrohu për të pranuar e-mails nga Biblioteka</span><br><br>
                         <!-- Qitu ni form per Anetaresim (mail subscription)-->
-                        <form id="emailform">
-                            <input id="emailinput" type="email" placeholder="emri@gmail.com"> <br><br>
-                            <div class="dergo">
-                                <input type="submit" value="Dërgo">
+                        <form autocomplete="on" action="/action_page.php">
+                            <div class="autocomplete" style="width: 25em;">
+                                <input id="myInput" type="text" name="myEmail" placeholder="E-mail"
+                                    style="background-color:white;">
                             </div>
-                        </form> <br><br><br> <input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme
+                            <button class="buton">Dërgo</button>
+                        </form> <input type="checkbox" checked="checked" name="subscribe"> E-mails të përditshme
                         <br><br>
                     </div>
 
@@ -1273,7 +1297,7 @@
             </footer>
 
             <script src="../js/extra.js"></script>
-
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>
