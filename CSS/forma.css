@@ -1,10 +1,4 @@
- /* content displays n 70% edhe e rras n mes  */
- 
- body {
-     width: 70%;
-     margin: auto;
-     margin-top: 6em;
- }
+
  /* forma 40%   tabela 60% */
  
  .container {
@@ -14,6 +8,7 @@
      border: 1px solid #ccc;
      padding: 30px;
      border-radius: 15px;
+     margin: 4em 5em;
  }
  
  h1 {
@@ -63,14 +58,7 @@
      -webkit-appearance: none;
      margin: 0;
  }
- /* Stilizimi i butonit submit  */
  
- #addForm input[type="submit"] {
-     background-color: #333;
-     color: #fff;
-     padding: 10px 15px;
-     border: none;
- }
  
  .form-group {
      padding-bottom: 15px;
@@ -78,7 +66,7 @@
  /* stilizimi i buttonit delete  */
  
  .deleteBtn {
-     background-color: #FF6347;
+     background-color: #0077ffa6;
      color: whitesmoke;
      width: 3.5em;
      border-radius: 3em;
