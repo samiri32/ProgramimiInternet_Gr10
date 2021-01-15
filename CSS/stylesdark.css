@@ -1,3 +1,10 @@
+.extra{
+  color:white;
+}
+
+body p,span, h3, h4{
+  color:white;
+}
 #elaborimi {
     color: white;
     font-size: 0.65em;
@@ -27,6 +34,7 @@
   
   
   .row5pjesepjese {
+    background-color: black;
     display: grid;
     align-items: center;
   }
@@ -40,6 +48,7 @@
   }
   
   .subfooternalt {
+    
     padding: 0em 8em 3em 6em;
     display: -webkit-flex;
     display: flex;
@@ -105,7 +114,7 @@
   
   .sbkol2 ul a:link {
     text-decoration: none;
-    color:black;
+    color:white;
   }
   
   .sbkol2 ul a:visited {
@@ -118,7 +127,7 @@
   }
   
   .kolona1p {
-    background-color: #121212;
+    background-color: black;
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -154,7 +163,9 @@
     column-gap: 7em;
     align-items: center;
   }
-  
+  .row5{
+    background-color: black;
+  }
   .row4, .row5, .row6 {
     padding: 4em 6em 0em 6em;
     display: -webkit-grid;
@@ -191,14 +202,14 @@ color: rgb(110, 110, 110);
   }
   
   .kolona1, .kolona2 {
-    background-color: #121212;
+    background-color: black;
     -webkit-flex: 0.5;
     -ms-flex: 0.5;
     flex: 0.5;
   }
   
   .kolona3 {
-    background-color: #121212;
+    background-color: black;
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -206,7 +217,7 @@ color: rgb(110, 110, 110);
   
   .kolonarresht {
     padding: 1.5em 0em;
-    background-color: #121212;
+    background-color: black;
     border-top: 0.5em solid rgb(46, 46, 46);
     border-bottom: 0.5em solid rgb(46, 46, 46);
     -webkit-flex: 10;
@@ -253,21 +264,21 @@ color: rgb(110, 110, 110);
   }
   
   .libri {
-    background-color:#121212;
+    background-color:black;
     -webkit-flex: 0.8;
     -ms-flex: 0.8;
     flex: 0.8;
   }
   
   .column.side {
-    background-color: #121212;
+    background-color: black;
     -webkit-flex: 0.8;
     -ms-flex: 0.8;
     flex: 0.8;
   }
   
   .column.middle {
-    background-color: #121212;
+    background-color: black;
     -webkit-flex: 1.4;
     -ms-flex: 1.4;
     flex: 1.4;
@@ -423,7 +434,7 @@ color: rgb(110, 110, 110);
   }
   
   body {
-    background-color: #121212;
+    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
   }
   #myInput{
@@ -573,7 +584,9 @@ color: rgb(110, 110, 110);
     background-color: white; 
     border-bottom: 1px solid #d4d4d4; 
   }
-  
+  .homepage{
+    background-color: black;
+  }
   .buton {
     height: 3.6em;
     width: 10em;

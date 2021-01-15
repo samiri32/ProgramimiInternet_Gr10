@@ -5,8 +5,8 @@
     <title>BIBLIOTEKA SINAN DOBREVA</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/extra.css">
+    <link id="stilicss" rel="stylesheet" href="../CSS/styles.css" >
+    
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -1091,6 +1091,30 @@
                         document.getElementById('result').textContent = event.data;
                     };
                 </script>
+            </div>
+          <script>
+
+                function updateBackground() {
+                    const hour = new Date().getHours();
+                  
+                  
+                  
+                       if (7 <= hour && hour< 20) {
+                        if(document.body){
+                          document.body.style.backgroundImage = "url('../img/dita.jpg')"; 
+                          document.body.style.backgroundSize="100%";
+                        }
+                       } else  {
+                        if(document.body){
+                          document.body.style.backgroundImage = "url('../img/nata.jpg')"; 
+                  
+                       } 
+                  
+                      }
+                   }
+                  updateBackground();
+                </script>
+            </div>
             </div>
         </div>
 

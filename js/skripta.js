@@ -1,4 +1,31 @@
 
+   function toggleButton(){
+       const theme = document.querySelector("#stilicss");
+       
+       if(theme.getAttribute("href")=="./CSS/styles.css"){
+       theme.href='./CSS/stylesdark.css';
+       document.getElementById("teksti").className = "fa fa-sun-o";
+       document.getElementById("teksti").style.color = "white";  
+       document.getElementById("teksti").style.backgroundColor = "transparent"; 
+       var photo = './img/sinani.png';
+
+       $('#sinanibardh').attr('src', photo);
+   }
+   else if(theme.getAttribute("href")=="./CSS/stylesdark.css"){
+       theme.href="./CSS/styles.css";
+       document.getElementById("teksti").className = "fa fa-moon-o"; 
+       document.getElementById("teksti").style.color = "black"; 
+       document.getElementById("teksti").style.backgroundColor = "transparent"; 
+       var photo = './img/sinani3.png';
+       $('#sinanibardh').attr('src', photo);
+      
+      
+   }
+   }
+   
+    
+
+
 var slideIndex = 1;
 
 
