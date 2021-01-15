@@ -6,38 +6,36 @@
     scroll-behavior: smooth;
 }
 
-  .librat {
+.librat {
     padding: 0em 6em 0em 6em;
     display: -webkit-flex;
     display: flex;
     column-gap: 2.5em;
-  }
+}
 
-  .librattitulli {
+.librattitulli {
     color: black;
     padding: 0.75em;
-text-align: center;
+    text-align: center;
     font-family: "Calibre", Helvetica, Arial, sans-serif;
     font-size: 1em;
     font-weight: bold;
     margin-bottom: 3em;
-  }
+}
 
-
-  .liber img {
+.liber img {
     border-top: 0.4em solid black;
     padding-top: 0.75em;
     max-width: 90%;
     margin-left: 1em;
     max-height: 25em;
-  }
+}
 
-  .liber {
+.liber {
     background-color: white;
-    -webkit-flex: 0.8;
-    -ms-flex: 0.8;
-    flex: 0.8;
-  }
+    width: 100%;
+    text-align: center;
+}
 
 .slider1 {
     width: 100%;
@@ -58,48 +56,39 @@ text-align: center;
     justify-content: center;
 }
 
-.liber{
-  position: relative;
-  display: inline-block;
+.liber {
+    position: relative;
+    display: inline-block;
 }
 
-
-
-.ratingu{
-  position: absolute;
-  transition: all 0s ;
-  opacity: 0;
-
+.ratingu {
+    position: absolute;
+    transition: all 0s;
+    opacity: 0;
 }
 
-
-
-.yjet{
-  position: relative;
-
-  transform: translate(-50%, -50%);
-}
- .liber:hover .imagee  {
-
-  opacity: 0.5;
+.yjet {
+    position: relative;
+    transform: translate(-50%, -50%);
 }
 
-.liber:hover .ratingu{
-  opacity: 1;
-  left: 50%;
-bottom: 50%;
+.liber:hover .imagee {
+    opacity: 0.5;
+}
 
+.liber:hover .ratingu {
+    opacity: 1;
+    left: 50%;
+    bottom: 50%;
 }
 
 .librattitullii {
-
-  color: black;
-
-text-align: center;
-  font-family: "Calibre", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: bold;
-  margin-bottom: 1em;
+    color: black;
+    text-align: center;
+    font-family: "Calibre", Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 1em;
 }
 
 .item-1,
@@ -189,30 +178,29 @@ text-align: center;
     }
 }
 
-
 .autocomplete {
     position: relative;
     display: inline-block;
-  }
+}
 
-  input {
+input {
     border: 1px solid transparent;
     background-color: white;
     padding: 10px;
     font-size: 16px;
-  }
+}
 
-  input[type=text] {
+input[type=text] {
     background-color: #f1f1f1;
     width: 98%;
     height: 3em;
-  }
+}
 
-  input[type=checkbox]{
+input[type=checkbox] {
     margin-top: 0.5em;
-  }
+}
 
-  .autocomplete-items {
+.autocomplete-items {
     position: absolute;
     border: 1px solid #d4d4d4;
     border-bottom: none;
@@ -221,16 +209,16 @@ text-align: center;
     top: 100%;
     left: 0;
     right: 0;
-  }
+}
 
-  .autocomplete-items div {
+.autocomplete-items div {
     padding: 0.5em;
     cursor: pointer;
     background-color: white;
     border-bottom: 1px solid #d4d4d4;
-  }
+}
 
-  .buton {
+.buton {
     height: 3.6em;
     width: 10em;
     color: white;
@@ -238,13 +226,13 @@ text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #D9D9D9;
     border: none;
-  }
+}
 
-  #h5 {
+#h5 {
     margin-top: 0.5em;
     color: #0075ff;
-  }
+}
 
-  .buton:hover {
+.buton:hover {
     color: #0075ff;
-  }
+}
