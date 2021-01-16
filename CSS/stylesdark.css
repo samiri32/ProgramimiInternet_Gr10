@@ -536,7 +536,10 @@ color: rgb(110, 110, 110);
     font-size: 1.4em;
     letter-spacing: 0.1em;
   }
-  
+
+  #sinanibardh{
+    filter: invert(100%);
+  }
   #katalogu {
     color: white;
     text-decoration: none;
