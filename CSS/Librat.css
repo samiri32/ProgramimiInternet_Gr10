@@ -90,7 +90,9 @@
     font-weight: bold;
     margin-bottom: 1em;
 }
-
+.librattitulli{
+    color:white;
+}
 .item-1,
 .item-2,
 .item-3 {
