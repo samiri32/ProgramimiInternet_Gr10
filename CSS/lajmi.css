@@ -328,6 +328,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     padding: 5px;
+    padding-top:1.5em;
     text-align: center;
   }
 
@@ -434,7 +435,6 @@
     
   }
  
-
   .ardy{
     border:2px solid black;
     border-radius: 1.2em;
