@@ -5,8 +5,8 @@
     <title>Galeria</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/galeria.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" type="image/png" href="../img/sinani4.png">
+    <link id="stilicss" rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -520,6 +520,12 @@
         </div>
     </div>
 
+    <div>   
+        <i onclick="toggleButton()" class="fa fa-moon-o" id="teksti" style="margin-left:0.5em;margin-top:0.5em; font-size: 2em;font-weight: bold; position:-webkit-fixed;position:fixed;z-index: 9999;"></i> 
+         
+       
+       </div>
+
     <div class="faqja">
         <a href="#" style="text-decoration: none;">
             <h3 id="fotogaleriah3" style="padding-top:1em; margin-bottom: 0em;display:grid; justify-content: center;">FOTOGALERIA</h3>
@@ -730,7 +736,101 @@
 
         </div>
     </footer>
-    <script src="../js/galeria.js"></script>
+    <script>
+       
+
+        function viewModal() {
+            const modal = $(this).children()[1];
+
+
+            console.log(typeof(modal));
+
+
+            const photo = $(this).children('#img').attr('src');
+            modal.style.display = "block";
+
+            span.onclick = function() {
+
+
+                console.log(modal);
+            }
+
+        }
+
+
+
+        const lajmet = document.getElementsByClassName('ardy');
+
+        for (let i = 0; i < lajmet.length; i++) {
+            lajmet[i].addEventListener('click', viewModal);
+        }
+        $(".close").on("click", function(event) {
+            $(this).parent().fadeOut();
+            event.preventDefault();
+        });
+
+       
+
+const theme = document.querySelector("#stilicss");
+
+console.log(localStorage);
+
+remember();
+
+function darkMode() {
+
+    theme.href = '../CSS/stylesdark.css';
+    localStorage.setItem("color", "dark");
+    console.log(localStorage);
+    document.getElementById("teksti").className = "fa fa-sun-o";
+    document.getElementById("teksti").style.color = "white";
+    document.getElementById("teksti").style.backgroundColor = "transparent";
+
+}
+
+function lightMode() {
+
+    theme.href = "../CSS/styles.css";
+    localStorage.setItem("color", "light");
+    console.log(localStorage);
+    document.getElementById("teksti").className = "fa fa-moon-o";
+    document.getElementById("teksti").style.color = "black";
+    document.getElementById("teksti").style.backgroundColor = "transparent";
+
+}
+
+function toggleButton() {
+
+    if (localStorage.getItem("color") == ("light")) {
+
+        darkMode();
+    }
+    else if (localStorage.getItem("color") == ("dark")) {
+
+        lightMode();
+    }
+}
+
+function remember() {
+    if (localStorage.getItem("color") == ("light")) {
+
+        lightMode();
+
+    }
+    else if (localStorage.getItem("color") == ("dark")) {
+
+        darkMode();
+
+    }
+}
+
+
+
+
+   
+        //
+    </script>
+
 
 </body>
 

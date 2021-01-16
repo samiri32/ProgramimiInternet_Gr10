@@ -10,7 +10,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../CSS/Kontakti.css">
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <link id="stilicss" rel="stylesheet" href="../CSS/styles.css">
+    <link rel="shortcut icon" type="image/png" href="../img/sinani4.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -235,6 +236,11 @@
     </div>
 
 
+    <div>   
+        <i onclick="toggleButton()" class="fa fa-moon-o" id="teksti" style="margin-left:0.5em;margin-top:1.1em; font-size: 2em;font-weight: bold; position:-webkit-fixed;position:fixed;z-index: 9999;"></i> 
+         
+       
+       </div>
 
     <!--      -->
     <div class="pjesa1">
@@ -630,7 +636,62 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;">Dërgo një sugjerim!</h5
 
 
 
-    <script src="../js/skripta.js"></script>
+    <script>
+        
+const theme = document.querySelector("#stilicss");
+
+console.log(localStorage);
+
+remember();
+
+function darkMode() {
+
+    theme.href = '../CSS/stylesdark.css';
+    localStorage.setItem("color", "dark");
+    console.log(localStorage);
+    document.getElementById("teksti").className = "fa fa-sun-o";
+    document.getElementById("teksti").style.color = "white";
+    document.getElementById("teksti").style.backgroundColor = "transparent";
+
+}
+
+function lightMode() {
+
+    theme.href = "../CSS/styles.css";
+    localStorage.setItem("color", "light");
+    console.log(localStorage);
+    document.getElementById("teksti").className = "fa fa-moon-o";
+    document.getElementById("teksti").style.color = "black";
+    document.getElementById("teksti").style.backgroundColor = "transparent";
+
+}
+
+function toggleButton() {
+
+    if (localStorage.getItem("color") == ("light")) {
+
+        darkMode();
+    }
+    else if (localStorage.getItem("color") == ("dark")) {
+
+        lightMode();
+    }
+}
+
+function remember() {
+    if (localStorage.getItem("color") == ("light")) {
+
+        lightMode();
+
+    }
+    else if (localStorage.getItem("color") == ("dark")) {
+
+        darkMode();
+
+    }
+}
+
+    </script>
     <script src="../js/Kontakti.js"></script>
 
 

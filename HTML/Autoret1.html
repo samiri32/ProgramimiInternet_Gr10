@@ -5,8 +5,9 @@
     <title>Autorët</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../CSS/autoret1style.css">
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet"  href="../CSS/autoret1style.css">
+   
+    <link rel="stylesheet" id="stilicss" href="../CSS/styles.css">
     <link rel="shortcut icon" type="image/png" href="../img/sinani4.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -208,11 +209,15 @@
                 <a href="../HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
                 <a href="#" id="search"><i class="fa fa-search"></i></a>
 
-
+                
             </div>
         </div>
     </div>
-
+    <div>   
+        <i onclick="toggleButton()" class="fa fa-moon-o" id="teksti" style="margin-left:0.5em;margin-top:0.5em; font-size: 2em;font-weight: bold; position:-webkit-fixed;position:fixed;z-index: 9999;"></i> 
+         
+       
+       </div>
     <div class="container">
         <br>
         <h2 id="nentitulli"><a href="../HTML/meshum.html">Autorë shqiptar</a></h2>
@@ -831,7 +836,65 @@
 
         </div>
     </footer>
-    <script src="../js/skripta.js"></script>
+    <script>
+
+const theme = document.querySelector("#stilicss");
+
+console.log(localStorage);
+
+remember();
+
+function darkMode() {
+
+    theme.href = '../CSS/stylesdark.css';
+    localStorage.setItem("color", "dark");
+    console.log(localStorage);
+    document.getElementById("teksti").className = "fa fa-sun-o";
+    document.getElementById("teksti").style.color = "white";
+    document.getElementById("teksti").style.backgroundColor = "transparent";
+
+}
+
+function lightMode() {
+
+    theme.href = "../CSS/styles.css";
+    localStorage.setItem("color", "light");
+    console.log(localStorage);
+    document.getElementById("teksti").className = "fa fa-moon-o";
+    document.getElementById("teksti").style.color = "black";
+    document.getElementById("teksti").style.backgroundColor = "transparent";
+
+}
+
+function toggleButton() {
+
+    if (localStorage.getItem("color") == ("light")) {
+
+        darkMode();
+    }
+    else if (localStorage.getItem("color") == ("dark")) {
+
+        lightMode();
+    }
+}
+
+function remember() {
+    if (localStorage.getItem("color") == ("light")) {
+
+        lightMode();
+
+    }
+    else if (localStorage.getItem("color") == ("dark")) {
+
+        darkMode();
+
+    }
+}
+
+
+
+
+    </script>
 
 </body>
 

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Librat</title>
   <link rel="stylesheet" href="../css/Librat.css">
-  <link rel="stylesheet" href="../css/styles.css">
+  <link  rel="stylesheet" id="stilicss" href="../css/styles.css">
   <title>BIBLIOTEKA SINAN DOBREVA</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -219,7 +219,11 @@
       </div>
     </div>
   </div>
-
+  <div>   
+    <i onclick="toggleButton()" class="fa fa-moon-o" id="teksti" style="margin-left:0.5em;margin-top:0.5em; font-size: 2em;font-weight: bold; position:-webkit-fixed;position:fixed;z-index: 9999;"></i> 
+     
+   
+   </div>
   <div class="homepage"><br>
     <h2 class="beni" style="text-align: center; color: #0075ff;">Libra shqip</h2><br>
     <div class="librat">
@@ -806,7 +810,68 @@
 
     </div>
   </footer>
-  <script src="../js/skripta.js"></script>
+  <script>
+   
+
+const theme = document.querySelector("#stilicss");
+
+console.log(localStorage);
+
+remember();
+
+function darkMode() {
+
+    theme.href = '../CSS/stylesdark.css';
+    localStorage.setItem("color", "dark");
+    console.log(localStorage);
+    document.getElementById("teksti").className = "fa fa-sun-o";
+    document.getElementById("teksti").style.color = "white";
+    document.getElementById("teksti").style.backgroundColor = "transparent";
+
+}
+
+function lightMode() {
+
+    theme.href = "../CSS/styles.css";
+    localStorage.setItem("color", "light");
+    console.log(localStorage);
+    document.getElementById("teksti").className = "fa fa-moon-o";
+    document.getElementById("teksti").style.color = "black";
+    document.getElementById("teksti").style.backgroundColor = "transparent";
+
+}
+
+function toggleButton() {
+
+    if (localStorage.getItem("color") == ("light")) {
+
+        darkMode();
+    }
+    else if (localStorage.getItem("color") == ("dark")) {
+
+        lightMode();
+    }
+}
+
+function remember() {
+    if (localStorage.getItem("color") == ("light")) {
+
+        lightMode();
+
+    }
+    else if (localStorage.getItem("color") == ("dark")) {
+
+        darkMode();
+
+    }
+}
+
+
+
+
+ 
+
+  </script>
 
 </body>
 

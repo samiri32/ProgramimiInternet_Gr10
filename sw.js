@@ -4,7 +4,8 @@ const CACHE_NAME="static_cache"
 async function preCache(){
   const cache=await caches.open(CACHE_NAME)
   return cache.addAll([
-    '/css/styles.css',
+    '/CSS/styles.css',
+    '/CSS/stylesdark.css',
    '/js/skripta.js',
    '/js/konfirmimi.js',
     '/index.html',

@@ -1,29 +1,58 @@
+const theme = document.querySelector("#stilicss");
 
-   function toggleButton(){
-       const theme = document.querySelector("#stilicss");
-       
-       if(theme.getAttribute("href")=="./CSS/styles.css"){
-       theme.href='./CSS/stylesdark.css';
-       document.getElementById("teksti").className = "fa fa-sun-o";
-       document.getElementById("teksti").style.color = "white";  
-       document.getElementById("teksti").style.backgroundColor = "transparent"; 
-       var photo = './img/sinani.png';
+console.log(localStorage);
 
-       $('#sinanibardh').attr('src', photo);
-   }
-   else if(theme.getAttribute("href")=="./CSS/stylesdark.css"){
-       theme.href="./CSS/styles.css";
-       document.getElementById("teksti").className = "fa fa-moon-o"; 
-       document.getElementById("teksti").style.color = "black"; 
-       document.getElementById("teksti").style.backgroundColor = "transparent"; 
-       var photo = './img/sinani3.png';
-       $('#sinanibardh').attr('src', photo);
-      
-      
-   }
-   }
-   
-    
+remember();
+
+function darkMode() {
+
+    theme.href = './CSS/stylesdark.css';
+    localStorage.setItem("color", "dark");
+    console.log(localStorage);
+    document.getElementById("teksti").className = "fa fa-sun-o";
+    document.getElementById("teksti").style.color = "white";
+    document.getElementById("teksti").style.backgroundColor = "transparent";
+
+}
+
+function lightMode() {
+
+    theme.href = "./CSS/styles.css";
+    localStorage.setItem("color", "light");
+    console.log(localStorage);
+    document.getElementById("teksti").className = "fa fa-moon-o";
+    document.getElementById("teksti").style.color = "black";
+    document.getElementById("teksti").style.backgroundColor = "transparent";
+
+}
+
+function toggleButton() {
+
+    if (localStorage.getItem("color") == ("light")) {
+
+        darkMode();
+    }
+    else if (localStorage.getItem("color") == ("dark")) {
+
+        lightMode();
+    }
+}
+
+function remember() {
+    if (localStorage.getItem("color") == ("light")) {
+
+        lightMode();
+
+    }
+    else if (localStorage.getItem("color") == ("dark")) {
+
+        darkMode();
+
+    }
+}
+
+
+
 
 
 var slideIndex = 1;
@@ -72,7 +101,6 @@ for (var i = 0; i < img.length; i++) {
 var span = document.getElementsByClassName("close")[0];
 
 
-span.onclick = function() { 
-  modal.style.display = "none";
+span.onclick = function () {
+    modal.style.display = "none";
 }
-
