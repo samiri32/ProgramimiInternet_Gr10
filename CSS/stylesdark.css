@@ -804,7 +804,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 #flip{
-  color:white;
+  color:white !important;
 }
 .bullet{
   color:white;
