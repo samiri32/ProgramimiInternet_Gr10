@@ -1,4 +1,5 @@
-
+if(localStorage.getItem("color")==null)
+localStorage.setItem("color","light")
 const theme = document.querySelector("#stilicss");
 
 console.log(localStorage);
