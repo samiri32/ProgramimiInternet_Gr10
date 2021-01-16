@@ -803,7 +803,9 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
+#flip{
+  color:white;
+}
 .bullet{
   color:white;
 }
