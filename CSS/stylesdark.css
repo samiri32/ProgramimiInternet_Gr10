@@ -565,6 +565,11 @@ color: rgb(110, 110, 110);
   input[type=checkbox]{
     margin-top: 0.5em;
   }
+  #perdite {
+    font-size: 1em;
+    margin-left: 0.5em;
+    color:white;
+  }
   
   .autocomplete-items {
     position: absolute;

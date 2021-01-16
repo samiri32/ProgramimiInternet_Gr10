@@ -363,6 +363,7 @@
 
 .Sllajdet {
   display: grid;
+  object-fit: cover;
 }
 
 .slideshow-container {
@@ -545,6 +546,13 @@ input[type=text] {
 
 input[type=checkbox]{
   margin-top: 0.5em;
+  color: white;
+}
+
+#perdite {
+  font-size: 1em;
+  margin-left: 0.5em;
+  color:black;
 }
 
 .autocomplete-items {
