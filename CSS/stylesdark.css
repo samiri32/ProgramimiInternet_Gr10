@@ -594,14 +594,7 @@ color: rgb(110, 110, 110);
 }
   
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: black;
-  width: 99%;
-  height: 70em;
-  overflow-y: hidden;
 }
 
 
@@ -655,7 +648,7 @@ color: rgb(110, 110, 110);
     color: white;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #949494;
+    background-color:#949494;
     border: none;
   }
   
@@ -668,3 +661,150 @@ color: rgb(110, 110, 110);
     color: #0075ff;
   }
   
+
+  /*kontakti*/
+  .shtyllaa1, .shtyllaa2 {
+    background-color: black;
+  }
+
+  .formulari {
+    background-color:  #525151;
+  }
+  #drag1{
+    filter: invert(100%);
+  }
+  label{
+color:white;
+  }
+  #border-image{
+  color: black;
+  }
+
+  .hapeHarten, .hapeVideon, .mbylleHarten, .mbylleVideon{
+    background-color: #949494;
+  }
+  td, tr{
+    color:white;
+  }
+  th, #headerr{
+    background-color:#949494;
+  }
+  textarea, #dataora{
+    background-color:#949494;
+  }
+  #mesazhi{
+    background-color:white;
+  }
+
+  .psww:hover{
+color: #0075ff;
+  }
+  .tekstikolona{
+    color:white;
+  }
+
+  .form-group {
+    padding-bottom: 15px;
+}
+/* stilizimi i buttonit delete  */
+
+.deleteBtn {
+    background-color: #0077ffa6;
+    color: whitesmoke;
+    width: 3.5em;
+    border-radius: 3em;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 95%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table th{
+  background-color:rgb(41, 41, 41);
+}
+.styled-table td{
+  background-color:rgb(80, 80, 80);
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+
+ /* forma 40%   tabela 60% */
+ 
+
+h1 {
+  padding-left: 10px;
+}
+
+.tittle {
+  padding-left: 20px;
+}
+
+.form-group label {
+  font-family: sans-serif;
+}
+/* id e formes */
+
+#addForm {
+  padding: 20px;
+  display: block
+}
+/* stilizimi i divit t msheft per error */
+
+.error {
+  color: #ff0000;
+  font-family: sans-serif;
+  font-size: small;
+}
+/* styling per inputin e emrit dates edhe id  */
+
+#addForm input[type="text"] {
+  width: 65%;
+  padding: 10px;
+}
+
+#addForm input[type="date"] {
+  width: 65%;
+  padding: 10px;
+}
+
+#addForm input[type="number"] {
+  width: 65%;
+  padding: 10px;
+}
+/* ja hek formes t ID do arrows qe i dalin */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bullet{
+  color:white;
+}
+.grid{
+  background-color: black;
+}
+li, dd{
+  color:white;
+}
+hr{
+  color:grey;
+}
