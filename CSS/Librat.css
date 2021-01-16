@@ -82,17 +82,7 @@
     bottom: 50%;
 }
 
-.librattitullii {
-    color: black;
-    text-align: center;
-    font-family: "Calibre", Helvetica, Arial, sans-serif;
-    font-size: 1.1em;
-    font-weight: bold;
-    margin-bottom: 1em;
-}
-.librattitulli{
-    color:white;
-}
+
 .item-1,
 .item-2,
 .item-3 {

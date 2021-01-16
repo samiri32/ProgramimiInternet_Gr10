@@ -261,7 +261,12 @@ color: rgb(110, 110, 110);
     border-top: 0.5em solid rgb(46, 46, 46);
     border-bottom: 0.5em solid  rgb(46, 46, 46);
   }
-  
+  .librattitulli{
+    color:white;
+  }
+  #rating{
+    color:white;
+}
   .bs {
       color:white;
     font-family: "Calibre", Helvetica, Arial, sans-serif;
