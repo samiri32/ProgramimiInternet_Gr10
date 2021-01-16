@@ -6,7 +6,7 @@ $(document).ready(function(){
   });
   $("#torf").click(function(){
   $("#test2").html(function(i, origText){
-      return origText + " gracke! (index: " + i + ")"; 
+      return origText + " gracke!"; 
     });
   });
   $("#butoniii").click(function(){
