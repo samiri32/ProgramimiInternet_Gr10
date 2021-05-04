@@ -5,6 +5,7 @@ $(document).ready(function() {
 });
 
 
+
 function Konfirmimi(){
 	this.render = function(dialog){
 		var winW = window.innerWidth;
