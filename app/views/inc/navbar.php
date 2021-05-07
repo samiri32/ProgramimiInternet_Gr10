@@ -5,8 +5,8 @@
         <div class="majtas">
             <div class="majtasnalt">homepage</div>
             <div class="majtasposht">
-                <a href="./index.html">Ballina</a>
-                <a href="./HTML/Autoret1.html">Autorët</a>
+                <a href="./index.php">Ballina</a>
+                <a href="./HTML/Autoret1.php">Autorët</a>
                 <a href="./HTML/Librat.html">Librat</a>
                 <a href="./HTML/lajmi.html">Lajme</a>
             </div>
@@ -38,4 +38,4 @@
             </div>
         </div>
     </div>
-</body>
+

@@ -1,4 +1,3 @@
-
 if(localStorage.getItem("color")==null)
 localStorage.setItem("color","light")
 
@@ -11,7 +10,7 @@ remember();
 
 function darkMode() {
 
-    theme.href = './CSS/stylesdark.css';
+    theme.href = '../CSS/stylesdark.css';
     localStorage.setItem("color", "dark");
     console.log(localStorage);
     document.getElementById("teksti").className = "fa fa-sun-o";
@@ -22,7 +21,7 @@ function darkMode() {
 
 function lightMode() {
 
-    theme.href = "./CSS/styles.css";
+    theme.href = "../CSS/styles.css";
     localStorage.setItem("color", "light");
     console.log(localStorage);
     document.getElementById("teksti").className = "fa fa-moon-o";
@@ -55,9 +54,6 @@ function remember() {
 
     }
 }
-
-
-
 
 
 var slideIndex = 1;

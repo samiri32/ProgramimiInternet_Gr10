@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="sq">
 
-<head>
+
     <title>BIBLIOTEKA SINAN DOBREVA</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -216,6 +216,5 @@
             text-align: right;
         }
     </style>
-</head>
 
 
