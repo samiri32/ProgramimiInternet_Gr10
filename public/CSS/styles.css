@@ -144,10 +144,10 @@
 
 }
 .librat {
-  padding: 0em 6em 0em 6em !important; 
+  padding: 0em 6em 0em 6em; 
   display: -webkit-flex;
-  display: flex !important;
-  column-gap: 2.5em !important;
+  display: flex;
+  column-gap: 2.5em;
 }
 
 .liber img {

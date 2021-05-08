@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Librat</title>
-  <link  rel="stylesheet" id="stilicss" href="../CSS/styles.css">
+  <link  rel="stylesheet" id="stilicss" href="../CSS/stylesdark.css">
   <title>BIBLIOTEKA SINAN DOBREVA</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
