@@ -588,6 +588,253 @@ color: rgb(110, 110, 110);
     display: inline-block;
   }
 /* t autoreve jon qito */
+
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px grey;
+  position: relative;
+  margin-left: 20%;
+  margin-bottom: 10em;
+  float: left;
+  box-sizing: border-box;
+}
+
+.content-table thead tr {
+  background-color: grey;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: rgb(187, 187, 187);
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid grey;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: black;
+}
+
+.nishi,
+.treshi {
+  color: black;
+  font-weight: bold;
+}
+
+.katershi {
+  background-color: grey;
+  color: black;
+  font-weight: bold;
+}
+
+.content-table2 {
+  margin-right: 15% !important; 
+  margin-bottom: 10em !important;
+  float: right !important;
+  box-sizing: border-box !important;
+}
+  .content-table2{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px grey;
+  position: relative;
+  margin-left: 3%;
+}
+
+.content-table2 thead tr {
+  background-color: grey;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table2 th,
+.content-table2 td {
+  padding: 12px 15px;
+}
+
+.content-table2 tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table2 tbody tr:nth-of-type(even) {
+  background-color: rgb(187, 187, 187);
+}
+
+.content-table2 tbody tr:last-of-type {
+  border-bottom: 2px solid grey;
+}
+
+.content-table2 tbody tr.active-row {
+  font-weight: bold;
+  color: black;
+}
+
+
+.cift {
+  color: black;
+}
+
+.tek {
+  background-color: grey;
+  color: black;
+  font-weight: bold;
+}
+
+.meimiri {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  position: relative;
+  float: left;
+  margin-left: 20%;
+}
+
+.meimiri2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  position: relative;
+  float: right;
+  margin-right: 15%;
+}
+
+td {
+  position: relative;
+  text-align: center;
+}
+
+td {
+  position: relative;
+  text-align: center;
+}
+
+.center {
+  position: relative;
+  float: left;
+  width: 47%;
+  margin: 1em;
+}
+
+.active-row {
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 99%;
+  height: 70em;
+  overflow-y: hidden;
+}
+
+.autoret {
+  padding-left: 0.8em;
+  position: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.autoret img {
+  max-height: 22em;
+}
+
+.mbajtesi-autoreve {
+  width: 26em;
+  height: 22em;
+  perspective: 400em;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-front,
+.flip-card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.mbajtesi-autoreve:hover .flip-card-back {
+  transform: rotateY(0deg);
+}
+
+.mbajtesi-autoreve:hover .flip-card-front {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front {
+  z-index: 2;
+  color: black;
+  transform: rotateY(0deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-back {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+  transform: rotateY(-180deg);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card-back p {
+  margin: 0 20px;
+}
+
+.autori p {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+}
   .cift {
     color: white;
 }

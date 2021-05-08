@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="./img/sinani4.png">
-    <link rel="stylesheet" href = "./CSS/styles.css">
+    <link rel="stylesheet" href="../public/CSS/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -482,13 +482,13 @@
                 <div class="autori">
                     <a href="./HTML/meshume.html#MT"> <img src="./img/MT.jpg" alt="Ekspozitaaa!!!"><br>
                         <span id='lajmekuq'>Më shumë</span><br>
-                        <span>Mark Twain</span></a>
+                        <span id='spanautor'>Mark Twain</span></a>
                 </div><br><br>
 
                 <div class="autori">
                     <a href="./HTML/meshume.html#Edgar"> <img src="./img/EAP.jpg" alt="Fan STILIAN Noli!!!"><br>
                         <span id='lajmekuq'>Më shumë</span><br>
-                        <span>Edgar Allan Poe</span></a>
+                        <span id='spanautor'>Edgar Allan Poe</span></a>
                 </div>
 
             </div>
@@ -497,14 +497,14 @@
                     <a href="./HTML/meshume.html#FK"> <img src="./img/FK.jpg"
                             alt="pls qelu ma shpejt kena me msu pls plsplspslsp!!!"><br>
                         <span id='lajmekuq'>Më shumë</span><br>
-                        <span>Franz Kafka</span><br>
+                        <span id='spanautor'>Franz Kafka</span><br>
                     </a>
                 </div><br><br><br>
 
                 <div class="autori">
                     <a href="./HTML/meshume.html#Ernest"> <img src="./img/EH.jpg" alt="!!!"><br>
                         <span id='lajmekuq'>Më shumë</span><br>
-                        <span>Ernest Hemingway</span><br></a>
+                        <span id='spanautor'>Ernest Hemingway</span><br></a>
                 </div><br><br>
 
 

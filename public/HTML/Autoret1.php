@@ -650,20 +650,7 @@
             </tbody>
         </table>
     </div>
-    <div class="row4">
-        <div class="shortcuts">
-            <div class="shortcutnalt">
-                <div class="bs">VEGËZA TË DOBISHME</div>
-            </div>
-            <div class="shortcutposht">
-                <a href="../HTML/Librat.html" class="eee" id="sdds">Libra</a>
-                <a href="../HTML/Autoret1.html" class="eee" id="fdsfdsf">Autorët</a>
-                <a href="../HTML/lajmi.html" class="eee" id="fsdfdsf">Lajme</a>
-
-            </div>
-        </div>
-    </div>
-
+<br>
     <div class="row4">
         <div class="shortcuts">
             <div class="shortcutnalt">
