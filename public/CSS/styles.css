@@ -733,6 +733,7 @@ color:white;
   padding: 12px 15px;
 }
 
+
 .content-table tbody tr {
   border-bottom: 1px solid #dddddd;
 }
@@ -1051,4 +1052,275 @@ input[type=text] {
 }
 #spanautor:hover {
 color:black;
+}
+
+/* lajmet */
+
+  
+.biblioteka {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 19px;
+  margin-top: 2em;
+}
+
+
+  
+.perberja {
+  padding: 4em 6em 0em 6em;
+  display: -webkit-flex;
+  display: flex;
+  column-gap: 2.8em;
+  justify-content: space-around;
+}
+
+.gridat{
+  position:center;
+}
+
+.lajmet {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(14em, auto);
+  grid-gap: 3.5em;
+  grid-template-areas:
+  "a b"
+  "c d"
+  "e f"
+  "g h"
+  "i j";
+  margin: auto;
+  margin-top: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+
+.gridi1{
+  grid-area: a;
+}
+
+.gridi2{
+  grid-area: b;
+}
+
+.gridi3{
+  grid-area: c;
+}
+
+.gridi4{
+  grid-area: d;
+}
+
+.gridi5{
+  grid-area: e;
+ 
+}
+
+.gridi6{
+  grid-area: f;
+  
+}
+
+.gridi7{
+  grid-area: g;
+ 
+}
+
+.gridi8{
+  grid-area: h;
+ 
+}
+
+.gridi9{
+  grid-area: j;
+ 
+}
+
+.gridi10{
+  grid-area: i;
+ 
+}
+
+
+.lajmet {
+  width: auto;
+  float: none;
+  position: center;
+  flex-direction: column;
+}
+
+.lajmet p {
+  width: 95%;
+  color: black;
+  font-family: "Arnhem", Times, Courier, serif;
+  font-size: 1.1em;
+  display: block;
+  margin-left: 1em;
+  margin-top: 1.5em;
+  line-height: 1.5em;
+
+}
+
+.lista {
+    width: 95%;
+    color: black;
+    text-decoration: underline;
+    font-size: 1em;
+    display: block;
+    margin-left: 1em;
+    line-height: 20px;
+  
+}
+
+.ardy{
+  border:2px solid black;
+  border-radius: 1.2em;
+  box-shadow: 2px 2.5px 3px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: inline 0 0 0.2em grey;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.247) 20%,rgba(239, 238, 248, 0.37) 75%, rgba(209, 216, 218, 0.329) 5%);
+  writing-mode:horizontal-tb;
+  padding:0.5em;
+}
+
+
+.ardy img {
+  float: left;
+  width: 20.5em;
+  height: 12.1em;
+  border-radius: 1em;
+  margin-bottom:0.4em;
+  margin-top:0.4em;
+  margin-left:0.4em;
+  margin-right:0.6em;
+}
+
+.titulli1 {
+  display: inline;
+  color: black;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  width: 100%;
+  font-size: 1.6em;
+  font-weight: bold;
+  
+}
+
+.boxat {
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.568), rgba(0, 0, 0, 0.021));
+  width: 17.2em;
+  height: 3em;
+  margin:auto;
+  margin-top:0em;
+  padding-bottom: 0em;
+  padding-top:0em;
+  }
+
+  .boxat1 {
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    background-image: linear-gradient(to right,  rgba(0, 0, 0, 0.021), rgba(255, 255, 255, 0.568));
+    width: 17.2em;
+    height: 3em;
+    margin:auto;
+    margin-top:0em;
+    padding-bottom: 0em;
+    padding-top:0em;
+  }
+
+.lyst {
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.568), rgba(0, 0, 0, 0.021));
+  width: 17.2em;
+  height: 3em;
+  margin:auto;
+  margin-top:3em;
+  padding-bottom: 0em;
+  padding-top:0em;
+}
+
+.lyst a {
+  opacity:65%;
+  text-align:center;
+  text-decoration:none;
+  font-size:1.5em;
+  float: top 5em;
+  line-height:0px;
+  
+}
+
+.lyst a:link {
+  opacity:100%;
+  color: black;
+}
+
+.lyst a:visited {
+  opacity:100%;
+  color: #0075ff;
+}
+
+.lyst a:hover {
+  opacity:100%;
+  color: #0075ff;
+}
+
+
+  
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 1.5em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  all:none;
+  float:none !important;
+  background-color:white;
+  margin:auto !important;
+  display: block !important;
+  min-height: 50%;
+  min-width: 50%;
+  max-width: 50%;
+}
+
+
+.tekstimodal{
+  min-width: 50%;
+  max-width: 50%;
+  margin:auto !important;
+  margin-top: 1em !important;
+  border-radius:15px;
+  display:block !important ;
+  background-color: white;
+  background: radial-gradient(white, rgba(255, 255, 255, 0.877) 100%);
+  color:black;
+  text-align:center;
+  line-height:1.45em !important;
+}
+
+
+
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  padding: 5px;
+  padding-top: 1.5em;
+  text-align: center;
 }
