@@ -1911,5 +1911,12 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   display: flex;
   float: left;
   align-content: center; 
+  padding: 4em 6em 4em 6em;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    float: left;
+    column-gap: 2em;
+    justify-content: space-evenly;
   align-items: center; 
 }
