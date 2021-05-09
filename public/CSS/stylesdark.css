@@ -1862,3 +1862,54 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 .harrovapsw a {
   text-decoration: none;
 }
+/*regjistrohu*/
+
+#regjistrohuform {
+  margin: 0 auto;
+  width: 45em;
+  margin-top: -1.7em;
+}
+
+#ndrysho:hover {
+  color: #0075ff;
+}
+
+#ndrysho {
+  height: 2.5em;
+  width: 8em;
+  font-size: 1em;
+  color: white;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #D9D9D9;
+  border: none;
+}
+
+#komenti {
+  background-image: url("https://pngimg.com/uploads/cat/cat_PNG50514.png");
+  background-repeat: no-repeat;
+  background-size: 10em;
+  background-origin: content-box;
+  padding: 2em;
+}
+
+.konga {
+  display: inline;
+}
+
+.tekstikolona {
+  margin: 7em 0em;
+  column-count: 2;
+  column-gap: 2em;
+  word-wrap: break-word;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+
+.regjistrohunidiv {  
+  box-sizing: border-box; 
+  display: flex;
+  float: left;
+  align-content: center; 
+  align-items: center; 
+}

@@ -220,7 +220,7 @@
        </div>
 
     <div class="homepage">
-        <div class="kycunidiv">
+        <div class="regjistrohunidiv">
             <form id="regjistrohuform" form name="Formaperregjister" action="./submit.html" target="_blank" onsubmit="return REGJISTRIMI()" method="post">
 
                 <div class="konga">
