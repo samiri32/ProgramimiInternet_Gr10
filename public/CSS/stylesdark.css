@@ -1181,12 +1181,7 @@ color: rgb(110, 110, 110);
   margin-right: 15%;
 }
 
-td {
-  position: relative;
-  text-align: center;
-}
-
-td {
+.cift td, .tek td {
   position: relative;
   text-align: center;
 }
@@ -1540,4 +1535,97 @@ li, dd{
 }
 hr{
   color:grey;
+}
+
+/* forma */
+
+ /* forma 40%   tabela 60% */
+ 
+ .containerforma {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-column-gap: 2em;
+  border: 1px solid #ccc;
+  padding: 30px;
+  border-radius: 15px;
+  margin: 4em 5em;
+}
+.tittle {
+  padding-left: 20px;
+}
+
+.form-group label {
+  font-family: sans-serif;
+}
+/* id e formes */
+
+#addForm {
+  padding: 20px;
+  display: block
+}
+
+.error {
+  color: #ff0000;
+  font-family: sans-serif;
+  font-size: small;
+}
+/* styling per inputin e emrit dates edhe id  */
+
+#addForm input[type="text"] {
+  width: 65%;
+  padding: 10px;
+}
+
+#addForm input[type="date"] {
+  width: 65%;
+  padding: 10px;
+}
+
+#addForm input[type="number"] {
+  width: 65%;
+  padding: 10px;
+}
+/* ja hek formes t ID do arrows qe i dalin */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.form-group {
+  padding-bottom: 15px !important;
+}
+/* stilizimi i buttonit delete  */
+
+.deleteBtn {
+  background-color: #0077ffa6;
+  color: whitesmoke;
+  width: 3.5em;
+  border-radius: 3em;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 20px 0 !important;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width: 95%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #333;
+  color: #ffffff;
+  text-align: left !important;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px !important;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd !important;
 }

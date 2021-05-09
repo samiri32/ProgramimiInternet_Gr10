@@ -6,8 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="./img/sinani4.png">
-  
-    <link rel="stylesheet" href="../CSS/forma.css">
     <link id="stilicss" rel="stylesheet" href="../CSS/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="shortcut icon" type="image/png" href="../img/sinani4.png">
@@ -314,7 +312,7 @@
 
 
 
-        <div class="container">
+        <div class="containerforma">
             <div>
                 <h2 class="tittle">Të dhënat e lexuesëve</h2>
 
@@ -354,7 +352,7 @@
 
                 <div class="tabela">
 
-                    <h2 class="title">Rezervimet</h2>
+                    <h2 class="titlee">Rezervimet</h2>
 
                     <table class="styled-table">
                         <thead>
