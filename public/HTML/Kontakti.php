@@ -9,7 +9,6 @@
     <title>Kontakti</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../CSS/Kontakti.css">
     <link id="stilicss" rel="stylesheet" href="../CSS/styles.css">
     <link rel="shortcut icon" type="image/png" href="../img/sinani4.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -316,7 +315,7 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;color:black;">Dërgo një s
     <div class="rreshtii" style="margin-top: -2em;">
         <div class="shtyllaa1">
             <div class="tabela">
-                <table>
+                <table id='tabelee'>
                     <tr id="headerr">
                         <th>Nr.</th>
                         <th>Qyteti</th>
@@ -364,7 +363,7 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;color:black;">Dërgo një s
         </div>
         <div class="shtyllaa1">
             <div class="tabela">
-                <table>
+                <table id='tabelee'>
 
                     <tr id="headerr">
                         <td>Nr.</td>
