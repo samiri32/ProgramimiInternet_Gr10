@@ -1565,6 +1565,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 #kycuforma {
   align-self: center !important;
+  width: 11em !important;
 }
 
 .kycunimrena {
@@ -1578,11 +1579,24 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 }
 
 #kycuu {
-  height: 2.5em !important;
-  width: 5em !important;
-  color: white !important;
-  font-weight: bold !important;
-  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
-  background-color: #D9D9D9 !important;
-  border: none !important;
+  height: 2.5em ;
+  width: 5em ;
+  color: white;
+  font-weight: bold ;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+  background-color: #D9D9D9 ;
+  border: none ;
+}
+
+.psww {
+  font-size: 0.9em;
+}
+.harrovapsw {
+  padding-top: 0.3em;
+}
+#kycuu:hover {
+  color:#0075ff;
+}
+.harrovapsw a {
+  text-decoration: none;
 }
