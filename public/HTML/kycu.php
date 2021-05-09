@@ -7,7 +7,6 @@
     <title>Kyçu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link id="stilicss" rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/kycu.css">
     <link rel="shortcut icon" type="image/png" href="../img/sinani4.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
