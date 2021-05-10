@@ -19,7 +19,7 @@
                             <source src="../../../public/img/Muharrem Qena Mallengjimi.mp3" type="audio/mpeg">
                             Shnosh :/
                         </audio><br><br>
-                        <h1 style="text-align: center; display: inline;">Regjistrohuni në BSD</h1><br>
+                        <h1 style="text-align: center; display: inline;" id="regj">Regjistrohuni në BSD</h1><br>
                     </center>
                 </div>
 
