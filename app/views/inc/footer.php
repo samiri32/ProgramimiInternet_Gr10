@@ -17,7 +17,7 @@
             <div class="row5pjesepjese">
                 <div class="logoja">
                     <div class="sinanibabo">
-                        <img src="./img/sinani3.png" alt="pldh" height="130em" width="175em" id='sinanibardh'
+                        <img src="../img/sinani3.png" alt="pldh" height="130em" width="175em" id='sinanibardh'
                             style="background-color: black;">
                     </div>
                     <span id="sinaniposht">Biblioteka Sinan Dobreva</span>
@@ -121,7 +121,6 @@
                     <ul>
                         <li><a href="./HTML/lajmi.html"><span>Lajme</span></a>
                         </li>
-
                     </ul>
                 </div>
                 <div class="sbkol2">
@@ -141,14 +140,14 @@
                 <div class="sbkol2">
 
                     <ul>
-                        <li><a href="./HTML/Kontakti.html"><span>Kontakti</span></a>
+                        <li><a href="../HTML/Kontakti.html"><span>Kontakti</span></a>
                         </li>
                     </ul>
                 </div>
                 <div class="sbkol2">
 
                     <ul>
-                        <li><a href="./HTML/regjistrohu.html"><span>Regjistrohu</span></a>
+                        <li><a href="../HTML/regjistrohu.html"><span>Regjistrohu</span></a>
                         </li>
                     </ul>
                 </div>

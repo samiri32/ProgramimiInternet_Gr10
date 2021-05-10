@@ -12,7 +12,7 @@
 
     <div class="logoja">
         <div class="sinanibabo">
-            <img src="./img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
+            <img src="../img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
         </div>
         <a href="./index.html" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka
                 Sinan
@@ -38,6 +38,4 @@
 </div>
 <div>
     <i onclick="toggleButton()" class="fa fa-moon-o" id="teksti" style="margin-left:0.5em;margin-top:0.5em; font-size: 2em;font-weight: bold; position:-webkit-fixed;position:fixed;z-index: 9999;"></i>
-
-
 </div>

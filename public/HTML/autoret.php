@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-<title>Autorët</title>
-<?php include("./app/views/inc/navbar.php");?>
+    <title>Autorët</title>
+    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/header.php'; ?>
 </head>
 
 <body>
     <div class="header"></div>
-     <?php require './app/views/inc/navbar.php'; ?>
+    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/navbar.php'; ?>
     <div class="container">
         <br>
         <h2 id="nentitulli"><a href="../HTML/meshum.html">Autorë shqiptar</a></h2>
@@ -24,9 +24,9 @@
                             së Rilindjes. Për së gjalli u pagëzua "apostull i shqiptarizmës" dhe "bilbil i gjuhës shqipe". Vepra poetike e Naimit vuri bazat e letërsisë kombëtare dhe luajti rol të rëndësishëm në zgjimin e vetëdijes atdhetare. Naimi i
                             këndoi mallit e dashurisë për atdhe, krenarisë kombëtare dhe të kaluarës së lavdishme të shqiptarëve.Naimi është autor i gjithsej njëzetedy veprave
 
-                            <div class="meshum">
-                                <a href="../HTML/meshum.html#Naim-Frasheri"> Më shumë</a>
-                            </div>
+                        <div class="meshum">
+                            <a href="../HTML/meshum.html#Naim-Frasheri"> Më shumë</a>
+                        </div>
 
                         </p>
                     </div>
@@ -48,9 +48,9 @@
                         <p>
                             Naum Veqilharxhi, lindur Naum Bredhi (1797 - 1846) ka qenë një avokat dhe studjues shqiptar. Më 1844 krijoi një alfabet krejt origjinal për gjuhën shqipe, quajtur Alfabeti i Vithkuqit. Veqilharxhi shmangu përdorimin e shkronjave greke. Ai është ndër figurat
                             më të shquara të viteve të para të Rilindjes Kombëtare Shqiptare, dhe çmohet si njëri prej ideologëve të saj të parë .
-                            <div class="meshum">
-                                <a href="../HTML/meshum.html#Naum"> Më shumë</a>
-                            </div>
+                        <div class="meshum">
+                            <a href="../HTML/meshum.html#Naum"> Më shumë</a>
+                        </div>
                         </p>
 
 
@@ -76,9 +76,9 @@
                             të qeverisë Përmeti në Konferencën e Versajës dhe zëvendëskryetar i legjislativit shqiptar më 1921. Pas dekadës së dytë të shek. XX, Fishta iu imponua kulturës shqiptare jo vetëm si shkrimtar (poet, dramaturg, prozator etj.),
                             por edhe si kritik, historian i letërsisë dhe estet.Për gjysmë shekulli ishte figura mbizotëruese e letërsisë shqipe, madje që kur ishte gjallë u kurorëzua "poet kombëtar".
 
-                            <div class="meshum">
-                                <a href="../HTML/meshum.html#Gjergj-Fishta"> Më shumë</a>
-                            </div>
+                        <div class="meshum">
+                            <a href="../HTML/meshum.html#Gjergj-Fishta"> Më shumë</a>
+                        </div>
 
                         </p>
                     </div>
@@ -99,9 +99,9 @@
                         <h2>Dritero Agolli</h2>
                         <p>Dritëro Agolli (13 tetor 1931 - 3 shkurt 2017) Ishte poet, prozator, publicist dhe politikan shqiptar. Që nga viti 1973 ai ishte kryetar i Lidhjes së Shkrimtarëve dhe të Artistëve të Shqipërisë.
 
-                            <div class="meshum">
-                                <a href="../HTML/meshum.html#Dritero-Agolli"> Më shumë</a>
-                            </div>
+                        <div class="meshum">
+                            <a href="../HTML/meshum.html#Dritero-Agolli"> Më shumë</a>
+                        </div>
                         </p>
                     </div>
                 </div>
@@ -123,9 +123,9 @@
                             lexuar e më të rëndësishëm të letërsisë shqipe të shekullit të 20-të. Për epokën ishte një zë krejtësisht novator nga brendia dhe forma dhe ndikimi mbi letërsinë shqipe të kohës ishte i madh.
 
 
-                            <div class="meshum">
-                                <a href="../HTML/meshum.html#Migjeni"> Më shumë</a>
-                            </div>
+                        <div class="meshum">
+                            <a href="../HTML/meshum.html#Migjeni"> Më shumë</a>
+                        </div>
                         </p>
                     </div>
                 </div>
@@ -145,9 +145,9 @@
                         <h2>Ndre Mjeda</h2>
                         <p>Ndre Mjeda ose Mjedja (Shkodër, 20 nëntor 1866 - 1 gusht 1937) ka qenë prift, gjuhëtar, poet lirik dhe deputet shqiptar. Është cilësuar nga Jakov Milaj "nji ndër letrarët ma të mëdhaj qi ka qitun Shqipnija".
 
-                            <div class="meshum">
-                                <a href="../HTML/meshum.html#Ndre"> Më shumë</a>
-                            </div>
+                        <div class="meshum">
+                            <a href="../HTML/meshum.html#Ndre"> Më shumë</a>
+                        </div>
                         </p>
                     </div>
                 </div>
@@ -177,9 +177,9 @@
                             gjermane të shekullit XX, trupi i shkrimit i të cilit ishte i vetëm në llojin e tij. Disa nga shkrimet e tij mbetën të pambaruara dhe u botuan pas vdekjes së tij, megjithëse dëshira e tij ishte që ato të asgjësoheshin - janë
                             bërë ikona në letërsinë e Perëndimit.
 
-                            <div class="meshum">
-                                <a href="../HTML/meshume.html"> Më shumë</a>
-                            </div>
+                        <div class="meshum">
+                            <a href="../HTML/meshume.html"> Më shumë</a>
+                        </div>
                         </p>
                     </div>
                 </div>
@@ -201,9 +201,9 @@
                             në menyrë të shkëlqyer realizmin letrar në SHBA. Stili i tij ekonomik dhe i nënvlerësuar kishte një ndikim të fortë në fiction të shekullit të 20-të, ndërsa jeta e tij e aventurës dhe imazhi i tij publik ndikuan në gjeneratat
                             e mëvonshme.
 
-                            <div class="meshum">
-                                <a href="../HTML/meshume.html#Ernest"> Më shumë</a>
-                            </div>
+                        <div class="meshum">
+                            <a href="../HTML/meshume.html#Ernest"> Më shumë</a>
+                        </div>
                         </p>
                     </div>
                 </div>
@@ -224,9 +224,9 @@
                         <p>Samuel Langhorne Clemens lindur 30 nëntor 1835 ndryshe njihet me emrin Mark Twain, ishte një autor dhe humorist amerikan. Ai shquhet për novelat e tij, The Adventures of Tom Sawyer (Aventurat e Tom Sojerit, 1876), si dhe për (Adventures
                             of Huckleberry Finn) (Aventurat e Hakëllberri Finit), e cila me vone njihej si “Great American Novel” (Novela e famshme Amerikane). Twain u rrit në Hannibal, Missouri, ku shkroi Huckleberry Finn dhe Tom Sawyer, te cilat i shkroi
                             me makine shtypi.
-                            <div class="meshum">
-                                <a href="../HTML/meshume.html#MT"> Më shumë</a>
-                            </div>
+                        <div class="meshum">
+                            <a href="../HTML/meshume.html#MT"> Më shumë</a>
+                        </div>
                         </p>
                     </div>
                 </div>
@@ -249,9 +249,9 @@
                             Poezia e tij u bë fondamenti të simbolizmit dhe kështu të poezisë moderne. Poe kishte qenë një nga poetët më të përkthyer në të gjitha vendet e botës. Fan Noli e kishte përkthyer edhe në shqip. Ai kishte përkthyer dy poemat
                             më të njohura të tijat : “Korbi” dhe “Anabel Li”.
 
-                            <div class="meshum">
-                                <a href="../HTML/meshume.html#Edgar"> Më shumë</a>
-                            </div>
+                        <div class="meshum">
+                            <a href="../HTML/meshume.html#Edgar"> Më shumë</a>
+                        </div>
                         </p>
                     </div>
                 </div>
@@ -273,9 +273,9 @@
                             italiane; fama e tij është kryesisht për shkak të krijimit të veprës "Komedia" (italisht: Comedìa), dhe më pas e quajtur Divina nga Bokaço duke u bërë e famshme si Komedia Hyjnore (italisht: Divina Commedia), dhe në përgjithësi
                             konsiderohet si vepra më e madhe e shkruar në italisht.
 
-                            <div class="meshum">
-                                <a href="../HTML/meshume.html#Dante"> Më shumë</a>
-                            </div>
+                        <div class="meshum">
+                            <a href="../HTML/meshume.html#Dante"> Më shumë</a>
+                        </div>
                         </p>
                     </div>
                 </div>
@@ -297,9 +297,9 @@
                             në vitet 1889-90. Karrierën e tij ai e nisi si gazetar në të përditshmen “Chicago Tribune” ku u bë i njohur me disa shkrime të bukura për shkrimtarë të mëdhenj si, Nathaniel Haw Thorne, William Dean Howells dhe disa intervista
                             me personalitete të njohura të politikës së vendit.
 
-                            <div class="meshum">
-                                <a href="../HTML/meshume.html#Teodor"> Më shumë</a>
-                            </div>
+                        <div class="meshum">
+                            <a href="../HTML/meshume.html#Teodor"> Më shumë</a>
+                        </div>
                         </p>
                     </div>
                 </div>
@@ -443,66 +443,59 @@
             </tbody>
         </table>
     </div>
-<br>
-    <?php require './app/views/inc/footer.php';?>
+    <br>
+    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/footer.php'; ?>
     <script>
+        const theme = document.querySelector("#stilicss");
 
-const theme = document.querySelector("#stilicss");
+        console.log(localStorage);
 
-console.log(localStorage);
+        remember();
 
-remember();
+        function darkMode() {
 
-function darkMode() {
+            theme.href = '../CSS/stylesdark.css';
+            localStorage.setItem("color", "dark");
+            console.log(localStorage);
+            document.getElementById("teksti").className = "fa fa-sun-o";
+            document.getElementById("teksti").style.color = "white";
+            document.getElementById("teksti").style.backgroundColor = "transparent";
 
-    theme.href = '../CSS/stylesdark.css';
-    localStorage.setItem("color", "dark");
-    console.log(localStorage);
-    document.getElementById("teksti").className = "fa fa-sun-o";
-    document.getElementById("teksti").style.color = "white";
-    document.getElementById("teksti").style.backgroundColor = "transparent";
+        }
 
-}
+        function lightMode() {
 
-function lightMode() {
+            theme.href = "../CSS/styles.css";
+            localStorage.setItem("color", "light");
+            console.log(localStorage);
+            document.getElementById("teksti").className = "fa fa-moon-o";
+            document.getElementById("teksti").style.color = "black";
+            document.getElementById("teksti").style.backgroundColor = "transparent";
 
-    theme.href = "../CSS/styles.css";
-    localStorage.setItem("color", "light");
-    console.log(localStorage);
-    document.getElementById("teksti").className = "fa fa-moon-o";
-    document.getElementById("teksti").style.color = "black";
-    document.getElementById("teksti").style.backgroundColor = "transparent";
+        }
 
-}
+        function toggleButton() {
 
-function toggleButton() {
+            if (localStorage.getItem("color") == ("light")) {
 
-    if (localStorage.getItem("color") == ("light")) {
+                darkMode();
+            } else if (localStorage.getItem("color") == ("dark")) {
 
-        darkMode();
-    }
-    else if (localStorage.getItem("color") == ("dark")) {
+                lightMode();
+            }
+        }
 
-        lightMode();
-    }
-}
+        function remember() {
+            if (localStorage.getItem("color") == ("light")) {
 
-function remember() {
-    if (localStorage.getItem("color") == ("light")) {
+                lightMode();
 
-        lightMode();
+            } else if (localStorage.getItem("color") == ("dark")) {
 
-    }
-    else if (localStorage.getItem("color") == ("dark")) {
+                darkMode();
 
-        darkMode();
-
-    }
-}
-
-
-
-
+            }
+        }
     </script>
 
 </body>

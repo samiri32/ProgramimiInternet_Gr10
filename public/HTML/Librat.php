@@ -2,227 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Librat</title>
-  <link  rel="stylesheet" id="stilicss" href="../CSS/stylesdark.css">
-  <title>BIBLIOTEKA SINAN DOBREVA</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/png" href="../img/sinani4.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-  <script>
-    window.onscroll = function() {
-      growShrinkLogo()
-    };
-
-    function growShrinkLogo() {
-      var sinani = document.getElementById("sinani")
-      if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-        sinani.style.width = "5em";
-        sinani.style.height = "3.5em";
-
-      } else {
-        sinani.style.width = "8em";
-        sinani.style.height = "6em";
-      }
-    }
-  </script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#search').click(function() {
-        $('.menu-item').toggleClass('hide-item')
-        $('.search-form').toggleClass('active')
-      })
-    })
-  </script>
-
-  </script>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-    }
-
-    .sinanibabo {
-      display: flex;
-      justify-content: center;
-    }
-
-    .logoja {
-      display: inline-grid;
-      justify-content: center;
-    }
-
-    .titulli {
-      color: white;
-      font-size: 1.45em;
-    }
-
-    .titulli:hover {
-      color: #0075ff;
-    }
-
-    .header {
-      background-color: black;
-      height: 1.25em;
-      color: white;
-      text-decoration: none;
-    }
-
-    .djathtas {
-      display: grid;
-      align-content: space-between;
-    }
-
-    .majtas {
-      align-content: space-between;
-      display: grid;
-    }
-
-    .topnav {
-      display: flex;
-      justify-content: center;
-      overflow: hidden;
-      position: -webkit-sticky;
-      position: sticky;
-      z-index: 1;
-      top: 0;
-      padding: 0px;
-      background-color: black;
-      border: 2px solid;
-    }
-
-    .topnav a {
-      font-size: 1.45em;
-      color: #f2f2f2;
-      padding: 0px 30px;
-      text-decoration: none;
-    }
-
-    .topnav a:hover {
-      color: #0075ff;
-    }
-
-    .djathtasposht a.menu-item {
-      transform: scale(1);
-      display: inline-block;
-      transition: 0.5s;
-    }
-
-    .djathtasposht a.menu-item.hide-item {
-      transform: scale(0);
-    }
-
-    #one {
-      transition-delay: 0.2s;
-    }
-
-    #two {
-      transition-delay: 0.1s;
-    }
-
-    #three {
-      transition-delay: 0s;
-    }
-
-    .search-form {
-      display: inline-block;
-      position: sticky;
-      margin-bottom: 0.3em;
-      top: 8em;
-      right: 28em;
-      transform: translateX(-50%);
-      width: 0em;
-      height: 1em;
-      transition: 0.6s;
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    .search-form.active {
-      position: sticky;
-      top: 8em;
-      right: 28em;
-      width: 0em;
-      height: 1em;
-      opacity: 1;
-      transition-delay: 0.4s;
-      visibility: visible;
-      background: transparent;
-    }
-
-    .search-form input {
-      margin-left: 1.5em;
-      margin-top: -0.2em;
-      width: 15em;
-      height: 1.5em;
-      color: white;
-      border: none;
-      background: transparent;
-      outline: none;
-      font-size: 1.1em;
-    }
-  </style>
+  <?php require '/xampp/htdocs/kak/app/views/inc/header.php'; ?>
 </head>
 
 
 
 
 <body>
-  <div class="header"></div>
-
-  <div class="topnav">
-    <div class="majtas">
-      <div class="majtasnalt">homepage</div>
-      <div class="majtasposht">
-        <a href="../index.html">Ballina</a>
-        <a href="../HTML/Autoret1.html">Autorët</a>
-        <a href="#">Librat</a>
-        <a href="../HTML/lajmi.html">Lajme</a>
-      </div>
-    </div>
-
-    <div class="logoja">
-      <div class="sinanibabo">
-        <img src="../img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
-      </div>
-      <a href="../index.html" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka
-          Sinan
-          Dobreva</span></a>
-    </div>
-
-    <div class="djathtas">
-      <div class="djathtasnalt">homepage</div>
-      <div class="djathtasposht">
-        <div class="search-form">
-          <form>
-            <input type="text" name="" placeholder="Kërkoni">
-          </form>
-        </div>
-        <a href="../HTML/galeria.html" class="menu-item" id="one">Galeria</a>
-        <a href="../HTML/Kontakti.html" class="menu-item" id="two">Kontakti</a>
-        <a href="../HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
-        <a href="#" id="search"><i class="fa fa-search"></i></a>
-
-
-      </div>
-    </div>
+  <?php require '/xampp/htdocs/kak/app/views/inc/navbar.php'; ?>
   </div>
-  <div>   
-    <i onclick="toggleButton()" class="fa fa-moon-o" id="teksti" style="margin-left:0.5em;margin-top:0.5em; font-size: 2em;font-weight: bold; position:-webkit-fixed;position:fixed;z-index: 9999;"></i> 
-     
-   
-   </div>
   <div class="homepage"><br>
     <h2 class="beni" style="text-align: center; color: #0075ff;">Libra shqip</h2><br>
     <div class="librat">
@@ -231,10 +20,10 @@
       <div class="liber">
         <img class="imagee" src="../img/Bageti e bujqesi.png">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐7.5/10</center>
           </div>
@@ -247,26 +36,26 @@
 
 
 
-          <div class="ratingu ">
-            <div class="yjet" >
+        <div class="ratingu ">
+          <div class="yjet">
 
 
-                <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
-              <center id="rating">⭐8.0/10</center>
-            </div>
+            <center id="rating">⭐8.0/10</center>
           </div>
+        </div>
 
-        <div class="librattitulli"  style="font-style:italic">"Baba Tomorri"</div>
+        <div class="librattitulli" style="font-style:italic">"Baba Tomorri"</div>
       </div>
 
       <div class="liber">
         <img class="imagee" src="../img/Fjala Fluturake NF.jpg">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii" >Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐7.4/10</center>
           </div>
@@ -277,10 +66,10 @@
       <div class="liber">
         <img class="imagee" src="../img/Historia e skenderbeut NF.jpg">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐9.0/10</center>
           </div>
@@ -290,40 +79,40 @@
     </div>
     <div class="librat">
       <div class="liber">
-        <img class="imagee"  src="../img/Juda Makabe GJF.jpg">
+        <img class="imagee" src="../img/Juda Makabe GJF.jpg">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
-            <center id="rating"r>⭐7.6/10</center>
+            <center id="rating" r>⭐7.6/10</center>
           </div>
         </div>
         <div class="librattitulli" style="font-style:italic">"Juda Makabe"</div>
       </div>
 
       <div class="liber">
-        <img class="imagee"  src="../img/Juvenila NM.jpg">
+        <img class="imagee" src="../img/Juvenila NM.jpg">
         <div class="ratingu ">
           <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar</h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar</h3>
 
             <center id="rating">⭐6.8/10</center>
           </div>
         </div>
-        <div class="librattitulli"style="font-style:italic">"Juvenila"</div>
+        <div class="librattitulli" style="font-style:italic">"Juvenila"</div>
       </div>
 
       <div class="liber">
-        <img class="imagee"  src="../img/Lahuta e malcis GJF.jpg">
+        <img class="imagee" src="../img/Lahuta e malcis GJF.jpg">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii" >Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐8.5/10</center>
           </div>
@@ -333,12 +122,12 @@
       </div>
 
       <div class="liber">
-        <img class="imagee"  src="../img/Lissus NM.jpg">
+        <img class="imagee" src="../img/Lissus NM.jpg">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐9.0/10</center>
           </div>
@@ -348,12 +137,12 @@
     </div>
     <div class="librat">
       <div class="liber">
-        <img class="imagee"  src="../img/Luli i vocerr M.jpg">
+        <img class="imagee" src="../img/Luli i vocerr M.jpg">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐7.3/10</center>
           </div>
@@ -362,45 +151,45 @@
       </div>
 
       <div class="liber">
-        <img class="imagee"  src="../img/Meshari.jpeg">
+        <img class="imagee" src="../img/Meshari.jpeg">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐9.6/10</center>
           </div>
         </div>
-        <div class="librattitulli"style="font-style:italic">"Meshari"</div>
+        <div class="librattitulli" style="font-style:italic">"Meshari"</div>
       </div>
 
       <div class="liber">
-        <img class="imagee"  src="../img/Mrizi i Zanave GJF.jpg">
+        <img class="imagee" src="../img/Mrizi i Zanave GJF.jpg">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐7.3/10</center>
           </div>
         </div>
-        <div class="librattitulli"style="font-style:italic">"Mrizi i Zanave"</div>
+        <div class="librattitulli" style="font-style:italic">"Mrizi i Zanave"</div>
       </div>
 
       <div class="liber">
-        <img class="imagee"  src="../img/scodra.jpg">
+        <img class="imagee" src="../img/scodra.jpg">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐5.9/10</center>
           </div>
         </div>
-        <div class="librattitulli"style="font-style:italic">"Scodra"</div>
+        <div class="librattitulli" style="font-style:italic">"Scodra"</div>
       </div>
 
     </div>
@@ -408,202 +197,202 @@
     <div class="librat">
 
       <div class="liber">
-        <img class="imagee"  src="../img/P.png">
+        <img class="imagee" src="../img/P.png">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐8.1/10</i></i></center>
           </div>
         </div>
 
-        <div class="librattitulli"style="font-style:italic">"Procesi"</div>
+        <div class="librattitulli" style="font-style:italic">"Procesi"</div>
 
       </div>
 
       <div class="liber">
-        <img class="imagee"  src="../img/I.png">
+        <img class="imagee" src="../img/I.png">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐6.7/10</i></i></center>
           </div>
         </div>
-        <div class="librattitulli"style="font-style:italic">"Idioti"</div>
+        <div class="librattitulli" style="font-style:italic">"Idioti"</div>
 
 
 
       </div>
 
       <div class="liber">
-        <img class="imagee"  src="../img/AK.png">
+        <img class="imagee" src="../img/AK.png">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐7.5/10</i></i></center>
           </div>
         </div>
 
-        <div class="librattitulli"style="font-style:italic">"Ana Karenina"</div>
+        <div class="librattitulli" style="font-style:italic">"Ana Karenina"</div>
 
       </div>
 
       <div class="liber">
-        <img class="imagee"  src="../img/DC.png">
+        <img class="imagee" src="../img/DC.png">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐8.0/10</i></i></center>
           </div>
         </div>
 
-        <div class="librattitulli"style="font-style:italic">"Kodi i Da Vinçit"</div>
+        <div class="librattitulli" style="font-style:italic">"Kodi i Da Vinçit"</div>
 
       </div>
     </div>
 
     <div class="librat">
       <div class="liber">
-        <img class="imagee"  src="../img/PD.png">
+        <img class="imagee" src="../img/PD.png">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐6.3/10</i></i></center>
           </div>
         </div>
 
-        <div class="librattitulli"style="font-style:italic">"Plaku dhe Deti"</div>
+        <div class="librattitulli" style="font-style:italic">"Plaku dhe Deti"</div>
 
       </div>
 
       <div class="liber">
-        <img class="imagee"  src="../img/KH.png">
+        <img class="imagee" src="../img/KH.png">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐7.5/10</i></i></center>
           </div>
         </div>
 
-        <div class="librattitulli"style="font-style:italic">"Komedia Hyjnore"</div>
+        <div class="librattitulli" style="font-style:italic">"Komedia Hyjnore"</div>
 
       </div>
 
       <div class="liber">
-        <img class="imagee"  src="../img/H.png">
+        <img class="imagee" src="../img/H.png">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐5.9/10</i></i></center>
           </div>
         </div>
 
-        <div class="librattitulli"style="font-style:italic">"Një tragjedi Amerikane"</div>
+        <div class="librattitulli" style="font-style:italic">"Një tragjedi Amerikane"</div>
 
       </div>
 
       <div class="liber">
-        <img class="imagee"  src="../img/LP1.png">
+        <img class="imagee" src="../img/LP1.png">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐9.5/10</i></i></center>
           </div>
         </div>
 
-        <div class="librattitulli"style="font-style:italic">"Luftë e Paqja"</div>
+        <div class="librattitulli" style="font-style:italic">"Luftë e Paqja"</div>
       </div>
     </div>
     <div class="librat">
       <div class="liber">
-        <img class="imagee"  src="../img/TS.png">
+        <img class="imagee" src="../img/TS.png">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐7.5/10</i></i></center>
           </div>
         </div>
 
-        <div class="librattitulli"style="font-style:italic">"Aventurat e Tom Sojerit"</div>
+        <div class="librattitulli" style="font-style:italic">"Aventurat e Tom Sojerit"</div>
 
       </div>
 
       <div class="liber">
-        <img class="imagee"  src="../img/HH.png">
+        <img class="imagee" src="../img/HH.png">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐7.8/10</i></i></center>
           </div>
         </div>
 
-        <div class="librattitulli"style="font-style:italic">"Hamleti"</div>
+        <div class="librattitulli" style="font-style:italic">"Hamleti"</div>
 
       </div>
 
       <div class="liber">
-        <img class="imagee"  src="../img/SH.png">
+        <img class="imagee" src="../img/SH.png">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐9.1/10</i></i></center>
           </div>
         </div>
 
-        <div class="librattitulli"style="font-style:italic">"Simboli i Humbur"</div>
+        <div class="librattitulli" style="font-style:italic">"Simboli i Humbur"</div>
 
       </div>
 
       <div class="liber">
-        <img class="imagee"  src="../img/RJ.png">
+        <img class="imagee" src="../img/RJ.png">
         <div class="ratingu ">
-          <div class="yjet" >
+          <div class="yjet">
 
 
-              <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
+            <h3 class="librattitullii">Lexuesi e ka vlerësuar </h3>
 
             <center id="rating">⭐8.1/10</i></i></center>
           </div>
         </div>
 
-        <div class="librattitulli"style="font-style:italic">"Romeo dhe Zhuljeta"</div>
+        <div class="librattitulli" style="font-style:italic">"Romeo dhe Zhuljeta"</div>
 
       </div>
     </div>
     <div class="titulli-slider">
-      <h1>Në trend tani</h1>
+      <h1 id="netrend">Në trend tani</h1>
     </div>
   </div>
 
@@ -618,258 +407,58 @@
   </div>
 
   </main>
-
-  <div class="row4">
-    <div class="shortcuts">
-      <div class="shortcutnalt">
-        <div class="bs">VEGËZA TË DOBISHME</div>
-      </div>
-      <div class="shortcutposht">
-        <a href="#" class="eee" id="sdds">Libra</a>
-        <a href="../HTML/Autoret1.html" class="eee" id="fdsfdsf">Autorët</a>
-        <a href="../HTML/lajmi.html" class="eee" id="fsdfdsf">Lajme</a>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="row5">
-    <div class="row5pjesepjese">
-      <div class="logoja">
-        <div class="sinanibabo">
-          <img src="../img/sinani3.png" alt="pldh" height="130em" width="175em" id='sinanibardh'>
-        </div>
-        <span id="sinaniposht">Biblioteka Sinan Dobreva</span>
-      </div>
-      <div class="perberja">
-        <div class="kolona1p">
-          <span id="lajmekuq5" style="font-size: 1em;">Misioni</span>
-          <br>
-          <p id="kolona1pp">BSD është institucion kulturor, edukues e informues që grumbullon dhe ruan koleksionet e veta nga fushat e ndryshme të krijimtarisë intelektuale me qëllim që t’ i bëjë të njohura shfrytëzuesve për t’i studiuar dhe për t’ i
-            lënë trashëgim
-            gjeneratave të ardhshme.</p>
-          <a href="#">
-            <p id="katalogu">Shfleto katalogun</p>
-          </a>
-        </div>
-
-        <div class="kolona1p">
-          <span id="lajmekuq5" style="font-size: 1em;">Ofertat</span>
-          <br>
-          <p id="kolona1pp">Biblioteka BSD ofron qasje në materialin bibliotekar për të gjithë përdoruesit e qytetit të Prishtinës me rrethinë, pavarësisht nga raca, kombësia, gjinia, mosha, besimi fetar, gjuha, paaftësitë fizike dhe informon e
-            ndihmon ata në
-            përdorimin e gjetjen e tyre.</p>
-          <a href="../HTML/regjistrohu.html">
-            <p id="katalogu">Regjistrohu</p>
-          </a>
-        </div>
-
-        <div class="kolona1p">
-          <span id="lajmekuq5" style="font-size: 1em;">Bashkëpunëtorët</span>
-          <br>
-          <p id="kolona1pp">Biblioteka "Sinan Dobreva" bashkëpunon me bibliotekat në vend dhe jashtë vendit; Bashkëpunon me institucionet kulturore, shtëpitë botuese, shkollat dhe me komunitetin me qëllim të nxitjes së interesimit për librin dhe të
-            mësuarit gjatë
-            gjith jetës. Shfletoni galerinë për më shumë.
-          </p>
-          <a href="../HTML/galeria.html">
-            <p id="katalogu">Galeria</p>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br><br><br>
-  <!--QITU JA NIS row6-->
-
-  <div class="row6">
-    <div class="subfooternalt">
-      <div class="sbkol1">
-        <span id="sf">Regjistrohu për të pranuar e-mails nga Biblioteka</span><br><br>
-        <!-- Qitu ni form per Anetaresim (mail subscription)-->
-        <form autocomplete="on" action="/action_page.php">
-          <div class="autocomplete" style="width: 25em;">
-            <input id="myInput" type="text" name="myEmail" placeholder="E-mail" style="background-color:white;">
-          </div>
-          <button class="buton">Dërgo</button>
-        </form> <input type="checkbox" checked="checked" name="subscribe"><span id="perdite">E-mails të përditshme </span>
-        <br><br>
-      </div>
-
-      <div class="sbkol1">
-        <span id="sf">Porosit katalogun e librave</span><br><br>
-        <button class="buton">Porosit</button>
-        <h5 id="h5">Plotësisht falas!</h5>
-      </div>
-
-    </div>
-
-    <div class="subfooterposht">
-
-      <div class="sbkol2">
-
-        <ul>
-
-          <li><a href="#">
-              Libra shqip
-            </a>
-          </li>
-          <li><a href="#teHuaj">
-              Libra të huaj
-            </a></li>
-        </ul>
-      </div>
-
-      <div class="sbkol2">
-
-        <ul>
-
-
-          <li><a href="../HTML/meshum.html">
-              Autorë shqiptar
-            </a></li>
-          <li><a href="../HTML/meshume.html">
-              Autorë të huaj
-            </a></li>
-        </ul>
-      </div>
-      <div class="sbkol2">
-
-        <ul>
-          <li><a href="../HTML/lajmi.html"><span>Lajme</span></a>
-          </li>
-
-        </ul>
-      </div>
-      <div class="sbkol2">
-
-        <ul>
-
-          <li><a href="../HTML/galeria.html#fotogaleriah3">
-              Fotogaleria
-            </a>
-          </li>
-          <li><a href="../HTML/galeria.html#videogaleriah3">
-              Videogaleria
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="sbkol2">
-
-        <ul>
-          <li><a href="../HTML/Kontakti.html"><span>Kontakti</span></a>
-          </li>
-        </ul>
-      </div>
-      <div class="sbkol2">
-
-        <ul>
-          <li><a href="../HTML/regjistrohu.html"><span>Regjistrohu</span></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
-
-  <!-- qiky /div e mshel homepage ;) -->
-  </div>
-
-
-  <footer class="futeri">
-    <div class="futerimrena">
-
-      <div class="futerimamrena">
-        <div class="sbkol3">
-          <a href="#" id="socialmedia" style="padding-right:0.5em;"><i class="fa fa-instagram"></i></a>
-          <a href="#" id="socialmedia" style="padding-right:0.5em;"><i class="fa fa-facebook"></i></a>
-          <a href="#" id="socialmedia"><i class="fa fa-twitter"></i></a>
-        </div>
-
-        <div class="sbkol3">
-          <span id="suxhuki">Për sugjerime:</span>
-          <a href="mailto: BSDa@biblioteka.com" id="socialmedia" style="padding-left: 0.15em;">
-            <i class="fa fa-envelope"></i></a>
-        </div>
-
-        <div class="sbkol3">
-          <address style="font-size:0.8em">
-            Dobrevë, 10000<br>
-            Kosovë
-          </address>
-        </div>
-
-        <div class="sbkol33">
-          <span style="font-size:0.85em;">©2020-2021 <abbr title="Biblioteka Sinan Dobreva">BSD</abbr> Të
-            gjitha të
-            drejtat e rezervuara.</span>
-        </div>
-      </div>
-
-    </div>
-  </footer>
+  <?php require '/xampp/htdocs/kak/app/views/inc/footer.php'; ?>
   <script>
-   
+    const theme = document.querySelector("#stilicss");
 
-const theme = document.querySelector("#stilicss");
-
-console.log(localStorage);
-
-remember();
-
-function darkMode() {
-
-    theme.href = '../CSS/stylesdark.css';
-    localStorage.setItem("color", "dark");
     console.log(localStorage);
-    document.getElementById("teksti").className = "fa fa-sun-o";
-    document.getElementById("teksti").style.color = "white";
-    document.getElementById("teksti").style.backgroundColor = "transparent";
 
-}
+    remember();
 
-function lightMode() {
+    function darkMode() {
 
-    theme.href = "../CSS/styles.css";
-    localStorage.setItem("color", "light");
-    console.log(localStorage);
-    document.getElementById("teksti").className = "fa fa-moon-o";
-    document.getElementById("teksti").style.color = "black";
-    document.getElementById("teksti").style.backgroundColor = "transparent";
+      theme.href = '../CSS/stylesdark.css';
+      localStorage.setItem("color", "dark");
+      console.log(localStorage);
+      document.getElementById("teksti").className = "fa fa-sun-o";
+      document.getElementById("teksti").style.color = "white";
+      document.getElementById("teksti").style.backgroundColor = "transparent";
 
-}
+    }
 
-function toggleButton() {
+    function lightMode() {
 
-    if (localStorage.getItem("color") == ("light")) {
+      theme.href = "../CSS/styles.css";
+      localStorage.setItem("color", "light");
+      console.log(localStorage);
+      document.getElementById("teksti").className = "fa fa-moon-o";
+      document.getElementById("teksti").style.color = "black";
+      document.getElementById("teksti").style.backgroundColor = "transparent";
+
+    }
+
+    function toggleButton() {
+
+      if (localStorage.getItem("color") == ("light")) {
 
         darkMode();
-    }
-    else if (localStorage.getItem("color") == ("dark")) {
+      } else if (localStorage.getItem("color") == ("dark")) {
 
         lightMode();
+      }
     }
-}
 
-function remember() {
-    if (localStorage.getItem("color") == ("light")) {
+    function remember() {
+      if (localStorage.getItem("color") == ("light")) {
 
         lightMode();
 
-    }
-    else if (localStorage.getItem("color") == ("dark")) {
+      } else if (localStorage.getItem("color") == ("dark")) {
 
         darkMode();
 
+      }
     }
-}
-
-
-
-
- 
-
   </script>
 
 </body>

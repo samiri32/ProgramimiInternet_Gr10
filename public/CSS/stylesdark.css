@@ -647,6 +647,13 @@
     opacity: 0;
   }
 }
+#netrend {
+  color: white !important;
+}
+h1, h2, h3, h4, span, p {
+  color:white !important;
+  text-decoration: none !important;
+}
 
 .librattitulli {
   color: black;

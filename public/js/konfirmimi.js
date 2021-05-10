@@ -28,7 +28,7 @@ function Konfirmimi(){
 		document.getElementById('dialogoverlay').style.display = "none";
 	}
 	this.yes = function(){
-		window.location.href="../html/forma.html"
+		window.location.href="../HTML/forma.php"
 		document.getElementById('dialogbox').style.display = "none";
 		document.getElementById('dialogoverlay').style.display = "none";
 	}
