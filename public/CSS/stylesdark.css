@@ -1474,8 +1474,12 @@ h1 {
   padding-left: 10px;
 }
 
-.tittle {
+h2 .tittle {
   padding-left: 20px;
+  color:white !important;
+}
+#tittle {
+  color: white !important;
 }
 
 .form-group label {

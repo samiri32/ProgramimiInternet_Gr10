@@ -4,17 +4,17 @@
         <div class="majtasnalt">homepage</div>
         <div class="majtasposht">
             <a href="./index.html">Ballina</a>
-            <a href="./HTML/Autoret1.html">Autorët</a>
-            <a href="./HTML/Librat.html">Librat</a>
-            <a href="./HTML/lajmi.html">Lajme</a>
+            <a href="../../../app/views/pages/autoret.php">Autorët</a>
+            <a href="../../../app/views/pages/librat.php">Librat</a>
+            <a href="../../../app/views/pages/lajme.php">Lajme</a>
         </div>
     </div>
 
     <div class="logoja">
         <div class="sinanibabo">
-            <img src="../img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
+            <img src="../../../public/img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
         </div>
-        <a href="./index.html" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka
+        <a href="../../../app/views/pages/homepage.php" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka
                 Sinan
                 Dobreva</span></a>
     </div>
@@ -27,9 +27,9 @@
                     <input type="text" name="" placeholder="Kërkoni">
                 </form>
             </div>
-            <a href="./HTML/galeria.html" class="menu-item" id="one">Galeria</a>
-            <a href="./HTML/Kontakti.html" class="menu-item" id="two">Kontakti</a>
-            <a href="./HTML/kycu.html" class="menu-item" id="three">Kyçu</a>
+            <a href="../../../app/views/pages/galeria.php" class="menu-item" id="one">Galeria</a>
+            <a href="../../../app/views/pages/kontakti.php" class="menu-item" id="two">Kontakti</a>
+            <a href="../../../app/views/pages/kycu.php" class="menu-item" id="three">Kyçu</a>
             <a href="#" id="search"><i class="fa fa-search"></i></a>
 
 

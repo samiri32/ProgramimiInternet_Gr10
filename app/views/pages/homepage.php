@@ -14,21 +14,21 @@
             <div class="column side">
 
                 <div class="lajmi">
-                    <a href="../HTML/lajmi.html#kadare"> <img src="../img/ismail-kadare-j-foley-opale-w-1-990x556.jpg" alt="Ismail Kadare duke u dukur bukur!!!">
+                    <a href="../../../public/HTML/lajme.php#kadare"> <img src="../../../public/img/ismail-kadare-j-foley-opale-w-1-990x556.jpg" alt="Ismail Kadare duke u dukur bukur!!!">
                         <span id='lajmekuq'>LAJME</span><br>
                         <span>Ismail Kadare: Fituesi i sivjetshëm i &ccedilmimit Neustadt Prize p&eumlr
                             Literatur&euml</span></a>
                 </div><br><br>
 
                 <div class="lajmi">
-                    <a href="../HTML/lajmi.html#ekspozita"> <img src="../img/ekspozita.jpeg" alt="Ekspozitaaa!!!">
+                    <a href="../../../public/lajme.php#ekspozita"> <img src="../../../public/img/ekspozita.jpeg" alt="Ekspozitaaa!!!">
                         <span id='lajmekuq'>LAJME</span><br>
                         <span>Ekspozita e librit e mbajtur për nder të 70 vjetorit të lidhjes
                             Shqiptaro-kineze</span></a>
                 </div><br><br>
 
                 <div class="lajmi">
-                    <a href="../HTML/lajmi.html#nolinjo"> <img src="../img/noli.jpg" alt="Fan STILIAN Noli!!!">
+                    <a href="../../../public/lajme.php#nolinjo"> <img src="../../../public/img/noli.jpg" alt="Fan STILIAN Noli!!!">
                         <span id='lajmekuq'>LAJME</span><br>
                         <span>Libraria e Fan Nolit në Boston, rikthim në nacionalizmin shqiptar</span></a>
                 </div>
@@ -36,7 +36,7 @@
             </div>
             <div class="column middle">
                 <div class="lajmimes">
-                    <a href="../HTML/lajmi.html#hivzia"> <img src="../img/HIVZIABABOOO.jpg" alt="pls qelu ma shpejt kena me msu pls plsplspslsp!!!">
+                    <a href="../../../public/lajme.php#hivzia"> <img src="../../../public/img/HIVZIABABOOO.jpg" alt="pls qelu ma shpejt kena me msu pls plsplspslsp!!!">
                         <span id='lajmekuq'>LAJME</span><br>
                         <span>Kanë filluar punimet për renovimin e ndërtesës së bibliotekës së qytetit, “Hivzi
                             Sulejmani”</span><br>
@@ -49,7 +49,7 @@
                 </div><br><br>
 
                 <div class="lajmimes">
-                    <a href="../HTML/lajmi.html#minibibliotekat"> <img src="../img/mini-biblioteka.jpg" alt="Biblioteka!!!">
+                    <a href="../../../public/lajme.php#minibibliotekat"> <img src="../../../public/img/mini-biblioteka.jpg" alt="Biblioteka!!!">
                         <span id='lajmekuq'>LAJME</span><br>
                         <span>Lagjet e Prishtinës bëhen me mini-biblioteka</span><br>
                         <span id='elaborimi'>OJQ “Etea” dhe Kuvendi i të Rinjve të Prishtinës kanë bërë hapjen e
@@ -62,21 +62,21 @@
 
             <div class="column side">
                 <div class="lajmi">
-                    <a href="../HTML/lajmi.html#leximi"> <img src="../img/Dukagjinn-640x480.jpg" alt="Ismail Kadare duke u dukur bukur!!!">
+                    <a href="../../../public/lajme.php#leximi"> <img src="../../../public/img/Dukagjinn-640x480.jpg" alt="Ismail Kadare duke u dukur bukur!!!">
                         <span id='lajmekuq'>LAJME</span><br>
                         <span>Leximi gjatë pandemisë, bibliotekat pa vizitorë dhe lulëzim i shitjes së
                             librave</span></a>
                 </div><br><br>
 
                 <div class="lajmi">
-                    <a href="../HTML/lajmi.html#sos"> <img src="../img/dhurohenlibra.png
+                    <a href="../../../public/lajme.php#sos"> <img src="../../../public/img/dhurohenlibra.png
             " alt="Ekspozitaaa!!!">
                         <span id='lajmekuq'>LAJME</span><br>
                         <span>Dhurohen libra në SOS Fshatin e fëmijëve</span></a>
                 </div><br><br>
 
                 <div class="lajmi">
-                    <a href="../HTML/lajmi.html#fishta"> <img src="https://kallxo.com/wp-content/uploads/2020/12/Ekspozita-per-Atm%C3%A9-e-f%C3%A9--640x480.jpg" alt="Fan STILIAN Noli!!!">
+                    <a href="../../../public/lajme.php#fishta"> <img src="https://kallxo.com/wp-content/uploads/2020/12/Ekspozita-per-Atm%C3%A9-e-f%C3%A9--640x480.jpg" alt="Fan STILIAN Noli!!!">
                         <span id='lajmekuq'>LAJME</span><br>
                         <span>Dorëshkrime të rralla të Fishtës ekspozohen në Bibliotekën Kombëtare</span></a>
                 </div>
@@ -90,7 +90,7 @@
                 <div class="slideshow-container">
 
                     <div class="Sllajdet">
-                        <a href="#"><img src="../img/rezervo.png" style="width:100%" id="kliko"></a>
+                        <a href="#"><img src="../../../public/img/rezervo.png" style="width:100%" id="kliko"></a>
                     </div>
 
                     <div id="dialogoverlay"></div>
@@ -103,11 +103,11 @@
                     </div>
 
                     <div class="Sllajdet">
-                        <img src="../img/noli.jpg" style="width:100%">
+                        <img src="../../../public/img/noli.jpg" style="width:100%">
                     </div>
 
                     <div class="Sllajdet">
-                        <img src="../img/ismail-kadare-j-foley-opale-w-1-990x556.jpg" style="width:100%">
+                        <img src="../../../public/img/ismail-kadare-j-foley-opale-w-1-990x556.jpg" style="width:100%">
                     </div>
 
                     <a class="mrapa" onclick="plusSlides(-1)">&#10094;</a>
@@ -130,7 +130,7 @@
             <div class="libri">
                 <article>
                     <div class="bestsellersimg">
-                        <img class="fototmodal" src="../img/hasha.jpg" style="width:100%; max-height:30em">
+                        <img class="fototmodal" src="../../../public/img/hasha.jpg" style="width:100%; max-height:30em">
                         <div id="myModal">
                             <span class="close">×</span>
                             <img id="img">
@@ -146,7 +146,7 @@
             <div class="libri">
                 <section>
                     <div class="bestsellersimg">
-                        <img class="fototmodal" src="../img/joe.jpg" style="width:100%; max-height:30em">
+                        <img class="fototmodal" src="../../../public/img/joe.jpg" style="width:100%; max-height:30em">
                         <div id="myModal">
                             <span class="close">×</span>
                             <img id="img">
@@ -161,7 +161,7 @@
 
             <div class="libri">
                 <div class="bestsellersimg">
-                    <img class="fototmodal" src="../img/melania.jpg" style="width:100%; max-height:30em">
+                    <img class="fototmodal" src="../../../public/img/melania.jpg" style="width:100%; max-height:30em">
                     <div id="myModal">
                         <span class="close">×</span>
                         <img id="img">
@@ -174,7 +174,7 @@
 
             <div class="libri">
                 <div class="bestsellersimg">
-                    <img class="fototmodal" src="../img/kupi.png" style="width:100%; max-height:30em">
+                    <img class="fototmodal" src="../../../public/img/kupi.png" style="width:100%; max-height:30em">
                     <div id="myModal">
                         <span class="close">×</span>
                         <img id="img">
@@ -187,7 +187,7 @@
 
             <div class="libri">
                 <div class="bestsellersimg">
-                    <img class="fototmodal" src="../img/xhaxhienver.png" style="width:100%; max-height:30em">
+                    <img class="fototmodal" src="../../../public/img/xhaxhienver.png" style="width:100%; max-height:30em">
                     <div id="myModal">
                         <span class="close">×</span>
                         <img id="img">
@@ -209,13 +209,13 @@
         <div class="row3">
             <div class="kolona1">
                 <div class="autori">
-                    <a href="../HTML/meshume.html#MT"> <img src="../img/MT.jpg" alt="Ekspozitaaa!!!"><br>
+                    <a href="../../../public/meshume.php#MT"> <img src="../../../public/img/MT.jpg" alt="Ekspozitaaa!!!"><br>
                         <span id='lajmekuq'>Më shumë</span><br>
                         <span id='spanautor'>Mark Twain</span></a>
                 </div><br><br>
 
                 <div class="autori">
-                    <a href="../HTML/meshume.html#Edgar"> <img src="../img/EAP.jpg" alt="Fan STILIAN Noli!!!"><br>
+                    <a href="../../../public/meshume.php#Edgar"> <img src="../../../public/img/EAP.jpg" alt="Fan STILIAN Noli!!!"><br>
                         <span id='lajmekuq'>Më shumë</span><br>
                         <span id='spanautor'>Edgar Allan Poe</span></a>
                 </div>
@@ -223,14 +223,14 @@
             </div>
             <div class="kolona2">
                 <div class="autori">
-                    <a href="../HTML/meshume.html#FK"> <img src="../img/FK.jpg" alt="pls qelu ma shpejt kena me msu pls plsplspslsp!!!"><br>
+                    <a href="../../../public/meshume.php#FK"> <img src="../../../public/img/FK.jpg" alt="pls qelu ma shpejt kena me msu pls plsplspslsp!!!"><br>
                         <span id='lajmekuq'>Më shumë</span><br>
                         <span id='spanautor'>Franz Kafka</span><br>
                     </a>
                 </div><br><br><br>
 
                 <div class="autori">
-                    <a href="../HTML/meshume.html#Ernest"> <img src="../img/EH.jpg" alt="!!!"><br>
+                    <a href="../../../public/meshume.php#Ernest"> <img src="../../../public/img/EH.jpg" alt="!!!"><br>
                         <span id='lajmekuq'>Më shumë</span><br>
                         <span id='spanautor'>Ernest Hemingway</span><br></a>
                 </div><br><br>
@@ -243,7 +243,7 @@
                 <div class="autorimmv">
                     <div class="dantepjesepjese">
                         <div class="fotojadantes">
-                            <a href="../HTML/meshume.html#Dante"> <img src="../img/dante.png" alt="!!!">
+                            <a href="../../../public/meshume.php#Dante"> <img src="../../../public/img/dante.png" alt="!!!">
                         </div><br>
                         <div class="emrietj">Dante Alighieri<br>
                             <span id='lajmekuq'>Më shumë</span><br>
@@ -286,7 +286,7 @@
 
             function darkMode() {
 
-                theme.href = '../CSS/stylesdark.css';
+                theme.href = '../../../public/CSS/stylesdark.css';
                 localStorage.setItem("color", "dark");
                 console.log(localStorage);
                 document.getElementById("teksti").className = "fa fa-sun-o";
@@ -297,7 +297,7 @@
 
             function lightMode() {
 
-                theme.href = "../CSS/styles.css";
+                theme.href = "../../../public/CSS/styles.css";
                 localStorage.setItem("color", "light");
                 console.log(localStorage);
                 document.getElementById("teksti").className = "fa fa-moon-o";
@@ -384,7 +384,7 @@
                 modal.style.display = "none";
             }
         </script>
-        <script src="../js/konfirmimi.js"></script>
+        <script src="../../../public/js/konfirmimi.js"></script>
 
 
 </body>

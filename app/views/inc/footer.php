@@ -5,9 +5,9 @@
                     <div class="bs">VEGËZA TË DOBISHME</div>
                 </div>
                 <div class="shortcutposht">
-                    <a href="./HTML/Librat.html" class="eee" id="sdds">Libra</a>
-                    <a href="./HTML/Autoret1.html" class="eee" id="fdsfdsf">Autorët</a>
-                    <a href="./HTML/lajmi.html" class="eee" id="fsdfdsf">Lajme</a>
+                    <a href="../../../app/views/pages/Librat.php" class="eee" id="sdds">Libra</a>
+                    <a href="../../../app/views/pages/Autoret.php" class="eee" id="fdsfdsf">Autorët</a>
+                    <a href="../../../app/views/pages/lajme.php" class="eee" id="fsdfdsf">Lajme</a>
 
                 </div>
             </div>
@@ -17,7 +17,7 @@
             <div class="row5pjesepjese">
                 <div class="logoja">
                     <div class="sinanibabo">
-                        <img src="../img/sinani3.png" alt="pldh" height="130em" width="175em" id='sinanibardh'
+                        <img src="../../../public/img/sinani3.png" alt="pldh" height="130em" width="175em" id='sinanibardh'
                             style="background-color: black;">
                     </div>
                     <span id="sinaniposht">Biblioteka Sinan Dobreva</span>
@@ -30,7 +30,7 @@
                             koleksionet e veta nga fushat e ndryshme të krijimtarisë intelektuale me qëllim që t’ i bëjë
                             të njohura shfrytëzuesve për t’i studiuar dhe për t’ i lënë
                             trashëgim gjeneratave të ardhshme.</p>
-                        <a href="./HTML/Librat.html">
+                        <a href="../../../app/views/pages/Librat.php">
                             <p id="katalogu">Shfleto katalogun</p>
                         </a>
                     </div>
@@ -42,7 +42,7 @@
                             e qytetit të Prishtinës me rrethinë, pavarësisht nga raca, kombësia, gjinia, mosha, besimi
                             fetar, gjuha, paaftësitë fizike dhe informon e ndihmon ata
                             në përdorimin e gjetjen e tyre.</p>
-                        <a href="./HTML/regjistrohu.html">
+                        <a href="../../../app/views/pages/regjistrohu.php">
                             <p id="katalogu">Regjistrohu</p>
                         </a>
                     </div>
@@ -55,7 +55,7 @@
                             komunitetin me qëllim të nxitjes së interesimit për librin dhe të mësuarit
                             gjatë gjith jetës. Shfletoni galerinë për më shumë.
                         </p>
-                        <a href="./HTML/galeria.html">
+                        <a href="../../../app/views/pages/galeria.php">
                             <p id="katalogu">Galeria</p>
                         </a>
                     </div>
@@ -93,11 +93,11 @@
 
                     <ul>
 
-                        <li><a href="./HTML/Librat.html">
+                        <li><a href="../../../app/views/pages/Librat.php">
                                 Libra shqip
                             </a>
                         </li>
-                        <li><a href="./HTML/Librat.html#teHuaj">
+                        <li><a href="../../../app/views/pages/Librat.php#teHuaj">
                                 Libra të huaj
                             </a></li>
                     </ul>
@@ -108,10 +108,10 @@
                     <ul>
 
 
-                        <li><a href="./HTML/meshum.html">
+                        <li><a href="../../../app/views/pages/meshum.php">
                                 Autorë shqiptar
                             </a></li>
-                        <li><a href="./HTML/meshume.html">
+                        <li><a href="../../../app/views/pages/meshume.php">
                                 Autorë të huaj
                             </a></li>
                     </ul>
@@ -119,7 +119,7 @@
                 <div class="sbkol2">
 
                     <ul>
-                        <li><a href="./HTML/lajmi.html"><span>Lajme</span></a>
+                        <li><a href="../../../app/views/pages/lajme.php"><span>Lajme</span></a>
                         </li>
                     </ul>
                 </div>
@@ -127,11 +127,11 @@
 
                     <ul>
 
-                        <li><a href="./HTML/galeria.html#fotogaleriah3">
+                        <li><a href="../../../app/views/pages/galeria.php#fotogaleriah3">
                                 Fotogaleria
                             </a>
                         </li>
-                        <li><a href="./HTML/galeria.html#videogaleriah3">
+                        <li><a href="../../../app/views/pages/galeria.php#videogaleriah3">
                                 Videogaleria
                             </a>
                         </li>
@@ -140,14 +140,14 @@
                 <div class="sbkol2">
 
                     <ul>
-                        <li><a href="../HTML/Kontakti.html"><span>Kontakti</span></a>
+                        <li><a href=".../../../app/views/pages/Kontakti.php"><span>Kontakti</span></a>
                         </li>
                     </ul>
                 </div>
                 <div class="sbkol2">
 
                     <ul>
-                        <li><a href="../HTML/regjistrohu.html"><span>Regjistrohu</span></a>
+                        <li><a href=".../../../app/views/pages/regjistrohu.php"><span>Regjistrohu</span></a>
                         </li>
                     </ul>
                 </div>

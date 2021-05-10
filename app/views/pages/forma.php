@@ -55,7 +55,7 @@
     <div class="homepage">
         <div class="containerforma">
             <div>
-                <h2 class="tittle">Të dhënat e lexuesëve</h2>
+                <h2 class="tittle" id="tittle">Të dhënat e lexuesëve</h2>
 
                 <form id="addForm">
 
@@ -240,7 +240,7 @@
 
             function darkMode() {
 
-                theme.href = '../CSS/stylesdark.css';
+                theme.href = '../../../public/css/stylesdark.css';
                 localStorage.setItem("color", "dark");
                 console.log(localStorage);
                 document.getElementById("teksti").className = "fa fa-sun-o";
@@ -251,7 +251,7 @@
 
             function lightMode() {
 
-                theme.href = "../CSS/styles.css";
+                theme.href = "../../../public/css/styles.css";
                 localStorage.setItem("color", "light");
                 console.log(localStorage);
                 document.getElementById("teksti").className = "fa fa-moon-o";

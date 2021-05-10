@@ -1636,9 +1636,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 }
 
 .konga {
-  left: 41vw;
-  position: absolute;
-  display: block;
+  display: inline;
 }
 
 .tekstikolona {
