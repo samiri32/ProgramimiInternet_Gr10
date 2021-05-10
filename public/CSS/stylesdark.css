@@ -650,11 +650,16 @@
 #netrend {
   color: white !important;
 }
-h1, h2, h3, h4, span, p {
-  color:white !important;
+h1, h2, #videogaleriah3, #fotogaleriah3{
+  color:#0075ff !important;
   text-decoration: none !important;
 }
-
+#si{
+  color: black !important;
+}
+p, span {
+  color:white !important;
+}
 .librattitulli {
   color: black;
   padding: 0.75em;
@@ -789,14 +794,14 @@ h1, h2, h3, h4, span, p {
 }
 
 #lajmekuq {
-  color: #0075ff;
+  color: #0075ff !important;
   font-family: "Calibre", Helvetica, Arial, sans-serif;
   font-size: 0.5em;
   font-weight: bold;
 }
 
 #lajmekuq5 {
-  color: #0075ff;
+  color: #0075ff !important;
   font-family: Helvetica;
   letter-spacing: 0.1em;
   font-weight: bold;
@@ -1142,7 +1147,7 @@ body {
 
 .meimiri {
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
+  color:white !important;
   position: relative;
   float: left;
   margin-left: 20%;
@@ -1150,10 +1155,13 @@ body {
 
 .meimiri2 {
   font-family: Arial, Helvetica, sans-serif;
-  color: black;
+  color: white !important;
   position: relative;
   float: right;
   margin-right: 15%;
+}
+.meimiri h3, .meimiri2 h3 {
+  color:white;
 }
 
 .cift td, .tek td {
