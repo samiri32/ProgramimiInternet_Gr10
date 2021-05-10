@@ -11,7 +11,9 @@
   column-gap: 2.8em;
   justify-content: space-around;
 }
-
+#regj {
+  color: white !important;
+}
 .gridat {
   position: center;
 }
