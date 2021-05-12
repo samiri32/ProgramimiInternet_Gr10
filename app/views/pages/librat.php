@@ -18,7 +18,7 @@
 
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/Bageti e bujqesi.png">
+        <img class="imagee" src="img/Bageti e bujqesi.png">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -32,7 +32,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/Baba tomorri.jpg">
+        <img class="imagee" src="img/Baba tomorri.jpg">
 
 
 
@@ -50,7 +50,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/Fjala Fluturake NF.jpg">
+        <img class="imagee" src="img/Fjala Fluturake NF.jpg">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -64,7 +64,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/Historia e skenderbeut NF.jpg">
+        <img class="imagee" src="img/Historia e skenderbeut NF.jpg">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -79,7 +79,7 @@
     </div>
     <div class="librat">
       <div class="liber">
-        <img class="imagee" src="../../../public/img/Juda Makabe GJF.jpg">
+        <img class="imagee" src="img/Juda Makabe GJF.jpg">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -93,7 +93,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/Juvenila NM.jpg">
+        <img class="imagee" src="img/Juvenila NM.jpg">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -107,7 +107,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/Lahuta e malcis GJF.jpg">
+        <img class="imagee" src="img/Lahuta e malcis GJF.jpg">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -122,7 +122,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/Lissus NM.jpg">
+        <img class="imagee" src="img/Lissus NM.jpg">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -137,7 +137,7 @@
     </div>
     <div class="librat">
       <div class="liber">
-        <img class="imagee" src="../../../public/img/Luli i vocerr M.jpg">
+        <img class="imagee" src="img/Luli i vocerr M.jpg">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -151,7 +151,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/Meshari.jpeg">
+        <img class="imagee" src="img/Meshari.jpeg">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -165,7 +165,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/Mrizi i Zanave GJF.jpg">
+        <img class="imagee" src="img/Mrizi i Zanave GJF.jpg">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -179,7 +179,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/scodra.jpg">
+        <img class="imagee" src="img/scodra.jpg">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -197,7 +197,7 @@
     <div class="librat">
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/P.png">
+        <img class="imagee" src="img/P.png">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -213,7 +213,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/I.png">
+        <img class="imagee" src="img/I.png">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -230,7 +230,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/AK.png">
+        <img class="imagee" src="img/AK.png">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -246,7 +246,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/DC.png">
+        <img class="imagee" src="img/DC.png">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -264,7 +264,7 @@
 
     <div class="librat">
       <div class="liber">
-        <img class="imagee" src="../../../public/img/PD.png">
+        <img class="imagee" src="img/PD.png">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -280,7 +280,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/KH.png">
+        <img class="imagee" src="img/KH.png">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -296,7 +296,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/H.png">
+        <img class="imagee" src="img/H.png">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -312,7 +312,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/LP1.png">
+        <img class="imagee" src="img/LP1.png">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -328,7 +328,7 @@
     </div>
     <div class="librat">
       <div class="liber">
-        <img class="imagee" src="../../../public/img/TS.png">
+        <img class="imagee" src="img/TS.png">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -344,7 +344,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/HH.png">
+        <img class="imagee" src="img/HH.png">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -360,7 +360,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/SH.png">
+        <img class="imagee" src="img/SH.png">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -376,7 +376,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="../../../public/img/RJ.png">
+        <img class="imagee" src="img/RJ.png">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -417,7 +417,7 @@
 
     function darkMode() {
 
-      theme.href = '../../../public/css/stylesdark.css';
+      theme.href = 'css/stylesdark.css';
       localStorage.setItem("color", "dark");
       console.log(localStorage);
       document.getElementById("teksti").className = "fa fa-sun-o";
@@ -428,7 +428,7 @@
 
     function lightMode() {
 
-      theme.href = "../../../public/css/styles.css";
+      theme.href = "css/styles.css";
       localStorage.setItem("color", "light");
       console.log(localStorage);
       document.getElementById("teksti").className = "fa fa-moon-o";

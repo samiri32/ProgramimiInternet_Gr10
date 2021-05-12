@@ -16,7 +16,7 @@
                 <div class="konga">
                     <center>
                         <audio controls autoplay>
-                            <source src="../../../public/img/Muharrem Qena Mallengjimi.mp3" type="audio/mpeg">
+                            <source src="img/Muharrem Qena Mallengjimi.mp3" type="audio/mpeg">
                             Shnosh :/
                         </audio><br><br>
                         <h1 style="text-align: center; display: inline;" id="regj">Regjistrohuni në BSD</h1><br>
@@ -90,7 +90,7 @@
 
             function darkMode() {
 
-                theme.href = '../../../public/css/stylesdark.css';
+                theme.href = 'css/stylesdark.css';
                 localStorage.setItem("color", "dark");
                 console.log(localStorage);
                 document.getElementById("teksti").className = "fa fa-sun-o";
@@ -101,7 +101,7 @@
 
             function lightMode() {
 
-                theme.href = "../../../public/css/styles.css";
+                theme.href = "css/styles.css";
                 localStorage.setItem("color", "light");
                 console.log(localStorage);
                 document.getElementById("teksti").className = "fa fa-moon-o";

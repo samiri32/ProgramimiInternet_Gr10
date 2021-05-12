@@ -3,7 +3,7 @@
     <div class="majtas">
         <div class="majtasnalt">homepage</div>
         <div class="majtasposht">
-            <a href="./index.html">Ballina</a>
+            <a href="/homepage.php">Ballina</a>
             <a href="../../../app/views/pages/autoret.php">Autorët</a>
             <a href="../../../app/views/pages/librat.php">Librat</a>
             <a href="../../../app/views/pages/lajme.php">Lajme</a>
@@ -12,7 +12,7 @@
 
     <div class="logoja">
         <div class="sinanibabo">
-            <img src="../../../public/img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
+            <img src="img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
         </div>
         <a href="../../../app/views/pages/homepage.php" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka
                 Sinan

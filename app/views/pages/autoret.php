@@ -16,7 +16,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="../../../public/img/Naim_Frasheri.jpg" />
+                        <img src=" img/Naim_Frasheri.jpg" />
                     </div>
                     <div class="flip-card-back">
                         <h2>Naim Frasheri</h2>
@@ -40,7 +40,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="../../../public/img/download.jpg" />
+                        <img src=" img/download.jpg" />
 
                     </div>
                     <div class="flip-card-back">
@@ -67,7 +67,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="../../../public/img/Gjergj_Fishta.jpg" />
+                        <img src=" img/Gjergj_Fishta.jpg" />
 
                     </div>
                     <div class="flip-card-back">
@@ -92,7 +92,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="../../../public/img/dritero.jpg" />
+                        <img src=" img/dritero.jpg" />
 
                     </div>
                     <div class="flip-card-back">
@@ -114,7 +114,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="../../../public/img/Migjeni11.jpg" />
+                        <img src=" img/Migjeni11.jpg" />
 
                     </div>
                     <div class="flip-card-back">
@@ -138,7 +138,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="../../../public/img/NM.jpg" />
+                        <img src=" img/NM.jpg" />
 
                     </div>
                     <div class="flip-card-back">
@@ -169,7 +169,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="../../../public/img/FK.jpg" />
+                        <img src=" img/FK.jpg" />
                     </div>
                     <div class="flip-card-back">
                         <h2>Franz Kafka</h2>
@@ -192,7 +192,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="../../../public/img/EH.jpg" />
+                        <img src=" img/EH.jpg" />
 
                     </div>
                     <div class="flip-card-back">
@@ -216,7 +216,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="../../../public/img/MT.jpg" />
+                        <img src=" img/MT.jpg" />
 
                     </div>
                     <div class="flip-card-back">
@@ -240,7 +240,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="../../../public/img/EAP.jpg" />
+                        <img src=" img/EAP.jpg" />
 
                     </div>
                     <div class="flip-card-back">
@@ -264,7 +264,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="../../../public/img/DA.jpg" />
+                        <img src=" img/DA.jpg" />
 
                     </div>
                     <div class="flip-card-back">
@@ -288,7 +288,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="../../../public/img/TD.jpg" />
+                        <img src=" img/TD.jpg" />
 
                     </div>
                     <div class="flip-card-back">
@@ -454,7 +454,7 @@
 
         function darkMode() {
 
-            theme.href = '../../../public/css/stylesdark.css';
+            theme.href = 'css/stylesdark.css';
             localStorage.setItem("color", "dark");
             console.log(localStorage);
             document.getElementById("teksti").className = "fa fa-sun-o";
@@ -465,7 +465,7 @@
 
         function lightMode() {
 
-            theme.href = "../../../public/css/styles.css";
+            theme.href = "css/styles.css";
             localStorage.setItem("color", "light");
             console.log(localStorage);
             document.getElementById("teksti").className = "fa fa-moon-o";

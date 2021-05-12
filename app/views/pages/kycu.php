@@ -44,7 +44,7 @@
             <div class="videoja">
                 <div id="flip" style="color:black; padding: 0em 0.5em;">Largo videon</div>
                 <video width="280" height="200" controls>
-                    <source src="../../../public/img/pasuria me e madhe eshte libri.mp4" type="video/mp4">
+                    <source src="img/pasuria me e madhe eshte libri.mp4" type="video/mp4">
                     Qa ke hup :/
                 </video>
             </div>
@@ -62,7 +62,7 @@
 
             function darkMode() {
 
-                theme.href = '../../../public/css/stylesdark.css';
+                theme.href = 'css/stylesdark.css';
                 localStorage.setItem("color", "dark");
                 console.log(localStorage);
                 document.getElementById("teksti").className = "fa fa-sun-o";
@@ -73,7 +73,7 @@
 
             function lightMode() {
 
-                theme.href = "../../../public/css/styles.css";
+                theme.href = "css/styles.css";
                 localStorage.setItem("color", "light");
                 console.log(localStorage);
                 document.getElementById("teksti").className = "fa fa-moon-o";

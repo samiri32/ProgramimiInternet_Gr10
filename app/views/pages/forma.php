@@ -240,7 +240,7 @@
 
             function darkMode() {
 
-                theme.href = '../../../public/css/stylesdark.css';
+                theme.href = 'css/stylesdark.css';
                 localStorage.setItem("color", "dark");
                 console.log(localStorage);
                 document.getElementById("teksti").className = "fa fa-sun-o";
@@ -251,7 +251,7 @@
 
             function lightMode() {
 
-                theme.href = "../../../public/css/styles.css";
+                theme.href = "css/styles.css";
                 localStorage.setItem("color", "light");
                 console.log(localStorage);
                 document.getElementById("teksti").className = "fa fa-moon-o";
