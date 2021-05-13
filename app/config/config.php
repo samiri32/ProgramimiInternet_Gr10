@@ -1,16 +1,16 @@
 <?php
-  // DB Params
-//   define('DB_HOST', '185.67.178.114');
-//   define('DB_USER', 'user_php');
-//   define('DB_PASS', 'pw');
-//   define('DB_NAME', 'user_php_db');
 
-  // App Root
-  define('APPROOT', dirname(dirname(__FILE__)));
-  // URL Root
+    //db params
+    define('DB_HOST', 'localhost');
+    define('DB_USER', 'root');
+    define('DB_PASS', '');
+    define('DB_NAME', 'samir');
 
-  define('URLROOT', 'http://localhost:8080/shareposts');
-  // Site Name
-  define('SITENAME', 'PIK');
-  // App Version
-  define('APPVERSION', '1.0.0');
+    //approot
+    define('APPROOT', dirname(dirname(__FILE__)));
+
+    //urlroot dynamic links
+    define('URLROOT', 'localhost/ProgramimiInternet_Gr10');
+
+    //sitename
+    define('SITENAME', 'BSD');
