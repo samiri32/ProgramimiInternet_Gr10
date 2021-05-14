@@ -2,9 +2,13 @@
 
 class Pages extends Controller{
     public function __construct(){
-
+    $this->userModel = $this->model('User');
     }
     public function index(){
-        $this->view('pages/homepage');
+        $data = [
+               'titulli' => 'Homepage',
+               'emri' => 'Arbresha'
+        ];
+        $this->view('pages/test', $data);
     }
 }
