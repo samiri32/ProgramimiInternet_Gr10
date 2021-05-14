@@ -1,7 +1,7 @@
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta htttp-equiv="Cache-control" content="no-cache">
-    <link rel="shortcut icon" type="image/png" href="img/sinani4.png">
+    <link rel="shortcut icon" type="image/png" href="../../../ProgramimiInternet_Gr10/public/img/sinani4.png">
     <link rel="stylesheet" id="stilicss" href="../../../ProgramimiInternet_Gr10/public/CSS/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">

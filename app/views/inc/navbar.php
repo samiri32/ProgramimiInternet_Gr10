@@ -29,7 +29,15 @@
             </div>
             <a href="<?php echo URLROOT; ?>/pages/galeria" class="menu-item" id="one">Galeria</a>
             <a href="<?php echo URLROOT; ?>/pages/kontakti" class="menu-item" id="two">Kontakti</a>
-          <div class ="btn-kycu" style="display:inline;"><a href="<?php echo URLROOT; ?>/users/kycu" class="menu-item" id="three" class="three">Kyçu</a></div>
+            <div class ="btn-kycu" style="display:inline;">
+            <?php if(isset($_SESSION['user_id'])) : ?>
+            <a href="<?php echo URLROOT; ?>/pages/profili" class="menu-item" id="three" class="three">
+            Profili</a>
+            <?php else: ?>
+                <a href="<?php echo URLROOT; ?>/users/kycu" class="menu-item" id="three" class="three">
+            Kyçu</a>
+            <?php endif; ?>
+            </div>
             <a href="#" id="search"><i class="fa fa-search"></i></a>
 
 

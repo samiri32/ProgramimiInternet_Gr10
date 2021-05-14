@@ -20,13 +20,13 @@
 <?php require APPROOT . '/views/inc/navbar.php'; ?>
     <div class="homepage">
         <div class="kycunidiv">
-
+        <?php var_dump($_SESSION); ?>
             <form id="kycuforma" action="../users/kycu" method="POST">
                 <div class="kycunimrena">
-                    <label for="username"><b>Username</b></label><br>
-                    <input type="text" style="background-color: white; border: 0.01em solid black; height:1.5em;" title="Email adresa duhet te plotesohet." placeholder="Username juaj këtu." name="username" id="rrite"><br><br>
+                    <label for="email"><b>Email</b></label><br>
+                    <input type="text" style="background-color: white; border: 0.01em solid black; height:1.5em;" title="Email adresa duhet te plotesohet." placeholder="Emaili juaj këtu." name="email" id="rrite"><br><br>
                     <span class="invalidFeedback">
-                    <?php echo $data['usernameError']; ?>
+                    <?php echo $data['emailError']; ?>
                     </span>
                     <label for="psw"><b>Password</b></label><br>
                     <input type="password" style="border: 0.01em solid black;" title="Ju lutem mos harroni fjalekalimin." placeholder="Fjalëkalimi juaj këtu" name="psw" size="26.999999999" id="rrite"><br><br>

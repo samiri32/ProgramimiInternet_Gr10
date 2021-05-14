@@ -1,35 +1,33 @@
 <?php
-class Users extends Controller {
-    public function __construct() {
+class Users extends Controller
+{
+    public function __construct()
+    {
         $this->userModel = $this->model('User');
     }
 
-    public function regjistrohu() {
+    public function regjistrohu()
+    {
         $data = [
             'emri' => '',
             'mbiemri' => '',
-            'username' => '',
-            'usernameError' => '',
             'email' => '',
             'emailError' => '',
             'password' => '',
             'passwordError' => '',
             'confirmPassword' => '',
             'confirmPasswordError' => '',
-            'gjinia' => '',
             'telefoni' => '',
             'telefoniError' => '',
             'adresa' => '',
-            'kategoria' => ''
         ];
 
-      if($_SERVER['REQUEST_METHOD'] == 'POST'){
-        // Process form
-        // Sanitize POST data
-        $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            // Process form
+            // Sanitize POST data
+            $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
-              $data = [
-                'username' => trim($_POST['username']),
+            $data = [
                 'email' => trim($_POST['email']),
                 'password' => trim($_POST['password']),
                 'confirmPassword' => trim($_POST['confirmPassword']),
@@ -37,25 +35,14 @@ class Users extends Controller {
                 'mbiemri' => trim($_POST['mbiemri']),
                 'adresa' => trim($_POST['adresa']),
                 'telefoni' => trim($_POST['telefoni']),
-                'gjinia' => '',
-                'kategoria' => '',
-                'usernameError' => '',
                 'emailError' => '',
                 'passwordError' => '',
                 'telefoniError' => '',
                 'confirmPasswordError' => ''
             ];
 
-            $nameValidation = "/^[a-zA-Z0-9]*$/";
             $passwordValidation = "/^(.{0,7}|[^a-z]*|[^\d]*)$/i";
-            $telefoniValidation = "(\+383)[4][3,4,5,9][0-9]{6}$";
-
-            //Validate username on letters/numbers
-            if (empty($data['username'])) {
-                $data['usernameError'] = 'Please enter username.';
-            } elseif (!preg_match($nameValidation, $data['username'])) {
-                $data['usernameError'] = 'Name can only contain letters and numbers.';
-            }
+            $telefoniValidation = "/(\+383)[4][3,4,5,9][0-9]{6}$/";
 
             //Validate phone
             if (empty($data['telefoni'])) {
@@ -72,25 +59,25 @@ class Users extends Controller {
             } else {
                 //Check if email exists.
                 if ($this->userModel->findUserByEmail($data['email'])) {
-                $data['emailError'] = 'Email is already taken.';
+                    $data['emailError'] = 'Email is already taken.';
                 }
             }
 
-           // Validate password on length, numeric values,
-            if(empty($data['password'])){
-              $data['passwordError'] = 'Please enter password.';
-            } elseif(strlen($data['password']) < 6){
-              $data['passwordError'] = 'Password must be at least 8 characters';
+            // Validate password on length, numeric values,
+            if (empty($data['password'])) {
+                $data['passwordError'] = 'Please enter password.';
+            } elseif (strlen($data['password']) < 6) {
+                $data['passwordError'] = 'Password must be at least 8 characters';
             } elseif (preg_match($passwordValidation, $data['password'])) {
-              $data['passwordError'] = 'Password must be have at least one numeric value.';
+                $data['passwordError'] = 'Password must be have at least one numeric value.';
             }
 
             //Validate confirm password
-             if (empty($data['confirmPassword'])) {
+            if (empty($data['confirmPassword'])) {
                 $data['confirmPasswordError'] = 'Please enter password.';
             } else {
                 if ($data['password'] != $data['confirmPassword']) {
-                $data['confirmPasswordError'] = 'Passwords do not match, please try again.';
+                    $data['confirmPasswordError'] = 'Passwords do not match, please try again.';
                 }
             }
 
@@ -103,7 +90,7 @@ class Users extends Controller {
                 //Register user from model function
                 if ($this->userModel->regjistrohu($data)) {
                     //Redirect to the login page
-                    header('location: ' . URLROOT . '/users/kycu');
+                    header('location: ../users/kycu');
                 } else {
                     die('Something went wrong.');
                 }
@@ -112,71 +99,71 @@ class Users extends Controller {
         $this->view('users/regjistrohu', $data);
     }
 
-    public function kycu() {
+    public function kycu()
+    {
         $data = [
             'title' => 'Login page',
-            'username' => '',
+            'email' => '',
             'password' => '',
-            'usernameError' => '',
+            'emailError' => '',
             'passwordError' => ''
         ];
 
-    //     //Check for post
-    //     if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    //         //Sanitize post data
-    //         $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
+        $this->view('users/kycu', $data);
 
-    //         $data = [
-    //             'username' => trim($_POST['username']),
-    //             'password' => trim($_POST['password']),
-    //             'usernameError' => '',
-    //             'passwordError' => '',
-    //         ];
-    //         //Validate username
-    //         if (empty($data['username'])) {
-    //             $data['usernameError'] = 'Please enter a username.';
-    //         }
+        //Check for post
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            //Sanitize post data
+            $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
-    //         //Validate password
-    //         if (empty($data['password'])) {
-    //             $data['passwordError'] = 'Please enter a password.';
-    //         }
+            $data = [
+                'email' => trim($_POST['email']),
+                'password' => trim($_POST['password']),
+                'emailError' => '',
+                'passwordError' => '',
+            ];
+            //Validate username
+            if (empty($data['email'])) {
+                $data['emailError'] = 'Please enter an email.';
+            }
 
-    //         //Check if all errors are empty
-    //         if (empty($data['usernameError']) && empty($data['passwordError'])) {
-    //             $loggedInUser = $this->userModel->login($data['username'], $data['password']);
+            //Validate password
+            if (empty($data['password'])) {
+                $data['passwordError'] = 'Please enter a password.';
+            }
 
-    //             if ($loggedInUser) {
-    //                 $this->createUserSession($loggedInUser);
-    //             } else {
-    //                 $data['passwordError'] = 'Password or username is incorrect. Please try again.';
+            //Check if all errors are empty
+            if (empty($data['emailError']) && empty($data['passwordError'])) {
+                $loggedInUser = $this->userModel->login($data['email'], $data['password']);
 
-    //                 $this->view('users/kycu', $data);
-    //             }
-    //         }
+                    if ($loggedInUser) {
+                        $this->createUserSession($loggedInUser);
+                    } else {
+                        $data['passwordError'] = 'Password or email is incorrect. Please try again.';
 
-    //     } else {
-    //         $data = [
-    //             'username' => '',
-    //             'password' => '',
-    //             'usernameError' => '',
-    //             'passwordError' => ''
-    //         ];
-    //     }
-    //     $this->view('users/kycu', $data);
-     }
+                        $this->view('users/kycu', $data);
+                    }
+                }
 
-    // public function createUserSession($user) {
-    //     $_SESSION['user_id'] = $user->id;
-    //     $_SESSION['username'] = $user->username;
-    //     $_SESSION['email'] = $user->email;
-    //     header('location:' . URLROOT . '/pages/index');
-    // }
+            } else {
+                $data = [
+                    'email' => '',
+                    'password' => '',
+                    'emailError' => '',
+                    'passwordError' => ''
+                ];
+            }
+            $this->view('users/kycu', $data);
+        }
+        public function createUserSession($user) {
+            $_SESSION['user_id'] = $user->id;
+            $_SESSION['email'] = $user->email;
+            header('location: ../pages/homepage');
+        }
 
-    // public function logout() {
-    //     unset($_SESSION['user_id']);
-    //     unset($_SESSION['username']);
-    //     unset($_SESSION['email']);
-    //     header('location:' . URLROOT . '/users/login');
-    // }
-}
+        public function logout() {
+            unset($_SESSION['user_id']);
+            unset($_SESSION['email']);
+            header('location: ../users/kycu');
+        }
+    }
