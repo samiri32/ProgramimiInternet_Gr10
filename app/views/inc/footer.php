@@ -17,7 +17,7 @@
             <div class="row5pjesepjese">
                 <div class="logoja">
                     <div class="sinanibabo">
-                        <img src="img/sinani3.png" alt="pldh" height="130em" width="175em" id='sinanibardh'
+                        <img src="../../../ProgramimiInternet_Gr10/public/img/sinani3.png" alt="pldh" height="130em" width="175em" id='sinanibardh'
                             style="background-color: black;">
                     </div>
                     <span id="sinaniposht">Biblioteka Sinan Dobreva</span>

@@ -2,7 +2,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta htttp-equiv="Cache-control" content="no-cache">
     <link rel="shortcut icon" type="image/png" href="img/sinani4.png">
-    <link rel="stylesheet" id="stilicss" href="<?php echo URLROOT ?>/public/CSS/styles.css">
+    <link rel="stylesheet" id="stilicss" href="../../../ProgramimiInternet_Gr10/public/CSS/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
