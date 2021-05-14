@@ -12,12 +12,12 @@
             });
         });
     </script>
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/header.php'; ?>
+    <?php require APPROOT . '/views/inc/header.php'; ?>
 </head>
 
 
 <body>
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/navbar.php'; ?>
+<?php require APPROOT . '/views/inc/navbar.php'; ?>
     <div class="homepage">
         <div class="kycunidiv">
 
@@ -52,8 +52,8 @@
         </div>
 
 
-        <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/footer.php'; ?>
-        <script>
+        <?php require APPROOT . '/views/inc/footer.php'; ?>
+        <!-- <script>
             const theme = document.querySelector("#stilicss");
 
             console.log(localStorage);
@@ -62,7 +62,7 @@
 
             function darkMode() {
 
-                theme.href = 'css/stylesdark.css';
+                theme.href = "../ProgramimiInternet_Gr10/public/CSS/stylesdark.css";
                 localStorage.setItem("color", "dark");
                 console.log(localStorage);
                 document.getElementById("teksti").className = "fa fa-sun-o";
@@ -72,8 +72,7 @@
             }
 
             function lightMode() {
-
-                theme.href = "css/styles.css";
+                theme.href = "../ProgramimiInternet_Gr10/public/CSS/styles.css";
                 localStorage.setItem("color", "light");
                 console.log(localStorage);
                 document.getElementById("teksti").className = "fa fa-moon-o";
@@ -104,7 +103,7 @@
 
                 }
             }
-        </script>
+        </script> -->
 
 </body>
 

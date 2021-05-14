@@ -1,7 +1,9 @@
 <?php
 
-    class Users extends Controller{
-        public function __construct(){
+class Users extends Controller
+{
+    public function __construct()
+    {
         // //QITU PE KRIJOJNA COOKIE NESE NUK EKZISTON
         // if(!isset($_COOKIE['user'])){
         //     $cookie_n='user';
@@ -16,6 +18,17 @@
         //     ];
         //     setcookie($cookie_n, serialize($pagesarray), time()+(3600));
         // }
+
+
+        $this->userModel = $this->model('User');
+    }
+    public function kycu(){
+        $data = [
+            'title' => 'Login page'
+        ];
+        $this->view('users/kycu', $data);
     }
 }
+
+
 

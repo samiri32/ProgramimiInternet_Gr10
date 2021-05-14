@@ -5,11 +5,11 @@ class Pages extends Controller {
     $this->userModel = $this->model('User');
     }
     public function index(){
-        $users = $this->userModel->getUsers();
+      //  $users = $this->userModel->getUsers();
         $data = [
                'titulli' => 'Homepage',
-               'users' => $users
+              // 'users' => $users
         ];
-        $this->view('pages/test', $data);
+        $this->view('pages/homepage', $data);
     }
 }

@@ -3,10 +3,10 @@
     <div class="majtas">
         <div class="majtasnalt">homepage</div>
         <div class="majtasposht">
-            <a href="/homepage.php">Ballina</a>
-            <a href="../../../app/views/pages/autoret.php">Autorët</a>
-            <a href="../../../app/views/pages/librat.php">Librat</a>
-            <a href="../../../app/views/pages/lajme.php">Lajme</a>
+            <a href="<?php echo URLROOT; ?>/pages/homepage">Ballina</a>
+            <a href="<?php echo URLROOT; ?>/pages/autoret">Autorët</a>
+            <a href="<?php echo URLROOT; ?>/pages/librat">Librat</a>
+            <a href="<?php echo URLROOT; ?>/pages/lajme">Lajme</a>
         </div>
     </div>
 
@@ -14,7 +14,7 @@
         <div class="sinanibabo">
             <img src="img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
         </div>
-        <a href="../../../app/views/pages/homepage.php" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka
+        <a href="<?php echo URLROOT; ?>/pages/homepage" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka
                 Sinan
                 Dobreva</span></a>
     </div>
@@ -27,9 +27,9 @@
                     <input type="text" name="" placeholder="Kërkoni">
                 </form>
             </div>
-            <a href="../../../app/views/pages/galeria.php" class="menu-item" id="one">Galeria</a>
-            <a href="../../../app/views/pages/kontakti.php" class="menu-item" id="two">Kontakti</a>
-            <a href="../../../app/views/pages/kycu.php" class="menu-item" id="three">Kyçu</a>
+            <a href="<?php echo URLROOT; ?>/pages/galeria" class="menu-item" id="one">Galeria</a>
+            <a href="<?php echo URLROOT; ?>/pages/kontakti" class="menu-item" id="two">Kontakti</a>
+          <div class ="btn-kycu" style="display:inline;"><a href="<?php echo URLROOT; ?>/users/kycu" class="menu-item" id="three" class="three">Kyçu</a></div>
             <a href="#" id="search"><i class="fa fa-search"></i></a>
 
 
