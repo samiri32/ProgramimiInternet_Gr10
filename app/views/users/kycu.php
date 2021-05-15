@@ -3,7 +3,7 @@
 
 <head>
     <title>Kyçu</title>
-     <?php // require APPROOT . '/views/inc/header.php'; ?>
+     <?php require APPROOT . '/views/inc/header.php'; ?>
     <script>
         $(document).ready(function() {
             $("#flip").click(function() {
