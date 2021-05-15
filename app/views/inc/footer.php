@@ -1,5 +1,4 @@
-
-        <div class="row4">
+<div class="row4">
             <div class="shortcuts">
                 <div class="shortcutnalt">
                     <div class="bs">VEGËZA TË DOBISHME</div>
