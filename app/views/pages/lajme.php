@@ -3,7 +3,7 @@
 
 <head>
     <title>Lajmet</title>
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/header.php'; ?>
+    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/header.php';?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -57,7 +57,7 @@
 
 
 <body>
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/navbar.php'; ?>
+    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/navbar.php';?>
     <div class="title">
 
         <h1 style="color: #0075ff;">Lajmet Aktuale</h1>
@@ -338,7 +338,7 @@
 
     </div>
 
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/footer.php'; ?>
+    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/footer.php';?>
 
     <script>
         function viewModal() {

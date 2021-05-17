@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="sq">
-
 <head>
-    <title>BIBLIOTEKA SINAN DOBREVA</title>
-    <?php require APPROOT . '/views/inc/header.php'; ?>
+<title>BIBLIOTEKA SINAN DOBREVA</title>
+    <?php require APPROOT . '/views/inc/header.php';?>
 </head>
 
 <body onload="showSlides(1)">
-    <?php require APPROOT . '/views/inc/navbar.php'; ?>
+    <?php require APPROOT . '/views/inc/navbar.php';?>
 
     <div class="homepage">
         <div class="row">
@@ -263,7 +262,7 @@
         <br><br>
 
         <!--QITU JA NIS SUBFOOTER-->
-        <?php require APPROOT . '/views/inc/footer.php'; ?>
+        <?php require APPROOT . '/views/inc/footer.php';?>
         <script>
             if ('serviceWorker' in navigator) {
                 navigator.serviceWorker

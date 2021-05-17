@@ -6,6 +6,21 @@ class Users extends Controller
         $this->userModel = $this->model('User');
     }
 
+    
+    public function createUserSession($user) {
+        $_SESSION['user_id'] = $user->user_id;
+        $_SESSION['email'] = $user->email;
+        header('location: ../pages/kycu');
+       
+    }
+    
+    public function logout() {
+        unset($_SESSION['user_id']);
+        unset($_SESSION['email']);
+        header('location: ../users/kycu');
+        die();
+    }
+
     public function regjistrohu()
     {
         $data = [
@@ -150,16 +165,7 @@ class Users extends Controller
                 ];
             }
             $this->view('users/kycu', $data);
+            
         }
-        public function createUserSession($user) {
-            $_SESSION['user_id'] = $user->user_id;
-            $_SESSION['email'] = $user->email;
-            header('location: ../pages/homepage');
-        }
-        
-        public function logout() {
-            unset($_SESSION['user_id']);
-            unset($_SESSION['email']);
-            header('location: ../users/kycu');
-        }
+
     }

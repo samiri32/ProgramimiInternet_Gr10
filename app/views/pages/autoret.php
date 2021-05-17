@@ -3,12 +3,12 @@
 
 <head>
     <title>Autorët</title>
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/header.php'; ?>
+    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/header.php';?>
 </head>
 
 <body>
     <div class="header"></div>
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/navbar.php'; ?>
+    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/navbar.php';?>
     <div class="container">
         <br>
         <h2 id="nentitulli"><a href="../../../app/views/meshum.php">Autorë shqiptar</a></h2>
@@ -444,7 +444,7 @@
         </table>
     </div>
     <br>
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/footer.php'; ?>
+    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/footer.php';?>
     <script>
         const theme = document.querySelector("#stilicss");
 

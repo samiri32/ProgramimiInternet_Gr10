@@ -44,14 +44,14 @@
 
         var confirm = new Konfirmimi();
     </script>
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/header.php'; ?>
+    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/header.php';?>
 </head>
 
 
 
 
 <body>
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/navbar.php'; ?>
+    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/navbar.php';?>
     <div class="homepage">
         <div class="containerforma">
             <div>
@@ -230,7 +230,7 @@
                 <div id="dialogboxfoot"></div>
             </div>
         </div>
-        <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/footer.php'; ?>
+        <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/footer.php';?>
         <script>
             const theme = document.querySelector("#stilicss");
 

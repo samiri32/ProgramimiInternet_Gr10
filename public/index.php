@@ -1,3 +1,1 @@
-<?php
-
-    require_once '../app/approot.php';
+<?php require_once '../app/approot.php';

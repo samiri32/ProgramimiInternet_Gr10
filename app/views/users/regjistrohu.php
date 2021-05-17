@@ -3,12 +3,12 @@
 
 <head>
     <title>Regjistrohu</title>
-    <?php require APPROOT . '/views/inc/header.php'; ?>
+    <?php require APPROOT . '/views/inc/header.php';?>
 </head>
 
 
 <body>
-<?php require APPROOT . '/views/inc/navbar.php'; ?>
+<?php require APPROOT . '/views/inc/navbar.php';?>
     <div class="homepage">
         <div class="regjistrohunidiv">
             <form id="regjistrohuform" form name="Formaperregjister" action="../users/regjistrohu" method="POST">
@@ -60,7 +60,7 @@
 
         </div>
 
-        <?php require APPROOT . '/views/inc/footer.php'; ?>
+        <?php require APPROOT . '/views/inc/footer.php';?>
         <script>
             const theme = document.querySelector("#stilicss");
 

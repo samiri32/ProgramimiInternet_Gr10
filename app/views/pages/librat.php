@@ -3,14 +3,14 @@
 
 <head>
   <title>Librat</title>
-  <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/header.php'; ?>
+  <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/header.php';?>
 </head>
 
 
 
 
 <body>
-  <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/navbar.php'; ?>
+  <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/navbar.php';?>
   </div>
   <div class="homepage"><br>
     <h2 class="beni" style="text-align: center; color: #0075ff;">Libra shqip</h2><br>
@@ -407,7 +407,7 @@
   </div>
 
   </main>
-  <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/footer.php'; ?>
+  <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/footer.php';?>
   <script>
     const theme = document.querySelector("#stilicss");
 
