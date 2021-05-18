@@ -9,7 +9,7 @@
     define('APPROOT', dirname(dirname(__FILE__)));
 
     //urlroot dynamic links
-    define('URLROOT', 'localhost/ProgramimiInternet_Gr10');
+    define('URLROOT', 'http://localhost/ProgramimiInternet_Gr10');
 
     //sitename
     define('SITENAME', 'BSD');

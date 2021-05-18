@@ -10,8 +10,11 @@ class Users extends Controller
     public function createUserSession($user) {
         $_SESSION['user_id'] = $user->user_id;
         $_SESSION['email'] = $user->email;
+        flush();
+        if (!headers_sent($filename, $linenum)) {
         header('location: ../pages/kycu');
-       
+    }
+    else echo "$filename, $linenum";
     }
     
     public function logout() {

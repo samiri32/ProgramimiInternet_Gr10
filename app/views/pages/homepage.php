@@ -2,11 +2,12 @@
 <html lang="sq">
 <head>
 <title>BIBLIOTEKA SINAN DOBREVA</title>
-    <?php require APPROOT . '/views/inc/header.php';?>
+
+<?php require APPROOT . '/views/inc/header.php';?>
 </head>
 
 <body onload="showSlides(1)">
-    <?php require APPROOT . '/views/inc/navbar.php';?>
+<?php require APPROOT . '/views/inc/navbar.php';?>
 
     <div class="homepage">
         <div class="row">
@@ -384,7 +385,6 @@
             }
         </script>
         <script src="js/konfirmimi.js"></script>
-
 
 </body>
 

@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta htttp-equiv="Cache-control" content="no-cache">
 <link rel="shortcut icon" type="image/png" href="../../../ProgramimiInternet_Gr10/public/img/sinani4.png">
-<link rel="stylesheet" id="stilicss" href="../../../ProgramimiInternet_Gr10/public/CSS/styles.css">
+<link rel="stylesheet" id="stilicss" href="<?php URLROOT;?>/public/CSS/styles.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -26,6 +26,7 @@
 </script>
 
 <style>
+
     * {
         box-sizing: border-box;
     }
@@ -197,7 +198,9 @@
         padding: 10px;
         text-align: right;
     }
+   
 </style>
+
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script type="text/javascript">
     $(document).ready(function() {
