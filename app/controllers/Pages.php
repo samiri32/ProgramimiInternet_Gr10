@@ -19,7 +19,7 @@ class Pages extends Controller {
                'titulli' => 'Autoret',
               // 'users' => $users
         ];
-        $this->view('views/pages/autoret', $data);
+        $this->view('pages/autoret', $data);
     }
     public function librat(){
       //  $users = $this->userModel->getUsers();
@@ -52,6 +52,15 @@ class Pages extends Controller {
               // 'users' => $users
         ];
         $this->view('pages/kontakti', $data);
+    }
+
+    public function profili(){
+      //  $users = $this->userModel->getUsers();
+        $data = [
+               'titulli' => 'Homepage',
+              // 'users' => $users
+        ];
+        $this->view('pages/profili', $data);
     }
     
 

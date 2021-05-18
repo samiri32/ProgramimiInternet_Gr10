@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <title>Autorët</title>
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/header.php';?>
+    <?php require APPROOT . '/views/inc/header.php';?>
 </head>
 
 <body>
     <div class="header"></div>
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/navbar.php';?>
+    <?php require APPROOT . '/views/inc/navbar.php';?>
     <div class="container">
         <br>
         <h2 id="nentitulli"><a href="../../../app/views/meshum.php">Autorë shqiptar</a></h2>
@@ -15,7 +15,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" img/Naim_Frasheri.jpg" />
+                        <img src="<?php echo URLROOT . '/public/img/Naim_Frasheri.jpg';?>" />
                     </div>
                     <div class="flip-card-back">
                         <h2>Naim Frasheri</h2>
@@ -39,7 +39,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" img/download.jpg" />
+                        <img src="<?php echo URLROOT .'/public/img/download.jpg'?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -66,7 +66,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" img/Gjergj_Fishta.jpg" />
+                        <img src="<?php echo URLROOT. '/public/img/Gjergj_Fishta.jpg'?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -91,7 +91,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" img/dritero.jpg" />
+                        <img src="<?php echo URLROOT .'/public/img/dritero.jpg'?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -113,7 +113,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" img/Migjeni11.jpg" />
+                        <img src=" <?php echo URLROOT .'/public/img/Migjeni11.jpg'?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -137,7 +137,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" img/NM.jpg" />
+                        <img src="<?php echo URLROOT .'/public/img/NM.jpg'?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -168,7 +168,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" img/FK.jpg" />
+                        <img src="<?php echo URLROOT .'/public/img/FK.jpg'?>" />
                     </div>
                     <div class="flip-card-back">
                         <h2>Franz Kafka</h2>
@@ -191,7 +191,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" img/EH.jpg" />
+                        <img src=" <?php echo URLROOT .'/public/img/EH.jpg'?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -215,7 +215,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" img/MT.jpg" />
+                        <img src=" <?php echo URLROOT .'/public/img/MT.jpg'?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -239,7 +239,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" img/EAP.jpg" />
+                        <img src=" <?php echo URLROOT .'/public/img/EAP.jpg'?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -263,7 +263,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" img/DA.jpg" />
+                        <img src=" <?php echo URLROOT .'/public/img/DA.jpg'?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -287,7 +287,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" img/TD.jpg" />
+                        <img src=" <?php echo URLROOT .'/public/img/TD.jpg'?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -310,14 +310,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
     <br>
     <br>
     <br>
@@ -443,7 +435,7 @@
         </table>
     </div>
     <br>
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/footer.php';?>
+    <?php require APPROOT . '/views/inc/footer.php';?>
     <script>
         const theme = document.querySelector("#stilicss");
 
@@ -453,7 +445,7 @@
 
         function darkMode() {
 
-            theme.href = 'css/stylesdark.css';
+            theme.href ="<?php echo URLROOT. '/public/CSS/stylesdark.css';?>";
             localStorage.setItem("color", "dark");
             console.log(localStorage);
             document.getElementById("teksti").className = "fa fa-sun-o";
@@ -464,7 +456,7 @@
 
         function lightMode() {
 
-            theme.href = "css/styles.css";
+            theme.href = "<?php echo URLROOT . '/public/CSS/styles.css';?>";
             localStorage.setItem("color", "light");
             console.log(localStorage);
             document.getElementById("teksti").className = "fa fa-moon-o";

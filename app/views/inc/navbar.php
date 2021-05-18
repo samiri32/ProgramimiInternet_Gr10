@@ -5,8 +5,8 @@
         <div class="majtasposht">
         <a href="<?php echo URLROOT; ?>/pages/homepage" class="menu-item" id="three" class="three">
             Ballina</a>
-            <a href="<?php echo URLROOT; ?>/app/pages/autoret">Autorët</a>
-            <a href="<?php echo URLROOT; ?>/app/pages/librat">Librat</a>
+            <a href="<?php echo URLROOT; ?>/pages/autoret">Autorët</a>
+            <a href="<?php echo URLROOT; ?>/pages/librat">Librat</a>
             <a href="<?php echo URLROOT; ?>/pages/lajme">Lajme</a>
         </div>
     </div>

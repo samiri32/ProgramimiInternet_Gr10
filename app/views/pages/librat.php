@@ -3,14 +3,14 @@
 
 <head>
   <title>Librat</title>
-  <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/header.php';?>
+  <?php require APPROOT . '/views/inc/header.php';?>
 </head>
 
 
 
 
 <body>
-  <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/navbar.php';?>
+<?php require APPROOT . '/views/inc/navbar.php';?>
   </div>
   <div class="homepage"><br>
     <h2 class="beni" style="text-align: center; color: #0075ff;">Libra shqip</h2><br>
@@ -18,7 +18,7 @@
 
 
       <div class="liber">
-        <img class="imagee" src="img/Bageti e bujqesi.png">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/Bageti e bujqesi.png'?>"/>
         <div class="ratingu ">
           <div class="yjet">
 
@@ -32,7 +32,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/Baba tomorri.jpg">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/Baba tomorri.jpg'?>">
 
 
 
@@ -50,7 +50,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/Fjala Fluturake NF.jpg">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/Fjala Fluturake NF.jpg'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -64,7 +64,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/Historia e skenderbeut NF.jpg">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/Historia e skenderbeut NF.jpg'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -79,7 +79,7 @@
     </div>
     <div class="librat">
       <div class="liber">
-        <img class="imagee" src="img/Juda Makabe GJF.jpg">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/Juda Makabe GJF.jpg'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -93,7 +93,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/Juvenila NM.jpg">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/Juvenila NM.jpg'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -107,7 +107,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/Lahuta e malcis GJF.jpg">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/Lahuta e malcis GJF.jpg'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -122,7 +122,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/Lissus NM.jpg">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/Lissus NM.jpg'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -137,7 +137,7 @@
     </div>
     <div class="librat">
       <div class="liber">
-        <img class="imagee" src="img/Luli i vocerr M.jpg">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/Luli i vocerr M.jpg'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -151,7 +151,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/Meshari.jpeg">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/Meshari.jpeg'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -165,7 +165,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/Mrizi i Zanave GJF.jpg">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/Mrizi i Zanave GJF.jpg'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -179,7 +179,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/scodra.jpg">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/scodra.jpg'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -197,7 +197,7 @@
     <div class="librat">
 
       <div class="liber">
-        <img class="imagee" src="img/P.png">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/P.png'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -213,7 +213,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/I.png">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/I.png'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -230,7 +230,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/AK.png">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/AK.png'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -246,7 +246,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/DC.png">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/DC.png'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -264,7 +264,7 @@
 
     <div class="librat">
       <div class="liber">
-        <img class="imagee" src="img/PD.png">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/PD.png'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -280,7 +280,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/KH.png">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/KH.png'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -296,7 +296,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/H.png">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/H.png'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -312,7 +312,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/LP1.png">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/LP1.png'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -328,7 +328,7 @@
     </div>
     <div class="librat">
       <div class="liber">
-        <img class="imagee" src="img/TS.png">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/TS.png'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -344,7 +344,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/HH.png">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/HH.png'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -360,7 +360,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/SH.png">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/SH.png'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -376,7 +376,7 @@
       </div>
 
       <div class="liber">
-        <img class="imagee" src="img/RJ.png">
+        <img class="imagee" src="<?php echo URLROOT .'/public/img/RJ.png'?>">
         <div class="ratingu ">
           <div class="yjet">
 
@@ -407,7 +407,7 @@
   </div>
 
   </main>
-  <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/footer.php';?>
+  <?php require APPROOT . '/views/inc/footer.php';?>
   <script>
     const theme = document.querySelector("#stilicss");
 
@@ -417,7 +417,7 @@
 
     function darkMode() {
 
-      theme.href = 'css/stylesdark.css';
+      theme.href ="<?php echo URLROOT. '/public/CSS/stylesdark.css';?>";
       localStorage.setItem("color", "dark");
       console.log(localStorage);
       document.getElementById("teksti").className = "fa fa-sun-o";
@@ -428,7 +428,7 @@
 
     function lightMode() {
 
-      theme.href = "css/styles.css";
+      theme.href ="<?php echo URLROOT. '/public/CSS/styles.css';?>";
       localStorage.setItem("color", "light");
       console.log(localStorage);
       document.getElementById("teksti").className = "fa fa-moon-o";

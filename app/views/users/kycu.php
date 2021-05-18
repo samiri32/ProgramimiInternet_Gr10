@@ -15,7 +15,7 @@
 
 
 <body>
-    <?php require APPROOT . '/views/inc/navbar.php'; ?>
+    <?php require APPROOT . '/views/inc/navbar.php';?>
     <div class="homepage">
         <div class="kycunidiv">
             <form id="kycuforma" action="../users/kycu" method="POST">

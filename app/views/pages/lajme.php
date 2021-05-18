@@ -3,7 +3,7 @@
 
 <head>
     <title>Lajmet</title>
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/header.php';?>
+    <?php require APPROOT . '/views/inc/header.php';?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
@@ -57,7 +57,7 @@
 
 
 <body>
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/navbar.php';?>
+<?php require APPROOT . '/views/inc/navbar.php';?>
     <div class="title">
 
         <h1 style="color: #0075ff;">Lajmet Aktuale</h1>
@@ -76,7 +76,7 @@
     </div>
     <div class="konga">
         <center><audio id="audio" controls>
-                <source src="img/Muharrem Qena Mallengjimi.mp3" type="audio/mpeg">
+                <source src="<?php echo URLROOT . '/public/img/Muharrem Qena Mallengjimi.mp3';?>" type="audio/mpeg">
                 Shnosh :/
         </center>
         </audio>
@@ -93,10 +93,10 @@
 
                 <div class="gridi1">
                     <div class="ardy">
-                        <img class="fototmodal" src="img/HIVZIABABOOO.jpg">
+                        <img class="fototmodal" src="<?php echo URLROOT . '/public/img/HIVZIABABOOO.jpg';?>">
                         <div class="modal">
                             <span class="close">×</span>
-                            <img class="modal-content" src="img/HIVZIABABOOO.jpg">
+                            <img class="modal-content" src="<?php echo URLROOT . '/public/img/HIVZIABABOOO.jpg';?>">
                             <p class="tekstimodal">
                                 Biblioteka “Hivzi Sulejmani” pas punës dymujore të ofrimit të shërbimeve huazimi i librit do të rifillon punën me sallat e leximit nga dita e premte 9 tetor 2020 . Ky veprim bëhet në përputhje me masat e udhëzimet e Institutit Kombëtar të Shëndetësisë
                                 Publike dhe të Ministrisë së Shëndetësisë të aprovuara nga Qeveria e Republikës së Kosovës si dhe në bashkëpunim të ngushtë me Drejtorinë e Kulturës dhe organet tjera të Komunës së Prishtinës.Në dy javët e para do të punohet
@@ -117,10 +117,10 @@
 
                 <div class="gridi2">
                     <div class="ardy">
-                        <img style="float: right" class="fototmodal" src="img/ismail-kadare-j-foley-opale-w-1-990x556.jpg">
+                        <img style="float: right" class="fototmodal" src="<?php echo URLROOT . '/public/img/ismail-kadare-j-foley-opale-w-1-990x556.jpg';?>">
                         <div class="modal">
                             <span class="close">×</span>
-                            <img class="modal-content" src="img/ismail-kadare-j-foley-opale-w-1-990x556.jpg">
+                            <img class="modal-content" src="<?php echo URLROOT . '/public/img/ismail-kadare-j-foley-opale-w-1-990x556.jpg';?>">
                             <p class="tekstimodal">
                                 Lindur në vitin 1936, Ismail Kadare është poeti dhe romancieri më i njohur i Shqipërisë. Në 2005 ai u vlerësua me çmimin inaugurues Man Booker International për "një pjesë të veprës të shkruar nga një autor i cili ka pasur një ndikim vërtet global". Ai
                                 është gjithashtu marrës i Çmimit Princi i Asturias 2009 në Spanjë, dhe në 2015 ai fitoi Çmimin Jeruzalem për Lirinë e Individit në Shoqëri. Kadare është një kampion i demokracisë ndërkombëtare dhe në 1990 hyri në azil politik
@@ -139,10 +139,10 @@
 
                 <div class="gridi3">
                     <div class="ardy">
-                        <img class="fototmodal" src="img/ekspozita.jpeg">
+                        <img class="fototmodal" src="<?php echo URLROOT . '/public/img/ekspozita.jpeg';?>">
                         <div class="modal">
                             <span class="close">×</span>
-                            <img class="modal-content" src="img/ekspozita.jpeg">
+                            <img class="modal-content" src="<?php echo URLROOT . '/public/img/ekspozita.jpeg';?>">
                             <p class="tekstimodal">Në Qendrën për Hapje dhe Dialog, në kryeministri u çel të hënën ekspozita "Përtej Kujtimeve", me rastin e 70-vjetorit të marrëdhënieve Shqipëri-Kinë. "Përtej Kujtimeve" ekspozon një koleksion pullash përkujtimore me tematikë
                                 Kinën, të lëshuara nga Posta Shqiptare përgjatë viteve 1968-2009, gjithashtu dhe vepra tradicionale artistike nga qyteti Nanjing, Kinë. Në fjalimin e tij, ambasadori Zhou Ding tha se gjatë 70 vjetëve pas vendosjes së marrëdhënieve
                                 diplomatike midis Kinës e Shqipërisë, marrëdhëniet dypalëshe kanë kaluar provën e ndryshimit të situatës ndërkombëtare, dy palët kanë ruajtur gjithmonë lidhjen e ngushtë, miqësia midis dy popujve është trashëguar brez pas
@@ -162,10 +162,10 @@
 
                 <div class="gridi4">
                     <div class="ardy">
-                        <img style="float: right" class="fototmodal" src="img/noli.jpg">
+                        <img style="float: right" class="fototmodal" src="<?php echo URLROOT . '/public/img/noli.jpg';?>">
                         <div class="modal">
                             <span class="close">×</span>
-                            <img class="modal-content" src="img/noli.jpg">
+                            <img class="modal-content" src="<?php echo URLROOT . '/public/img/noli.jpg';?>">
                             <p class="tekstimodal">“Një figurë themelore e lëvizjes nacionaliste shqiptare të sapolindur, dijetari Fan S. Noli krijoi forcën e lëvizjes në Shtetet e Bashkuara, ku ai themeloi Kishën Ortodokse Shqiptare”. “Daily Sabah” e ka nisur kështu artikullin
                                 kushtuar figurës, rolit dhe veprimtarisë së rëndësishme të Fan. S Nolit, veprat e të cilit tashmë do të jenë të ekspozuara në një librari në Boston.<br> E vendosur modestisht në katin e dytë të ndërtesës pranë Katedrales,
                                 biblioteka arkivore e rrallë që zotëron Neka Doko hap dyert e saj në një zyrë me dritare dhe pamje nga lokalet të lagjes së ngushtë të Greater Bostonit.
@@ -184,10 +184,10 @@
 
                 <div class="gridi5">
                     <div class="ardy">
-                        <img class="fototmodal" src="img/mini-biblioteka.jpg">
+                        <img class="fototmodal" src="<?php echo URLROOT . '/public/img/mini-biblioteka.jpg';?>">
                         <div class="modal">
                             <span class="close">×</span>
-                            <img class="modal-content" src="img/mini-biblioteka.jpg">
+                            <img class="modal-content" src="<?php echo URLROOT . '/public/img/mini-biblioteka.jpg';?>">
                             <p class="tekstimodal">Hapet mini-biblioteka e parë në Prishtinë me moton “Sill një libër merr një tjetër”. Sot u hap mini-biblioteka e parë në Parkun e vjetër në lagjen “Dardania” të Prishtinës, e cila u mundësua nga ETEA, Kuvendi i të Rinjve të
                                 Prishtinës, Libraria “Dukagjini” dhe FIQ.Mini-biblioteka do të ketë qasje 24 orë në 7 ditë të javës dhe do të jetë nën kujdesin e banorëve të lagjes. E njëjta do të ketë mbi 100 libra në dispozicion të banorëve të lagjes
                                 dhe të të gjithë të interesuarve për shkëmbim të librave apo huazim të librit përgjatë qëndrimit në lagje.
@@ -205,10 +205,10 @@
 
                 <div class="gridi6">
                     <div class="ardy">
-                        <img style="float: right" class="fototmodal" src="img/arsimimi.png">
+                        <img style="float: right" class="fototmodal" src="<?php echo URLROOT . '/public/img/arsimimi.png';?>">
                         <div class="modal">
                             <span class="close">×</span>
-                            <img class="modal-content" src="img/arsimimi.png">
+                            <img class="modal-content" src="<?php echo URLROOT . '/public/img/arsimimi.png';?>">
                             <p class="tekstimodal">Në ambientet e Këndit Amerikan, znj. Maja Adiga, zëvendës - asistente e sekretarit të shtetit për programe Akademike në kuadër të Byrosë për çështje arsimore dhe kulturore të Departamentit Amerikan te Shtetit u takua me partnerë
                                 si; Biblioteka Hivzi Sulejmani Dega – “ Biblioteka Përkujtimore”, Këndi Amerikan dhe SOS – Fshatrat e fëmijëve të Kosovës. Qëllimi i takimit ishte programi që u ndihmon grave të margjinalizuara të shoqërisë të mësojnë shkrim-lexim,
                                 anglisht dhe kompjuter.
@@ -226,10 +226,10 @@
 
                 <div class="gridi7">
                     <div class="ardy">
-                        <img class="fototmodal" src="img/Dukagjinn-640x480.jpg">
+                        <img class="fototmodal" src="<?php echo URLROOT . '/public/img/Dukagjinn-640x480.jpg';?>">
                         <div class="modal">
                             <span class="close">×</span>
-                            <img class="modal-content" src="img/Dukagjinn-640x480.jpg">
+                            <img class="modal-content" src="<?php echo URLROOT . '/public/img/Dukagjinn-640x480.jpg';?>
                             <p class="tekstimodal">Mbyllja si pasojë e pandemisë shkaktoi tkurrje drastike të vizitorëve në bibliotekat e vendit ndërkohë që libraritë shënuan rritje në shitje të librave gjatë këtij viti. E pajisur me 70 mijë libra e me 80 ulëse për lexim, biblioteka
                                 “Sadik Tafarshiku” në Ferizaj këtë të martë kishte mbetur vetëm me tetë lexues në sallë. Ky është një numër jo i zakonshëm për bibliotekën e cila vizitohet nga nxënës, studentë, studiues e banorë të Ferizajt e rrethinës.
                             </p>
@@ -246,10 +246,10 @@
 
                 <div class="gridi8">
                     <div class="ardy">
-                        <img style="float: right" class="fototmodal" src="img/dhurohenlibra.png">
+                        <img style="float: right" class="fototmodal" src="<?php echo URLROOT . '/public/img/dhurohenlibra.png';?>">
                         <div class="modal">
                             <span class="close">×</span>
-                            <img class="modal-content" src="img/dhurohenlibra.png">
+                            <img class="modal-content" src="<?php echo URLROOT . '/public/img/Dukagjinn-640x480.jpg';?>">
                             <p class="tekstimodal">Fëmijët e kopshtit “Elita”, kanë dhuruar ndihma simbolike për fëmijët e fshatit “SOS”, kurse arushi “Lino”, ka shpërblyer fëmijët për humanitetin e tyre , me libra për ngjyrosje. Në kuadër të kampanjës “Fëmijët ndihmojnë fëmijët”,
                                 fëmijë të kopshteve të ndryshme në Komunën e Prishtinës janë duke dhuruar rrobe për fëmijët e SOS Fshatit, kampanjë kjo që është duke u zhvilluar me brendin Lino, shkruan KultPlus.
                             </p>
@@ -286,10 +286,10 @@
 
                 <div class="gridi10">
                     <div class="ardy">
-                        <img class="fototmodal" src="img/Aktiviteti.png">
+                        <img class="fototmodal" src="<?php echo URLROOT . '/public/img/aktiviteti.png';?>">
                         <div class="modal">
                             <span class="close">×</span>
-                            <img class="modal-content" src="img/Aktiviteti.png">
+                            <img class="modal-content" src="<?php echo URLROOT . '/public/img/aktiviteti.png';?>">
                             <p class="tekstimodal"> Në kuadër të festivalit PrishtinaLexon, banorët e kryeqytetit patën mundësinë të regjistrohen pa pagesë në të gjitha degët e Bibliotekës "Hivzi Sulejmani", kjo një gjë e cila u mirëpritë nga të gjithë qytetarët pa dallim, ndërsa
                                 në sheshin "Zahir Pjaziti", nga të gjithë lexuesit u shpallën lexuesit e dalluar të Komunës së Prishtinës, duke përfshirë të gjitha grupmoshat, si në vijim:<br> Era Dragusha, nxënëse;<br> Flamur Foniqi, student;<br> Hazir
                                 Mehmeti, pensionist;<br> Tre lexuesit e vitit morën mirënjohje dhe libra, dhuratë nga libraria "Dukagjiin", Biblioteka "Hivzi Sulejmani" dhe Aleanca franceze. Kryetari i qytetit shfrytëzoi rastin të inkurajojë të gjithë
@@ -338,7 +338,7 @@
 
     </div>
 
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/footer.php';?>
+    <?php require APPROOT . '/views/inc/footer.php';?>
 
     <script>
         function viewModal() {
@@ -381,7 +381,7 @@
 
         function darkMode() {
 
-            theme.href = 'css/stylesdark.css';
+            theme.href = "<?php echo URLROOT . '/CSS/stylesdark.css';?>";
             localStorage.setItem("color", "dark");
             console.log(localStorage);
             document.getElementById("teksti").className = "fa fa-sun-o";
@@ -392,7 +392,7 @@
 
         function lightMode() {
 
-            theme.href = "css/styles.css";
+            theme.href = "<?php echo URLROOT . '/CSS/styles.css';?>";
             localStorage.setItem("color", "light");
             console.log(localStorage);
             document.getElementById("teksti").className = "fa fa-moon-o";

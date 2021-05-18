@@ -7,8 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <title>Kontakti</title>
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/header.php';?>
+    <?php require APPROOT . '/views/inc/header.php';?>
     <script>
+
+
         function allowDrop(ev) {
             ev.preventDefault();
         }
@@ -29,13 +31,13 @@
 
 
 <body>
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/navbar.php';?>
+<?php require APPROOT . '/views/inc/navbar.php';?>
     <!--      -->
     <div class="pjesa1">
         <div class="foto">
             <center>
 
-                <img src="img/fadedpic2.jpg" alt="">
+                <img src="<?php echo URLROOT . '/public/img/fadedpic2.jpg';?>" alt="">
             </center>
         </div>
         <div class="banner">
@@ -95,7 +97,7 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;color:black;">Dërgo një s
             <iframe class="harta" style="margin-top: -0.6em;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13628.870304395936!2d21.08080134046593!3d42.600693811548744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13536281728fbb4f%3A0xbec710e0df782273!2sMiradi%20e%20Eperme!5e1!3m2!1sen!2s!4v1610466107690!5m2!1sen!2s" width="550em" height="450em" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 
-            <video class="videoo" style="margin-top: -0.6em; background-color: black;" src="img/theniengaSinani.mp4" poster="img/sinani.jpg" height="450em" width="550em" controls></video>
+            <video class="videoo" style="margin-top: -0.6em; background-color: black;" src="<?php echo URLROOT . '/public/img/theniengaSinani.mp4';?>" poster="<?php echo URLROOT . '/public/img/sinani.jpg';?>" height="450em" width="550em" controls></video>
         </div>
     </div>
     <br><br><br>
@@ -224,13 +226,13 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;color:black;">Dërgo një s
 
 
             <div id="drag" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <img src="img/sinani3.png" draggable="true" ondragstart="drag(event)" id="drag1">
+                <img src="<?php echo URLROOT . '/public/img/sinani3.png';?>" draggable="true" ondragstart="drag(event)" id="drag1">
             </div>
 
             <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </div>
     </div>
-    <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/footer.php';?>
+    <?php require APPROOT . '/views/inc/footer.php';?>
     <script>
         const theme = document.querySelector("#stilicss");
 
@@ -240,7 +242,7 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;color:black;">Dërgo një s
 
         function darkMode() {
 
-            theme.href = 'css/stylesdark.css';
+            theme.href ="<?php echo URLROOT. '/public/CSS/stylesdark.css';?>";
             localStorage.setItem("color", "dark");
             console.log(localStorage);
             document.getElementById("teksti").className = "fa fa-sun-o";
@@ -251,7 +253,7 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;color:black;">Dërgo një s
 
         function lightMode() {
 
-            theme.href = "css/styles.css";
+            theme.href ="<?php echo URLROOT. '/public/CSS/styles.css';?>";
             localStorage.setItem("color", "light");
             console.log(localStorage);
             document.getElementById("teksti").className = "fa fa-moon-o";

@@ -15,8 +15,8 @@
 
                 <div class="konga">
                     <center>
-                        <audio controls autoplay>
-                            <source src="../../../ProgramimiInternet_Gr10/public/img/Muharrem Qena Mallengjimi.mp3" type="audio/mpeg">
+                        <audio controls>
+                            <source src="<?php echo URLROOT .'/img/Muharrem Qena Mallengjimi.mp3'?>" type="audio/mpeg">
                             Shnosh :/
                         </audio><br><br>
                         <h1 style="text-align: center; display: inline;" id="regj">Regjistrohuni në BSD</h1><br>
