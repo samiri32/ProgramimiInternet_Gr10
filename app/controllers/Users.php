@@ -1,21 +1,18 @@
 <?php
+ob_start();
 class Users extends Controller
 {
     public function __construct()
     {
-        $this->userModel = $this->model('User');
+      $this->userModel = $this->model('User');
     }
-
-    
     public function createUserSession($user) {
         $_SESSION['user_id'] = $user->user_id;
         $_SESSION['email'] = $user->email;
-        flush();
-        if (!headers_sent($filename, $linenum)) {
-        header('location: ../pages/kycu');
+        header('location:' .URLROOT);
+        die();
     }
-    else echo "$filename, $linenum";
-    }
+    
     
     public function logout() {
         unset($_SESSION['user_id']);

@@ -5,9 +5,9 @@
         <div class="majtasposht">
         <a href="<?php echo URLROOT; ?>/pages/homepage" class="menu-item" id="three" class="three">
             Ballina</a>
-            <a href="<?php echo URLROOT; ?>/pages/autoret">Autorët</a>
-            <a href="<?php URLROOT; ?>/pages/librat">Librat</a>
-            <a href="<?php URLROOT; ?>/pages/lajme">Lajme</a>
+            <a href="<?php echo URLROOT; ?>/app/pages/autoret">Autorët</a>
+            <a href="<?php echo URLROOT; ?>/app/pages/librat">Librat</a>
+            <a href="<?php echo URLROOT; ?>/pages/lajme">Lajme</a>
         </div>
     </div>
 
@@ -28,11 +28,11 @@
                     <input type="text" name="" placeholder="Kërkoni">
                 </form>
             </div>
-            <a href="<?php URLROOT; ?>/pages/galeria" class="menu-item" id="one">Galeria</a>
-            <a href="<?php URLROOT; ?>/pages/kontakti" class="menu-item" id="two">Kontakti</a>
+            <a href="<?php echo URLROOT; ?>/pages/galeria" class="menu-item" id="one">Galeria</a>
+            <a href="<?php echo URLROOT; ?>/pages/kontakti" class="menu-item" id="two">Kontakti</a>
             <div class ="btn-kycu" style="display:inline;">
             <?php if(isset($_SESSION['user_id'])) : ?>
-            <a href="<?php URLROOT; ?>/pages/profili" class="menu-item" id="three" class="three">
+            <a href="<?php echo URLROOT; ?>/pages/profili" class="menu-item" id="three" class="three">
             Profili</a>
             <?php else: ?>
                 <a href="<?php echo URLROOT; ?>/users/kycu" class="menu-item" id="three" class="three">

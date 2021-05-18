@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Autorët</title>
     <?php require '/xampp/htdocs/ProgramimiInternet_Gr10/app/views/inc/header.php';?>
