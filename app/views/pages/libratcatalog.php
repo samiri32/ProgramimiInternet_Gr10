@@ -1,0 +1,1 @@
+<!-- query qe na qet krejt librat ne databaze -->

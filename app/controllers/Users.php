@@ -17,7 +17,7 @@ class Users extends Controller
     public function logout() {
         unset($_SESSION['user_id']);
         unset($_SESSION['email']);
-        header('location: ../users/kycu');
+        header('location:' .URLROOT. '/pages/homepage');
         die();
     }
 

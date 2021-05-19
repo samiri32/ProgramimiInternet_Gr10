@@ -62,7 +62,23 @@ class Pages extends Controller {
         ];
         $this->view('pages/profili', $data);
     }
-    
+    public function autoretcatalog(){
+      //  $users = $this->userModel->getUsers();
+     
+       $data = [
+               'titulli' => 'Homepage',
+              // 'users' => $users
+        ];
+        $this->view('pages/autoretcatalog', $data);
+    }
+    public function libratcatalog(){
+      //  $users = $this->userModel->getUsers();
+        $data = [
+               'titulli' => 'Homepage',
+              // 'users' => $users
+        ];
+        $this->view('pages/libratcatalog', $data);
+    }
 
 
 

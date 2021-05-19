@@ -13,7 +13,7 @@
 
     <div class="logoja">
         <div class="sinanibabo">
-            <img src="../../../ProgramimiInternet_Gr10/public/img/sinani.png" alt="pldh" height="130em" width="175em" id='sinani'>
+            <img src="<?php echo URLROOT . '/public/img/sinani.png'; ?>" alt="pldh" height="130em" width="175em" id='sinani'>
         </div>
         <a href="<?php echo URLROOT; ?>/pages/homepage" id='titulli' style="font-family:'Arnhem', Times, Courier, serif;"> <span>Biblioteka
                 Sinan

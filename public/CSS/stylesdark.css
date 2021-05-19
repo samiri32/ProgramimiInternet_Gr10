@@ -18,6 +18,11 @@
   position: center;
 }
 
+.ndarja p, .ndarja a, .ndarja{
+  color: #0075ff;
+  font-size: 5em;
+}
+
 .lajmet {
   display: grid;
   grid-template-columns: 1fr 1fr;

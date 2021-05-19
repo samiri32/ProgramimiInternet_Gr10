@@ -10,7 +10,7 @@
     <?php require APPROOT . '/views/inc/navbar.php';?>
     <div class="container">
         <br>
-        <h2 id="nentitulli"><a href="../../../app/views/meshum.php">Autorë shqiptar</a></h2>
+        <h2 id="nentitulli">Autorë shqiptar</h2>
         <div class="autoret">
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
@@ -24,7 +24,7 @@
                             këndoi mallit e dashurisë për atdhe, krenarisë kombëtare dhe të kaluarës së lavdishme të shqiptarëve.Naimi është autor i gjithsej njëzetedy veprave
 
                         <div class="meshum">
-                            <a href="../../../app/views/meshum.php#Naim-Frasheri"> Më shumë</a>
+                        <a href="https://sq.wikipedia.org/wiki/Naim_Frash%C3%ABri" target=_blank>Më shumë</a>
                         </div>
 
                         </p>
@@ -33,7 +33,7 @@
             </div>
             <div class="autori">
                 <p>
-                    <a href="https://sq.wikipedia.org/wiki/Naim_Frash%C3%ABri" target=_blank> Naim Frasheri</a>
+                    <a href="https://sq.wikipedia.org/wiki/Naim_Frash%C3%ABri" target=_blank> Naim Frashëri</a>
                 </p>
             </div>
             <div class="mbajtesi-autoreve">
@@ -48,7 +48,7 @@
                             Naum Veqilharxhi, lindur Naum Bredhi (1797 - 1846) ka qenë një avokat dhe studjues shqiptar. Më 1844 krijoi një alfabet krejt origjinal për gjuhën shqipe, quajtur Alfabeti i Vithkuqit. Veqilharxhi shmangu përdorimin e shkronjave greke. Ai është ndër figurat
                             më të shquara të viteve të para të Rilindjes Kombëtare Shqiptare, dhe çmohet si njëri prej ideologëve të saj të parë .
                         <div class="meshum">
-                            <a href="../../../app/views/meshum.php#Naum"> Më shumë</a>
+                        <a href="https://sq.wikipedia.org/wiki/Naum_Veqilharxhi" target=_blank>Më shumë</a>
                         </div>
                         </p>
 
@@ -76,7 +76,7 @@
                             por edhe si kritik, historian i letërsisë dhe estet.Për gjysmë shekulli ishte figura mbizotëruese e letërsisë shqipe, madje që kur ishte gjallë u kurorëzua "poet kombëtar".
 
                         <div class="meshum">
-                            <a href="../../../app/views/meshum.php#Gjergj-Fishta"> Më shumë</a>
+                        <a href="https://sq.wikipedia.org/wiki/Gjergj_Fishta" target=_blank>Më shumë</a>
                         </div>
 
                         </p>
@@ -99,7 +99,7 @@
                         <p>Dritëro Agolli (13 tetor 1931 - 3 shkurt 2017) Ishte poet, prozator, publicist dhe politikan shqiptar. Që nga viti 1973 ai ishte kryetar i Lidhjes së Shkrimtarëve dhe të Artistëve të Shqipërisë.
 
                         <div class="meshum">
-                            <a href="../../../app/views/meshum.php#Dritero-Agolli"> Më shumë</a>
+                        <a href="https://sq.wikipedia.org/wiki/Drit%C3%ABro_Agolli" target=_blank>Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -123,7 +123,7 @@
 
 
                         <div class="meshum">
-                            <a href="../../../app/views/meshum.php#Migjeni"> Më shumë</a>
+                        <a href="https://sq.wikipedia.org/wiki/Migjeni" target=_blank> Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -145,7 +145,7 @@
                         <p>Ndre Mjeda ose Mjedja (Shkodër, 20 nëntor 1866 - 1 gusht 1937) ka qenë prift, gjuhëtar, poet lirik dhe deputet shqiptar. Është cilësuar nga Jakov Milaj "nji ndër letrarët ma të mëdhaj qi ka qitun Shqipnija".
 
                         <div class="meshum">
-                            <a href="../../../app/views/meshum.php#Ndre"> Më shumë</a>
+                        <a href="https://sq.wikipedia.org/wiki/Ndre_Mjeda" target=_blank>Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -160,10 +160,12 @@
     </div>
 
     <br>
-
+<div class = "ndarja">
+<p class="ndarja"><a href="<?php echo URLROOT; ?>/pages/autoretcatalog">Shiko katalogun e autorëve</a></p>
+</div>
 
     <div class="container">
-        <h2 id="nentitulli"><a href="../../../app/views/meshume.php">Autorë të huaj</a></h2>
+        <h2 id="nentitulli">Autorë të huaj</a></h2>
         <div class="autoret">
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
@@ -177,7 +179,7 @@
                             bërë ikona në letërsinë e Perëndimit.
 
                         <div class="meshum">
-                            <a href="../../../app/views/meshume.php"> Më shumë</a>
+                        <a href="https://sq.wikipedia.org/wiki/Franz_Kafka" target=_blank>Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -185,7 +187,7 @@
             </div>
             <div class="autori">
                 <p>
-                    <a href="https://sq.wikipedia.org/wiki/Naum_Veqilharxhi" target=_blank> Franz Kafka</a>
+                    <a href="https://sq.wikipedia.org/wiki/Franz_Kafka" target=_blank> Franz Kafka</a>
                 </p>
             </div>
             <div class="mbajtesi-autoreve">
@@ -201,7 +203,7 @@
                             e mëvonshme.
 
                         <div class="meshum">
-                            <a href="../../../app/views/meshume.php#Ernest"> Më shumë</a>
+                        <a href="https://sq.wikipedia.org/wiki/Ernest_Hemingway" target=_blank>Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -209,7 +211,7 @@
             </div>
             <div class="autori">
                 <p>
-                    <a href="https://sq.wikipedia.org/wiki/Naum_Veqilharxhi" target=_blank> Ernest Hemingway</a>
+                    <a href="https://sq.wikipedia.org/wiki/Ernest_Hemingway" target=_blank> Ernest Hemingway</a>
                 </p>
             </div>
             <div class="mbajtesi-autoreve">
@@ -224,7 +226,7 @@
                             of Huckleberry Finn) (Aventurat e Hakëllberri Finit), e cila me vone njihej si “Great American Novel” (Novela e famshme Amerikane). Twain u rrit në Hannibal, Missouri, ku shkroi Huckleberry Finn dhe Tom Sawyer, te cilat i shkroi
                             me makine shtypi.
                         <div class="meshum">
-                            <a href="../../../app/views/meshume.php#MT"> Më shumë</a>
+                        <a href="https://sq.wikipedia.org/wiki/Mark_Twain" target=_blank> Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -232,7 +234,7 @@
             </div>
             <div class="autori">
                 <p>
-                    <a href="https://sq.wikipedia.org/wiki/Naum_Veqilharxhi" target=_blank> Mark Twain</a>
+                    <a href="https://sq.wikipedia.org/wiki/Mark_Twain" target=_blank> Mark Twain</a>
                 </p>
             </div>
 
@@ -249,7 +251,7 @@
                             më të njohura të tijat : “Korbi” dhe “Anabel Li”.
 
                         <div class="meshum">
-                            <a href="../../../app/views/meshume.php#Edgar"> Më shumë</a>
+                        <a href="https://sq.wikipedia.org/wiki/Edgar_Allan_Poe" target=_blank>Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -257,7 +259,7 @@
             </div>
             <div class="autori">
                 <p>
-                    <a href="https://sq.wikipedia.org/wiki/Naum_Veqilharxhi" target=_blank> Edgar Allan Poe</a>
+                    <a href="https://sq.wikipedia.org/wiki/Edgar_Allan_Poe" target=_blank> Edgar Allan Poe</a>
                 </p>
             </div>
             <div class="mbajtesi-autoreve">
@@ -273,7 +275,7 @@
                             konsiderohet si vepra më e madhe e shkruar në italisht.
 
                         <div class="meshum">
-                            <a href="../../../app/views/meshume.php#Dante"> Më shumë</a>
+                        <a href="https://sq.wikipedia.org/wiki/Dante_Aligieri" target=_blank> Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -281,7 +283,7 @@
             </div>
             <div class="autori">
                 <p>
-                    <a href="https://sq.wikipedia.org/wiki/Naum_Veqilharxhi" target=_blank> Dante Aligheri</a>
+                    <a href="https://sq.wikipedia.org/wiki/Dante_Aligieri" target=_blank> Dante Aligheri</a>
                 </p>
             </div>
             <div class="mbajtesi-autoreve">
@@ -297,7 +299,7 @@
                             me personalitete të njohura të politikës së vendit.
 
                         <div class="meshum">
-                            <a href="../../../app/views/meshume.php#Teodor"> Më shumë</a>
+                        <a href="https://sq.wikipedia.org/wiki/Teodor_Drajzer" target=_blank>Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -305,7 +307,7 @@
             </div>
             <div class="autori">
                 <p>
-                    <a href="https://sq.wikipedia.org/wiki/Naum_Veqilharxhi" target=_blank> Teodor Drajzer</a>
+                    <a href="https://sq.wikipedia.org/wiki/Teodor_Drajzer" target=_blank> Teodor Drajzer</a>
                 </p>
             </div>
         </div>

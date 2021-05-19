@@ -952,6 +952,11 @@ body {
   text-decoration: none;
 }
 
+.ndarja p, .ndarja a, .ndarja{
+  color: #0075ff;
+  font-size: 5em;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -964,7 +969,9 @@ a {
 h3 {
   text-align: center;
 }
-
+.meshum{
+  visibility:hidden;
+}
 .meshum a {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #636262;

@@ -4,9 +4,9 @@
                     <div class="bs">VEGËZA TË DOBISHME</div>
                 </div>
                 <div class="shortcutposht">
-                    <a href="../../../app/views/pages/Librat.php" class="eee" id="sdds">Libra</a>
-                    <a href="../../../app/views/pages/Autoret.php" class="eee" id="fdsfdsf">Autorët</a>
-                    <a href="../../../app/views/pages/lajme.php" class="eee" id="fsdfdsf">Lajme</a>
+                    <a href="<?php echo URLROOT; ?>/pages/librat" class="eee" id="sdds">Libra</a>
+                    <a href="<?php echo URLROOT; ?>/pages/autoret" class="eee" id="fdsfdsf">Autorët</a>
+                    <a href="<?php echo URLROOT; ?>/pages/lajme" class="eee" id="fsdfdsf">Lajme</a>
 
                 </div>
             </div>
@@ -16,7 +16,7 @@
             <div class="row5pjesepjese">
                 <div class="logoja">
                     <div class="sinanibabo">
-                        <img src="../../../ProgramimiInternet_Gr10/public/img/sinani3.png" alt="pldh" height="130em" width="175em" id='sinanibardh'
+                        <img src="<?php echo URLROOT . '/public/img/sinani3.png';?>" alt="pldh" height="130em" width="175em" id='sinanibardh'
                             style="background-color: black;">
                     </div>
                     <span id="sinaniposht">Biblioteka Sinan Dobreva</span>
@@ -29,7 +29,7 @@
                             koleksionet e veta nga fushat e ndryshme të krijimtarisë intelektuale me qëllim që t’ i bëjë
                             të njohura shfrytëzuesve për t’i studiuar dhe për t’ i lënë
                             trashëgim gjeneratave të ardhshme.</p>
-                        <a href="../../../app/views/pages/Librat.php">
+                        <a href="<?php echo URLROOT; ?>/pages/librat">
                             <p id="katalogu">Shfleto katalogun</p>
                         </a>
                     </div>
@@ -41,8 +41,8 @@
                             e qytetit të Prishtinës me rrethinë, pavarësisht nga raca, kombësia, gjinia, mosha, besimi
                             fetar, gjuha, paaftësitë fizike dhe informon e ndihmon ata
                             në përdorimin e gjetjen e tyre.</p>
-                        <a href="../../../app/views/pages/regjistrohu.php">
-                            <p id="katalogu">Regjistrohu</p>
+                        <a href="<?php echo URLROOT; ?>/pages/kontakti">
+                            <p id="katalogu">Kontakti</p>
                         </a>
                     </div>
 
@@ -54,7 +54,7 @@
                             komunitetin me qëllim të nxitjes së interesimit për librin dhe të mësuarit
                             gjatë gjith jetës. Shfletoni galerinë për më shumë.
                         </p>
-                        <a href="../../../app/views/pages/galeria.php">
+                        <a href="<?php echo URLROOT; ?>/pages/galeria">
                             <p id="katalogu">Galeria</p>
                         </a>
                     </div>
@@ -92,11 +92,11 @@
 
                     <ul>
 
-                        <li><a href="../../../app/views/pages/Librat.php">
+                        <li><a href="<?php echo URLROOT; ?>/pages/librat">
                                 Libra shqip
                             </a>
                         </li>
-                        <li><a href="../../../app/views/pages/Librat.php#teHuaj">
+                        <li><a href="<?php echo URLROOT; ?>/pages/librat">
                                 Libra të huaj
                             </a></li>
                     </ul>
@@ -107,10 +107,10 @@
                     <ul>
 
 
-                        <li><a href="../../../app/views/pages/meshum.php">
-                                Autorë shqiptar
+                        <li><a href="<?php echo URLROOT; ?>/pages/autoret">
+                            Autorë shqiptar
                             </a></li>
-                        <li><a href="../../../app/views/pages/meshume.php">
+                        <li><a href="<?php echo URLROOT; ?>/pages/autoret">
                                 Autorë të huaj
                             </a></li>
                     </ul>
@@ -118,7 +118,7 @@
                 <div class="sbkol2">
 
                     <ul>
-                        <li><a href="../../../app/views/pages/lajme.php"><span>Lajme</span></a>
+                        <li><a href="<?php echo URLROOT; ?>/pages/lajme"><span>Lajme</span></a>
                         </li>
                     </ul>
                 </div>
@@ -126,11 +126,11 @@
 
                     <ul>
 
-                        <li><a href="../../../app/views/pages/galeria.php#fotogaleriah3">
+                        <li><a href="<?php echo URLROOT; ?>/pages/galeria">
                                 Fotogaleria
                             </a>
                         </li>
-                        <li><a href="../../../app/views/pages/galeria.php#videogaleriah3">
+                        <li><a href="<?php echo URLROOT; ?>/pages/galeria">
                                 Videogaleria
                             </a>
                         </li>
@@ -139,14 +139,24 @@
                 <div class="sbkol2">
 
                     <ul>
-                        <li><a href=".../../../app/views/pages/Kontakti.php"><span>Kontakti</span></a>
+                        <li><a href="<?php echo URLROOT; ?>/pages/kontakti"><span>Kontakti</span></a>
                         </li>
                     </ul>
                 </div>
                 <div class="sbkol2">
 
                     <ul>
-                        <li><a href=".../../../app/views/pages/regjistrohu.php"><span>Regjistrohu</span></a>
+                        <li>
+                        <div class ="btn-kycu" style="display:inline;">
+            <?php if(isset($_SESSION['user_id'])) : ?>
+            <a href="<?php echo URLROOT; ?>/pages/profili" class="menu-item" id="three" class="three">
+            Profili</a>
+            <?php else: ?>
+                <a href="<?php echo URLROOT; ?>/users/regjistrohu" class="menu-item" id="three" class="three">
+            Regjistrohu</a>
+            <?php endif; ?>
+            </div>
+                       
                         </li>
                     </ul>
                 </div>

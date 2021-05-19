@@ -5,13 +5,19 @@
     <title>Profili</title>
      <?php require APPROOT . '/views/inc/header.php';?>
 </head>
-
+    
 
 <body>
     <?php require APPROOT . '/views/inc/navbar.php';?>
     <div class="homepage">
-       
+
+<center>
+    <a href="<?php echo URLROOT. '/users/logout'?>"> <button class="buton" id="shkycu" style="margin-top:5em;">Shkyçu</button></a>
+   
+    </center>
         </div>
+
+        
 
 
         <?php require APPROOT . '/views/inc/footer.php';?>
