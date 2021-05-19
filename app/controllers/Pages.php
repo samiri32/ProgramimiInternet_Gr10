@@ -29,13 +29,13 @@ class Pages extends Controller {
         ];
         $this->view('pages/librat', $data);
     }
-    public function lajme(){
+    public function posts(){
       //  $users = $this->userModel->getUsers();
         $data = [
-               'titulli' => 'Homepage',
+               'titulli' => 'qwer',
               // 'users' => $users
         ];
-        $this->view('pages/lajme', $data);
+        $this->view('pages/posts/index', $data);
     }
     public function galeria(){
       //  $users = $this->userModel->getUsers();

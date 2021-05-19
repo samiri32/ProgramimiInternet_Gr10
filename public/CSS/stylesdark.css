@@ -1973,3 +1973,45 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   color:white !important;
 }
 
+/* BLOG */
+
+.btn {
+  padding: 8px 18px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.btn:hover {
+  color: #ffffff;
+}
+
+.green {
+  background-color: #4CAF50;
+}
+
+.green:hover {
+  background-color: #64A764;
+  transition: 0.20s ease-in-out;
+}
+
+/* Create Post */
+
+.orange {
+  background-color: orange;
+  color: #000000;
+  float: right;
+}
+
+.red {
+  background-color: #ff0000;
+  float: right;
+  width: 120px;
+  margin: 0px 20px;
+  height: 40px;
+}
+.containerlajme{
+  margin: 0 auto;
+  width: 80%;
+  padding: 100px 0px;
+  }
