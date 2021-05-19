@@ -60,8 +60,14 @@ class Pages extends Controller {
                'titulli' => 'Homepage',
               // 'users' => $users
         ];
-        $this->view('pages/profili', $data);
-    }
+        if(isset($_SESSION['user_id'])){
+          $this->view('pages/profili', $data);
+        }
+          else{
+            $this->view('pages/homepage', $data);
+          }
+        }
+        
     public function autoretcatalog(){
       //  $users = $this->userModel->getUsers();
      

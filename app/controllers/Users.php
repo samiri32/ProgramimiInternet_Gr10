@@ -23,6 +23,7 @@ class Users extends Controller
 
     public function regjistrohu()
     {
+        if(!isLoggedIn()){
         $data = [
             'emri' => '',
             'mbiemri' => '',
@@ -57,42 +58,42 @@ class Users extends Controller
             ];
 
             $passwordValidation = "/^(.{0,7}|[^a-z]*|[^\d]*)$/i";
-            $telefoniValidation = "/(\+383)[4][3,4,5,9][0-9]{6}$/";
+            $telefoniValidation = "/(\+383)[4][3,4,5,8,9][0-9]{6}$/";
 
             //Validate phone
             if (empty($data['telefoni'])) {
-                $data['telefoniError'] = 'Please enter phone.';
+                $data['telefoniError'] = 'Ju lutem plotesoni numrin e telefonit.';
             } elseif (!preg_match($telefoniValidation, $data['telefoni'])) {
-                $data['telefoniError'] = 'Telefoni duhet te jete i formatit +3834xxxxxxx.';
+                $data['telefoniError'] = 'Numri i telefonit duhet te jete i formatit +3834xxxxxxx.';
             }
 
             //Validate email
             if (empty($data['email'])) {
-                $data['emailError'] = 'Please enter email address.';
+                $data['emailError'] = 'Ju lutem plotesoni email adresen.';
             } elseif (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
-                $data['emailError'] = 'Please enter the correct format.';
+                $data['emailError'] = 'Ju lutem shkruani email adresen ne formatin e duhur.';
             } else {
                 //Check if email exists.
                 if ($this->userModel->findUserByEmail($data['email'])) {
-                    $data['emailError'] = 'Email is already taken.';
+                    $data['emailError'] = 'Email adresa eshte e zene.';
                 }
             }
 
             // Validate password on length, numeric values,
             if (empty($data['password'])) {
-                $data['passwordError'] = 'Please enter password.';
-            } elseif (strlen($data['password']) < 6) {
-                $data['passwordError'] = 'Password must be at least 8 characters';
+                $data['passwordError'] = 'Ju lutem plotesoni fjalekalimin.';
+            } elseif (strlen($data['password']) < 8) {
+                $data['passwordError'] = 'Fjalekalimi duhet te kete te pakten 8 karaktere.';
             } elseif (preg_match($passwordValidation, $data['password'])) {
-                $data['passwordError'] = 'Password must be have at least one numeric value.';
+                $data['passwordError'] = 'Fjalekalimi duhet te permbaje shkronja dhe numra.';
             }
 
             //Validate confirm password
             if (empty($data['confirmPassword'])) {
-                $data['confirmPasswordError'] = 'Please enter password.';
+                $data['confirmPasswordError'] = 'Ju lutem plotesoni fjalekalimin.';
             } else {
                 if ($data['password'] != $data['confirmPassword']) {
-                    $data['confirmPasswordError'] = 'Passwords do not match, please try again.';
+                    $data['confirmPasswordError'] = 'Fjalekalimet nuk perputhen, provoni perseri.';
                 }
             }
 
@@ -111,11 +112,15 @@ class Users extends Controller
                 }
             }
         }
-        $this->view('users/regjistrohu', $data);
+        $this->view('users/regjistrohu', $data);}
+        else{
+            $this->view('pages/homepage');
+        }
     }
 
     public function kycu()
     {
+        if(!isLoggedIn()){
         $data = [
             'title' => 'Login page',
             'email' => '',
@@ -138,12 +143,12 @@ class Users extends Controller
             ];
             //Validate username
             if (empty($data['email'])) {
-                $data['emailError'] = 'Please enter an email.';
+                $data['emailError'] = 'Ju lutem plotesoni email adresen.';
             }
 
             //Validate password
             if (empty($data['password'])) {
-                $data['passwordError'] = 'Please enter a password.';
+                $data['passwordError'] = 'Ju lutem plotesoni fjalekalimin.';
             }
             //Check if all errors are empty
             if (empty($data['emailError']) && empty($data['passwordError'])) {
@@ -151,7 +156,7 @@ class Users extends Controller
                     if ($loggedInUser) {
                         $this->createUserSession($loggedInUser);
                     } else {
-                        $data['passwordError'] = 'Password or email is incorrect. Please try again.';
+                        $data['passwordError'] = 'Email adresa apo fjalekalimi eshte gabim. Ju lutem provoni perseri.';
                         $this->view('users/kycu', $data);
                     }
                 }
@@ -167,5 +172,9 @@ class Users extends Controller
             $this->view('users/kycu', $data);
             
         }
+        else {
+            $this->view('pages/homepage');
+        }
+    } 
 
     }
