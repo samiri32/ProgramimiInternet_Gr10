@@ -954,7 +954,18 @@ body {
 
 .ndarja p, .ndarja a, .ndarja{
   color: #0075ff;
-  font-size: 5em;
+  font-size: 1.2em;
+  font-style: bold;
+  font-family: monospace;
+  text-decoration: none;
+}
+
+.ndarja p:hover, .ndarja :hover, .ndarja:hover{
+  color: black;
+  font-size: 1.2em;
+  font-style: bold;
+  font-family: monospace;
+  text-decoration: none;
 }
 
 a {

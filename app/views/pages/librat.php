@@ -391,6 +391,12 @@
 
       </div>
     </div>
+    <br>
+    <center>
+        <div class="ndarja">
+            <p class="ndarja"><a href="<?php echo URLROOT; ?>/pages/libratcatalog">Shiko katalogun e librave</a></p>
+        </div>
+    </center>
     <div class="titulli-slider">
       <h1 id="netrend">Në trend tani</h1>
     </div>
@@ -405,7 +411,9 @@
     <p class="item-3">Komedia Hyjnore</p>
 
   </div>
+<br>
 
+    <br>
   </main>
   <?php require APPROOT . '/views/inc/footer.php';?>
   <script>

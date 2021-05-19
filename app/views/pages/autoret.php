@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Autorët</title>
-    <?php require APPROOT . '/views/inc/header.php';?>
+    <?php require APPROOT . '/views/inc/header.php'; ?>
 </head>
 
 <body>
     <div class="header"></div>
-    <?php require APPROOT . '/views/inc/navbar.php';?>
+    <?php require APPROOT . '/views/inc/navbar.php'; ?>
     <div class="container">
         <br>
         <h2 id="nentitulli">Autorë shqiptar</h2>
@@ -15,7 +16,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="<?php echo URLROOT . '/public/img/Naim_Frasheri.jpg';?>" />
+                        <img src="<?php echo URLROOT . '/public/img/Naim_Frasheri.jpg'; ?>" />
                     </div>
                     <div class="flip-card-back">
                         <h2>Naim Frasheri</h2>
@@ -24,7 +25,7 @@
                             këndoi mallit e dashurisë për atdhe, krenarisë kombëtare dhe të kaluarës së lavdishme të shqiptarëve.Naimi është autor i gjithsej njëzetedy veprave
 
                         <div class="meshum">
-                        <a href="https://sq.wikipedia.org/wiki/Naim_Frash%C3%ABri" target=_blank>Më shumë</a>
+                            <a href="https://sq.wikipedia.org/wiki/Naim_Frash%C3%ABri" target=_blank>Më shumë</a>
                         </div>
 
                         </p>
@@ -39,7 +40,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="<?php echo URLROOT .'/public/img/download.jpg'?>" />
+                        <img src="<?php echo URLROOT . '/public/img/download.jpg' ?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -48,7 +49,7 @@
                             Naum Veqilharxhi, lindur Naum Bredhi (1797 - 1846) ka qenë një avokat dhe studjues shqiptar. Më 1844 krijoi një alfabet krejt origjinal për gjuhën shqipe, quajtur Alfabeti i Vithkuqit. Veqilharxhi shmangu përdorimin e shkronjave greke. Ai është ndër figurat
                             më të shquara të viteve të para të Rilindjes Kombëtare Shqiptare, dhe çmohet si njëri prej ideologëve të saj të parë .
                         <div class="meshum">
-                        <a href="https://sq.wikipedia.org/wiki/Naum_Veqilharxhi" target=_blank>Më shumë</a>
+                            <a href="https://sq.wikipedia.org/wiki/Naum_Veqilharxhi" target=_blank>Më shumë</a>
                         </div>
                         </p>
 
@@ -66,7 +67,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="<?php echo URLROOT. '/public/img/Gjergj_Fishta.jpg'?>" />
+                        <img src="<?php echo URLROOT . '/public/img/Gjergj_Fishta.jpg' ?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -76,7 +77,7 @@
                             por edhe si kritik, historian i letërsisë dhe estet.Për gjysmë shekulli ishte figura mbizotëruese e letërsisë shqipe, madje që kur ishte gjallë u kurorëzua "poet kombëtar".
 
                         <div class="meshum">
-                        <a href="https://sq.wikipedia.org/wiki/Gjergj_Fishta" target=_blank>Më shumë</a>
+                            <a href="https://sq.wikipedia.org/wiki/Gjergj_Fishta" target=_blank>Më shumë</a>
                         </div>
 
                         </p>
@@ -91,7 +92,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="<?php echo URLROOT .'/public/img/dritero.jpg'?>" />
+                        <img src="<?php echo URLROOT . '/public/img/dritero.jpg' ?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -99,7 +100,7 @@
                         <p>Dritëro Agolli (13 tetor 1931 - 3 shkurt 2017) Ishte poet, prozator, publicist dhe politikan shqiptar. Që nga viti 1973 ai ishte kryetar i Lidhjes së Shkrimtarëve dhe të Artistëve të Shqipërisë.
 
                         <div class="meshum">
-                        <a href="https://sq.wikipedia.org/wiki/Drit%C3%ABro_Agolli" target=_blank>Më shumë</a>
+                            <a href="https://sq.wikipedia.org/wiki/Drit%C3%ABro_Agolli" target=_blank>Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -113,7 +114,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" <?php echo URLROOT .'/public/img/Migjeni11.jpg'?>" />
+                        <img src=" <?php echo URLROOT . '/public/img/Migjeni11.jpg' ?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -123,7 +124,7 @@
 
 
                         <div class="meshum">
-                        <a href="https://sq.wikipedia.org/wiki/Migjeni" target=_blank> Më shumë</a>
+                            <a href="https://sq.wikipedia.org/wiki/Migjeni" target=_blank> Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -137,7 +138,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="<?php echo URLROOT .'/public/img/NM.jpg'?>" />
+                        <img src="<?php echo URLROOT . '/public/img/NM.jpg' ?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -145,7 +146,7 @@
                         <p>Ndre Mjeda ose Mjedja (Shkodër, 20 nëntor 1866 - 1 gusht 1937) ka qenë prift, gjuhëtar, poet lirik dhe deputet shqiptar. Është cilësuar nga Jakov Milaj "nji ndër letrarët ma të mëdhaj qi ka qitun Shqipnija".
 
                         <div class="meshum">
-                        <a href="https://sq.wikipedia.org/wiki/Ndre_Mjeda" target=_blank>Më shumë</a>
+                            <a href="https://sq.wikipedia.org/wiki/Ndre_Mjeda" target=_blank>Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -160,9 +161,7 @@
     </div>
 
     <br>
-<div class = "ndarja">
-<p class="ndarja"><a href="<?php echo URLROOT; ?>/pages/autoretcatalog">Shiko katalogun e autorëve</a></p>
-</div>
+ 
 
     <div class="container">
         <h2 id="nentitulli">Autorë të huaj</a></h2>
@@ -170,7 +169,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src="<?php echo URLROOT .'/public/img/FK.jpg'?>" />
+                        <img src="<?php echo URLROOT . '/public/img/FK.jpg' ?>" />
                     </div>
                     <div class="flip-card-back">
                         <h2>Franz Kafka</h2>
@@ -179,7 +178,7 @@
                             bërë ikona në letërsinë e Perëndimit.
 
                         <div class="meshum">
-                        <a href="https://sq.wikipedia.org/wiki/Franz_Kafka" target=_blank>Më shumë</a>
+                            <a href="https://sq.wikipedia.org/wiki/Franz_Kafka" target=_blank>Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -193,7 +192,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" <?php echo URLROOT .'/public/img/EH.jpg'?>" />
+                        <img src=" <?php echo URLROOT . '/public/img/EH.jpg' ?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -203,7 +202,7 @@
                             e mëvonshme.
 
                         <div class="meshum">
-                        <a href="https://sq.wikipedia.org/wiki/Ernest_Hemingway" target=_blank>Më shumë</a>
+                            <a href="https://sq.wikipedia.org/wiki/Ernest_Hemingway" target=_blank>Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -217,7 +216,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" <?php echo URLROOT .'/public/img/MT.jpg'?>" />
+                        <img src=" <?php echo URLROOT . '/public/img/MT.jpg' ?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -226,7 +225,7 @@
                             of Huckleberry Finn) (Aventurat e Hakëllberri Finit), e cila me vone njihej si “Great American Novel” (Novela e famshme Amerikane). Twain u rrit në Hannibal, Missouri, ku shkroi Huckleberry Finn dhe Tom Sawyer, te cilat i shkroi
                             me makine shtypi.
                         <div class="meshum">
-                        <a href="https://sq.wikipedia.org/wiki/Mark_Twain" target=_blank> Më shumë</a>
+                            <a href="https://sq.wikipedia.org/wiki/Mark_Twain" target=_blank> Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -241,7 +240,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" <?php echo URLROOT .'/public/img/EAP.jpg'?>" />
+                        <img src=" <?php echo URLROOT . '/public/img/EAP.jpg' ?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -251,7 +250,7 @@
                             më të njohura të tijat : “Korbi” dhe “Anabel Li”.
 
                         <div class="meshum">
-                        <a href="https://sq.wikipedia.org/wiki/Edgar_Allan_Poe" target=_blank>Më shumë</a>
+                            <a href="https://sq.wikipedia.org/wiki/Edgar_Allan_Poe" target=_blank>Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -265,7 +264,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" <?php echo URLROOT .'/public/img/DA.jpg'?>" />
+                        <img src=" <?php echo URLROOT . '/public/img/DA.jpg' ?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -275,7 +274,7 @@
                             konsiderohet si vepra më e madhe e shkruar në italisht.
 
                         <div class="meshum">
-                        <a href="https://sq.wikipedia.org/wiki/Dante_Aligieri" target=_blank> Më shumë</a>
+                            <a href="https://sq.wikipedia.org/wiki/Dante_Aligieri" target=_blank> Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -289,7 +288,7 @@
             <div class="mbajtesi-autoreve">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img src=" <?php echo URLROOT .'/public/img/TD.jpg'?>" />
+                        <img src=" <?php echo URLROOT . '/public/img/TD.jpg' ?>" />
 
                     </div>
                     <div class="flip-card-back">
@@ -299,7 +298,7 @@
                             me personalitete të njohura të politikës së vendit.
 
                         <div class="meshum">
-                        <a href="https://sq.wikipedia.org/wiki/Teodor_Drajzer" target=_blank>Më shumë</a>
+                            <a href="https://sq.wikipedia.org/wiki/Teodor_Drajzer" target=_blank>Më shumë</a>
                         </div>
                         </p>
                     </div>
@@ -437,7 +436,13 @@
         </table>
     </div>
     <br>
-    <?php require APPROOT . '/views/inc/footer.php';?>
+    <center>
+        <div class="ndarja">
+            <p class="ndarja"><a href="<?php echo URLROOT; ?>/pages/autoretcatalog">Shiko katalogun e autorëve</a></p>
+        </div>
+    </center>
+    <br>
+    <?php require APPROOT . '/views/inc/footer.php'; ?>
     <script>
         const theme = document.querySelector("#stilicss");
 
@@ -447,7 +452,7 @@
 
         function darkMode() {
 
-            theme.href ="<?php echo URLROOT. '/public/CSS/stylesdark.css';?>";
+            theme.href = "<?php echo URLROOT . '/public/CSS/stylesdark.css'; ?>";
             localStorage.setItem("color", "dark");
             console.log(localStorage);
             document.getElementById("teksti").className = "fa fa-sun-o";
@@ -458,7 +463,7 @@
 
         function lightMode() {
 
-            theme.href = "<?php echo URLROOT . '/public/CSS/styles.css';?>";
+            theme.href = "<?php echo URLROOT . '/public/CSS/styles.css'; ?>";
             localStorage.setItem("color", "light");
             console.log(localStorage);
             document.getElementById("teksti").className = "fa fa-moon-o";
