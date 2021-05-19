@@ -29,13 +29,13 @@ class Pages extends Controller {
         ];
         $this->view('pages/librat', $data);
     }
-    public function posts(){
+    public function samiri(){
       //  $users = $this->userModel->getUsers();
         $data = [
-               'titulli' => 'qwer',
+               'titulli' => '1',
               // 'users' => $users
         ];
-        $this->view('pages/posts/index', $data);
+        $this->view('posts/samiri', $data);
     }
     public function galeria(){
       //  $users = $this->userModel->getUsers();
@@ -86,6 +86,6 @@ class Pages extends Controller {
         $this->view('pages/libratcatalog', $data);
     }
 
-
+    
 
 }
