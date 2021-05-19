@@ -1682,3 +1682,12 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   column-gap: 2em;
   justify-content: space-evenly;
 }
+
+/* profili */
+.profilecard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}

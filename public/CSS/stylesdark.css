@@ -1951,3 +1951,14 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   justify-content: space-evenly;
   align-items: center;
 }
+
+/*profile*/
+
+.profilecard {
+  box-shadow: 0 4px 8px 0 rgba(209, 208, 208, 0.2) !important;
+  max-width: 300px !important;
+  margin: auto !important;
+  text-align: center !important;
+  background-color: #bbb !important;
+  font-family: arial !important;
+}

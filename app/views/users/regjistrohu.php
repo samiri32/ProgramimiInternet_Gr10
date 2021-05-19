@@ -70,7 +70,7 @@
 
             function darkMode() {
 
-                theme.href = '../../../ProgramimiInternet_Gr10/public/CSS/stylesdark.css';
+                theme.href = "<?php echo URLROOT. '/public/CSS/stylesdark.css';?>";
                 localStorage.setItem("color", "dark");
                 console.log(localStorage);
                 document.getElementById("teksti").className = "fa fa-sun-o";
@@ -81,7 +81,7 @@
 
             function lightMode() {
 
-                theme.href = "../../../ProgramimiInternet_Gr10/public/CSS/styles.css";
+                theme.href = "<?php echo URLROOT. '/public/CSS/styles.css';?>";
                 localStorage.setItem("color", "light");
                 console.log(localStorage);
                 document.getElementById("teksti").className = "fa fa-moon-o";
