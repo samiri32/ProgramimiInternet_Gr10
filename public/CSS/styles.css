@@ -1686,8 +1686,16 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 /* profili */
 .profilecard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 18em;
   margin: auto;
   text-align: center;
   font-family: arial;
+}
+
+
+.autoriprofile p {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 0.8em;
+  text-decoration: none;
 }

@@ -9,24 +9,77 @@
 
 <body>
     <?php require APPROOT . '/views/inc/navbar.php'; ?>
-    <div class="homepage"><br><br><br>
+    <div class="homepage" style="margin-top: -1em;"><br><br><br>
+        <div class="row" style="margin-top: -3em;">
+            <div class="column side profili">
+                <div class="profilecard">
+                    <img src=<?php echo 'https://eu.ui-avatars.com/api/?name=' . $_SESSION['emri'] . '+' . $_SESSION['mbiemri']; ?> style="width: 100%; max-height: 18em;" ;>
+                    <h1><?php echo $_SESSION['emri'] . ' ' . $_SESSION['mbiemri']; ?></h1>
+                    <p class="profiletitle"><?php echo 'Email: ' . $_SESSION['email']; ?></p>
+                    <p><?php echo 'Adresa: ' . $_SESSION['adresa']; ?></p>
+                    <p><?php echo 'Antarësuar më: ' . $_SESSION['user_datejoined']; ?></p>
+                    <a href="<?php echo URLROOT . '/users/logout' ?>"> <button class="buton" id="shkycu" style="margin-top:0.6em; margin-bottom: 1.5em;">Shkyçu</button></a>
+                </div>
+            </div>
+            <div class="column.side">
+            <table class="content-table">
+            <h2 class="autoriprofile" style="margin-left: 5em;">Librat e shkarkuar: </h2>
+            
+            <thead>
+                <tr>
+                    <th>Ranku</th>
+                    <th>Emri</th>
+                    <th>Mbiemri </th>
+                    <th>Numri i lexuesve</th>
 
-        <center>
-            <h2 class="autori" style="text-align:center">Mirësevini në Profilin tuaj</h2>
-           <center> <div class="profilecard">
-            <img src="<?php echo URLROOT. '/public/img/ismail-kadare-j-foley-opale-w-1-990x556.jpg';?>" style = "width: 100%";>
-                <h1>John Doe</h1>
-                <p class="profiletitle">CEO & Founder, Example</p>
-                <p>Harvard University</p>
-           <br>
-            </div></center>
-            <a href="<?php echo URLROOT . '/users/logout' ?>"> <button class="buton" id="shkycu" style="margin-top:5em;">Shkyçu</button></a>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="cift">
+                    <td>1</td>
+                    <td>Naim</td>
+                    <td>Frasheri</td>
+                    <td>3843</td>
+                </tr>
+                <tr class="tek">
+                    <td>2</td>
+                    <td>Gjergj</td>
+                    <td>Fishta</td>
+                    <td>3244</td>
 
-        </center>
+                </tr>
+                <tr class="cift">
+                    <td>3</td>
+                    <td>Millosh</td>
+                    <td>Nikolla</td>
+                    <td>2932</td>
+
+                </tr>
+                <tr class="tek">
+                    <td>4</td>
+                    <td>Fan</td>
+                    <td>Noli</td>
+                    <td>2458</td>
+
+                </tr>
+
+                <tr class="cift">
+                    <td>5</td>
+                    <td>Sami</td>
+                    <td>Frasheri</td>
+                    <td>1067</td>
+
+                </tr>
+
+
+
+            </tbody>
+        </table>
+            </div>
+        </div>
+
+
     </div>
-
-
-
 
     <?php require APPROOT . '/views/inc/footer.php'; ?>
     <script>
@@ -38,7 +91,7 @@
 
         function darkMode() {
 
-            theme.href = "<?php echo URLROOT. '/public/CSS/stylesdark.css';?>";
+            theme.href = "<?php echo URLROOT . '/public/CSS/stylesdark.css'; ?>";
             localStorage.setItem("color", "dark");
             console.log(localStorage);
             document.getElementById("teksti").className = "fa fa-sun-o";
@@ -48,7 +101,7 @@
         }
 
         function lightMode() {
-            theme.href = "<?php echo URLROOT. '/public/CSS/styles.css';?>";
+            theme.href = "<?php echo URLROOT . '/public/CSS/styles.css'; ?>";
             localStorage.setItem("color", "light");
             console.log(localStorage);
             document.getElementById("teksti").className = "fa fa-moon-o";

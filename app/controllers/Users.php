@@ -12,6 +12,7 @@ class Users extends Controller
         $_SESSION['email'] = $user->email;
         $_SESSION['emri'] = $user->emri;
         $_SESSION['mbiemri'] = $user->mbiemri;
+        $_SESSION['adresa'] = $user->adresa;
         $_SESSION['user_datejoined'] = $user->user_datejoined;
         header('location:' . URLROOT);
         die();
@@ -24,6 +25,7 @@ class Users extends Controller
         unset($_SESSION['email']);
         unset($_SESSION['emri']);
         unset($_SESSION['mbiemri']);
+        unset($_SESSION['adresa']);
         unset($_SESSION['user_datejoined']);
         header('location:' . URLROOT . '/pages/homepage');
         die();
@@ -136,7 +138,8 @@ class Users extends Controller
                 'emri' => '',
                 'mbiemri' => '',
                 'emailError' => '',
-                'passwordError' => ''
+                'passwordError' => '',
+                'adresa' =>''
             ];
 
             $this->view('users/kycu', $data);
@@ -177,7 +180,8 @@ class Users extends Controller
                     'emailError' => '',
                     'passwordError' => '',
                     'emri' => '',
-                    'mbiemri' => ''
+                    'mbiemri' => '',
+                    'adresa' => ''
                 ];
             }
             $this->view('users/kycu', $data);
