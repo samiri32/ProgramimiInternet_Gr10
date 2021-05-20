@@ -11,15 +11,14 @@
     <?php require APPROOT . '/views/inc/navbar.php'; ?>
 
     <div class="homepage">
-        <div class="row4">
+    <div class="rowlajme">
             <?php if (isLoggedIn() && $_SESSION['status'] == 'admin') : ?>
                 <center> <a class="btn green" href="<?php echo URLROOT; ?>/posts/create">
                         Krijo
                     </a></center>
             <?php endif; ?><br>
-
                 <?php foreach ($data['posts'] as $post) : ?>
-                    <div class="columnlajme" id="#columnnn">
+                    <div class="column middle">
                         <?php if (isset($_SESSION['user_id']) && $_SESSION['user_id'] == $post->user_id) :?>
                             <a class="btn orange" style="padding: 0 !important; padding-top: 0.5em !important; text-align: middle !important;" href="<?php echo URLROOT . '/posts/update/' . $post->id;?>">
                                 Ndrysho
@@ -30,20 +29,20 @@
                                 </form>
                             </a>
                         <?php endif; ?>
-                        
-                        <div class="lajmimeslajme">
-                        <img src="<?php echo URLROOT . '/public/img/' . $post->image; ?>">
+                     
+                        <img src="<?php echo URLROOT . '/public/img/' . $post->image; ?>" style="width:15em !important;">
                         <span id='lajmekuqlajme'> <?php echo 'Postuar më: ' . $post->created_at . '<br>'; ?>
                             <?php echo 'Admin: ' . $post->user_id; ?></span><br>
                         <span> <?php echo $post->title; ?></span><br>
                         <span id='elaborimilajme'> <?php echo $post->body . "<br>"; ?></span>
                         </a>
-                    </div><br><br> <?php endforeach; ?>
-            </div>
-        </div></div>
-</body>
+                     </div>
+                     <br><br> <?php endforeach; ?> -->
+             </div>
+        </div> 
 
 <?php require APPROOT . '/views/inc/footer.php'; ?>
+</body>
 <script>
     const theme = document.querySelector("#stilicss");
 
