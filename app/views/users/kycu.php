@@ -31,13 +31,9 @@
                         <?php echo $data['passwordError']; ?>
                     </span>
                     <button type="submit" id="kycuu" value="submit">Kyçu</button>
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember" id="qek"> Më mbaj mend
-                    </label>
                 </div>
 
                 <div class="harrovapsw" style>
-                    <a><span class="psww">Keni harruar fjalëkalimin?</span></a><br>
                     <a href="../users/regjistrohu"><span class="psww">Nuk jeni regjistruar ende?</span></a>
                 </div>
             </form>

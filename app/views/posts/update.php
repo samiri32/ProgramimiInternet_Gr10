@@ -1,41 +1,46 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Shto Lajme</title>
+    <title>Perditeso Lajme</title>
     <?php require APPROOT . '/views/inc/header.php'; ?>
 </head>
 
 <body>
-    <div class="header"></div>
-    <?php require APPROOT . '/views/inc/navbar.php'; ?>
-    <div class="container center">
+<div class="header"></div>
+<div class="homepage">
+<?php require APPROOT . '/views/inc/navbar.php'; ?>
+
+        <div class="row4">
     <h1>
-        Create new post
+        Ndrysho postimin
     </h1>
 
-    <form action="<?php echo URLROOT; ?>/posts/create" method="POST">
+    <form
+    action="<?php echo URLROOT; ?>/posts/update/<?php echo $data['post']->id ?>" method="POST">
         <div class="form-item">
-            <input type="text" name="title" placeholder="Title...">
+            <input
+                type="text"
+                name="title"
+                value="<?php echo $data['post']->title ?>"style="max-width: 40em; height: 2.8em;">
 
             <span class="invalidFeedback">
                 <?php echo $data['titleError']; ?>
             </span>
         </div>
-
+<br>
         <div class="form-item">
-            <textarea name="body" placeholder="Enter your post..."></textarea>
+            <textarea name="body" placeholder="Shkruani lajmin ketu..." style="min-width: 48em; height:10em"><?php echo $data['post']->body ?></textarea>
 
             <span class="invalidFeedback">
                 <?php echo $data['bodyError']; ?>
             </span>
-        </div>
+        </div></br>
 
-        <button class="btn green" name="submit" type="submit">Submit</button>
+        <button class="btn green" name="submit" type="submit"style="padding:0 !important;">Ndrysho</button>
     </form>
 </div>
 </body>
-
 <?php require APPROOT . '/views/inc/footer.php'; ?>
     <script>
         const theme = document.querySelector("#stilicss");
@@ -89,4 +94,4 @@
             }
         }
     </script>
-</html> -->
+</html>

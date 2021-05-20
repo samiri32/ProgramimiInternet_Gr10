@@ -13,6 +13,7 @@ class Users extends Controller
         $_SESSION['emri'] = $user->emri;
         $_SESSION['mbiemri'] = $user->mbiemri;
         $_SESSION['adresa'] = $user->adresa;
+        $_SESSION['status'] = $user->status;
         $_SESSION['user_datejoined'] = $user->user_datejoined;
         header('location:' . URLROOT);
         die();
@@ -26,6 +27,7 @@ class Users extends Controller
         unset($_SESSION['emri']);
         unset($_SESSION['mbiemri']);
         unset($_SESSION['adresa']);
+        unset($_SESSION['status']);
         unset($_SESSION['user_datejoined']);
         header('location:' . URLROOT . '/pages/homepage');
         die();

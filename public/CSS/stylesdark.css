@@ -1973,45 +1973,75 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   color:white !important;
 }
 
-/* BLOG */
-
 .btn {
-  padding: 8px 18px;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #ffffff;
+  padding: 8px 18px !important;
+  font-size: 20px !important;
+  text-transform: uppercase !important;
+  color: #ffffff !important;
 }
 
 .btn:hover {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .green {
   background-color: #4CAF50;
+  width: 120px !important;
+  margin: 0px 0px !important;
+  height: 40px !important;
 }
 
 .green:hover {
-  background-color: #64A764;
+  background-color: #60bb63;
   transition: 0.20s ease-in-out;
 }
 
 /* Create Post */
 
 .orange {
-  background-color: orange;
-  color: #000000;
-  float: right;
+  background-color: orange !important;
+  color: #fdfcfc !important;
+  text-decoration: none !important;
+  float: right !important;
+  width: 120px !important;
+  height: 40px !important;
 }
-
+.orange:hover{
+  background-color: rgb(247, 185, 71) !important;
+  transition: 0.20s ease-in-out !important;
+  width: 120px !important;
+  margin: 0px 0px !important;
+  height: 40px !important;
+}
 .red {
   background-color: #ff0000;
   float: right;
-  width: 120px;
-  margin: 0px 20px;
-  height: 40px;
+  width: 120px !important;
+  margin: 0px 0px !important;
+  height: 40px !important;
+  padding: 0 !important;
+}
+.btnred a{
+  padding: 0 !important;
+}
+
+.red:hover{
+  cursor: pointer;
+  background-color: #e73838;
+  transition: 0.20s ease-in-out;
 }
 .containerlajme{
-  margin: 0 auto;
-  width: 80%;
-  padding: 100px 0px;
-  }
+margin: 0 auto !important;
+width: 100% !important;
+padding: 0.5em 0em !important;
+}
+
+
+.containerlajme-item {
+  border-bottom: 0.01em solid #dcdcdc !important;
+  padding: 0.2em 0em !important;
+}
+
+h3 {
+color:white !important;
+}

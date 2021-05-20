@@ -6,7 +6,7 @@
                 <div class="shortcutposht">
                     <a href="<?php echo URLROOT; ?>/pages/librat" class="eee" id="sdds">Libra</a>
                     <a href="<?php echo URLROOT; ?>/pages/autoret" class="eee" id="fdsfdsf">Autorët</a>
-                    <a href="<?php echo URLROOT; ?>/pages/lajme" class="eee" id="fsdfdsf">Lajme</a>
+                    <a href="<?php echo URLROOT; ?>/posts/lajme/index" class="eee" id="fsdfdsf">Lajme</a>
 
                 </div>
             </div>
@@ -69,13 +69,13 @@
                 <div class="sbkol1">
                     <span id="sf">Regjistrohu për të pranuar e-mails nga Biblioteka</span><br><br>
                     <!-- Qitu ni form per Anetaresim (mail subscription)-->
-                    <form autocomplete="on">
+                    <form method="POST" action="/posts/lajme/send_mail" autocomplete="on">
                         <div class="autocomplete" style="width: 25em;">
                             <input id="myInput" type="text" name="myEmail" placeholder="E-mail"
                                 style="background-color:white;">
                         </div>
-                        <button class="buton">Dërgo</button>
-                    </form> <input type="checkbox" checked="checked" name="subscribe" ><span id="perdite">E-mails të përditshme </span><br><br>
+                        <input type="submit" name="send">Dërgo</input>
+                    </form><br><br>
                 </div>
 
                 <div class="sbkol1">
@@ -83,7 +83,6 @@
                     <button class="buton">Porosit</button>
                     <h5 id="h5">Plotësisht falas!</h5>
                 </div>
-
             </div>
 
             <div class="subfooterposht">
@@ -118,7 +117,7 @@
                 <div class="sbkol2">
 
                     <ul>
-                        <li><a href="<?php echo URLROOT; ?>/pages/lajme"><span>Lajme</span></a>
+                        <li><a href="<?php echo URLROOT; ?>/posts/lajme/index"><span>Lajme</span></a>
                         </li>
                     </ul>
                 </div>

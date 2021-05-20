@@ -7,7 +7,6 @@ class User {
 
     public function regjistrohu($data) {
         $this->db->query("INSERT INTO users (emri, mbiemri, email, password, telefoni, adresa) VALUES(:emri, :mbiemri, :email, :password, :telefoni, :adresa)");
-
         //Bind values
         $this->db->bind(':emri', $data['emri']);
         $this->db->bind(':mbiemri', $data['mbiemri']);
@@ -15,8 +14,7 @@ class User {
         $this->db->bind(':password', $data['password']);
         $this->db->bind(':telefoni', $data['telefoni']);
         $this->db->bind(':adresa', $data['adresa']);
-        $this->db->bind('status' , $data['status']);
-
+        $this->db->bind(':status', $data['statusi']);
 
         //Execute function
         if ($this->db->execute()) {
