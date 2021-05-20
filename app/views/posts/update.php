@@ -36,8 +36,9 @@
                 <?php echo $data['bodyError']; ?>
             </span>
         </div></br>
-
-        <button class="btn green" name="submit" type="submit"style="padding:0 !important;">Ndrysho</button>
+        <input type="file" name="image">
+        <span class="invalid-feedback"><?php echo $data['imageError']; ?>
+        <button class="btn green" name="submit" type="submit"style="height: 2em !important; width: 7em !important; padding:0 !important;">Ndrysho</button>
     </form>
 </div>
 </body>

@@ -34,7 +34,7 @@
                     <br>
                     <input type="file" name="image">
         <span class="invalid-feedback"><?php echo $data['imageError']; ?></span>
-                    <button class="btn green" name="submit" type="submit" style="padding:0 !important;">Perfundo</button>
+                    <button class="btn green" name="submit" type="submit" style="width: 7em !important; height: 2em !important; padding:0 !important;">Perfundo</button>
                 </form>
             </div>
            

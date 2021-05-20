@@ -17,28 +17,33 @@
                         Krijo
                     </a></center>
             <?php endif; ?><br>
+
                 <?php foreach ($data['posts'] as $post) : ?>
-                    <div class="column middle">
-                        <?php if (isset($_SESSION['user_id']) && $_SESSION['user_id'] == $post->user_id) :?>
-                            <a class="btn orange" style="padding: 0 !important; padding-top: 0.5em !important; text-align: middle !important;" href="<?php echo URLROOT . '/posts/update/' . $post->id;?>">
+                    <div class= "columnlajme">
+                  <div class="gjyslajmi1">  <img src="<?php echo URLROOT . '/public/img/' . $post->image; ?>"></div>
+                       <div class="gjyslajmi2"> 
+                       <div class="qereklajmi"> 
+                           <?php if (isset($_SESSION['user_id']) && $_SESSION['user_id'] == $post->user_id) :?>
+                            <div class="divini">
+                         <a class="btn orange" href="<?php echo URLROOT . '/posts/update/' . $post->id;?>">
                                 Ndrysho
-                            </a>
-                            <a href="#" style="padding: 0;">
-                                <form action="<?php echo URLROOT . "/posts/delete/" . $post->id ?>" method="POST" style="padding: 0;">
+                            </a></div>  
+                            <a href="#">
+                                <form action="<?php echo URLROOT . "/posts/delete/" . $post->id ?>" method="POST">
                                     <input type="submit" name="delete" value="Fshij" class="btn red">
-                                </form>
-                            </a>
-                        <?php endif; ?>
-                     
-                        <img src="<?php echo URLROOT . '/public/img/' . $post->image; ?>" style="width:15em !important;">
-                        <span id='lajmekuqlajme'> <?php echo 'Postuar më: ' . $post->created_at . '<br>'; ?>
-                            <?php echo 'Admin: ' . $post->user_id; ?></span><br>
-                        <span> <?php echo $post->title; ?></span><br>
-                        <span id='elaborimilajme'> <?php echo $post->body . "<br>"; ?></span>
-                        </a>
-                     </div>
-                     <br><br> <?php endforeach; ?> -->
-             </div>
+                                </form></a><?php endif; ?>
+                                <div class="dividy">
+                                <span id="titullilajme"> <?php echo $post->title; ?></span><br>
+                                <span id="posttitlelajmi"> <?php echo 'Postuar më: ' . $post->created_at . '<br>'; ?>
+                            <?php echo 'Admin: ' . $post->user_id; ?></span></div>
+                           </div>
+                      
+                <div class="qereklajmi2">
+                        <span id='elaborimilajme'> <?php giveBreaks($post->body) . "<br>"; ?></span>
+                       </div></div>
+                       </div>
+                     <br><br> <br><br><br><?php endforeach; ?>
+                      </div>
         </div> 
 
 <?php require APPROOT . '/views/inc/footer.php'; ?>
