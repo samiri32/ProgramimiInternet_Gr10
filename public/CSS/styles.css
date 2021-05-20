@@ -1770,3 +1770,13 @@ padding: 0.5em 0em !important;
   border-bottom: 0.01em solid #dcdcdc !important;
   padding: 0.2em 0em !important;
 }
+
+.columnlajme, #columnnn{
+  background-color: white;
+  -webkit-flex: 0.8;
+  -ms-flex: 0.8;
+  flex: 0.8;
+  background-color: red;
+  padding: 1.5em 0em;
+  border-top: 0.5em solid #000;
+}

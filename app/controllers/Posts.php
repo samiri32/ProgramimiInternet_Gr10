@@ -23,8 +23,8 @@ class Posts extends Controller {
             'body' => '',
             'titleError' => '',
             'bodyError' => '',
-            'upload' => '',
-            'uploadError' => ''
+            'image' => '',
+            'imageError' => ''
         ];
 
         if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -34,10 +34,10 @@ class Posts extends Controller {
                 'user_id' => $_SESSION['user_id'],
                 'title' => trim($_POST['title']),
                 'body' => trim($_POST['body']),
-                'upload' => trim($_POST['upload']),
+                'image' => trim($_POST['image']),
                 'titleError' => '',
                 'bodyError' => '',
-                'uploadError' => ''
+                'imageError' => ''
             ];
 
             if(empty($data['title'])) {
@@ -48,11 +48,11 @@ class Posts extends Controller {
                 $data['bodyError'] = 'Pershkruani lajmin.';
             }
 
-            if(empty($data['upload'])){
-                $data['uploadError'] = 'Bashkangjitni nje foto.';
+            if(empty($data['image'])){
+                $data['imageError'] = 'Bashkangjitni nje foto.';
             }
 
-            if (empty($data['titleError']) && empty($data['bodyError'] && empty($data['uploadError']))) {
+            if (empty($data['titleError']) && empty($data['bodyError'] && empty($data['imageError']))) {
                 if ($this->postModel->addPost($data)) {
                     header("Location: " . URLROOT . "/posts");
                 } else {
@@ -82,8 +82,8 @@ class Posts extends Controller {
             'body' => '',
             'titleError' => '',
             'bodyError' => '',
-            'upload' => '',
-            'uploadError' => ''
+            'image' => '',
+            'imageError' => ''
         ];
 
         if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -95,10 +95,10 @@ class Posts extends Controller {
                 'user_id' => $_SESSION['user_id'],
                 'title' => trim($_POST['title']),
                 'body' => trim($_POST['body']),
-                'upload' => trim($_POST['upload']),
+                'image' => trim($_POST['image']),
                 'titleError' => '',
                 'bodyError' => '',
-                'uploadError' => ''
+                'imageError' => ''
             ];
 
             if(empty($data['title'])) {
@@ -117,11 +117,11 @@ class Posts extends Controller {
                 $data['bodyError'] == 'Nuk keni ndryshuar pershkrimin!';
             }
             
-            if($data['upload'] == $this->postModel->findPostById($id)->upload){
-                $data['uploadError'] == 'Nuk keni ndryshuar foton!';
+            if($data['image'] == $this->postModel->findPostById($id)->image){
+                $data['imageError'] == 'Nuk keni ndryshuar foton!';
             }
 
-            if (empty($data['titleError']) && empty($data['bodyError'] && empty($data['uploadError']))) {
+            if (empty($data['titleError']) && empty($data['bodyError'] && empty($data['imageError']))) {
                 if ($this->postModel->updatePost($data)) {
                     header("Location: " . URLROOT . "/posts");
                 } else {
@@ -149,10 +149,10 @@ class Posts extends Controller {
             'post' => $post,
             'title' => '',
             'body' => '',
-            'upload' => '',
+            'image' => '',
             'titleError' => '',
             'bodyError' => '',
-            'uploadError' =>''
+            'imageError' =>''
         ];
 
         if($_SERVER['REQUEST_METHOD'] == 'POST') {

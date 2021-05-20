@@ -15,7 +15,7 @@
                 Krijo nje postim te ri
             </h1>
             <div class="column side">
-                <form action="<?php echo URLROOT; ?>/posts/create" enctype="multipart/form-data" method="POST">
+                <form action="<?php echo URLROOT; ?>/posts/create"  method="POST">
                     <div class="form-item">
                         <input type="text" name="title"  placeholder="Titulli..." style="max-width: 40em; height: 2.8em;">
 
@@ -32,7 +32,8 @@
                         </span>
                     </div>
                     <br>
-
+                    <input type="file" name="image">
+        <span class="invalid-feedback"><?php echo $data['imageError']; ?></span>
                     <button class="btn green" name="submit" type="submit" style="padding:0 !important;">Perfundo</button>
                 </form>
             </div>

@@ -15,12 +15,12 @@ class Post {
     }
 
     public function addPost($data) {
-        $this->db->query('INSERT INTO posts (user_id, title, body, upload) VALUES (:user_id, :title, :body, :upload)');
+        $this->db->query('INSERT INTO posts (user_id, title, body, image) VALUES (:user_id, :title, :body, :image)');
 
         $this->db->bind(':user_id', $data['user_id']);
         $this->db->bind(':title', $data['title']);
         $this->db->bind(':body', $data['body']);
-        $this->db->bind(':upload', $data['upload']);
+        $this->db->bind(':image', $data['image']);
 
         if ($this->db->execute()) {
             return true;
@@ -40,12 +40,12 @@ class Post {
     }
 
     public function updatePost($data) {
-        $this->db->query('UPDATE posts SET title = :title, body = :body WHERE id = :id');
+        $this->db->query('UPDATE posts SET title = :title,  image = :image, body = :body WHERE id = :id');
 
         $this->db->bind(':id', $data['id']);
         $this->db->bind(':title', $data['title']);
         $this->db->bind(':body', $data['body']);
-        $this->db->bind(':upload', $data['upload']);
+        $this->db->bind(':image', $data['image']);
 
         if ($this->db->execute()) {
             return true;
