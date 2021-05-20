@@ -7,7 +7,7 @@
             Ballina</a>
             <a href="<?php echo URLROOT; ?>/pages/autoret">Autorët</a>
             <a href="<?php echo URLROOT; ?>/pages/librat">Librat</a>
-            <a href="<?php echo URLROOT; ?>/posts/lajme/index">Lajme</a>
+            <a href="<?php echo URLROOT; ?>/posts/lajme">Lajme</a>
         </div>
     </div>
 
