@@ -10,7 +10,7 @@ class Posts extends Controller {
              'posts' => $posts
          ];
 
-        $this->view('pages/homepage', $data);
+        $this->view('posts/lajme', $data);
     }
 
     public function create() {

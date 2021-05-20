@@ -5,21 +5,6 @@ class Users extends Controller
     public function __construct()
     {
 
-        
-      if(!isset($_COOKIE['user']))
-      {
-       $cookie_name='user';
-        $arr=[
-          'Ballina'=>0,
-          'Lajme'=>0,
-          'Libra'=>0,
-          'Galeria'=>0,
-          'Kontakti'=>0
-        ];
-        setcookie($cookie_name, serialize($arr), time() + (86400 * 30), "/");
-        var_dump($arr);
-      }
-
 
         $this->userModel = $this->model('User');
     }
