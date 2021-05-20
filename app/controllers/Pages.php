@@ -2,22 +2,69 @@
 
 class Pages extends Controller
 {
+
   public function __construct()
   {
+    if (!isset($_COOKIE['user'])) {
+      $cookie_name = 'user';
+      $arr = [
+        'Ballina' => 0,
+        'Autore' => 0,
+        'Libra' => 0,
+        'Lajme' => 0,
+        'Galeria' => 0,
+        'Kontakti' => 0
+      ];
+      setcookie($cookie_name, serialize($arr), time() + (86400 * 30), "/");
+    }
     //$this->userModel = $this->model('User');
   }
   public function index()
   {
+    if (isset($_COOKIE['user'])) {
+      $array = unserialize($_COOKIE['user']);
+      $array['Ballina'] += 1;
+      setcookie('user', serialize($array), time() + (86400 * 30), "/");
+    } else {
+      $cookie_name = 'user';
+      $arr = [
+        'Ballina' => 0,
+        'Autore' => 0,
+        'Libra' => 0,
+        'Lajme' => 0,
+        'Galeria' => 0,
+        'Kontakti' => 0
+      ];
+      setcookie('user', serialize($arr), time() + (86400 * 30), "/");
+    }
+    var_dump($array);
     //  $users = $this->userModel->getUsers();
     $data = [
       'titulli' => 'Homepage',
       // 'users' => $users
     ];
     $this->view('pages/homepage', $data);
-  }
+  
+}
 
   public function autoret()
   {
+    if (isset($_COOKIE['user'])) {
+      $array = unserialize($_COOKIE['user']);
+      $array['Autore'] += 1;
+      setcookie('user', serialize($array), time() + (86400 * 30), "/");
+    } else {
+      $cookie_name = 'user';
+      $arr = [
+        'Ballina' => 0,
+        'Autore' => 0,
+        'Libra' => 0,
+        'Lajme' => 0,
+        'Galeria' => 0,
+        'Kontakti' => 0
+      ];
+      setcookie('user', serialize($arr), time() + (86400 * 30), "/");
+    }
     //  $users = $this->userModel->getUsers();
     $data = [
       'titulli' => 'Autoret',
@@ -27,6 +74,22 @@ class Pages extends Controller
   }
   public function librat()
   {
+    if (isset($_COOKIE['user'])) {
+      $array = unserialize($_COOKIE['user']);
+      $array['Libra'] += 1;
+      setcookie('user', serialize($array), time() + (86400 * 30), "/");
+    } else {
+      $cookie_name = 'user';
+      $arr = [
+        'Ballina' => 0,
+        'Autore' => 0,
+        'Libra' => 0,
+        'Lajme' => 0,
+        'Galeria' => 0,
+        'Kontakti' => 0
+      ];
+      setcookie('user', serialize($arr), time() + (86400 * 30), "/");
+    }
     //  $users = $this->userModel->getUsers();
     $data = [
       'titulli' => 'librat',
@@ -36,6 +99,22 @@ class Pages extends Controller
   }
   public function lajme()
   {
+    if (isset($_COOKIE['user'])) {
+      $array = unserialize($_COOKIE['user']);
+      $array['Lajme'] += 1;
+      setcookie('user', serialize($array), time() + (86400 * 30), "/");
+    } else {
+      $cookie_name = 'user';
+      $arr = [
+        'Ballina' => 0,
+        'Autore' => 0,
+        'Libra' => 0,
+        'Lajme' => 0,
+        'Galeria' => 0,
+        'Kontakti' => 0
+      ];
+      setcookie('user', serialize($arr), time() + (86400 * 30), "/");
+    }
     //  $users = $this->userModel->getUsers();
     $data = [
       'titulli' => '1',
@@ -65,6 +144,22 @@ class Pages extends Controller
 
   public function galeria()
   {
+    if (isset($_COOKIE['user'])) {
+      $array = unserialize($_COOKIE['user']);
+      $array['Galeria'] += 1;
+      setcookie('user', serialize($array), time() + (86400 * 30), "/");
+    } else {
+      $cookie_name = 'user';
+      $arr = [
+        'Ballina' => 0,
+        'Autore' => 0,
+        'Libra' => 0,
+        'Lajme' => 0,
+        'Galeria' => 0,
+        'Kontakti' => 0
+      ];
+      setcookie('user', serialize($arr), time() + (86400 * 30), "/");
+    }
     //  $users = $this->userModel->getUsers();
     $data = [
       'titulli' => 'Homepage',
@@ -74,6 +169,22 @@ class Pages extends Controller
   }
   public function kontakti()
   {
+    if (isset($_COOKIE['user'])) {
+      $array = unserialize($_COOKIE['user']);
+      $array['Kontakti'] += 1;
+      setcookie('user', serialize($array), time() + (86400 * 30), "/");
+    } else {
+      $cookie_name = 'user';
+      $arr = [
+        'Ballina' => 0,
+        'Autore' => 0,
+        'Libra' => 0,
+        'Lajme' => 0,
+        'Galeria' => 0,
+        'Kontakti' => 0
+      ];
+      setcookie('user', serialize($arr), time() + (86400 * 30), "/");
+    }
     //  $users = $this->userModel->getUsers();
     $data = [
       'titulli' => 'Homepage',
