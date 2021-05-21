@@ -161,17 +161,17 @@ class Pages extends Controller
      $post=$this->postModel->getTitlePosts($request);
     //TODO:fix this 
     
-    echo '<table>';
+    echo '<table style="margin-right: 0em; position: relative; z-index: 99999;">';
    
-    echo '<tr>';
+    echo '<tr style="margin-right: 0em;position: relative; z-index: 999999;">';
     
     
     foreach ($post as $specificPost) {
       
-       $location=URLROOT.'/posts/lajme/#'.$specificPost->id;
-      echo '<tr>';
+       $location= URLROOT.'/posts/lajme/#'.$specificPost->id;
+      echo '<tr style= "z-index: 99999; position: relative;">';
       
-      echo "<td  style='border:1px solid; '> <a href=$location>$specificPost->title </td>";
+      echo "<td  style='z-index: 999999; position: relative;  border:1px solid; background-color: whitesmoke;'> <a href=$location>$specificPost->title</td>";
 
       echo '</tr>';
       
