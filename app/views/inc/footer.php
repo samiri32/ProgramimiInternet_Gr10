@@ -68,25 +68,15 @@
         <div class="sbkol1">
             <span id="sf">Regjistrohu për të pranuar e-mails nga Biblioteka</span><br><br>
             <!-- Qitu ni form per Anetaresim (mail subscription)-->
-            <form method="POST" action="" autocomplete="on">
+            <form method="POST" action="../../../../phpmailer/" autocomplete="on">
                 <div class="autocomplete" style="width: 25em;">
                     <input id="myInput" type="text" name="myEmail" placeholder="E-mail" style="background-color:white;">
                 </div>
-                <input type="submit" name="submit">Dërgo</input>
-
+                <input type="submit" style="font-size:0.85em;"class="buton" name="submit"></input>
+                <?php mailsender();?>
             </form><br><br>
         </div>
-        <?php
-        
-        if (isset($_POST['submit'])) {
-            $to = $_POST['myEmail']; // this is your Email address
-            $from = 'bibliotekabsd@gmail.com'; // this is the sender's Email address
-            $subject = "Form submission";
-            $message = "Here is a copy of your message";
-            $headers = "From:" . $from;
-            mail($to, $subject, $message, $headers);
-        }
-        ?>
+ 
         <div class="sbkol1">
             <span id="sf">Porosit katalogun e librave</span><br><br>
             <button class="buton">Porosit</button>
