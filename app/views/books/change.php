@@ -2,20 +2,21 @@
 <html lang="en">
 
 <head>
-    <title>Shto Libra</title>
+    <title>Ndrysho Librin</title>
     <?php require APPROOT . '/views/inc/header.php'; ?>
 </head>
 
 <body>
-    <div class="header"></div>
-    <?php require APPROOT . '/views/inc/navbar.php'; ?>
-    <div class="homepage">
+<div class="header"></div>
+<div class="homepage">
+<?php require APPROOT . '/views/inc/navbar.php'; ?>
+
         <div class="row4">
-            <h1>
-                Shto nje liber te ri
-            </h1>
-            <div class="column side">
-                <form action="<?php echo URLROOT; ?>/books/add" method="POST">
+    <h1>
+        Ndrysho librin
+    </h1>
+
+   <form action="<?php echo URLROOT; ?>/books/change/<?php echo $data['book']->id?>" method="POST">
                     <div class="form-item">
                         <input type="text" name="titulli" placeholder="Titulli..." style="max-width: 40em; height: 2.8em;">
                         <!--titulli, autori, vleresimi, zhanri, caption, gjuha, datapub, link, img-->
@@ -96,59 +97,57 @@
     </div>
 
 </body>
-
 <?php require APPROOT . '/views/inc/footer.php'; ?>
-<script>
-    const theme = document.querySelector("#stilicss");
+    <script>
+        const theme = document.querySelector("#stilicss");
 
-    console.log(localStorage);
-
-    remember();
-
-    function darkMode() {
-
-        theme.href = "<?php echo URLROOT . '/public/CSS/stylesdark.css'; ?>";
-        localStorage.setItem("color", "dark");
         console.log(localStorage);
-        document.getElementById("teksti").className = "fa fa-sun-o";
-        document.getElementById("teksti").style.color = "white";
-        document.getElementById("teksti").style.backgroundColor = "transparent";
 
-    }
+        remember();
 
-    function lightMode() {
+        function darkMode() {
 
-        theme.href = "<?php echo URLROOT . '/public/CSS/styles.css'; ?>";
-        localStorage.setItem("color", "light");
-        console.log(localStorage);
-        document.getElementById("teksti").className = "fa fa-moon-o";
-        document.getElementById("teksti").style.color = "black";
-        document.getElementById("teksti").style.backgroundColor = "transparent";
-
-    }
-
-    function toggleButton() {
-
-        if (localStorage.getItem("color") == ("light")) {
-
-            darkMode();
-        } else if (localStorage.getItem("color") == ("dark")) {
-
-            lightMode();
-        }
-    }
-
-    function remember() {
-        if (localStorage.getItem("color") == ("light")) {
-
-            lightMode();
-
-        } else if (localStorage.getItem("color") == ("dark")) {
-
-            darkMode();
+            theme.href = "<?php echo URLROOT . '/public/CSS/stylesdark.css'; ?>";
+            localStorage.setItem("color", "dark");
+            console.log(localStorage);
+            document.getElementById("teksti").className = "fa fa-sun-o";
+            document.getElementById("teksti").style.color = "white";
+            document.getElementById("teksti").style.backgroundColor = "transparent";
 
         }
-    }
-</script>
 
+        function lightMode() {
+
+            theme.href = "<?php echo URLROOT . '/public/CSS/styles.css'; ?>";
+            localStorage.setItem("color", "light");
+            console.log(localStorage);
+            document.getElementById("teksti").className = "fa fa-moon-o";
+            document.getElementById("teksti").style.color = "black";
+            document.getElementById("teksti").style.backgroundColor = "transparent";
+
+        }
+
+        function toggleButton() {
+
+            if (localStorage.getItem("color") == ("light")) {
+
+                darkMode();
+            } else if (localStorage.getItem("color") == ("dark")) {
+
+                lightMode();
+            }
+        }
+
+        function remember() {
+            if (localStorage.getItem("color") == ("light")) {
+
+                lightMode();
+
+            } else if (localStorage.getItem("color") == ("dark")) {
+
+                darkMode();
+
+            }
+        }
+    </script>
 </html>

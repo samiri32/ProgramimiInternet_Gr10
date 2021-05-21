@@ -11,42 +11,53 @@
     <?php require APPROOT . '/views/inc/navbar.php'; ?>
 
     <div class="homepage">
-    <div class="rowlajme">
+        <div class="rowlajme">
             <?php if (isLoggedIn() && $_SESSION['status'] == 'admin') : ?>
                 <center> <a class="btn green" href="<?php echo URLROOT; ?>/books/add">
                         Shto
                     </a></center>
             <?php endif; ?><br>
 
-                <?php foreach ($data['posts'] as $post) : ?>
-                    <div class= "columnlajme">
-                  <div class="gjyslajmi1">  <img src="<?php echo URLROOT . '/public/img/' . $post->image; ?>"></div>
-                       <div class="gjyslajmi2"> 
-                       <div class="qereklajmi"> 
-                           <?php if (isset($_SESSION['user_id']) && $_SESSION['user_id'] == $post->user_id) :?>
-                            <div class="divini">
-                         <a class="btn orange" href="<?php echo URLROOT . '/books/ndrysho/' . $post->id;?>">
-                                Ndrysho
-                            </a></div>  
-                            <a href="#">
-                                <form action="<?php echo URLROOT . "/books/delete/" . $post->id ?>" method="POST">
-                                    <input type="submit" name="delete" value="Fshij" class="btn red">
-                                </form></a><?php endif; ?>
-                                <div class="dividy">
-                                <span id="titullilajme"> <?php echo $post->title; ?></span><br>
-                                <span id="posttitlelajmi"> <?php echo 'Postuar më: ' . $post->created_at . '<br>'; ?>
-                            <?php echo 'Admin: ' . $post->user_id; ?></span></div>
-                           </div>
-                      
-                <div class="qereklajmi2">
-                        <span id='elaborimilajme'> <?php giveBreaks($post->body) . "<br>"; ?></span>
-                       </div></div>
-                       </div>
-                     <br><br> <br><br><br><?php endforeach; ?>
-                      </div>
-        </div> 
+            <?php foreach ($data['books'] as $book) : ?>
+                <div class="columnlajme2">
+                    <div class="gjyslajmi1"> <img src="<?php echo URLROOT . '/public/img/' . $book->img; ?>"></div>
+                    <div class="gjyslajmi22">
+                        <div class="qereklajmi">
+                            <?php if (isset($_SESSION['user_id']) && $_SESSION['user_id'] == $book->user_id) : ?>
+                                <div class="divini">
+                                    <a class="btn orange" href="<?php echo URLROOT . '/books/change/' . $book->id; ?>">
+                                        Ndrysho
+                                    </a>
+                                </div>
+                                <a href="#">
+                                    <form action="<?php echo URLROOT . "/books/delete/" . $book->id ?>" method="POST">
+                                        <input type="submit" name="delete" value="Fshij" class="btn red">
+                                    </form>
+                                </a><?php endif; ?>
+                            <div class="dividy">
+                                <span id="titullilajme"> <?php echo $book->titulli; ?></span><br>
+                                <span id="posttitlelajmi" style="font-size: 1.2em !important;"> <?php echo $book->autori; ?>
+                                </span>
+                            </div>
+                        </div>
 
-<?php require APPROOT . '/views/inc/footer.php'; ?>
+                        <div class="qereklajmi2">
+                            <span id="elaborimilajme" style="font-size: 0.9em"><?php echo 'Botuar më: ' . $book->datapub . " | "; ?></span>
+                            <span id='elaborimilajme' style="font-size: 0.9em"><?php echo $book->zhanri . " | "; ?></span>
+                            <span id='elaborimilajme' style="font-size: 0.9em"><?php echo $book->gjuha . " | <br><br>"; ?></span>
+                            <span id='elaborimilajme'> <?php giveBreaks($book->caption) . "<br>"; ?></span><br>
+                            <span id='posttitlelajmi' style="color: #0075ff !important;">
+                            <?php if (isset($_SESSION['user_id'])):?>
+                                <a target="_blank" style="color: #0075ff !important;" href="<?php echo $book->link; ?>">SHKARKO</a></span>
+                                <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+                <br><br> <br><br><br><?php endforeach; ?>
+        </div>
+    </div>
+
+    <?php require APPROOT . '/views/inc/footer.php'; ?>
 </body>
 <script>
     const theme = document.querySelector("#stilicss");

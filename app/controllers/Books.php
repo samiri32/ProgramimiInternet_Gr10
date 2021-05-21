@@ -5,9 +5,6 @@ class Books extends Controller {
     }
 
     public function index() {
-        
-               
-          
         $books = $this->bookModel->findAllBooks();
          $data = [
              'books' => $books
@@ -23,7 +20,7 @@ class Books extends Controller {
 
         $data = [
             'user_id' => '',
-            'ISBN' => '',
+            'id' => '',
             'titulli' => '',
             'autori' => '',
             'zhanri' => '',
@@ -34,7 +31,7 @@ class Books extends Controller {
             'caption' => '',
             'img' => '',
             // errorat
-            'ISBNerr' => '',
+            'iderr' => '',
             'titullierr' => '',
             'autorierr' => '',
             'zhanrierr' => '',
@@ -49,8 +46,7 @@ class Books extends Controller {
             $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
             $data = [
-                'user_id' => $_SESSION['user_id'],
-                'ISBN' => trim($_POST['ISBN']),
+                'user_id' => trim($_SESSION['user_id']),
                 'titulli' => trim($_POST['titulli']),
                 'autori' => trim($_POST['autori']),
                 'img' =>trim($_POST['img']),
@@ -61,7 +57,6 @@ class Books extends Controller {
                 'link' => trim($_POST['link']),
                 'caption' => trim($_POST['caption']),
                 // errorat
-                'ISBNerr' => '',
                 'titullierr' => '',
                 'autorierr' => '',
                 'zhanrierr' => '',
@@ -72,9 +67,6 @@ class Books extends Controller {
                 'imgerr' => ''
             ];
 
-            if(empty($data['ISBN'])) {
-                $data['ISBNerr'] = 'Plotesoni shifren.';
-            }
 
             if(empty($data['titulli'])) {
                 $data['titullierr'] = 'Shkruani titullin.';
@@ -107,7 +99,7 @@ class Books extends Controller {
             }
 
             if (
-                empty($data['ISBNerr']) && empty($data['titullierr']) && empty($data['imgerr']) && 
+                empty($data['titullierr']) && empty($data['imgerr']) && 
                 empty($data['captionerr']) && empty($data['linkerr']) && empty($data['gjuhaerr']) &&
                 empty($data['datapuberr']) && empty($data['zhanrierr'])  && empty($data['autorierr'])
             
@@ -132,7 +124,6 @@ class Books extends Controller {
         $data = [
             'book' => $book,
             'user_id' => '',
-            'ISBN' => '',
             'titulli' => '',
             'autori' => '',
             'img' =>'',
@@ -143,7 +134,6 @@ class Books extends Controller {
             'link' => '',
             'caption' => '',
             // errorat
-            'ISBNerr' => '',
             'titullierr' => '',
             'autorierr' => '',
             'zhanrierr' => '',
@@ -161,7 +151,6 @@ class Books extends Controller {
                 'id' => $id,
                 'book' => $book,
                 'user_id' => $_SESSION['user_id'],
-                'ISBN' => '',
                 'titulli' => '',
                 'autori' => '',
                 'img' =>'',
@@ -171,8 +160,7 @@ class Books extends Controller {
                 'vleresimi' => '',
                 'link' => '',
                 'caption' => '',
-                // errorat
-                'ISBNerr' => '',
+                // errora
                 'titullierr' => '',
                 'autorierr' => '',
                 'zhanrierr' => '',
@@ -182,10 +170,6 @@ class Books extends Controller {
                 'captionerr' => '',
                 'imgerr' => ''
             ];
-
-            if(empty($data['ISBN'])) {
-                $data['ISBNerr'] = 'Plotesoni shifren.';
-            }
 
             if(empty($data['titulli'])) {
                 $data['titullierr'] = 'Shkruani titullin.';
@@ -218,12 +202,12 @@ class Books extends Controller {
             }
 
             if (
-                empty($data['ISBNerr']) && empty($data['titullierr']) && empty($data['imgerr']) && 
+                empty($data['titullierr']) && empty($data['imgerr']) && 
                 empty($data['captionerr']) && empty($data['linkerr']) && empty($data['gjuhaerr']) &&
                 empty($data['datapuberr']) && empty($data['zhanrierr'])  && empty($data['autorierr'])
             
             ) {
-                if ($this->bookModel->addBook($data)) {
+                if ($this->bookModel->changeBook($data)) {
                     header("Location: " . URLROOT . "/books");
                 } else {
                     die("Something went wrong, please try again!");
@@ -249,7 +233,6 @@ class Books extends Controller {
         $data = [
             'book' => $book,
             'user_id' => $_SESSION['user_id'],
-            'ISBN' => '',
             'titulli' => '',
             'autori' => '',
             'img' =>'',
@@ -260,7 +243,6 @@ class Books extends Controller {
             'link' => '',
             'caption' => '',
             // errorat
-            'ISBNerr' => '',
             'titullierr' => '',
             'autorierr' => '',
             'zhanrierr' => '',

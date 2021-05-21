@@ -66,7 +66,7 @@ class Pages extends Controller
   }
 
   
-  public function ndrysho()
+  public function change()
   {
     $data = [
       'titulli' => '1',

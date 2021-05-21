@@ -6,9 +6,6 @@ class Posts extends Controller {
     }
 
     public function index() {
-        
-               
-          
         $posts = $this->postModel->findAllPosts();
          $data = [
              'posts' => $posts
@@ -22,7 +19,7 @@ class Posts extends Controller {
             header("Location: " . URLROOT . "/posts");
         }
 
-        $data = [
+        $data = [ 
             'title' => '',
             'body' => '',
             'titleError' => '',

@@ -1836,3 +1836,29 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   font-weight: lighter !important;
   text-align: center;
 }
+
+.columnlajme2{
+  background-color: white;
+  -webkit-flex: 1.4;
+  -ms-flex: 1.4;
+  flex: 1.4;
+  column-gap: 5em;
+  display: flex;
+}
+
+.columnlajme2 img{
+  width:50%; 
+  margin: auto;
+  max-height:20em;
+  margin: auto;
+  display: block;
+  margin-right: 4em;
+}
+.gjyslajmi22{
+  background-color: white;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  margin-left: -3em;
+  padding-right: 10em;
+}

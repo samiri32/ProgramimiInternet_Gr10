@@ -66,7 +66,7 @@
 <div class="row6">
     <div class="subfooternalt">
         <div class="sbkol1">
-            <span id="sf">Regjistrohu për të pranuar e-mails nga Biblioteka</span><br><br>
+            <span id="sf">Regjistrohu për të pranuar e-mail nga Biblioteka</span><br><br>
             <!-- Qitu ni form per Anetaresim (mail subscription)-->
             <form method="POST" action="../../../../phpmailer/" autocomplete="on">
                 <div class="autocomplete" style="width: 25em;">
