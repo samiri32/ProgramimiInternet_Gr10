@@ -1,6 +1,5 @@
-$("h1.formularii").add("formulari");
 
-
+    $("h1.formularii").add("formulari");
 $(".mbylleHarten").hide();
 $(".mbylleVideon").hide();
 $(".harta").hide();
