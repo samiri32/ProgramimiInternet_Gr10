@@ -44,7 +44,9 @@ function giveBreaks2($text)
 function mailsender()
 {
     if (isset($_POST['submit'])) {
-        $to = strip_tags($_POST['myEmail']); // this is your Email address
+        if(isset($_POST['myEmail'])){
+        $to = $_POST['myEmail']; // this is your Email address
+        }
         return $to;
     }
 }
