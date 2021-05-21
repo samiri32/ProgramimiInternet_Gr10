@@ -65,6 +65,25 @@ class Pages extends Controller
     $this->view('posts/create', $data);
   }
 
+  
+  public function ndrysho()
+  {
+    $data = [
+      'titulli' => '1',
+      // 'users' => $users
+    ];
+    $this->view('books/ndrysho', $data);
+  }
+
+  public function add()
+  {
+    $data = [
+      'titulli' => '1',
+      // 'users' => $users
+    ];
+    $this->view('books/add', $data);
+  }
+
 
   public function galeria()
   {
