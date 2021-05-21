@@ -165,4 +165,19 @@ class Posts extends Controller {
             }
         }
     }
+    public function getTitlePosts($title)
+    {
+      $this->db->query('SELECT * FROM posts WHERE REPLACE(title," ","") like :title');
+      $this->db->bind(':title','%'.$title.'%');
+      $results=$this->db->resultSet();
+      return $results;
+
+    }
+    public function getTitleId($id)
+    {
+      $this->db->query('SELECT * FROM posts WHERE REPLACE(id," ","") like :id');
+      $this->db->bind(':id','%'.$id.'%');
+      $results=$this->db->resultSet();
+      return $results;
+}
 }

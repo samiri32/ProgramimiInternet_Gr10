@@ -5,8 +5,11 @@ class Pages extends Controller
 
   public function __construct()
   {
+    $this->postModel = $this->model('Post');
     //$this->userModel = $this->model('User');
   }
+
+  
   public function index()
   {
     //  $users = $this->userModel->getUsers();
@@ -120,4 +123,31 @@ class Pages extends Controller
     ];
     $this->view('pages/libratcatalog', $data);
   }
+
+  public function ajax($request='null')
+  { 
+     $post=$this->postModel->getTitlePosts($request);
+    //TODO:fix this 
+    
+    echo '<table>';
+   
+    echo '<tr>';
+    echo '<th>Title </th>';
+    echo '<th>  ID </th>';
+    echo '<th> Data </th>'; 
+    foreach ($post as $specificPost) {
+       $location=URLROOT.'/posts/lajme/'.$specificPost->id;
+      echo '<tr>';
+      echo "<td> <a href=$location> Title:$specificPost->title </td>";
+      echo "<td> <a href=$location> ID:$specificPost->id </td>";
+      echo "<td> $specificPost->created_at</td>";
+
+      
+      echo '</tr>';
+//  echo "<a href=$location> ID:$specificPost->id </a> dhe eshte krijuar ne $specificPost->created_at";
+     }
+     echo '</table>';
+    
+  }
+
 }

@@ -16,8 +16,9 @@
             </h1>
             <div class="column side">
                 <form action="<?php echo URLROOT; ?>/posts/create"  method="POST">
-                    <div class="form-item">
-                        <input type="text" name="title"  placeholder="Titulli..." style="max-width: 40em; height: 2.8em;">
+                    <div class="form-item" id="postimi">
+                    
+                        <input type="text" name="title" placeholder="Titulli..." style="max-width: 40em; height: 2.8em;">
 
                         <span class="invalidFeedback">
                             <?php echo $data['titleError']; ?>
@@ -95,6 +96,7 @@
 
         }
     }
+
 </script>
 
 </html>

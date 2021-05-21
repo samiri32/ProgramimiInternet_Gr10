@@ -5,6 +5,23 @@ class Post {
     public function __construct() {
         $this->db = new Database;
     }
+    public function getPosts(){
+        $this->db->query('SELECT *,
+                          posts.id as postId,
+                          users.user_id as userId,
+                          posts.created_at as postCreated,
+                          users.user_datejoined as userCreated
+                          FROM posts
+                          INNER JOIN users
+                          ON posts.user_id = users.id
+                          ORDER BY posts.created_at DESC
+                          ');
+  
+        $results = $this->db->resultSet();
+  
+        return $results;
+      }
+  
 
     public function findAllPosts() {
         $this->db->query('SELECT * FROM posts ORDER BY created_at DESC');
@@ -64,5 +81,13 @@ class Post {
         } else {
             return false;
         }
+    }
+    public function getTitlePosts($title)
+    {
+      $this->db->query('SELECT * FROM posts WHERE REPLACE(title," ","") like :title');
+      $this->db->bind(':title','%'.$title.'%');
+      $results=$this->db->resultSet();
+      return $results;
+
     }
 }
