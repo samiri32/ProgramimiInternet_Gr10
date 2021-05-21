@@ -16,6 +16,7 @@ class Book {
 
     public function addBook($data) {
         $this->db->query('INSERT INTO books (user_id, titulli, autori, vleresimi, zhanri, caption, gjuha, datapub, link, img) VALUES (:user_id, :titulli, :autori, :vleresimi, :zhanri, :caption, :gjuha, :datapub, :link, :img)');
+      
         $this->db->bind(':user_id', $data['user_id']);
         $this->db->bind(':datapub',$data['datapub']);
         $this->db->bind(':gjuha',$data['gjuha']);
@@ -45,9 +46,9 @@ class Book {
     }
 
     public function changeBook($data) {
-        $this->db->query('UPDATE books SET titulli = :titulli, autori = :autori, vleresimi = :vleresimi, zhanri = :zhanri, caption = :caption, gjuha = :gjuha, datapub = :datapub, link = :link, img = :img');
+        $this->db->query('UPDATE books SET titulli = :titulli, autori = :autori, vleresimi = :vleresimi, zhanri = :zhanri, caption = :caption, gjuha = :gjuha, datapub = :datapub, link = :link, img = :img WHERE id = :id');
 
-        $this->db->bind(':user_id', $data['user_id']);
+        $this->db->bind(':id', $data['id']);
         $this->db->bind(':datapub',$data['datapub']);
         $this->db->bind(':gjuha',$data['gjuha']);
         $this->db->bind(':vleresimi',$data['vleresimi']);

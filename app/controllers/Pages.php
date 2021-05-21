@@ -131,24 +131,4 @@ class Pages extends Controller
       $this->view('pages/homepage', $data);
     }
   }}
-
-  public function autoretcatalog()
-  {
-    
-
-    $data = [
-      'titulli' => 'Homepage',
-      
-    ];
-    $this->view('pages/autoretcatalog', $data);
-  }
-  public function libratcatalog()
-  {
-   
-    $data = [
-      'titulli' => 'Homepage',
-     
-    ];
-    $this->view('pages/libratcatalog', $data);
-  }
 }
