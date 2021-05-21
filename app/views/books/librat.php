@@ -48,7 +48,7 @@
                             <span id='elaborimilajme'> <?php giveBreaks($book->caption) . "<br>"; ?></span><br>
                             <span id='posttitlelajmi' style="color: #0075ff !important;">
                             <?php if (isset($_SESSION['user_id'])):?>
-                                <a target="_blank" style="color: #0075ff !important;" href="<?php echo $book->link; ?>">SHKARKO</a></span>
+                                <a id="<?php $book->id;?>" target="_blank" style="color: #0075ff !important;" onclick="toProfile($book->id);" href="<?php echo $book->link; ?>">SHKARKO</a></span>
                                 <?php else:?>
                                     <span id="postitelajmi">Kycuni per te shkarkuar librin.</span>
                                 <?php endif; ?>

@@ -77,11 +77,7 @@
             </form><br><br>
         </div>
  
-        <div class="sbkol1">
-            <span id="sf">Porosit katalogun e librave</span><br><br>
-            <button class="buton">Porosit</button>
-            <h5 id="h5">Plotësisht falas!</h5>
-        </div>
+        
     </div>
 
     <div class="subfooterposht">
