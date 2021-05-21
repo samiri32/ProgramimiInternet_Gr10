@@ -38,26 +38,28 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;color:black;">Dërgo një s
         <div class="shtyllaa1" style="max-width: 30em;">
             <div class="formulari">
                 <center>
-                    <form class="formularii" action="index.html" method="">
+                    <form class="formularii" action="../../../../phpmailer/" method="POST">
                         <br>
                         <label for="emri">Emri (deri ne 15 shkronja):</label>
-                        <input type="text" id="emri" name="name" required minlength="4" maxlength="15" style="height:1.6em; border:0.05px solid black; width:13.2em; background-color: white; z-index:999;">
+                        <input type="text" id="emri" name="emri" required minlength="4" maxlength="15" style="height:1.6em; border:0.05px solid black; width:13.2em; background-color: white; z-index:999;">
                         <br><br>
                         <label for="mbiemri">Mbiemri (deri ne 15 shkronja):</label>
-                        <input type="text" id="mbiemri" name="name" required minlength="4" maxlength="15" style="height:1.6em; border:0.05px solid black; width:11.7em; background-color: white; z-index:999;">
+                        <input type="text" id="mbiemri" name="mbiemri" required minlength="4" maxlength="15" style="height:1.6em; border:0.05px solid black; width:11.7em; background-color: white; z-index:999;">
 
                         <br><br>
 
                         <label for="mesazhi">Mesazhi:</label>
-                        <textarea id="mesazhi" name="mesazhi" rows="8" cols="44"></textarea>
+                        <textarea value="komenti" name="komenti" rows="8" cols="44"></textarea>
                         <br><br>
                         <label for="vleresimi">Si e vleresoni kete faqe?</label><br><br>
                         <i class="fa fa-thumbs-o-down"></i><input type="range" id="vleresimi" name="vleresimi" min="0" max="11"><i class="fa fa-thumbs-o-up"></i>
                         <br><br>
-                        <label for="id">ID e anetaresimit:</label>
-                        <input type="text" id="id" name="id" style="height:1.6em; border:0.1px solid black; width:17em; background-color: white; z-index:999;"><br><br><br>
                         <input class="buton" type="reset" value="Fshij" style="height:2.2em; padding:0.2em; margin-right:0.5em;">
-                        <input class="buton" type="submit" value="Dërgo" style="height:2.2em; padding:0.2em; margin-left:0.5em;">
+                        <input class="buton" type="submit" name="dergo" value="Dërgo" style="height:2.2em; padding:0.2em; margin-left:0.5em;">
+                        <?php if (isset($_POST['komenti'])) {
+                            echo htmlentities($_POST['komenti']);
+                        }
+                        mailsender2(); ?>
                         <br><br><br>
                     </form>
                 </center>
@@ -175,40 +177,11 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;color:black;">Dërgo një s
                         <td>Paradite</td>
                         <td>Mirëmbajtes i faqes</td>
                     </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Ali Rakia</td>
-                        <td>Pasdite</td>
-                        <td>Mirëmbajtes i faqes</td>
-                    </tr>
 
                 </table>
             </div>
         </div>
     </div>
-
-    <div class="rreshtii">
-        <div class="shtyllaa1" style="max-width: 30em;">
-            <div class="5" style="margin-top: 0em;">
-
-                <span>Raporto parregullsi: </span><br><br>
-                <textarea name="name" rows="8" cols="50" id="border-image"></textarea><br><br>
-                <label for="Ankesa">Data dhe ora:</label>
-                <input type="datetime-local" id="dataora" name="time" value="2021-01-06T19:30" min="2000-06-07T00:00" max="2021-06-14T00:00" style="border: 0.05px solid rgba(128, 128, 128, 0.322); margin-right: -2em;">
-                <br> <br><input class="buton" style="height:2.2em; width:4.5em; font-size:0.9em; padding:0.2em; margin-right: -22em;" type="submit" value="Dërgo">
-
-            </div>
-        </div>
-
-        <div class="shtylla1" style="max-width: 30em;">
-
-
-            <div id="drag" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <img src="<?php echo URLROOT . '/public/img/sinani3.png'; ?>" draggable="true" ondragstart="drag(event)" id="drag1">
-            </div>
-
-            <div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        </div>
     </div>
     <?php require APPROOT . '/views/inc/footer.php'; ?>
     <script>
@@ -263,7 +236,8 @@ font-family: 'M PLUS 1p', sans-serif; font-size:30px;color:black;">Dërgo një s
             }
         }
     </script>
-   
-<script src="<?php echo URLROOT . '/public/js/kontakti.js'; ?>";></script>
+
+    <script src="<?php echo URLROOT . '/public/js/kontakti.js'; ?>" ;></script>
 </body>
+
 </html>

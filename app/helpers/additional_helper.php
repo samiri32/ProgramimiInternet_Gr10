@@ -48,3 +48,17 @@ function mailsender()
         return $to;
     }
 }
+
+
+function mailsender2()
+{
+    if (isset($_POST['dergo'])) {
+       $array= [ 
+        $emri = strip_tags($_POST['emri']), 
+        $mbiemri = strip_tags($_POST['mbiemri']),
+        $vleresimi = strip_tags($_POST['vleresimi']),
+        $komenti = strip_tags($_POST['komenti'])
+    ];
+        return $array;
+    }
+}

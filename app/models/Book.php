@@ -1,5 +1,5 @@
 <?php
-class Post {
+class Book {
     private $db;
 
     public function __construct() {
