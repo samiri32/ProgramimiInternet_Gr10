@@ -16,6 +16,7 @@ class Users extends Controller
         $_SESSION['adresa'] = $user->adresa;
         $_SESSION['status'] = $user->status;
         $_SESSION['user_datejoined'] = $user->user_datejoined;
+        writeLog();
         header('location:' . URLROOT . '/pages/profili');
         die();
     }
