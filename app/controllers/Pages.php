@@ -1,18 +1,27 @@
 <?php
-
 class Pages extends Controller
 {
 
   public function __construct()
   {
-    //$this->userModel = $this->model('User');
+    if(isLoggedIn()){
+    $emri=$_SESSION['user_id'];
+    if(!isset($_COOKIE[$emri]))
+    {
+      $profili=[
+        'Profili'=>0
+      ];
+      setcookie($emri, serialize($profili), time() + 60*60*24*31, "/");
+    }
+
+  }
   }
   public function index()
   {
-    //  $users = $this->userModel->getUsers();
+ 
     $data = [
       'titulli' => 'Homepage',
-      // 'users' => $users
+    
     ];
     $this->view('pages/homepage', $data);
   
@@ -20,14 +29,14 @@ class Pages extends Controller
 
   public function autoret()
   {
-    
-    //  $users = $this->userModel->getUsers();
+
     $data = [
       'titulli' => 'Autoret',
-      // 'users' => $users
+
     ];
     $this->view('pages/autoret', $data);
   }
+
   public function librat()
   {
     //  $users = $this->userModel->getUsers();
@@ -36,16 +45,6 @@ class Pages extends Controller
       // 'users' => $users
     ];
     $this->view('pages/librat', $data);
-  }
-  public function lajme()
-  {
-   
-    //  $users = $this->userModel->getUsers();
-    $data = [
-      'titulli' => '1',
-      // 'users' => $users
-    ];
-    $this->view('posts/lajme', $data);
   }
 
   public function update()
@@ -69,54 +68,67 @@ class Pages extends Controller
 
   public function galeria()
   {
-    
-    //  $users = $this->userModel->getUsers();
+   
     $data = [
       'titulli' => 'Homepage',
-      // 'users' => $users
+     
     ];
     $this->view('pages/galeria', $data);
   }
   public function kontakti()
   {
-    //  $users = $this->userModel->getUsers();
+    
     $data = [
       'titulli' => 'Homepage',
-      // 'users' => $users
+     
     ];
     $this->view('pages/kontakti', $data);
   }
 
   public function profili()
   {
-    //  $users = $this->userModel->getUsers();
+    if(isLoggedIn()){
+    $emri=$_SESSION['user_id'];
+    
+    if (isset($_COOKIE[$emri])) {
+     
+      $array = unserialize($_COOKIE[$emri]);
+      $array['Profili'] += 1;
+      setcookie( $emri, serialize($array), time() + 60*60*24*31, "/");
+    } else {
+      $arr = [
+        'Profili' => 2,        
+      ];
+      setcookie( $emri, serialize($arr), time() + 60*60*24*31, "/");
+    }
+  
     $data = [
       'titulli' => 'Homepage',
-      // 'users' => $users
+   
     ];
     if (isset($_SESSION['user_id'])) {
       $this->view('pages/profili', $data);
     } else {
       $this->view('pages/homepage', $data);
     }
-  }
+  }}
 
   public function autoretcatalog()
   {
-    //  $users = $this->userModel->getUsers();
+    
 
     $data = [
       'titulli' => 'Homepage',
-      // 'users' => $users
+      
     ];
     $this->view('pages/autoretcatalog', $data);
   }
   public function libratcatalog()
   {
-    //  $users = $this->userModel->getUsers();
+   
     $data = [
       'titulli' => 'Homepage',
-      // 'users' => $users
+     
     ];
     $this->view('pages/libratcatalog', $data);
   }

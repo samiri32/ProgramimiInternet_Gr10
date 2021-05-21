@@ -2,9 +2,13 @@
 class Posts extends Controller {
     public function __construct() {
         $this->postModel = $this->model('Post');
+
     }
 
     public function index() {
+        
+               
+          
         $posts = $this->postModel->findAllPosts();
          $data = [
              'posts' => $posts
@@ -69,12 +73,6 @@ class Posts extends Controller {
     public function update($id) {
 
         $post = $this->postModel->findPostById($id);
-
-        if(!isLoggedIn()) {
-            header("Location: " . URLROOT . "/posts");
-        } elseif($post->user_id != $_SESSION['user_id']){
-            header("Location: " . URLROOT . "/posts");
-        }
 
         $data = [
             'post' => $post,

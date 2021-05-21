@@ -4,11 +4,10 @@ class Users extends Controller
 {
     public function __construct()
     {
-
-
         $this->userModel = $this->model('User');
     }
-    public function createUserSession($user)
+
+  public function createUserSession($user)
     {
         $_SESSION['user_id'] = $user->user_id;
         $_SESSION['email'] = $user->email;
@@ -17,7 +16,7 @@ class Users extends Controller
         $_SESSION['adresa'] = $user->adresa;
         $_SESSION['status'] = $user->status;
         $_SESSION['user_datejoined'] = $user->user_datejoined;
-        header('location:' . URLROOT);
+        header('location:' . URLROOT . '/pages/profili');
         die();
     }
 
