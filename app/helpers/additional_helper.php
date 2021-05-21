@@ -14,14 +14,22 @@ function writeLog()
     $path = 'C:/xampp/htdocs/ProgramimiInternet_Gr10/public/log.txt';
     $myfile = fopen($path, "a") or die("Unable to open file!");
     if (isset($_SESSION['user_id'])) {
-        file_put_contents($path, printf(implode(", ", $_SESSION) . ', '. date("F d Y h:i:s A", time()) . "\n"), FILE_APPEND);
+        file_put_contents($path, implode(", ", $_SESSION) . ', '. date("F d Y h:i:s A", time()) . "\n", FILE_APPEND);
     }
     __destructor($myfile);
+}
+
+function readLog(){
+    $path = 'C:/xampp/htdocs/ProgramimiInternet_Gr10/public/log.txt';
+    if (isset($_SESSION['user_id'])) {
+       echo file_get_contents($path);
+    }
 }
 
 function __destructor($file){
     fclose($file);
 }
+
 function giveBreaks2($text)
 {
     $arrayData = explode("\n", $text);
@@ -36,7 +44,7 @@ function giveBreaks2($text)
 function mailsender()
 {
     if (isset($_POST['submit'])) {
-        $to = $_POST['myEmail']; // this is your Email address
+        $to = strip_tags($_POST['myEmail']); // this is your Email address
         return $to;
     }
 }
