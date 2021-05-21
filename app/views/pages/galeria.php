@@ -8,33 +8,43 @@
 
 <body>
 <?php require APPROOT . '/views/inc/navbar.php';?>
-
-    <div class="faqja">
-        <a href="#" style="text-decoration: none;">
-            <h3 id="fotogaleriah3" style="padding-top:1em; margin-bottom: 0em;display:grid; justify-content: center;">FOTOGALERIA</h3>
-        </a>
+<?php
+$api_url = 'https://api.hamatim.com/quote';
+$quotes = json_decode(file_get_contents($api_url));
+?>
+<div class="homepage">
+    
         <div class="faqjaa">
-            <div class="taggbox-container" style=" width:100%;height:100%;overflow: auto; ">
-                <div class="taggbox-socialwall" data-wall-id="44950" view-url="https://app.taggbox.com/widget/e/44950">
+            <div class="quote" style=" width:100%;height:100%;overflow: auto; ">
+           <?php echo $quotes->text;?>
+                </div><br>
+                <div class="quoteauthor" style=" width:100%;height:100%;overflow: auto;">
+           <?php echo "-" . $quotes->book;
+            if($quotes->book!=NULL)
+             {echo ', ';
+             } 
+             echo  $quotes->author;?>
                 </div>
-                <script src="https://widget.taggbox.com/embed.min.js" type="text/javascript">
-                </script>
             </div>
-        </div>
-
+     
         <a href="#" style="text-decoration: none;">
-            <h3 id="videogaleriah3" style="padding-top:1em; margin-bottom: 0em; display:grid; justify-content: center;">VIDEOGALERIA</h3>
+            <h3 id="videogaleriah3" style="padding-top:1em; margin-bottom: -1em; display:grid; justify-content: center;">FOTOGALERIA</h3>
         </a>
         <div class="faqjaa">
             <div class="taggbox-container" style=" width:100%;height:100%;overflow: auto;">
-                <div class="taggbox-socialwall" data-wall-id="44961" view-url="https://app.taggbox.com/widget/e/44961">
+         <div class="taggbox-socialwall" data-wall-id="59620" view-url="https://widget.taggbox.com/59620"></div><script src="https://widget.taggbox.com/embed.min.js" type="text/javascript"></script>
                 </div>
-                <script src="https://widget.taggbox.com/embed.min.js" type="text/javascript">
-                </script>
             </div>
-        </div>
+            <a href="#" style="text-decoration: none;">
+            <h3 id="videogaleriah3" style="padding-top:1em; margin-bottom: -1em; display:grid; justify-content: center;">VIDEOGALERIA</h3>
+        </a>
+        <div class="faqjaa">
+        <div class="taggbox-container" style="width:100%;height:100%;overflow: auto;">
+        <div class="taggbox-socialwall" data-wall-id="59622" view-url="https://widget.taggbox.com/59622"></div><script src="https://widget.taggbox.com/embed.min.js" type="text/javascript"></script>
+                </div>
+            </div>
 
-
+</div>
         <?php require APPROOT . '/views/inc/footer.php';?>
         <script>
             const theme = document.querySelector("#stilicss");

@@ -1511,9 +1511,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 .faqjaa {
   padding: 4em 6em 0em 6em;
-  display: -webkit-flex;
-  display: flex;
-  column-gap: 2.5em;
 }
 
 .shtylla {
@@ -1822,4 +1819,20 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   color: black;
   font-size: 2em;
   font-family: "Arnhem", Times, Courier, serif;
+}
+
+.quote{
+  color: #0075ff;
+  font-weight: bold !important;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+
+.quoteauthor{
+  color: #1b1b1b;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: lighter !important;
+  text-align: center;
 }
