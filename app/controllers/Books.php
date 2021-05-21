@@ -19,8 +19,6 @@ class Books extends Controller {
         }
 
         $data = [
-            'user_id' => '',
-            'id' => '',
             'titulli' => '',
             'autori' => '',
             'zhanri' => '',
@@ -31,11 +29,11 @@ class Books extends Controller {
             'caption' => '',
             'img' => '',
             // errorat
-            'iderr' => '',
             'titullierr' => '',
             'autorierr' => '',
             'zhanrierr' => '',
             'datapuberr' => '',
+            'vleresimierr' => '',
             'gjuhaerr' => '',
             'linkerr' => '',
             'captionerr' => '',
@@ -46,7 +44,7 @@ class Books extends Controller {
             $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
             $data = [
-                'user_id' => trim($_SESSION['user_id']),
+                'user_id' => $_SESSION['user_id'],
                 'titulli' => trim($_POST['titulli']),
                 'autori' => trim($_POST['autori']),
                 'img' =>trim($_POST['img']),
@@ -64,12 +62,17 @@ class Books extends Controller {
                 'gjuhaerr' => '',
                 'linkerr' => '',
                 'captionerr' => '',
-                'imgerr' => ''
+                'imgerr' => '',
+                'vleresimierr' => ''
             ];
 
 
             if(empty($data['titulli'])) {
                 $data['titullierr'] = 'Shkruani titullin.';
+            }
+
+            if(empty($data['vleresimi'])){
+                $data['vleresimi'] = 'Shkruani vleresimin.';
             }
 
             if(empty($data['autori'])){
@@ -99,11 +102,10 @@ class Books extends Controller {
             }
 
             if (
-                empty($data['titullierr']) && empty($data['imgerr']) && 
-                empty($data['captionerr']) && empty($data['linkerr']) && empty($data['gjuhaerr']) &&
-                empty($data['datapuberr']) && empty($data['zhanrierr'])  && empty($data['autorierr'])
-            
-            ) {
+                empty($data['titullierr'] && empty($data['autorierr'] && empty($data['imgerr'] &&
+                empty($data['captionerr'] && empty($data['gjuhaerr'] && empty($data['linkerr'] &&
+                empty($data['datapuberr'] && empty($data['zhanrierr']))))))))
+                ) {
                 if ($this->bookModel->addBook($data)) {
                     header("Location: " . URLROOT . "/books");
                 } else {
@@ -123,7 +125,6 @@ class Books extends Controller {
 
         $data = [
             'book' => $book,
-            'user_id' => '',
             'titulli' => '',
             'autori' => '',
             'img' =>'',
@@ -141,7 +142,8 @@ class Books extends Controller {
             'gjuhaerr' => '',
             'linkerr' => '',
             'captionerr' => '',
-            'imgerr' => ''
+            'imgerr' => '',
+            'vleresimierr' => ''
         ];
 
         if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -151,15 +153,15 @@ class Books extends Controller {
                 'id' => $id,
                 'book' => $book,
                 'user_id' => $_SESSION['user_id'],
-                'titulli' => '',
-                'autori' => '',
-                'img' =>'',
-                'zhanri' => '',
-                'datapub' => '',
-                'gjuha' => '',
-                'vleresimi' => '',
-                'link' => '',
-                'caption' => '',
+                'titulli' => trim($_POST['titulli']),
+                'autori' => trim($_POST['autori']),
+                'img' =>trim($_POST['img']),
+                'zhanri' => trim($_POST['zhanri']),
+                'datapub' => trim($_POST['datapub']),
+                'gjuha' => trim($_POST['gjuha']),
+                'vleresimi' => trim($_POST['vleresimi']),
+                'link' => trim($_POST['link']),
+                'caption' => trim($_POST['caption']),
                 // errora
                 'titullierr' => '',
                 'autorierr' => '',
@@ -168,6 +170,7 @@ class Books extends Controller {
                 'gjuhaerr' => '',
                 'linkerr' => '',
                 'captionerr' => '',
+                'vleresimierr' => '',
                 'imgerr' => ''
             ];
 
@@ -200,12 +203,14 @@ class Books extends Controller {
             if(empty($data['caption'])) {
                 $data['captionerr'] = 'Pershkruani librin.';
             }
+            if(empty($data['vleresimi'])) {
+                $data['vleresimierr'] = 'Jepni vleresimin.';
+            }
 
             if (
-                empty($data['titullierr']) && empty($data['imgerr']) && 
-                empty($data['captionerr']) && empty($data['linkerr']) && empty($data['gjuhaerr']) &&
-                empty($data['datapuberr']) && empty($data['zhanrierr'])  && empty($data['autorierr'])
-            
+            empty($data['titullierr'] && empty($data['autorierr'] && empty($data['imgerr'] &&
+            empty($data['captionerr'] && empty($data['gjuhaerr'] && empty($data['linkerr'] &&
+            empty($data['datapuberr'] && empty($data['zhanrierr']))))))))
             ) {
                 if ($this->bookModel->changeBook($data)) {
                     header("Location: " . URLROOT . "/books");
@@ -219,6 +224,7 @@ class Books extends Controller {
 
         $this->view('books/change', $data);
     }
+
 
     public function delete($id) {
 
