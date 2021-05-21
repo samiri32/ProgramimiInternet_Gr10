@@ -26,6 +26,10 @@
             <div class="search-form">
                 <form >
                     <input type="text" name="" placeholder="Kërkoni" onkeyup="showPostin(this.value)">
+                    <ul id="searchResult"></ul>
+
+            <div class="clear"></div>
+            <div id="userDetail"></div>
 
     <!-- Categories Widget -->
     
@@ -48,26 +52,19 @@
         </div>
     </div>
 </div>
-<div>
+<div style="align-self:right; display:block;">
    <a href="<?php ?>"> <i onclick="toggleButton()" class="fa fa-moon-o" id="teksti" style="margin-left:0.5em;margin-top:0.5em; font-size: 2em;font-weight: bold; position:-webkit-fixed;position:fixed;z-index: 9999;"></i></a>
 </div>
-<div id="txtHint"></div>
+<center>
+<div id="txtHint" ></div>
+<center>
 <script>
     async function showPostin(str) {
   const rez = await (await fetch('http://localhost/ProgramimiInternet_Gr10/pages/ajax/' + str)).text();
-
   var parser = new DOMParser();
-
   var doc = parser.parseFromString(rez, "text/html");
-
-  
- 
- 
   document.getElementById('txtHint').innerHTML = doc.body.innerHTML;
-  
 
-  
-  
 }
 
 </script>

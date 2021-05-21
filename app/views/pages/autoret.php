@@ -436,11 +436,7 @@
         </table>
     </div>
     <br>
-    <center>
-        <div class="ndarja">
-            <p class="ndarja"><a href="<?php echo URLROOT; ?>/pages/autoretcatalog">Shiko katalogun e autorëve</a></p>
-        </div>
-    </center>
+   
     <br>
     <?php require APPROOT . '/views/inc/footer.php'; ?>
     <script>

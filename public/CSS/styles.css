@@ -498,7 +498,7 @@
 }
 
 @font-face {
-  font-family: fontivogel;
+  font-family: 'fontivogel';
   src: url(klim.co.nz/retail-fonts/calibre);
 }
 
@@ -980,9 +980,7 @@ a {
 h3 {
   text-align: center;
 }
-.meshum{
-  visibility:hidden;
-}
+
 .meshum a {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #636262;
@@ -1511,9 +1509,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 .faqjaa {
   padding: 4em 6em 0em 6em;
-  display: -webkit-flex;
-  display: flex;
-  column-gap: 2.5em;
 }
 
 .shtylla {
@@ -1716,9 +1711,10 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 .green {
   background-color: #4CAF50;
-  width: 120px !important;
-  margin: 0px 0px !important;
-  height: 40px !important;
+  width: 1em !important;
+  margin: 0 !important;
+  height: 3m !important;
+  font-size: 1em !important;
 }
 
 .green:hover {
@@ -1733,23 +1729,31 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   color: #fdfcfc !important;
   text-decoration: none !important;
   float: right !important;
-  width: 120px !important;
-  height: 40px !important;
+  width: 5em !important;
+  height: 2em !important;
+  margin-left: 2em;
+  padding-right: 5.75em !important;
+  font-size: 1em !important;
 }
 .orange:hover{
   background-color: rgb(247, 185, 71) !important;
   transition: 0.20s ease-in-out !important;
-  width: 120px !important;
-  margin: 0px 0px !important;
-  height: 40px !important;
+  width: 5em !important;
+  margin: 0 !important;
+  height: 2em !important;
+  margin-left: 2em !important;
+  padding-right: 5.75em !important;
+  font-size: 1em !important;
 }
 .red {
   background-color: #ff0000;
   float: right;
-  width: 120px !important;
-  margin: 0px 0px !important;
-  height: 40px !important;
+  width: 5em !important;
+  margin: 0 !important;
+  height: 2em !important;
   padding: 0 !important;
+  font-size: 1em !important;
+  margin-right: 1.5em;
 }
 .btnred a{
   padding: 0 !important;
@@ -1763,7 +1767,124 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 .rowlajme {
   padding: 4em 6em 0em 6em;
-  display: -webkit-flex;
-  display: flex !important;
-  column-gap: 0.2em;
 }
+.columnlajme{
+  background-color: white;
+  -webkit-flex: 1.4;
+  -ms-flex: 1.4;
+  flex: 1.4;
+  column-gap: 5em;
+  display: flex;
+}
+.gjyslajmi1{
+  background-color: white;
+  -webkit-flex: 1.5;
+  -ms-flex: 1.5;
+  flex: 1.5;
+  margin: 0;
+  padding: 0;
+}
+.gjyslajmi2{
+  background-color: white;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  margin: 0;
+  padding: 0;
+}
+.gjyslajmi1 img{
+  border-top: 0.3em solid #000;
+  padding-top: 0.85em;
+  width: 100%;
+  height: 100%;
+}
+
+#posttitlelajmi{
+  color: #0075ff;
+  font-family: "Calibre", Helvetica, Arial, sans-serif;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+.qereklajmi{
+  margin-top: 1.2em;
+}
+.qereklajmi2{
+  margin-top: 1em;
+  font-family: 'fontivogel';
+}
+
+#titullilajme{
+  color: black;
+  font-size: 2em;
+  font-family: "Arnhem", Times, Courier, serif;
+}
+
+.quote{
+  color: #0075ff;
+  font-weight: bold !important;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+
+.quoteauthor{
+  color: #1b1b1b;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: lighter !important;
+  text-align: center;
+}
+
+.columnlajme2{
+  background-color: white;
+  -webkit-flex: 1.4;
+  -ms-flex: 1.4;
+  flex: 1.4;
+  column-gap: 5em;
+  display: flex;
+}
+
+.columnlajme2 img{
+  width:50%; 
+  margin: auto;
+  max-height:20em;
+  margin: auto;
+  display: block;
+  margin-right: 4em;
+}
+.gjyslajmi22{
+  background-color: white;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  margin-left: -3em;
+  padding-right: 10em;
+}
+
+.clear{
+  clear:both;
+  margin-top: 20px;
+ }
+ 
+ #searchResult{
+  list-style: none;
+  padding: 0px;
+  width: 250px;
+  position: absolute;
+  margin: 0;
+ }
+ 
+ #searchResult li{
+  background: lavender;
+  padding: 4px;
+  margin-bottom: 1px;
+ }
+ 
+ #searchResult li:nth-child(even){
+  background: cadetblue;
+  color: white;
+ }
+ 
+ #searchResult li:hover{
+  cursor: pointer;
+ }

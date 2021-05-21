@@ -8,7 +8,6 @@
 
 <body onload="showSlides(1)">
 <?php require APPROOT . '/views/inc/navbar.php';?>
-
     <div class="homepage">
         <div class="row">
             <div class="column side">

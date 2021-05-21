@@ -1,5 +1,4 @@
 <?php
-
 class Pages extends Controller
 {
 
@@ -7,15 +6,26 @@ class Pages extends Controller
   {
     $this->postModel = $this->model('Post');
     //$this->userModel = $this->model('User');
+    if(isLoggedIn()){
+    $emri=$_SESSION['user_id'];
+    if(!isset($_COOKIE[$emri]))
+    {
+      $profili=[
+        'Profili'=>0
+      ];
+      setcookie($emri, serialize($profili), time() + 60*60*24*31, "/");
+    }
+
+  }
   }
 
   
   public function index()
   {
-    //  $users = $this->userModel->getUsers();
+ 
     $data = [
       'titulli' => 'Homepage',
-      // 'users' => $users
+    
     ];
     $this->view('pages/homepage', $data);
   
@@ -23,14 +33,14 @@ class Pages extends Controller
 
   public function autoret()
   {
-    
-    //  $users = $this->userModel->getUsers();
+
     $data = [
       'titulli' => 'Autoret',
-      // 'users' => $users
+
     ];
     $this->view('pages/autoret', $data);
   }
+
   public function librat()
   {
     //  $users = $this->userModel->getUsers();
@@ -39,16 +49,6 @@ class Pages extends Controller
       // 'users' => $users
     ];
     $this->view('pages/librat', $data);
-  }
-  public function lajme()
-  {
-   
-    //  $users = $this->userModel->getUsers();
-    $data = [
-      'titulli' => '1',
-      // 'users' => $users
-    ];
-    $this->view('posts/lajme', $data);
   }
 
   public function update()
@@ -69,33 +69,65 @@ class Pages extends Controller
     $this->view('posts/create', $data);
   }
 
+  
+  public function change()
+  {
+    $data = [
+      'titulli' => '1',
+      // 'users' => $users
+    ];
+    $this->view('books/ndrysho', $data);
+  }
+
+  public function add()
+  {
+    $data = [
+      'titulli' => '1',
+      // 'users' => $users
+    ];
+    $this->view('books/add', $data);
+  }
+
 
   public function galeria()
   {
-    
-    //  $users = $this->userModel->getUsers();
+   
     $data = [
       'titulli' => 'Homepage',
-      // 'users' => $users
+     
     ];
     $this->view('pages/galeria', $data);
   }
   public function kontakti()
   {
-    //  $users = $this->userModel->getUsers();
+    
     $data = [
       'titulli' => 'Homepage',
-      // 'users' => $users
+     
     ];
     $this->view('pages/kontakti', $data);
   }
 
   public function profili()
   {
-    //  $users = $this->userModel->getUsers();
+    if(isLoggedIn()){
+    $emri=$_SESSION['user_id'];
+    
+    if (isset($_COOKIE[$emri])) {
+     
+      $array = unserialize($_COOKIE[$emri]);
+      $array['Profili'] += 1;
+      setcookie( $emri, serialize($array), time() + 60*60*24*31, "/");
+    } else {
+      $arr = [
+        'Profili' => 2,        
+      ];
+      setcookie( $emri, serialize($arr), time() + 60*60*24*31, "/");
+    }
+  
     $data = [
       'titulli' => 'Homepage',
-      // 'users' => $users
+   
     ];
     if (isset($_SESSION['user_id'])) {
       $this->view('pages/profili', $data);
@@ -103,7 +135,7 @@ class Pages extends Controller
       $this->view('pages/homepage', $data);
     }
   }
-
+  }
   public function autoretcatalog()
   {
     //  $users = $this->userModel->getUsers();
@@ -132,22 +164,21 @@ class Pages extends Controller
     echo '<table>';
    
     echo '<tr>';
-    echo '<th>Title </th>';
-    echo '<th>  ID </th>';
-    echo '<th> Data </th>'; 
+    
+    
     foreach ($post as $specificPost) {
-       $location=URLROOT.'/posts/lajme/'.$specificPost->id;
-      echo '<tr>';
-      echo "<td> <a href=$location> Title:$specificPost->title </td>";
-      echo "<td> <a href=$location> ID:$specificPost->id </td>";
-      echo "<td> $specificPost->created_at</td>";
-
       
+       $location=URLROOT.'/posts/lajme/#'.$specificPost->id;
+      echo '<tr>';
+      
+      echo "<td  style='border:1px solid; '> <a href=$location>$specificPost->title </td>";
+
       echo '</tr>';
-//  echo "<a href=$location> ID:$specificPost->id </a> dhe eshte krijuar ne $specificPost->created_at";
+      
      }
      echo '</table>';
     
   }
 
 }
+ 

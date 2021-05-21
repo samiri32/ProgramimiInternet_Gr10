@@ -29,7 +29,7 @@ class Post {
         $results = $this->db->resultSet();
 
         return $results;
-    }
+    } 
 
     public function addPost($data) {
         $this->db->query('INSERT INTO posts (user_id, title, body, image) VALUES (:user_id, :title, :body, :image)');

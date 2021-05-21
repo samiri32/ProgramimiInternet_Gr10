@@ -16,7 +16,7 @@
             </h1>
             <div class="column side">
                 <form action="<?php echo URLROOT; ?>/posts/create"  method="POST">
-                    <div class="form-item" id="postimi">
+                    <div class="form-item" id="<?php $posts->id;?>">
                     
                         <input type="text" name="title" placeholder="Titulli..." style="max-width: 40em; height: 2.8em;">
 
@@ -35,7 +35,7 @@
                     <br>
                     <input type="file" name="image">
         <span class="invalid-feedback"><?php echo $data['imageError']; ?></span>
-                    <button class="btn green" name="submit" type="submit" style="padding:0 !important;">Perfundo</button>
+                    <button class="btn green" name="submit" type="submit" style="width: 7em !important; height: 2em !important; padding:0 !important;">Perfundo</button>
                 </form>
             </div>
            

@@ -394,7 +394,7 @@
     <br>
     <center>
         <div class="ndarja">
-            <p class="ndarja"><a href="<?php echo URLROOT; ?>/pages/libratcatalog">Shiko katalogun e librave</a></p>
+            <p class="ndarja"><a href="<?php echo URLROOT; ?>/books">Shiko katalogun e librave</a></p>
         </div>
     </center>
     <div class="titulli-slider">
