@@ -16,14 +16,17 @@
     };
 
     function growShrinkLogo() {
-        var sinani = document.getElementById("sinani")
+        var sinani = document.getElementById("sinani");
+        var kerkimi = document.getElementById("txtHint");
         if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
             sinani.style.width = "5em";
             sinani.style.height = "3.5em";
+            kerkimi.style.marginTop = "-2.5em";
 
         } else {
             sinani.style.width = "8em";
             sinani.style.height = "6em";
+            kerkimi.style.marginTop = "0em";
         }
     }
 </script>

@@ -18,7 +18,7 @@
 
    <form action="<?php echo URLROOT; ?>/books/change/<?php echo $data['book']->id?>" method="POST">
                     <div class="form-item">
-                        <input type="text" name="titulli" placeholder="Titulli..." style="max-width: 40em; height: 2.8em;">
+                        <input type="text" value="<?php echo $data['book']->titulli ?>" name="titulli" placeholder="Titulli..." style="max-width: 40em; height: 2.8em;">
                         <!--titulli, autori, vleresimi, zhanri, caption, gjuha, datapub, link, img-->
                         <span class="invalidFeedback">
                             <?php echo $data['titullierr']; ?>
@@ -28,7 +28,7 @@
                     <div class="form-item">
 
                         <!-- autori -->
-                        <input type="text" name="autori" placeholder="Autori..." style="max-width: 40em; height: 2.8em;">
+                        <input type="text" name="autori" value="<?php echo $data['book']->autori ?>"placeholder="Autori..." style="max-width: 40em; height: 2.8em;">
                         <span class="invalidFeedback">
                             <?php echo $data['autorierr']; ?>
                         </span>
@@ -36,7 +36,7 @@
                     <br>
                     <!-- zhanri -->
                     <div class="form-item">
-                        <input type="text" name="zhanri" placeholder="Zhanri..." style="max-width: 40em; height: 2.8em;">
+                        <input type="text" name="zhanri"value="<?php echo $data['book']->zhanri ?>" placeholder="Zhanri..." style="max-width: 40em; height: 2.8em;">
                         <span class="invalidFeedback">
                             <?php echo $data['zhanrierr']; ?>
                         </span>
@@ -45,7 +45,7 @@
 
                     <!-- gjuha -->
                     <div class="form-item">
-                        <input type="text" name="gjuha" placeholder="Gjuha..." style="max-width: 40em; height: 2.8em;">
+                        <input type="text" name="gjuha" value="<?php echo $data['book']->gjuha ?>"placeholder="Gjuha..." style="max-width: 40em; height: 2.8em;">
                         <span class="invalidFeedback">
                             <?php echo $data['gjuhaerr']; ?>
                         </span>
@@ -54,14 +54,14 @@
 
                     <!-- vleresimi -->
                     <div class="form-item">
-                        <input type="text" name="vleresimi" placeholder="Vleresimi..." style="max-width: 40em; height: 2.8em;">
+                        <input type="text" name="vleresimi" value="<?php echo $data['book']->vleresimi ?>"placeholder="Vleresimi..." style="max-width: 40em; height: 2.8em;">
                     </div>
                     <br>
 
                     <!-- YYYY-MM-DD. -->
                     <!-- datapub -->
                     <div class="form-item">
-                        <input type="text" name="datapub" placeholder="Data e publikimit..." style="max-width: 40em; height: 2.8em;">
+                        <input type="text" name="datapub" value="<?php echo $data['book']->datapub ?>"placeholder="Data e publikimit..." style="max-width: 40em; height: 2.8em;">
                         <span class="invalidFeedback">
                             <?php echo $data['datapuberr']; ?>
                         </span>
@@ -70,7 +70,7 @@
 
                     <!-- link -->
                     <div class="form-item">
-                        <input type="text" name="link" placeholder="Linku.." style="max-width: 40em; height: 2.8em;">
+                        <input type="text" name="link" value="<?php echo $data['book']->link ?>" placeholder="Linku.." style="max-width: 40em; height: 2.8em;">
                         <span class="invalidFeedback">
                             <?php echo $data['linkerr']; ?>
                         </span>
@@ -78,7 +78,7 @@
                     <br>
                     <!-- caption -->
                     <div class="form-item">
-                        <textarea name="caption" placeholder="Pershkruani librin ketu..." style="min-width: 48em; height:10em"></textarea>
+                        <textarea name="caption" placeholder="Pershkruani librin ketu..." style="min-width: 48em; height:10em"><?php echo $data['book']->caption?></textarea>
                         <span class="invalidFeedback">
                             <?php echo $data['captionerr']; ?>
                         </span>

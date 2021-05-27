@@ -16,7 +16,7 @@
             </h1>
             <div class="column side">
                 <form action="<?php echo URLROOT; ?>/posts/create"  method="POST">
-                    <div class="form-item" id="<?php $posts->id;?>">
+                    <div class="form-item" id='<?php $posts->id;?>'>
                     
                         <input type="text" name="title" placeholder="Titulli..." style="max-width: 40em; height: 2.8em;">
 

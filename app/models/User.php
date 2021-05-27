@@ -14,7 +14,6 @@ class User {
         $this->db->bind(':password', $data['password']);
         $this->db->bind(':telefoni', $data['telefoni']);
         $this->db->bind(':adresa', $data['adresa']);
-        $this->db->bind(':status', $data['statusi']);
 
         //Execute function
         if ($this->db->execute()) {

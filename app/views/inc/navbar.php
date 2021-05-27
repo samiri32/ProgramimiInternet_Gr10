@@ -52,12 +52,12 @@
         </div>
     </div>
 </div>
-<div style="align-self:right;">
+<div style="align-self: right;">
    <a href="<?php ?>"> <i onclick="toggleButton()" class="fa fa-moon-o" id="teksti" style="margin-left:0.5em;margin-top:0.5em; font-size: 2em;font-weight: bold; position:-webkit-fixed;position:fixed;z-index: 9999;"></i></a>
 </div>
-<center>
-<div id="txtHint" style="margin-right: 0em; position: relative; z-index: 999; margin-right: -50em;" ></div>
-<center>
+
+<div id="txtHint" style="background-color: whitesmoke; border-left: 1px solid grey; border-right: 1px solid grey; text-align: left; z-index: 20; margin-top: 0em; position: fixed; align-self: left; margin-left: 55em;" ></div>
+
 <script>
 async function showPostin(str) {
   const rez = await (await fetch('http://localhost/ProgramimiInternet_Gr10/pages/ajax/' + str)).text();
@@ -65,5 +65,4 @@ async function showPostin(str) {
   var doc = parser.parseFromString(rez, "text/html");
   document.getElementById('txtHint').innerHTML = doc.body.innerHTML;
 }
-
 </script>

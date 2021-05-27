@@ -159,19 +159,19 @@ class Pages extends Controller
   public function ajax($request='null')
   { 
      $post=$this->postModel->getTitlePosts($request);
-    //TODO:fix this 
-    
-    echo '<table style="margin-right: 0em; position: relative; z-index: 99999;">';
    
-    echo '<tr style="margin-right: 0em;position: relative; z-index: 999999;">';
+    
+    echo "<table style='position: relative; margin-top: 0em; align-self: left;'>";
+   
+    echo '<tr style="margin-top: 0em; position: relative;">';
     
     
     foreach ($post as $specificPost) {
       
        $location= URLROOT.'/posts/lajme/#'.$specificPost->id;
-      echo '<tr style= "z-index: 99999; position: relative;">';
+      echo '<tr style= "align-self: left; padding: 0; margin-top: -1em; margin-bottom: 0em; position: relative;">';
       
-      echo "<td  style='z-index: 999999; position: relative;  border:1px solid; background-color: whitesmoke;'> <a href=$location>$specificPost->title</td>";
+      echo "<td class='kerkimi'style='align-self: left; margin-top: 0em; max-width: 45em; margin-bottom: 0em; position: relative;  border-bottom:1px solid grey;' id='kerkimi'> <a href=$location>$specificPost->title</td>";
 
       echo '</tr>';
       
